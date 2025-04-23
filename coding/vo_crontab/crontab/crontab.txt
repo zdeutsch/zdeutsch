@@ -1,0 +1,5 @@
+# Run scrapping at 1am daily
+0 1 * * * /usr/local/bin/python /app/scripts/scrap.py >> /var/log/cron.log 2>&1
+
+# Run cleaning at 5am daily
+0 5 * * * /usr/local/bin/python /app/scripts/clean.py >> /var/log/cron.log 2>&1
