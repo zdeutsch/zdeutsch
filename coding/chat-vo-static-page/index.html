@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marki Chat Interface</title>
+    <link rel="stylesheet" href="chat.css">
+    <script defer src="chat.js"></script>
+</head>
+
+<body>
+    <div class="chatContainer">
+        <!-- Sidebar -->
+        <div class="side closed" id="sidebar">
+            <div class="sideTop">
+                <button class="backButton" onclick="goBack()">←</button>
+                <div class="sideTitle">Alpha Chat</div>
+                <button class="closeSidebar" onclick="toggleSidebar()">×</button>
+                <div class="addChat">
+                    <button class="addChatBtn" onclick="createChat()">
+                        <span class="plusIcon">+</span>
+                        New chat
+                    </button>
+                </div>
+            </div>
+            <div class="sideBody" id="chatList">
+                <!-- Chat items will be inserted here dynamically -->
+            </div>
+            <div class="sideFooter">
+                <button class="user">
+                    <div class="userIcon"></div>
+                    <div class="userName" id="userEmail">user@example.com</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="body">
+            <div class="bodyHeader">
+                <button onclick="toggleSidebar()">☰</button>
+                <button>Help</button>
+                <button>My Documents</button>
+            </div>
+            <div class="bodyContent" id="messages">
+                <!-- Messages will be inserted here dynamically -->
+            </div>
+            <div class="bodyFooter">
+                <div class="bodyFooterInput">
+                    <button class="fileImportBtn">📎</button>
+                    <textarea id="messageInput" placeholder="Type a message..."></textarea>
+                    <button class="sendBtn" onclick="sendMessage()">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
