@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database Manager | Horen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/dashboard/assets/admin.css">
+  </head>
+  <body class="manager-body">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <aside class="col-12 col-lg-2 manager-sidebar p-3">
+          <div class="manager-brand fs-5 mb-3">ZDeutsch</div>
+          <p class="small-help mb-4">Manage Horen topics and true/false statements.</p>
+          <nav class="d-grid gap-1">
+            <a href="/dashboard/index.html" class="manager-nav-link" data-manager-nav="overview"><i class="bi bi-speedometer2"></i> Overview</a>
+            <a href="/dashboard/config.html" class="manager-nav-link" data-manager-nav="config"><i class="bi bi-sliders"></i> Config</a>
+            <a href="/dashboard/lesen.html" class="manager-nav-link" data-manager-nav="lesen"><i class="bi bi-journal-text"></i> Lesen</a>
+            <a href="/dashboard/horen.html" class="manager-nav-link" data-manager-nav="horen"><i class="bi bi-headphones"></i> Horen</a>
+            <a href="/dashboard/shreiben.html" class="manager-nav-link" data-manager-nav="shreiben"><i class="bi bi-pencil-square"></i> Shreiben</a>
+          </nav>
+        </aside>
+
+        <main class="col-12 col-lg-10 manager-main">
+          <header class="manager-header d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+            <div>
+              <h1 class="h4 mb-1">Horen Topics</h1>
+              <p class="text-secondary mb-0">Managers can edit topics and statements with simple forms.</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-2">
+              <select id="level-select" class="form-select form-select-sm" style="width: 90px;">
+                <option value="b1">B1</option>
+                <option value="b2" selected>B2</option>
+              </select>
+              <select id="part-select" class="form-select form-select-sm" style="width: 120px;">
+                <option value="teil-1">Teil 1</option>
+                <option value="teil-2">Teil 2</option>
+                <option value="teil-3">Teil 3</option>
+              </select>
+              <input type="text" id="theme-key-input" class="form-control form-control-sm" style="width: 160px;" placeholder="Theme key (optional)">
+              <button class="btn btn-outline-secondary btn-sm" id="refresh-btn"><i class="bi bi-arrow-repeat"></i></button>
+            </div>
+          </header>
+
+          <div id="alert-host"></div>
+
+          <section class="manager-card card mb-4">
+            <div class="card-header d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <span>Topics List</span>
+              <input id="topics-search-input" type="search" class="form-control form-control-sm" style="width: 240px;" placeholder="Search topics...">
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Topic ID</th>
+                      <th>Title</th>
+                      <th>Tag</th>
+                      <th>Statements</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="topics-body">
+                    <tr><td colspan="5" class="text-center text-secondary py-4">Loading...</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="manager-card card">
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <span id="form-title">Add Topic</span>
+              <button class="btn btn-sm btn-outline-secondary" id="clear-form-btn" type="button">Clear</button>
+            </div>
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-12 col-md-4">
+                  <label class="form-label" for="topic-id">Topic ID (optional when creating)</label>
+                  <input type="text" id="topic-id" class="form-control" placeholder="auto-generated">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label class="form-label" for="topic-title">Title</label>
+                  <input type="text" id="topic-title" class="form-control" placeholder="Topic title">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label class="form-label" for="topic-tag">Tag</label>
+                  <input type="text" id="topic-tag" class="form-control" placeholder="Berlin / Alltag / ...">
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h2 class="h6 mb-0">Statements</h2>
+                  <button class="btn btn-sm btn-outline-primary" id="add-statement-btn" type="button"><i class="bi bi-plus"></i> Add Statement</button>
+                </div>
+                <div id="statements-container" class="vstack gap-2"></div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <button class="btn btn-manager-primary text-white" id="save-topic-btn" type="button">Save Topic</button>
+                <button class="btn btn-outline-danger" id="delete-topic-btn" type="button">Delete Topic</button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dashboard/assets/admin.js"></script>
+    <script src="/dashboard/assets/pages/horen.js"></script>
+  </body>
+</html>

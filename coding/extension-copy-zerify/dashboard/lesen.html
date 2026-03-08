@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database Manager | Lesen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/dashboard/assets/admin.css">
+  </head>
+  <body class="manager-body">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <aside class="col-12 col-lg-2 manager-sidebar p-3">
+          <div class="manager-brand fs-5 mb-3">ZDeutsch</div>
+          <p class="small-help mb-4">Manage Lesen themes and metadata.</p>
+          <nav class="d-grid gap-1">
+            <a href="/dashboard/index.html" class="manager-nav-link" data-manager-nav="overview"><i class="bi bi-speedometer2"></i> Overview</a>
+            <a href="/dashboard/config.html" class="manager-nav-link" data-manager-nav="config"><i class="bi bi-sliders"></i> Config</a>
+            <a href="/dashboard/lesen.html" class="manager-nav-link" data-manager-nav="lesen"><i class="bi bi-journal-text"></i> Lesen</a>
+            <a href="/dashboard/horen.html" class="manager-nav-link" data-manager-nav="horen"><i class="bi bi-headphones"></i> Horen</a>
+            <a href="/dashboard/shreiben.html" class="manager-nav-link" data-manager-nav="shreiben"><i class="bi bi-pencil-square"></i> Shreiben</a>
+          </nav>
+        </aside>
+
+        <main class="col-12 col-lg-10 manager-main">
+          <header class="manager-header d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+            <div>
+              <h1 class="h4 mb-1">Lesen Themes</h1>
+              <p class="text-secondary mb-0">Create, rename, update, or delete theme entries by level.</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <label class="small-help mb-0" for="level-select">Level</label>
+              <select id="level-select" class="form-select form-select-sm" style="width: 110px;">
+                <option value="b1">B1</option>
+                <option value="b2" selected>B2</option>
+              </select>
+              <button class="btn btn-outline-secondary btn-sm" id="refresh-btn"><i class="bi bi-arrow-repeat"></i></button>
+            </div>
+          </header>
+
+          <div id="alert-host"></div>
+
+          <section class="manager-card card mb-4">
+            <div class="card-header d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <span>Existing Themes</span>
+              <input id="themes-search-input" type="search" class="form-control form-control-sm" style="width: 240px;" placeholder="Search themes...">
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Theme Key</th>
+                      <th>Title</th>
+                      <th>Versions</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="themes-body">
+                    <tr><td colspan="4" class="text-center text-secondary py-4">Loading...</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="manager-card card mb-4">
+            <div class="card-header">Part Editors</div>
+            <div class="card-body">
+              <div class="d-flex flex-wrap gap-2">
+                <a href="/dashboard/lesen-teil-1.html" class="btn btn-outline-primary btn-sm part-editor-link">Teil 1 Editor</a>
+                <a href="/dashboard/lesen-teil-2.html" class="btn btn-outline-primary btn-sm part-editor-link">Teil 2 Editor</a>
+                <a href="/dashboard/lesen-teil-3.html" class="btn btn-outline-primary btn-sm part-editor-link">Teil 3 Editor</a>
+                <a href="/dashboard/lesen-sprach-1.html" class="btn btn-outline-primary btn-sm part-editor-link">Sprach 1 Editor</a>
+                <a href="/dashboard/lesen-sprach-2.html" class="btn btn-outline-primary btn-sm part-editor-link">Sprach 2 Editor</a>
+              </div>
+              <p class="small-help mt-2 mb-0">Open a part editor, then choose level, theme, and version to edit full content.</p>
+            </div>
+          </section>
+
+          <div class="row g-3">
+            <div class="col-12 col-xl-5">
+              <section class="manager-card card h-100">
+                <div class="card-header">Add New Theme</div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label class="form-label" for="new-theme-key">Theme Key</label>
+                    <input type="text" id="new-theme-key" class="form-control" placeholder="my-theme-key">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="new-theme-title">Theme Title</label>
+                    <input type="text" id="new-theme-title" class="form-control" placeholder="New Theme Title">
+                  </div>
+                  <button class="btn btn-manager-primary text-white" id="create-theme-btn" type="button">Create Theme</button>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-12 col-xl-7">
+              <section class="manager-card card h-100">
+                <div class="card-header">Edit Selected Theme</div>
+                <div class="card-body">
+                  <p class="small-help">Choose a theme from the table first.</p>
+                  <div class="mb-3">
+                    <label class="form-label" for="edit-theme-key">Current Key</label>
+                    <input type="text" id="edit-theme-key" class="form-control" readonly>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="edit-new-key">New Key (optional)</label>
+                    <input type="text" id="edit-new-key" class="form-control" placeholder="Rename key">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="edit-theme-title">Title</label>
+                    <input type="text" id="edit-theme-title" class="form-control" placeholder="Theme title">
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-manager-primary text-white" id="save-theme-btn" type="button">Save Theme</button>
+                    <button class="btn btn-outline-danger" id="delete-theme-btn" type="button">Delete Theme</button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dashboard/assets/admin.js"></script>
+    <script src="/dashboard/assets/pages/lesen.js"></script>
+  </body>
+</html>

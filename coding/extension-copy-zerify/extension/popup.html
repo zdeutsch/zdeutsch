@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zertify Extractor</title>
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0c10;
+        --bg-deep: #07080b;
+        --surface: #12141a;
+        --surface-strong: #1a1d26;
+        --stroke: rgba(255, 255, 255, 0.08);
+        --accent: #f97316;
+        --accent-soft: rgba(249, 115, 22, 0.2);
+        --mint: #22d3ee;
+        --text: #e2e8f0;
+        --muted: #8b98a5;
+        --shadow: rgba(8, 11, 18, 0.9);
+        --radius: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 12px;
+        width: 340px;
+        background: radial-gradient(circle at top, rgba(249, 115, 22, 0.15), transparent 55%),
+          linear-gradient(160deg, var(--bg) 0%, var(--bg-deep) 100%);
+        color: var(--text);
+        font-family: "Newsreader", "Times New Roman", serif;
+        letter-spacing: 0.01em;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+        margin: 0;
+      }
+
+      .app {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .header {
+        padding: 12px 14px;
+        border-radius: var(--radius);
+        border: 1px solid var(--stroke);
+        background: linear-gradient(120deg, rgba(34, 211, 238, 0.1), transparent 60%),
+          var(--surface);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.25), transparent 55%);
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .brand span {
+        font-size: 10px;
+        padding: 3px 8px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        background: rgba(34, 211, 238, 0.18);
+        border: 1px solid rgba(34, 211, 238, 0.4);
+      }
+
+      .subtitle {
+        font-size: 12px;
+        color: var(--muted);
+        margin-top: 4px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .card {
+        border-radius: var(--radius);
+        border: 1px solid var(--stroke);
+        background: var(--surface);
+        padding: 12px 14px;
+        box-shadow: 0 12px 28px var(--shadow);
+      }
+
+      .action {
+        display: grid;
+        gap: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 12px;
+        border: none;
+        background: linear-gradient(120deg, var(--accent), #fb923c 55%, #fdba74);
+        color: #2b1506;
+        font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      button:disabled {
+        opacity: 0.6;
+        cursor: default;
+        transform: none;
+      }
+
+      button:hover:not(:disabled) {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+      }
+
+      .secondary {
+        background: linear-gradient(140deg, rgba(34, 211, 238, 0.25), rgba(15, 118, 110, 0.4));
+        color: #e2e8f0;
+        border: 1px solid rgba(34, 211, 238, 0.4);
+        box-shadow: none;
+      }
+
+      .secondary:hover:not(:disabled) {
+        box-shadow: 0 10px 20px rgba(34, 211, 238, 0.2);
+      }
+
+      .status {
+        font-size: 12px;
+        color: var(--muted);
+        min-height: 18px;
+      }
+
+      .preview-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .pill {
+        font-size: 10px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: rgba(249, 115, 22, 0.15);
+        color: #fdba74;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        border: 1px solid rgba(249, 115, 22, 0.3);
+      }
+
+      .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .meta-item {
+        background: var(--surface-strong);
+        border-radius: 12px;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .meta-item span {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--muted);
+        letter-spacing: 0.18em;
+        margin-bottom: 4px;
+      }
+
+      .meta-item strong {
+        font-size: 13px;
+        font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+      }
+
+      .divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.06);
+        margin: 12px 0;
+      }
+
+      .preview-body {
+        display: grid;
+        gap: 8px;
+        font-size: 13px;
+        color: #d0dae5;
+      }
+
+      .preview-body .line {
+        background: rgba(7, 10, 14, 0.6);
+        border-radius: 10px;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .preview-body .label {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted);
+        margin-bottom: 4px;
+        font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+      }
+
+      details {
+        border-radius: var(--radius);
+        border: 1px solid var(--stroke);
+        background: var(--surface);
+        padding: 10px 12px;
+      }
+
+      summary {
+        list-style: none;
+        font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+        cursor: pointer;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      pre {
+        margin: 10px 0 0;
+        max-height: 200px;
+        overflow: auto;
+        font-size: 11px;
+        background: #06070a;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        color: #cbd5f5;
+      }
+
+      .empty {
+        font-size: 12px;
+        color: var(--muted);
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px dashed rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .muted {
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      .fade-in {
+        animation: fadeIn 0.35s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="brand">
+          <h1>Exam Extractor</h1>
+          <span>Zertify</span>
+        </div>
+        <p class="subtitle">Preview structured JSON before exporting.</p>
+      </header>
+
+      <section class="card action">
+        <button id="extract">Extract current part</button>
+        <button id="extract-all" class="secondary">Extract all parts</button>
+        <button id="extract-themes" class="secondary">Extract all themes</button>
+        <div id="status" class="status"></div>
+        <div class="muted">Downloads to db/ in your default downloads folder.</div>
+      </section>
+
+      <section class="card fade-in">
+        <div class="preview-header">
+          <h2>Preview</h2>
+          <span id="preview-label" class="pill">No data</span>
+        </div>
+        <div id="meta" class="meta-grid"></div>
+        <div class="divider"></div>
+        <div id="preview" class="preview-body">
+          <div class="empty">Run extraction to preview the current page.</div>
+        </div>
+      </section>
+
+      <details class="fade-in">
+        <summary>Raw JSON</summary>
+        <pre id="raw-json">{}</pre>
+      </details>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

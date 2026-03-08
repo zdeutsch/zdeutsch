@@ -1,0 +1,86 @@
+<%- include('../partials/head', { title, styles }) %>
+<main class="lc-shell">
+  <div class="lc-layout">
+    <section class="lc-card">
+      <header>
+        <h1>Linking-Word Challenge</h1>
+        <p class="sub">Ziehe einen Konnektor, formuliere einen Satz und hol dir Feedback.</p>
+      </header>
+
+    <div class="lc-connector-row">
+      <span class="pill">Connector</span>
+      <div class="lc-connector" id="lc-connector">weil</div>
+      <button id="lc-next" class="ghost small" type="button">Neues Wort</button>
+    </div>
+
+    <label class="lc-textarea">
+      <span>Dein Satz (optional zum Planen)</span>
+      <textarea id="lc-text" rows="3" placeholder="Schreibe hier deinen Satz mit dem Konnektor …"></textarea>
+    </label>
+
+    <div class="lc-audio">
+      <div class="lc-audio-buttons">
+        <button id="lc-record" class="primary" type="button">● Aufnahme starten</button>
+        <button id="lc-stop" class="ghost" type="button" disabled>■ Stoppen</button>
+        <button id="lc-clear" class="ghost" type="button" disabled>Aufnahme löschen</button>
+      </div>
+      <audio id="lc-playback" controls hidden></audio>
+    </div>
+
+    <div class="lc-actions">
+      <button id="lc-send" class="primary" type="button" disabled>Analysieren</button>
+      <span id="lc-status" class="sub"></span>
+    </div>
+    </section>
+
+    <section id="lc-feedback" class="lc-feedback">
+      <div class="lc-feedback-header">
+        <h2>Feedback</h2>
+        <label class="lc-lang-picker">
+          <span>Sprache</span>
+          <select id="lc-lang">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+          </select>
+        </label>
+      </div>
+      <div class="lc-scoreboard">
+        <div class="lc-score">
+          <span>Nutzung</span>
+          <div class="meter"><div id="lc-usage-bar"></div></div>
+          <span id="lc-usage-val">0</span>
+        </div>
+        <div class="lc-score">
+          <span>Grammatik</span>
+          <div class="meter"><div id="lc-grammar-bar"></div></div>
+          <span id="lc-grammar-val">0</span>
+        </div>
+        <div class="lc-score">
+          <span>Aussprache</span>
+          <div class="meter"><div id="lc-pron-bar"></div></div>
+          <span id="lc-pron-val">0</span>
+        </div>
+      </div>
+      <article id="lc-feedback-text" class="lc-feedback-text is-placeholder">Dein Feedback erscheint hier, sobald du eine Analyse abgeschlossen hast.</article>
+      <article id="lc-translation" class="lc-translation is-placeholder">Wähle eine Sprache für die Übersetzung.</article>
+      <ul id="lc-tips" class="lc-tips"></ul>
+      <div class="lc-transcript-wrap">
+        <strong>Transkription</strong>
+        <p id="lc-transcript" class="lc-transcript">–</p>
+      </div>
+      <button id="lc-try-again" class="ghost" type="button">Noch einmal</button>
+    </section>
+  </div>
+</main>
+
+<div id="lc-loader" class="lc-loader" hidden>
+  <div class="lc-loader-panel">
+    <div class="lc-spinner"></div>
+    <p>Analysiere …</p>
+  </div>
+</div>
+
+<%- include('../partials/foot', { scripts }) %>

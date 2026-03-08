@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-page="exercise">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title || 'Exercise | TELC Training' %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/theme.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg nav-glass border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/dashboard/learner" data-i18n="nav.brand">
+          TELC Training
+        </a>
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-secondary btn-sm btn-rounded dropdown-toggle"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span data-i18n="lang.current">English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+              <li><button class="dropdown-item" data-language="en">English</button></li>
+              <li><button class="dropdown-item" data-language="de">Deutsch</button></li>
+            </ul>
+          </div>
+          <a class="btn btn-outline-secondary btn-sm btn-rounded" href="/dashboard/learner" data-i18n="exercise.link.back">
+            Back to dashboard
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="exercise-main py-5">
+      <div class="container-fluid">
+        <div id="exerciseContainer" class="exercise-shell d-none">
+          <section class="exercise-hero card-inset mb-5">
+            <div class="exercise-hero-header">
+              <div>
+                <h1 class="exercise-title" id="exerciseTitle"></h1>
+                <p class="exercise-subtitle" id="exerciseDescription"></p>
+              </div>
+              <span class="exercise-structure badge text-bg-light d-none" id="exerciseStructure"></span>
+            </div>
+            <div class="exercise-instructions d-none" id="exerciseInstructions"></div>
+          </section>
+
+          <!-- Two-column learning layout -->
+          <div class="exercise-layout">
+            <!-- Left: Texts/content always on the left -->
+            <div class="exercise-left">
+              <section class="exercise-section" id="exerciseTextsSection">
+                <div class="exercise-section-header">
+                  <h2 class="exercise-section-title" id="exerciseTextsTitle" data-i18n="exercise.texts">
+                    Texts
+                  </h2>
+                  <p
+                    class="exercise-section-hint text-muted"
+                    id="exerciseTextsHint"
+                    data-i18n="exercise.textsHint"
+                  >
+                    Select the matching heading for every text passage.
+                  </p>
+                </div>
+                <div id="exerciseTexts" class="exercise-text-list"></div>
+              </section>
+
+              <!-- Type-specific text bodies (Sprachbausteine, Cloze, etc.) -->
+              <section class="exercise-section mt-4">
+                <!-- Teil 1 & 3: Gap text body -->
+                <article class="mb-4" id="gapTextContainer"></article>
+                <!-- Teil 2: Cloze text body -->
+                <article class="mb-4" id="clozeTextContainer"></article>
+              </section>
+            </div>
+
+            <!-- Right: Choices fixed column -->
+            <aside class="exercise-right">
+              <div class="exercise-right-sticky">
+                <!-- Headings (choices for matching) -->
+                <section class="exercise-section side-panel headings-panel" id="exerciseHeadingsSection">
+                  <div class="exercise-section-header">
+                    <h2 class="exercise-section-title" id="exerciseHeadingsTitle" data-i18n="exercise.headings">
+                      Headings
+                    </h2>
+                    <p
+                      class="exercise-section-hint text-muted"
+                      id="exerciseHeadingsHint"
+                      data-i18n="exercise.headingsHint"
+                    >
+                      Review each heading before matching.
+                    </p>
+                  </div>
+                  <div class="headings-scroll">
+                    <div id="exerciseHeadings" class="exercise-headings-grid"></div>
+                  </div>
+                </section>
+
+                <!-- Teil 1 & 3: MC options per gap -->
+                <section class="exercise-section side-panel" id="gapQuestions"></section>
+
+                <!-- Teil 2: Word bank + answers selections -->
+                <section class="exercise-section side-panel" id="clozeWordBank"></section>
+                <section class="exercise-section side-panel" id="clozeAnswers"></section>
+
+                <!-- Actions pinned to the bottom of the right column -->
+                <div class="exercise-actions">
+                  <button
+                    id="checkAnswers"
+                    class="btn btn-primary btn-rounded"
+                    data-i18n="exercise.check"
+                    disabled
+                  >
+                    Check answers
+                  </button>
+                  <button
+                    id="resetSelections"
+                    class="btn btn-outline-secondary btn-rounded"
+                    data-i18n="exercise.reset"
+                  >
+                    Reset selections
+                  </button>
+                </div>
+
+                <div id="resultPanel" class="exercise-result alert d-none"></div>
+              </div>
+            </aside>
+          </div>
+          
+        </div>
+
+        <div id="exerciseLoading" class="exercise-loading text-center py-5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden" data-i18n="exercise.loading">Loading exercise…</span>
+          </div>
+          <p class="text-muted mt-3" data-i18n="exercise.loading">Loading exercise…</p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      window.APP_USER = <%- JSON.stringify(user || {}) %>;
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcVOY3M1F1wB6"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="/static/js/i18n.js" defer></script>
+    <script type="module" src="/static/js/exercise.js" defer></script>
+  </body>
+</html>

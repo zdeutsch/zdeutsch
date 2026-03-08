@@ -1,0 +1,153 @@
+:root {
+  --manager-bg: #f5f7fb;
+  --manager-panel: #ffffff;
+  --manager-border: #e4e9f2;
+  --manager-primary: #0f5ddf;
+  --manager-primary-soft: #e9f1ff;
+  --manager-text: #1e2533;
+  --manager-muted: #6c7586;
+  --manager-success: #1a8f61;
+  --manager-danger: #c94a4a;
+}
+
+body.manager-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, #eef4ff 0%, transparent 45%),
+    radial-gradient(circle at 90% 10%, #f9f0ff 0%, transparent 35%),
+    var(--manager-bg);
+  color: var(--manager-text);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.manager-sidebar {
+  background: var(--manager-panel);
+  border-right: 1px solid var(--manager-border);
+}
+
+.manager-brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.manager-main {
+  padding: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .manager-main {
+    padding: 2rem;
+  }
+}
+
+.manager-header {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--manager-border);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 8px 30px rgba(34, 55, 90, 0.06);
+}
+
+.manager-card {
+  border: 1px solid var(--manager-border);
+  border-radius: 16px;
+  background: var(--manager-panel);
+  box-shadow: 0 10px 30px rgba(34, 55, 90, 0.05);
+}
+
+.manager-card .card-header {
+  background: transparent;
+  border-bottom: 1px solid var(--manager-border);
+  font-weight: 600;
+}
+
+.manager-nav-link {
+  border-radius: 10px;
+  color: var(--manager-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 0.75rem;
+  text-decoration: none;
+}
+
+.manager-nav-link:hover {
+  background: #f4f7fd;
+  color: #283246;
+}
+
+.manager-nav-link.active {
+  background: var(--manager-primary-soft);
+  color: var(--manager-primary);
+}
+
+.kpi-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.kpi-label {
+  color: var(--manager-muted);
+  font-size: 0.86rem;
+}
+
+.table thead th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--manager-muted);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #334056;
+  font-size: 0.9rem;
+}
+
+.badge-soft {
+  background: var(--manager-primary-soft);
+  color: var(--manager-primary);
+}
+
+.manager-alert {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-size: 0.92rem;
+}
+
+.manager-alert.success {
+  background: #ebf9f2;
+  border-color: #c7ebd8;
+  color: var(--manager-success);
+}
+
+.manager-alert.error {
+  background: #fff2f2;
+  border-color: #f4d3d3;
+  color: var(--manager-danger);
+}
+
+.small-help {
+  color: var(--manager-muted);
+  font-size: 0.82rem;
+}
+
+.btn-manager-primary {
+  background: var(--manager-primary);
+  border-color: var(--manager-primary);
+}
+
+.btn-manager-primary:hover,
+.btn-manager-primary:focus {
+  background: #0b4fc2;
+  border-color: #0b4fc2;
+}
+
+code.kbd-inline {
+  font-size: 0.8rem;
+  background: #f1f4fa;
+  border: 1px solid #e4e9f2;
+  border-radius: 6px;
+  padding: 0.1rem 0.35rem;
+}

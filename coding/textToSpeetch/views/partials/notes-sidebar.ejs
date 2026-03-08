@@ -1,0 +1,193 @@
+<!-- Shared Notes Sidebar (reused across pages) -->
+<aside id="notes-sidebar" class="notes-sidebar" aria-label="Notes">
+  <div class="notes-sidebar__header">
+    <div class="notes-sidebar__controls">
+      <h3 class="notes-sidebar__title">Notes</h3>
+      <button id="notes-close-btn" class="ghost small" type="button">x</button>
+    </div>
+    <hr>
+    <div class="notes-sidebar__controls">
+      <div class="notes-color" title="Highlight color and TTS language">
+        <input id="notes-color-picker" type="color" value="#FDE047" aria-label="Highlight color">
+        <div class="color-swatches" aria-label="Quick colors">
+          <button class="color-swatch" data-swatch="#fde047" style="background:#fde047" aria-label="Amber"></button>
+          <button class="color-swatch" data-swatch="#fda4af" style="background:#fda4af" aria-label="Rose"></button>
+          <button class="color-swatch" data-swatch="#86efac" style="background:#86efac" aria-label="Green"></button>
+          <button class="color-swatch" data-swatch="#93c5fd" style="background:#93c5fd" aria-label="Sky"></button>
+          <button class="color-swatch" data-swatch="#a78bfa" style="background:#a78bfa" aria-label="Violet"></button>
+          <button class="color-swatch" data-swatch="#fbbf24" style="background:#fbbf24" aria-label="Amber dark"></button>
+        </div>
+      </div>
+      <select id="notes-tooltip-size" title="Tooltip size">
+        <option value="12">Tooltip: 12px</option>
+        <option value="14" selected>Tooltip: 14px</option>
+        <option value="16">Tooltip: 16px</option>
+        <option value="18">Tooltip: 18px</option>
+        <option value="20">Tooltip: 20px</option>
+        <option value="22">Tooltip: 22px</option>
+      </select>
+      <select id="notes-tts-lang" title="Default TTS language" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+        <option value="auto" selected>TTS: Auto</option>
+      </select>
+    </div>
+    <hr>
+    <div class="notes-sidebar__controls">
+      <div class="d-flex align-items-center">
+        <label class="switch" title="Show/Hide notes">
+          <input id="notes-visibility-toggle" type="checkbox">
+          <span class="switch-track"></span>
+          <span class="switch-thumb"></span>
+        </label>
+        <span class="d-flex" style="font-size:0.9rem;">Show notes</span>
+      </div>
+      <button id="ai-assist-open" class="ghost small" type="button">AI Assist</button>
+    </div>
+    <hr>
+    <div id="notes-context" style="font-size:0.85rem;color:var(--text-muted);"></div>
+  </div>
+
+  <div class="notes-sidebar__body">
+    <div class="notes-tools">
+      <input id="notes-search" type="search" placeholder="Search notes…" aria-label="Search notes">
+      <select id="notes-sort" aria-label="Sort notes">
+        <option value="new">Newest</option>
+        <option value="old">Oldest</option>
+      </select>
+    </div>
+    <div id="notes-create" class="notes-form" style="display:none;">
+      <div style="font-size:0.9rem;color:var(--text-muted);">Selected text</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div id="notes-create-quote" class="note-item__quote" style="flex:1 1 auto;"></div>
+        <button id="notes-create-speak" class="ghost small" type="button" title="Speak selected text">Speak</button>
+      </div>
+      <label>
+        <span style="color:var(--text-muted);font-size:0.9rem;">Your note</span>
+        <textarea id="notes-create-text" rows="3" placeholder="Add a note…"></textarea>
+      </label>
+      <div class="notes-row">
+        <div class="field">
+          <span class="notes-label">Direction</span>
+          <select id="notes-create-dir" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+            <option value="auto" selected>Auto</option>
+            <option value="ltr">LTR</option>
+            <option value="rtl">RTL</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="notes-label">AI language</span>
+          <select id="notes-create-ai-lang" title="AI language" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+            <option value="de">German</option>
+            <option value="ar" selected>Arabic</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+          </select>
+          <button id="notes-create-ai" class="ghost small" type="button">AI Analyze</button>
+          <span id="notes-create-ai-status" class="sub" style="margin-left:6px;color:var(--text-muted);"></span>
+        </div>
+      </div>
+      <div class="notes-actions">
+        <button id="notes-create-save" class="primary small" type="button" disabled>Save</button>
+        <button id="notes-create-cancel" class="ghost small" type="button">Cancel</button>
+      </div>
+    </div>
+
+    <div id="notes-edit" class="notes-form" style="display:none;">
+      <div style="font-size:0.9rem;color:var(--text-muted);">Quoted</div>
+      <div class="notes-row">
+        <div class="note-item__quote" id="notes-edit-quote" style="flex:1 1 auto;"></div>
+        <button id="notes-edit-speak" class="ghost small" type="button" title="Speak quote">Speak</button>
+      </div>
+      <label>
+        <span style="color:var(--text-muted);font-size:0.9rem;">Your note</span>
+        <textarea id="notes-edit-text" rows="3"></textarea>
+      </label>
+      <div class="notes-row">
+        <div class="field">
+          <span class="notes-label">Direction</span>
+          <select id="notes-edit-dir" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+            <option value="auto">Auto</option>
+            <option value="ltr">LTR</option>
+            <option value="rtl">RTL</option>
+          </select>
+        </div>
+        <label class="notes-inline-item">
+          <input id="notes-edit-hidden" type="checkbox">
+          <span class="notes-label">Hide highlight</span>
+        </label>
+      </div>
+      <div class="notes-row">
+        <div class="field">
+          <span class="notes-label">Color</span>
+          <input id="notes-edit-color" type="color" value="#FDE047" aria-label="Note color">
+          <div id="notes-edit-swatches" class="color-swatches" aria-label="Quick colors">
+            <button class="color-swatch" data-swatch="#fde047" style="background:#fde047" aria-label="Amber"></button>
+            <button class="color-swatch" data-swatch="#fda4af" style="background:#fda4af" aria-label="Rose"></button>
+            <button class="color-swatch" data-swatch="#86efac" style="background:#86efac" aria-label="Green"></button>
+            <button class="color-swatch" data-swatch="#93c5fd" style="background:#93c5fd" aria-label="Sky"></button>
+            <button class="color-swatch" data-swatch="#a78bfa" style="background:#a78bfa" aria-label="Violet"></button>
+            <button class="color-swatch" data-swatch="#fbbf24" style="background:#fbbf24" aria-label="Amber dark"></button>
+          </div>
+        </div>
+      </div>
+      <div class="notes-row">
+        <select id="notes-ai-lang" title="AI language" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+          <option value="de">German</option>
+          <option value="ar" selected>Arabic</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+        </select>
+        <button id="notes-edit-ai" class="ghost small" type="button">AI Analyze</button>
+        <span id="notes-edit-ai-status" class="sub" style="margin-left:6px;color:var(--text-muted);"></span>
+        <button id="notes-edit-jump" class="ghost small" type="button">Jump to text</button>
+        <button id="notes-edit-copy" class="ghost small" type="button">Copy quote</button>
+      </div>
+      <div class="notes-actions">
+        <button id="notes-edit-save" class="primary small" type="button" disabled>Update</button>
+        <button id="notes-edit-delete" class="ghost danger small" type="button">Delete</button>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-weight:600;">All notes</div>
+      <div id="notes-list" class="notes-list"></div>
+    </div>
+  </div>
+</aside>
+<div id="notes-backdrop" class="notes-backdrop"></div>
+
+<!-- AI Notes Assistant Modal -->
+<div id="ai-modal" class="ai-modal" aria-modal="true" role="dialog" aria-label="AI Notes Assistant">
+  <div class="ai-backdrop"></div>
+  <div class="ai-panel">
+    <div class="ai-header">
+      <h3 class="ai-title">AI Notes Assistant</h3>
+      <button id="ai-close" class="ghost small" type="button">Close</button>
+    </div>
+    <div class="ai-body">
+      <div class="ai-row">
+        <div style="font-size:0.9rem;color:var(--text-muted);">Selected text</div>
+        <div id="ai-selected"></div>
+      </div>
+      <div class="ai-row">
+        <div style="font-size:0.9rem;color:var(--text-muted);">Prompt</div>
+        <textarea id="ai-prompt" placeholder="Ask the AI about your selected text…"></textarea>
+        <div id="ai-templates" class="ai-templates">
+          <button class="ghost small" data-template="$selected_text\n----------\nAnalyze and translate it.\nThe answer should be in German language.">Analyze + Translate (DE)</button>
+          <button class="ghost small" data-template="Summarize $selected_text in simple words.">Summarize simply</button>
+          <button class="ghost small" data-template="Explain the grammar and vocabulary in: $selected_text. Keep it concise.">Explain grammar</button>
+        </div>
+      </div>
+      <div class="ai-row">
+        <div class="ai-actions" style="justify-content:flex-start;">
+          <button id="ai-ask" class="primary small" type="button">Ask AI</button>
+          <span id="ai-status" style="color:var(--text-muted);font-size:0.9rem;"></span>
+        </div>
+        <div id="ai-response" aria-live="polite"></div>
+      </div>
+      <div class="ai-actions">
+        <button id="ai-load-note" class="primary small" type="button" disabled>Load note</button>
+        <button id="ai-cancel" class="ghost small" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+  </div>

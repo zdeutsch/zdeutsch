@@ -1,0 +1,2340 @@
+[
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b4"
+    },
+    "teilName": "insel Bali",
+    "tag": "Österreich",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 4,
+        "content": "4 - der sekthersteller hat die pläne, geändert"
+      },
+      {
+        "number": 5,
+        "content": "5 - die löcharbeiten, nicht abgeschlosse"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b5"
+    },
+    "teilName": "Bio Spiegel (Berlin)",
+    "tag": "Grundschule",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b6"
+    },
+    "teilName": "Lufthansa",
+    "tag": "Bilder",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - ein bonner sportverein, sein angebot"
+      },
+      {
+        "number": 3,
+        "content": "3 - die rahmenbedingungen, dringend einer änderung"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b7"
+    },
+    "teilName": "Erdbeben",
+    "tag": "kellner (Jugend Forscher)",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Nach dem erdbeben, bei polizei und feuerwehr"
+      },
+      {
+        "number": 5,
+        "content": "5 - Anfang nächster woche, ozonbelastung zu rechnen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b8"
+    },
+    "teilName": "Bundesländer",
+    "tag": "Bundesländer",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 - .........................................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - .................................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254b9"
+    },
+    "teilName": "die wahlbeteilung",
+    "tag": "insel",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - die wahlbeteilung, nimmt wieder zu"
+      },
+      {
+        "number": 3,
+        "content": "3 - bei der Sportveranstaltung, Neue aufgestellt"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ba"
+    },
+    "teilName": "Frau junges- Frau funk",
+    "tag": "Insekten",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - der öffentliche Nahverkehr, nicht ströngsfrei"
+      },
+      {
+        "number": 4,
+        "content": "4 - Wildes camping, in-und Ausland, zugelassen"
+      },
+      {
+        "number": 5,
+        "content": "5 - Die Temperaturen, in den nächsten tagen an"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254bb"
+    },
+    "teilName": "Fluggesellschaft",
+    "tag": "Fluggesellschaft",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Die Fluggesellschaft, Rostok nicht mehr an oder Kunden der Fluggesellschaft, unzufriedenheit"
+      },
+      {
+        "number": 5,
+        "content": "5 - Das Tiefdruckgebiet Helna, verkehrsproblem verursachen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254bc"
+    },
+    "teilName": "Nicht sicher oder unklar",
+    "tag": "Limon N",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Es ist nicht sicher oder es ist unklar"
+      },
+      {
+        "number": 4,
+        "content": "4 - die produkte von tiptop so gefragt"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254bd"
+    },
+    "tag": "Tanzkurz",
+    "teilName": "Nicht sicher oder unklar",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Es ist nicht sicher oder es ist unklar"
+      },
+      {
+        "number": 4,
+        "content": "4 - die produkte von tiptop so gefragt"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254be"
+    },
+    "tag": "Sport ist gesund 1",
+    "teilName": "50 euro",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - ............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254bf"
+    },
+    "tag": "Sport ist gesund 2",
+    "teilName": "Erdbeeben",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Nach dem erdbeben, bei polizei und feuerwehr"
+      },
+      {
+        "number": 5,
+        "content": "5 - Anfang nächster woche, ozonbelastung zu rechnen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c0"
+    },
+    "tag": "Telefon kinder",
+    "teilName": "der bau",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................................................."
+      },
+      {
+        "number": 3,
+        "content": "3 - ................................................................................"
+      },
+      {
+        "number": 4,
+        "content": "4 - ..............................................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c1"
+    },
+    "tag": "Derogen",
+    "teilName": "Nicht sicher oder unklar",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ............................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c2"
+    },
+    "tag": "Benzin",
+    "teilName": "Erdbeeben",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Nach dem erdbeben , bei polizei und feuerwehr"
+      },
+      {
+        "number": 5,
+        "content": "5 - Anfang nächster woche, ozonbelastung zu rechnen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c3"
+    },
+    "tag": "Fahrschule",
+    "teilName": "Fahrschule",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Bei der fahrschule, internet anmelden"
+      },
+      {
+        "number": 4,
+        "content": "4 - Bei den flug nach, die abflugzeit"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c4"
+    },
+    "tag": "Licht",
+    "teilName": "in den Alpen",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Die fans des Fc neustadt, Manc haft"
+      },
+      {
+        "number": 3,
+        "content": "3 - Erzieherinnen, ein bezahlung"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c5"
+    },
+    "tag": "kaffee",
+    "teilName": "nicht sicher",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..........................................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ................................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c6"
+    },
+    "tag": "(لقاح / البيئة / قطار النوم – Block 1)",
+    "teilName": "Nicht sicher",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..........................................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ..........................................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c7"
+    },
+    "tag": "(Erdbeeren – Block 2)",
+    "teilName": "Erdbeeren",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..........................................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 - ................................................................................"
+      },
+      {
+        "number": 4,
+        "content": "4 - ................................................................................"
+      },
+      {
+        "number": 5,
+        "content": "5 - ................................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c8"
+    },
+    "tag": "(Insel Bali – Block 3)",
+    "teilName": "insel Bali",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 4,
+        "content": "4 - ........................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ..............................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254c9"
+    },
+    "tag": "Deutsch schiff – Block 4",
+    "teilName": "Deutsch schiff",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ein deutsch schiff, Südpool schaden"
+      },
+      {
+        "number": 2,
+        "content": "2 - Die firma brain international, geraten"
+      },
+      {
+        "number": 5,
+        "content": "5 - Nach den bürgermeisterwahlen, CDU"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ca"
+    },
+    "tag": "Bieer konsomen – Block 5",
+    "teilName": "Bieer konsomen",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Deutsche einkommen, vergleich, mittelfeld"
+      },
+      {
+        "number": 4,
+        "content": "4 - wir Gewalt von fußballfans, befürchtet"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254cb"
+    },
+    "tag": "weniger vögel – Block 6",
+    "teilName": "weniger vögel",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - Europaweit gibt es immer weniger vögel"
+      },
+      {
+        "number": 4,
+        "content": "4 - Die Polizei hat auf der autobahn"
+      },
+      {
+        "number": 5,
+        "content": "5 - Bei dem festival, Orten besuchen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254cc"
+    },
+    "tag": "unwetterschaden – Block 7",
+    "teilName": "unwetterschaden",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Wegen unwetterschadn, untergebracht"
+      },
+      {
+        "number": 4,
+        "content": "4 - An 21 Mai der besuch, kostenlos"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254cd"
+    },
+    "tag": "die stadt freidrischberg – Block 8",
+    "teilName": "die stadt freidrischberg",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Die alte brücke, wieder befahrbar"
+      },
+      {
+        "number": 3,
+        "content": "3 - Der wanderer in sicherheit gebrachr"
+      },
+      {
+        "number": 5,
+        "content": "5 - Mann kann auch Gruppenlauf teilnehmen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ce"
+    },
+    "tag": "حلوى - Bonbons – Block 9",
+    "teilName": "leckerein",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1- ........................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ..............................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254cf"
+    },
+    "tag": "Europächen Union – Block 10",
+    "teilName": "Europächen Union",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1- in der Europäschen Union, Arbeitlose"
+      },
+      {
+        "number": 2,
+        "content": "2 - Das bundesarbeitministerium"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d0"
+    },
+    "tag": "Bei den Europawahlen – Block 11",
+    "teilName": "Bei den Europawahlen",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 4,
+        "content": "4 : .............................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d1"
+    },
+    "tag": "Das Schladminger – Block 12",
+    "teilName": "Das Schladminger",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 : .............................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 : .............................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d2"
+    },
+    "tag": "Manche Deutsch – Block 13",
+    "teilName": "Manche Deutsch",
+    "teilNumber": 1,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 : .............................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 : .............................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d3"
+    },
+    "tag": "Die Berufseinstig – Block 14",
+    "teilName": "Die Berufseinstig",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 : ...........................",
+        "correct": true
+      },
+      {
+        "number": 2,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 3,
+        "content": "3 :...................................",
+        "correct": true
+      },
+      {
+        "number": 4,
+        "content": "4 : ..............................",
+        "correct": true
+      },
+      {
+        "number": 5,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 6,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 7,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 8,
+        "content": "8 : ..............................",
+        "correct": true
+      },
+      {
+        "number": 9,
+        "content": "9 : ..............................",
+        "correct": true
+      },
+      {
+        "number": 10,
+        "content": "10 : ..............................",
+        "correct": true
+      }
+    ],
+    "updatedAt": "2025-12-05T13:20:23.951Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d4"
+    },
+    "tag": "Österreich",
+    "teilName": "Roland (spielen)",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - viktoria köln, der verbandsliga spielen"
+      },
+      {
+        "number": 3,
+        "content": "3 - zu beginn dieser saison viktoria köln verlassen"
+      },
+      {
+        "number": 4,
+        "content": "4 - Neue Spieler kommen, jugendmannschaft"
+      },
+      {
+        "number": 7,
+        "content": "7 - Roland wünschmann, miteinander vereinbaren"
+      },
+      {
+        "number": 9,
+        "content": "9 - der vereinsvorstand, wünschmann arbeit"
+      },
+      {
+        "number": 10,
+        "content": "10 - Roland wünschmann, des vereins zufrieden"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d5"
+    },
+    "tag": "Roland (aufsteigen)",
+    "teilName": "Roland (aufsteigen)",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - zu beginn dieser saison viktoria köln verlassen"
+      },
+      {
+        "number": 4,
+        "content": "4 - Neue Spieler kommen, jugendmannschaft"
+      },
+      {
+        "number": 7,
+        "content": "7 - Roland wünschmann, miteinander vereinbaren"
+      },
+      {
+        "number": 9,
+        "content": "9 - der vereinsvorstand, wünschmann arbeit"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d6"
+    },
+    "tag": "Roland (Hohren liga)",
+    "teilName": "Roland (Hohren liga)",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - viktoria köln, in einer höheren liga"
+      },
+      {
+        "number": 3,
+        "content": "3 - die meisten spieler, bei viktoria köln gespielt"
+      },
+      {
+        "number": 5,
+        "content": "5 - die mannschaft von viktoria, neue spieltaktiken ausprobieren"
+      },
+      {
+        "number": 8,
+        "content": "8 - Roland wünschmanns, für denselben verein"
+      },
+      {
+        "number": 9,
+        "content": "9 - Herr wünschmann, sind meistens einer Meinung"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d7"
+    },
+    "tag": "Grundschule",
+    "teilName": "Frau kidder oder Frau Malta",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 - .........................................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - .................................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - .........................................................................."
+      },
+      {
+        "number": 8,
+        "content": "8 - ......................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d8"
+    },
+    "tag": "Bilder",
+    "teilName": "Meron Mabeka",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 4,
+        "content": "4 - .........................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - .........................................................................."
+      },
+      {
+        "number": 9,
+        "content": "9 - .................................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254d9"
+    },
+    "tag": "kellner (Jugend Forscher)",
+    "teilName": "Tu, zu dresden",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 -...................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ............................................................."
+      },
+      {
+        "number": 7,
+        "content": "7 - ............................................................."
+      },
+      {
+        "number": 8,
+        "content": "8 - ............................................................."
+      },
+      {
+        "number": 10,
+        "content": "10 - ............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254da"
+    },
+    "tag": "insel",
+    "teilName": "Julia",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - julia hatte, keine interesse"
+      },
+      {
+        "number": 3,
+        "content": "3 - Frankreich, bei Au-Pairs nicht gefragt"
+      },
+      {
+        "number": 4,
+        "content": "4 - Julia hatte nachgedacht, in die schweiz zu fahren"
+      },
+      {
+        "number": 5,
+        "content": "5 - Julia empfiehlt, einen vertrag zu schließen"
+      },
+      {
+        "number": 8,
+        "content": "8 - Julia verbrachte, auch zeit in Paris"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254db"
+    },
+    "tag": "Insekten",
+    "teilName": "Professor Steiner",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Steiner vermittelt, theoretisches wissen oder Steiner möchte der Praxis anwender können"
+      },
+      {
+        "number": 9,
+        "content": "9 - Steiner ist es wichtig, Neutral zu bleiben"
+      },
+      {
+        "number": 10,
+        "content": "10 - Steiner rät abiturienten dazu"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254dc"
+    },
+    "tag": "Mallorca",
+    "teilName": "Mallorca",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - Einige in mallorca haben begonnen, Sprache zu wehren"
+      },
+      {
+        "number": 4,
+        "content": "4 - in mallorca, umweltbelastungen oder für den einbruch des tourismus auf mallorca"
+      },
+      {
+        "number": 7,
+        "content": "7 - Bulgarien hat sich positiv entwickelt"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254dd"
+    },
+    "tag": "Limon N",
+    "teilName": "Carina",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Der berufseinstieg, nicht leicht"
+      },
+      {
+        "number": 3,
+        "content": "3 - Carina hat der Agentur, film oder carina hat sich der agentur mit videofilm"
+      },
+      {
+        "number": 4,
+        "content": "4 - Carina musste, stark verändern oder carina hat film ein döit gemaht"
+      },
+      {
+        "number": 8,
+        "content": "8 - Carina finde wechsel nicht leicht"
+      },
+      {
+        "number": 9,
+        "content": "9 - bei dialogen darf etwas erfinden"
+      },
+      {
+        "number": 10,
+        "content": "10 - Carina empfiehlt, filmen anzusehen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254de"
+    },
+    "tag": "Tanzkurz",
+    "teilName": "Julia",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Julia hatte, keine interesse"
+      },
+      {
+        "number": 3,
+        "content": "3 - Frankreich, bei Au-Pairs nicht gefragt"
+      },
+      {
+        "number": 4,
+        "content": "4 - Julia hatte nachgedacht, in die schweiz zu fahren"
+      },
+      {
+        "number": 5,
+        "content": "5 - Julia empfiehlt, einen vertrag zu schließen"
+      },
+      {
+        "number": 8,
+        "content": "8 - julia verbrachte, auch zeit in Paris"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254df"
+    },
+    "tag": "Carina",
+    "teilName": "Carina",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Der berufseinstieg, nicht leicht"
+      },
+      {
+        "number": 3,
+        "content": "3 - Carina hat der Agentur, film oder carina hat sich der agentur mit videofilm"
+      },
+      {
+        "number": 4,
+        "content": "4 - Carina musste, stark verändern oder carina hat film ein döit gemaht"
+      },
+      {
+        "number": 8,
+        "content": "8 - Carina finde wechsel nicht leicht"
+      },
+      {
+        "number": 9,
+        "content": "9 - bei dialogen darf etwas erfinden"
+      },
+      {
+        "number": 10,
+        "content": "10 - Carina empfiehlt, filmen anzusehen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e0"
+    },
+    "tag": "Sport ist gesund 1",
+    "teilName": "Roland",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e1"
+    },
+    "tag": "Sport ist gesund 2",
+    "teilName": "Herr Steiner",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1- Professor Steiner, ist heute gar nicht mehr nervös"
+      },
+      {
+        "number": 2,
+        "content": "2- Steiner vermittelt, thoretisches wissen"
+      },
+      {
+        "number": 4,
+        "content": "4- Journalisten sollten heute, Spezialisiert sein"
+      },
+      {
+        "number": 9,
+        "content": "9- Steiner ist es wichtig, Neutral zu bleiben"
+      },
+      {
+        "number": 10,
+        "content": "10 - Steiner rät abiturienten dazu"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e2"
+    },
+    "tag": "Telefon kinder",
+    "teilName": "Beim wettkampf",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1- .........................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 - .............................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ............................................."
+      },
+      {
+        "number": 6,
+        "content": "6 - ............................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e3"
+    },
+    "tag": "Derogen",
+    "teilName": "Nadine",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2- Sie hatt vor der weltreise und bedenken"
+      },
+      {
+        "number": 3,
+        "content": "3 - Die journalisten reise auch gefolgen"
+      },
+      {
+        "number": 5,
+        "content": "5 - ihre freunds waren ihre vorhaben"
+      },
+      {
+        "number": 6,
+        "content": "6 - in tadschikisten, motorradfahrer begleiten"
+      },
+      {
+        "number": 8,
+        "content": "8 - Nadine wagner, gelegentlich gearbeitet"
+      },
+      {
+        "number": 10,
+        "content": "10 - Nach ihrer rückkehr, Neue arbeit"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e4"
+    },
+    "tag": "Benzin",
+    "teilName": "Roland",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e5"
+    },
+    "tag": "Licht",
+    "teilName": "Herr Gasser",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - Die bergbauern können, Prödukte leben"
+      },
+      {
+        "number": 4,
+        "content": "4 - Die journalisten reise auch gefolgen"
+      },
+      {
+        "number": 8,
+        "content": "8 - für Frau janke, Anstrengung sehr hoch"
+      },
+      {
+        "number": 9,
+        "content": "9 - Almhelferinnen und helfer, übernehmen"
+      },
+      {
+        "number": 10,
+        "content": "10 - über die dauer, aufenhalt, frei entscheiden"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e6"
+    },
+    "tag": "kaffee",
+    "teilName": "Frau schuhmancher",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..............................................."
+      },
+      {
+        "number": 2,
+        "content": "2 - ..............................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ..............................................."
+      },
+      {
+        "number": 6,
+        "content": "6- ..............................................."
+      },
+      {
+        "number": 8,
+        "content": "8- ..............................................."
+      },
+      {
+        "number": 10,
+        "content": "10 - ..............................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e7"
+    },
+    "tag": "Block (لقاح / البيئة / قطار النوم – 1)",
+    "teilName": "Suza Autorin Hotop",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Für die Autorin Suza Hotop zugleich"
+      },
+      {
+        "number": 3,
+        "content": "3 - Am Anfang, Geschichte veröffentlich"
+      },
+      {
+        "number": 4,
+        "content": "4 - Zuerst Suza Geschichte ins internet"
+      },
+      {
+        "number": 8,
+        "content": "8 - Suza folgt beim schreiben ...."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e8"
+    },
+    "tag": "Erdbeeren – Block 2",
+    "teilName": "lisa eisenberg",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - lisa eisenberg, in den usa"
+      },
+      {
+        "number": 2,
+        "content": "2 - in der mittagzeit, Großteil umsatzes"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254e9"
+    },
+    "tag": "insel Bali – Block 3",
+    "teilName": "Markus",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Markus wollte, mitarbeiten team"
+      },
+      {
+        "number": 4,
+        "content": "4 - Markus befindet, Ausbildung beruf"
+      },
+      {
+        "number": 5,
+        "content": "5 - Das studium in bonn, vorbereitet"
+      },
+      {
+        "number": 8,
+        "content": "8 - Markus bereiwort, usa festlegen müssem"
+      },
+      {
+        "number": 10,
+        "content": "10 - für markus ist vorteil, deutschland"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ea"
+    },
+    "tag": "leckerein / Bonbons – Block 4",
+    "teilName": "Markus",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Markus wollte, mitarbeiten team"
+      },
+      {
+        "number": 4,
+        "content": "4 - Markus befindet, Ausbildung beruf"
+      },
+      {
+        "number": 5,
+        "content": "5 - Das studium in bonn, vorbereitet"
+      },
+      {
+        "number": 8,
+        "content": "8 - Markus bereiwort, usa festlegen müssem"
+      },
+      {
+        "number": 10,
+        "content": "10 - für markus ist vorteil, deutschland"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254eb"
+    },
+    "tag": "Herr karimov – Block 5",
+    "teilName": "Herr karimov",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Die Mitglieder ihre hilfe guthaben"
+      },
+      {
+        "number": 5,
+        "content": "5 - Manchmal erwarten, für ihre Arbeit"
+      },
+      {
+        "number": 8,
+        "content": "8 - Karimov nicht so gerne büroarbeit"
+      },
+      {
+        "number": 9,
+        "content": "9 - wer sich bei dir, Persönlich vorstellen"
+      },
+      {
+        "number": 10,
+        "content": "10 - Karimov brauchte einen chauffeur"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ec"
+    },
+    "tag": "in dem Restaurant – Block 6",
+    "teilName": "in dem Restaurant",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - In den Restaurant, wasserschaden"
+      },
+      {
+        "number": 3,
+        "content": "3 - Im haus der Großeletern, kinder"
+      },
+      {
+        "number": 4,
+        "content": "4 - der stress störte, der ausbildung nicht"
+      },
+      {
+        "number": 8,
+        "content": "8 - Anton laurito, grundsätzlich ab"
+      },
+      {
+        "number": 9,
+        "content": "9 - der koch hat thema wettbewerb"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ed"
+    },
+    "tag": "Frau schenk – Block 7",
+    "teilName": "Frau schenk",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Frau schenk hat kurz haar"
+      },
+      {
+        "number": 4,
+        "content": "4 - der interview, keine ernnierungen"
+      },
+      {
+        "number": 7,
+        "content": "7 - Das Angebot an Speisen, der Gäste"
+      },
+      {
+        "number": 8,
+        "content": "8 - Schüler aus ländlichen regionen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ee"
+    },
+    "tag": "Die zahl der deutschen – Block 8",
+    "teilName": "Die zahl der deutschen",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 : .............................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ef"
+    },
+    "tag": "Herr Scherer – Block 9",
+    "teilName": "Herr Scherer",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 : .............................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 : .............................................................."
+      },
+      {
+        "number": 10,
+        "content": "10 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f0"
+    },
+    "tag": "Franz Schumacher – Block 10",
+    "teilName": "Franz Schumacher",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 : .............................................................."
+      },
+      {
+        "number": 2,
+        "content": "2 : .............................................................."
+      },
+      {
+        "number": 6,
+        "content": "6 : .............................................................."
+      },
+      {
+        "number": 8,
+        "content": "8 : .............................................................."
+      },
+      {
+        "number": 10,
+        "content": "10 : .............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f1"
+    },
+    "tag": "Die Deutsche machen – Block 11",
+    "teilName": "Die Deutsche machen",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.289Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 : ..........................."
+      },
+      {
+        "number": 4,
+        "content": "4 :..................................."
+      },
+      {
+        "number": 5,
+        "content": "5 : .............................."
+      },
+      {
+        "number": 9,
+        "content": "9 : ............................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f2"
+    },
+    "tag": "Zu beginn – Block 12",
+    "teilName": "Zu beginn",
+    "teilNumber": 2,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 : ..........................."
+      },
+      {
+        "number": 2,
+        "content": "2 :..................................."
+      },
+      {
+        "number": 3,
+        "content": "3 : .............................."
+      },
+      {
+        "number": 4,
+        "content": "4 : ................................"
+      },
+      {
+        "number": 6,
+        "content": "6: .............................."
+      },
+      {
+        "number": 8,
+        "content": "8 : ................................"
+      },
+      {
+        "number": 9,
+        "content": "9: .............................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.289Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f3"
+    },
+    "tag": "Hören b2 – Anfang",
+    "teilName": "delikatessen-schloss mirabelle",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - bis zum start, handy telefonieren"
+      },
+      {
+        "number": 3,
+        "content": "3 - Vorführungen mit tieren, nicht geboten"
+      },
+      {
+        "number": 4,
+        "content": "4 - Am wochenende können, schloss mirabell hören"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f4"
+    },
+    "tag": "Grundschule",
+    "teilName": "für konzert radio",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 -...................................................."
+      },
+      {
+        "number": 3,
+        "content": "3 - ............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f5"
+    },
+    "tag": "Bilder",
+    "teilName": "für ein konzert",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - Heute das busfahren, stadt umsonst"
+      },
+      {
+        "number": 4,
+        "content": "4 - das busunternehmen, fernbusverbindungen an"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f7"
+    },
+    "tag": "kellner (Jugend Forscher)",
+    "teilName": "im Raum C23",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - ............................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f8"
+    },
+    "tag": "insel",
+    "teilName": "Demonstration",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - in der kommenden saison, Mahler aufgeführt"
+      },
+      {
+        "number": 5,
+        "content": "5 - Für die vermittlungen, per E-mail keine Gebühren"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254f9"
+    },
+    "tag": "Insekten",
+    "teilName": "Blutspenden",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ihre Tochter kann, sportarten testen"
+      },
+      {
+        "number": 3,
+        "content": "3- Heute müssen, den bus ausweichen"
+      },
+      {
+        "number": 4,
+        "content": "4 - sie müssen bad früher verlassen"
+      },
+      {
+        "number": 5,
+        "content": "5 - für termin müssen anrufen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254fa"
+    },
+    "tag": "Fahrschule",
+    "teilName": "Fahrschule",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Bei der fahrschule, internet anmelden"
+      },
+      {
+        "number": 4,
+        "content": "4 - Bei den flug nach, die abflugzeit"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254fb"
+    },
+    "tag": "internet prüfen (2)",
+    "teilName": "internet prüfen",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1- sie können im internet prüfen, unterweds ist"
+      },
+      {
+        "number": 5,
+        "content": "5 - wer ein wichtiges, andere nummer wählen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254fc"
+    },
+    "tag": "Limon N",
+    "teilName": "Deutsch Telefon",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Bei deutschen telefon KG, dieses unternehmens"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254fd"
+    },
+    "tag": "Tanzkurz",
+    "teilName": "die demonstration",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - in der kommenden saison, von mahler aufgeführt"
+      },
+      {
+        "number": 5,
+        "content": "5 - für die vermittlung, E-mail, keine gebühren"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254fe"
+    },
+    "tag": "Tag des Ehremants",
+    "teilName": "Tag des Ehremants",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Mann kann tag des Ehremants mithilfen"
+      },
+      {
+        "number": 5,
+        "content": "5 - wenn man das training ausprobieren mochte"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf254ff"
+    },
+    "tag": "Sport ist gesund 1",
+    "teilName": "Reittunier",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - besuchends reittunier, Parkplatze"
+      },
+      {
+        "number": 3,
+        "content": "3 - Bei der berliner museumnacht, erreichen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25500"
+    },
+    "tag": "Sport ist gesund 2",
+    "teilName": "Buchhandlung",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - sie hören, einer buchhandlug"
+      },
+      {
+        "number": 3,
+        "content": "3 - ..............................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - inertnationale künster, plätzen in essens auf"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25501"
+    },
+    "tag": "Telefon kinder",
+    "teilName": "Training auffahrten",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - ..............................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ......................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25502"
+    },
+    "tag": "Derogen",
+    "teilName": "Deutsch telefon",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25503"
+    },
+    "tag": "Derogen (Internet Prüfen)",
+    "teilName": "Internet Prüfen",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Sie können in internet prüfen"
+      },
+      {
+        "number": 5,
+        "content": "5 - wer ein wichtiges anliegen, Nummer wählen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25504"
+    },
+    "tag": "Licht",
+    "teilName": "süden Deutschland",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - in süden deutschland, schnee, regnen"
+      },
+      {
+        "number": 5,
+        "content": "5 - ihr bekannter telefonisch erreichen oder Historische elektriche gewohnt"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25505"
+    },
+    "tag": "kaffee",
+    "teilName": "Geschäftsreisende",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..............................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ......................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25506"
+    },
+    "tag": "Block (Erdbeeren / Frankfurt / Bali / Tag des Ehremants / im August – Page 9)",
+    "teilName": "frankfurt",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ..............................................."
+      },
+      {
+        "number": 3,
+        "content": "3 - ..............................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25507"
+    },
+    "tag": "Block (Erdbeeren / Frankfurt / Bali / Tag des Ehremants / im August – Page 9)",
+    "teilName": "Tag des Ehremants",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ................................................................................................................"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25508"
+    },
+    "tag": "Block (Erdbeeren / Frankfurt / Bali / Tag des Ehremants / im August – Page 9)",
+    "teilName": "im August",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - in weniger dringlichen nachrit hinterlassen"
+      },
+      {
+        "number": 4,
+        "content": "4- Am mitwoch, donnerstag"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25509"
+    },
+    "tag": "Bonbons / Fachkart – Page 10",
+    "teilName": "Fachkart, frankfurt",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - .........................................................."
+      },
+      {
+        "number": 3,
+        "content": "3 - ..........................................................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ..........................................................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550a"
+    },
+    "tag": "Am wochenanfang – Page 11–12",
+    "teilName": "Am wochenanfang",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Am wochenanfang, freiren vermeiden"
+      },
+      {
+        "number": 2,
+        "content": "2 - Abends ist das Risko, größten"
+      },
+      {
+        "number": 3,
+        "content": "3 - Man kann Orten Musik hören"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550b"
+    },
+    "tag": "fundbüro – Page 11–12",
+    "teilName": "fundbüro",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - sie müssen beim fundbüro nachfragen"
+      },
+      {
+        "number": 2,
+        "content": "2 - die wettervorhersage, hören"
+      },
+      {
+        "number": 5,
+        "content": "5 - während der Sperrung, benutzen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550c"
+    },
+    "tag": "Ausgang 26 – Page 11–12",
+    "teilName": "Ausgang 26",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - sie wollen zum Ausgange 26",
+        "correct": true
+      },
+      {
+        "number": 2,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 3,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 4,
+        "content": "4",
+        "correct": true
+      },
+      {
+        "number": 5,
+        "content": "5",
+        "correct": true
+      }
+    ],
+    "updatedAt": "2025-12-05T16:42:35.936Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550d"
+    },
+    "tag": "Musikfestival – Page 11–12",
+    "teilName": "Musikfestival",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - während des Musikfestival sound frankfurt",
+        "correct": true
+      },
+      {
+        "number": 2,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 3,
+        "content": "3 - Am wochenende, Namburg",
+        "correct": true
+      },
+      {
+        "number": 4,
+        "content": "",
+        "correct": false
+      },
+      {
+        "number": 5,
+        "content": "",
+        "correct": false
+      }
+    ],
+    "updatedAt": "2025-12-05T16:50:20.761Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550e"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Am wochenanfang",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - Am wochenanfang, freiren vermeiden"
+      },
+      {
+        "number": 2,
+        "content": "2 - Abends ist das Risko, größten"
+      },
+      {
+        "number": 3,
+        "content": "3 - Man kann Orten Musik hören"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf2550f"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "fundbüro",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - sie müssen beim fundbüro nachfragen"
+      },
+      {
+        "number": 2,
+        "content": "2 - die wettervorhersage, hören"
+      },
+      {
+        "number": 5,
+        "content": "5 - während der Sperrung, benutzen"
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25512"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Nach einer Großdemonstration",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 2,
+        "content": "2 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25513"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Sie hörenden Anrufbeantworter",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ....................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25514"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Das Geschäft",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ....................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25515"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Schlagminger Ski",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 1,
+        "content": "1 - ....................................................."
+      },
+      {
+        "number": 5,
+        "content": "5 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  },
+  {
+    "_id": {
+      "$oid": "69329e3fe6590dec1cf25516"
+    },
+    "tag": "Weitere TEIL 3 – (Hören alt – Page 12)",
+    "teilName": "Neu Autobahn",
+    "teilNumber": 3,
+    "createdAt": "2025-12-05T08:56:31.290Z",
+    "items": [
+      {
+        "number": 3,
+        "content": "3 - ....................................................."
+      },
+      {
+        "number": 4,
+        "content": "4 - ....................................................."
+      }
+    ],
+    "updatedAt": "2025-12-05T08:56:31.290Z"
+  }
+]

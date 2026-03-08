@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Zertify Exam Extractor",
+  "version": "0.1.0",
+  "description": "Extract Zertify exam data to JSON.",
+  "permissions": ["activeTab", "downloads", "scripting"],
+  "host_permissions": ["https://www.zertify.app/*", "file:///*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Extract exam"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zertify.app/*", "file:///*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}

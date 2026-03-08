@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Insight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+  <link rel="stylesheet" href="./app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          T
+        </div>
+        <div>
+          <h1>Text Insight</h1>
+          <p>Read, analyze, and learn from text.</p>
+        </div>
+      </div>
+
+      <div class="sidebar-controls">
+        <button id="new-folder-btn" class="primary small full">+ New Folder</button>
+      </div>
+
+      <div class="sidebar-scroll">
+        <div id="folder-navigation" class="folder-navigation"></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="layout-header">
+        <div class="layout-title">
+          <h2 id="view-title">All audio</h2>
+          <p id="view-subtitle">Loading library…</p>
+        </div>
+        <div class="header-actions">
+          <button id="theme-toggle-btn" class="ghost small" type="button">Theme: Dark</button>
+          <button id="toggle-sidebar-btn" class="ghost small" type="button">Hide Sidebar</button>
+          <button id="fullscreen-toggle-btn" class="ghost small" type="button">Fullscreen</button>
+          <div class="zoom-controls" title="Adjust text size">
+            <button id="zoom-out-btn" class="ghost small" type="button">A−</button>
+            <span id="zoom-level" class="zoom-level">100%</span>
+            <button id="zoom-in-btn" class="ghost small" type="button">A+</button>
+          </div>
+          <button id="copy-path-btn" class="ghost" disabled>Copy Path</button>
+          <button id="move-folder-btn" class="ghost" disabled>Move Folder</button>
+          <button id="delete-folder-btn" class="ghost danger" disabled>Delete Folder</button>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="card-header">
+          <h3>Generate New Audio</h3>
+          <span id="generator-target">Saving to: All audio</span>
+        </div>
+        <form id="text-to-speech-form">
+          <label>
+            Audio Name <span style="color: var(--text-muted); font-weight: 400;">(optional)</span>
+            <input id="audio-name" name="title" type="text" maxlength="120"
+              placeholder="Display name for this audio clip">
+          </label>
+          <label>
+            Text
+            <textarea id="text" name="text" required
+              placeholder="Type or paste the message you want to voice"></textarea>
+          </label>
+          <div class="form-grid">
+            <label>
+              Language
+              <select id="language" name="language" required>
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+              </select>
+            </label>
+            <label>
+              Voice
+              <select id="voice" name="voice" required>
+                <option value="alloy">Alloy</option>
+                <option value="ash">Ash</option>
+                <option value="ballad">Ballad</option>
+                <option value="coral">Coral</option>
+                <option value="echo">Echo</option>
+                <option value="fable">Fable</option>
+                <option value="nova">Nova</option>
+                <option value="onyx">Onyx</option>
+                <option value="sage">Sage</option>
+                <option value="shimmer">Shimmer</option>
+              </select>
+            </label>
+            <label>
+              Folder
+              <select id="target-folder" name="folder">
+                <option value="">Root (unsorted)</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Instructions <span style="color: var(--text-muted); font-weight: 400;">(optional)</span>
+            <input id="instructions" name="instructions" type="text"
+              placeholder="E.g. Cheerful, whispering, storytelling">
+          </label>
+          <button type="submit" id="generate-button" class="primary">Generate Audio</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h3>Library</h3>
+          <span id="list-count">Loading…</span>
+        </div>
+        <div id="bulk-actions" class="bulk-actions hidden">
+          <span id="bulk-count" class="bulk-actions__count"></span>
+          <div class="bulk-actions__buttons">
+            <button id="bulk-move" class="ghost small">Move Selected</button>
+            <button id="bulk-delete" class="ghost danger small">Delete Selected</button>
+            <button id="bulk-clear" class="ghost small">Clear Selection</button>
+          </div>
+        </div>
+        <div id="audio-list" class="audio-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <div id="player-bar" class="player-bar hidden">
+    <div class="player-bar__info">
+      <span class="player-bar__label">Now Playing</span>
+      <div class="player-bar__title" id="player-title">No audio selected</div>
+      <div class="player-bar__meta" id="player-context"></div>
+    </div>
+    <div class="player-bar__controls">
+      <button id="player-rewind" class="player-seek player-seek--back" type="button" title="Back 10s" aria-label="Back 10 seconds">
+        <span class="seek-arrow">
+          <<
+        </span>
+      </button>
+      <button id="player-toggle" class="player-bar__button" type="button" aria-label="Play or pause">▶</button>
+      <button id="player-forward" class="player-seek player-seek--fwd" type="button" title="Forward 10s" aria-label="Forward 10 seconds">
+        <span class="seek-arrow">
+          >>
+        </span>
+      </button>
+      <div class="player-bar__timeline">
+        <span id="player-current" class="player-bar__time">0:00</span>
+        <input type="range" id="player-progress" min="0" max="0" step="0.1" value="0">
+        <span id="player-duration" class="player-bar__time">0:00</span>
+      </div>
+      <div class="player-bar__speed">
+        <select id="player-speed" title="Playback speed">
+          <option value="0.5">0.5×</option>
+          <option value="0.75">0.75×</option>
+          <option value="1" selected>1×</option>
+          <option value="1.25">1.25×</option>
+          <option value="1.5">1.5×</option>
+          <option value="1.75">1.75×</option>
+          <option value="2">2×</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating audio navigator -->
+  <div id="floating-menu" class="floating-menu" aria-label="Audio navigator">
+    <button id="floating-toggle" class="floating-toggle" type="button">Audios ▾</button>
+    <div id="floating-panel" class="floating-panel">
+      <div class="floating-panel-header">
+        <span>Audios</span>
+        <span id="floating-count" class="badge">0</span>
+      </div>
+      <div id="floating-audio-list" class="floating-audio-list"></div>
+    </div>
+  </div>
+
+  <!-- Notes Sidebar -->
+  <aside id="notes-sidebar" class="notes-sidebar" aria-label="Notes">
+    <div class="notes-sidebar__header">
+      <div class="notes-sidebar__controls">
+        <h3 class="notes-sidebar__title">Notes</h3>
+        <button id="notes-close-btn bg-danger" class="ghost small" type="button">x</button>
+      </div>
+
+      <hr>
+
+      <div class="notes-sidebar__controls">
+        <div class="notes-color" title="Highlight color and TTS language">
+          <input id="notes-color-picker" type="color" value="#FDE047" aria-label="Highlight color">
+          <div class="color-swatches" aria-label="Quick colors">
+            <button class="color-swatch" data-swatch="#fde047" style="background:#fde047" aria-label="Amber"></button>
+            <button class="color-swatch" data-swatch="#fda4af" style="background:#fda4af" aria-label="Rose"></button>
+            <button class="color-swatch" data-swatch="#86efac" style="background:#86efac" aria-label="Green"></button>
+            <button class="color-swatch" data-swatch="#93c5fd" style="background:#93c5fd" aria-label="Sky"></button>
+            <button class="color-swatch" data-swatch="#a78bfa" style="background:#a78bfa" aria-label="Violet"></button>
+            <button class="color-swatch" data-swatch="#fbbf24" style="background:#fbbf24"
+              aria-label="Amber dark"></button>
+          </div>
+          
+        </div>
+
+        <select id="notes-tooltip-size" title="Tooltip size">
+          <option value="12">Tooltip: 12px</option>
+          <option value="14" selected>Tooltip: 14px</option>
+          <option value="16">Tooltip: 16px</option>
+          <option value="18">Tooltip: 18px</option>
+          <option value="20">Tooltip: 20px</option>
+          <option value="22">Tooltip: 22px</option>
+        </select>
+
+        <select id="notes-tts-lang" title="Default TTS language"
+          style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+          <option value="auto" selected>TTS: Auto</option>
+          <option value="en-US">English (US)</option>
+          <option value="en-GB">English (UK)</option>
+          <option value="de-DE">German</option>
+          <option value="fr-FR">French</option>
+          <option value="es-ES">Spanish</option>
+          <option value="ar-SA">Arabic</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <div class="notes-sidebar__controls">
+        <div class="d-flex align-items-center">
+          <label class="switch" title="Show/Hide notes">
+            <input id="notes-visibility-toggle" type="checkbox">
+            <span class="switch-track"></span>
+            <span class="switch-thumb"></span>
+          </label>
+          <span class="d-flex" style="font-size:0.9rem;">Show notes</span>
+        </div>
+        <button id="ai-assist-open" class="ghost small" type="button">AI Assist</button>
+      </div>
+
+      <hr>
+
+      <div id="notes-context" style="font-size:0.85rem;color:var(--text-muted);"></div>
+    </div>
+
+    <div class="notes-sidebar__body">
+      <div class="notes-tools">
+        <input id="notes-search" type="search" placeholder="Search notes…" aria-label="Search notes">
+        <select id="notes-sort" aria-label="Sort notes">
+          <option value="new">Newest</option>
+          <option value="old">Oldest</option>
+        </select>
+      </div>
+      <div id="notes-create" class="notes-form" style="display:none;">
+        <div style="font-size:0.9rem;color:var(--text-muted);">Selected text</div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div id="notes-create-quote" class="note-item__quote" style="flex:1 1 auto;"></div>
+          <button id="notes-create-speak" class="ghost small" type="button" title="Speak selected text">Speak</button>
+        </div>
+        <label>
+          <span style="color:var(--text-muted);font-size:0.9rem;">Your note</span>
+          <textarea id="notes-create-text" rows="3" placeholder="Add a note…" style="direction: rtl; text-align: right;"></textarea>
+        </label>
+        <div class="notes-row">
+          <div class="field">
+            <span class="notes-label">Direction</span>
+            <select id="notes-create-dir" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+              <option value="auto">Auto</option>
+              <option value="ltr">LTR</option>
+              <option value="rtl" selected>RTL</option>
+            </select>
+          </div>
+          <div class="field">
+            <span class="notes-label">AI language</span>
+            <select id="notes-create-ai-lang" title="AI language" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+              <option value="ar" selected>Arabic</option>
+              <option value="en">English</option>
+              <option value="de">German</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="it">Italian</option>
+              <option value="pt">Portuguese</option>
+            </select>
+            <button id="notes-create-ai" class="ghost small" type="button">AI Analyze</button>
+          </div>
+        </div>
+        <div class="notes-actions">
+          <button id="notes-create-save" class="primary small" type="button" disabled>Save</button>
+          <button id="notes-create-cancel" class="ghost small" type="button">Cancel</button>
+        </div>
+      </div>
+
+      <div id="notes-edit" class="notes-form" style="display:none;">
+        <div style="font-size:0.9rem;color:var(--text-muted);">Quoted</div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div id="notes-edit-quote" class="note-item__quote" style="flex:1 1 auto;"></div>
+          <button id="notes-edit-speak-quote" class="ghost small" type="button" title="Speak quoted text">Speak</button>
+        </div>
+        <label>
+          <span style="color:var(--text-muted);font-size:0.9rem;">Note</span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <textarea id="notes-edit-text" rows="3" style="flex:1 1 auto;"></textarea>
+            <button id="notes-edit-speak-text" class="ghost small" type="button" title="Speak note text">Speak</button>
+          </div>
+        </label>
+        <div class="notes-inline">
+          <div class="notes-color" title="Highlight color">
+            <span class="notes-label">Color</span>
+            <input id="notes-edit-color" type="color" value="#FDE047" aria-label="Note color">
+            <div id="notes-edit-swatches" class="color-swatches" aria-label="Quick colors">
+              <button class="color-swatch" data-swatch="#fde047" style="background:#fde047" aria-label="Amber"></button>
+              <button class="color-swatch" data-swatch="#fda4af" style="background:#fda4af" aria-label="Rose"></button>
+              <button class="color-swatch" data-swatch="#86efac" style="background:#86efac" aria-label="Green"></button>
+              <button class="color-swatch" data-swatch="#93c5fd" style="background:#93c5fd" aria-label="Sky"></button>
+              <button class="color-swatch" data-swatch="#a78bfa" style="background:#a78bfa"
+                aria-label="Violet"></button>
+              <button class="color-swatch" data-swatch="#fbbf24" style="background:#fbbf24"
+                aria-label="Amber dark"></button>
+            </div>
+          </div>
+          <div class="notes-inline-item">
+            <span class="notes-label">Direction</span>
+            <select id="notes-edit-dir"
+              style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+              <option value="auto">Auto</option>
+              <option value="ltr">LTR</option>
+              <option value="rtl">RTL</option>
+            </select>
+          </div>
+          <label class="notes-inline-item">
+            <input id="notes-edit-hidden" type="checkbox">
+            <span class="notes-label">Hide highlight</span>
+          </label>
+        </div>
+        <div class="notes-row">
+          <select id="notes-ai-lang" title="AI language" style="border:1px solid var(--border);background:var(--input-bg);color:var(--text);border-radius:10px;padding:6px 10px;">
+            <option value="ar" selected>Arabic</option>
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="it">Italian</option>
+            <option value="pt">Portuguese</option>
+          </select>
+          <button id="notes-edit-ai" class="ghost small" type="button">AI Analyze</button>
+          <button id="notes-edit-jump" class="ghost small" type="button">Jump to text</button>
+          <button id="notes-edit-copy" class="ghost small" type="button">Copy quote</button>
+        </div>
+        <div class="notes-actions">
+          <button id="notes-edit-save" class="primary small" type="button" disabled>Update</button>
+          <button id="notes-edit-delete" class="ghost danger small" type="button">Delete</button>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-weight:600;">All notes</div>
+        <div id="notes-list" class="notes-list"></div>
+      </div>
+    </div>
+  </aside>
+  <div id="notes-backdrop" class="notes-backdrop"></div>
+
+  <!-- AI Notes Assistant Modal -->
+  <div id="ai-modal" class="ai-modal" aria-modal="true" role="dialog" aria-label="AI Notes Assistant">
+    <div class="ai-backdrop"></div>
+    <div class="ai-panel">
+      <div class="ai-header">
+        <h3 class="ai-title">AI Notes Assistant</h3>
+        <button id="ai-close" class="ghost small" type="button">Close</button>
+      </div>
+      <div class="ai-body">
+        <div class="ai-row">
+          <div style="font-size:0.9rem;color:var(--text-muted);">Selected text</div>
+          <div id="ai-selected"></div>
+        </div>
+        <div class="ai-row">
+          <div style="font-size:0.9rem;color:var(--text-muted);">Prompt</div>
+          <textarea id="ai-prompt" placeholder="Ask the AI about your selected text…"></textarea>
+          <div id="ai-templates" class="ai-templates">
+            <button class="ghost small"
+              data-template="$selected_text\n----------\nAnalyze and translate it.\nthe answer should be in arabic language.">Analyze
+              + Translate (AR)</button>
+            <button class="ghost small" data-template="Summarize $selected_text in simple words.">Summarize
+              simply</button>
+            <button class="ghost small"
+              data-template="Explain the grammar and vocabulary in: $selected_text. Keep it concise.">Explain
+              grammar</button>
+            <button class="ghost small"
+              data-template="Create 3 Q&A pairs based on $selected_text (question and short answer).">Make Q&A</button>
+          </div>
+        </div>
+        <div class="ai-row">
+          <div class="ai-actions" style="justify-content:flex-start;">
+            <button id="ai-ask" class="primary small" type="button">Ask AI</button>
+            <span id="ai-status" style="color:var(--text-muted);font-size:0.9rem;"></span>
+          </div>
+          <div id="ai-response" aria-live="polite"></div>
+        </div>
+        <div class="ai-actions">
+          <button id="ai-load-note" class="primary small" type="button" disabled>Load note</button>
+          <button id="ai-cancel" class="ghost small" type="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rough Notation (annotate.js) -->
+  <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Tippy.js (tooltips) -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/scripts/services.js"></script>
+  
+  <script src="./app.js" defer></script>
+
+</body>
+
+</html>
