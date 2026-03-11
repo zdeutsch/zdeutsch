@@ -13,6 +13,7 @@
   const fontScaleInput = document.getElementById("font-scale");
   const asideWidthInput = document.getElementById("aside-width");
   const defaultModuleInput = document.getElementById("default-module");
+  const showMeinLangAdInput = document.getElementById("show-meinlang-ad");
   const applyTableSearch = createTableSearch({
     inputEl: modulesSearchInput,
     tbodyEl: modulesBody,
@@ -119,6 +120,7 @@
     fontScaleInput.value = Number(config.fontScale || 1);
     asideWidthInput.value = config.asideWidth || "40%";
     defaultModuleInput.value = config.defaultModule || "";
+    showMeinLangAdInput.checked = config.showMeinLangAd !== false;
 
     modules = Array.isArray(config.modules)
       ? config.modules.map((module) => ({
@@ -143,6 +145,7 @@
       fontScale: Number(fontScaleInput.value || 1),
       asideWidth: String(asideWidthInput.value || "40%").trim(),
       defaultModule: String(defaultModuleInput.value || "").trim(),
+      showMeinLangAd: Boolean(showMeinLangAdInput.checked),
       modules: modules.map((module) => ({
         name: String(module.name || "").trim(),
         dataFile: String(module.dataFile || "").trim(),
