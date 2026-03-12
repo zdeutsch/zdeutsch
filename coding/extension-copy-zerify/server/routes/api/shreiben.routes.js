@@ -4,7 +4,8 @@ const {
   listTasks,
   createTask,
   updateTask,
-  deleteTask
+  deleteTask,
+  extractTaskFromImage
 } = require("../../services/shreibenService");
 
 const router = express.Router();
@@ -44,6 +45,14 @@ router.delete(
       ...req.query,
       taskId: req.params.taskId
     });
+    res.json({ ok: true, data });
+  })
+);
+
+router.post(
+  "/extract-task",
+  asyncHandler(async (req, res) => {
+    const data = await extractTaskFromImage(req.body);
     res.json({ ok: true, data });
   })
 );

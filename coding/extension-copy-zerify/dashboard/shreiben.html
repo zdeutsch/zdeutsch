@@ -34,12 +34,72 @@
                 <option value="b1">B1</option>
                 <option value="b2" selected>B2</option>
               </select>
-              <input type="text" id="part-select" class="form-control form-control-sm" style="width: 130px;" value="teil-1">
               <button class="btn btn-outline-secondary btn-sm" id="refresh-btn"><i class="bi bi-arrow-repeat"></i></button>
             </div>
           </header>
 
           <div id="alert-host"></div>
+
+          <section class="manager-card card mb-4">
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <span>Task Form</span>
+              <button class="btn btn-sm btn-outline-secondary" id="clear-form-btn" type="button">Clear</button>
+            </div>
+            <div class="card-body">
+              <div class="manager-import-box mb-4">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                  <h2 class="h6 mb-0">Image to Form (OpenAI)</h2>
+                  <div class="d-flex gap-2">
+                    <input id="task-image-input" type="file" accept="image/*" class="d-none">
+                    <button class="btn btn-sm btn-outline-secondary" id="pick-image-btn" type="button">Choose Image</button>
+                    <button class="btn btn-sm btn-outline-secondary" id="clear-image-btn" type="button" disabled>Clear Image</button>
+                    <button class="btn btn-sm btn-manager-primary text-white" id="extract-image-btn" type="button" disabled>Extract & Fill</button>
+                  </div>
+                </div>
+                <div
+                  id="image-dropzone"
+                  class="manager-dropzone"
+                  tabindex="0"
+                  title="Click, drop, or paste an image"
+                >
+                  <div id="image-dropzone-empty">
+                    <p class="mb-1 fw-semibold">Drop, paste, or choose an image</p>
+                    <p class="mb-0 text-secondary small">Supported: PNG, JPG, WEBP (max 8 MB)</p>
+                  </div>
+                  <img id="image-preview" class="img-fluid rounded d-none" alt="Selected task image preview">
+                </div>
+                <p id="extract-status" class="small text-secondary mt-2 mb-0">No image selected.</p>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-12 col-md-2">
+                  <label class="form-label" for="task-id">Task ID (optional)</label>
+                  <input type="text" id="task-id" class="form-control" placeholder="auto-generated">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label class="form-label" for="task-title">title (Markdown text)</label>
+                  <input type="text" id="task-title" class="form-control" placeholder="1. Hotel">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="task-istructions">istructions (Markdown)</label>
+                  <textarea id="task-istructions" class="form-control" rows="4" placeholder="# 1. Hotel&#10;&#10;Schreiben Sie ..."></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="task-content">content (Markdown)</label>
+                  <textarea id="task-content" class="form-control" rows="8" placeholder="## Anzeige&#10;Octavian-Therme ..."></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="task-tasks">tasks (Markdown)</label>
+                  <textarea id="task-tasks" class="form-control" rows="6" placeholder="- Punkt 1&#10;- Punkt 2"></textarea>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <button class="btn btn-manager-primary text-white" id="save-task-btn" type="button">Save Task</button>
+                <button class="btn btn-outline-danger" id="delete-task-btn" type="button">Delete Task</button>
+              </div>
+            </div>
+          </section>
 
           <section class="manager-card card mb-4">
             <div class="card-header d-flex flex-wrap align-items-center justify-content-between gap-2">
@@ -52,86 +112,16 @@
                   <thead>
                     <tr>
                       <th>Task ID</th>
-                      <th>Title</th>
-                      <th>Prompt</th>
+                      <th>title</th>
+                      <th>istructions</th>
+                      <th>content</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody id="tasks-body">
-                    <tr><td colspan="4" class="text-center text-secondary py-4">Loading...</td></tr>
+                    <tr><td colspan="5" class="text-center text-secondary py-4">Loading...</td></tr>
                   </tbody>
                 </table>
-              </div>
-            </div>
-          </section>
-
-          <section class="manager-card card mb-4">
-            <div class="card-header d-flex align-items-center justify-content-between">
-              <span>Task Form</span>
-              <button class="btn btn-sm btn-outline-secondary" id="clear-form-btn" type="button">Clear</button>
-            </div>
-            <div class="card-body">
-              <div class="row g-3">
-                <div class="col-12 col-md-4">
-                  <label class="form-label" for="task-id">Task ID (optional when creating)</label>
-                  <input type="text" id="task-id" class="form-control" placeholder="auto-generated">
-                </div>
-                <div class="col-12 col-md-8">
-                  <label class="form-label" for="task-title">Task Title</label>
-                  <input type="text" id="task-title" class="form-control" placeholder="Task title">
-                </div>
-                <div class="col-12">
-                  <label class="form-label" for="task-prompt">Prompt</label>
-                  <textarea id="task-prompt" class="form-control" rows="3" placeholder="Write the prompt"></textarea>
-                </div>
-              </div>
-
-              <hr class="my-4">
-              <h2 class="h6">Advertisement Block</h2>
-
-              <div class="row g-3">
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-header">Ad Header</label>
-                  <input type="text" id="ad-header" class="form-control">
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-tagline">Ad Tagline</label>
-                  <input type="text" id="ad-tagline" class="form-control">
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-price">Price</label>
-                  <input type="text" id="ad-price" class="form-control">
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-paragraphs">Paragraphs (one line = one paragraph)</label>
-                  <textarea id="ad-paragraphs" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-offer">Offer Items (one line each)</label>
-                  <textarea id="ad-offer" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="ad-address">Address Lines (one line each)</label>
-                  <textarea id="ad-address" class="form-control" rows="4"></textarea>
-                </div>
-              </div>
-
-              <hr class="my-4">
-              <h2 class="h6">Requirements</h2>
-              <div class="row g-3">
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="req-mode">Mode Lines (one line each)</label>
-                  <textarea id="req-mode" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="req-points">Required Points (one line each)</label>
-                  <textarea id="req-points" class="form-control" rows="4"></textarea>
-                </div>
-              </div>
-
-              <div class="d-flex flex-wrap gap-2 mt-4">
-                <button class="btn btn-manager-primary text-white" id="save-task-btn" type="button">Save Task</button>
-                <button class="btn btn-outline-danger" id="delete-task-btn" type="button">Delete Task</button>
               </div>
             </div>
           </section>

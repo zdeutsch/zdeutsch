@@ -1,3 +1,5 @@
+require("dotenv").config({ quiet: true });
+
 const app = require("./server/app");
 const { PORT } = require("./server/config/env");
 

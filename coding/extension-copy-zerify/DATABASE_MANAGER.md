@@ -70,7 +70,8 @@ WEB_PORT=8080 APP_PORT=3031 docker compose up --build -d
 - `POST /api/horen/topics`
 - `PUT /api/horen/topics/:topicId`
 - `DELETE /api/horen/topics/:topicId`
-- `GET /api/shreiben/tasks?level=...&part=...`
+- `GET /api/shreiben/tasks?level=...`
+- `POST /api/shreiben/extract-task`
 - `POST /api/shreiben/tasks`
 - `PUT /api/shreiben/tasks/:taskId`
 - `DELETE /api/shreiben/tasks/:taskId`
@@ -80,6 +81,8 @@ WEB_PORT=8080 APP_PORT=3031 docker compose up --build -d
 - Updates are written directly to JSON files under `site/database`.
 - JSON writes are atomic (temp file + rename).
 - The public website remains static and unchanged in behavior.
+- `POST /api/shreiben/extract-task` requires `OPENAI_API_KEY` in the server environment.
+- Schreiben task shape is markdown-only: `title`, `istructions`, `content`, `tasks`.
 - Dedicated Lesen part editors are available at:
   - `/dashboard/lesen-teil-1.html`
   - `/dashboard/lesen-teil-2.html`

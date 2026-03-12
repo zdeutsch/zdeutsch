@@ -48,21 +48,19 @@ function countShreibenTasks(shreibenDb) {
   let total = 0;
 
   Object.entries(levels).forEach(([levelKey, levelEntry]) => {
+    if (Array.isArray(levelEntry?.tasks)) {
+      const levelTotal = levelEntry.tasks.length;
+      total += levelTotal;
+      byLevel[levelKey] = { total: levelTotal };
+      return;
+    }
+
     const parts = levelEntry?.parts || {};
-    const partSummary = {};
-    let levelTotal = 0;
-
-    Object.entries(parts).forEach(([partKey, partEntry]) => {
-      const taskCount = (partEntry?.content?.tasks || []).length;
-      partSummary[partKey] = taskCount;
-      levelTotal += taskCount;
-      total += taskCount;
-    });
-
-    byLevel[levelKey] = {
-      total: levelTotal,
-      parts: partSummary
-    };
+    const levelTotal = Object.values(parts).reduce((sum, partEntry) => {
+      return sum + ((partEntry?.content?.tasks || []).length);
+    }, 0);
+    total += levelTotal;
+    byLevel[levelKey] = { total: levelTotal };
   });
 
   return { total, byLevel };
