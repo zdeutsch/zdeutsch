@@ -151,3 +151,80 @@ code.kbd-inline {
   border-radius: 6px;
   padding: 0.1rem 0.35rem;
 }
+
+.manager-import-box {
+  border: 1px solid var(--manager-border);
+  border-radius: 12px;
+  background: #fafcff;
+  padding: 0.9rem;
+}
+
+.manager-dropzone {
+  min-height: 180px;
+  border: 2px dashed #c9d7ee;
+  border-radius: 12px;
+  background: #f9fbff;
+  color: var(--manager-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.manager-dropzone:focus,
+.manager-dropzone:hover {
+  border-color: var(--manager-primary);
+  background: #f2f7ff;
+  outline: none;
+}
+
+.manager-dropzone.has-image {
+  border-style: solid;
+  border-color: #b7caeb;
+  background: #ffffff;
+}
+
+.manager-details {
+  border: 1px solid var(--manager-border);
+  border-radius: 12px;
+  background: #fbfcff;
+  padding: 0.75rem 0.85rem;
+}
+
+.manager-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #334056;
+}
+
+.manager-banner-card {
+  border: 1px solid var(--manager-border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  background: #fbfcff;
+}
+
+.manager-banner-preview {
+  min-height: 74px;
+  border: 1px dashed #c9d7ee;
+  border-radius: 10px;
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.manager-banner-preview img {
+  display: none;
+  width: 100%;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.manager-banner-preview img.is-visible {
+  display: block;
+}
