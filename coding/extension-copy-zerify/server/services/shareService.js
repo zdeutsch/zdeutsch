@@ -8,7 +8,7 @@ const {
 } = require("../repositories/shareRepository");
 
 const SHARE_UNLOCK_THRESHOLD = 2;
-const SHARE_GATE_VISIT_THRESHOLD = 3;
+const SHARE_GATE_DELAY_HOURS = 24;
 const BOT_USER_AGENT_PATTERN = /bot|crawler|spider|preview|facebookexternalhit|slackbot|discordbot|telegrambot|whatsapp|meta-external|linkedinbot|skypeuripreview|python-requests|curl/i;
 
 function normalizeUserId(value, fieldName = "userId") {
@@ -129,7 +129,7 @@ function getUserStatusSnapshot(db, userId) {
     userId,
     uniqueVisitors,
     unlockThreshold: SHARE_UNLOCK_THRESHOLD,
-    gateVisitThreshold: SHARE_GATE_VISIT_THRESHOLD,
+    gateDelayHours: SHARE_GATE_DELAY_HOURS,
     unlocked: uniqueVisitors >= SHARE_UNLOCK_THRESHOLD
   };
 }
@@ -377,6 +377,6 @@ module.exports = {
   getShareDashboardOverview,
   getShareStatus,
   registerShareVisit,
-  SHARE_GATE_VISIT_THRESHOLD,
+  SHARE_GATE_DELAY_HOURS,
   SHARE_UNLOCK_THRESHOLD
 };
