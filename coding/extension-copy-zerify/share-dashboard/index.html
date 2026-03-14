@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZDeutsch Share Dashboard</title>
+    <link rel="stylesheet" href="styles.css?v=20260314-1">
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Referral Tracking</p>
+          <h1>ZDeutsch Share Dashboard</h1>
+          <p class="hero-copy">Small control panel for link unlock tracking. Sign in to see who unlocked and who is still below 2 visitors.</p>
+        </div>
+        <button id="logout-button" class="ghost-button hidden" type="button">Logout</button>
+      </header>
+
+      <main>
+        <section id="login-card" class="panel login-panel hidden">
+          <div class="panel-header">
+            <h2>Sign in</h2>
+            <p>Use the dashboard username and password.</p>
+          </div>
+          <form id="login-form" class="login-form">
+            <label>
+              <span>Username</span>
+              <input id="username-input" name="username" type="text" autocomplete="username" required>
+            </label>
+            <label>
+              <span>Password</span>
+              <input id="password-input" name="password" type="password" autocomplete="current-password" required>
+            </label>
+            <button class="primary-button" type="submit">Open dashboard</button>
+            <p id="login-status" class="status-line" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section id="dashboard-content" class="hidden">
+          <section class="stats-grid">
+            <article class="stat-card">
+              <span class="stat-label">Tracked users</span>
+              <strong id="stat-users" class="stat-value">0</strong>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Unique referrals</span>
+              <strong id="stat-referrals" class="stat-value">0</strong>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Unlocked users</span>
+              <strong id="stat-unlocked" class="stat-value">0</strong>
+            </article>
+            <article class="stat-card accent-card">
+              <span class="stat-label">Unlock rule</span>
+              <strong id="stat-rule" class="stat-value">2 opens</strong>
+            </article>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header panel-header-inline">
+              <div>
+                <h2>Top sharers</h2>
+                <p>Users with the highest number of different visitors.</p>
+              </div>
+              <button id="refresh-button" class="ghost-button" type="button">Refresh</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>User ID</th>
+                    <th>Visitors</th>
+                    <th>Status</th>
+                    <th>Last open</th>
+                  </tr>
+                </thead>
+                <tbody id="top-sharers-body">
+                  <tr>
+                    <td colspan="4" class="empty-cell">No data yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Recent accesses</h2>
+              <p>Last counted unique visitor pairs reaching shared links.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sharer</th>
+                    <th>Visitor</th>
+                    <th>Path</th>
+                    <th>Visits</th>
+                    <th>IP</th>
+                    <th>Last open</th>
+                  </tr>
+                </thead>
+                <tbody id="recent-referrals-body">
+                  <tr>
+                    <td colspan="6" class="empty-cell">No data yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js?v=20260314-1"></script>
+  </body>
+</html>

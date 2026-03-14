@@ -1,6 +1,6 @@
-# Zertify Exam Extractor
+# xxx Exam Extractor
 
-Extracts Zertify exam content into JSON and downloads it to a `db/` folder in your default downloads directory.
+Extracts xxx exam content into JSON and downloads it to a `db/` folder in your default downloads directory.
 
 ## Setup
 
@@ -11,7 +11,7 @@ Extracts Zertify exam content into JSON and downloads it to a `db/` folder in yo
 
 ## Usage
 
-1. Open a Zertify exam page (e.g. Lesen Teil 1, Lesen Teil 2, Lesen Teil 3, Sprachbausteine 1, Sprachbausteine 2).
+1. Open a xxx exam page (e.g. Lesen Teil 1, Lesen Teil 2, Lesen Teil 3, Sprachbausteine 1, Sprachbausteine 2).
 2. Click the extension icon.
 3. Click "Extract current exam".
 
