@@ -14,6 +14,7 @@
   const asideWidthInput = document.getElementById("aside-width");
   const defaultModuleInput = document.getElementById("default-module");
   const homepagePromoEnabledInput = document.getElementById("homepage-promo-enabled");
+  const sharingEnabledInput = document.getElementById("sharing-enabled");
   const DEFAULT_BOTTOM_INTERVAL_HOURS = 3;
 
   const bannerControls = {
@@ -291,6 +292,9 @@
     if (homepagePromoEnabledInput) {
       homepagePromoEnabledInput.checked = normalizeHomepagePromo(config.homepagePromo).enabled;
     }
+    if (sharingEnabledInput) {
+      sharingEnabledInput.checked = Boolean(config.sharing?.enabled !== false);
+    }
     adsState = normalizeAds(config.ads);
 
     modules = Array.isArray(config.modules)
@@ -317,10 +321,13 @@
       fontScale: Number(fontScaleInput.value || 1),
       asideWidth: String(asideWidthInput.value || "40%").trim(),
       defaultModule: String(defaultModuleInput.value || "").trim(),
-      homepagePromo: {
-        enabled: homepagePromoEnabledInput ? Boolean(homepagePromoEnabledInput.checked) : true
-      },
-      ads: normalizeAds(adsState),
+    homepagePromo: {
+      enabled: homepagePromoEnabledInput ? Boolean(homepagePromoEnabledInput.checked) : true
+    },
+    sharing: {
+      enabled: sharingEnabledInput ? Boolean(sharingEnabledInput.checked) : true
+    },
+    ads: normalizeAds(adsState),
       modules: modules.map((module) => ({
         name: String(module.name || "").trim(),
         dataFile: String(module.dataFile || "").trim(),

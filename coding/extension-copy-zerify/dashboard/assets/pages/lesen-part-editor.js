@@ -715,8 +715,11 @@
     }
 
     saveBtn.disabled = false;
-    const preferredTheme = pendingThemeFromQuery || previousTheme;
-    if (preferredTheme && state.themes.some((theme) => theme.key === preferredTheme)) {
+    let preferredTheme = pendingThemeFromQuery || previousTheme;
+    if (!state.themes.some((theme) => theme.key === preferredTheme)) {
+      preferredTheme = state.themes[0]?.key || "";
+    }
+    if (preferredTheme) {
       themeSelect.value = preferredTheme;
     }
     pendingThemeFromQuery = "";

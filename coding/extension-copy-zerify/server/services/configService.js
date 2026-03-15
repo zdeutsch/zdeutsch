@@ -12,6 +12,9 @@ const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const DEFAULT_HOMEPAGE_PROMO_CONFIG = Object.freeze({
   enabled: true
 });
+const DEFAULT_SHARING_CONFIG = Object.freeze({
+  enabled: true
+});
 const BANNER_MIME_TO_EXT = Object.freeze({
   "image/png": "png",
   "image/jpeg": "jpg",
@@ -67,6 +70,14 @@ function normalizeBannerSlot(slotKey, slot, fallback = {}) {
   }
 
   return normalized;
+}
+
+function normalizeSharingConfig(value, fallback = DEFAULT_SHARING_CONFIG) {
+  const source = isPlainObject(value) ? value : {};
+  const base = isPlainObject(fallback) ? fallback : DEFAULT_SHARING_CONFIG;
+  return {
+    enabled: typeof source.enabled === "boolean" ? source.enabled : Boolean(base.enabled)
+  };
 }
 
 function normalizeAdsConfig(ads, fallbackAds = {}) {
@@ -174,6 +185,13 @@ async function updateConfig(payload) {
     next.homepagePromo = normalizeHomepagePromoConfig(payload.homepagePromo, current.homepagePromo);
   } else {
     next.homepagePromo = normalizeHomepagePromoConfig(current.homepagePromo);
+  }
+
+  if (payload.sharing !== undefined) {
+    assertPlainObject(payload.sharing, "sharing must be an object");
+    next.sharing = normalizeSharingConfig(payload.sharing, current.sharing);
+  } else {
+    next.sharing = normalizeSharingConfig(current.sharing);
   }
 
   delete next.showMeinLangAd;

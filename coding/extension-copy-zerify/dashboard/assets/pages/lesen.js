@@ -2,6 +2,7 @@
   const { api, setActiveNav, showAlert, escapeHtml, createTableSearch } = window.ManagerApi;
   setActiveNav("lesen");
 
+  const urlParams = new URLSearchParams(window.location.search);
   const alertHost = document.getElementById("alert-host");
   const levelSelect = document.getElementById("level-select");
   const refreshBtn = document.getElementById("refresh-btn");
@@ -30,6 +31,35 @@
     selectedThemeKey: ""
   };
 
+  const requestedLevel = String(urlParams.get("level") || "").trim().toLowerCase();
+  let pendingThemeFromQuery = String(urlParams.get("themeKey") || "").trim();
+
+  if (requestedLevel && Array.from(levelSelect.options).some((option) => option.value === requestedLevel)) {
+    levelSelect.value = requestedLevel;
+  }
+
+  function syncUrlState() {
+    const params = new URLSearchParams(window.location.search);
+    const level = String(levelSelect.value || "").trim();
+    const themeKey = String(state.selectedThemeKey || "").trim();
+
+    if (level) {
+      params.set("level", level);
+    } else {
+      params.delete("level");
+    }
+
+    if (themeKey) {
+      params.set("themeKey", themeKey);
+    } else {
+      params.delete("themeKey");
+    }
+
+    const nextQuery = params.toString();
+    const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ""}`;
+    window.history.replaceState({}, "", nextUrl);
+  }
+
   function clearEditForm() {
     state.selectedThemeKey = "";
     editThemeKeyInput.value = "";
@@ -40,6 +70,7 @@
 
   function updatePartEditorLinks() {
     if (!partEditorLinks.length) {
+      syncUrlState();
       return;
     }
     const level = String(levelSelect.value || "").trim();
@@ -59,6 +90,8 @@
       params.set("versionKey", versionKey);
       link.setAttribute("href", `${path}?${params.toString()}`);
     });
+
+    syncUrlState();
   }
 
   function renderThemes() {
@@ -119,6 +152,17 @@
       const data = await api(`/lesen/themes?level=${encodeURIComponent(levelSelect.value)}`);
       state.themes = Array.isArray(data) ? data : [];
       renderThemes();
+
+      let desiredTheme = "";
+      if (pendingThemeFromQuery && state.themes.some((theme) => theme.key === pendingThemeFromQuery)) {
+        desiredTheme = pendingThemeFromQuery;
+      } else if (!state.selectedThemeKey && state.themes.length) {
+        desiredTheme = state.themes[0].key;
+      }
+      pendingThemeFromQuery = "";
+      if (desiredTheme) {
+        await selectTheme(desiredTheme);
+      }
     } catch (error) {
       showAlert(alertHost, error.message, "error");
       themesBody.innerHTML = '<tr><td colspan="4" class="text-center text-danger py-4">Failed to load themes</td></tr>';

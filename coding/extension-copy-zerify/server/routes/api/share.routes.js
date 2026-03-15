@@ -1,5 +1,6 @@
 const express = require("express");
 const asyncHandler = require("../../middleware/asyncHandler");
+const shareCors = require("../../middleware/shareCors");
 const AppError = require("../../utils/appError");
 const {
   authenticateShareAdmin,
@@ -15,6 +16,9 @@ const {
 } = require("../../services/shareService");
 
 const router = express.Router();
+
+router.use("/status", shareCors);
+router.use("/visit", shareCors);
 
 function getRequestMeta(req) {
   const forwarded = String(req.headers["x-forwarded-for"] || "");

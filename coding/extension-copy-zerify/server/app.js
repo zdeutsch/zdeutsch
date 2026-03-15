@@ -4,7 +4,7 @@ const apiRoutes = require("./routes/api");
 const shareDashboardRoutes = require("./routes/shareDashboard.routes");
 const notFound = require("./middleware/notFound");
 const errorHandler = require("./middleware/errorHandler");
-const { SITE_DIR, DASHBOARD_DIR } = require("./config/constants");
+const { DASHBOARD_DIR } = require("./config/constants");
 
 const app = express();
 
@@ -19,10 +19,9 @@ app.get("/dashboard", (req, res) => {
 });
 
 app.use("/dashboard", express.static(DASHBOARD_DIR));
-app.use(express.static(SITE_DIR));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(SITE_DIR, "index.html"));
+  res.redirect(302, "/dashboard");
 });
 
 app.use(notFound);
