@@ -173,6 +173,7 @@ const state = {
   asideOpen: false,
   reportGroups: {},
   reportGroupsLoading: {},
+  reportPrefetchTimers: {},
   resultSavedFingerprint: null,
   timer: {
     enabled: true,
@@ -1120,10 +1121,17 @@ function renderActionBar(partKey) {
     );
     reportButton.type = "button";
     reportButton.setAttribute("dir", "rtl");
+    reportButton.addEventListener("pointerenter", () => {
+      prefetchReportGroups(partKey);
+    });
+    reportButton.addEventListener("focus", () => {
+      prefetchReportGroups(partKey);
+    });
     reportButton.addEventListener("click", () => {
       openReportMistakeDialog(partKey);
     });
     bar.append(reportButton);
+    scheduleReportGroupsPrefetch(partKey);
   }
   wrapper.append(bar);
   return wrapper;
@@ -1429,13 +1437,46 @@ function isContextLikeComment(value) {
   return /^ctx_/i.test(String(value || "").trim());
 }
 
-async function loadReportGroups(partKey) {
-  const cacheKey = [
+function getReportGroupsCacheKey(partKey) {
+  return [
     state.level || "",
     state.theme || "",
     getActiveVersionKey() || "default",
     partKey || ""
   ].join("::");
+}
+
+function prefilterChangedReportGroups(partKey, groups) {
+  const defaultAnswers = getDefaultAnswersForPart(partKey);
+  return (groups || [])
+    .map((group) => ({
+      ...group,
+      changeCount: getReportGroupChangeCount(partKey, group.answerValues, defaultAnswers)
+    }))
+    .filter((group) => group.changeCount > 0);
+}
+
+function prefetchReportGroups(partKey) {
+  const cacheKey = getReportGroupsCacheKey(partKey);
+  if (state.reportGroups[cacheKey] || state.reportGroupsLoading[cacheKey]) {
+    return;
+  }
+  loadReportGroups(partKey).catch(() => {});
+}
+
+function scheduleReportGroupsPrefetch(partKey) {
+  const cacheKey = getReportGroupsCacheKey(partKey);
+  if (state.reportGroups[cacheKey] || state.reportGroupsLoading[cacheKey] || state.reportPrefetchTimers[cacheKey]) {
+    return;
+  }
+  state.reportPrefetchTimers[cacheKey] = window.setTimeout(() => {
+    delete state.reportPrefetchTimers[cacheKey];
+    prefetchReportGroups(partKey);
+  }, 250);
+}
+
+async function loadReportGroups(partKey) {
+  const cacheKey = getReportGroupsCacheKey(partKey);
   if (state.reportGroups[cacheKey]) {
     return state.reportGroups[cacheKey];
   }
@@ -1509,7 +1550,10 @@ async function loadReportGroups(partKey) {
       groups.set(key, group);
     });
 
-    return Array.from(groups.values()).sort((a, b) => b.count - a.count);
+    return prefilterChangedReportGroups(
+      partKey,
+      Array.from(groups.values()).sort((a, b) => b.count - a.count)
+    );
   })();
 
   state.reportGroupsLoading[cacheKey] = promise;
@@ -1572,6 +1616,35 @@ function createReportMistakeGuidance() {
     "mb-4 rounded-xl border border-azure/25 bg-azure/10 px-4 py-3 text-sm leading-6 text-slate",
     "أبلغ عن الخطأ لتسهيل تصحيحه على المشرفين. إذا تم الإبلاغ عن نفس الخطأ من طرف عدد أكبر من المستخدمين فستكون له أولوية أكبر في التصحيح."
   );
+}
+
+function createReportMistakeLoader() {
+  const wrapper = createEl("div", "space-y-4");
+  const status = createEl("div", "rounded-2xl border border-azure/20 bg-azure/10 px-4 py-4");
+  const row = createEl("div", "flex items-center gap-3");
+  const spinner = createEl("span", "h-5 w-5 shrink-0 rounded-full border-2 border-azure/30 border-t-azure animate-spin");
+  spinner.setAttribute("aria-hidden", "true");
+  const text = createEl("div");
+  text.append(
+    createEl("div", "font-display text-sm text-ink", "جاري تحميل البلاغات..."),
+    createEl("div", "mt-1 text-xs leading-5 text-slate", "نحضر البلاغات المتشابهة ونخفي الاقتراحات التي لا تغير الجواب.")
+  );
+  row.append(spinner, text);
+  status.append(row);
+
+  const skeleton = createEl("div", "space-y-3");
+  for (let index = 0; index < 2; index += 1) {
+    const card = createEl("div", "rounded-2xl border border-stone-200 bg-white p-4 shadow-sm");
+    card.append(
+      createEl("div", "h-4 w-40 rounded-full bg-stone-200 animate-pulse"),
+      createEl("div", "mt-3 h-10 rounded-xl bg-stone-100 animate-pulse"),
+      createEl("div", "mt-2 h-10 rounded-xl bg-stone-100 animate-pulse")
+    );
+    skeleton.append(card);
+  }
+
+  wrapper.append(createReportMistakeGuidance(), status, skeleton);
+  return wrapper;
 }
 
 function createReportMistakeModal() {
@@ -1817,9 +1890,16 @@ async function openReportMistakeDialog(partKey) {
   const modal = createReportMistakeModal();
   const body = modal.querySelector("#lesen-report-modal-body");
   const actions = modal.querySelector("#lesen-report-modal-actions");
+  const cacheKey = getReportGroupsCacheKey(partKey);
+  const cachedGroups = state.reportGroups[cacheKey];
+  if (cachedGroups) {
+    renderReportMistakeModalBody(partKey, cachedGroups);
+    modal.classList.remove("hidden");
+    return;
+  }
   if (body) {
     body.innerHTML = "";
-    body.append(createEl("p", "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate", "جاري تحميل البلاغات..."));
+    body.append(createReportMistakeLoader());
   }
   if (actions) {
     actions.innerHTML = "";

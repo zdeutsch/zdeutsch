@@ -1,5 +1,5 @@
-const STATIC_CACHE = "zdeutsch-static-v26";
-const RUNTIME_CACHE = "zdeutsch-runtime-v26";
+const STATIC_CACHE = "zdeutsch-static-v27";
+const RUNTIME_CACHE = "zdeutsch-runtime-v27";
 const APP_SHELL = [
   "./",
   "./index.html",
