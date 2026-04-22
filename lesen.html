@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" translate="no" class="notranslate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <meta name="description"
+      content="Practice TELC Lesen with interactive parts, instant scoring, and progress tracking for B1 and B2 learners.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <link rel="canonical" href="lesen.html">
+    <meta property="og:site_name" content="ZDeutsch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ZDeutsch | Lesen">
+    <meta property="og:description"
+      content="Practice TELC Lesen with interactive parts, instant scoring, and progress tracking for B1 and B2 learners.">
+    <meta property="og:url" content="lesen.html">
+    <meta property="og:image" content="pwa/icon-512.png">
+    <meta property="og:image:alt" content="ZDeutsch logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZDeutsch | Lesen">
+    <meta name="twitter:description"
+      content="Practice TELC Lesen with interactive parts, instant scoring, and progress tracking for B1 and B2 learners.">
+    <meta name="twitter:image" content="pwa/icon-512.png">
+    <meta name="theme-color" content="#ffcc00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ZDeutsch">
+    <title>ZDeutsch | Lesen</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="manifest.webmanifest?v=20260313-1">
+    <link rel="apple-touch-icon" href="pwa/apple-touch-icon.png?v=20260313-1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Newsreader:wght@400;500;600&display=swap">
+    <script type="text/javascript">
+      (function(c, l, a, r, i, t, y) {
+        c[a] = c[a] || function() {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "vugci4h4o0");
+    </script>
+    <script>
+      tailwind.config = {
+        safelist: [
+          "bg-stone-50",
+          "bg-stone-100",
+          "bg-stone-200",
+          "bg-azure",
+          "bg-white",
+          "bg-white/80",
+          "bg-white/90",
+          "bg-azure/10",
+          "bg-mint/10",
+          "bg-mint/20",
+          "bg-rose/10",
+          "bg-rose/15",
+          "border-stone-200",
+          "border-stone-300",
+          "border-azure/30",
+          "border-azure/40",
+          "border-azure/50",
+          "border-azure/60",
+          "border-mint/30",
+          "border-mint/40",
+          "border-mint/50",
+          "border-mint/60",
+          "border-rose/30",
+          "border-rose/40",
+          "border-rose/50",
+          "border-black/20",
+          "text-azure",
+          "text-mint",
+          "text-rose",
+          "text-white",
+          "ring-2",
+          "ring-azure/20",
+          "ring-azure/30",
+          "shadow-sm",
+          "shadow-panel",
+          "shadow-lg",
+          "hover:border-stone-300",
+          "hover:-translate-y-0.5"
+        ],
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              body: ["Newsreader", "serif"]
+            },
+            colors: {
+              ink: "#1f2933",
+              mist: "#f8f5f0",
+              shell: "#ffffff",
+              haze: "#f2f3f5",
+              slate: "#5c6672",
+              azure: "#0f766e",
+              mint: "#15803d",
+              amber: "#b45309",
+              rose: "#dc2626"
+            },
+            boxShadow: {
+              panel: "0 24px 60px rgba(15, 23, 42, 0.12)"
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="theme.css?v=20260323-16">
+  </head>
+  <body class="theme-body font-body h-screen overflow-hidden lesen-page">
+    <div class="fixed inset-0">
+      <div class="absolute inset-0 flag-glow-top"></div>
+      <div class="absolute inset-0 flag-glow-bottom"></div>
+      <div class="absolute inset-0 grid-overlay"></div>
+    </div>
+
+    <div class="relative flex flex-col h-screen">
+      <header class="lesen-header fixed top-0 left-0 right-0 h-16 border-b border-black/10 bg-white/90 backdrop-blur-md shadow-sm z-40">
+        <div class="w-full h-full px-6 flex items-center justify-between gap-4">
+          <div id="header-left" class="flex items-center gap-3 shrink-0">
+            <img id="brand-logo" src="logo.svg?v=20260312-1" alt="ZDeutsch" class="h-16 w-auto">
+            <button id="back-btn" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
+              <i data-lucide="arrow-left" class="h-4 w-4" aria-hidden="true"></i>
+            </button>
+            <span id="return-label" class="text-xs font-display uppercase tracking-[0.2em] text-slate">Return</span>
+            <div id="header-divider" class="h-6 w-px bg-black/10"></div>
+            <div id="header-title">
+              <div class="flex items-center gap-2">
+                <h1 id="theme-title" class="font-display text-base">Select a theme</h1>
+                <span id="level-pill" class="rounded-full border border-azure/40 bg-azure/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-azure font-display">B1</span>
+              </div>
+            </div>
+          </div>
+          <div id="part-cards-wrap" class="flex-1 min-w-0 flex items-center">
+            <div id="part-cards" class="hidden w-full flex items-center justify-start gap-2 overflow-x-auto"></div>
+          </div>
+          <div id="header-actions" class="flex items-center gap-2 shrink-0">
+            <div id="timer-display" class="hidden items-center gap-2 rounded-full border border-azure/40 bg-azure/10 px-3 py-1 text-[10px] font-display uppercase tracking-[0.2em] text-azure">
+              <span id="timer-value">90:00</span>
+            </div>
+            <button id="settings-btn" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
+              <i data-lucide="settings" class="h-4 w-4" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <button id="aside-toggle" class="aside-toggle-btn fixed md:hidden flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white/80 text-slate shadow-sm" type="button" aria-label="Open tasks panel" aria-controls="right-panel" aria-expanded="false">
+        <i data-lucide="layout" class="h-4 w-4" aria-hidden="true"></i>
+        <span class="aside-toggle-label font-display uppercase tracking-[0.18em]">Panel</span>
+      </button>
+
+      <div id="settings-panel" class="fixed top-20 right-6 w-64 rounded-2xl border border-stone-300 bg-white/95 shadow-panel p-4 hidden z-40">
+        <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Settings</div>
+        <div class="mt-4">
+          <div class="flex items-center justify-between text-xs text-slate font-display uppercase tracking-[0.2em]">
+            <span>Font size</span>
+            <span id="font-size-value">100%</span>
+          </div>
+          <input id="font-size-input" type="range" min="0.85" max="1.25" step="0.05" value="1" class="mt-3 w-full">
+        </div>
+        <div class="mt-4 border-t border-stone-200 pt-4">
+          <label class="flex items-center justify-between text-xs text-slate font-display uppercase tracking-[0.2em]">
+            <span>Timer</span>
+            <input id="timer-toggle" type="checkbox" class="h-4 w-4">
+          </label>
+          <p class="mt-2 text-[10px] text-slate">90 min countdown (auto-finish).</p>
+        </div>
+      </div>
+
+      <main id="exam-view" class="pt-20 pb-20 px-6">
+        <div class="w-full">
+          <div id="exam-grid" class="grid gap-6 h-[calc(100vh-160px)]">
+            <section id="left-panel" class="exam-panel rounded-3xl border border-stone-300 bg-white/90 shadow-panel p-6 overflow-y-auto"></section>
+            <aside id="right-panel" role="complementary" class="exam-panel hidden md:block rounded-3xl border border-stone-300 bg-white/90 shadow-panel p-6 overflow-y-auto"></aside>
+          </div>
+        </div>
+      </main>
+
+      <section id="result-view" class="hidden h-[calc(100vh-4rem)] overflow-y-auto pt-24 pb-24 px-6">
+        <div class="w-full">
+          <div class="rounded-3xl border border-stone-300 bg-white/90 shadow-panel p-8">
+            <div class="flex items-center justify-between gap-4">
+              <p class="font-display text-xs uppercase tracking-[0.3em] text-slate">Exam results</p>
+              <img src="logo.svg?v=20260312-1" alt="ZDeutsch" class="h-8 w-auto">
+            </div>
+            <h2 id="result-title" class="mt-3 text-3xl font-display">Results</h2>
+            <p id="result-subtitle" class="mt-2 text-slate">Your score overview.</p>
+
+            <div id="result-summary" class="mt-6"></div>
+
+            <div class="mt-8">
+              <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Detailed scores</div>
+              <div id="result-breakdown" class="mt-4 space-y-3"></div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <button id="result-retry-btn" class="rounded-full border border-black/10 bg-white px-5 py-2 text-xs font-display uppercase tracking-[0.2em] text-slate shadow-sm">Retry exam</button>
+              <button id="result-home-btn" class="rounded-full bg-azure px-5 py-2 text-xs font-display uppercase tracking-[0.2em] text-white shadow-lg">Back to modules</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="fixed bottom-0 left-0 right-0 h-16 border-t border-black/10 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="w-full h-full px-6 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img id="footer-logo" src="logo.svg?v=20260312-1" alt="ZDeutsch" class="h-8 w-auto">
+            <div id="progress-dots" class="hidden flex items-center gap-2"></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <button id="prev-btn" class="rounded-full border border-black/10 bg-white px-4 py-2 text-xs font-display uppercase tracking-[0.2em] text-slate">Zurück</button>
+            <button id="next-btn" class="rounded-full bg-azure px-5 py-2 text-xs font-display uppercase tracking-[0.2em] text-white">Weiter</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="aside-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+
+    <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
+    <script src="shared.js?v=20260324-3"></script>
+    <script src="lesen.js?v=20260325-3"></script>
+  </body>
+</html>

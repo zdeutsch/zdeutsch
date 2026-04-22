@@ -1,0 +1,59 @@
+{
+  "messages": [
+    {
+      "userName": "ZDeutsch Community",
+      "imageType": "outgoing",
+      "direction": "rtl",
+      "messageContent": "السلام عليكم، هاد المجتمع مخصص للناس لي كايوجدو لامتحان TELC ديال الألمانية. إلا بان شي خطأ ولا مشكل تقني فالموقع، شاركوه هنا باش يتراجع ويتصلح بشكل جماعي.\n🔴🔴 التصحيح فالسيت ماشي مرجع نهائي. ما تحفظوش الأجوبة بلا فهم، وجاوبو ديما بالعقل وتأكدو من مصادر مختلفة.\nشكرا",
+      "avatar": "logo.svg",
+      "role": "Admin",
+      "reactionCount": "72",
+      "reactions": [
+        "👍",
+        "❤️"
+      ]
+    },
+    {
+      "userName": "Member",
+      "imageType": "incoming",
+      "direction": "rtl",
+      "messageContent": "ناضي طريقة الخدمة الأنسان يطبع الطييمات ونفس الوقت يخدم بال site ويقارن الأجوبة"
+    },
+    {
+      "userName": "Member",
+      "imageType": "incoming",
+      "direction": "rtl",
+      "messageContent": "ويخدم بهم بجوج"
+    },
+    {
+      "userName": "ZDeutsch Community",
+      "imageType": "outgoing",
+      "direction": "rtl",
+      "messageContent": "السلام عليكم، هذا المجتمع مخصص لمساعدة الأشخاص الذين يستعدون لاجتياز امتحان اللغة الألمانية TELC. إذا لاحظتم أي خطأ أو مشكلة تقنية في الموقع، يرجى مشاركتها هنا حتى تتم مراجعتها وتصحيحها بشكل جماعي. 🔴🔴 التصحيح الموجود في الموقع ليس مرجعًا مطلقًا، لذلك لا تحفظوا الأجوبة كما هي؛ أجيبوا دائمًا بعقلانية وتأكدوا من الأجوبة من مصادر مختلفة. شكرًا لكم.",
+      "avatar": "logo.svg",
+      "role": "Admin",
+      "reactionCount": "12",
+      "reactions": [
+        "👍","❤️"
+      ]
+    },
+    {
+      "userName": "ZDeutsch Community",
+      "imageType": "outgoing",
+      "messageContent": "Hello everyone, this community helps people prepare for the German TELC exam. If you notice an answer issue or a technical problem on the website, share it here so it can be reviewed and corrected together. The corrections on the website are not an absolute source of truth, so do not memorize answers blindly. Always answer thoughtfully and verify with different sources. Thank you.",
+      "avatar": "logo.svg",
+      "role": "Admin",
+      "reactionCount": "5",
+      "reactions": [
+        "👍","❤️"
+      ],
+      "direction": "ltr"
+    },
+    {
+      "userName": "Member",
+      "imageType": "incoming",
+      "direction": "rtl",
+      "messageContent": "شكرا جزيلا لك على هذا الموقع الرائع، لقد ساعدني كثيرا في التحضير للامتحان. أتمنى لك كل التوفيق في مشاريعك المستقبلية!"
+    }
+  ]
+}

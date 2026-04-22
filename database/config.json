@@ -1,0 +1,91 @@
+{
+  "fontScale": 1,
+  "asideWidth": "40%",
+  "homepagePromo": {
+    "enabled": true
+  },
+  "ads": {
+    "top": {
+      "enabled": false,
+      "desktopImage": "assets/highlights/slots/top-desktop-1773247310224-e21hvx-top-telc-desktop-970x90.png",
+      "mobileImage": "assets/highlights/slots/top-mobile-1773247311859-roq32u-top-telc-mobile-320x50.png",
+      "clickUrl": "https://meinlang.com/app/register/telc"
+    },
+    "bottom": {
+      "enabled": false,
+      "desktopImage": "assets/highlights/slots/bottom-desktop-1773247313973-h8ty26-bottom-telc-desktop-970x90.png",
+      "mobileImage": "assets/highlights/slots/bottom-mobile-1773247314928-nr5z8k-bottom-telc-mobile-320x50.png",
+      "clickUrl": "https://meinlang.com/app/register/telc",
+      "displayIntervalHours": 3
+    }
+  },
+  "defaultModule": "lesen",
+  "modules": [
+    {
+      "name": "lesen",
+      "dataFile": "lesen.json",
+      "timer": {
+        "enabled": true,
+        "durationMinutes": 90
+      },
+      "scoreConfig": {
+        "passPercent": 60,
+        "parts": {
+          "teil-1": {
+            "pointsPerQuestion": 5
+          },
+          "teil-2": {
+            "pointsPerQuestion": 5
+          },
+          "teil-3": {
+            "pointsPerQuestion": 2.5
+          },
+          "sprachbausteine-1": {
+            "pointsPerQuestion": 1.5
+          },
+          "sprachbausteine-2": {
+            "pointsPerQuestion": 1.5
+          }
+        }
+      }
+    },
+    {
+      "name": "horen",
+      "dataFile": "horen-codes.json",
+      "timer": {
+        "enabled": false,
+        "durationMinutes": 45
+      },
+      "scoreConfig": {
+        "passPercent": 60,
+        "parts": {
+          "teil-1": {
+            "pointsPerQuestion": 1
+          },
+          "teil-2": {
+            "pointsPerQuestion": 1
+          },
+          "teil-3": {
+            "pointsPerQuestion": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "shreiben",
+      "dataFile": "shreiben.json",
+      "timer": {
+        "enabled": true,
+        "durationMinutes": 30
+      },
+      "scoreConfig": {
+        "passPercent": 60,
+        "parts": {
+          "teil-1": {
+            "pointsPerQuestion": 1
+          }
+        }
+      }
+    }
+  ]
+}

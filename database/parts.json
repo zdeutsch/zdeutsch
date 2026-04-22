@@ -1,0 +1,40 @@
+{
+  "levels": {
+    "b1": [
+      {
+        "module": "lesen",
+        "name": "Lesen",
+        "file": "lesen.json"
+      },
+      {
+        "module": "horen",
+        "name": "Hören Codes",
+        "file": "horen-codes.json"
+      },
+      {
+        "module": "shreiben",
+        "name": "Schreiben",
+        "file": "shreiben.json",
+        "description": "Bearbeiten Sie strukturierte Schreibaufgaben mit Leitpunkten."
+      }
+    ],
+    "b2": [
+      {
+        "module": "lesen",
+        "name": "Lesen",
+        "file": "lesen.json"
+      },
+      {
+        "module": "horen",
+        "name": "Hören Codes",
+        "file": "horen-codes.json"
+      },
+      {
+        "module": "shreiben",
+        "name": "Schreiben",
+        "file": "shreiben.json",
+        "description": "Bearbeiten Sie strukturierte Schreibaufgaben mit Leitpunkten."
+      }
+    ]
+  }
+}
