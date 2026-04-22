@@ -33,6 +33,14 @@ const asideToggle = document.getElementById("aside-toggle");
 const asideOverlay = document.getElementById("aside-overlay");
 const ASIDE_TOGGLE_HINT_KEY = "zdeutsch.lesen.asideToggleHintDismissed.v1";
 const CORRECTION_EMAIL_STORAGE_KEY = "zdeutsch.corrections.email.v1";
+const COMMUNITY_SHEET_ID_DEFAULT = "14LMJKrPsc1JQErmCfHv5K4xoN4miykVeTjmN1ZNFs_I";
+const COMMUNITY_GID_BY_PART = {
+  "teil-1": 1925401969,
+  "teil-2": 178354616,
+  "teil-3": 398836266,
+  "sprachbausteine-1": 434381124,
+  "sprachbausteine-2": 1556604816
+};
 const REPORT_MISTAKE_CONFIRMATION_MESSAGE = [
   "شكرًا على مساهمتك في تحسين المحتوى 🙏",
   "من فضلك لا ترسل التصحيح إلا إذا كنت متأكدًا من الجواب.",
@@ -143,6 +151,14 @@ const PART_LABELS = {
   "sprachbausteine-2": "Sprachbausteine 2"
 };
 
+const PART_KEY_ALIASES = {
+  "teil-1": ["teil-1", "teil1", "teil 1", "lesen teil 1", "lesen-teil-1", "part1", "part-1"],
+  "teil-2": ["teil-2", "teil2", "teil 2", "lesen teil 2", "lesen-teil-2", "part2", "part-2"],
+  "teil-3": ["teil-3", "teil3", "teil 3", "lesen teil 3", "lesen-teil-3", "part3", "part-3"],
+  "sprachbausteine-1": ["sprachbausteine-1", "sprachbausteine 1", "sprach-1", "sprach 1", "sprach1", "sb1"],
+  "sprachbausteine-2": ["sprachbausteine-2", "sprachbausteine 2", "sprach-2", "sprach 2", "sprach2", "sb2"]
+};
+
 const state = {
   db: null,
   config: null,
@@ -155,6 +171,8 @@ const state = {
   active: {},
   view: "exam",
   asideOpen: false,
+  reportGroups: {},
+  reportGroupsLoading: {},
   resultSavedFingerprint: null,
   timer: {
     enabled: true,
@@ -1103,7 +1121,7 @@ function renderActionBar(partKey) {
     reportButton.type = "button";
     reportButton.setAttribute("dir", "rtl");
     reportButton.addEventListener("click", () => {
-      openCorrectionFormFromExam(partKey);
+      openReportMistakeDialog(partKey);
     });
     bar.append(reportButton);
   }
@@ -1190,7 +1208,321 @@ function buildCorrectionContextToken(partKey) {
   return `ctx_${level}_${theme}_${version}_${part}_${emailToken}_${Date.now()}`;
 }
 
-function buildCorrectionFormUrl(partKey) {
+function getCommunitySheetId() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("communitySheetId")
+    || window.__COMMUNITY_SHEET_ID__
+    || COMMUNITY_SHEET_ID_DEFAULT;
+}
+
+function getCorrectionItemNumbers(partKey) {
+  return Object.keys(LESEN_CORRECTION_FORMS[partKey]?.entryIds?.answers || {})
+    .sort((a, b) => Number(a) - Number(b));
+}
+
+function safeDecode(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  try {
+    return decodeURIComponent(raw);
+  } catch (error) {
+    return raw;
+  }
+}
+
+function parseCsvRows(text) {
+  const rows = [];
+  let row = [];
+  let value = "";
+  let quoted = false;
+
+  for (let index = 0; index < String(text || "").length; index += 1) {
+    const ch = text[index];
+    const next = text[index + 1];
+
+    if (quoted) {
+      if (ch === "\"" && next === "\"") {
+        value += "\"";
+        index += 1;
+      } else if (ch === "\"") {
+        quoted = false;
+      } else {
+        value += ch;
+      }
+      continue;
+    }
+
+    if (ch === "\"") {
+      quoted = true;
+      continue;
+    }
+    if (ch === ",") {
+      row.push(value);
+      value = "";
+      continue;
+    }
+    if (ch === "\n") {
+      row.push(value);
+      rows.push(row);
+      row = [];
+      value = "";
+      continue;
+    }
+    if (ch === "\r") {
+      continue;
+    }
+    value += ch;
+  }
+
+  if (value.length || row.length) {
+    row.push(value);
+    rows.push(row);
+  }
+
+  return rows;
+}
+
+async function fetchCommunityCsvTab(partKey) {
+  const gid = COMMUNITY_GID_BY_PART[partKey];
+  if (!gid) {
+    return null;
+  }
+  const sheetId = getCommunitySheetId();
+  const url = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/export?format=csv&gid=${encodeURIComponent(gid)}`;
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Report data request failed: ${response.status}`);
+  }
+  const csvRows = parseCsvRows(await response.text());
+  return {
+    headers: (csvRows[0] || []).map((value, index) => {
+      const raw = String(value || "");
+      return (index === 0 ? raw.replace(/^\uFEFF/, "") : raw).trim();
+    }),
+    rows: csvRows
+      .slice(1)
+      .filter((row) => row.some((cell) => String(cell || "").trim() !== ""))
+  };
+}
+
+function getHeaderIndex(headers, patternList) {
+  const normalizedHeaders = (headers || []).map((header) => normalize(header));
+  for (const pattern of patternList) {
+    const wanted = normalize(pattern);
+    const idx = normalizedHeaders.findIndex((header) => header === wanted);
+    if (idx >= 0) {
+      return idx;
+    }
+  }
+  return -1;
+}
+
+function normalizePartKey(value, fallbackPartKey = "") {
+  const raw = normalize(value);
+  if (!raw) {
+    return fallbackPartKey || "";
+  }
+  const found = Object.keys(PART_KEY_ALIASES).find((candidate) => {
+    return PART_KEY_ALIASES[candidate].some((alias) => normalize(alias) === raw);
+  });
+  return found || fallbackPartKey || "";
+}
+
+function parseLegacyContext(rawContext, fallbackPartKey) {
+  const text = safeDecode(rawContext);
+  if (!text) {
+    return null;
+  }
+
+  const getField = (field) => {
+    const match = text.match(new RegExp(`(?:^|[|;,\\s])${field}\\s*[:=]\\s*([^|;,\\s]+)`, "i"));
+    return match ? match[1] : "";
+  };
+
+  const level = normalize(getField("level"));
+  const theme = String(getField("theme") || "").trim();
+  const part = normalizePartKey(getField("part"), fallbackPartKey);
+  const version = String(getField("version") || "default").trim();
+  if (!level || !theme) {
+    return null;
+  }
+  return { level, theme, version, part: part || fallbackPartKey };
+}
+
+function parseTokenContext(rawContext, fallbackPartKey) {
+  const text = safeDecode(rawContext);
+  if (!text || !text.startsWith("ctx_")) {
+    return null;
+  }
+  const body = text.slice(4);
+  const sortedPartKeys = Object.keys(PART_KEY_ALIASES).sort((a, b) => b.length - a.length);
+  const foundPart = sortedPartKeys.find((partKey) => body.includes(`_${partKey}_`));
+  if (!foundPart) {
+    return null;
+  }
+
+  const prefix = body.split(`_${foundPart}_`)[0] || "";
+  const tokens = prefix.split("_").filter(Boolean);
+  if (tokens.length < 3) {
+    return null;
+  }
+
+  const level = normalize(tokens[0]);
+  const version = tokens[tokens.length - 1] || "default";
+  const theme = tokens.slice(1, -1).join("_");
+  if (!level || !theme) {
+    return null;
+  }
+  return {
+    level,
+    theme,
+    version,
+    part: normalizePartKey(foundPart, fallbackPartKey)
+  };
+}
+
+function parseContextMeta(rawContext, fallbackPartKey) {
+  return parseLegacyContext(rawContext, fallbackPartKey)
+    || parseTokenContext(rawContext, fallbackPartKey)
+    || null;
+}
+
+function resolveReportThemeKey(levelKey, rawTheme) {
+  const levelEntry = state.db?.levels?.[levelKey];
+  if (!levelEntry?.themes) {
+    return null;
+  }
+  if (levelEntry.themes[rawTheme]) {
+    return rawTheme;
+  }
+
+  const wanted = normalize(rawTheme);
+  const found = Object.keys(levelEntry.themes).find((themeKey) => {
+    const themeTitle = levelEntry.themes?.[themeKey]?.title || "";
+    return normalize(themeKey) === wanted || normalize(themeTitle) === wanted;
+  });
+  return found || null;
+}
+
+function getReportItemPrefix(partKey) {
+  if (partKey === "teil-1") {
+    return "Text";
+  }
+  if (partKey === "teil-2") {
+    return "Frage";
+  }
+  if (partKey === "teil-3") {
+    return "Situation";
+  }
+  return "Luecke";
+}
+
+function buildReportGroupKey(itemNumbers, answerValues) {
+  return itemNumbers
+    .map((itemNumber) => `${itemNumber}:${answerValues[String(itemNumber)] || ""}`)
+    .join("|");
+}
+
+function isContextLikeComment(value) {
+  return /^ctx_/i.test(String(value || "").trim());
+}
+
+async function loadReportGroups(partKey) {
+  const cacheKey = [
+    state.level || "",
+    state.theme || "",
+    getActiveVersionKey() || "default",
+    partKey || ""
+  ].join("::");
+  if (state.reportGroups[cacheKey]) {
+    return state.reportGroups[cacheKey];
+  }
+  if (state.reportGroupsLoading[cacheKey]) {
+    return state.reportGroupsLoading[cacheKey];
+  }
+
+  const promise = (async () => {
+    const table = await fetchCommunityCsvTab(partKey);
+    if (!table) {
+      return [];
+    }
+
+    const itemNumbers = getCorrectionItemNumbers(partKey);
+    const headers = table.headers || [];
+    const contextIndex = getHeaderIndex(headers, ["Context (auto-filled)", "Context"]);
+    const reasonIndex = getHeaderIndex(headers, ["Reason/Comment (optional)", "Reason", "Comment"]);
+    const prefix = getReportItemPrefix(partKey);
+    const itemIndexes = {};
+    itemNumbers.forEach((itemNumber) => {
+      itemIndexes[String(itemNumber)] = getHeaderIndex(headers, [`${prefix} ${itemNumber}`, String(itemNumber)]);
+    });
+
+    const currentVersion = String(getActiveVersionKey() || "default");
+    const groups = new Map();
+    (table.rows || []).forEach((row) => {
+      const rawContext = contextIndex >= 0 ? row[contextIndex] : "";
+      const rawReason = reasonIndex >= 0 ? row[reasonIndex] : "";
+      const meta = parseContextMeta(rawContext, partKey) || parseContextMeta(rawReason, partKey);
+      if (!meta?.level || !meta?.theme) {
+        return;
+      }
+
+      const levelKey = normalize(meta.level);
+      const themeKey = resolveReportThemeKey(levelKey, meta.theme);
+      const resolvedPartKey = normalizePartKey(meta.part, partKey);
+      const versionKey = String(meta.version || "default");
+      if (levelKey !== state.level || themeKey !== state.theme || resolvedPartKey !== partKey) {
+        return;
+      }
+      if (versionKey !== currentVersion) {
+        return;
+      }
+
+      const answerValues = {};
+      itemNumbers.forEach((itemNumber) => {
+        const idx = itemIndexes[String(itemNumber)];
+        if (idx < 0) {
+          return;
+        }
+        const value = normalizePrefillValue(partKey, row[idx] || "");
+        if (value) {
+          answerValues[String(itemNumber)] = value;
+        }
+      });
+      if (!Object.keys(answerValues).length) {
+        return;
+      }
+
+      const key = buildReportGroupKey(itemNumbers, answerValues);
+      const group = groups.get(key) || {
+        answerValues,
+        count: 0,
+        comments: []
+      };
+      group.count += 1;
+      const comment = String(rawReason || "").trim();
+      if (comment && !isContextLikeComment(comment) && group.comments.length < 3) {
+        group.comments.push(comment);
+      }
+      groups.set(key, group);
+    });
+
+    return Array.from(groups.values()).sort((a, b) => b.count - a.count);
+  })();
+
+  state.reportGroupsLoading[cacheKey] = promise;
+  try {
+    const groups = await promise;
+    state.reportGroups[cacheKey] = groups;
+    return groups;
+  } finally {
+    delete state.reportGroupsLoading[cacheKey];
+  }
+}
+
+function buildCorrectionFormUrl(partKey, answerOverrides = {}, reasonOverride = "") {
   const formConfig = LESEN_CORRECTION_FORMS[partKey];
   if (!formConfig?.formPublicUrl || !formConfig?.entryIds) {
     return "";
@@ -1198,7 +1530,10 @@ function buildCorrectionFormUrl(partKey) {
 
   const targetParams = new URLSearchParams();
   targetParams.set("usp", "pp_url");
-  const answers = getDefaultAnswersForPart(partKey);
+  const answers = {
+    ...getDefaultAnswersForPart(partKey),
+    ...(answerOverrides || {})
+  };
 
   Object.entries(formConfig.entryIds.answers || {}).forEach(([itemNumber, entryId]) => {
     const value = normalizePrefillValue(partKey, answers[itemNumber] || "");
@@ -1207,12 +1542,12 @@ function buildCorrectionFormUrl(partKey) {
 
   const context = buildCorrectionContextToken(partKey);
   targetParams.set(`entry.${formConfig.entryIds.context}`, context);
-  targetParams.set(`entry.${formConfig.entryIds.reason}`, context);
+  targetParams.set(`entry.${formConfig.entryIds.reason}`, reasonOverride || context);
   return `${formConfig.formPublicUrl}?${targetParams.toString()}`;
 }
 
-function openCorrectionFormFromExam(partKey) {
-  const url = buildCorrectionFormUrl(partKey);
+function openCorrectionFormFromExam(partKey, answerOverrides = {}, reasonOverride = "") {
+  const url = buildCorrectionFormUrl(partKey, answerOverrides, reasonOverride);
   if (!url) {
     window.alert("Google Form mapping is not available for this part.");
     return;
@@ -1222,6 +1557,207 @@ function openCorrectionFormFromExam(partKey) {
     return;
   }
   window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function closeReportMistakeModal() {
+  const modal = document.getElementById("lesen-report-modal");
+  if (modal) {
+    modal.classList.add("hidden");
+  }
+}
+
+function createReportMistakeModal() {
+  let modal = document.getElementById("lesen-report-modal");
+  if (modal) {
+    return modal;
+  }
+
+  modal = createEl("div", "fixed inset-0 z-[80] hidden");
+  modal.id = "lesen-report-modal";
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-modal", "true");
+
+  const backdrop = createEl("div", "absolute inset-0 bg-black/45");
+  backdrop.dataset.reportClose = "true";
+
+  const shell = createEl(
+    "div",
+    "relative mx-auto flex min-h-full w-full max-w-3xl items-center justify-center px-4 py-6"
+  );
+  const panel = createEl(
+    "div",
+    "max-h-[88vh] w-full overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl"
+  );
+  const header = createEl(
+    "div",
+    "flex items-start justify-between gap-4 border-b border-stone-200 px-5 py-4"
+  );
+  const headerText = createEl("div");
+  const title = createEl("h3", "font-display text-lg text-ink", "Report mistake");
+  title.id = "lesen-report-modal-title";
+  const subtitle = createEl("p", "mt-1 text-sm text-slate", "Review similar reports before sending a correction.");
+  headerText.append(title, subtitle);
+
+  const closeBtn = createEl(
+    "button",
+    "rounded-full border border-stone-300 bg-white px-3 py-1 text-xs font-display uppercase tracking-[0.16em] text-slate",
+    "Close"
+  );
+  closeBtn.type = "button";
+  closeBtn.dataset.reportClose = "true";
+  header.append(headerText, closeBtn);
+
+  const body = createEl("div", "max-h-[62vh] overflow-y-auto px-5 py-4");
+  body.id = "lesen-report-modal-body";
+  const actions = createEl("div", "flex flex-wrap items-center justify-end gap-3 border-t border-stone-200 px-5 py-4");
+  actions.id = "lesen-report-modal-actions";
+  panel.append(header, body, actions);
+  shell.append(panel);
+  modal.append(backdrop, shell);
+  document.body.append(modal);
+
+  modal.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target instanceof HTMLElement && target.dataset.reportClose) {
+      closeReportMistakeModal();
+    }
+  });
+
+  return modal;
+}
+
+function renderReportGroupDetails(partKey, answerValues) {
+  const list = createEl("div", "mt-3 grid gap-2 sm:grid-cols-2");
+  getCorrectionItemNumbers(partKey).forEach((itemNumber) => {
+    const value = answerValues[String(itemNumber)];
+    if (!value) {
+      return;
+    }
+    const row = createEl("div", "rounded-xl border border-stone-200 bg-stone-50 px-3 py-2");
+    row.append(
+      createEl("div", "text-[10px] font-display uppercase tracking-[0.18em] text-slate", `Item ${itemNumber}`),
+      createEl("div", "mt-1 text-sm font-display text-ink", value)
+    );
+    list.append(row);
+  });
+  return list;
+}
+
+function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
+  const modal = createReportMistakeModal();
+  const body = modal.querySelector("#lesen-report-modal-body");
+  const actions = modal.querySelector("#lesen-report-modal-actions");
+  if (!body || !actions) {
+    return;
+  }
+
+  body.innerHTML = "";
+  actions.innerHTML = "";
+
+  const newReportBtn = createEl(
+    "button",
+    "rounded-full bg-rose px-5 py-2 text-xs font-display uppercase tracking-[0.16em] text-white shadow-lg",
+    "Report new error"
+  );
+  newReportBtn.type = "button";
+  newReportBtn.addEventListener("click", () => {
+    closeReportMistakeModal();
+    openCorrectionFormFromExam(partKey);
+  });
+
+  const closeBtn = createEl(
+    "button",
+    "rounded-full border border-stone-300 bg-white px-5 py-2 text-xs font-display uppercase tracking-[0.16em] text-slate",
+    "Cancel"
+  );
+  closeBtn.type = "button";
+  closeBtn.addEventListener("click", closeReportMistakeModal);
+  actions.append(closeBtn, newReportBtn);
+
+  if (errorMessage) {
+    body.append(
+      createEl("p", "rounded-xl border border-rose/30 bg-rose/10 px-4 py-3 text-sm text-rose", errorMessage)
+    );
+    return;
+  }
+
+  if (!groups.length) {
+    body.append(
+      createEl(
+        "p",
+        "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate",
+        "No reports found for this part yet. You can submit a new correction."
+      )
+    );
+    return;
+  }
+
+  const summary = createEl(
+    "p",
+    "mb-4 text-sm text-slate",
+    `${groups.length} grouped report${groups.length === 1 ? "" : "s"} found. Reports with the same suggested answers are grouped together.`
+  );
+  const list = createEl("div", "space-y-3");
+  groups.forEach((group) => {
+    const card = createEl("div", "rounded-2xl border border-stone-200 bg-white p-4 shadow-sm");
+    const top = createEl("div", "flex flex-wrap items-center justify-between gap-3");
+    const count = createEl(
+      "div",
+      "font-display text-sm text-ink",
+      `${group.count} report${group.count === 1 ? "" : "s"} same suggestion`
+    );
+    const sameBtn = createEl(
+      "button",
+      "rounded-full border border-azure/30 bg-azure/10 px-4 py-2 text-xs font-display uppercase tracking-[0.14em] text-azure",
+      "Report same error"
+    );
+    sameBtn.type = "button";
+    sameBtn.addEventListener("click", () => {
+      closeReportMistakeModal();
+      openCorrectionFormFromExam(
+        partKey,
+        group.answerValues,
+        `Same reported error (${group.count} report${group.count === 1 ? "" : "s"})`
+      );
+    });
+    top.append(count, sameBtn);
+    card.append(top, renderReportGroupDetails(partKey, group.answerValues));
+    if (group.comments?.length) {
+      const comments = createEl("div", "mt-3 space-y-2");
+      group.comments.forEach((comment) => {
+        comments.append(createEl("p", "rounded-xl bg-stone-50 px-3 py-2 text-xs text-slate", comment));
+      });
+      card.append(comments);
+    }
+    list.append(card);
+  });
+
+  body.append(summary, list);
+}
+
+async function openReportMistakeDialog(partKey) {
+  const modal = createReportMistakeModal();
+  const body = modal.querySelector("#lesen-report-modal-body");
+  const actions = modal.querySelector("#lesen-report-modal-actions");
+  if (body) {
+    body.innerHTML = "";
+    body.append(createEl("p", "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate", "Loading reports..."));
+  }
+  if (actions) {
+    actions.innerHTML = "";
+  }
+  modal.classList.remove("hidden");
+
+  try {
+    const groups = await loadReportGroups(partKey);
+    renderReportMistakeModalBody(partKey, groups);
+  } catch (error) {
+    renderReportMistakeModalBody(
+      partKey,
+      [],
+      "Could not load existing reports right now. You can still submit a new correction."
+    );
+  }
 }
 
 function renderLesenTeil1(content) {
@@ -2182,6 +2718,7 @@ if (asideOverlay) {
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
+    closeReportMistakeModal();
     closeAside({ restoreFocus: false });
   }
 });
