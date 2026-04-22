@@ -111,6 +111,8 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
+const SITE_DATA_VERSION = "2026-04-22-data-refresh-v1";
+const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
   if (document.currentScript?.src) {
@@ -155,6 +157,47 @@ function buildDatabaseCandidatePaths(fileName) {
     return true;
   });
 }
+
+function buildFreshUrl(path) {
+  const raw = String(path || "").trim();
+  if (!raw) {
+    return raw;
+  }
+  try {
+    const url = new URL(raw, window.location.href);
+    url.searchParams.set("_", SITE_DATA_VERSION);
+    url.searchParams.set("t", String(Date.now()));
+    return url.toString();
+  } catch (error) {
+    const separator = raw.includes("?") ? "&" : "?";
+    return `${raw}${separator}_=${encodeURIComponent(SITE_DATA_VERSION)}&t=${Date.now()}`;
+  }
+}
+
+function fetchFresh(path, options = {}) {
+  return fetch(buildFreshUrl(path), {
+    ...options,
+    cache: "no-store",
+    headers: {
+      "Cache-Control": "no-cache",
+      "Pragma": "no-cache",
+      ...(options.headers || {})
+    }
+  });
+}
+
+async function fetchFreshJson(path, options = {}) {
+  const response = await fetchFresh(path, options);
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return response.json();
+}
+
+window.SITE_DATA_VERSION = SITE_DATA_VERSION;
+window.buildFreshUrl = buildFreshUrl;
+window.fetchFresh = fetchFresh;
+window.fetchFreshJson = fetchFreshJson;
 
 function normalizeWhatsAppMessageType(value) {
   const raw = normalize(value);
@@ -260,7 +303,7 @@ async function loadWhatsAppWelcomeMessages() {
 
   for (const path of paths) {
     try {
-      const response = await fetch(path, { cache: "no-store" });
+      const response = await fetchFresh(path);
       if (!response.ok) {
         continue;
       }
@@ -388,11 +431,8 @@ async function loadConfig() {
   const paths = buildDatabaseCandidatePaths("config.json");
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        const config = await response.json();
-        return normalizeConfig(config);
-      }
+      const config = await fetchFreshJson(path);
+      return normalizeConfig(config);
     } catch (error) {
       // ignore and try next
     }
@@ -408,10 +448,7 @@ async function loadDatabase(config) {
   const paths = buildDatabaseCandidatePaths(dataFile);
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        return await response.json();
-      }
+      return await fetchFreshJson(path);
     } catch (error) {
       // ignore and try next
     }
@@ -1352,7 +1389,19 @@ async function initSharedSiteFeatures() {
   setupWhatsAppBottomSection();
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js").catch(() => {
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        const reloadKey = `zdeutsch.swReloaded.${SITE_DATA_VERSION}`;
+        if (window.sessionStorage.getItem(reloadKey) === "1") {
+          return;
+        }
+        window.sessionStorage.setItem(reloadKey, "1");
+        window.location.reload();
+      });
+      navigator.serviceWorker.register(SERVICE_WORKER_URL, { updateViaCache: "none" }).then((registration) => {
+        registration.update().catch(() => {
+          // Ignore update failures; the next navigation will try again.
+        });
+      }).catch(() => {
         // Ignore registration issues on unsupported/local hosts.
       });
     }, { once: true });

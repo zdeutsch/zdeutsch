@@ -152,6 +152,18 @@ function buildConfigFallbackPaths() {
   });
 }
 
+async function loadFreshJson(path) {
+  if (typeof window.fetchFreshJson === "function") {
+    return window.fetchFreshJson(path);
+  }
+  const separator = String(path).includes("?") ? "&" : "?";
+  const response = await fetch(`${path}${separator}t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return response.json();
+}
+
 async function loadConfigSafe() {
   if (typeof window.loadConfig === "function") {
     return window.loadConfig();
@@ -159,11 +171,8 @@ async function loadConfigSafe() {
   const paths = buildConfigFallbackPaths();
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        const config = await response.json();
-        return { ...MAIN_DEFAULT_CONFIG, ...config };
-      }
+      const config = await loadFreshJson(path);
+      return { ...MAIN_DEFAULT_CONFIG, ...config };
     } catch (error) {
       // ignore and try next path
     }
@@ -524,10 +533,7 @@ async function loadParts() {
   const paths = ["database/parts.json", "../database/parts.json"];
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        return await response.json();
-      }
+      return await loadFreshJson(path);
     } catch (error) {
       // ignore
     }
@@ -595,10 +601,7 @@ async function loadNamedDatabase(fileName) {
   const paths = [`database/${fileName}`, `../database/${fileName}`];
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        return await response.json();
-      }
+      return await loadFreshJson(path);
     } catch (error) {
       // ignore and try next
     }

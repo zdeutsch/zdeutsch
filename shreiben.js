@@ -361,14 +361,23 @@ function applyTimerConfig() {
   updateTimerDisplay(timerConfig.durationMs);
 }
 
+async function loadFreshJson(path) {
+  if (typeof window.fetchFreshJson === "function") {
+    return window.fetchFreshJson(path);
+  }
+  const separator = String(path).includes("?") ? "&" : "?";
+  const response = await fetch(`${path}${separator}t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return response.json();
+}
+
 async function loadShreibenDatabase() {
   const paths = ["database/shreiben.json", "../database/shreiben.json"];
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        return await response.json();
-      }
+      return await loadFreshJson(path);
     } catch (error) {
       // ignore and try next
     }

@@ -221,14 +221,23 @@ function getCommunitySheetId() {
     || COMMUNITY_SHEET_ID_DEFAULT;
 }
 
+async function loadFreshJson(path) {
+  if (typeof window.fetchFreshJson === "function") {
+    return window.fetchFreshJson(path);
+  }
+  const separator = String(path).includes("?") ? "&" : "?";
+  const response = await fetch(`${path}${separator}t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return response.json();
+}
+
 async function loadLesenDatabase() {
   const paths = ["database/lesen.json", "../database/lesen.json"];
   for (const path of paths) {
     try {
-      const response = await fetch(path);
-      if (response.ok) {
-        return await response.json();
-      }
+      return await loadFreshJson(path);
     } catch (error) {
       // try next path
     }

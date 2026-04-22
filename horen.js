@@ -747,9 +747,20 @@ if (returnBtn) {
   });
 }
 
+async function loadFreshJson(path) {
+  if (typeof window.fetchFreshJson === "function") {
+    return window.fetchFreshJson(path);
+  }
+  const separator = String(path).includes("?") ? "&" : "?";
+  const response = await fetch(`${path}${separator}t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${path}: ${response.status}`);
+  }
+  return response.json();
+}
+
 async function init() {
-  const response = await fetch("database/horen-codes.json?v2");
-  state.data = await response.json();
+  state.data = await loadFreshJson("database/horen-codes.json");
   const params = new URLSearchParams(window.location.search);
   const requestedLevel = params.get("level");
   const availableLevels = Object.keys(state.data.levels || {});

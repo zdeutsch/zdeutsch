@@ -159,6 +159,14 @@ const PART_KEY_ALIASES = {
   "sprachbausteine-2": ["sprachbausteine-2", "sprachbausteine 2", "sprach-2", "sprach 2", "sprach2", "sb2"]
 };
 
+const DEFAULT_PART_ORDER = [
+  "teil-1",
+  "teil-2",
+  "teil-3",
+  "sprachbausteine-1",
+  "sprachbausteine-2"
+];
+
 const state = {
   db: null,
   config: null,
@@ -590,6 +598,15 @@ function getActiveLesen(themeEntry) {
   return versionEntry?.lesen || themeEntry?.lesen || null;
 }
 
+function getLesenPartOrder(lesenEntry) {
+  const parts = lesenEntry?.parts || {};
+  const configuredOrder = Array.isArray(lesenEntry?.partOrder) ? lesenEntry.partOrder : [];
+  const ordered = (configuredOrder.length ? configuredOrder : DEFAULT_PART_ORDER)
+    .filter((partKey) => Boolean(parts[partKey]));
+  const extras = Object.keys(parts).filter((partKey) => !ordered.includes(partKey));
+  return [...ordered, ...extras];
+}
+
 function setHeader(meta) {
   if (themeTitle) {
     themeTitle.textContent = meta?.title || "Theme";
@@ -642,7 +659,7 @@ function renderPartCards() {
     return;
   }
   const lesenEntry = getActiveLesen(themeEntry);
-  const order = lesenEntry?.partOrder || [];
+  const order = getLesenPartOrder(lesenEntry);
   order.forEach((partKey) => {
     const partData = lesenEntry?.parts?.[partKey];
     if (!partData) {
@@ -1003,7 +1020,7 @@ function renderResults() {
 
   const scoreConfig = getScoreConfig();
   const lesenEntry = getActiveLesen(themeEntry);
-  const order = lesenEntry?.partOrder || [];
+  const order = getLesenPartOrder(lesenEntry);
   const scores = order
     .map((partKey) => {
       const partData = lesenEntry?.parts?.[partKey];
@@ -2673,7 +2690,7 @@ function renderCurrentPart() {
   }
 
   setHeader(partData.meta);
-  renderProgress(lesenEntry?.partOrder || []);
+  renderProgress(getLesenPartOrder(lesenEntry));
 
   if (state.part === "teil-1") {
     renderLesenTeil1(partData.content);
@@ -2687,7 +2704,7 @@ function renderCurrentPart() {
     renderSprachbausteine2(partData.content);
   }
 
-  const order = lesenEntry?.partOrder || [];
+  const order = getLesenPartOrder(lesenEntry);
   const index = order.indexOf(state.part);
   const atLastPart = index === order.length - 1;
   prevBtn.disabled = index <= 0;
@@ -2704,7 +2721,7 @@ function resetCurrentTheme() {
     return;
   }
   const lesenEntry = getActiveLesen(themeEntry);
-  const order = lesenEntry?.partOrder || [];
+  const order = getLesenPartOrder(lesenEntry);
   order.forEach((partKey) => {
     const { key } = ensurePartState(partKey);
     state.responses[key] = {};
@@ -2803,7 +2820,7 @@ if (timerToggle) {
 
 prevBtn.addEventListener("click", () => {
   const themeEntry = getThemeEntry();
-  const order = getActiveLesen(themeEntry)?.partOrder || [];
+  const order = getLesenPartOrder(getActiveLesen(themeEntry));
   const index = order.indexOf(state.part);
   if (index > 0) {
     void navigateToPart(order[index - 1]);
@@ -2812,7 +2829,7 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   const themeEntry = getThemeEntry();
-  const order = getActiveLesen(themeEntry)?.partOrder || [];
+  const order = getLesenPartOrder(getActiveLesen(themeEntry));
   const index = order.indexOf(state.part);
   if (index >= 0 && index < order.length - 1) {
     void navigateToPart(order[index + 1]);
@@ -2828,7 +2845,7 @@ if (resultRetryBtn) {
   resultRetryBtn.addEventListener("click", () => {
     resetCurrentTheme();
     const themeEntry = getThemeEntry();
-    const order = getActiveLesen(themeEntry)?.partOrder || [];
+    const order = getLesenPartOrder(getActiveLesen(themeEntry));
     state.part = order[0] || null;
     setView("exam");
     startExamTimer();
@@ -2930,7 +2947,7 @@ async function init() {
   state.version = resolveVersion(themeEntry, versionKey);
 
   const lesenEntry = getActiveLesen(themeEntry);
-  const order = lesenEntry?.partOrder || Object.keys(lesenEntry?.parts || {});
+  const order = getLesenPartOrder(lesenEntry);
   state.part = order[0] || null;
 
   setView("exam");

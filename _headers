@@ -1,0 +1,11 @@
+/*
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/database/*.json
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/database/*
+  Cache-Control: no-cache, no-store, must-revalidate

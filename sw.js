@@ -1,5 +1,6 @@
-const STATIC_CACHE = "zdeutsch-static-v28";
-const RUNTIME_CACHE = "zdeutsch-runtime-v28";
+const SW_VERSION = "2026-04-22-data-refresh-v1";
+const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
+const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -19,14 +20,10 @@ const APP_SHELL = [
   "./logo.svg",
   "./pwa/icon-192.png",
   "./pwa/icon-512.png",
-  "./pwa/apple-touch-icon.png",
-  "./database/config.json",
-  "./database/parts.json",
-  "./database/shreiben.json",
-  "./database/horen-codes.json?v2",
-  "./database/whatsapp-welcome-messages.json"
+  "./pwa/apple-touch-icon.png"
 ];
 const NETWORK_FIRST_ASSET_PATTERN = /\.(?:css|html|js|webmanifest)$/i;
+const DATABASE_ASSET_PATTERN = /\/database\/[^/?#]+\.json$/i;
 
 function cacheResponse(cacheName, request, response) {
   if (!response || (!response.ok && response.type !== "opaque")) {
@@ -42,6 +39,10 @@ function shouldUseNetworkFirst(request, url) {
     return true;
   }
   return NETWORK_FIRST_ASSET_PATTERN.test(url.pathname || "");
+}
+
+function isDatabaseRequest(url) {
+  return DATABASE_ASSET_PATTERN.test(url.pathname || "");
 }
 
 self.addEventListener("install", (event) => {
@@ -72,6 +73,23 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) {
+    return;
+  }
+
+  if (isDatabaseRequest(url)) {
+    event.respondWith(
+      fetch(request, { cache: "no-store" })
+        .catch(() => new Response(
+          JSON.stringify({ error: "Database file is temporarily unavailable." }),
+          {
+            status: 503,
+            headers: {
+              "Content-Type": "application/json; charset=utf-8",
+              "Cache-Control": "no-store"
+            }
+          }
+        ))
+    );
     return;
   }
 
