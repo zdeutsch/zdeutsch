@@ -1,5 +1,5 @@
 const SHARE_GATE_SERVICE_ORIGIN = "https://zdeutsch.203.161.46.84.sslip.io";
-const SHARE_GATE_GITHUB_APP_ORIGIN = "https://zadelkhair.github.io";
+const SHARE_GATE_GITHUB_APP_ORIGIN = String(process.env.SHARE_GATE_GITHUB_APP_ORIGIN || "https://example.github.io").trim();
 const LOCALHOST_ORIGIN_PATTERN = /^https?:\/\/(?:(?:[a-z0-9-]+\.)*localhost|127\.0\.0\.1)(?::\d+)?$/i;
 
 function isAllowedOrigin(origin) {

@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const apiRoutes = require("./routes/api");
-const shareDashboardRoutes = require("./routes/shareDashboard.routes");
 const notFound = require("./middleware/notFound");
 const errorHandler = require("./middleware/errorHandler");
 const { DASHBOARD_DIR } = require("./config/constants");
@@ -12,7 +11,6 @@ app.use(express.json({ limit: "30mb" }));
 app.use(express.urlencoded({ extended: true, limit: "30mb" }));
 
 app.use("/api", apiRoutes);
-app.use("/share-dashboard", shareDashboardRoutes);
 
 app.get("/dashboard", (req, res) => {
   res.sendFile(path.join(DASHBOARD_DIR, "index.html"));

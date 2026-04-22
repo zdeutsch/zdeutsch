@@ -2,8 +2,8 @@ const crypto = require("crypto");
 const AppError = require("../utils/appError");
 
 const COOKIE_NAME = "zdeutsch_share_admin_session";
-const DEFAULT_USERNAME = "zadelkhair";
-const DEFAULT_PASSWORD = "zadelkhair@password";
+const DEFAULT_USERNAME = "admin";
+const DEFAULT_PASSWORD = "change_me";
 const SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 
 function getAdminUsername() {
