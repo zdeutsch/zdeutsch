@@ -1626,18 +1626,50 @@ function createReportMistakeModal() {
   return modal;
 }
 
-function renderReportGroupDetails(partKey, answerValues) {
+function getReportGroupChangeCount(partKey, answerValues, defaultAnswers = getDefaultAnswersForPart(partKey)) {
+  return getCorrectionItemNumbers(partKey).reduce((count, itemNumber) => {
+    const suggested = normalizePrefillValue(partKey, answerValues[String(itemNumber)] || "");
+    const current = normalizePrefillValue(partKey, defaultAnswers[String(itemNumber)] || "");
+    return suggested && suggested !== current ? count + 1 : count;
+  }, 0);
+}
+
+function renderReportGroupDetails(partKey, answerValues, defaultAnswers = getDefaultAnswersForPart(partKey)) {
   const list = createEl("div", "mt-3 grid gap-2 sm:grid-cols-2");
   getCorrectionItemNumbers(partKey).forEach((itemNumber) => {
-    const value = answerValues[String(itemNumber)];
-    if (!value) {
+    const suggested = normalizePrefillValue(partKey, answerValues[String(itemNumber)] || "");
+    if (!suggested) {
       return;
     }
-    const row = createEl("div", "rounded-xl border border-stone-200 bg-stone-50 px-3 py-2");
-    row.append(
-      createEl("div", "text-[10px] font-display uppercase tracking-[0.18em] text-slate", `Item ${itemNumber}`),
-      createEl("div", "mt-1 text-sm font-display text-ink", value)
+    const current = normalizePrefillValue(partKey, defaultAnswers[String(itemNumber)] || "");
+    const changed = suggested !== current;
+    const row = createEl(
+      "div",
+      classNames(
+        "rounded-xl border px-3 py-2",
+        changed
+          ? "border-rose/40 bg-rose/10 ring-1 ring-rose/10"
+          : "border-stone-200 bg-stone-50 opacity-75"
+      )
     );
+    row.append(createEl("div", "text-[10px] font-display uppercase tracking-[0.18em] text-slate", `Item ${itemNumber}`));
+    if (changed) {
+      const comparison = createEl("div", "mt-2 flex flex-wrap items-center gap-2 text-sm");
+      comparison.append(
+        createEl("span", "rounded-lg border border-stone-300 bg-white px-2 py-1 font-display text-slate line-through", current || "-"),
+        createEl("span", "text-xs font-display uppercase tracking-[0.16em] text-rose", "to"),
+        createEl("span", "rounded-lg border border-mint/40 bg-mint/15 px-2 py-1 font-display text-mint", suggested)
+      );
+      row.append(
+        createEl("div", "mt-1 text-[10px] font-display uppercase tracking-[0.18em] text-rose", "Changed response"),
+        comparison
+      );
+    } else {
+      row.append(
+        createEl("div", "mt-1 text-[10px] font-display uppercase tracking-[0.18em] text-slate", "No change"),
+        createEl("div", "mt-1 text-sm font-display text-slate", suggested)
+      );
+    }
     list.append(row);
   });
   return list;
@@ -1698,13 +1730,28 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
     `${groups.length} grouped report${groups.length === 1 ? "" : "s"} found. Reports with the same suggested answers are grouped together.`
   );
   const list = createEl("div", "space-y-3");
+  const defaultAnswers = getDefaultAnswersForPart(partKey);
   groups.forEach((group) => {
+    const changeCount = getReportGroupChangeCount(partKey, group.answerValues, defaultAnswers);
     const card = createEl("div", "rounded-2xl border border-stone-200 bg-white p-4 shadow-sm");
     const top = createEl("div", "flex flex-wrap items-center justify-between gap-3");
-    const count = createEl(
-      "div",
-      "font-display text-sm text-ink",
-      `${group.count} report${group.count === 1 ? "" : "s"} same suggestion`
+    const countWrap = createEl("div", "space-y-1");
+    countWrap.append(
+      createEl(
+        "div",
+        "font-display text-sm text-ink",
+        `${group.count} report${group.count === 1 ? "" : "s"} same suggestion`
+      ),
+      createEl(
+        "div",
+        classNames(
+          "text-xs font-display uppercase tracking-[0.16em]",
+          changeCount ? "text-rose" : "text-slate"
+        ),
+        changeCount
+          ? `${changeCount} changed response${changeCount === 1 ? "" : "s"}`
+          : "No answer changes"
+      )
     );
     const sameBtn = createEl(
       "button",
@@ -1720,8 +1767,8 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
         `Same reported error (${group.count} report${group.count === 1 ? "" : "s"})`
       );
     });
-    top.append(count, sameBtn);
-    card.append(top, renderReportGroupDetails(partKey, group.answerValues));
+    top.append(countWrap, sameBtn);
+    card.append(top, renderReportGroupDetails(partKey, group.answerValues, defaultAnswers));
     if (group.comments?.length) {
       const comments = createEl("div", "mt-3 space-y-2");
       group.comments.forEach((comment) => {
