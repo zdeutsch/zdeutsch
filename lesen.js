@@ -1566,6 +1566,14 @@ function closeReportMistakeModal() {
   }
 }
 
+function createReportMistakeGuidance() {
+  return createEl(
+    "p",
+    "mb-4 rounded-xl border border-azure/25 bg-azure/10 px-4 py-3 text-sm leading-6 text-slate",
+    "أبلغ عن الخطأ لتسهيل تصحيحه على المشرفين. إذا تم الإبلاغ عن نفس الخطأ من طرف عدد أكبر من المستخدمين فستكون له أولوية أكبر في التصحيح."
+  );
+}
+
 function createReportMistakeModal() {
   let modal = document.getElementById("lesen-report-modal");
   if (modal) {
@@ -1715,6 +1723,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
 
   if (errorMessage) {
     body.append(
+      createReportMistakeGuidance(),
       createEl("p", "rounded-xl border border-rose/30 bg-rose/10 px-4 py-3 text-sm text-rose", errorMessage)
     );
     return;
@@ -1722,6 +1731,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
 
   if (!groups.length) {
     body.append(
+      createReportMistakeGuidance(),
       createEl(
         "p",
         "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate",
@@ -1741,6 +1751,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
 
   if (!changedGroups.length) {
     body.append(
+      createReportMistakeGuidance(),
       createEl(
         "p",
         "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate",
@@ -1799,7 +1810,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
     list.append(card);
   });
 
-  body.append(summary, list);
+  body.append(createReportMistakeGuidance(), summary, list);
 }
 
 async function openReportMistakeDialog(partKey) {
