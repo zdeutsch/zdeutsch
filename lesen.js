@@ -1576,6 +1576,7 @@ function createReportMistakeModal() {
   modal.id = "lesen-report-modal";
   modal.setAttribute("role", "dialog");
   modal.setAttribute("aria-modal", "true");
+  modal.setAttribute("dir", "rtl");
 
   const backdrop = createEl("div", "absolute inset-0 bg-black/45");
   backdrop.dataset.reportClose = "true";
@@ -1593,15 +1594,15 @@ function createReportMistakeModal() {
     "flex items-start justify-between gap-4 border-b border-stone-200 px-5 py-4"
   );
   const headerText = createEl("div");
-  const title = createEl("h3", "font-display text-lg text-ink", "Report mistake");
+  const title = createEl("h3", "font-display text-lg text-ink", "الإبلاغ عن خطأ");
   title.id = "lesen-report-modal-title";
-  const subtitle = createEl("p", "mt-1 text-sm text-slate", "Review similar reports before sending a correction.");
+  const subtitle = createEl("p", "mt-1 text-sm text-slate", "راجع البلاغات المشابهة قبل إرسال التصحيح.");
   headerText.append(title, subtitle);
 
   const closeBtn = createEl(
     "button",
     "rounded-full border border-stone-300 bg-white px-3 py-1 text-xs font-display uppercase tracking-[0.16em] text-slate",
-    "Close"
+    "إغلاق"
   );
   closeBtn.type = "button";
   closeBtn.dataset.reportClose = "true";
@@ -1643,6 +1644,9 @@ function renderReportGroupDetails(partKey, answerValues, defaultAnswers = getDef
     }
     const current = normalizePrefillValue(partKey, defaultAnswers[String(itemNumber)] || "");
     const changed = suggested !== current;
+    if (!changed) {
+      return;
+    }
     const row = createEl(
       "div",
       classNames(
@@ -1652,24 +1656,27 @@ function renderReportGroupDetails(partKey, answerValues, defaultAnswers = getDef
           : "border-stone-200 bg-stone-50 opacity-75"
       )
     );
-    row.append(createEl("div", "text-[10px] font-display uppercase tracking-[0.18em] text-slate", `Item ${itemNumber}`));
-    if (changed) {
-      const comparison = createEl("div", "mt-2 flex flex-wrap items-center gap-2 text-sm");
-      comparison.append(
-        createEl("span", "rounded-lg border border-stone-300 bg-white px-2 py-1 font-display text-slate line-through", current || "-"),
-        createEl("span", "text-xs font-display uppercase tracking-[0.16em] text-rose", "to"),
-        createEl("span", "rounded-lg border border-mint/40 bg-mint/15 px-2 py-1 font-display text-mint", suggested)
-      );
-      row.append(
-        createEl("div", "mt-1 text-[10px] font-display uppercase tracking-[0.18em] text-rose", "Changed response"),
-        comparison
-      );
-    } else {
-      row.append(
-        createEl("div", "mt-1 text-[10px] font-display uppercase tracking-[0.18em] text-slate", "No change"),
-        createEl("div", "mt-1 text-sm font-display text-slate", suggested)
-      );
-    }
+    row.append(createEl("div", "text-[10px] font-display uppercase tracking-[0.18em] text-slate", `السؤال ${itemNumber}`));
+    const comparison = createEl("div", "mt-2 flex flex-wrap items-center gap-2 text-sm");
+    const currentWrap = createEl("span", "inline-flex items-center gap-1 rounded-lg border border-stone-300 bg-white px-2 py-1");
+    currentWrap.append(
+      createEl("span", "text-[10px] font-display uppercase tracking-[0.14em] text-slate", "الحالي"),
+      createEl("span", "font-display text-slate line-through", current || "-")
+    );
+    const suggestedWrap = createEl("span", "inline-flex items-center gap-1 rounded-lg border border-mint/40 bg-mint/15 px-2 py-1");
+    suggestedWrap.append(
+      createEl("span", "text-[10px] font-display uppercase tracking-[0.14em] text-mint", "المقترح"),
+      createEl("span", "font-display text-mint", suggested)
+    );
+    comparison.append(
+      currentWrap,
+      createEl("span", "text-xs font-display uppercase tracking-[0.16em] text-rose", "إلى"),
+      suggestedWrap
+    );
+    row.append(
+      createEl("div", "mt-1 text-[10px] font-display uppercase tracking-[0.18em] text-rose", "تغيير في الجواب"),
+      comparison
+    );
     list.append(row);
   });
   return list;
@@ -1689,7 +1696,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
   const newReportBtn = createEl(
     "button",
     "rounded-full bg-rose px-5 py-2 text-xs font-display uppercase tracking-[0.16em] text-white shadow-lg",
-    "Report new error"
+    "إرسال بلاغ جديد"
   );
   newReportBtn.type = "button";
   newReportBtn.addEventListener("click", () => {
@@ -1700,7 +1707,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
   const closeBtn = createEl(
     "button",
     "rounded-full border border-stone-300 bg-white px-5 py-2 text-xs font-display uppercase tracking-[0.16em] text-slate",
-    "Cancel"
+    "إلغاء"
   );
   closeBtn.type = "button";
   closeBtn.addEventListener("click", closeReportMistakeModal);
@@ -1718,7 +1725,26 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
       createEl(
         "p",
         "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate",
-        "No reports found for this part yet. You can submit a new correction."
+        "لا توجد بلاغات فيها تغيير لهذا الجزء. يمكنك إرسال تصحيح جديد."
+      )
+    );
+    return;
+  }
+
+  const defaultAnswers = getDefaultAnswersForPart(partKey);
+  const changedGroups = groups
+    .map((group) => ({
+      ...group,
+      changeCount: getReportGroupChangeCount(partKey, group.answerValues, defaultAnswers)
+    }))
+    .filter((group) => group.changeCount > 0);
+
+  if (!changedGroups.length) {
+    body.append(
+      createEl(
+        "p",
+        "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate",
+        "لا توجد بلاغات فيها تغيير حقيقي لهذا الجزء. يمكنك إرسال تصحيح جديد."
       )
     );
     return;
@@ -1727,12 +1753,11 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
   const summary = createEl(
     "p",
     "mb-4 text-sm text-slate",
-    `${groups.length} grouped report${groups.length === 1 ? "" : "s"} found. Reports with the same suggested answers are grouped together.`
+    `تم العثور على ${changedGroups.length} اقتراح${changedGroups.length === 1 ? "" : "ات"} فيها تغيير. الاقتراحات المتطابقة مجمعة مع عدد البلاغات.`
   );
   const list = createEl("div", "space-y-3");
-  const defaultAnswers = getDefaultAnswersForPart(partKey);
-  groups.forEach((group) => {
-    const changeCount = getReportGroupChangeCount(partKey, group.answerValues, defaultAnswers);
+  changedGroups.forEach((group) => {
+    const changeCount = group.changeCount;
     const card = createEl("div", "rounded-2xl border border-stone-200 bg-white p-4 shadow-sm");
     const top = createEl("div", "flex flex-wrap items-center justify-between gap-3");
     const countWrap = createEl("div", "space-y-1");
@@ -1740,23 +1765,18 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
       createEl(
         "div",
         "font-display text-sm text-ink",
-        `${group.count} report${group.count === 1 ? "" : "s"} same suggestion`
+        `${group.count} بلاغ${group.count === 1 ? "" : "ات"} بنفس الاقتراح`
       ),
       createEl(
         "div",
-        classNames(
-          "text-xs font-display uppercase tracking-[0.16em]",
-          changeCount ? "text-rose" : "text-slate"
-        ),
-        changeCount
-          ? `${changeCount} changed response${changeCount === 1 ? "" : "s"}`
-          : "No answer changes"
+        "text-xs font-display uppercase tracking-[0.16em] text-rose",
+        `${changeCount} جواب${changeCount === 1 ? "" : "ات"} تغير`
       )
     );
     const sameBtn = createEl(
       "button",
       "rounded-full border border-azure/30 bg-azure/10 px-4 py-2 text-xs font-display uppercase tracking-[0.14em] text-azure",
-      "Report same error"
+      "الإبلاغ عن نفس الخطأ"
     );
     sameBtn.type = "button";
     sameBtn.addEventListener("click", () => {
@@ -1764,7 +1784,7 @@ function renderReportMistakeModalBody(partKey, groups, errorMessage = "") {
       openCorrectionFormFromExam(
         partKey,
         group.answerValues,
-        `Same reported error (${group.count} report${group.count === 1 ? "" : "s"})`
+        `نفس الخطأ المبلغ عنه (${group.count} بلاغ${group.count === 1 ? "" : "ات"})`
       );
     });
     top.append(countWrap, sameBtn);
@@ -1788,7 +1808,7 @@ async function openReportMistakeDialog(partKey) {
   const actions = modal.querySelector("#lesen-report-modal-actions");
   if (body) {
     body.innerHTML = "";
-    body.append(createEl("p", "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate", "Loading reports..."));
+    body.append(createEl("p", "rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-slate", "جاري تحميل البلاغات..."));
   }
   if (actions) {
     actions.innerHTML = "";
@@ -1802,7 +1822,7 @@ async function openReportMistakeDialog(partKey) {
     renderReportMistakeModalBody(
       partKey,
       [],
-      "Could not load existing reports right now. You can still submit a new correction."
+      "تعذر تحميل البلاغات الحالية الآن. يمكنك إرسال تصحيح جديد."
     );
   }
 }
