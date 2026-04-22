@@ -2668,6 +2668,138 @@ body.whatsapp-welcome-open {
   gap: 0.65rem;
 }
 
+.correction-page .correction-stats-section-title,
+.correction-page .correction-grouped-reports-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #131a21;
+}
+
+.correction-page .correction-stats-empty-note,
+.correction-page .correction-grouped-reports-note {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #4b5563;
+}
+
+.correction-page .correction-grouped-reports {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.correction-page .correction-grouped-report-card {
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  border-radius: 16px;
+  background: rgba(15, 118, 110, 0.05);
+  padding: 0.85rem;
+}
+
+.correction-page .correction-grouped-report-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.correction-page .correction-grouped-report-count {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  color: #131a21;
+}
+
+.correction-page .correction-grouped-report-meta {
+  margin-top: 0.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #be123c;
+}
+
+.correction-page .correction-grouped-report-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.correction-page .correction-grouped-report-change {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(190, 18, 60, 0.22);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.5rem;
+}
+
+.correction-page .correction-grouped-report-item {
+  flex-basis: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #4b5563;
+}
+
+.correction-page .correction-grouped-report-current,
+.correction-page .correction-grouped-report-suggested {
+  border-radius: 8px;
+  padding: 0.18rem 0.45rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+}
+
+.correction-page .correction-grouped-report-current {
+  border: 1px solid var(--flag-stone-200);
+  background: #fff;
+  color: #4b5563;
+  text-decoration: line-through;
+}
+
+.correction-page .correction-grouped-report-arrow {
+  color: #be123c;
+  font-size: 0.8rem;
+}
+
+.correction-page .correction-grouped-report-suggested {
+  border: 1px solid rgba(22, 163, 74, 0.28);
+  background: rgba(22, 163, 74, 0.1);
+  color: #15803d;
+}
+
+.correction-page .correction-grouped-report-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.correction-page .correction-grouped-report-comments p {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.45rem 0.55rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #4b5563;
+}
+
+@media (max-width: 640px) {
+  .correction-page .correction-grouped-report-header {
+    flex-direction: column;
+  }
+
+  .correction-page .correction-grouped-report-details {
+    grid-template-columns: 1fr;
+  }
+}
+
 .correction-page .correction-stats-item {
   border: 1px solid var(--flag-stone-200);
   border-radius: 14px;

@@ -445,7 +445,9 @@ function ensureCommunityRawBucket(root, levelKey, themeKey, partKey, itemNumbers
     });
     root[levelKey][themeKey][partKey] = {
       votes: 0,
-      itemCounts
+      itemCounts,
+      itemNumbers: itemNumbers.map((itemNumber) => String(itemNumber)),
+      reportGroups: {}
     };
   }
   return root[levelKey][themeKey][partKey];
@@ -478,6 +480,16 @@ function ensureContributedPartSet(root, levelKey, themeKey, partKey) {
     root[levelKey][themeKey][partKey] = new Set();
   }
   return root[levelKey][themeKey][partKey];
+}
+
+function isContextLikeComment(value) {
+  return /^ctx_/i.test(String(value || "").trim());
+}
+
+function buildReportGroupKey(itemNumbers, answerValues) {
+  return (itemNumbers || [])
+    .map((itemNumber) => `${itemNumber}:${answerValues[String(itemNumber)] || ""}`)
+    .join("|");
 }
 
 function finalizeCommunityMap(rawMap) {
@@ -514,7 +526,9 @@ function finalizeCommunityMap(rawMap) {
 
         partOut[partKey] = {
           votes: partData.votes || 0,
-          items: itemSummaries
+          items: itemSummaries,
+          groups: Object.values(partData.reportGroups || {})
+            .sort((a, b) => b.count - a.count)
         };
       });
       if (Object.keys(partOut).length) {
@@ -601,6 +615,7 @@ function aggregateCommunityRows(tables) {
         partKey: resolvedPartKey,
         email: submittedEmail,
         answerValues,
+        reason: String(rawReason || "").trim(),
         submissionOrder
       };
 
@@ -640,6 +655,20 @@ function aggregateCommunityRows(tables) {
         itemNumbers
       );
       bucket.votes += 1;
+
+      if (Object.keys(submission.answerValues || {}).length) {
+        const groupKey = buildReportGroupKey(itemNumbers, submission.answerValues);
+        const group = bucket.reportGroups[groupKey] || {
+          answerValues: { ...submission.answerValues },
+          count: 0,
+          comments: []
+        };
+        group.count += 1;
+        if (submission.reason && !isContextLikeComment(submission.reason) && group.comments.length < 3) {
+          group.comments.push(submission.reason);
+        }
+        bucket.reportGroups[groupKey] = group;
+      }
 
       Object.entries(submission.answerValues || {}).forEach(([itemNumber, value]) => {
         const counts = bucket.itemCounts[String(itemNumber)];
@@ -725,6 +754,110 @@ function buildDistributionText(item) {
     .join(" · ");
 }
 
+function getGroupedReportChangeCount(partKey, answerValues, defaultAnswers = getAutoAnswersForSelection(partKey)) {
+  return (FORM_INTEGRATION.forms[partKey]?.itemNumbers || []).reduce((count, itemNumber) => {
+    const suggested = normalizePrefillValue(partKey, answerValues?.[String(itemNumber)] || "");
+    const current = normalizePrefillValue(partKey, defaultAnswers?.[String(itemNumber)] || "");
+    return suggested && suggested !== current ? count + 1 : count;
+  }, 0);
+}
+
+function getChangedReportGroups(partData, partKey) {
+  const defaultAnswers = getAutoAnswersForSelection(partKey);
+  const groups = (partData?.groups || [])
+    .map((group) => ({
+      ...group,
+      changeCount: getGroupedReportChangeCount(partKey, group.answerValues, defaultAnswers)
+    }))
+    .filter((group) => group.changeCount > 0)
+    .sort((a, b) => b.count - a.count || b.changeCount - a.changeCount);
+  return { groups, defaultAnswers };
+}
+
+function renderGroupedReportDetails(partKey, answerValues, defaultAnswers) {
+  const wrap = createEl("div", "correction-grouped-report-details");
+  (FORM_INTEGRATION.forms[partKey]?.itemNumbers || []).forEach((itemNumber) => {
+    const suggested = normalizePrefillValue(partKey, answerValues?.[String(itemNumber)] || "");
+    const current = normalizePrefillValue(partKey, defaultAnswers?.[String(itemNumber)] || "");
+    if (!suggested || suggested === current) {
+      return;
+    }
+    const row = createEl("div", "correction-grouped-report-change");
+    row.append(
+      createEl("div", "correction-grouped-report-item", `Item ${itemNumber}`),
+      createEl("span", "correction-grouped-report-current", current || "-"),
+      createEl("span", "correction-grouped-report-arrow", "→"),
+      createEl("span", "correction-grouped-report-suggested", suggested)
+    );
+    wrap.append(row);
+  });
+  return wrap;
+}
+
+function buildGroupedSuggestionUrl(formConfig, answerValues, count) {
+  const targetParams = new URLSearchParams();
+  targetParams.set("usp", "pp_url");
+  const mergedAnswers = {
+    ...getAutoAnswersForSelection(formConfig.partKey),
+    ...(answerValues || {})
+  };
+  Object.entries(formConfig.entryIds.answers || {}).forEach(([itemNumber, entryId]) => {
+    const value = normalizePrefillValue(formConfig.partKey, mergedAnswers[String(itemNumber)] || "");
+    targetParams.set(`entry.${entryId}`, value);
+  });
+  const email = getStoredEmail() || "admin";
+  const context = buildContextValue(email);
+  targetParams.set(`entry.${formConfig.entryIds.context}`, context);
+  targetParams.set(`entry.${formConfig.entryIds.reason}`, `Grouped admin review: ${count} matching reports`);
+  return `${formConfig.formPublicUrl}?${targetParams.toString()}`;
+}
+
+function renderGroupedReports(partKey, changedGroups, defaultAnswers) {
+  const section = createEl("section", "correction-grouped-reports");
+  section.append(
+    createEl("div", "correction-grouped-reports-title", "Grouped mistake reports"),
+    createEl("p", "correction-grouped-reports-note", "Identical suggestions are grouped together. Start with the highest report count.")
+  );
+
+  changedGroups.forEach((group) => {
+    const card = createEl("div", "correction-grouped-report-card");
+    const header = createEl("div", "correction-grouped-report-header");
+    const count = createEl(
+      "div",
+      "correction-grouped-report-count",
+      `${group.count} matching report${group.count === 1 ? "" : "s"}`
+    );
+    const changeCount = createEl(
+      "div",
+      "correction-grouped-report-meta",
+      `${group.changeCount} changed answer${group.changeCount === 1 ? "" : "s"}`
+    );
+    const openBtn = createEl("button", "community-btn community-btn-primary correction-grouped-report-open", "Open suggested correction");
+    openBtn.type = "button";
+    openBtn.addEventListener("click", () => {
+      const formConfig = FORM_INTEGRATION.forms[partKey];
+      if (!formConfig) {
+        return;
+      }
+      window.open(buildGroupedSuggestionUrl(formConfig, group.answerValues, group.count), "_blank", "noopener,noreferrer");
+    });
+    const text = createEl("div");
+    text.append(count, changeCount);
+    header.append(text, openBtn);
+    card.append(header, renderGroupedReportDetails(partKey, group.answerValues, defaultAnswers));
+    if (group.comments?.length) {
+      const comments = createEl("div", "correction-grouped-report-comments");
+      group.comments.forEach((comment) => {
+        comments.append(createEl("p", "", comment));
+      });
+      card.append(comments);
+    }
+    section.append(card);
+  });
+
+  return section;
+}
+
 function openStatsModal(themeKey) {
   if (!statsModal || !statsModalTitle || !statsModalMeta || !statsModalBody) {
     return;
@@ -753,9 +886,19 @@ function openStatsModal(themeKey) {
     return;
   }
 
-  statsModalMeta.textContent = `Submissions: ${partData.votes} | Consensus: ${summary?.percent ?? "-"}%`;
+  const { groups: changedGroups, defaultAnswers } = getChangedReportGroups(partData, state.part);
+  statsModalMeta.textContent = `Submissions: ${partData.votes} | Groups with changes: ${changedGroups.length} | Consensus: ${summary?.percent ?? "-"}%`;
+
+  if (changedGroups.length) {
+    statsModalBody.append(renderGroupedReports(state.part, changedGroups, defaultAnswers));
+  } else {
+    statsModalBody.append(
+      createEl("div", "correction-stats-empty-note", "No grouped reports contain a real answer change for this part.")
+    );
+  }
 
   const list = createEl("div", "correction-stats-list");
+  list.append(createEl("div", "correction-stats-section-title", "Per-item answer distribution"));
   (partData.items || []).forEach((item) => {
     const row = createEl("div", "correction-stats-item");
     row.append(
