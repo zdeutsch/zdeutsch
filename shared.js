@@ -111,7 +111,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-04-22-data-refresh-v1";
+const SITE_DATA_VERSION = "2026-04-23-cache-strategy-v1";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
@@ -166,21 +166,18 @@ function buildFreshUrl(path) {
   try {
     const url = new URL(raw, window.location.href);
     url.searchParams.set("_", SITE_DATA_VERSION);
-    url.searchParams.set("t", String(Date.now()));
     return url.toString();
   } catch (error) {
     const separator = raw.includes("?") ? "&" : "?";
-    return `${raw}${separator}_=${encodeURIComponent(SITE_DATA_VERSION)}&t=${Date.now()}`;
+    return `${raw}${separator}_=${encodeURIComponent(SITE_DATA_VERSION)}`;
   }
 }
 
 function fetchFresh(path, options = {}) {
   return fetch(buildFreshUrl(path), {
     ...options,
-    cache: "no-store",
+    cache: options.cache || "default",
     headers: {
-      "Cache-Control": "no-cache",
-      "Pragma": "no-cache",
       ...(options.headers || {})
     }
   });

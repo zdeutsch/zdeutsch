@@ -5,7 +5,7 @@
   Cache-Control: no-cache, no-store, must-revalidate
 
 /database/*.json
-  Cache-Control: no-cache, no-store, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate
 
 /database/*
-  Cache-Control: no-cache, no-store, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate

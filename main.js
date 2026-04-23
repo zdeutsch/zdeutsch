@@ -156,8 +156,8 @@ async function loadFreshJson(path) {
   if (typeof window.fetchFreshJson === "function") {
     return window.fetchFreshJson(path);
   }
-  const separator = String(path).includes("?") ? "&" : "?";
-  const response = await fetch(`${path}${separator}t=${Date.now()}`, { cache: "no-store" });
+  const requestUrl = typeof window.buildFreshUrl === "function" ? window.buildFreshUrl(path) : path;
+  const response = await fetch(requestUrl);
   if (!response.ok) {
     throw new Error(`Failed to load ${path}: ${response.status}`);
   }

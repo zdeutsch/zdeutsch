@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-04-22-data-refresh-v1";
+const SW_VERSION = "2026-04-23-cache-strategy-v1";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -32,6 +32,17 @@ function cacheResponse(cacheName, request, response) {
   const responseClone = response.clone();
   caches.open(cacheName).then((cache) => cache.put(request, responseClone));
   return response;
+}
+
+async function getCachedResponse(request, { cacheName = RUNTIME_CACHE, ignoreSearch = false } = {}) {
+  const cache = await caches.open(cacheName);
+  return cache.match(request, { ignoreSearch });
+}
+
+function revalidateRequest(request, { cacheName = RUNTIME_CACHE, fetchOptions = {} } = {}) {
+  return fetch(request, fetchOptions)
+    .then((response) => cacheResponse(cacheName, request, response))
+    .catch(() => null);
 }
 
 function shouldUseNetworkFirst(request, url) {
@@ -78,8 +89,23 @@ self.addEventListener("fetch", (event) => {
 
   if (isDatabaseRequest(url)) {
     event.respondWith(
-      fetch(request, { cache: "no-store" })
-        .catch(() => new Response(
+      (async () => {
+        const cachedResponse = await getCachedResponse(request, {
+          cacheName: RUNTIME_CACHE,
+          ignoreSearch: true
+        });
+        const networkPromise = revalidateRequest(request, {
+          cacheName: RUNTIME_CACHE,
+          fetchOptions: { cache: "no-cache" }
+        });
+
+        if (cachedResponse) {
+          event.waitUntil(networkPromise);
+          return cachedResponse;
+        }
+
+        const networkResponse = await networkPromise;
+        return networkResponse || new Response(
           JSON.stringify({ error: "Database file is temporarily unavailable." }),
           {
             status: 503,
@@ -88,7 +114,8 @@ self.addEventListener("fetch", (event) => {
               "Cache-Control": "no-store"
             }
           }
-        ))
+        );
+      })()
     );
     return;
   }
