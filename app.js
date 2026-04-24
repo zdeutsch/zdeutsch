@@ -2667,12 +2667,18 @@ function renderSectionButtons() {
   sectionList.append(button);
 }
 
+function getOrderedThemeKeys(levelEntry) {
+  const configured = Array.isArray(levelEntry?.themeOrder) ? levelEntry.themeOrder : [];
+  const available = Object.keys(levelEntry?.themes || {});
+  const ordered = configured.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
+  const extras = available.filter((themeKey) => !ordered.includes(themeKey));
+  return [...ordered, ...extras];
+}
+
 function renderThemeCards() {
   themeGrid.innerHTML = "";
   const levelEntry = state.db.levels[state.level] || {};
-  let themes = levelEntry.themeOrder?.length
-    ? levelEntry.themeOrder
-    : Object.keys(levelEntry.themes || {});
+  let themes = getOrderedThemeKeys(levelEntry);
   const query = normalize(state.search);
   if (query) {
     themes = themes.filter((themeKey) => {

@@ -576,11 +576,17 @@ function resolveAbsoluteAssetUrl(path) {
   }
 }
 
+function getOrderedThemeKeys(levelEntry) {
+  const configured = Array.isArray(levelEntry?.themeOrder) ? levelEntry.themeOrder : [];
+  const available = Object.keys(levelEntry?.themes || {});
+  const ordered = configured.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
+  const extras = available.filter((themeKey) => !ordered.includes(themeKey));
+  return [...ordered, ...extras];
+}
+
 function getOrderedThemesForLevel(levelKey) {
   const levelEntry = state.db?.levels?.[levelKey] || {};
-  const themeKeys = levelEntry.themeOrder?.length
-    ? levelEntry.themeOrder
-    : Object.keys(levelEntry.themes || {});
+  const themeKeys = getOrderedThemeKeys(levelEntry);
   return themeKeys
     .map((themeKey) => [themeKey, levelEntry.themes?.[themeKey]])
     .filter((item) => Boolean(item[0] && item[1]));
@@ -3203,9 +3209,7 @@ function renderThemeCards() {
   }
   const levelEntry = state.db.levels[levelKey] || {};
   updateDownloadAllThemesButton(getOrderedThemesForLevel(levelKey).length);
-  let themes = levelEntry.themeOrder?.length
-    ? levelEntry.themeOrder
-    : Object.keys(levelEntry.themes || {});
+  let themes = getOrderedThemeKeys(levelEntry);
   if (query) {
     themes = themes.filter((themeKey) => {
       const entry = levelEntry.themes?.[themeKey];

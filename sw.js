@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-04-23-cache-strategy-v1";
+const SW_VERSION = "2026-04-24-cache-strategy-v3";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [

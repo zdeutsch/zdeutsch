@@ -2759,10 +2759,16 @@ function resolveLevel(levelKey) {
   return levels[0];
 }
 
+function getOrderedThemeKeys(levelEntry) {
+  const configured = Array.isArray(levelEntry?.themeOrder) ? levelEntry.themeOrder : [];
+  const available = Object.keys(levelEntry?.themes || {});
+  const ordered = configured.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
+  const extras = available.filter((themeKey) => !ordered.includes(themeKey));
+  return [...ordered, ...extras];
+}
+
 function resolveTheme(levelEntry, themeKey) {
-  const orderedThemes = levelEntry?.themeOrder?.length
-    ? levelEntry.themeOrder
-    : Object.keys(levelEntry?.themes || {});
+  const orderedThemes = getOrderedThemeKeys(levelEntry);
   if (!orderedThemes.length) {
     return null;
   }
