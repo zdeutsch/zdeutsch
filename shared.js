@@ -45,8 +45,7 @@ const DEFAULT_CONFIG = {
   dataFile: DEFAULT_MODULE.dataFile
 };
 
-const COMMUNITY_WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/CwFPqDeRbmqL5Rtx02NOCP?mode=hq1tswi";
-const COMMUNITY_WHATSAPP_COMPOSE_URL = "https://wa.me/?text=";
+const COMMUNITY_TELEGRAM_GROUP_URL = "https://t.me/+NF1vXHTAOvkxOTA0";
 const LESEN_PROGRESS_STORAGE_KEY = "zdeutsch.lesen.progress.v1";
 const BOTTOM_BANNER_DISMISS_KEY = "zdeutsch.ads.bottom.dismissed.v1";
 const WHATSAPP_WELCOME_GATE_ACCEPTED_KEY = "zdeutsch.whatsappWelcomeGate.accepted.v1";
@@ -55,14 +54,14 @@ const WHATSAPP_WELCOME_MESSAGES_FILE = "whatsapp-welcome-messages.json";
 const WHATSAPP_WELCOME_MAIN_AVATAR = "logo.svg";
 const WHATSAPP_WELCOME_MAIN_AUTHOR = "ZDeutsch Community";
 const WHATSAPP_WELCOME_MAIN_ROLE = "Admin";
-const WHATSAPP_WELCOME_PROFILE_TAGLINE = "Community support";
-const WHATSAPP_WELCOME_CONTACT_URL = COMMUNITY_WHATSAPP_GROUP_URL;
+const WHATSAPP_WELCOME_PROFILE_TAGLINE = "Telegram support";
+const WHATSAPP_WELCOME_CONTACT_URL = COMMUNITY_TELEGRAM_GROUP_URL;
 const DEFAULT_WHATSAPP_WELCOME_MESSAGES = Object.freeze([
   {
     userName: WHATSAPP_WELCOME_MAIN_AUTHOR,
     imageType: "outgoing",
     direction: "rtl",
-    messageContent: "مرحبا بك في مجتمع ZDeutsch على واتساب. شارك أي ملاحظة أو تصحيح.",
+    messageContent: "مرحبا بك في مجموعة ZDeutsch على تيليجرام. شارك أي ملاحظة أو تصحيح.",
     avatar: WHATSAPP_WELCOME_MAIN_AVATAR,
     role: WHATSAPP_WELCOME_MAIN_ROLE,
     reactionCount: "72",
@@ -84,7 +83,7 @@ const DEFAULT_WHATSAPP_INCOMING_REPLIES = DEFAULT_WHATSAPP_WELCOME_MESSAGES
 const WHATSAPP_CONTENT = {
   title: "مرحبا بك",
   // subtitle: "اقرأ الرسائل ثم ابدأ التدريب",
-  bottomTitle: "مجتمع واتساب",
+  bottomTitle: "مجتمع تيليجرام",
   // bottomSubtitle: "نفس الرسائل، نفس الستايل، ونفس طريقة التواصل.",
   avatar: DEFAULT_WHATSAPP_OUTGOING_MESSAGE?.avatar || WHATSAPP_WELCOME_MAIN_AVATAR,
   author: DEFAULT_WHATSAPP_OUTGOING_MESSAGE?.userName || WHATSAPP_WELCOME_MAIN_AUTHOR,
@@ -96,22 +95,22 @@ const WHATSAPP_CONTENT = {
     : [],
   replies: DEFAULT_WHATSAPP_INCOMING_REPLIES,
   messages: DEFAULT_WHATSAPP_WELCOME_MESSAGES.map((entry) => ({ ...entry })),
-  composerPlaceholder: "اكتب رسالتك ثم أرسلها إلى مجموعة واتساب",
+  composerPlaceholder: "اكتب رسالتك ثم أرسلها إلى مجموعة تيليجرام",
   composerEmptyError: "اكتب الرسالة أولاً.",
-  joinLabel: "انضم إلى WhatsApp",
+  joinLabel: "انضم إلى تيليجرام",
   acceptCountdownLabel: (seconds) => `انتظر ${seconds} ثانية`,
   acceptReadyLabel: "موافق، الدخول إلى الموقع",
   countdownLabel: (seconds) => `يمكنك المتابعة بعد ${seconds} ثانية`,
   countdownReadyLabel: "يمكنك الآن الدخول إلى الموقع.",
   profileLabel: "عرض شعار المجتمع",
   profileTagline: WHATSAPP_WELCOME_PROFILE_TAGLINE,
-  profileContactLabel: "Open WhatsApp community",
+  profileContactLabel: "فتح مجموعة تيليجرام",
   profileContactUrl: WHATSAPP_WELCOME_CONTACT_URL
 };
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-04-24-cache-strategy-v3";
+const SITE_DATA_VERSION = "2026-04-24-cache-strategy-v5";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
@@ -858,15 +857,11 @@ function buildCommunitySuggestionMessage(details) {
   ].join("\n");
 }
 
-function buildWhatsAppComposeUrl(message) {
-  return `${COMMUNITY_WHATSAPP_COMPOSE_URL}${encodeURIComponent(message || "")}`;
-}
-
 function buildWhatsAppGroupSuggestionMessage(message) {
   const trimmedMessage = String(message || "").trim();
   return trimmedMessage
-    ? `${trimmedMessage}\n\nالمجموعة: ${COMMUNITY_WHATSAPP_GROUP_URL}`
-    : COMMUNITY_WHATSAPP_GROUP_URL;
+    ? `${trimmedMessage}\n\nالمجموعة: ${COMMUNITY_TELEGRAM_GROUP_URL}`
+    : COMMUNITY_TELEGRAM_GROUP_URL;
 }
 
 function copyTextFallback(text) {
@@ -1075,7 +1070,7 @@ function bindWhatsAppComposerSubmit(composer, composerInput, composerStatus, con
       copyTextFallback(payload);
     }
     composerStatus.textContent = "";
-    window.location.assign(COMMUNITY_WHATSAPP_GROUP_URL);
+    window.open(COMMUNITY_TELEGRAM_GROUP_URL, "_blank", "noopener,noreferrer");
   });
 }
 
@@ -1116,7 +1111,7 @@ function setupWhatsAppWelcomeGate() {
 
   const actions = createEl("div", "whatsapp-welcome-gate__actions");
   const joinButton = createEl("a", "whatsapp-welcome-gate__button whatsapp-welcome-gate__button--join", WHATSAPP_CONTENT.joinLabel);
-  joinButton.href = COMMUNITY_WHATSAPP_GROUP_URL;
+  joinButton.href = COMMUNITY_TELEGRAM_GROUP_URL;
   joinButton.target = "_blank";
   joinButton.rel = "noopener noreferrer";
 
@@ -1186,7 +1181,7 @@ function setupWhatsAppBottomSection() {
 
   const actions = createEl("div", "whatsapp-welcome-gate__actions");
   const joinButton = createEl("a", "whatsapp-welcome-gate__button whatsapp-welcome-gate__button--join", WHATSAPP_CONTENT.joinLabel);
-  joinButton.href = COMMUNITY_WHATSAPP_GROUP_URL;
+  joinButton.href = COMMUNITY_TELEGRAM_GROUP_URL;
   joinButton.target = "_blank";
   joinButton.rel = "noopener noreferrer";
   const contactButton = createEl("a", "whatsapp-welcome-gate__button whatsapp-welcome-gate__button--accept", WHATSAPP_CONTENT.profileContactLabel);
@@ -1217,7 +1212,7 @@ function setupCommunityWidgets() {
     const title = createEl(
       "h3",
       "community-promo-title",
-      "مجتمع واتساب الرسمي"
+      "مجتمع تيليجرام الرسمي"
     );
     const line = createEl(
       "p",
@@ -1225,8 +1220,8 @@ function setupCommunityWidgets() {
       "انضم للمجموعة للتحديثات السريعة، الدعم، وتصحيح الأخطاء."
     );
     const actions = createEl("div", "community-promo-actions");
-    const joinLink = createEl("a", "community-btn community-btn-primary", "انضم إلى واتساب");
-    joinLink.href = COMMUNITY_WHATSAPP_GROUP_URL;
+    const joinLink = createEl("a", "community-btn community-btn-primary", "انضم إلى تيليجرام");
+    joinLink.href = COMMUNITY_TELEGRAM_GROUP_URL;
     joinLink.target = "_blank";
     joinLink.rel = "noopener noreferrer";
     const suggestBtn = createEl("button", "community-btn community-btn-secondary community-open-btn", "اقترح تعديلا");
@@ -1237,7 +1232,7 @@ function setupCommunityWidgets() {
     promoTarget.append(promoCard);
   }
 
-  const floatingButton = createEl("button", "community-floating-btn community-open-btn", "اقتراحات واتساب");
+  const floatingButton = createEl("button", "community-floating-btn community-open-btn", "اقتراحات تيليجرام");
   floatingButton.type = "button";
   floatingButton.id = "community-floating-btn";
   document.body.append(floatingButton);
@@ -1266,7 +1261,7 @@ function setupCommunityWidgets() {
   const textEn = createEl(
     "p",
     "community-modal-line",
-    "اكتب اقتراحك بوضوح، ثم انسخه وافتح مجموعة واتساب لإرساله."
+    "اكتب اقتراحك بوضوح، ثم انسخه وافتح مجموعة تيليجرام لإرساله."
   );
   const textAr = createEl(
     "p",
@@ -1293,8 +1288,8 @@ function setupCommunityWidgets() {
   const copyBtn = createEl("button", "community-btn community-btn-secondary", "نسخ الاقتراح");
   copyBtn.type = "button";
   copyBtn.id = "community-copy-btn";
-  const openGroup = createEl("a", "community-btn community-btn-primary", "فتح مجموعة واتساب");
-  openGroup.href = buildWhatsAppComposeUrl("");
+  const openGroup = createEl("a", "community-btn community-btn-primary", "فتح مجموعة تيليجرام");
+  openGroup.href = COMMUNITY_TELEGRAM_GROUP_URL;
   openGroup.target = "_blank";
   openGroup.rel = "noopener noreferrer";
   actionRow.append(copyBtn, openGroup);
@@ -1343,14 +1338,14 @@ function setupCommunityWidgets() {
     if (navigator.clipboard?.writeText) {
       try {
         await navigator.clipboard.writeText(message);
-        status.textContent = "تم النسخ. افتح واتساب والصق الاقتراح.";
+        status.textContent = "تم النسخ. افتح تيليجرام والصق الاقتراح.";
         return;
       } catch (error) {
         // ignore and fallback
       }
     }
     copyTextFallback(message);
-    status.textContent = "تم النسخ. افتح واتساب والصق الاقتراح.";
+    status.textContent = "تم النسخ. افتح تيليجرام والصق الاقتراح.";
   });
 
   openGroup.addEventListener("click", (event) => {
@@ -1361,8 +1356,7 @@ function setupCommunityWidgets() {
       textarea.focus();
       return;
     }
-    const message = buildCommunitySuggestionMessage(details);
-    openGroup.href = buildWhatsAppComposeUrl(message);
+    openGroup.href = COMMUNITY_TELEGRAM_GROUP_URL;
     status.textContent = "";
   });
 }

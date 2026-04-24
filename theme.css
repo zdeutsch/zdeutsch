@@ -1224,14 +1224,14 @@ body.community-modal-open {
 }
 
 .community-promo {
-  border: 1px solid rgba(11, 91, 80, 0.22);
+  border: 1px solid rgba(34, 158, 217, 0.24);
   border-radius: 24px;
   padding: 20px 22px;
   background:
-    radial-gradient(circle at 8% 12%, rgba(37, 211, 102, 0.22), transparent 38%),
-    radial-gradient(circle at 92% 88%, rgba(15, 118, 110, 0.18), transparent 42%),
-    linear-gradient(145deg, #ffffff 0%, #f3fff9 52%, #edfdf6 100%);
-  box-shadow: 0 20px 34px rgba(11, 91, 80, 0.16);
+    radial-gradient(circle at 12% 18%, rgba(34, 158, 217, 0.18), transparent 34%),
+    radial-gradient(circle at 88% 82%, rgba(27, 140, 194, 0.14), transparent 38%),
+    linear-gradient(145deg, #fdfefe 0%, #f2faff 54%, #e8f5fd 100%);
+  box-shadow: 0 20px 34px rgba(34, 158, 217, 0.14);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1249,7 +1249,7 @@ body.community-modal-open {
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 0.02em;
-  color: #0f5132;
+  color: #0f4c75;
   font-family: "Tajawal", "Space Grotesk", sans-serif;
 }
 
@@ -1289,10 +1289,10 @@ body.community-modal-open {
 }
 
 .community-btn-primary {
-  background: var(--whatsapp-green);
+  background: var(--telegram-blue);
   color: #ffffff;
-  border-color: var(--whatsapp-green-dark);
-  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.28);
+  border-color: var(--telegram-blue-dark);
+  box-shadow: 0 8px 18px rgba(34, 158, 217, 0.28);
 }
 
 .community-btn-secondary {
@@ -1308,8 +1308,8 @@ body.community-modal-open {
   bottom: auto;
   z-index: 60;
   border-radius: 999px;
-  border: 1px solid var(--whatsapp-green-dark);
-  background: var(--whatsapp-green);
+  border: 1px solid var(--telegram-blue-dark);
+  background: var(--telegram-blue);
   color: #ffffff;
   padding: 13px 18px;
   font-size: 13px;
@@ -1320,7 +1320,7 @@ body.community-modal-open {
 }
 
 .community-floating-btn:hover {
-  background: var(--whatsapp-green-dark);
+  background: var(--telegram-blue-dark);
 }
 
 .community-modal {
@@ -2160,7 +2160,7 @@ body.whatsapp-welcome-open {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgba(7, 24, 35, 0.56);
+  background: rgba(9, 34, 52, 0.5);
   backdrop-filter: blur(2px);
 }
 
@@ -2171,13 +2171,13 @@ body.whatsapp-welcome-open {
   flex-direction: column;
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid #cde4da;
-  background: #e5ddd5;
+  border: 1px solid rgba(34, 158, 217, 0.18);
+  background: #eaf4fb;
   box-shadow: 0 26px 70px rgba(7, 24, 35, 0.34);
 }
 
 .whatsapp-welcome-gate__header {
-  background: #075e54;
+  background: linear-gradient(135deg, #229ed9 0%, #2aabee 100%);
   color: #ffffff;
   padding: 16px 18px 14px;
 }
@@ -2204,9 +2204,9 @@ body.whatsapp-welcome-open {
   max-height: 56vh;
   overflow-y: auto;
   background:
-    radial-gradient(circle at 22% 18%, rgba(7, 94, 84, 0.08), transparent 32%),
-    radial-gradient(circle at 80% 80%, rgba(37, 211, 102, 0.08), transparent 34%),
-    #efeae2;
+    radial-gradient(circle at 20% 16%, rgba(34, 158, 217, 0.08), transparent 30%),
+    radial-gradient(circle at 84% 78%, rgba(27, 140, 194, 0.08), transparent 34%),
+    linear-gradient(180deg, #eff7fc 0%, #e8f3fb 100%);
 }
 
 .whatsapp-welcome-gate__message-row {
@@ -2243,7 +2243,7 @@ body.whatsapp-welcome-open {
   height: 28px;
   border-radius: 999px;
   object-fit: cover;
-  border: 2px solid rgba(15, 118, 110, 0.35);
+  border: 2px solid rgba(34, 158, 217, 0.3);
   background: #ffffff;
   cursor: pointer;
 }
@@ -2260,7 +2260,7 @@ body.whatsapp-welcome-open {
   line-height: 1.55;
   font-size: 14px;
   color: #1f2933;
-  box-shadow: 0 2px 8px rgba(31, 41, 51, 0.08);
+  box-shadow: 0 6px 18px rgba(31, 41, 51, 0.08);
 }
 
 .whatsapp-welcome-gate__bubble-text {
@@ -2269,22 +2269,23 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__bubble.is-received {
-  border-top-right-radius: 6px;
-  background: #ffffff;
+  border: 1px solid rgba(34, 158, 217, 0.12);
+  border-top-right-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .whatsapp-welcome-gate__author {
   margin: 0;
   font-size: 13px;
   font-weight: 700;
-  color: #0f766e;
+  color: var(--telegram-blue-dark);
   font-family: "Space Grotesk", "Tajawal", sans-serif;
   cursor: pointer;
 }
 
 .whatsapp-welcome-gate__avatar:focus-visible,
 .whatsapp-welcome-gate__author:focus-visible {
-  outline: 2px solid rgba(15, 118, 110, 0.35);
+  outline: 2px solid rgba(34, 158, 217, 0.35);
   outline-offset: 2px;
   border-radius: 8px;
 }
@@ -2292,7 +2293,7 @@ body.whatsapp-welcome-open {
 .whatsapp-welcome-gate__admin-label {
   padding: 2px 8px;
   border-radius: 999px;
-  background: #0f766e;
+  background: var(--telegram-blue-dark);
   color: #ffffff;
   font-size: 10px;
   font-weight: 700;
@@ -2301,8 +2302,9 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__bubble.is-outgoing {
-  border-top-left-radius: 6px;
-  background: #dcf8c6;
+  border-top-left-radius: 8px;
+  background: linear-gradient(135deg, #d9effb 0%, #cbe8f8 100%);
+  border: 1px solid rgba(34, 158, 217, 0.18);
 }
 
 .whatsapp-welcome-gate__reactions {
@@ -2317,7 +2319,7 @@ body.whatsapp-welcome-open {
   margin: 0;
   padding: 3px 9px;
   border-radius: 999px;
-  border: 1px solid #d9dde0;
+  border: 1px solid rgba(34, 158, 217, 0.14);
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(31, 41, 51, 0.12);
 }
@@ -2326,13 +2328,13 @@ body.whatsapp-welcome-open {
   display: flex;
   gap: 8px;
   padding: 10px 16px 10px;
-  background: rgba(229, 221, 213, 0.94);
+  background: rgba(226, 240, 249, 0.96);
 }
 
 .whatsapp-welcome-gate__composer-input {
   flex: 1 1 auto;
   min-height: 46px;
-  border: 1px solid #c7d3cc;
+  border: 1px solid rgba(34, 158, 217, 0.18);
   border-radius: 999px;
   padding: 0 14px;
   font-size: 14px;
@@ -2342,8 +2344,8 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__composer-input:focus {
-  outline: 2px solid rgba(15, 118, 110, 0.28);
-  border-color: #0f766e;
+  outline: 2px solid rgba(34, 158, 217, 0.28);
+  border-color: var(--telegram-blue-dark);
 }
 
 .whatsapp-welcome-gate__composer-send {
@@ -2352,8 +2354,8 @@ body.whatsapp-welcome-open {
   min-width: 112px;
   min-height: 46px;
   padding: 0 18px;
-  background: #25d366;
-  color: #052e16;
+  background: var(--telegram-blue);
+  color: #ffffff;
   font-family: "Tajawal", "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -2361,7 +2363,7 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__composer-send:hover {
-  background: #1ec25c;
+  background: var(--telegram-blue-dark);
 }
 
 .whatsapp-welcome-gate__composer-status {
@@ -2450,9 +2452,9 @@ body.whatsapp-welcome-open {
   min-height: 38px;
   padding: 0 16px;
   border-radius: 999px;
-  border: 1px solid #1ec25c;
-  background: #25d366;
-  color: #052e16;
+  border: 1px solid var(--telegram-blue-dark);
+  background: var(--telegram-blue);
+  color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -2460,7 +2462,7 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__profile-modal-contact:hover {
-  background: #1ec25c;
+  background: var(--telegram-blue-dark);
 }
 
 .whatsapp-welcome-gate__reactions-emoji {
@@ -2480,7 +2482,7 @@ body.whatsapp-welcome-open {
   margin: 0;
   padding: 0 16px 14px;
   font-size: 12px;
-  color: #334155;
+  color: #31546f;
   font-family: "Space Grotesk", "Tajawal", sans-serif;
 }
 
@@ -2508,16 +2510,16 @@ body.whatsapp-welcome-open {
 }
 
 .whatsapp-welcome-gate__button--join {
-  background: #25d366;
-  color: #0f172a;
+  background: var(--telegram-blue);
+  color: #ffffff;
 }
 
 .whatsapp-welcome-gate__button--join:hover {
-  background: #1ec25c;
+  background: var(--telegram-blue-dark);
 }
 
 .whatsapp-welcome-gate__button--accept {
-  background: #0f766e;
+  background: var(--telegram-blue-dark);
   color: #ffffff;
   transition: opacity 0.2s ease;
 }
