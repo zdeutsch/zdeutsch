@@ -110,7 +110,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-04-24-cache-strategy-v5";
+const SITE_DATA_VERSION = "2026-04-26-cache-strategy-v6";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
