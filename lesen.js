@@ -33,6 +33,7 @@ const asideToggle = document.getElementById("aside-toggle");
 const asideOverlay = document.getElementById("aside-overlay");
 const ASIDE_TOGGLE_HINT_KEY = "zdeutsch.lesen.asideToggleHintDismissed.v1";
 const CORRECTION_EMAIL_STORAGE_KEY = "zdeutsch.corrections.email.v1";
+const HOME_RESTORE_QUERY_KEY = "restoreHome";
 const COMMUNITY_SHEET_ID_DEFAULT = "14LMJKrPsc1JQErmCfHv5K4xoN4miykVeTjmN1ZNFs_I";
 const COMMUNITY_GID_BY_PART = {
   "teil-1": 1925401969,
@@ -2744,8 +2745,9 @@ function buildMainUrl() {
   if (state.level) {
     params.set("level", state.level);
   }
+  params.set(HOME_RESTORE_QUERY_KEY, "1");
   const query = params.toString();
-  return `index.html${query ? `?${query}` : ""}`;
+  return `index.html${query ? `?${query}` : ""}#lesen`;
 }
 
 function resolveLevel(levelKey) {

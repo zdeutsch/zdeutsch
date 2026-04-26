@@ -19,6 +19,13 @@ const installPromptCard = document.getElementById("install-prompt-card");
 const installPromptText = document.getElementById("install-prompt-text");
 const installPromptButton = document.getElementById("install-prompt-button");
 const downloadAllThemesBtn = document.getElementById("download-all-themes-btn");
+const homeStageBar = document.getElementById("home-stage-bar");
+const homeStageBack = document.getElementById("home-stage-back");
+const homeStagePath = document.getElementById("home-stage-path");
+const homeLevelStage = document.getElementById("home-level-stage");
+const homeSectionStage = document.getElementById("home-section-stage");
+const homeThemeStage = document.getElementById("home-theme-stage");
+const homeSectionStageCopy = document.getElementById("home-section-stage-copy");
 
 const state = {
   db: null,
@@ -29,7 +36,9 @@ const state = {
   pendingTheme: null,
   search: "",
   section: "lesen",
-  parts: null
+  parts: null,
+  homeStage: "level",
+  pendingScrollY: null
 };
 
 const CREATOR_SECTION_ID = "home-creator-section";
@@ -54,6 +63,11 @@ const homeLoaderState = {
 };
 const BUNDLE_PDF_THEME_CHUNK_SIZE = 3;
 const SUGGEST_THEME_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfbWVEy2slAc-ytKK9h6ZOnwcaDlCoHmEZSo4N9xpiuF6RI8Q/viewform?usp=header";
+const HOME_STAGE_LEVEL = "level";
+const HOME_STAGE_SECTION = "section";
+const HOME_STAGE_THEMES = "themes";
+const HOME_STATE_STORAGE_KEY = "zdeutsch.home-state.v2";
+const HOME_RESTORE_QUERY_KEY = "restoreHome";
 
 const MAIN_DEFAULT_CONFIG = (typeof DEFAULT_CONFIG === "object" && DEFAULT_CONFIG)
   ? DEFAULT_CONFIG
@@ -214,6 +228,71 @@ function syncSectionHash(section, options = {}) {
   window.location.hash = target;
 }
 
+function sanitizeHomeStage(value) {
+  const stage = String(value || "").trim().toLowerCase();
+  if (stage === HOME_STAGE_LEVEL || stage === HOME_STAGE_SECTION || stage === HOME_STAGE_THEMES) {
+    return stage;
+  }
+  return HOME_STAGE_LEVEL;
+}
+
+function buildHomeStateSnapshot(options = {}) {
+  const scrollY = Number.isFinite(options.scrollY)
+    ? Math.max(0, Math.round(options.scrollY))
+    : Math.max(0, Math.round(window.scrollY || 0));
+  return {
+    level: state.level || "",
+    section: state.section || "lesen",
+    search: state.search || "",
+    homeStage: sanitizeHomeStage(state.homeStage),
+    scrollY
+  };
+}
+
+function saveHomeState(options = {}) {
+  try {
+    window.localStorage.setItem(HOME_STATE_STORAGE_KEY, JSON.stringify(buildHomeStateSnapshot(options)));
+  } catch (error) {
+    // ignore storage failures
+  }
+}
+
+function loadSavedHomeState() {
+  try {
+    const raw = window.localStorage.getItem(HOME_STATE_STORAGE_KEY);
+    if (!raw) {
+      return null;
+    }
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") {
+      return null;
+    }
+    return {
+      level: String(parsed.level || "").trim().toLowerCase(),
+      section: String(parsed.section || "lesen").trim().toLowerCase(),
+      search: String(parsed.search || ""),
+      homeStage: sanitizeHomeStage(parsed.homeStage),
+      scrollY: Number.isFinite(parsed.scrollY) ? parsed.scrollY : null
+    };
+  } catch (error) {
+    return null;
+  }
+}
+
+function restoreHomeScrollIfNeeded() {
+  if (!Number.isFinite(state.pendingScrollY)) {
+    return;
+  }
+  const target = Math.max(0, Math.round(state.pendingScrollY));
+  state.pendingScrollY = null;
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: target, left: 0, behavior: "auto" });
+      saveHomeState({ scrollY: target });
+    });
+  });
+}
+
 function setHomeLoaderVisible(show) {
   if (!homeLoader) {
     return;
@@ -302,10 +381,16 @@ async function runHomeLoaderStep(meta, task) {
 
 function updateHeader() {
   if (themeTitle) {
-    themeTitle.textContent = "Select a theme";
+    if (state.homeStage === HOME_STAGE_LEVEL) {
+      themeTitle.textContent = "Select level";
+    } else if (state.homeStage === HOME_STAGE_SECTION) {
+      themeTitle.textContent = "Select exam part";
+    } else {
+      themeTitle.textContent = "Select a theme";
+    }
   }
   if (levelPill) {
-    levelPill.textContent = (state.level || "").toUpperCase();
+    levelPill.textContent = state.level ? (state.level || "").toUpperCase() : "B1/B2";
   }
 }
 
@@ -360,6 +445,23 @@ function renderChoiceButton(label, active) {
   );
 }
 
+function renderStageChoiceButton({ label, description = "", active = false, variant = "section" }) {
+  const button = createEl(
+    "button",
+    classNames(
+      "home-stage-choice",
+      variant === "level" ? "home-stage-choice-level" : "home-stage-choice-section",
+      active ? "home-stage-choice-active" : ""
+    )
+  );
+  button.type = "button";
+  button.append(
+    createEl("span", "home-stage-choice-label", label),
+    createEl("span", "home-stage-choice-description", description)
+  );
+  return button;
+}
+
 function getSectionLabel(sectionKey) {
   const key = normalize(sectionKey);
   return SECTION_LABELS[key] || String(sectionKey || "").toUpperCase();
@@ -394,6 +496,46 @@ function updateSearchInputContext() {
     themeSearchInput.placeholder = placeholder;
     themeSearchInput.setAttribute("aria-label", placeholder);
     themeSearchInput.value = state.search || "";
+  }
+}
+
+function getHomeStagePathLabel() {
+  const parts = [];
+  if (state.level) {
+    parts.push((state.level || "").toUpperCase());
+  }
+  if (state.homeStage === HOME_STAGE_THEMES && state.section) {
+    parts.push(getSectionLabel(state.section));
+  } else if (state.homeStage === HOME_STAGE_SECTION) {
+    parts.push("Choose module");
+  } else {
+    parts.push("Choose level");
+  }
+  return parts.join(" / ");
+}
+
+function updateHomeStageUi() {
+  if (homeLevelStage) {
+    homeLevelStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_LEVEL);
+  }
+  if (homeSectionStage) {
+    homeSectionStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_SECTION);
+  }
+  if (homeThemeStage) {
+    homeThemeStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_THEMES);
+  }
+  if (homeStageBar) {
+    homeStageBar.classList.toggle("hidden", state.homeStage === HOME_STAGE_LEVEL);
+  }
+  if (homeStageBack) {
+    homeStageBack.disabled = state.homeStage === HOME_STAGE_LEVEL;
+  }
+  if (homeStagePath) {
+    homeStagePath.textContent = getHomeStagePathLabel();
+  }
+  if (homeSectionStageCopy) {
+    const levelLabel = state.level ? (state.level || "").toUpperCase() : "B1/B2";
+    homeSectionStageCopy.textContent = `You selected ${levelLabel}. Continue with Lesen, Hören, or Schreiben.`;
   }
 }
 
@@ -3073,6 +3215,7 @@ function openVersionModal(themeKey, themeEntry) {
 }
 
 function handleThemeSelection(themeKey, themeEntry) {
+  saveHomeState();
   const versionKeys = getVersionKeys(themeEntry);
   if (versionKeys.length > 1) {
     openVersionModal(themeKey, themeEntry);
@@ -3084,21 +3227,23 @@ function handleThemeSelection(themeKey, themeEntry) {
 
 function renderLevelButtons() {
   const levels = Object.keys(state.db.levels || {});
-  if (!state.level) {
-    state.level = levels[0] || null;
-  }
   levelList.innerHTML = "";
   levels.forEach((levelKey) => {
-    const button = renderChoiceButton(levelKey.toUpperCase(), levelKey === state.level);
+    const button = renderStageChoiceButton({
+      label: levelKey.toUpperCase(),
+      description: levelKey === "b1" ? "TELC B1 practice library" : "TELC B2 practice library",
+      active: levelKey === state.level,
+      variant: "level"
+    });
     button.type = "button";
     button.addEventListener("click", () => {
-      if (state.level === levelKey) {
-        return;
-      }
       state.level = levelKey;
       state.theme = null;
       clearThemeSearch();
       window.localStorage.setItem("lastLevel", levelKey);
+      state.homeStage = HOME_STAGE_SECTION;
+      saveHomeState({ scrollY: 0 });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
       renderHome();
     });
     levelList.append(button);
@@ -3107,6 +3252,9 @@ function renderLevelButtons() {
 
 function renderSectionButtons() {
   sectionList.innerHTML = "";
+  if (!state.level) {
+    return;
+  }
   const levelKey = state.level || "b1";
   const levelEntry = state.parts?.levels?.[levelKey];
   const partConfigs = Array.isArray(levelEntry) ? levelEntry : (levelEntry?.parts || []);
@@ -3121,19 +3269,26 @@ function renderSectionButtons() {
 
   availableSections.forEach((value) => {
     const label = getSectionLabel(value);
-    const button = renderChoiceButton(label, state.section === value);
+    const description = value === "lesen"
+      ? "Read and solve themed exams"
+      : value === "horen"
+        ? "Listen and mark true or false"
+        : "Write guided exam responses";
+    const button = renderStageChoiceButton({
+      label,
+      description,
+      active: state.section === value,
+      variant: "section"
+    });
     button.type = "button";
     button.addEventListener("click", () => {
-      if (state.section === value) {
-        syncSectionHash(value);
-        return;
-      }
       state.section = value;
       clearThemeSearch();
       syncSectionHash(state.section);
-      renderSectionButtons();
-      updateSearchInputContext();
-      renderThemeCards();
+      state.homeStage = HOME_STAGE_THEMES;
+      saveHomeState({ scrollY: 0 });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      renderHome();
     });
     sectionList.append(button);
   });
@@ -3143,7 +3298,7 @@ function updateDownloadAllThemesButton(themeCount = 0) {
   if (!downloadAllThemesBtn) {
     return;
   }
-  const showButton = state.section === "lesen" && themeCount > 0;
+  const showButton = state.homeStage === HOME_STAGE_THEMES && state.section === "lesen" && themeCount > 0;
   downloadAllThemesBtn.classList.toggle("hidden", !showButton);
   downloadAllThemesBtn.disabled = !showButton;
 }
@@ -3151,6 +3306,10 @@ function updateDownloadAllThemesButton(themeCount = 0) {
 function renderThemeCards() {
   themeGrid.innerHTML = "";
   updateDownloadAllThemesButton(0);
+  if (!state.level) {
+    updateSearchResultCount(0, state.search);
+    return;
+  }
   const levelKey = state.level || "b1";
   const query = normalize(state.search);
   updateSearchResultCount(0, query);
@@ -3441,12 +3600,18 @@ function buildSuggestThemeCard() {
 }
 
 function renderHome() {
+  if (!state.level && state.homeStage !== HOME_STAGE_LEVEL) {
+    state.homeStage = HOME_STAGE_LEVEL;
+  }
+  updateHomeStageUi();
   renderLevelButtons();
   renderSectionButtons();
   updateSearchInputContext();
   renderThemeCards();
   updateHeader();
   updateInstallPromptUi();
+  restoreHomeScrollIfNeeded();
+  saveHomeState();
 }
 
 function createHomeCreatorSection() {
@@ -3502,10 +3667,13 @@ function setupHomeCreatorSection() {
   placeHomeCreatorSection();
 }
 
-function resolveInitialLevel() {
+function resolveInitialLevel(preferredLevel) {
   const levels = Object.keys(state.db.levels || {});
   if (!levels.length) {
     return null;
+  }
+  if (preferredLevel && levels.includes(preferredLevel)) {
+    return preferredLevel;
   }
   const params = new URLSearchParams(window.location.search);
   const fromUrl = params.get("level");
@@ -3519,10 +3687,81 @@ function resolveInitialLevel() {
   return levels[0];
 }
 
+function resolveInitialHomeState() {
+  const saved = loadSavedHomeState();
+  const params = new URLSearchParams(window.location.search);
+  const fromUrlLevel = String(params.get("level") || "").trim().toLowerCase();
+  const fromHashSection = getSectionFromHash();
+  const shouldRestoreSaved = params.get(HOME_RESTORE_QUERY_KEY) === "1";
+
+  if (shouldRestoreSaved && saved) {
+    const level = resolveInitialLevel(saved.level || fromUrlLevel || null);
+    const section = SECTION_KEYS.includes(saved.section)
+      ? saved.section
+      : (SECTION_KEYS.includes(fromHashSection) ? fromHashSection : "lesen");
+    const hasLevel = Boolean(level);
+    return {
+      level: hasLevel ? level : null,
+      section,
+      search: saved.search || "",
+      homeStage: hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL,
+      scrollY: saved.scrollY
+    };
+  }
+
+  if (fromUrlLevel || fromHashSection) {
+    const level = resolveInitialLevel(fromUrlLevel || saved?.level || null);
+    const section = SECTION_KEYS.includes(fromHashSection) ? fromHashSection : (saved?.section || "lesen");
+    return {
+      level,
+      section: SECTION_KEYS.includes(section) ? section : "lesen",
+      search: "",
+      homeStage: level ? HOME_STAGE_THEMES : HOME_STAGE_LEVEL,
+      scrollY: 0
+    };
+  }
+
+  if (saved) {
+    const level = saved.level ? resolveInitialLevel(saved.level) : null;
+    const hasLevel = Boolean(level);
+    return {
+      level: hasLevel ? level : null,
+      section: SECTION_KEYS.includes(saved.section) ? saved.section : "lesen",
+      search: saved.search || "",
+      homeStage: hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL,
+      scrollY: saved.scrollY
+    };
+  }
+
+  return {
+    level: null,
+    section: "lesen",
+    search: "",
+    homeStage: HOME_STAGE_LEVEL,
+    scrollY: 0
+  };
+}
+
 if (themeSearchInput) {
   themeSearchInput.addEventListener("input", () => {
     state.search = themeSearchInput.value || "";
+    saveHomeState();
     renderThemeCards();
+  });
+}
+
+if (homeStageBack) {
+  homeStageBack.addEventListener("click", () => {
+    if (state.homeStage === HOME_STAGE_THEMES) {
+      state.homeStage = HOME_STAGE_SECTION;
+    } else if (state.homeStage === HOME_STAGE_SECTION) {
+      state.homeStage = HOME_STAGE_LEVEL;
+    } else {
+      return;
+    }
+    saveHomeState({ scrollY: 0 });
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    renderHome();
   });
 }
 
@@ -3583,14 +3822,22 @@ window.addEventListener("hashchange", () => {
     return;
   }
   const hashSection = getSectionFromHash();
-  if (!hashSection || hashSection === state.section) {
+  if (!hashSection) {
+    return;
+  }
+  if (hashSection === state.section && state.homeStage === HOME_STAGE_THEMES) {
     return;
   }
   state.section = hashSection;
+  if (state.level) {
+    state.homeStage = HOME_STAGE_THEMES;
+  }
   clearThemeSearch();
-  renderSectionButtons();
-  updateSearchInputContext();
-  renderThemeCards();
+  renderHome();
+});
+
+window.addEventListener("pagehide", () => {
+  saveHomeState();
 });
 
 if (versionCloseBtn) {
@@ -3668,11 +3915,12 @@ async function init() {
     return;
   }
 
-  state.level = resolveInitialLevel();
-  const hashSection = getSectionFromHash();
-  if (hashSection) {
-    state.section = hashSection;
-  }
+  const initialHomeState = resolveInitialHomeState();
+  state.level = initialHomeState.level;
+  state.section = initialHomeState.section;
+  state.search = initialHomeState.search;
+  state.homeStage = initialHomeState.homeStage;
+  state.pendingScrollY = initialHomeState.scrollY;
   renderHome();
   setupHomeCreatorSection();
   setHomeLoaderStage("Library ready");

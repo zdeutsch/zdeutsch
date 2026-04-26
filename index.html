@@ -114,7 +114,7 @@
     };
   </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="theme.css?v=20260426-18">
+    <link rel="stylesheet" href="theme.css?v=20260426-19">
   </head>
 
 <body class="theme-body font-body min-h-screen home-page">
@@ -206,39 +206,54 @@
           </section>
 
           <div class="home-sections mt-8 space-y-6">
-            <div class="home-control-card">
-              <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Levels</div>
-              <div id="level-list" class="mt-3 flex flex-wrap gap-3"></div>
-            </div>
-            <div class="home-control-card home-parts-card">
-              <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Parts</div>
-              <div id="section-list" class="mt-3 flex flex-wrap gap-3"></div>
-            </div>
-            <div class="home-control-card home-search-card">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Search</div>
-                <div id="theme-search-scope"
-                  class="home-search-scope font-display uppercase tracking-[0.18em] text-slate"></div>
-              </div>
-              <div class="mt-3">
-                <input id="theme-search" type="search" placeholder="Search themes..."
-                  class="home-search-input w-full rounded-2xl border border-stone-300 bg-white/80 px-4 py-2 text-sm text-ink shadow-sm focus:border-azure/40 focus:outline-none">
-                <div id="theme-search-count"
-                  class="mt-2 min-h-[1em] text-[11px] font-display uppercase tracking-[0.16em] text-slate"
-                  aria-live="polite"></div>
-              </div>
-            </div>
-            <div class="home-themes-block">
-              <div class="flex flex-wrap items-center justify-between gap-3">
-                <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Themes</div>
-                <button id="download-all-themes-btn" type="button"
-                  class="hidden rounded-full border border-azure/40 bg-azure/10 px-4 py-2 text-[10px] font-display uppercase tracking-[0.18em] text-azure shadow-sm transition hover:-translate-y-0.5 hover:border-azure/60">
-                  Download All Lesen
-                </button>
-              </div>
-              <div id="theme-grid" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+            <div id="home-stage-bar" class="home-stage-bar hidden">
+              <button id="home-stage-back" type="button" class="home-stage-back">
+                <span>←</span>
+                <span>Back</span>
+              </button>
+              <div id="home-stage-path" class="home-stage-path" aria-live="polite"></div>
             </div>
 
+            <section id="home-level-stage" class="home-control-card home-stage-card">
+              <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Step 1</div>
+              <h3 class="home-stage-heading">Choose your level</h3>
+              <p class="home-stage-copy">Start with the exam level, then pick the module and theme.</p>
+              <div id="level-list" class="home-stage-grid home-stage-grid-level mt-4"></div>
+            </section>
+
+            <section id="home-section-stage" class="home-control-card home-stage-card hidden">
+              <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Step 2</div>
+              <h3 class="home-stage-heading">Choose the exam part</h3>
+              <p id="home-section-stage-copy" class="home-stage-copy"></p>
+              <div id="section-list" class="home-stage-grid home-stage-grid-section mt-4"></div>
+            </section>
+
+            <section id="home-theme-stage" class="hidden space-y-6">
+              <div class="home-control-card home-search-card">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Search</div>
+                  <div id="theme-search-scope"
+                    class="home-search-scope font-display uppercase tracking-[0.18em] text-slate"></div>
+                </div>
+                <div class="mt-3">
+                  <input id="theme-search" type="search" placeholder="Search themes..."
+                    class="home-search-input w-full rounded-2xl border border-stone-300 bg-white/80 px-4 py-2 text-sm text-ink shadow-sm focus:border-azure/40 focus:outline-none">
+                  <div id="theme-search-count"
+                    class="mt-2 min-h-[1em] text-[11px] font-display uppercase tracking-[0.16em] text-slate"
+                    aria-live="polite"></div>
+                </div>
+              </div>
+              <div class="home-themes-block">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Themes</div>
+                  <button id="download-all-themes-btn" type="button"
+                    class="hidden rounded-full border border-azure/40 bg-azure/10 px-4 py-2 text-[10px] font-display uppercase tracking-[0.18em] text-azure shadow-sm transition hover:-translate-y-0.5 hover:border-azure/60">
+                    Download All Lesen
+                  </button>
+                </div>
+                <div id="theme-grid" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+              </div>
+            </section>
           </div>
 
           
@@ -267,8 +282,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
-  <script src="shared.js?v=20260426-cache-9"></script>
-  <script src="main.js?v=20260426-cache-9"></script>
+  <script src="shared.js?v=20260426-cache-11"></script>
+  <script src="main.js?v=20260426-cache-11"></script>
 </body>
 
 </html>
