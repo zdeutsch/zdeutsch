@@ -3,7 +3,7 @@
     "module": "shreiben",
     "title": "Schreiben",
     "description": "Beschwerde- und formelle Schreibaufgaben",
-    "generatedAt": "2026-03-04T00:00:00.000Z"
+    "generatedAt": "2026-04-26T18:15:05.472Z"
   },
   "levels": {
     "b2": {
@@ -103,6 +103,48 @@
           "istructions": "# 16. Reisebüro\n\nSie haben bei diesem Reisebüro eine Pauschalreise gebucht. Als Sie abends im Hotel ankamen, gab es kein freies Zimmer für Sie. Schreiben Sie eine Beschwerde an das Reisebüro.",
           "content": "## Reisebüro Sonnenschein\n\n**Ihr Online Reisebüro für Last-Minute-Urlaub**\n\nVerreisen Sie spontan ohne Monate vorher zu planen. Unsere Last-Minute-Reisen bieten bis zu 50 Prozent Rabatt.\n\nWir bieten Kurzreisen, Kreuzfahrten, All-Inclusive-Urlaub und Pauschalreisen mit Flug, Hotel und Transfer.\n\nBuchung online unter: reisebuero-sonnenschein.net, Reisebüro Sonnenschein, Käfergasse 5, 01109 Dresden",
           "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Berichten Sie, was Sie an diesem Abend gemacht haben.\n- Beschreiben Sie, wie der Reiseleiter reagiert hat.\n- Erläutern Sie, welche Erwartungen Sie vor dem Urlaub hatten.\n- Berichten Sie, wie der Urlaub insgesamt war."
+        },
+        {
+          "title": "17. FITWATCH",
+          "istructions": "# 17. FITWATCH\n\nSie haben kürzlich eine FITWATCH-Smartwatch gekauft und sind enttäuscht. Schreiben Sie eine Beschwerde.",
+          "content": "## FITWATCH\n\n**Die smarte Uhr für Ihre Fitness**\n\nSuchen Sie eine moderne Smartwatch, die Sie bei einem gesunden Lebensstil unterstützt?\n\nMit FITWATCH erhalten Sie eine Smartwatch, die Ihnen hilft, Ihre Fitness zu verbessern und Ihre Gesundheitsziele zu erreichen - alles in einem stilvollen Gerät am Handgelenk.\n\n### Wir bieten Ihnen\n\n- Kalorienzählen und Bewegungserkennung\n- Fortschritte bei Gesundheit und Fitness verfolgen\n- Herzfrequenz-, Schritt- und Schlafüberwachung\n- Wetter und Musik direkt am Handgelenk\n- Diverse Sportmodi und tägliche Aktivitätsziele\n- Elegantes Design und intuitive Bedienung\n\nPreis und weitere Informationen finden Sie auf unserer Website: **www.fitwatch.de**",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Erklären Sie, warum Sie sich für die FITWATCH entschieden haben.\n- Beschreiben Sie, was Ihnen an ähnlichen Produkten anderer Firmen besser gefallen hat.\n- Machen Sie Verbesserungsvorschläge, z. B. für eine bessere Kalorienberechnung, genauere Bewegungsanalyse oder leicht verständliche Anweisungen.\n- Beschreiben Sie, welche Probleme Sie mit der FITWATCH hatten und wo Ihre Erwartungen nicht erfüllt wurden."
+        },
+        {
+          "title": "18. Kino Sonnental",
+          "istructions": "# 18. Kino Sonnental\n\nSie waren am Wochenende im Kino Sonnental und haben den Film „KINDER ...“ gesehen. Leider waren Sie mit der Vorstellung nicht zufrieden und möchten sich beschweren. Schreiben Sie eine E-Mail.",
+          "content": "## Kino Sonnental – Filmabend „KINDER ...“\n\nMöchten Sie einen besonderen Kinoabend erleben?\n\nDann kommen Sie ins Kino Sonnental!\n\n### Wir bieten Ihnen\n\n- moderne, bequeme Kinosäle\n- gute Bild- und Tonqualität\n- freundliches Personal\n- Snacks und Getränke\n- Tickets bequem online buchen\n\n**Ort:** Kino Sonnental, Sonnenstraße 12\n\n**Kontakt:** service@kino-sonnental.de",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Schildern Sie Ihre Erfahrung mit dem Filmabend.\n- Schreiben Sie, was Ihnen nicht gefallen hat, z. B. Ton, Bild, Sauberkeit oder Organisation.\n- Begründen Sie, warum Sie den Film ausgewählt haben.\n- Machen Sie Vorschläge, wie das Kino die Erfahrung verbessern kann."
+        },
+        {
+          "title": "19. Kosmetik-Shop",
+          "istructions": "# 19. Kosmetik-Shop\n\nSie haben bei der Firma „Beauty & Pflege“ ein Kosmetikprodukt gekauft. Nach der Anwendung traten gesundheitliche Probleme auf und Sie fühlten sich krank und unwohl. Trotz Ihrer Beschwerden wurde Ihr Problem nicht angemessen behandelt. Schreiben Sie eine Beschwerde.",
+          "content": "## Kosmetik-Shop\n\n**Ihr Kosmetik-Shop - Schönheit & Pflege für Sie!**\n\nEntdecken Sie die neuesten Kosmetik- und Pflegeprodukte - alles für Ihre Schönheit und Ihr Wohlbefinden in unserem Laden!\n\n### Angebot\n\n- Große Auswahl an hochwertigen Kosmetikprodukten\n- Namhafte Marken und exklusive Linien\n- Natürlich und dermatologisch getestete Pflegeartikel\n- Kompetente Beratung und individuelle Hautanalysen\n- Luxuriöse Parfums, edles Make-up und feine Düfte\n- Entspannende Wellness-Produkte und Geschenkideen\n\nBeauty & Pflege, Schönheitsstraße 77, 98765 Schönstadt\n\n**www.beautyundpflege.de**\n\n+49 1234 98765",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Erklären Sie, warum Sie mit einem bei der Firma gekauften Produkt unzufrieden sind.\n- Beschreiben Sie, welche gesundheitlichen Probleme nach der Anwendung aufgetreten sind.\n- Erläutern Sie, wie die Firma auf Ihre Beschwerden reagiert hat.\n- Schreiben Sie, was Sie jetzt von der Firma erwarten."
+        },
+        {
+          "title": "20. Fotobuch",
+          "istructions": "# 20. Fotobuch\n\nSie haben bei der Firma Premium-Fotobuch24 ein Fotobuch mit Ihren Urlaubsfotos bestellt. Leider waren Sie mit dem Produkt und dem Service der Firma sehr unzufrieden. Schreiben Sie eine E-Mail, in der Sie sich über die Unannehmlichkeiten beschweren.",
+          "content": "## Fotobuch\n\nHalten Sie Ihre schönsten Erinnerungen fest! Wir machen aus Ihren Fotos ein Meisterwerk!\n\n### Unser Angebot\n\n- Brillante Farben und gestochen scharfe Bilder\n- Hochwertiges Papier und edle Einbände\n- Kinderleichte Gestaltung mit unserer Software\n- Blitzschnelle Lieferung innerhalb von 48 Stunden\n- 100 % Zufriedenheitsgarantie und 24/7 Kundenservice\n\nGestalten Sie noch heute Ihr persönliches Fotobuch! Wir garantieren Ihnen ein perfektes Ergebnis für Ihre Urlaubs-, Hochzeits- oder Familienfotos.",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Erklären Sie, warum Sie sich für Premium-Fotobuch24 entschieden haben.\n- Beschreiben Sie, welche Probleme es mit dem Fotobuch gab.\n- Erläutern Sie, welche Probleme es mit dem Service der Firma gab.\n- Schreiben Sie, was Sie jetzt von der Firma erwarten."
+        },
+        {
+          "title": "21. Abenteuer TIKKI TAKKA",
+          "istructions": "# 21. Abenteuer TIKKI TAKKA\n\nSie haben bei der Firma Abenteuer TIKKI TAKKA eine Schatzsuche für den Geburtstag Ihres Kindes gebucht. Trotz günstiger Preise war die Geburtstagsfeier nicht so schön wie erwartet und Sie sind damit nicht zufrieden. Schreiben Sie eine Beschwerde.",
+          "content": "## Abenteuer „TIKKI TAKKA“\n\n**Das Party-Abenteuer für Kinder!**\n\nErleben Sie spannende Kinder-Partys mit TIKKI TAKKA!\n\n### Angebot\n\n- Abenteuerliche Spiele und lustige Party-Animation\n- Spaßige Schatzsuchen und spannende Entdeckungsreisen\n- Zauberer, Clowns und Kinderschminken\n- Tolle Party-Pakete für unvergessliche Erlebnisse\n\nAbenteuer TIKKI TAKKA\n\nBirkenweg 5, 12345 Beispielstadt\n\n**www.tikki-takka.de**\n\n+49 1234 567890",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Beschreiben Sie, womit Sie bei dem Angebot nicht zufrieden waren.\n- Erklären Sie, warum Sie das Angebot nicht begeistert hat.\n- Machen Sie konkrete Verbesserungsvorschläge.\n- Schreiben Sie, was TIKKI TAKKA Ihrer Meinung nach besser machen sollte."
+        },
+        {
+          "title": "22. Informatik-Shop",
+          "istructions": "# 22. Informatik-Shop\n\nSie haben bei der Firma Informatik-Shop Müller einen neuen PC bestellt. Trotz Garantie konnten die Probleme Ihres Computers nicht behoben werden und Sie sind mit dem Gerät unzufrieden. Schreiben Sie eine Beschwerde.",
+          "content": "## Informatik-Shop\n\n**Online-Shop für Informatik - Ihr Experte für Computer & Technik!**\n\nEntdecken Sie die neuesten Computer und Technik - alles bequem in unserem Online-Shop!\n\n### Angebot\n\n- Große Auswahl an PCs, Laptops, Tablets und Zubehör\n- Top Marken zu günstigen Preisen\n- Individuelle Beratung und Technik-Service\n- Schneller Versand deutschlandweit\n- Sicheres, einfaches und komfortables Online-Shopping\n\nInformatik-Shop Müller\n\nTechnikstraße 123, 12345 Technikhaven\n\n**www.informatik-mueller.de**\n\n+49 1234 567890",
+          "tasks": "- Behandeln Sie alle vier Punkte.\n\n- Erklären Sie, warum Sie mit Ihrem PC unzufrieden sind.\n- Beschreiben Sie, welche Probleme es trotz Garantie mit Ihrem PC gab.\n- Erläutern Sie, wie die Firma erfolglos versucht hat, Ihren PC zu reparieren.\n- Schreiben Sie, was Sie jetzt von der Firma erwarten."
+        },
+        {
+          "title": "23. Partyservice Francke",
+          "istructions": "# 23. Partyservice Francke\n\nSie hatten eine große Familienfeier. Dafür hatten Sie beim Partyservice Francke Essen bestellt. Es gab jedoch viele Probleme und Sie beschweren sich.",
+          "content": "## Partyservice Francke – Feiern ohne Küchenstress\n\nSie planen eine Feier? Ob Geburtstag, Hochzeit, Jubiläum oder geschäftliche Veranstaltung - wir bieten den passenden Service: Essen, Getränke, Geschirr, Personal, Tischdekoration. Wir erledigen alles ganz nach Ihren Wünschen, zuverlässig und in professioneller Qualität.\n\n### Unser Angebot\n\n- kaltes oder warmes Buffet\n- Salatbuffet\n- Spezialitäten aus der Region\n- Kuchen und Torten\n- Desserts\n- Auf- und Abbau des Buffets\n- Getränkeservice\n- Geschirrverleih\n- Servicepersonal für Ihre Feier\n- Raum- und Tischdekoration\n\nAuf Wunsch kochen wir auch rein vegetarisch. Für bis zu 150 Personen.\n\nWir machen Ihnen gerne ein individuelles Angebot.\n\n**Kontakt:** Partyservice Francke, Veilchengasse 17, 20146 Hamburg",
+          "tasks": "A) Behandeln Sie drei der folgenden Punkte.\n\nB) Oder behandeln Sie zwei der folgenden Punkte und einen weiteren Aspekt Ihrer Wahl.\n\n- Schreiben Sie, warum Sie unzufrieden sind.\n- Erklären Sie, warum Sie sich für diesen Partyservice entschieden hatten.\n- Erläutern Sie, warum die Feier für Sie besonders wichtig war.\n- Berichten Sie, wie Ihre Gäste reagiert haben."
         }
       ]
     },
