@@ -110,7 +110,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-04-26-cache-strategy-v6";
+const SITE_DATA_VERSION = "2026-04-26-cache-strategy-v8";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
@@ -1160,45 +1160,6 @@ function setupWhatsAppWelcomeGate() {
   bindWhatsAppComposerSubmit(composer, composerInput, composerStatus, WHATSAPP_CONTENT);
 }
 
-function setupWhatsAppBottomSection() {
-  const currentPage = String(window.location.pathname || "").split("/").pop().toLowerCase();
-  if (currentPage === "horen.html" || currentPage === "shreiben.html") {
-    return;
-  }
-
-  if (document.getElementById("whatsapp-bottom-section")) {
-    return;
-  }
-
-  const section = createEl("section", "whatsapp-bottom-section");
-  section.id = "whatsapp-bottom-section";
-  section.setAttribute("dir", "rtl");
-
-  const panel = createEl("section", "whatsapp-welcome-gate__panel");
-  const header = buildWhatsAppHeader(WHATSAPP_CONTENT.bottomTitle, WHATSAPP_CONTENT.bottomSubtitle);
-  const { chat, profileTargets } = createWhatsAppChatThread(WHATSAPP_CONTENT);
-  const { composer, composerInput, composerStatus } = createWhatsAppComposer(WHATSAPP_CONTENT);
-
-  const actions = createEl("div", "whatsapp-welcome-gate__actions");
-  const joinButton = createEl("a", "whatsapp-welcome-gate__button whatsapp-welcome-gate__button--join", WHATSAPP_CONTENT.joinLabel);
-  joinButton.href = COMMUNITY_TELEGRAM_GROUP_URL;
-  joinButton.target = "_blank";
-  joinButton.rel = "noopener noreferrer";
-  const contactButton = createEl("a", "whatsapp-welcome-gate__button whatsapp-welcome-gate__button--accept", WHATSAPP_CONTENT.profileContactLabel);
-  contactButton.href = WHATSAPP_CONTENT.profileContactUrl;
-  contactButton.target = "_blank";
-  contactButton.rel = "noopener noreferrer";
-  actions.append(joinButton, contactButton);
-
-  const profileModalState = createWhatsAppProfileModal(WHATSAPP_CONTENT);
-  panel.append(header, chat, composerStatus, composer, actions);
-  section.append(panel, profileModalState.profileModal);
-  document.body.append(section);
-
-  bindWhatsAppProfileModal(profileTargets, profileModalState);
-  bindWhatsAppComposerSubmit(composer, composerInput, composerStatus, WHATSAPP_CONTENT);
-}
-
 function setupCommunityWidgets() {
   if (document.getElementById("community-suggest-modal")) {
     return;
@@ -1377,7 +1338,6 @@ async function initSharedSiteFeatures() {
   }
   setupWhatsAppWelcomeGate();
   setupCommunityWidgets();
-  setupWhatsAppBottomSection();
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.addEventListener("controllerchange", () => {

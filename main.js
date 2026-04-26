@@ -53,6 +53,7 @@ const homeLoaderState = {
   intervalId: null
 };
 const BUNDLE_PDF_THEME_CHUNK_SIZE = 3;
+const SUGGEST_THEME_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfbWVEy2slAc-ytKK9h6ZOnwcaDlCoHmEZSo4N9xpiuF6RI8Q/viewform?usp=header";
 
 const MAIN_DEFAULT_CONFIG = (typeof DEFAULT_CONFIG === "object" && DEFAULT_CONFIG)
   ? DEFAULT_CONFIG
@@ -3317,10 +3318,18 @@ function renderThemeCards() {
     themeGrid.append(card);
   });
 
+  const suggestCardMatches = shouldShowSuggestThemeCard(levelKey)
+    && (!query || normalize("اقتراح موضوع جديد Suggest new thema Google Form Lesen B1 B2").includes(query));
+  if (suggestCardMatches) {
+    themeGrid.append(buildSuggestThemeCard());
+  }
+
   if (!themes.length) {
-    renderThemeEmptyState(query
-      ? `No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`
-      : "No themes found.");
+    if (!suggestCardMatches) {
+      renderThemeEmptyState(query
+        ? `No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`
+        : "No themes found.");
+    }
   }
   refreshIcons();
 }
@@ -3390,6 +3399,47 @@ function buildShreibenCard(levelKey, task) {
   return card;
 }
 
+function shouldShowSuggestThemeCard(levelKey) {
+  return state.section === "lesen" && (levelKey === "b1" || levelKey === "b2");
+}
+
+function buildSuggestThemeCard() {
+  const card = createEl("a", "theme-card");
+  card.href = SUGGEST_THEME_FORM_URL;
+  card.target = "_blank";
+  card.rel = "noopener noreferrer";
+
+  const topRow = createEl("div", "theme-card-header");
+  const titleWrap = createEl("div", "theme-card-title-wrap");
+  titleWrap.append(
+    createEl("div", "theme-card-title", "اقتراح موضوع جديد"),
+    createEl("div", "theme-card-subtitle", "Suggest new thema")
+  );
+
+  const actions = createEl("div", "theme-card-actions");
+  actions.append(createEl("span", "theme-card-level", "FORM"));
+  topRow.append(titleWrap, actions);
+
+  const summaryRow = createEl("div", "theme-card-summary");
+  const statusBadge = createEl("span", "theme-card-status theme-card-status-progress", "Google Form");
+  const scoreBox = createEl("div", "theme-card-score");
+  scoreBox.append(
+    createEl("span", "theme-card-score-label", "Open"),
+    createEl("span", "theme-card-score-value", "↗")
+  );
+  summaryRow.append(statusBadge, scoreBox);
+
+  const meta = createEl("div", "theme-card-meta");
+  meta.append(
+    makeMetaPill("B1"),
+    makeMetaPill("B2"),
+    makeMetaPill("Lesen")
+  );
+
+  card.append(topRow, summaryRow, meta);
+  return card;
+}
+
 function renderHome() {
   renderLevelButtons();
   renderSectionButtons();
@@ -3438,10 +3488,10 @@ function createHomeCreatorSection() {
 
 function placeHomeCreatorSection() {
   const section = createHomeCreatorSection();
-  const target = document.getElementById("whatsapp-bottom-section");
-  if (target && target.parentNode) {
-    if (target.nextSibling !== section) {
-      target.parentNode.insertBefore(section, target.nextSibling);
+  const target = document.querySelector("#home-view .w-full");
+  if (target) {
+    if (!target.contains(section)) {
+      target.append(section);
     }
     return;
   }
@@ -3450,14 +3500,6 @@ function placeHomeCreatorSection() {
 
 function setupHomeCreatorSection() {
   placeHomeCreatorSection();
-  let tries = 0;
-  const timer = window.setInterval(() => {
-    tries += 1;
-    placeHomeCreatorSection();
-    if (document.getElementById("whatsapp-bottom-section") || tries >= 24) {
-      window.clearInterval(timer);
-    }
-  }, 250);
 }
 
 function resolveInitialLevel() {
