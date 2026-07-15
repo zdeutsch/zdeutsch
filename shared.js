@@ -110,7 +110,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-04-26-cache-strategy-v12";
+const SITE_DATA_VERSION = "2026-07-15-ui-refresh-v14";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
@@ -1187,16 +1187,19 @@ function setupCommunityWidgets() {
     joinLink.rel = "noopener noreferrer";
     const suggestBtn = createEl("button", "community-btn community-btn-secondary community-open-btn", "اقترح تعديلا");
     suggestBtn.type = "button";
-    actions.append(joinLink);
+    actions.append(joinLink, suggestBtn);
     content.append(title, line);
     promoCard.append(content, actions);
     promoTarget.append(promoCard);
   }
 
-  const floatingButton = createEl("button", "community-floating-btn community-open-btn", "اقتراحات تيليجرام");
-  floatingButton.type = "button";
-  floatingButton.id = "community-floating-btn";
-  document.body.append(floatingButton);
+  if (!promoTarget) {
+    const floatingButton = createEl("button", "community-floating-btn community-open-btn", "Feedback");
+    floatingButton.type = "button";
+    floatingButton.id = "community-floating-btn";
+    floatingButton.setAttribute("aria-label", "Telegram-Feedback öffnen");
+    document.body.append(floatingButton);
+  }
 
   const modal = createEl("div", "community-modal hidden");
   modal.id = "community-suggest-modal";
@@ -1323,20 +1326,6 @@ function setupCommunityWidgets() {
 }
 
 async function initSharedSiteFeatures() {
-  WHATSAPP_CONTENT.messages = await loadWhatsAppWelcomeMessages();
-  const primaryOutgoing = getWhatsAppChatMessages(WHATSAPP_CONTENT)
-    .find((entry) => entry.imageType === "outgoing");
-  if (primaryOutgoing) {
-    WHATSAPP_CONTENT.avatar = primaryOutgoing.avatar || WHATSAPP_CONTENT.avatar;
-    WHATSAPP_CONTENT.author = primaryOutgoing.userName || WHATSAPP_CONTENT.author;
-    WHATSAPP_CONTENT.role = primaryOutgoing.role || WHATSAPP_CONTENT.role;
-    WHATSAPP_CONTENT.message = primaryOutgoing.messageContent || WHATSAPP_CONTENT.message;
-    WHATSAPP_CONTENT.reactionCount = primaryOutgoing.reactionCount || WHATSAPP_CONTENT.reactionCount;
-    WHATSAPP_CONTENT.reactions = Array.isArray(primaryOutgoing.reactions) && primaryOutgoing.reactions.length
-      ? [...primaryOutgoing.reactions]
-      : WHATSAPP_CONTENT.reactions;
-  }
-  setupWhatsAppWelcomeGate();
   setupCommunityWidgets();
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {

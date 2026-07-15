@@ -531,6 +531,7 @@ function setView(view) {
   }
   if (view !== "exam" && settingsPanel) {
     settingsPanel.classList.add("hidden");
+    settingsBtn?.setAttribute("aria-expanded", "false");
   }
   state.view = view;
   if (view === "results") {
@@ -1104,7 +1105,7 @@ function renderActionBar(partKey) {
         ? "border border-stone-300 bg-stone-50 text-slate"
         : "bg-azure text-white shadow-lg ring-2 ring-azure/20"
     ),
-    submitted ? "Retry" : "Check Answers"
+    submitted ? "Neu versuchen" : "Antworten prüfen"
   );
 
   button.type = "button";
@@ -2738,6 +2739,7 @@ function toggleSettingsPanel(force) {
   }
   const show = typeof force === "boolean" ? force : settingsPanel.classList.contains("hidden");
   settingsPanel.classList.toggle("hidden", !show);
+  settingsBtn?.setAttribute("aria-expanded", show ? "true" : "false");
 }
 
 function buildMainUrl() {

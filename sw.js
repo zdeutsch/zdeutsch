@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-04-26-cache-strategy-v12";
+const SW_VERSION = "2026-07-15-ui-refresh-v14";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -9,6 +9,7 @@ const APP_SHELL = [
   "./horen.html",
   "./shreiben.html",
   "./theme.css",
+  "./ui-refresh.css",
   "./horen.css",
   "./shared.js",
   "./main.js",

@@ -25,7 +25,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="ZDeutsch">
-    <title>ZDeutsch | Shreiben</title>
+  <title>ZDeutsch | Schreiben</title>
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,6 +113,7 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="theme.css?v=20260426-19">
+    <link rel="stylesheet" href="ui-refresh.css?v=20260715-2">
   </head>
   <body class="theme-body shreiben-page font-body min-h-screen">
     <div class="fixed inset-0">
@@ -124,14 +125,14 @@
     <header class="fixed top-0 left-0 right-0 h-16 border-b border-black/10 bg-white/90 backdrop-blur-md shadow-sm z-40">
       <div class="w-full h-full px-3 sm:px-6 flex items-center justify-between gap-3 sm:gap-4">
         <div id="header-left" class="flex items-center gap-3 shrink-0">
-          <button id="return-btn" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
+          <button id="return-btn" type="button" aria-label="Zur Themenbibliothek" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
             <i data-lucide="arrow-left" class="h-4 w-4" aria-hidden="true"></i>
           </button>
-          <span id="return-label" class="text-xs font-display uppercase tracking-[0.2em] text-slate">Return</span>
+          <span id="return-label" class="text-xs font-display uppercase tracking-[0.2em] text-slate">Bibliothek</span>
           <div id="header-divider" class="h-6 w-px bg-black/10"></div>
           <div id="header-title">
             <div class="flex items-center gap-2">
-              <h1 id="theme-title" class="font-display text-base">Shreiben</h1>
+              <h1 id="theme-title" class="font-display text-base">Schreiben</h1>
               <span id="level-pill" class="rounded-full border border-azure/40 bg-azure/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-azure font-display">B2</span>
             </div>
           </div>
@@ -140,18 +141,18 @@
           <div id="timer-display" class="hidden items-center gap-2 rounded-full border border-azure/40 bg-azure/10 px-3 py-1 text-[10px] font-display uppercase tracking-[0.2em] text-azure">
             <span id="timer-value">30:00</span>
           </div>
-          <button id="settings-btn" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm hover:bg-white transition-colors">
+          <button id="settings-btn" type="button" aria-label="Schreibeinstellungen öffnen" aria-controls="settings-panel" aria-expanded="false" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm hover:bg-white transition-colors">
             <i data-lucide="settings" class="h-4 w-4" aria-hidden="true"></i>
           </button>
         </div>
       </div>
     </header>
 
-    <div id="settings-panel" class="fixed right-3 sm:right-6 top-20 w-[calc(100vw-1.5rem)] max-w-64 rounded-2xl border border-stone-300 bg-white/95 shadow-panel p-4 hidden z-40">
-      <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Editor Settings</div>
+    <div id="settings-panel" role="dialog" aria-label="Schreibeinstellungen" class="fixed right-3 sm:right-6 top-20 w-[calc(100vw-1.5rem)] max-w-64 rounded-2xl border border-stone-300 bg-white/95 shadow-panel p-4 hidden z-40">
+      <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Einstellungen</div>
       <div class="mt-4">
         <div class="flex items-center justify-between text-xs text-slate font-display uppercase tracking-[0.2em]">
-          <span>Font size</span>
+          <span>Schriftgröße</span>
           <span id="font-size-value">16px</span>
         </div>
         <input id="font-size-input" type="range" min="14" max="24" step="1" value="16" class="mt-3 w-full">
@@ -167,7 +168,7 @@
 
     <main class="relative z-10 w-full px-2 pt-20 pb-6 sm:px-6 sm:pt-24 sm:pb-12 lg:px-8">
       <div class="rounded-[1.75rem] border border-stone-300 bg-white/90 shadow-panel p-3 sm:p-6">
-        <div class="text-xs uppercase tracking-[0.3em] text-slate font-display">Shreiben</div>
+        <div class="text-xs uppercase tracking-[0.3em] text-slate font-display">Schreiben</div>
         <h2 class="mt-2 text-2xl font-display text-ink">Schreibaufgaben</h2>
         <p class="mt-2 text-sm text-slate">Lesen Sie die Anzeige, bearbeiten Sie die Leitpunkte und schreiben Sie Ihre Beschwerde.</p>
 
@@ -177,7 +178,7 @@
     </main>
 
     <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
-    <script src="shared.js?v=20260426-cache-12"></script>
-    <script src="shreiben.js?v=20260426-cache-12"></script>
+    <script src="shared.js?v=20260715-ui-2"></script>
+    <script src="shreiben.js?v=20260715-ui-2"></script>
   </body>
 </html>

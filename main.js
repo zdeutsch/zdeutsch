@@ -25,6 +25,7 @@ const homeStagePath = document.getElementById("home-stage-path");
 const homeLevelStage = document.getElementById("home-level-stage");
 const homeSectionStage = document.getElementById("home-section-stage");
 const homeThemeStage = document.getElementById("home-theme-stage");
+const homeHero = document.getElementById("home-hero");
 const homeSectionStageCopy = document.getElementById("home-section-stage-copy");
 
 const state = {
@@ -382,15 +383,17 @@ async function runHomeLoaderStep(meta, task) {
 function updateHeader() {
   if (themeTitle) {
     if (state.homeStage === HOME_STAGE_LEVEL) {
-      themeTitle.textContent = "Select level";
+      themeTitle.textContent = "Niveau wählen";
     } else if (state.homeStage === HOME_STAGE_SECTION) {
-      themeTitle.textContent = "Select exam part";
+      themeTitle.textContent = "Modul wählen";
     } else {
-      themeTitle.textContent = "Select a theme";
+      themeTitle.textContent = "Thema wählen";
     }
   }
   if (levelPill) {
-    levelPill.textContent = state.level ? (state.level || "").toUpperCase() : "B1/B2";
+    levelPill.textContent = state.homeStage === HOME_STAGE_LEVEL || !state.level
+      ? "B1/B2"
+      : (state.level || "").toUpperCase();
   }
 }
 
@@ -445,7 +448,7 @@ function renderChoiceButton(label, active) {
   );
 }
 
-function renderStageChoiceButton({ label, description = "", active = false, variant = "section" }) {
+function renderStageChoiceButton({ label, description = "", eyebrow = "", active = false, variant = "section" }) {
   const button = createEl(
     "button",
     classNames(
@@ -455,8 +458,16 @@ function renderStageChoiceButton({ label, description = "", active = false, vari
     )
   );
   button.type = "button";
-  button.append(
+  const topRow = createEl("span", "home-stage-choice-top");
+  topRow.append(
     createEl("span", "home-stage-choice-label", label),
+    createEl("span", "home-stage-choice-arrow", "↗")
+  );
+  if (eyebrow) {
+    button.append(createEl("span", "home-stage-choice-eyebrow", eyebrow));
+  }
+  button.append(
+    topRow,
     createEl("span", "home-stage-choice-description", description)
   );
   return button;
@@ -477,12 +488,12 @@ function clearThemeSearch() {
 function getSearchPlaceholder() {
   const levelLabel = (state.level || "").toUpperCase();
   if (state.section === "shreiben") {
-    return `Search ${levelLabel} Schreiben tasks...`;
+    return `${levelLabel} Schreiben-Aufgaben durchsuchen...`;
   }
   if (state.section === "horen") {
-    return `Search ${levelLabel} Hören practice...`;
+    return `${levelLabel} Hören-Übungen durchsuchen...`;
   }
-  return `Search ${levelLabel} Lesen themes...`;
+  return `${levelLabel} Lesen-Themen durchsuchen...`;
 }
 
 function updateSearchInputContext() {
@@ -507,11 +518,11 @@ function getHomeStagePathLabel() {
   if (state.homeStage === HOME_STAGE_THEMES && state.section) {
     parts.push(getSectionLabel(state.section));
   } else if (state.homeStage === HOME_STAGE_SECTION) {
-    parts.push("Choose module");
+    parts.push("Modul wählen");
   } else {
-    parts.push("Choose level");
+    parts.push("Niveau wählen");
   }
-  return parts.join(" / ");
+  return parts.join(" · ");
 }
 
 function updateHomeStageUi() {
@@ -524,6 +535,9 @@ function updateHomeStageUi() {
   if (homeThemeStage) {
     homeThemeStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_THEMES);
   }
+  if (homeHero) {
+    homeHero.classList.toggle("hidden", state.homeStage !== HOME_STAGE_LEVEL);
+  }
   if (homeStageBar) {
     homeStageBar.classList.toggle("hidden", state.homeStage === HOME_STAGE_LEVEL);
   }
@@ -535,7 +549,7 @@ function updateHomeStageUi() {
   }
   if (homeSectionStageCopy) {
     const levelLabel = state.level ? (state.level || "").toUpperCase() : "B1/B2";
-    homeSectionStageCopy.textContent = `You selected ${levelLabel}. Continue with Lesen, Hören, or Schreiben.`;
+    homeSectionStageCopy.textContent = `${levelLabel} ist gewählt. Öffne jetzt Lesen, Hören oder Schreiben.`;
   }
 }
 
@@ -546,10 +560,10 @@ function updateSearchResultCount(count, query = state.search) {
   const safeCount = Number.isFinite(count) ? Math.max(0, Math.round(count)) : 0;
   const normalizedQuery = normalize(query);
   if (normalizedQuery) {
-    themeSearchCount.textContent = `${safeCount} result${safeCount === 1 ? "" : "s"} found`;
+    themeSearchCount.textContent = `${safeCount} ${safeCount === 1 ? "Treffer" : "Treffer"}`;
     return;
   }
-  themeSearchCount.textContent = `${safeCount} item${safeCount === 1 ? "" : "s"} listed`;
+  themeSearchCount.textContent = `${safeCount} ${safeCount === 1 ? "Thema" : "Themen"}`;
 }
 
 function matchesSearchQuery(query, ...values) {
@@ -587,12 +601,12 @@ function clampPercent(value) {
 function formatPassedExamsLabel(value) {
   const passedExams = Number.isFinite(value) ? Math.max(0, Math.round(value)) : 0;
   if (passedExams === 0) {
-    return "No exams passed yet";
+    return "Noch keine Prüfung bestanden";
   }
   if (passedExams === 1) {
-    return "1 exam passed";
+    return "1 Prüfung bestanden";
   }
-  return `${passedExams} exams passed`;
+  return `${passedExams} Prüfungen bestanden`;
 }
 
 function getThemeStatus(progressSummary) {
@@ -601,18 +615,18 @@ function getThemeStatus(progressSummary) {
     : MAIN_DEFAULT_CONFIG.scoreConfig.passPercent;
   if (!progressSummary) {
     return {
-      label: "New",
+      label: "Neu",
       className: "theme-card-status-new"
     };
   }
   if (progressSummary.passedExams > 0 || progressSummary.lastPercent >= passMark) {
     return {
-      label: "Passed",
+      label: "Bestanden",
       className: "theme-card-status-passed"
     };
   }
   return {
-    label: "In progress",
+    label: "In Arbeit",
     className: "theme-card-status-progress"
   };
 }
@@ -3231,7 +3245,8 @@ function renderLevelButtons() {
   levels.forEach((levelKey) => {
     const button = renderStageChoiceButton({
       label: levelKey.toUpperCase(),
-      description: levelKey === "b1" ? "TELC B1 practice library" : "TELC B2 practice library",
+      description: levelKey === "b1" ? "Solide Grundlagen und sichere Prüfungspraxis" : "Komplexe Texte und anspruchsvolle Prüfungsformate",
+      eyebrow: "TELC · GER-Niveau",
       active: levelKey === state.level,
       variant: "level"
     });
@@ -3270,13 +3285,14 @@ function renderSectionButtons() {
   availableSections.forEach((value) => {
     const label = getSectionLabel(value);
     const description = value === "lesen"
-      ? "Read and solve themed exams"
+      ? "Texte verstehen und Aufgaben lösen"
       : value === "horen"
-        ? "Listen and mark true or false"
-        : "Write guided exam responses";
+        ? "Hören, einordnen und sicher entscheiden"
+        : "Strukturiert schreiben und gezielt üben";
     const button = renderStageChoiceButton({
       label,
       description,
+      eyebrow: "Prüfungsmodul",
       active: state.section === value,
       variant: "section"
     });
@@ -3385,7 +3401,7 @@ function renderThemeCards() {
     state.theme = themes[0] || null;
   }
 
-  themes.forEach((themeKey) => {
+  themes.forEach((themeKey, themeIndex) => {
     const themeEntry = levelEntry.themes?.[themeKey];
     if (!themeEntry) {
       return;
@@ -3399,16 +3415,15 @@ function renderThemeCards() {
       || themeEntry.lesen?.counts?.parts
       || themeEntry.counts?.parts
       || 0;
-    const card = createEl(
-      "button",
-      classNames("theme-card", themeKey === state.theme ? "theme-card-active" : "")
-    );
-    card.type = "button";
+    const card = createEl("article", "theme-card");
+    const themeLabel = themeEntry.title || themeKey;
     const header = createEl("div", "theme-card-header");
-    const titleWrap = createEl("div", "theme-card-title-wrap");
+    const titleWrap = createEl("button", "theme-card-title-wrap theme-card-open");
+    titleWrap.type = "button";
+    titleWrap.setAttribute("aria-label", `${themeLabel} öffnen`);
     titleWrap.append(
-      createEl("div", "theme-card-title", themeEntry.title || themeKey),
-      createEl("div", "theme-card-subtitle", "Reading practice")
+      createEl("span", "theme-card-title", themeLabel),
+      createEl("span", "theme-card-subtitle", `Leseprüfung ${String(themeIndex + 1).padStart(2, "0")}`)
     );
     const actions = createEl("div", "theme-card-actions");
     const downloadBtn = createEl(
@@ -3416,8 +3431,8 @@ function renderThemeCards() {
       "theme-card-download"
     );
     downloadBtn.type = "button";
-    downloadBtn.title = "Download file";
-    downloadBtn.setAttribute("aria-label", "Download file");
+    downloadBtn.title = "Datei laden";
+    downloadBtn.setAttribute("aria-label", `${themeLabel} herunterladen`);
     downloadBtn.append(makeDownloadIcon());
     downloadBtn.addEventListener("click", async (event) => {
       event.stopPropagation();
@@ -3428,8 +3443,8 @@ function renderThemeCards() {
       "theme-card-download"
     );
     shareBtn.type = "button";
-    shareBtn.title = "Share theme";
-    shareBtn.setAttribute("aria-label", "Share theme");
+    shareBtn.title = "Thema teilen";
+    shareBtn.setAttribute("aria-label", `${themeLabel} teilen`);
     shareBtn.append(makeShareIcon());
     shareBtn.addEventListener("click", async (event) => {
       event.stopPropagation();
@@ -3446,7 +3461,7 @@ function renderThemeCards() {
     const statusBadge = createEl("span", classNames("theme-card-status", status.className), status.label);
     const scoreBox = createEl("div", "theme-card-score");
     scoreBox.append(
-      createEl("span", "theme-card-score-label", "Last score"),
+      createEl("span", "theme-card-score-label", "Letztes Ergebnis"),
       createEl("span", "theme-card-score-value", `${lastPercent}%`)
     );
     summaryRow.append(statusBadge, scoreBox);
@@ -3457,23 +3472,32 @@ function renderThemeCards() {
     progressBar.append(progressFill);
 
     const meta = createEl("div", "theme-card-meta");
-    meta.append(makeMetaPill(`${partCount} parts`));
+    meta.append(makeMetaPill(`${partCount} Teile`));
     if (versionKeys.length > 1) {
-      meta.append(makeMetaPill(`${versionKeys.length} versions`));
+      meta.append(makeMetaPill(`${versionKeys.length} Versionen`));
     }
     if (progressSummary) {
       meta.append(makeMetaPill(formatPassedExamsLabel(progressSummary.passedExams)));
       if (progressSummary.versionCount > 1) {
-        meta.append(makeMetaPill(`Passed versions: ${progressSummary.passedVersions}/${progressSummary.versionCount}`));
+        meta.append(makeMetaPill(`Bestandene Versionen: ${progressSummary.passedVersions}/${progressSummary.versionCount}`));
       }
     } else {
-      meta.append(makeMetaPill("No attempts yet"));
+      meta.append(makeMetaPill("Noch kein Versuch"));
     }
 
-    card.append(header, summaryRow, progressBar, meta);
-    card.addEventListener("click", () => {
-      handleThemeSelection(themeKey, themeEntry);
-    });
+    const openTheme = () => handleThemeSelection(themeKey, themeEntry);
+    const footer = createEl("div", "theme-card-footer");
+    const openButton = createEl(
+      "button",
+      "theme-card-cta",
+      progressSummary ? "Fortsetzen →" : "Starten →"
+    );
+    openButton.type = "button";
+    openButton.setAttribute("aria-label", `${themeLabel} ${progressSummary ? "fortsetzen" : "starten"}`);
+    titleWrap.addEventListener("click", openTheme);
+    openButton.addEventListener("click", openTheme);
+    footer.append(meta, openButton);
+    card.append(header, summaryRow, progressBar, footer);
     themeGrid.append(card);
   });
 

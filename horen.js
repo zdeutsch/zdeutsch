@@ -732,13 +732,16 @@ if (fontSizeInput) {
 if (settingsBtn && settingsPanel) {
   settingsBtn.addEventListener("click", (event) => {
     event.stopPropagation();
-    settingsPanel.classList.toggle("hidden", !settingsPanel.classList.contains("hidden"));
+    const show = settingsPanel.classList.contains("hidden");
+    settingsPanel.classList.toggle("hidden", !show);
+    settingsBtn.setAttribute("aria-expanded", show ? "true" : "false");
   });
   settingsPanel.addEventListener("click", (event) => {
     event.stopPropagation();
   });
   document.addEventListener("click", () => {
     settingsPanel.classList.add("hidden");
+    settingsBtn.setAttribute("aria-expanded", "false");
   });
 }
 if (returnBtn) {
