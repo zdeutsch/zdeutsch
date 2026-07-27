@@ -52,11 +52,12 @@ const CREATOR_PROFILE = Object.freeze({
   contactLabel: "Community Corrections"
 });
 
-const SECTION_KEYS = ["lesen", "horen", "shreiben"];
+const SECTION_KEYS = ["lesen", "horen", "shreiben", "mundlich"];
 const SECTION_LABELS = {
   lesen: "LESEN",
   horen: "HÖREN",
-  shreiben: "SHREIBEN"
+  shreiben: "SHREIBEN",
+  mundlich: "MÜNDLICH"
 };
 const homeLoaderState = {
   progress: 0,
@@ -493,6 +494,9 @@ function getSearchPlaceholder() {
   if (state.section === "horen") {
     return `${levelLabel} Hören-Übungen durchsuchen...`;
   }
+  if (state.section === "mundlich") {
+    return `${levelLabel} Mündlich-Modul durchsuchen...`;
+  }
   return `${levelLabel} Lesen-Themen durchsuchen...`;
 }
 
@@ -549,7 +553,7 @@ function updateHomeStageUi() {
   }
   if (homeSectionStageCopy) {
     const levelLabel = state.level ? (state.level || "").toUpperCase() : "B1/B2";
-    homeSectionStageCopy.textContent = `${levelLabel} ist gewählt. Öffne jetzt Lesen, Hören oder Schreiben.`;
+    homeSectionStageCopy.textContent = `${levelLabel} ist gewählt. Öffne jetzt das passende Prüfungsmodul.`;
   }
 }
 
@@ -3288,7 +3292,9 @@ function renderSectionButtons() {
       ? "Texte verstehen und Aufgaben lösen"
       : value === "horen"
         ? "Hören, einordnen und sicher entscheiden"
-        : "Strukturiert schreiben und gezielt üben";
+        : value === "mundlich"
+          ? "Vorstellen, diskutieren und gemeinsam planen"
+          : "Strukturiert schreiben und gezielt üben";
     const button = renderStageChoiceButton({
       label,
       description,
@@ -3378,6 +3384,31 @@ function renderThemeCards() {
           "div",
           "rounded-2xl border border-rose/30 bg-rose/10 p-4 text-sm text-rose",
           "Für diese Ebene sind noch keine Schreiben-Aufgaben verfügbar."
+        )
+      );
+    }
+    return;
+  }
+  if (state.section === "mundlich") {
+    const partConfig = getPartConfig(levelKey, "mundlich");
+    const hasMatch = partConfig && matchesSearchQuery(
+      query,
+      partConfig?.name,
+      partConfig?.description,
+      partConfig?.module,
+      "Vorstellen Diskussion Planung Sprechen"
+    );
+    updateSearchResultCount(hasMatch ? 1 : 0, query);
+    if (hasMatch) {
+      themeGrid.append(buildMundlichCard(levelKey, partConfig));
+    } else if (query) {
+      renderThemeEmptyState(`No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`);
+    } else {
+      themeGrid.append(
+        createEl(
+          "div",
+          "rounded-2xl border border-rose/30 bg-rose/10 p-4 text-sm text-rose",
+          "Für diese Ebene sind noch keine Mündlich-Aufgaben verfügbar."
         )
       );
     }
@@ -3533,6 +3564,41 @@ function buildHorenCard(levelKey, partConfig) {
     createEl("div", "text-sm font-display text-ink", title),
     createEl("div", "mt-2 text-xs text-slate", subtitle)
   );
+  return card;
+}
+
+function buildMundlichCard(levelKey, partConfig) {
+  const title = partConfig?.name || "Mündlich";
+  const subtitle = partConfig?.description || "Vorstellen, diskutieren und gemeinsam planen.";
+  const card = createEl("a", "theme-card");
+  card.href = `mundlich.html?level=${encodeURIComponent(levelKey)}`;
+
+  const header = createEl("div", "theme-card-header");
+  const titleWrap = createEl("div", "theme-card-title-wrap");
+  titleWrap.append(
+    createEl("span", "theme-card-title", title),
+    createEl("span", "theme-card-subtitle", "Interaktives Sprechstudio")
+  );
+  const levelBadge = createEl("span", "theme-card-level", levelKey.toUpperCase());
+  header.append(titleWrap, levelBadge);
+
+  const summary = createEl("div", "theme-card-summary");
+  summary.append(
+    createEl("span", "theme-card-status theme-card-status-progress", "Alle 3 Prüfungsteile"),
+    createEl("span", "text-xs text-slate", subtitle)
+  );
+
+  const progressBar = createEl("div", "theme-card-progress-track");
+  const progressFill = createEl("div", "theme-card-progress-fill");
+  progressFill.style.width = "0%";
+  progressBar.append(progressFill);
+
+  const footer = createEl("div", "theme-card-footer");
+  const meta = createEl("div", "theme-card-meta");
+  meta.append(makeMetaPill("Vorstellen"), makeMetaPill("Diskutieren"), makeMetaPill("Planen"));
+  footer.append(meta, createEl("span", "theme-card-cta", "Studio öffnen →"));
+
+  card.append(header, summary, progressBar, footer);
   return card;
 }
 

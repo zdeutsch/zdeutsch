@@ -17,6 +17,9 @@ const hideAussageShortcutBtn = document.getElementById("hide-aussage-shortcut");
 const progressDisplay = document.getElementById("horen-progress");
 const searchBarContainer = document.getElementById("search-bar-container");
 const searchInput = document.getElementById("horen-topic-search");
+const sourceKicker = document.getElementById("horen-source-kicker");
+const sourceCopy = document.getElementById("horen-source-copy");
+const sourceLink = document.getElementById("horen-source-link");
 const HIDE_AUSSAGE_KEY = "horenHideAussage";
 const HOREN_SOURCE_PDF_PATH = "assets/horen-b2-source.pdf";
 
@@ -626,6 +629,18 @@ function applyHeaderInfo() {
   }
   if (themeTitle) {
     themeTitle.textContent = `Hören Codes (${state.levelKey?.toUpperCase() || "B1"})`;
+  }
+  const isB1 = state.levelKey === "b1";
+  if (sourceKicker) {
+    sourceKicker.textContent = isB1 ? "B1 Quellenhinweis" : "Source PDF";
+  }
+  if (sourceCopy) {
+    sourceCopy.textContent = isB1
+      ? "Die Referenz enthält Aussagen, aber keine Audiodateien. Unsichere Zusatzantworten wurden deshalb nicht importiert."
+      : "Hörverstehen korrigierte Telc B2 (Sätze + Codes)";
+  }
+  if (sourceLink) {
+    sourceLink.classList.toggle("hidden", isB1);
   }
 }
 

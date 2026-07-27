@@ -1,0 +1,1418 @@
+{
+  "generatedAt": "2026-07-27T00:00:00.000Z",
+  "levels": {
+    "b1": {
+      "title": "TELC B1 Mündliche Prüfung",
+      "sourceUrl": "https://sites.google.com/view/b1telcprufung/trang-ch%E1%BB%A7/b%E1%BB%99-%C4%91%E1%BB%81-%E1%BA%A3-r%E1%BA%ADp?authuser=0",
+      "partOrder": [
+        "teil-1",
+        "teil-2",
+        "teil-3"
+      ],
+      "parts": {
+        "teil-1": {
+          "title": "Einander kennenlernen",
+          "shortTitle": "Vorstellen",
+          "durationMinutes": 3,
+          "sourceUrl": "https://sites.google.com/view/b1telcprufung/trang-ch%E1%BB%A7/b%E1%BB%99-%C4%91%E1%BB%81-%E1%BA%A3-r%E1%BA%ADp/teil-1-m%C3%BCndliche-pr%C3%BCfung",
+          "instruction": "Stellen Sie sich vor und stellen Sie Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner passende Rückfragen.",
+          "prompts": [
+            "Name und Alter",
+            "Herkunft",
+            "Wohnsituation: Wohnung, Haus oder Garten",
+            "Familie und persönliche Situation",
+            "Schule, Ausbildung und Lernweg",
+            "Beruf oder aktuelle Tätigkeit",
+            "Sprachen: welche, wie lange und warum",
+            "Hobbys und Freizeit",
+            "Erfahrungen im Ausland"
+          ],
+          "followUps": [
+            "Warum lernen Sie Deutsch?",
+            "Wie sieht ein typischer Tag bei Ihnen aus?",
+            "Was machen Sie am Wochenende?",
+            "Welche Sprache möchten Sie noch lernen?",
+            "Wo möchten Sie in fünf Jahren leben?",
+            "Was gefällt Ihnen an Ihrem Wohnort?",
+            "Welche Reise ist Ihnen besonders in Erinnerung geblieben?",
+            "Was ist Ihnen bei der Arbeit wichtig?"
+          ]
+        },
+        "teil-2": {
+          "title": "Über ein Thema sprechen",
+          "shortTitle": "Diskutieren",
+          "durationMinutes": 6,
+          "sourceUrl": "https://docs.google.com/document/d/1JzeviUgaGuqIn6dLXIkahTyvvTACisnoiiZv-m5uXWE/edit?usp=sharing",
+          "instruction": "Lesen Sie beide Positionen. Geben Sie die Aussagen mit eigenen Worten wieder, äußern Sie Ihre Meinung und reagieren Sie auf Ihr Gegenüber.",
+          "topics": [
+            {
+              "id": "diskussion-1-1",
+              "title": "Brief oder E-mail",
+              "personA": {
+                "speaker": "Harald Haubner, 29 Jahre, Kaufmann",
+                "opinion": "Ich finde es schade, dass viele Menschen nicht mit der Hand schreiben wollen. Also ich freue mich immer über einen handgeschrieben Brief oder eine Karte, zum Beispiel zum Geburtstag. Das ist viel persönlicher als eine E-mail oder eine Nachricht am Telefon."
+              },
+              "personB": {
+                "speaker": "Tina Klein, 35 Jahre, Pflegerin",
+                "opinion": "Briefe schreibe ich nie. Wozu auch? Es dauert viel zu lange, bis ein Brief endlich ankommt. Eine E-Mail oder eine Nachricht per Telefon ist sofort beim Empfänger. Da kann ich auch Emojis benutzen. Briefe finde ich altmodisch."
+              }
+            },
+            {
+              "id": "diskussion-1-2",
+              "title": "Smartphone",
+              "personA": {
+                "speaker": "Hanna Streblow (46), Trainerin",
+                "opinion": "Manche Kinder halten schon im Kinderwagen ein Smartphone in der Hand. Fachleute sagen aber, dass Kinder unter vier Jahren gar kein Handy haben sollen, und zwischen vier und sechs Jahren höchstens 20 bis 30 Minuten pro Tag. Das finde ich auch gut so."
+              },
+              "personB": {
+                "speaker": "Luigi Bellini, (39), Musiker",
+                "opinion": "Das Smartphone gehört zu unserem Leben. Deshalb sollten Kleinkinder auch so früh wie möglich lernen, damit umzugehen.\nFrüher haben Kinder mit Holzspielzeug gespielt, heute spielen sie mit elektronischen Geräten. Was soll daran schlecht sein? Die Welt verändert sich eben."
+              }
+            },
+            {
+              "id": "diskussion-1-2-2",
+              "title": "Smartphone in der Schule",
+              "personA": {
+                "speaker": "Ann-Marie Hübner , 39 Jahre, Lehrerin",
+                "opinion": "Ich bin Lehrerin und nutze das Smartphone oft. Es ist wirklich hilfreich, wenn man sofort eine Information im Internet findet. Meine Schüler dürfen es auch im Unterricht benutzen, dann finden sie zum Beispiel Filme, Bilder, und Musik des Themas, das wir gerade behandeln. Das macht ihnen Spaß."
+              },
+              "personB": {
+                "speaker": "Christin Bergner , 41 Jahre, Mechatroniker",
+                "opinion": "Meine Kinder sind den ganzen Tag am Smartphone und das nervt mich. Sie müssen doch nicht auch noch in der Schule damit spielen. Außerdem finde ich, dass man mit einem Smartphone sowieso nicht lernen kann. Sobald eine Nachricht kommt, konzentrieren sie sich nicht mehr auf den Unterricht."
+              }
+            },
+            {
+              "id": "diskussion-1-3",
+              "title": "Im Internet bestellen",
+              "personA": {
+                "speaker": "Heike Bittner (36), Hausfrau",
+                "opinion": "Am liebsten bestelle ich meine Kleider im Internet. Die Auswahl ist viel größer als im Laden. Überfüllte Geschäfte mag ich nicht. Ich suche lieber zu Hause aus und probiere dann in aller Ruhe. Was mir nicht gefällt, kann ich problemlos zurückschicken."
+              },
+              "personB": {
+                "speaker": "Carlo Marchese (33), Malermeister",
+                "opinion": "Ich kaufe nicht oft Kleidung. Aber wenn ich etwas brauche, nehme ich mir Zeit und gehe in die Stadt. Im Internet bestellen mag ich nicht. Die Farben sind oft ganz anders als auf den Fotos. Der Stoff sieht auf den Bildern auch meistens besser aus."
+              }
+            },
+            {
+              "id": "diskussion-1-4",
+              "title": "Gemeinschaftsgarten",
+              "personA": {
+                "speaker": "Lisa Feldmann (43), Kamerafrau",
+                "opinion": "Wir nutzen seit einem Jahr ein Stück in einem Gemeinschaftsgarten. Wir bauen Gemüse und Kräuter an. So wissen wir, wo unser Essen herkommt. Wir können ganz sicher sein, dass es wirklich Bio ist.\nAußerdem macht uns die Arbeit im Freien viel Freude."
+              },
+              "personB": {
+                "speaker": "Harald Dauber (29), Kaufmann",
+                "opinion": "Meine Eltern sind Mieter in einem Gemeinschaftsgarten. Da gibt es oft Stress: zum Beispiel, wenn es lange nicht regnet, und die teuren Pflanzen vertrocknen. Wenn sie in Urlaub fahren wollen, muss jemand den Garten für sie gießen. Ich kaufe mein Gemüse lieber im Laden."
+              }
+            },
+            {
+              "id": "diskussion-1-5",
+              "title": "Tiktok",
+              "personA": {
+                "speaker": "Mandy Heuser, 43 Jahre, Designerin",
+                "opinion": "Unsere Tochter postet regelmäßig Videos auf TikTok. Anfangs habe ich mir Sorgen gemacht. Aber nun sehe ich, wie gut es ihr tut. Sie hat wirklich Talent als Schauspielerin und Sängerin, und das kann sie so mit anderen teilen. Ihre Videos haben viel Erfolg."
+              },
+              "personB": {
+                "speaker": "Kevin , 34 Jahre, Autohändler",
+                "opinion": "Manche Menschen verbringen Stunden mit TikTok-Videos. Das ist doch reine Zeitverschwendung. Warum sollten einem die Darstellungen und Meinungen fremder Leute wichtig sein? Ich würde mir lieber ein schönes Hobby suchen. Es gibt so viele Möglichkeiten."
+              }
+            },
+            {
+              "id": "diskussion-1-6",
+              "title": "Große Feier veranstalten",
+              "personA": {
+                "speaker": "Christin Bergner, 41 Jahre, Mechatroniker",
+                "opinion": "Unsere Großmutter feiert bald ihren 80. Geburtstag. Wir feiern bei uns im Garten, das passt gut für unsere große Familie. Die Kinder haben Platz zum Spielen. Seit Wochen überlegen wir, wer was kochen soll. Es gibt viel zu tun, aber es macht auch Spaß!"
+              },
+              "personB": {
+                "speaker": "Sybille Sauer, 43 Jahre, Designerin",
+                "opinion": "Gestern haben wir den 50. Hochzeitstag unserer Eltern gefeiert. Wir waren in einem Restaurant. So mussten wir uns nicht um die Vorbereitung kümmern. Nur das Menü hatten wir schon vorbestellt. Die Kinder haben sich ein bisschen gelangweilt, aber den Erwachsenen hat es gut gefallen."
+              }
+            },
+            {
+              "id": "diskussion-1-7",
+              "title": "Öffentlichen Verkehrsmittel",
+              "personA": {
+                "speaker": "Carola Ahrenholz, 25 Jahre, Sekretärin",
+                "opinion": "Im Sommer fahre ich immer mit dem Fahrrad zur Arbeit. Dann komme ich morgens schon munter ins Büro und abends kann ich mich beim Fahren wunderbar entspannen. Nur wenn es regnet, nehme ich den Bus. Im Winter fahre ich immer mit einer Kollegin im Auto. Dafür gebe ich ihr etwas Benzingeld, so sparen wir beide und tun außerdem noch etwas für den Umweltschutz."
+              },
+              "personB": {
+                "speaker": "Bernd Kleinefeld, 45 Jahre, Elektrotechniker",
+                "opinion": "Mein Auto brauche ich am meisten für meine Freizeitaktivitäten: Am Wochenende machen wir Ausflüge, unter der Woche fahre ich in die Stadt, ins Kino oder zum Sport. Um zur Arbeit zu kommen, benutze ich auch das Auto.\nUnd weil wir auf dem Land wohnen, muss ich ziemlich oft auch die Kinder irgendwohin bringen."
+              }
+            },
+            {
+              "id": "diskussion-1-8",
+              "title": "Gemeinsame Mahlzeiten",
+              "personA": {
+                "speaker": "Stefan Wilkens, (41), Ingenieur.",
+                "opinion": "Gemeinsame Mahlzeiten sind sehr wichtig in unserer Familie. Wir helfen alle beim Kochen. Mindestens einmal am Tag, meistens abends, sitzen wir alle um den großen Tisch, essen und erzählen uns gegenseitig, was am Tag so los war. Beim Essen fällt das Erzählen leicht."
+              },
+              "personB": {
+                "speaker": "Heike Bittner, (36), Hausfrau.",
+                "opinion": "Mein Mann und ich arbeiten und unser Sohn studiert. So hat jeder seinen eigenen Rhythmus, und wir sitzen fast nie zusammen an einem Tisch. Ich finde das in Ordnung. So ist das eben in unserer Zeit."
+              }
+            },
+            {
+              "id": "diskussion-1-9",
+              "title": "Serie oder Film",
+              "personA": {
+                "speaker": "Steffi, 29 Jahre alt, Redakteurin",
+                "opinion": "Also, ich bin richtig süchtig nach Serien! Am Wochenende streame ich manchmal stundenlang, eine Folge nach der anderen.\nZwischendurch schreibe ich mit meinen Freundinnen, und wir diskutieren über die Geschichte oder über unsere Lieblingsschauspieler."
+              },
+              "personB": {
+                "speaker": "Heike Bittner, 36 Jahre alt, Hausfrau",
+                "opinion": "Serien streamen interessiert mich überhaupt nicht. Mehrere Folgen anschauen, das wird mir zu viel. So lange will ich nicht vor dem Bildschirm sitzen. Aber ich möchte auch nicht eine ganze Woche auf die nächste Folge warten. Ein Film mit einer abgeschlossenen Geschichte, das ist mir lieber."
+              }
+            },
+            {
+              "id": "diskussion-1-10",
+              "title": "Bauernmarkt",
+              "personA": {
+                "speaker": "Eva Winter, 37 Jahre, Lehrerin",
+                "opinion": "Ich kaufe meistens am Samstag auf dem Bauernmarkt ein. Dort bekomme ich frisches Gemüse aus der Umgebung. Es gibt auch Brot und sogar Biofleisch. Im Supermarkt kommt alles aus der Fabrik und schmeckt nicht so gut. Außerdem unterstütze ich mit meinem Einkauf die kleinen Bauernbetriebe."
+              },
+              "personB": {
+                "speaker": "Tobias Meier, 40 Jahre, Informatiker",
+                "opinion": "Ich gehe selten auf den Bauernmarkt. Ich habe nicht viel Zeit, also kaufe ich meine Lebensmittel lieber im Supermarkt. Dort finde ich alles an einem Ort, und es ist oft billiger. Natürlich ist frisches Gemüse vom Bauernmarkt besser, aber für mich ist es einfach praktischer, schnell im Supermarkt einzukaufen."
+              }
+            },
+            {
+              "id": "diskussion-1-11",
+              "title": "Umzug",
+              "personA": {
+                "speaker": "Hassan al-Amiri, Malerson",
+                "opinion": "Ich bin sehr oft umgezogen. In der Regel alle vier bis fünf Jahre. Immer in einer neuen Umgebung mit neuen Nachbarn. Das hat mir immer gutgetan. Ich halte es einfach nicht sehr lange an einem Ort aus, denn ich brauche die Veränderung."
+              },
+              "personB": {
+                "speaker": "Sabine Igel, Floristin",
+                "opinion": "Wir - mein Mann und ich - haben uns vor Kurzem ein Haus gekauft.\nWir wollten nicht mehr Mieter sein und wir hatten auch keine Lust mehr auf Umzüge. Wir wohnen jetzt auf dem Land und fühlen uns dort sehr wohl. Zu unseren Nachbarn haben wir ein freundschaftliches Verhältnis. Also, vermutlich werden wir nie wieder umziehen."
+              }
+            },
+            {
+              "id": "diskussion-1-12",
+              "title": "Auto, oder Bus oder Bahn",
+              "personA": {
+                "speaker": "Birgit Krah, Köchin",
+                "opinion": "Ich bin so froh, dass ich ein Auto habe. Das erleichtert mir den Alltag.\nSo bin ich sehr flexibel, kann meine Musik einschalten und von A nach B fahren. Auf dem Weg zur Arbeit oder nach Hause muss ich auch nicht laute oder nervige Menschen ertragen."
+              },
+              "personB": {
+                "speaker": "Amir Zaid, Sport- und Fitnesskaufmann",
+                "opinion": "Ich brauche kein Auto. Da ich in der Stadt lebe, komme ich mit der U-Bahn schnell voran. Ich muss auch keinen Parkplatz suchen. Inzwischen ist das Parken in den Städten richtig teuer geworden. So kann ich nach der Arbeit, wenn ich nach Hause fahre, entspannt sein."
+              }
+            },
+            {
+              "id": "diskussion-1-13",
+              "title": "Sport im Fitnessstudio",
+              "personA": {
+                "speaker": "Hassan al-Amiri, Maler.",
+                "opinion": "Ich gehe regelmäßig ins Gym. Die haben so tolle Geräte und vor allem sehr gute Beratung. Wenn man zwischendurch etwas wissen möchte, ist auch immer jemand zur Stelle. Und das Gute an der Sache ist, dass Wind und Wetter keine Rolle spielen."
+              },
+              "personB": {
+                "speaker": "Kurt Baumgart, IT-System Elektroniker.",
+                "opinion": "Das ist nichts für mich. Die Fahrt ins nächste Fitnessstudio würde mich ca. 20 Minuten kosten. Und dann müsste ich dort auch noch zusammen mit Fremden trainieren. Darauf habe ich gar keine Lust. Ich habe mir bei uns im Haus ein Sportzimmer eingerichtet. So kann ich trainieren, ohne das Haus zu verlassen."
+              }
+            },
+            {
+              "id": "diskussion-1-14",
+              "title": "Klassentreffen",
+              "personA": {
+                "speaker": "Steffi, 29 Jahre alt, Redakteurin",
+                "opinion": "Wir veranstalten jedes Jahr ein Klassentreffen. Immer am selben Ort und zur selben Zeit. Natürlich haben wir auch eine WhatsApp-Gruppe. So wissen wir immer, wer teilnehmen wird.\nWir sitzen dann stundenlang zusammen und es ist immer sehr lustig. Ich freue mich jedes Jahr auf das Wiedersehen."
+              },
+              "personB": {
+                "speaker": "Heike Bittner, 36 Jahre alt, Hausfrau",
+                "opinion": "An meine Schulzeit denke ich nicht gern zurück. An die Mitschüler eigentlich auch nicht. Das alles liegt so lange zurück und ich habe damit abgeschlossen. Mich interessiert auch nicht, was aus den Leuten geworden ist. Und auch nicht, was sie zu erzählen haben."
+              }
+            },
+            {
+              "id": "diskussion-1-15",
+              "title": "Führerschein",
+              "personA": {
+                "speaker": "Yvonne Hector",
+                "opinion": "Ich bin so froh, dass ich einen Führerschein habe.\nDas erleichtert mir meinen Alltag. Es ist so viel angenehmer, mit dem Auto zur Arbeit zu fahren. Ich muss keine lauten Menschen ertragen und ich habe meine Ruhe. Wenn ich privat etwas unternehmen möchte, bin ich sehr flexibel."
+              },
+              "personB": {
+                "speaker": "Sebastian Hubrich",
+                "opinion": "Ich brauche keinen Führerschein. Da ich sowieso in der Stadt lebe, komme ich mit Straßenbahnen und Bussen sehr schnell voran. Manchmal nerven mich meine Mitmenschen, aber für unsere Umwelt sind die öffentlichen Verkehrsmittel auf jeden Fall die bessere Option."
+              }
+            },
+            {
+              "id": "diskussion-1-16",
+              "title": "Rapmusik",
+              "personA": {
+                "speaker": "Oliver Schied",
+                "opinion": "Dieser schnelle Sprechgesang ist nichts für mich. Die Texte sind viel zu aggressiv und voller Beleidigungen. Die Hälfte versteht man nicht einmal. Da höre ich lieber ruhigere Poplieder."
+              },
+              "personB": {
+                "speaker": "Sina May",
+                "opinion": "Ich liebe Rap. Die Musiker haben immer so interessante und auch wichtige Themen. Es wird nie langweilig. Was mir besonders gut gefällt. Viele Rapper arbeiten mit Sängern zusammen und mischen Rap und Pop."
+              }
+            },
+            {
+              "id": "diskussion-1-17",
+              "title": "Kleidung",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Ich kaufe nicht so viele Klamotten, aber wenn ich etwas kaufe, achte ich immer auf die Qualität. Schließlich möchte ich lange tragen und nicht nach kurzer Zeit weg."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich habe nicht viel Zeit zum Shoppen. Hemden oder Hosen kaufe ich meistens, wenn ich in der Stadt bin und etwas zu tun habe. Ich probiere sie nicht einmal an. Wenn ich sie wieder trage, gefallen sie mir nicht mehr. Oder nach dem ersten Waschen merke ich, dass sie zu billig sind und die Farben nicht mehr so ​​gut sind wie vorher."
+              }
+            },
+            {
+              "id": "diskussion-1-18",
+              "title": "Handy",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Das Thema ist nicht neu, aber sehr sehr nervig. Überall sieht man Menschen, die sich mit ihren Handys beschäftigen. Das kann doch nicht sein, dass ein kleines Gerät unser ganzes Leben bestimmt. Nicht einmal auf der Autobahn können Menschen die Finger davon lassen."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Mein Handy ist mein ständiger Begleiter. Inzwischen kann ich ohne Geld und Schlüssel das Haus verlassen, aber nicht ohne mein Handy. Und ich muss zugeben, zum Telefonieren brauche ich es gar nicht so oft. Viel wichtiger sind mein Terminplaner und meine Apps."
+              }
+            },
+            {
+              "id": "diskussion-1-19",
+              "title": "Abenteuer",
+              "personA": {
+                "speaker": "Markus Traut",
+                "opinion": "Ich hatte schon einige echte Grenzerfahrungen. Zum Beispiel haben wir in Nambia wilde Tiere aus nächster Nähe beobachtet. Das war unvergesslich. Und beim Freeclimbing (Klettern oder Hilfsmittel) und Tauchen mit Haien hatte ich diesen Adrenalinkick."
+              },
+              "personB": {
+                "speaker": "Sibel Ortaköy",
+                "opinion": "Das Besondere finde ich meistens im Sommerurlaub an schönen Orten. Das kann am Meer sein oder auf einem Berg oder in einem Tal. Dort verweile ich dann für viele Stunden und genieße die Aussicht."
+              }
+            },
+            {
+              "id": "diskussion-1-20",
+              "title": "Wohnen in der Stadt oder auf dem Land",
+              "personA": {
+                "speaker": "Marcel Köstner, 25 Jahre, Student",
+                "opinion": "Ich wohne am liebsten in der Stadt. Wichtig sind für mich gute und nahe Einkaufsmöglichkeiten, kurze Wege zur Arbeit, ein attraktives Freizeitangebot, Kultur und Leben auf der Straße. Ich wohne allein, in einer kleinen Wohnung mieten in der Stadt. Ich möchte aber bald mit meiner Freundin zusammenziehen. Ideal wäre für uns dann eine Wohnung in einer ruhigen Straße mit guten Verkehrsverbindungen zum Zentrum."
+              },
+              "personB": {
+                "speaker": "Ilona Schmidt,40 Jahre, Lehrerin",
+                "opinion": "Wir haben lange in der Stadt gewohnt und sind jetzt aufs Land gezogen. Irgendwann haben wir den Verkehrslärm und die Hektik nicht mehr ausgehalten, und als Tim, unser Sohn, geboren wurde, haben wir uns entschieden, in ein kleines Dorf zu ziehen. Wir wohnen jetzt in einem Einfamilienhaus, so etwas hätten wir in der Stadt nicht gefunden. Dort sind die Mieten einfach zu hoch. Wir haben einen schönen Garten, wir genießen die Ruhe, die Natur und die gute Luft. Der einzige Nachteil ist, dass wir fast alles mit dem Auto machen müssen."
+              }
+            },
+            {
+              "id": "diskussion-1-21",
+              "title": "Immer Online",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Ich bin lieber offline. Zu viel Zeit am Bildschirm ist nicht gut für die Gesundheit. Ich sehe das bei meinen Kindern – sie spielen ständig Computer. Ich finde, man sollte das Internet nur gezielt nutzen."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich bin immer online, den Überstag arbeite ich am Computer. abends sitze ich mit meinem Notebook, ich spiele Musikinstrumente und etwas arbeiten, danach ruhe ich mich aus. Ich habe das Gefühl, ich könnte online gehen, aber ich fühle mich nicht gut."
+              }
+            },
+            {
+              "id": "diskussion-1-22",
+              "title": "Am Wochenenden etwas unternehmen?",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Ich freue mich immer auf das Wochenende. Gemeinsam mit meinen Freund:innen planen wir, was wir machen wollen. Oft gehen wir ins Restaurant, ins Kino oder ins Konzert. Wenn wir überhaupt keine Ideen haben, treffen wir uns bei mir und machen uns einen gemütlichen Abend."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Am Wochenende möchte ich eigentlich lieber meine Ruhe haben. Nach einer anstrengenden Woche genieße ich es, allein zu sein und nichts fest einzuplanen. Statt auszugehen oder viele Leute zu treffen, bleibe ich lieber zu Hause, lese ein Buch, schaue Serien oder schlafe einfach aus. Für mich ist das Wochenende vor allem Zeit zum Entspannen, nicht um ständig etwas zu unternehmen."
+              }
+            },
+            {
+              "id": "diskussion-1-23",
+              "title": "Sparen Geld",
+              "personA": {
+                "speaker": "Enrico Sammer, 34 Jahre, Optiker.",
+                "opinion": "Ich bin eine sparsame Person und muss nachdenken, was ich kaufen soll. Überflüssige und teure Dinge kaufe ich auf keinen Fall. Mir ist es wichtig, Geld zu sparen."
+              },
+              "personB": {
+                "speaker": "Nicole Streidel, 25 Jahre, Floristin.",
+                "opinion": "Ich erhalte meinen Lohn, um shoppen zu gehen. Ich kaufe alles, was mir gefällt. Mir ist egal, ob ich diese Dinge wirklich brauche oder nicht. Man lebt ja nur einmal."
+              }
+            },
+            {
+              "id": "diskussion-1-24",
+              "title": "Soziale Medien",
+              "personA": {
+                "speaker": "Rainer Grimm",
+                "opinion": "Ich nutze soziale Medien Kaum, denn sie lenken mich nur von meinem echten Leben ab. Erschreckend finde ich, dass viele Menschen heute mehr Zeit auf Instagram verbingen als mit ihren Freunden oder ihrer Familie."
+              },
+              "personB": {
+                "speaker": "Valerie Babel",
+                "opinion": "Soziale Medien finde ich toll. Ich fotografiere sehr gerne und kann meine Fotos auf Instagram mit vielen Menschen teilen. Außerdem informiere ich mich auf Apps wie TikTok über verschiedene Themen. Besonders gerne schaue ich mir dort Rezeptvideos an und lasse mich inspirieren."
+              }
+            },
+            {
+              "id": "diskussion-1-25",
+              "title": "Haustier",
+              "personA": {
+                "speaker": "Udo Franke (39), Betriebswirt",
+                "opinion": "Haustiere sind wichtig für Kinder. Ein Hund zum Beispiel kann ein guter Freund sein. Vor allem für Kinder, die sich oft allein fühlen oder schüchtern sind, ist das eine große Hilfe. Und mit Tieren lernen Kinder, sich um jemanden zu kümmern."
+              },
+              "personB": {
+                "speaker": "Saskia Vorbeck (35), Grafikerin",
+                "opinion": "Unser Sohn, Timo, wünscht sich einen Hund. Doch Timo ist erst sieben Jahre alt. Wir denken,dass er zu jung ist. Ein Hund macht viel Arbeit. Man muss ihn regelmäßig füttern und mit ihm spazieren gehen. Kindern fehlt aber die nötige Disziplin."
+              }
+            },
+            {
+              "id": "diskussion-1-26",
+              "title": "Geschenkaustausch",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Ich finde Geschenke nicht so wichtig. Wenn zwei Menschen sich lange lieben, zählt für mich vor allem die gemeinsame Zeit. An Feiertagen oder Jahrestagen mache ich lieber eine Überraschung, zum Beispiel zusammen essen gehen oder etwas Schönes unternehmen. Das ist für mich persönlicher als ein Geschenk."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich sehe das anders. Ich finde Geschenke sehr wichtig, besonders an besonderen Tagen. Mit einem Geschenk kann man zeigen, dass man an den anderen gedacht hat. Ein Geschenk bleibt als Erinnerung und macht dem Partner oder der Partnerin Freude. Deshalb schenke ich lieber etwas als nur essen zu gehen."
+              }
+            },
+            {
+              "id": "diskussion-1-27",
+              "title": "Wohngemeinschaft",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Früher war ich mit Freunden in der WG, allerdings hatten wir viele Meinungsverschiedenheiten, über Arbeitshaus, Müll rausbringen, Lebensmittel. Jetzt bin ich allein und genieße meine Unabhängigkeit."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich lebe gerne in der WG, dort können wir viele Dinge miteinander teilen und um Hilfe bitten, wenn wir auf Schwierigkeiten stoßen. Wenn ich in der Zukunft heirate, habe ich vielleicht andere Gedanken."
+              }
+            },
+            {
+              "id": "diskussion-1-28",
+              "title": "Der ideale Urlaub",
+              "personA": {
+                "speaker": "Katrin Wolf, 35 Jahre, Chemikerin",
+                "opinion": "Ich möchte mich im Urlaub entspannen. Stundenlang Strand liegen und ein gutes Buch lesen, schön essen gehen oder einfach nur gar nichts tun. Meine Arbeit ist anstrengend genug.Da brauche ich im Urlaub viel Erholung."
+              },
+              "personB": {
+                "speaker": "Torsten Frankenberger, 40 Jahre, Busfahrer",
+                "opinion": "Ich will im Urlaub viel Sport machen. Ausflüge unternehmen und Neues entdecken. Für mich ist ein Abenteuerurlaub der ideale Urlaub. Langweilen kann ich mich ja, wenn ich wieder zu Hause bin."
+              }
+            },
+            {
+              "id": "diskussion-1-29",
+              "title": "Mehr Zeit",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Für mich ist es sehr wichtig, Zeit mit meiner Familie zu verbringen. Ich finde es schön, gemeinsam etwas zu unternehmen, zum Beispiel spazieren zu gehen, zu essen oder zu reden. Die Familie gibt mir Kraft und macht mich glücklich. Deshalb möchte ich meine freie Zeit lieber mit meiner Familie verbringen."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich sehe das anders. In meiner Freizeit möchte ich lieber Zeit für mich selbst haben. Nach Schule oder Arbeit brauche ich Ruhe und möchte mich entspannen. Ich treffe Freunde, mache Sport oder beschäftige mich mit meinen Hobbys. Für mich ist es wichtiger, Zeit für mich zu haben, als immer mit der Familie zusammen zu sein."
+              }
+            },
+            {
+              "id": "diskussion-1-30",
+              "title": "Essensgewohnheiten",
+              "personA": {
+                "speaker": "Markus Keller, 45 Jahre alt, Angestellter.",
+                "opinion": "Geregelte Essgewohnheiten sind mir sehr wichtig. Ich esse am liebsten zu festen Zeiten und möglichst gesund. Morgens frühstücke ich zu Hause, mittags esse ich in der Kantine und abends koche ich oft selbst. Ich finde es wichtig, sich beim Essen Zeit zu nehmen und bewusst zu essen."
+              },
+              "personB": {
+                "speaker": "Laura Schmitt, 29 Jahre alt, Studentin.",
+                "opinion": "Meine Essgewohnheiten sind ganz anders. Ich habe keinen festen Essensplan und esse, wenn ich Hunger habe. Oft esse ich unterwegs oder bestelle mir etwas Schnelles. Für mich ist das praktisch und spart Zeit. In meinem Alltag ist Flexibilität wichtiger als feste Essenszeiten."
+              }
+            },
+            {
+              "id": "diskussion-1-31",
+              "title": "Rauchen",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "In Deutschland zeigt die Zahl der Exzessivraucher, also der Menschen, die mehr als 20 Zigaretten am Tag rauchen, sehr deutlich, dass Rauchen nicht gut für die Gesundheit ist.\nIch finde, in unserer Zeit spielen Fitness, Ernährung und das richtige Gewicht eine wichtige Rolle.\nDarum denke ich, dass Rauchen unseren Körper sehr stark stört."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Das Rauchen ist vielleicht nicht gut, aber ich finde Rauchen nicht so schlimm. Es hilft mir, mich zu entspannen, besonders nach der Arbeit.\nViele meiner Freunde rauchen auch, und niemand ist wirklich krank deswegen."
+              }
+            },
+            {
+              "id": "diskussion-1-32",
+              "title": "Sicherheit Verkehrsmittel",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Die Autos werden immer sicherer. Das finde ich super, denn ich bin jeden Tag viele Stunden Mit meinem Auto unterwegs. Und ich bin so froh, dass mich mein Auto vor einigen gefährlichen Situationen bewahrt hat."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Eigentlich sollte dieses Thema erledigt sein. In Helsinki gab es im letzten jahr keine tödlichen Unfälle im Straßenverkehr. Wieso können wir nicht von den Firmen lernen ?"
+              }
+            },
+            {
+              "id": "diskussion-1-33",
+              "title": "Familie mit Esstisch",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Wenn die Eltern arbeiten und die Kinder zur Schule gehen, bleiben nur die Abende. Das ist jedoch auch nicht immer sehr einfach, weil man manchmal etwas länger im Büro bleibt oder auf dem Rückweg noch Einkäufe macht. Am Wochenende klappt es meistens am besten."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Unsere Familie beseht aus vier Personen und ich weiß nicht, wann wir das letzte mal gemeinsam gegessen haben. Bei uns hat jeder seinen eigenen Rhythmus und macht sich schnell etwas zum Essen. Und an den Wochenenden geht jeder seinen eigenen Interessen Nach. So isst das in der modernen Zeit."
+              }
+            },
+            {
+              "id": "diskussion-1-34",
+              "title": "Live Musik",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "In unserer Stadt gibt es einen Club. Musiker aus der ganzen Welt spielen dort. Von Rock über Pop bis Rap ist alles dabei. Da ich Live-Musik liebe. bin ich regelmäßig in diesem Club"
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Konzertbesuche können viel Spaß machen, aber die Tickets dafür finde ich viel zu teuer. Ich gebe mein Geld lieber für andere Dinge aus, die ich wirklich brauche. Außerdem sind mir auf solchen Veranstaltungen zu viele Menschen, da fühle ich mich nicht sicher. Ich kann auch zuhause Musik hören und dabei Spaß haben."
+              }
+            },
+            {
+              "id": "diskussion-1-35",
+              "title": "Zukunftspläne",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Ich kann mir gut vorstellen, drei Kinder zu haben. Ich würde auch gerne eine bestimmte Zeit bei ihnen zu Hause bleiben und mich um den Haushalt kümmern. Ein gutes Familienleben ist sehr wichtig für mich. Außerdem interessiere ich mich für Umweltschutz und möchte in diesem Bereich etwas machen. Was genau, weiß ich noch nicht. Aber ich will auch einen Job haben, bei dem ich genug verdiene."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Für mich sind Zukunftspläne auch sehr wichtig, aber ich denke ganz anders. Ich möchte keine große Familie haben, sondern mich zuerst auf mich selbst konzentrieren. Mein Traum ist es, mir ein Motorrad zu kaufen und damit mit meinen Freund:innen auf Tour zu gehen. Ich möchte reisen, neue Orte entdecken und meine Freiheit genießen. Hausarbeit oder lange Zeit zu Hause zu bleiben, kann ich mir nicht gut vorstellen. Später möchte ich einen Beruf haben, der mir Spaß macht und mir ein aktives Leben ermöglicht."
+              }
+            },
+            {
+              "id": "diskussion-1-36",
+              "title": "Kinofilm",
+              "personA": {
+                "speaker": "Position A",
+                "opinion": "Wir gehen sehr oft ins Kino, denn im Kino kann man einen Film richtig genießen. Eine riesige Leinwand und eine tolle Soundqualität – das hat man nur im Kino. Und dort sieht man zuerst die neuen Filme."
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Ich habe einen recht großen Fernseher und kann auf Amazon oder Netflix fast jeden Film schauen. Und das Beste daran ist: Ich kann mir den Film anschauen, wann immer ich Lust darauf habe. Außerdem ist es zu Hause gemütlicher und günstiger als im Kino."
+              }
+            },
+            {
+              "id": "diskussion-1-37",
+              "title": "Lebensmittel im Internet",
+              "personA": {
+                "speaker": "Rina Kovalcik, 25 Jahre alt, Webdesignerin.",
+                "opinion": "Ich kaufe oft Lebensmittel im Internet. Das spart viel Zeit, denn ich muss nicht lange in den Supermarkt – hasse lange warten. Außerdem kann ich auch um Mitternacht einkaufen, da die realen Geschäfte schon geschlossen sind."
+              },
+              "personB": {
+                "speaker": "Tobias Krämer, 27 Jahre alt.",
+                "opinion": "Lebensmittel kaufe ich am liebsten auf dem Markt. Da ist alles frisch und ich kann mich mit dem Verkäufer unterhalten. Ich möchte die Waren in die Hand nehmen, bevor ich sie kaufe. Das geht im Internet natürlich nicht."
+              }
+            },
+            {
+              "id": "diskussion-1-38",
+              "title": "Alter und Lebenserfahrung",
+              "personA": {
+                "speaker": "Lena, 20 Jahre alt, Studentin.",
+                "opinion": "Ich finde, dass das Alter heutzutage keine große Rolle mehr spielt. Junge Menschen können genauso verantwortungsvoll und reif sein wie ältere. Wichtig ist, wie man denkt und handelt – nicht, wie alt man ist."
+              },
+              "personB": {
+                "speaker": "Herr Krause, 58 Jahre alt, Buchhalter.",
+                "opinion": "Ich bin anderer Meinung. Lebenserfahrung kommt mit dem Alter. Junge Leute haben oft gute Ideen, aber ihnen fehlt die Erfahrung. Ältere Menschen sollten mehr Respekt bekommen, weil sie im Leben schon viel erlebt haben."
+              }
+            },
+            {
+              "id": "diskussion-1-39",
+              "title": "Verwandtschaft",
+              "personA": {
+                "speaker": "Tobias Heinze, 26 Jahre, Büroangestellter",
+                "opinion": "Ich liebe Familienfeste! Zum Beispiel mag ich es sehr, wenn sich unsere ganzen Verwandten einmal im Jahr treffen. Dann essen, lachen und feiern wir gemeinsam. Manchmal wird sogar getanzt. Einige Verwandte von mir wohnen ja sehr weit weg. Es ist schön, sich dann wiederzusehen und Erinnerungen auszutauschen."
+              },
+              "personB": {
+                "speaker": "Marie Ode, 28 Jahre alt, Sekretärin",
+                "opinion": "Ich habe nicht viele Beziehungen, die meiste Zeit verbringe ich mit meinen Freunden. Besonders enge Freunde, weil sie mir in schwierigen Zeiten helfen können\nNhằm mục đích loại bỏ các đề cũ ít ra để các bạn không phải ôn nhiều. Rất mong các bạn sau khi lấy tài liệu ôn đi thi xong có thể bổ sung thông tin vào link này để dần dần loại bỏ 1 số đề không còn được ra nữa (các bộ đề mới cập nhật sẽ có tỉ lệ ra cao hơn:\nhttps://forms.gle/NhcRALRG7N8Ng1Lx7\nCác đề cũ từng ra, có thể ôn thêm cho phong phú chủ đề và từ vựng"
+              }
+            },
+            {
+              "id": "diskussion-2-1",
+              "title": "Arbeitszeiten in der Gastronomie",
+              "personA": {
+                "speaker": "Herr Klausen, 55 Jahre alt, Soldat.",
+                "opinion": "Ich bin mein eigener Chef, deshalb habe ich nicht geregelte Arbeitszeiten. Zum Glück läuft mein Bekleidungsgeschäft gut. Obwohl ich sehr wenig Urlaub machen kann und immer abends und am Wochenende arbeiten muss, will ich nicht klagen."
+              },
+              "personB": {
+                "speaker": "Frau Haffner, 43 Jahre alt, Tierärztin.",
+                "opinion": "Zurzeit arbeite ich Teilzeit, d.h. nur vormittags. Neben der Hausarbeit muss ich mich um unsere kleinen Kinder kümmern. In ein paar Jahren, wenn sie erwachsen sind, möchte ich wieder ganztags arbeiten. Darüber habe ich auch schon mit meinem Mann gesprochen. Er wird mich immer unterstützen."
+              }
+            },
+            {
+              "id": "diskussion-2-2",
+              "title": "Stress",
+              "personA": {
+                "speaker": "Susi, 27 Jahre alt, Krankenpflegerin",
+                "opinion": "Ich bin sehr beschäftigt. Die Arbeit wächst mir langsam über den Kopf. Aus diesem Grund bin ich immer sehr erschöpft. Für meine eigenen Interessen und zum Entspannen will ich mehr Zeit verbringen. Auch mit meinem Mann und den Kindern möchte ich mehr unternehmen."
+              },
+              "personB": {
+                "speaker": "Dieter, 49 Jahre alt, Journalist.",
+                "opinion": "Eine sehr lebhafte und neugierige Person . Für mich ist die Abwechslung im Leben wichtig. Ich habe keine Ahnung, was Stress bedeutet. Ich bin immer unterwegs und das macht mir Spaß. Ich fühle mich wohl, wenn ich viel zu tun habe."
+              }
+            },
+            {
+              "id": "diskussion-2-3",
+              "title": "Schöner Wohnen",
+              "personA": {
+                "speaker": "Bernd Rischer,m 46 Jahre, Architekt",
+                "opinion": "Ich liebe schöne Möbel und Bilder! In meiner Wohnung habe ich sogar ein paar Antiquitäten und moderne Designermöbel. Außerdem ist meine Wohnung immer aufgeräumt und alles hat seinen festen Platz. So fühle ich mich einfach wohl!"
+              },
+              "personB": {
+                "speaker": "Julia Lochner, 23 Jahre, Friseurin",
+                "opinion": "Für mich hat es keine Bedeutung, wie meine Einrichtung aussieht. Wichtig für mich ist. ob die Möbel bequem und praktisch sind. Die Qualität spielt auch eine wichtige Rolle. Denn wenn man Geld ausgibt, will man ja auch etwas davon haben."
+              }
+            },
+            {
+              "id": "diskussion-2-4",
+              "title": "Lebenslanges Lernen",
+              "personA": {
+                "speaker": "Karsten Dressel, 26 Jahre alt, Student",
+                "opinion": "Nach meinem Abitur habe ich mit dem Studium angefangen. Auf keinen Fall möchte ich nicht weiter lernen. Irgendwann reicht es. Nun möchte ich Zeit verbringen, Geld zu verdienen und die Freizeit zu genießen. Ich hätte gern auch Zeit für mich und meine Familie."
+              },
+              "personB": {
+                "speaker": "Lena Weise, 32 Jahre alt, Finanzbeamtin.",
+                "opinion": "Aus meiner Sicht sollte man stets versuchen, etwas Neues zu erlernen. Je mehr die Welt sich ändert und entwickelt, desto mehr sollten wir lernen. Man kann es sich einfach nicht leisten, „stehen zu bleiben“. Deshalb nehme ich oft an Kursen teil, um mein Wissen aufzufrischen."
+              }
+            },
+            {
+              "id": "diskussion-2-5",
+              "title": "Sport treiben",
+              "personA": {
+                "speaker": "Manuel Gertz, 41 Jahre, Förster.",
+                "opinion": "Ich treibe täglich Sport. Mir ist egal, ob das Wetter schön oder schlecht ist. Ich jogge eine Stunde um den See herum. Am liebsten, wenn die Sonne untergeht. Dann fühle ich mich wohl."
+              },
+              "personB": {
+                "speaker": "Patrizia Schröder, 28 Jahre, Metzgerin.",
+                "opinion": "Sport ist stressig. Wenn meine Beschäftigung beendet ist, kleide ich mich bequem an und entspanne mich im Sessel. Dazu höre ich Jazz und lese Comics."
+              }
+            },
+            {
+              "id": "diskussion-2-6",
+              "title": "Beste Freunde",
+              "personA": {
+                "speaker": "Ella Wegmann, 23 Jahre, Studentin.",
+                "opinion": "Schon seit meiner Kindheit lerne ich meine beste Freundin kennen. Sie wohnt zwar weit weg von mir, aber wir unterhalten uns ganz oft. Wir kennen uns sehr gut und erzählen uns alles. Konflikte gibt es zwischen uns überhaupt nicht."
+              },
+              "personB": {
+                "speaker": "Max Berger, 25 Jahre, Koch.",
+                "opinion": "Ich habe keinen besten Freund. Aber durch meinen Sportverein kenne ich viele Bekannte. Wir haben das gemeinsame Hobby, Sport zu machen. Deshalb treffen wir uns am Wochenende und gehen zusammen zum Sport. Danach gehen wir ab und zu in die Kneipe."
+              }
+            },
+            {
+              "id": "diskussion-2-7",
+              "title": "Tanzen",
+              "personA": {
+                "speaker": "Marie Müller, 20 Jahre alt, Studentin.",
+                "opinion": "Ich bin ein musikalischer Mensch und habe ein großes Interesse an Tanzen. Ich fühle mich sehr entspannend beim Tanzen. Ich habe auch schon an einigen Tanzkursen teilgenommen. An Wochenenden gehe ich regelmäßig mit Freundinnen in die Disko und genieße diese Zeit bis zur Erschöpfung. Ich habe viel Spaß dabei."
+              },
+              "personB": {
+                "speaker": "Martin Berger. 40 Jahre alt, Verkäufer.",
+                "opinion": "Ich interessiere mich für Musikhören, aber Tanzen liegt mir nicht. Meine Frau wollte mich oft überreden, an einem Tanzkurs teilzunehmen. Aber das hat sie bis jetzt noch nicht geschafft. Ich will kein großer Tänzer werden."
+              }
+            },
+            {
+              "id": "diskussion-2-8",
+              "title": "Gefahren im Internet",
+              "personA": {
+                "speaker": "Matthias Schweiger, 31 Jahre, Bauingenieur.",
+                "opinion": "Ich kaufe regelmäßig im Internet ein und erledige auch meine ganzen Bankgeschäfte online. Ich habe dabei keine Sorge, dass etwas passiert. Falschgeld, Betrug und Diebstahl gab es früher auch schon."
+              },
+              "personB": {
+                "speaker": "Janina Groß, 21 Jahre, Verkäuferin.",
+                "opinion": "Ich kaufe ganz selten im Internet. Ich gehe lieber in richtige Geschäfte und lasse mich dort auch beraten. Außerdem gehe ich immer persönlich zu meiner Bank. So ist es fast unmöglich, dass andere Personen an meine Daten gelangen."
+              }
+            },
+            {
+              "id": "diskussion-2-9",
+              "title": "Hauskauf oder Mieten",
+              "personA": {
+                "speaker": "Andrea Wegmann. 35 Jahre, Taxifahrerin.",
+                "opinion": "Vor 6 Jahren hatten mein Mann und ich unser eigenes Haus. Natürlich mussten wir sehr viel Geld dafür ausgeben. Aber die monatliche Miete ist auch zu hoch. Darüber hinaus sind ein Garten und viel Platz zum Spielen für unsere Kinder sehr wichtig."
+              },
+              "personB": {
+                "speaker": "Lina Müller, 23 Jahre, Reiseführerin.",
+                "opinion": "Ein Haus besitzen? – Nein, das ist mir unwichtig. Denn ich lebe nur allein und brauche ein kleines Zimmer. Ich bin mir auch nicht sicher, ob ich in den nächsten Jahren aus beruflichen Gründen ins Ausland ziehen muss."
+              }
+            },
+            {
+              "id": "diskussion-2-10",
+              "title": "Essen",
+              "personA": {
+                "speaker": "Sabine Helbig, 26 Jahre, Rezeptionistin.",
+                "opinion": "Wegen der beschäftigen Arbeit kann ich nicht lange Mittagspause machen. Deshalb entscheide ich mich immer für einen schnellen Imbiss, der nebenan in einem kleinen Laden ist. Je nach Jahreszeit gibt es entweder einen frischen Salat oder nur Obst. Am Abend koche ich ein warmes Essen für meine Familie oder manchmal meinen Mann."
+              },
+              "personB": {
+                "speaker": "Jens Schneider, 24 Jahre, Praktikant.",
+                "opinion": "Wir sind Auszubildende und mittags beschließen wir immer das Mittagessen in der Kantine. Es gibt dort eine große Auswahl an leckeren Gerichten. Ich interessiere mich dafür, dass ich mit freundlichen Kollegen essen kann. Nach einem anstrengenden Arbeitstag muss ich auch nicht selbst kochen, weil ich nur allein wohne."
+              }
+            },
+            {
+              "id": "diskussion-2-11",
+              "title": "Heiraten/ Hochzeit",
+              "personA": {
+                "speaker": "Marie Ode, 28 Jahre alt, Sekretärin.",
+                "opinion": "Eine große Hochzeitsfeier wünsche ich mir schon immer, weil meine eigene Hochzeit der schönste Tag im Leben werden soll. Mein Mann und ich haben geplant, in 3 Tagen eine unvergessliche Party mit mehr als 70 Gästen veranstaltet."
+              },
+              "personB": {
+                "speaker": "Martin, 43 Jahre, Informatiker.",
+                "opinion": "Seit 8 Jahren wohne ich mit meiner Partnerin. Die Hochzeitsfeier spielt für uns keine wichtige Rolle. Wir gühlen uns noch immer wohl. Auch in Zukunft planen wir keine Hochzeit."
+              }
+            },
+            {
+              "id": "diskussion-2-12",
+              "title": "Urlaub mit Freunden",
+              "personA": {
+                "speaker": "Jens Mühle, 30 Jahre alt, Ingenieur.",
+                "opinion": "„Es wäre mir zu langweilig, den Urlaub allein zu verbringen. Deshalb mache ich immer mit meinen Freunden Urlaub. In dem Urlaub unternehmen wir sehr viel und organisieren gemeinsame Ausflüge“"
+              },
+              "personB": {
+                "speaker": "Position B",
+                "opinion": "Charlotte Reppenhagen. 28 Jahre alt, Bürokauffrau. Mein Mann und ich fahren nie zusammen mit Bekannten in den Urlaub. Wir mögen Ruhe und Erholung, deshalb möchten wir diese Zeit lieber zu weit genießen. Das wäre in einer Gruppe zu schwierig."
+              }
+            },
+            {
+              "id": "diskussion-2-13",
+              "title": "Fernsehen",
+              "personA": {
+                "speaker": "Claudia Volke, 24 Jahre, Praktikantin.",
+                "opinion": "Ich mag Fernsehen. Am liebsten schaue ich mir Nachrichtensendungen und Dokumentationen an. Weiter sehe ich gern Filme, nur gibt es selten wirklich gute. Was mich nicht interessiert, sind die vielen Shows, Gewinnspiele und Ratesendungen und die Werbung. Aber das muss man sich ja nicht anschauen. Ich finde, das Fernsehen bietet heute eine große Programmauswahl. Es gibt so viele Sender und Programme, dass jeder etwas Interessantes finden kann"
+              },
+              "personB": {
+                "speaker": "Ramona Weber, 26 Jahre, Rezeptionistin.",
+                "opinion": "Früher habe ich sehr viel ferngesehen . Irgendwann hatte ich sogar ein Satellitenfernsehen mit über 300 Sendern. Ich fand das interessant, aber nach einiger Zeit habe ich den Fernseher automatisch eingeschaltet, sobald ich frei hatte, egal ob mich irgendein Programm besonders interessiert hat, nur aus Langeweile. Ich habe kaum mehr gelesen, bin nicht mehr ins Kino oder Theater gegangen, wurde immer passiver. Das Fernsehen hat mich zudem immer nervöser gemacht. Letzten Monat habe ich meinen Fernseher verkauft. Nachrichten höre ich im Radio oder ich lese die Tageszeitung. Und Filme schaue ich mir im Kino an. Ohne Fernseher geht es mir besser."
+              }
+            },
+            {
+              "id": "diskussion-2-14",
+              "title": "Bücherhören",
+              "personA": {
+                "speaker": "Sabine Helbig, 26 Jahre, Rezeptionistin.",
+                "opinion": "Ich lese gern. Das Lesen von Büchern hilft mir, meinen Geist zu entspannen und Stress abzubauen. Ich verbringe viel Zeit damit, Bücher zu lesen."
+              },
+              "personB": {
+                "speaker": "Jens Schneider, 24 Jahre, Praktikant.",
+                "opinion": "Bücher hören ist besser. Ich kann jederzeit und überall Bücher hören, zum Beispiel beim Kochen, beim Sport oder bei anderen Aktivitäten. Für mich ist das Lesen relativ zeitaufwändig."
+              }
+            },
+            {
+              "id": "diskussion-2-15",
+              "title": "Kleidung und Mode",
+              "personA": {
+                "speaker": "Dino Backer, 25 Jahre, Kellner.",
+                "opinion": "Ich bin ein sehr realistischer Mensch und will nur was anziehen, was ich mir leisten kann und mich bequem macht. Natürlich sehe ich auch gern schöne Leute in modischer Kleidung, aber für diese teurere Sachen möchte ich nicht zahlen. Ich möchte mein Geld für etwas Nützliches für mich ausgeben"
+              },
+              "personB": {
+                "speaker": "Jens Schneider, 24 Jahre, Praktikantin.",
+                "opinion": "Ich bin ein Fan von Mode. Zuhause habe ich eine Menge Modezeitschriften. Die Kleidungsstücke, die ich vor einem Monat gekauft habe, sind schon alt für mich. Jeden Monat gebe ich einen Teil von meinem Gehalt für neue Kleidung aus. Aussehen ist sehr wichtig, besonders in der heutigen Zeit. Wenn man nicht gut aussieht, hat man auch weniger Chancen sowohl im Leben als auch im Beruf."
+              }
+            },
+            {
+              "id": "diskussion-2-16",
+              "title": "Sammlungen und sammeln",
+              "personA": {
+                "speaker": "Carsten Martens 23 Jahre, Angestellter:",
+                "opinion": "In meiner Kindheit habe ich kleine Spielzeugautos gesammelt. . Aber jetzt sammle ich nichts mehr. Ich finde es anstrengend, Dinge zu sammeln. Da muss man immer nach Dingen suchen, die man noch nicht in seiner Sammlung hat und dafür auch noch ziemlich viel Geld ausgeben."
+              },
+              "personB": {
+                "speaker": "Silke Bauer, 21 Jahre Studentin",
+                "opinion": "Mein Hobby ist immer noch sammeln. Vor allem sammle ich Spielfiguren aus vielen berühmten Filmen. Manche Leute sagen, dass es eine Zeitverschwendung ist. Aber das finde ich nicht. Immer wenn ich eine schöne Figur gefunden habe, fühle ich mich sehr wohl, vergesse schon den Alltagsstress."
+              }
+            },
+            {
+              "id": "diskussion-2-17",
+              "title": "Ausziehen oder allein wohnen",
+              "personA": {
+                "speaker": "Carsten Daubner, 18 Jahre Auszubildender",
+                "opinion": "Pünktlich zu meinem Geburtstag bin ich ausgezogen. Meine Wohnung hat nur ein Zimmer, eine kleine Küche und ein Bad. Zum Glück ist sie nicht so teuer. Meine Eltern wollten eigentlich nicht, dass ich ausziehe. Sie sagten, ich solle erst meine Ausbildung beenden, aber ich habe sie überzeugt, dass ich meine Freiheit brauche. Ich möchte endlich auf eigenen Beinen stehen. Jetzt geben sie mir sogar ein bisschen Geld für die Miete."
+              },
+              "personB": {
+                "speaker": "Jenny Groh, 21 Jahre, Studentin",
+                "opinion": "Meine Eltern hätten nichts dagegen, dass ich ausziehe. Sie würden mir sogar das Geld für die Miete geben. Aber was soll ich alleine in einer kleinen Wohnung? Im Hause meiner Eltern habe ich doch viel mehr Platz. Hier habe ich nicht nur mein eigenes Zimmer, sondern auch den Garten und die anderen Räume. Das ist doch viel bequemer. Klar, bis zur Uni bin ich lange unterwegs. Aber meine Mutter leiht mir Ihr Auto."
+              }
+            },
+            {
+              "id": "diskussion-2-18",
+              "title": "Geburtstag feiern",
+              "personA": {
+                "speaker": "Niklas Lambert, 23 Jahre, Student",
+                "opinion": "Ich feiere meinen Geburtstag nicht besonders. Für mich ist der Geburtstag ein Tag wie jeder andere auch. Feiern, Partys, Geschenke, das finde ich vollkommen überflüssig. Es gibt wichtigere Dinge im Leben."
+              },
+              "personB": {
+                "speaker": "Lena Reimer, 26 Jahre, Bürokauffrau",
+                "opinion": "Ich freue mich jedes Jahr wie ein kleines Kind auf meinen Geburtstag. An diesem Tag nehme ich mir immer frei und mache abends eine schöne Party. Meine Freunde und Familie kennen das schon. Ich finde, eine Geburtstagsfeier gehört einfach dazu."
+              }
+            },
+            {
+              "id": "diskussion-2-19",
+              "title": "Essen kochen",
+              "personA": {
+                "speaker": "Martina Jahn, 34 Jahre, Arzthelferin",
+                "opinion": "Kochen ist meine Leidenschaft! Ich liebe es, neue Rezepte auszuprobieren und besitze eine Sammlung von Rezeptbüchern. Ich stehe stundenlang am Herd und zauberte leckere Gerichte für meine Familie - und natürlich auch für mich!"
+              },
+              "personB": {
+                "speaker": "Julian Berger, 35 Jahre, Informatiker",
+                "opinion": "Ich koche selten. Ich lebe allein, da lohnt es sich nicht, sich die Mühe zu machen. Außerdem macht es mir nicht so viel Spa8, in der Küche zu stehen. Wenn ich mal richtig gut essen möchte, gehe ich in mein Lieblingsrestaurant."
+              }
+            },
+            {
+              "id": "diskussion-2-20",
+              "title": "Gastfreundschaft",
+              "personA": {
+                "speaker": "Karins Ferbeck, 34 Jahre, Lehrerin",
+                "opinion": "Ich bin nicht gern allein, daher freue ich mich über jeden Gast, der mich besucht.Ich habe extra ein Gästezimmer eingerichtet, damit Freunde und Verwandte bei mir übernachten können."
+              },
+              "personB": {
+                "speaker": "Niklas Weber, 34 Jahre, Informatiker",
+                "opinion": "Ich lade eigentlich selten Gäste zu mir nach Hause ein. Kochen, sich um die Gäste kümmern und so weiter - das ist mir zu anstrengend! Und Überraschungsbesuche hasse ich ganz besonders!"
+              }
+            },
+            {
+              "id": "diskussion-2-21",
+              "title": "Auto Kaufen",
+              "personA": {
+                "speaker": "Sabine Pfister, 38 Jahre, Industriekauffrau",
+                "opinion": "Ich möchte mir bald ein neues Auto kaufen: Ich habe schon lange dafür Geld gespart und möchte mir nun diesen Traum erfüllen. Für mich ist ein Auto mehr als nur ein Fahrzeug. Es ist auch ein Stück Lebensstil."
+              },
+              "personB": {
+                "speaker": "Wegmann Karl, 40 Jahre, Verkäufer",
+                "opinion": "Derzeit ist meine Familie jeden Tag mit dem Motorrad unterwegs. Autos sind für uns eine teure Sache. Wir müssen jeden Monat viel Geld für Reparaturen ausgeben. Wir werden das überdenken, wenn wir in der Zukunft ein höheres Einkommen haben."
+              }
+            },
+            {
+              "id": "diskussion-2-22",
+              "title": "Nachbarn",
+              "personA": {
+                "speaker": "Enna Streif, 24 Jahre, Büroangestellte",
+                "opinion": "Bei uns im Haus wohnen so viele Leute, dass ich gar nicht alle Nachbarn kennen kann. Außerdem bin ich vor wenigen Wochen neu eingezogen und kenne hier niemanden. Ich wohne allein. Leider gibt es oft Streit zwischen Nachbarn, daher bin ich froh, wenn ich meine Ruhe habe."
+              },
+              "personB": {
+                "speaker": "Christ Gebhardt, 21 Jahre, Büroangestellter",
+                "opinion": "Ich verstehe mich sehr gut mit meinen Nachbarn. Sie sind ungefähr so alt wie ich. Manchmal machen wir kleine Partys und besuchen uns gegenseitig. Ein Nachbar hat mir auch schon oft geholfen, denn er ist Handwerker und kann viele Reparaturen machen."
+              }
+            },
+            {
+              "id": "diskussion-2-23",
+              "title": "Kinder im Freizeitstress - Ehrgeizig Eltern",
+              "personA": {
+                "speaker": "Marie Baumann, 37 Jahre, Hausfrau",
+                "opinion": "Wir haben unseren Sohn gefragt, ob er im Verein Sport machen möchte. Er hatte da keine Lust, wollte aber unbedingt “einen Malkurs” machen. Nun besucht er seit drei Jahren immer wieder Zeichen- und Malkurse und das macht ihm sehr viel Spaß. Für Sport interessiert er sich nicht."
+              },
+              "personB": {
+                "speaker": "Volker Diestel, 35 Jahre, Autohändler.",
+                "opinion": "Wir wollten, dass unsere Tochter zwei Musikinstrumente lernt und auch Sport im Verein macht. Jetzt lernt sie Schlagzeug und macht Leichtathletik. Vielleicht fängt sie bald mit der Gitarre an. Das würde uns sehr gefallen."
+              }
+            },
+            {
+              "id": "diskussion-2-24",
+              "title": "Großeltern",
+              "personA": {
+                "speaker": "Melissa Junghans, 23 Jahre, Studentin",
+                "opinion": "Ich habe meine Großeltern leider nie kennengelernt. Gerne habe ich mit ihnen über ihre Kindheit und unsere Familiengeschichte gesprochen. Ich hatte ihnen auch viele Fragen gestellt"
+              },
+              "personB": {
+                "speaker": "Michael Schmidt, 32 Jahre, Manager",
+                "opinion": "Ich sehe meine Großeltern nur selten. Sie sind schon älter und erzählen immer die gleichen Geschichten von früheren Zeiten. Das finde ich langweilig. Aber so ist das eben. Manche Menschen in diesem Alter leben einfach in einer anderen Welt."
+              }
+            },
+            {
+              "id": "diskussion-2-25",
+              "title": "Allein wohnen",
+              "personA": {
+                "speaker": "Era Dorn, 35 Jahre, Kosmetikerin",
+                "opinion": "Ich lebe gern allein. So kann ich tun und lassen, was ich will. Niemand mischt sich in meine Angelegenheiten ein. Wenn ich mich mal einsam fühle, treffe ich mich mit Freunden oder besuche meine Eltern."
+              },
+              "personB": {
+                "speaker": "Bernd Mannsfeldt, 42 Jahre, Malermeister",
+                "opinion": "Ich kann mir nicht vorstellen, allein zu leben. Das wäre mir zu langweilig! Ich lebe mit meiner Frau, unseren drei Kindern, meinem Schwiegervater zusammen. Da ist immer was los, aber das ist auch gut so."
+              }
+            },
+            {
+              "id": "diskussion-2-26",
+              "title": "Handynutzung in öffentlichen Verkehrsmitteln",
+              "personA": {
+                "speaker": "Anna Beckmann, 20 Jahre, Studentin",
+                "opinion": "Beim täglichen Pendeln mit Bus und Bahn ist mein Smartphone ein unverzichtbarer Begleiter. Ich nutze es, um Nachrichten zu schreiben, Musik zu hören und mit Lern-Apps die Fahrzeit sinnvoll zu nutzen. So wird jede Fahrt nicht nur angenehmer, sondern auch produktiver. Dank moderner Technik kann ich unterwegs flexibel und vernetzt leben."
+              },
+              "personB": {
+                "speaker": "Oliver Schneider, 75 Jahre, Rentner",
+                "opinion": "Früher schätzte ich die Fahrten mit Bus und Bahn sehr - die ruhige Atmosphäre und die Gespräche mit anderen Fahrgästen waren etwas Besonderes. Heute ist das anders: Überall höre ich laute Musik oder Telefonate, und die meisten Menschen starren nur auf ihre Handys. Selbst in Gruppen spricht kaum noch jemand miteinander. \"Ich finde das wirklich schade.\""
+              }
+            }
+          ]
+        },
+        "teil-3": {
+          "title": "Gemeinsam etwas planen",
+          "shortTitle": "Planen",
+          "durationMinutes": 6,
+          "sourceUrl": "https://docs.google.com/document/d/1IDAIboKyJ5w2M7dEWdl64BrOGOdJLp8m0LZUT4xmzx0/edit?usp=sharing",
+          "instruction": "Machen Sie Vorschläge, reagieren Sie auf Ideen und einigen Sie sich am Ende auf einen konkreten Plan.",
+          "topics": [
+            {
+              "id": "planung-1",
+              "title": "Hilfe bei der Hausarbeit",
+              "prompt": "Der Mann Ihrer gemeinsamen Freundin ist im Krankenhaus. Ihre Freundin hat keine Zeit für die Hausarbeit. Sie wollen ihr helfen. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss. Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wann?",
+                "Wer?",
+                "Einkaufen",
+                "Kochen",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-2",
+              "title": "Kinderbetreuung während der Hochzeit",
+              "prompt": "Ein Bekannter von Ihnen nimmt an einer Hochzeit teil und Sie erhalten die Bitten, bei der Betreuung seiner kleinen Kinder zu helfen. Überlegen Sie gemeinsam mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was Sie in dieser Situation tun können. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wie viele Kinder?",
+                "Alter?",
+                "Wo?",
+                "Spielen?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-3",
+              "title": "Gemeinsam Fernsehabend",
+              "prompt": "Sie möchten wieder einmal einen Fernsehabend für gemeinsame Freunde organisieren. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss. Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Bei wem?",
+                "Wann?",
+                "Film oder Talent-Show?",
+                "Essen und Getränke",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-4",
+              "title": "Pflanzen auf dem Balkon",
+              "prompt": "Ihre Nachbarin möchte nach dem Winter neue Pflanzen auf dem Balkon anpflanzen. Sie sollen ihr dabei helfen. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist.\nTauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wann?",
+                "Wer?",
+                "Blumen kaufen?",
+                "Transport?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-5",
+              "title": "Willkommensfeier",
+              "prompt": "Ein Freund, der aus dem Ausland kam. Sie möchte ein Programm, um ihn zu feiern. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist.\nTauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wie?",
+                "Wo?",
+                "Alte Freunde einladen?",
+                "Programm?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-6",
+              "title": "Treffen mit den ehemaligen Mitschülerinnen",
+              "prompt": "Sie haben zusammen mit Ihrer Gesprächspartnerin/ihrem Gesprächspartner Abitur gemacht. Nun möchten Sie ein Treffen mit den ehemaligen Mitschülerinnen veranstalten. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist.\nTauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Musik?",
+                "Kosten?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-7",
+              "title": "Geburtstagsparty",
+              "prompt": "Sie und Gesprächspartnerin/Ihr Gesprächspartner sind zu einer Geburtstagsfeier in einer anderen Stadt eingeladen. Sie möchten gemeinsam mit Ihrer Familie dorthin. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt. Sie haben sich schon diese Liste gemacht.",
+              "notes": [
+                "Wie viele Personen ?",
+                "Wie weit?",
+                "Mit dem Auto oder Zug?",
+                "Geschenk?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-8",
+              "title": "Nachbarin großes Familientreffen helfen",
+              "prompt": "Sie und Ire Gesprächspartnerin/Ihr Gesprächspartner haben eine. gemeinsame Nachbarin, die ein großes Familientreffen plant. Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner wollen ihr helfen. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist.\nTauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wann?",
+                "Wie viele Personen?",
+                "Tische und stuhle?",
+                "Übernachtung?"
+              ]
+            },
+            {
+              "id": "planung-9",
+              "title": "Ihre Heimatstadt erzählen",
+              "prompt": "In Ihrem Sprachkurs sollten Sie etwas über Ihre Heimatstadt erzählen.\nIhre Gesprächspartnerin/Ihr Gesprächspartner kommt aus derselben Stadt wie Sie.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wie lange?",
+                "Größe und Bedeutung?",
+                "Alte Fotos?",
+                "Video aus Youtube?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-10",
+              "title": "Ausflug mit dem Fahrrad",
+              "prompt": "Sie und Ihre Gesprächspartnerin/ Ihr Gesprächspartner möchten gemeinsam mit ihren Freunden eine mehrtägige Fahrradtour machen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wie?",
+                "Wann?",
+                "Wie viele Personen?",
+                "Übernachtung?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-11",
+              "title": "Menschen helfen, die nicht glück im Leben/ die schwere Zeiten im Leben haben",
+              "prompt": "Sie wollen zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner Menschen helfen, die nicht sehr viel Glück im Leben hatten. Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wie ?",
+                "Welche Organisation ?",
+                "Mit freunden ?"
+              ]
+            },
+            {
+              "id": "planung-12",
+              "title": "ein Haus im Wald mieten und dort das Wochenende verbringen",
+              "prompt": "Sie wollen zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner und gemeinsamen Freund:innen ein kleines Haus im Wald mieten und dort das Wochenende verbringen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wo?",
+                "Wann?",
+                "Kosten?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-13",
+              "title": "Kochkurs (neu) - Die Deutsche Küche und Spezialitäten lernen",
+              "prompt": "Sie wollen gemeinsam mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner mehr über die deutsche Küche und ihre Spezialitäten lernen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Kochkurs?",
+                "Wo?",
+                "Video von Youtube?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-14",
+              "title": "Kinder Lesenacht",
+              "prompt": "Ihre Kinder sind befreundet und wollen eine Lesenacht organisieren. Sie wollen sie unterstützen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Übernachten?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-15",
+              "title": "Die Kinder aufpassen",
+              "prompt": "Ihr Bruder ist auf Geschäftsreise und braucht Ihre Hilfe, auf seine Kinder aufzupassen. Gemeinsam mit Ihrem Partner erstellen Sie einen Plan und besprechen diesen.",
+              "notes": [
+                "Spielen",
+                "Essen",
+                "Mittagsschlafen"
+              ]
+            },
+            {
+              "id": "planung-16",
+              "title": "Firmenjubiläum",
+              "prompt": "Sie arbeiten im selben Unternehmen. Das Unternehmen feiert gerade sein 80-jähriges Jubiläum und Sie möchten die Feier gemeinsam planen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Musik",
+                "Disko",
+                "Kostüm"
+              ]
+            },
+            {
+              "id": "planung-17",
+              "title": "Ins Konzert gehen",
+              "prompt": "Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner möchten gemeinsam ins Konzert gehen. Planen Sie zusammen den Konzertbesuch. Tauschen Sie Ihre Ideen aus und einigen Sie sich am Ende auf einen Plan.",
+              "notes": [
+                "Welche Band?",
+                "Wo?",
+                "Mit freunden?"
+              ]
+            },
+            {
+              "id": "planung-18",
+              "title": "Gemeinsam ein Ausflug mit 2 neue Kollegen machen",
+              "prompt": "Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner haben zwei neue Kollegen in Ihrer Firma. Sie möchten sich gemeinsam mit ihnen treffen und einen Ausflug organisieren.\nTauschen Sie Ihre Ideen aus und einigen Sie sich am Ende auf einen Plan.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Verkehrsmittel?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-19",
+              "title": "Deutschprüfung vorbereiten",
+              "prompt": "Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner möchten sich gemeinsam auf die Deutschprüfung vorbereiten. Planen Sie zusammen, wie Sie das machen können. Tauschen Sie Ihre Ideen aus und einigen Sie sich am Ende auf einen Plan.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Bücher/Youtube?",
+                "Mit Bekannten aus dem Deutschkurs?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-20",
+              "title": "Baumhaus",
+              "prompt": "Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner möchten gemeinsam ein. Baumhaus für die Kinder bauen. Planen Sie zusammen, wie Sie das machen können. Tauschen Sie Ihre Ideen aus und einigen Sie sich am Ende auf einen Plan",
+              "notes": [
+                "Wann?",
+                "Werkzeug?",
+                "Kosten?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-21",
+              "title": "einen Spieleabend organisieren",
+              "prompt": "Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner möchten gemeinsam einen Spieleabend organisieren. Tauschen Sie Ihre Ideen aus und einigen Sie sich am Ende auf einen Plan.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Welche Spiele?"
+              ]
+            },
+            {
+              "id": "planung-22",
+              "title": "Schiffsreise 2",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihre Gesprächspartnerin möchten gemeinsam eine Schiffsreise machen. Planen Sie die Reise.\nÜberlegen Sie sich zusammen mit Ihrer Gesprächspartner/ Gesprächspartnerin Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wohin?",
+                "Wann?",
+                "Wie viel Geld?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-23",
+              "title": "Abschiedsparty feiern",
+              "prompt": "Sie haben zwei Wochen Urlaub gemacht und in dieser Zeit einige nette Deutsche kennengelernt. Vor dem Ende des Urlaubs und bevor Ihre Bekannten alle wieder nach Hause fahren, möchten Sie eine Abschiedsparty feiern. Sie haben die Aufgabe, zusammen mit Ihrem Gesprächspartner/Ihrer Gesprächspartnerin diese Party zu planen. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt. Sie haben sich schon diese Liste gemacht.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Essen Getränke",
+                "Wer bezahlt wofür?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-24",
+              "title": "Ein Tag im Wald mit Familien",
+              "prompt": "Sie wollen zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner und Ihren Familien einen Tag im Wald verbringen.\nÜberlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss. Sie haben sich schon einen Zettel mit Notizen gemacht:\n– Wo?\n– Wann?\n– Aktivitäten?",
+              "notes": []
+            },
+            {
+              "id": "planung-25",
+              "title": "Geburtstagsfeier eines Kollegen",
+              "prompt": "In drei Wochen wird einer Ihrer Kollegen 50. Sie arbeiten mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner in derselben Firma. Sie haben die Aufgabe, zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner ein Geschenk auszusuchen und eine kleine Geburtstagsfeier zu organisieren. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt.",
+              "notes": [
+                "Geschenk",
+                "Geld",
+                "Essen",
+                "Getränke",
+                "Programm"
+              ]
+            },
+            {
+              "id": "planung-26",
+              "title": "Wanderung",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner möchten zusammen mit Freunden eine Wanderung machen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Wohin wandern?\n∙ Wann?\n∙ Wenn einladen?\n∙ Was mitbringen?\n∙ ................",
+              "notes": []
+            },
+            {
+              "id": "planung-27",
+              "title": "Eine Städtereise machen.",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner möchten zusammen eine Städtereise machen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ In welche Stadt reisen?\n∙ Wie?\n∙ Wann?\n∙ Übernachtung?\n∙ .......",
+              "notes": []
+            },
+            {
+              "id": "planung-28",
+              "title": "Gruppenreisen nach Berlin",
+              "prompt": "Zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner und zwei Freunden haben Sie eine dreitägliche Gruppenreisen (nach Berlin) gebucht. Leider sind Ihre Freunde krank geworden und können nicht mitfahren. Für zwei Reisende ist das Gruppenticket aber zu teuer.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Zu zweit fahren?\n∙ neuen Termin suchen?\n∙ andere Mitreisende suchen? Wen fragen?\n∙ Gruppenticket verkaufen? Wie?\n∙ .......",
+              "notes": []
+            },
+            {
+              "id": "planung-29",
+              "title": "Sommerfest",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner arbeiten in der gleichen Firma. Sie sollen gemeinsam ein Sommerfest für Ihre Kolleginnen und Kollegen organisieren. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Essen, Getränke",
+                "Spiele",
+                "Musik und Tanz",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-30",
+              "title": "Firmen Olympiade",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner arbeiten in der gleichen Firma. Sie wollen gemeinsam mit Ihren Kolleginnen und Kollegen eine „Firmen-Olympiade“ organisieren und einen ganzen Tag lang viel Spaß haben. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wo?",
+                "Wann?",
+                "Welche Sportarten?",
+                "Essen und Getränke",
+                "Kosten",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-31",
+              "title": "Eine Spendenaktion",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner möchten armen Familien helfen und eine Spendenaktion organisieren\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Für wen bzw. welche Organisation spenden?\n∙ Wie viele Personen können helfen?\n∙ Was tun (etwas verkaufen, Geld sammeln, usw.)?\n∙ Wann?\n∙ Wo?\n∙ ........",
+              "notes": []
+            },
+            {
+              "id": "planung-32",
+              "title": "Musikinstrument lernen",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner wollen gemeinsam ein Musikinstrument lernen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist:\n∙ Welches Instrument?\n∙ Instrument kaufen?\n∙ Unterricht nehmen?\n∙ Musikschule bzw. Lehrer finden\n∙ Kosten\n∙ ....",
+              "notes": []
+            },
+            {
+              "id": "planung-33",
+              "title": "Ferienspiele für die Kind",
+              "prompt": "Es sind Schulferien. Sie und Ihr Gesprächspartner möchten Ferienspiele für die Kinder organisieren. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist:\n∙ Wenn und wie viele Kinder einladen?\n∙ Zeit und Ort\n∙ Essen und Getränke\n∙ Helfer/ Helferinnen\n∙ Spiele, Aktivitäten\n∙ .......",
+              "notes": []
+            },
+            {
+              "id": "planung-34",
+              "title": "Kindergarten verschönern.",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner haben Kinder, die denselben Kindergarten besuchen. Dieser Kindergarten soll verschönert werden und alle Eltern sollen mithelfen. Machen Sie einen Plan. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Gebäude/ Räume\n∙ Spielplatz\n∙ Werkzeug\n∙ Materialien\n∙ Wer kann was machen?\n∙ .....",
+              "notes": []
+            },
+            {
+              "id": "planung-35",
+              "title": "Kinder beim Deutschlernen",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner kennen eine Familie, die Hilfe braucht. Die Kinder dieser Familie gehen zur Schule, können aber nicht so gut Deutsch sprechen. Gemeinsam möchten Sie der Familie helfen.\n∙ Wer hat Zeit\n∙ Welche Fächer\n∙ Nachhilfe an welchen Tagen?\n∙ Vereinsaktivitäten für Kinder\n∙ Spielnachmittage mit anderen Kindern",
+              "notes": []
+            },
+            {
+              "id": "planung-36",
+              "title": "Straßenfest",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner sind Nachbarn. Sie wollen gemeinsam in Ihrer Straße ein Straßenfest organisieren.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist.\n∙ Einladungen\n∙ Geeigneter Ort\n∙ Bänke, Tische\n∙ Essen, Getränke\n∙ Helfer und Helferinnen\n∙ …",
+              "notes": []
+            },
+            {
+              "id": "planung-37",
+              "title": "Kochkurs",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner interessieren sich für Kochen. Sie wollen gemeinsam einen Kochkurs besuchen.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Was für ein Kochkurs?\n∙ Wann?\n∙ Wo?\n∙ Wie oft?\n∙ Kosten\n∙ .....",
+              "notes": []
+            },
+            {
+              "id": "planung-38",
+              "title": "Tierpark",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner möchten zusammen in den Tierpark gehen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Welcher Zoo oder Tierpark?\n∙ Wann?\n∙ Verkehrsmittel?\n∙ Wen mitbringen?\n∙ ......",
+              "notes": []
+            },
+            {
+              "id": "planung-39",
+              "title": "Umziehen",
+              "prompt": "Ein Kursteilnehmer aus Ihrem Deutschkurs zieht in eine neue Wohnung. Er hat alle Kursteilnehmer gebeten, ihm beim Umzug zu helfen. Sie organisieren nun die gemeinsame Hilfe.\nSie haben sich schon einen Zettel mit Notizen gemacht.\n∙ Wohin?\n∙ Wer hilft?\n∙ Wie lange dauert?\n∙ Wer macht was?\n∙ Party?\n∙ ......",
+              "notes": []
+            },
+            {
+              "id": "planung-40",
+              "title": "Zusammen Kochen",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner möchten zusammen kochen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wo?",
+                "Rezept?",
+                "Wann?",
+                "Wenn einladen?",
+                "Etwas kaufen?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-41",
+              "title": "Einen kranken Freund besuchen",
+              "prompt": "Ihr Freund ist krank. Sie und Ihr Freund planen, gemeinsam einen kranken Freund zu besuchen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Essen mitbringen",
+                "Etwas kaufen",
+                "Zum Arzt gehen",
+                "Medikamente holen",
+                "Haushalt helfen",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-42",
+              "title": "Abschlussfest organisieren",
+              "prompt": "Sie lernen gemeinsam in einem Deutschkurs und veranstalten ein Abschlussfest. Du möchtest einige Dinge mit deinen Freunden planen und vorbereiten.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Kuchen backen oder Kaffee (wo)",
+                "Dekorieren",
+                "Tisch decken",
+                "Wo und wann",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-43",
+              "title": "Firmenfeier organisieren",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner arbeiten in der gleichen Firma. Sie wollen gemeinsam mit Ihren Kolleginnen und Kollegen. Organisieren Sie eine Party für Kollegen in einem kleinen Unternehmen.",
+              "notes": [
+                "Wen einladen?",
+                "Termin?",
+                "Essen /Getränke?",
+                "Musik?",
+                "Wo?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-44",
+              "title": "Einen Freund abholen",
+              "prompt": "Sie und Ihre Gesprächspartnerin/ Ihr Gesprächspartner haben einen gemeinsamen Freund. Dieser Freund kommt nach einem langen Auslandsaufenthalt zurück nach Hause. Sie wollen ihn am Flughafen überraschen.",
+              "notes": [
+                "Wie viele Freunde?",
+                "Geschenk?",
+                "Auto/Limousine mieten?",
+                "Abendessen in seinem Lieblingsrestaurant",
+                "Kosten?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-45",
+              "title": "Haus zusammen renovieren",
+              "prompt": "Sie und Ihre Freunde leben in einem Haus, in dem Sie wohnen, ist ziemlich alt. Sie möchten das Haus renovieren. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wann",
+                "Wie viele Tag einplanen",
+                "Kosten",
+                "Was verändern",
+                "Wen möchten Sie noch einladen/um Hilfe bitten?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-46",
+              "title": "Sportkurse",
+              "prompt": "Sie und Ihre Gesprächspartnerin/ Ihr Gesprächspartner möchten gemeinsam einen Sportkurs besuchen.\nÜberlegen Sie sich zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Fitnessstudio oder Verein?",
+                "Welche Sportsart?",
+                "Wann und wie oft ?",
+                "Kosten",
+                "Fahrt zum Kurs"
+              ]
+            },
+            {
+              "id": "planung-47",
+              "title": "Schiffsreise",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihre Gesprächspartnerin haben gemeinsam eine Schiffsreise im Wert von 3000 Euro gewonnen. Planen Sie die Reise.\nÜberlegen Sie sich zusammen mit Ihrer Gesprächspartner/ Gesprächspartnerin Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wohin?",
+                "Wann?",
+                "Wie lange?",
+                "Visa, Pässe",
+                "Koffer packen"
+              ]
+            },
+            {
+              "id": "planung-48",
+              "title": "Sprachkurs",
+              "prompt": "Sie und Ihr Freund planen, im Sommer einen weiteren Sprachkurs zu besuchen.\nÜberlegen Sie sich zusammen mit Ihrer Gesprächspartner/ Gesprächspartnerin Sie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Wo?",
+                "Wann?",
+                "Wie lange?",
+                "Wie anmelden?",
+                "Welche Sprache?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-49",
+              "title": "Computerkurs.",
+              "prompt": "Sie und Ihre Gesprächspartnerin/ihr Gesprächspartner wollen Urlaubsfotos bearbeiten in Ihrem Urlaub. Dazu müssen Sie ein Computerprogramm erlernen.\nÜberlegen Sie mit Ihrem Gesprächspartner/Ihrer Gesprächspartnerin, was zu tun ist.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Ein gutes Programm finden?",
+                "Einen Kurs besuchen?",
+                "Lernen mit Buch?",
+                "Zeitplan?",
+                "Kosten?",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-50",
+              "title": "Ausflug auf den höchsten Berg",
+              "prompt": "Gemeinsam etwas planen Gemeinsam mit den anderen Teilnehmern Ihres Deutschkurses wollen Sie einen Ausflug auf den höchsten Berg Deutschlands machen: die Zugspitze in den Alpen. Sie und Ive Partnerin bzw. Ihr Partner haben sich bereit erklärt, die Organisation zu unternehmen. Planen Sie gemeinsam den Ausflug. Sie haben sich schon diese Liste gemacht.",
+              "notes": [
+                "Wie reisen?",
+                "Ubernachten?",
+                "Kosten?",
+                "Spezielle Kleidung einpacken?",
+                "Wer übernimmt welche Aufgabe?"
+              ]
+            },
+            {
+              "id": "planung-51",
+              "title": "Tanzen Kurs",
+              "prompt": "Sie und Ihre Gesprächspartnerin/ Ihr Gesprächspartner möchten gemeinsam einen Tanzkurs besuchen. Überlegen Sie sich zusammen mit Ihrer Gesprächspartnerin/ Ihrem Gesprächspartner, was zu tun ist.\nSie haben sich schon einen Zettel mit Notizen gemacht:",
+              "notes": [
+                "Tanzschule oder Verein?",
+                "Wann und wie oft?",
+                "Kosten?",
+                "Welche Tanzart?",
+                "Andere Freunde fragen?"
+              ]
+            },
+            {
+              "id": "planung-52",
+              "title": "Deutschland Abend",
+              "prompt": "Sie und Ihr Freund besuchen einen Deutschkurs. Die beiden wollten einen „Deutschland Abend“ organisieren. Lassen Sie uns gemeinsam planen.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wo?",
+                "Wann?",
+                "Deutsche Spezialitäten: Essen und Getränke",
+                "Dekoration",
+                "Unterhaltungsprogramme (Musik, Tanz, ...)",
+                "…"
+              ]
+            },
+            {
+              "id": "planung-53",
+              "title": "Sprachschule besuchen",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner haben an derselben Sprachschule gelernt. Es ist Tag der offenen Tür und Sie möchten Ihre alte Schule besuchen. Überlegen Sie mit Ihrem Gesprächspartner/ Ihrer\nGesprächspartnerin, was zu tun ist:",
+              "notes": [
+                "Wann?",
+                "Werbung?",
+                "Ausstellung?",
+                "Vortrag?",
+                "Führung im Haus?",
+                "…."
+              ]
+            },
+            {
+              "id": "planung-54",
+              "title": "Abendessen",
+              "prompt": "Sie und Ihre Gesprächspartner/ Ihr Gesprächspartner arbeiten in der gleichen Firma. Sie wollen am Abend gemeinsam etwas essen.\nÜberlegen Sie mit Ihrem Gesprächspartner/ Ihrer Gesprächspartnerin, was zu tun ist. Sie haben sich schon einen Zettel mit Notizen gemacht.",
+              "notes": [
+                "Wann?",
+                "Wo?",
+                "Essen /Getränke?",
+                "Musik?",
+                "…"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

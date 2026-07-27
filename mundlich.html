@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de" translate="no" class="notranslate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="Interaktive TELC B1 Mündlich-Prüfungsvorbereitung für Vorstellen, Diskutieren und gemeinsames Planen.">
+    <meta name="theme-color" content="#183e32">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="mundlich.html">
+    <meta property="og:site_name" content="ZDeutsch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ZDeutsch | B1 Mündlich">
+    <meta property="og:description" content="Trainieren Sie alle drei Teile der TELC B1 mündlichen Prüfung.">
+    <meta property="og:url" content="mundlich.html">
+    <meta property="og:image" content="pwa/icon-512.png">
+    <title>ZDeutsch | B1 Mündlich</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest?v=20260727-1">
+    <link rel="apple-touch-icon" href="pwa/apple-touch-icon.png?v=20260727-1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+    <link rel="stylesheet" href="theme.css?v=20260426-19">
+    <link rel="stylesheet" href="ui-refresh.css?v=20260715-2">
+    <link rel="stylesheet" href="mundlich.css?v=20260727-2">
+  </head>
+  <body class="theme-body mundlich-page">
+    <a class="skip-link" href="#practice-content">Zum Inhalt springen</a>
+
+    <header class="oral-header">
+      <a class="oral-brand" href="index.html?restoreHome=1#section=mundlich" aria-label="Zur Themenbibliothek">
+        <span class="oral-brand-mark" aria-hidden="true">
+          <img src="logo.svg?v=20260312-1" alt="">
+        </span>
+        <span>
+          <span class="oral-brand-name">ZDeutsch</span>
+          <span class="oral-brand-route">Prüfungsstudio / B1 Mündlich</span>
+        </span>
+      </a>
+      <div class="oral-header-actions">
+        <span class="oral-level-badge">B1</span>
+        <button id="timer-toggle" class="oral-timer-button" type="button" aria-label="Timer starten">
+          <span class="oral-timer-dot" aria-hidden="true"></span>
+          <span id="timer-value">03:00</span>
+        </button>
+        <button id="timer-reset" class="oral-icon-button" type="button" aria-label="Timer zurücksetzen" title="Timer zurücksetzen">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.9 7.3A8 8 0 1 1 4 12"></path>
+            <path d="M4 4v4h4"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="practice-content" class="oral-main">
+      <section class="oral-hero" aria-labelledby="oral-title">
+        <div class="oral-hero-copy">
+          <p class="oral-eyebrow">Sprechen mit Struktur, nicht auswendig</p>
+          <h1 id="oral-title">Trainieren Sie den <span>echten Gesprächsfluss.</span></h1>
+          <p id="oral-intro">Alle drei B1-Prüfungsteile in einem fokussierten Übungsraum: klare Rollen, prüfungsnahe Impulse und ein Timer für realistische Runden.</p>
+        </div>
+        <div class="oral-hero-score" aria-label="Themenübersicht">
+          <div>
+            <strong id="discussion-count">66</strong>
+            <span>Diskussionen</span>
+          </div>
+          <div>
+            <strong id="planning-count">50</strong>
+            <span>Planungen</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Prüfungsteile</span>
+          </div>
+        </div>
+      </section>
+
+      <nav id="part-tabs" class="oral-part-tabs" aria-label="Prüfungsteile"></nav>
+
+      <section class="oral-workspace">
+        <aside class="oral-library" aria-label="Themenauswahl">
+          <div class="oral-library-head">
+            <div>
+              <p class="oral-kicker">Themenbibliothek</p>
+              <h2 id="library-title">Teil 1</h2>
+            </div>
+            <button id="random-topic" class="oral-random-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 3h5v5"></path>
+                <path d="m4 20 17-17"></path>
+                <path d="M21 16v5h-5"></path>
+                <path d="m15 15 6 6"></path>
+                <path d="m4 4 5 5"></path>
+              </svg>
+              Zufall
+            </button>
+          </div>
+          <label id="topic-search-wrap" class="oral-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <span class="sr-only">Themen durchsuchen</span>
+            <input id="topic-search" type="search" autocomplete="off" placeholder="Thema suchen" aria-label="Thema suchen">
+            <kbd>/</kbd>
+          </label>
+          <div id="topic-list" class="oral-topic-list"></div>
+          <p id="topic-result-status" class="oral-result-status" aria-live="polite"></p>
+        </aside>
+
+        <article id="practice-panel" class="oral-practice-panel" aria-live="polite"></article>
+      </section>
+    </main>
+
+    <div id="toast" class="oral-toast" role="status" aria-live="polite"></div>
+
+    <script src="shared.js?v=20260727-b1-2"></script>
+    <script src="mundlich.js?v=20260727-2"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-07-15-ui-refresh-v14";
+const SW_VERSION = "2026-07-27-b1-library-v16";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -8,15 +8,19 @@ const APP_SHELL = [
   "./lesen.html",
   "./horen.html",
   "./shreiben.html",
+  "./mundlich.html",
   "./theme.css",
   "./ui-refresh.css",
   "./horen.css",
+  "./mundlich.css",
   "./shared.js",
   "./main.js",
   "./correction.js",
   "./lesen.js",
   "./horen.js",
   "./shreiben.js",
+  "./mundlich.js",
+  "./database/mundlich.json",
   "./manifest.webmanifest",
   "./logo.svg",
   "./pwa/icon-192.png",
