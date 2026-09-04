@@ -79581,23 +79581,37 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "keywords": [
+                            "Sie",
+                            "haben",
+                            "Mitarbeiter"
+                          ],
+                          "reason": ""
                         },
                         {
                           "textId": 2,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
@@ -87285,7 +87299,7 @@
                         },
                         {
                           "situationId": 17,
-                          "adId": "G"
+                          "adId": "K"
                         },
                         {
                           "situationId": 18,
