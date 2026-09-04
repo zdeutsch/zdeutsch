@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-07-27-b1-library-v16";
+const SW_VERSION = "2026-09-04-answer-insights-v17";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [

@@ -3079,6 +3079,62 @@ body.whatsapp-welcome-open {
   gap: 0.55rem;
 }
 
+.answer-keyword-highlight {
+  color: #c5162e;
+  background: rgba(220, 38, 38, 0.1);
+  border-radius: 0.2rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.03em 0.12em;
+  font-weight: 700;
+}
+
+.answer-insight-card {
+  margin-top: 0.65rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(220, 38, 38, 0.23);
+  border-radius: 0.85rem;
+  background: linear-gradient(145deg, rgba(254, 242, 242, 0.98), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 8px 22px rgba(127, 29, 29, 0.06);
+}
+
+.answer-insight-title {
+  color: #9f1239;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.answer-insight-reason {
+  margin: 0.42rem 0 0;
+  color: #4c2630;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.answer-insight-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.answer-insight-keyword {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.45rem;
+  padding: 0.15rem 0.48rem;
+  color: #be123c;
+  border: 1px solid rgba(225, 29, 72, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 228, 230, 0.72);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
 @media (max-width: 767px) {
   .correction-page .home-header-inner {
     min-height: 4rem;

@@ -730,6 +730,63 @@ function makePill(label, variant) {
   return createEl("span", `${base} bg-azure/10 text-azure border border-azure/40`, label);
 }
 
+function normalizeInsightKeywords(value) {
+  const seen = new Set();
+  return (Array.isArray(value) ? value : [])
+    .map((item) => String(item || "").replace(/\s+/g, " ").trim())
+    .filter((item) => {
+      const identity = item.toLocaleLowerCase("de");
+      if (!item || seen.has(identity)) {
+        return false;
+      }
+      seen.add(identity);
+      return true;
+    });
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function createHighlightedText(tagName, className, text, keywords) {
+  const element = createEl(tagName, className);
+  const matches = normalizeInsightKeywords(keywords).sort((left, right) => right.length - left.length);
+  if (!matches.length) {
+    element.textContent = String(text || "");
+    return element;
+  }
+
+  const matcher = new RegExp(`(${matches.map(escapeRegExp).join("|")})`, "giu");
+  String(text || "").split(matcher).forEach((segment) => {
+    if (matches.some((keyword) => keyword.toLocaleLowerCase("de") === segment.toLocaleLowerCase("de"))) {
+      element.append(createEl("mark", "answer-keyword-highlight", segment));
+    } else {
+      element.append(document.createTextNode(segment));
+    }
+  });
+  return element;
+}
+
+function renderAnswerInsight(answer) {
+  const reason = String(answer?.reason || "").trim();
+  const keywords = normalizeInsightKeywords(answer?.keywords);
+  if (!reason && !keywords.length) {
+    return null;
+  }
+
+  const card = createEl("div", "answer-insight-card");
+  card.append(createEl("div", "answer-insight-title font-display", "Warum ist das richtig?"));
+  if (reason) {
+    card.append(createEl("p", "answer-insight-reason", reason));
+  }
+  if (keywords.length) {
+    const list = createEl("div", "answer-insight-keywords");
+    keywords.forEach((keyword) => list.append(createEl("span", "answer-insight-keyword", keyword)));
+    card.append(list);
+  }
+  return card;
+}
+
 function refreshIcons() {
   if (window.lucide && typeof window.lucide.createIcons === "function") {
     window.lucide.createIcons();
@@ -1948,6 +2005,7 @@ function renderLesenTeil1(content) {
     leftPanel.append(instruction);
   }
 
+  const answerMap = new Map((content.answers || []).map((item) => [item.textId, item]));
   const correctMap = new Map((content.answers || []).map((item) => [item.textId, item.headlineId]));
   const texts = content.texts || [];
   if (!active.textId && texts.length) {
@@ -1959,6 +2017,7 @@ function renderLesenTeil1(content) {
     const selected = responses[item.id];
     const correct = correctMap.get(item.id);
     const isCorrect = selected && selected === correct;
+    const answer = answerMap.get(item.id);
 
     const card = createEl(
       "button",
@@ -2016,13 +2075,17 @@ function renderLesenTeil1(content) {
 
     card.append(createEl("div", "h-8 w-8 rounded-xl border border-stone-200 bg-stone-50 flex items-center justify-center text-sm font-display text-slate", item.id));
 
-    card.append(createEl("p", "mt-3 text-sm text-ink", item.text));
+    card.append(createHighlightedText("p", "mt-3 text-sm text-ink", item.text, submitted ? answer?.keywords : []));
 
     const cardWrap = createEl("div", "rounded-2xl");
     cardWrap.append(card);
     const translationToggle = createTranslationToggle(item.translated);
     if (translationToggle) {
       cardWrap.append(translationToggle);
+    }
+    const insight = submitted ? renderAnswerInsight(answer) : null;
+    if (insight) {
+      cardWrap.append(insight);
     }
 
     list.append(cardWrap);
@@ -2056,6 +2119,7 @@ function renderLesenTeil1(content) {
 
   const options = createEl("div", "mt-4 space-y-3");
   const correct = correctMap.get(active.textId);
+  const activeAnswer = answerMap.get(active.textId);
   (content.headlines || []).forEach((headline) => {
     const selected = responses[active.textId];
     const isSelected = selected === headline.id;
@@ -2081,7 +2145,7 @@ function renderLesenTeil1(content) {
     option.style.userSelect = "text";
     option.style.webkitUserSelect = "text";
     option.append(createEl("span", "h-6 w-6 rounded-lg border border-black/10 bg-white flex items-center justify-center text-xs", headline.id));
-    option.append(createEl("span", "text-sm", headline.text));
+    option.append(createHighlightedText("span", "text-sm", headline.text, submitted ? activeAnswer?.keywords : []));
     if (isChoiceActive) {
       option.classList.add("ring-2", "ring-azure/30");
     }
@@ -2127,10 +2191,12 @@ function renderLesenTeil2(content) {
   leftPanel.append(createEl("span", "inline-flex items-center rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-slate font-display", "Lesetext"));
   leftPanel.append(createEl("h2", "mt-4 text-2xl font-display", content.passage?.title || ""));
 
+  const questions = content.questions || [];
+  const passageKeywords = submitted ? questions.flatMap((question) => normalizeInsightKeywords(question.keywords)) : [];
   const translatedParagraphs = Array.isArray(content.passage?.translated) ? content.passage.translated : [];
   (content.passage?.paragraphs || []).forEach((para, index) => {
     const block = createEl("div", "mt-4");
-    block.append(createEl("p", "text-sm text-ink leading-relaxed", para));
+    block.append(createHighlightedText("p", "text-sm text-ink leading-relaxed", para, passageKeywords));
     const translationToggle = createTranslationToggle(translatedParagraphs[index]);
     if (translationToggle) {
       block.append(translationToggle);
@@ -2145,10 +2211,10 @@ function renderLesenTeil2(content) {
   );
   rightPanel.append(header);
 
-  (content.questions || []).forEach((question) => {
+  questions.forEach((question) => {
     const block = createEl("div", "mt-4 rounded-2xl border border-stone-300 bg-stone-50 p-4");
     const qHeader = createEl("div", "flex items-start gap-2 text-sm font-display");
-    qHeader.append(createEl("span", "text-azure", `${question.id}.`), createEl("span", "text-ink", question.prompt));
+    qHeader.append(createEl("span", "text-azure", `${question.id}.`), createHighlightedText("span", "text-ink", question.prompt, submitted ? question.keywords : []));
     block.append(qHeader);
 
     const list = createEl("div", "mt-3 space-y-2");
@@ -2170,7 +2236,7 @@ function renderLesenTeil2(content) {
       );
       item.type = "button";
       item.append(createEl("span", "text-xs", `${option.id.toUpperCase()})`));
-      item.append(createEl("span", "text-sm", option.text));
+      item.append(createHighlightedText("span", "text-sm", option.text, submitted ? question.keywords : []));
       item.addEventListener("click", () => {
         responses[question.id] = option.id;
         renderCurrentPart();
@@ -2178,6 +2244,10 @@ function renderLesenTeil2(content) {
       list.append(item);
     });
     block.append(list);
+    const insight = submitted ? renderAnswerInsight(question) : null;
+    if (insight) {
+      block.append(insight);
+    }
     rightPanel.append(block);
   });
 
@@ -2195,6 +2265,7 @@ function renderLesenTeil3(content) {
     active.situationId = situations[0].id;
   }
 
+  const answerMap = new Map((content.answers || []).map((item) => [item.situationId, item]));
   const correctMap = new Map((content.answers || []).map((item) => [item.situationId, item.adId]));
   const usedAds = new Map();
   Object.entries(responses).forEach(([situationId, adId]) => {
@@ -2215,6 +2286,9 @@ function renderLesenTeil3(content) {
     const isNoAnzeige = ad.id === "X";
     const isUsedByOther = !submitted && !isNoAnzeige && usedBy && usedBy !== active.situationId;
     const isChoiceActive = normalize(active.adId) === normalize(ad.id);
+    const adKeywords = submitted
+      ? (content.answers || []).filter((answer) => normalize(answer.adId) === normalize(ad.id)).flatMap((answer) => normalizeInsightKeywords(answer.keywords))
+      : [];
 
     const item = createEl(
       "button",
@@ -2230,7 +2304,7 @@ function renderLesenTeil3(content) {
     item.type = "button";
     item.draggable = true;
     item.append(createEl("div", "h-7 w-7 rounded-lg border border-stone-300 bg-white flex items-center justify-center text-xs font-display text-slate", ad.id));
-    item.append(createEl("p", "mt-2 text-sm whitespace-pre-wrap", ad.text));
+    item.append(createHighlightedText("p", "mt-2 text-sm whitespace-pre-wrap", ad.text, adKeywords));
     if (isChoiceActive) {
       item.classList.add("ring-2", "ring-azure/30");
     }
@@ -2278,6 +2352,7 @@ function renderLesenTeil3(content) {
     const selected = responses[item.id];
     const correct = correctMap.get(item.id);
     const isCorrect = selected && selected === correct;
+    const answer = answerMap.get(item.id);
 
     const card = createEl(
       "button",
@@ -2342,13 +2417,17 @@ function renderLesenTeil3(content) {
 
     card.append(createEl("p", "text-xs uppercase tracking-[0.2em] text-slate font-display", `Situation ${item.id}`));
 
-    card.append(createEl("p", "mt-2 text-sm whitespace-pre-wrap", item.text));
+    card.append(createHighlightedText("p", "mt-2 text-sm whitespace-pre-wrap", item.text, submitted ? answer?.keywords : []));
 
     const cardWrap = createEl("div", "space-y-2");
     cardWrap.append(card);
     const translationToggle = createTranslationToggle(item.translated);
     if (translationToggle) {
       cardWrap.append(translationToggle);
+    }
+    const insight = submitted ? renderAnswerInsight(answer) : null;
+    if (insight) {
+      cardWrap.append(insight);
     }
 
     list.append(cardWrap);
