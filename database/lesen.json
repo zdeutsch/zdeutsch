@@ -79598,31 +79598,55 @@
                           "textId": 1,
                           "headlineId": "B",
                           "keywords": [],
-                          "reason": ""
+                          "reason": "B ist richtig, weil der Text ein Leasingangebot für E-Bikes ausdrücklich an Unternehmen mit „Mitarbeiter[n]“ richtet. Es geht damit um elektrische Mobilität für Angestellte, nicht um eine Abschaffung von Firmenwagen (E), sondern um eine zusätzliche Alternative. Die Überschriften zu Schule/Lehrern (A, D, G, J), Naturengagement (H) sowie Bus, Bahn und Ticketpreisen (C, F, I) passen nicht zum Thema des Textes.",
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 66,
+                              "text": "Sie haben Mitarbeiter, die gern mit dem Fahrrad zur Arbeit kommen?"
+                            },
+                            {
+                              "source": "text",
+                              "start": 67,
+                              "end": 132,
+                              "text": "Warum dann nicht mehr E-Bikes leasen statt nur teure Firmenwagen?"
+                            },
+                            {
+                              "source": "text",
+                              "start": 270,
+                              "end": 343,
+                              "text": "Sie fördern zudem die Gesundheit Ihrer Mitarbeiter und schonen die Umwelt"
+                            }
+                          ]
                         },
                         {
                           "textId": 2,
                           "headlineId": "F",
                           "reason": "",
-                          "keywords": []
+                          "keywords": [],
+                          "highlights": []
                         },
                         {
                           "textId": 3,
                           "headlineId": "A",
                           "reason": "",
-                          "keywords": []
+                          "keywords": [],
+                          "highlights": []
                         },
                         {
                           "textId": 4,
                           "headlineId": "J",
                           "reason": "",
-                          "keywords": []
+                          "keywords": [],
+                          "highlights": []
                         },
                         {
                           "textId": 5,
                           "headlineId": "H",
                           "reason": "",
-                          "keywords": []
+                          "keywords": [],
+                          "highlights": []
                         }
                       ]
                     }
