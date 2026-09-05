@@ -54478,21 +54478,8 @@
                         {
                           "textId": 1,
                           "headlineId": "D",
-                          "highlights": [
-                            {
-                              "source": "headline",
-                              "start": 27,
-                              "end": 51,
-                              "text": "Zivilisationskrankheiten"
-                            },
-                            {
-                              "source": "text",
-                              "start": 0,
-                              "end": 42,
-                              "text": "Über zehntausend wissenschaftliche Studien"
-                            }
-                          ],
-                          "reason": "test test",
+                          "highlights": [],
+                          "reason": "",
                           "keywords": []
                         },
                         {
