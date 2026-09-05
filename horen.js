@@ -275,6 +275,29 @@ function buildTopicSubtitle(topic, fallbackLabel) {
   return link;
 }
 
+function renderTopicAudio(topic) {
+  const source = String(topic?.audio?.src || "").replace(/^\/+/, "");
+  if (!/^assets\/audio\/horen\/[a-z0-9._-]+$/i.test(source)) {
+    return null;
+  }
+
+  const wrapper = createEl("div", "horen-audio");
+  const label = createEl("div", "horen-audio__label");
+  label.append(
+    makeLucideIcon("headphones", "h-4 w-4"),
+    createEl("span", null, "Audio zum Thema")
+  );
+  const player = document.createElement("audio");
+  player.className = "horen-audio__player";
+  player.controls = true;
+  player.preload = "metadata";
+  player.src = source;
+  player.setAttribute("aria-label", `Audio: ${topic?.title || "Hören-Thema"}`);
+  player.append(createEl("span", null, "Ihr Browser unterstützt die Audiowiedergabe nicht."));
+  wrapper.append(label, player);
+  return wrapper;
+}
+
 function makeLucideIcon(name, className) {
   const icon = createEl("i", className);
   icon.setAttribute("data-lucide", name);
@@ -338,6 +361,10 @@ function renderActivePart() {
     });
     header.append(titleDiv, topicAussageBtn);
     wrapper.append(header);
+    const topicAudio = renderTopicAudio(topic);
+    if (topicAudio) {
+      wrapper.append(topicAudio);
+    }
     const tableWrapper = createEl("div", "horen-table-wrapper");
     const table = createEl("table", "horen-table");
     const thead = createEl("thead");
