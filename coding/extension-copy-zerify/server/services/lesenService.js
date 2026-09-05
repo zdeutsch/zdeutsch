@@ -411,7 +411,8 @@ function normalizeTeachingInsights(partKey, rawContent) {
         ...answer,
         reason: normalizeReason(answer.reason, answerLabel),
         keywords,
-        highlights: normalizeHighlights(answer.highlights, new Map([["text", text], ["headline", headline]]), answerLabel)
+        highlights: normalizeHighlights(answer.highlights, new Map([["text", text], ["headline", headline]]), answerLabel),
+        aiReview: undefined
       };
     });
   } else if (partKey === "teil-2") {
@@ -431,7 +432,8 @@ function normalizeTeachingInsights(partKey, rawContent) {
         ...question,
         reason: normalizeReason(question.reason, answerLabel),
         keywords,
-        highlights: normalizeHighlights(question.highlights, sources, answerLabel)
+        highlights: normalizeHighlights(question.highlights, sources, answerLabel),
+        aiReview: undefined
       };
     });
   } else if (partKey === "teil-3") {
@@ -447,7 +449,8 @@ function normalizeTeachingInsights(partKey, rawContent) {
         ...answer,
         reason: normalizeReason(answer.reason, answerLabel),
         keywords,
-        highlights: normalizeHighlights(answer.highlights, new Map([["situation", situation], ["ad", ad]]), answerLabel)
+        highlights: normalizeHighlights(answer.highlights, new Map([["situation", situation], ["ad", ad]]), answerLabel),
+        aiReview: undefined
       };
     });
   }

@@ -11,6 +11,7 @@ const {
   updateTheme,
   deleteTheme
 } = require("../../services/lesenService");
+const { analyzeLesenAnswer } = require("../../services/lesenAiService");
 
 const router = express.Router();
 
@@ -18,6 +19,14 @@ router.get(
   "/themes",
   asyncHandler(async (req, res) => {
     const data = await listThemes(req.query.level);
+    res.json({ ok: true, data });
+  })
+);
+
+router.post(
+  "/analyze-answer",
+  asyncHandler(async (req, res) => {
+    const data = await analyzeLesenAnswer(req.body);
     res.json({ ok: true, data });
   })
 );
