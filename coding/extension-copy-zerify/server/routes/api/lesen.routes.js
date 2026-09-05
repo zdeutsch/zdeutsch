@@ -5,6 +5,7 @@ const {
   getTheme,
   listVersions,
   getPart,
+  getEditorContext,
   updatePart,
   createTheme,
   updateTheme,
@@ -33,6 +34,14 @@ router.get(
   "/versions",
   asyncHandler(async (req, res) => {
     const data = await listVersions(req.query);
+    res.json({ ok: true, data });
+  })
+);
+
+router.get(
+  "/editor-context",
+  asyncHandler(async (req, res) => {
+    const data = await getEditorContext(req.query);
     res.json({ ok: true, data });
   })
 );

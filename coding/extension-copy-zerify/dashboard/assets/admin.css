@@ -23,6 +23,83 @@ body.manager-body {
 .manager-sidebar {
   background: var(--manager-panel);
   border-right: 1px solid var(--manager-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-sidebar-control {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.repository-sidebar-button {
+  min-height: 44px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.repository-cancel-button {
+  min-height: 38px;
+  font-weight: 600;
+}
+
+.repository-sidebar-button.is-current,
+.repository-sidebar-button.is-current:disabled {
+  background: #f1f3f6;
+  border-color: #d9dee7;
+  color: #7b8493;
+  opacity: 1;
+}
+
+.repository-sidebar-button.is-pending {
+  background: #fff3cd;
+  border-color: #e4b52d;
+  color: #725300;
+}
+
+.repository-sidebar-button.is-pending:hover,
+.repository-sidebar-button.is-pending:focus {
+  background: #ffe8a1;
+  border-color: #ca9910;
+  color: #5c4300;
+}
+
+.repository-sidebar-button.is-error {
+  background: #fff2f2;
+  border-color: #e5a3a3;
+  color: var(--manager-danger);
+}
+
+.repository-sidebar-detail {
+  display: block;
+  min-height: 2.4em;
+  margin-top: 0.45rem;
+  color: var(--manager-muted);
+  font-size: 0.74rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .repository-sidebar-control {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .manager-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1020;
+    width: 16.666667%;
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+  }
+
+  .manager-main {
+    margin-left: 16.666667%;
+  }
 }
 
 .manager-brand {
@@ -485,4 +562,122 @@ code.kbd-inline {
 .contribution-edit-hint {
   color: #5d6b84;
   font-size: 0.92rem;
+}
+
+/* Keep the remaining legacy editors visually aligned with the React workspace. */
+body.manager-body {
+  background: #f4f6fa;
+  color: #18202f;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.manager-sidebar {
+  color: #dbe3f2;
+  border-right: 0;
+  background: linear-gradient(180deg, #111827 0%, #131d2e 100%);
+  box-shadow: 8px 0 32px rgba(17, 24, 39, 0.12);
+}
+
+.manager-sidebar .manager-brand {
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.manager-sidebar .small-help {
+  color: #8190aa;
+}
+
+.manager-nav-link {
+  min-height: 42px;
+  color: #9eabc0;
+  border-radius: 11px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.manager-nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.065);
+}
+
+.manager-nav-link.active {
+  color: #ffffff;
+  background: #235bd8;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.manager-main {
+  max-width: 1540px;
+  padding-top: 2.5rem;
+}
+
+.manager-header,
+.manager-card {
+  border-color: #dfe4ec;
+  border-radius: 16px;
+  box-shadow: 0 8px 26px rgba(24, 32, 47, 0.055);
+}
+
+.manager-header h1 {
+  color: #111827;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.manager-card .card-header {
+  padding: 1rem 1.2rem;
+  color: #273247;
+  background: #fbfcfd;
+  border-color: #e8ebf0;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.form-control,
+.form-select {
+  border-color: #d7dde6;
+  border-radius: 9px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #7b9bea;
+  box-shadow: 0 0 0 0.2rem rgba(35, 91, 216, 0.1);
+}
+
+.btn {
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+.btn-manager-primary,
+.btn-primary {
+  background: #235bd8;
+  border-color: #235bd8;
+}
+
+.btn-manager-primary:hover,
+.btn-manager-primary:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #1747b0;
+  border-color: #1747b0;
+}
+
+.repository-sidebar-control {
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.repository-sidebar-detail {
+  color: #93a1b6;
+}
+
+.repository-sidebar-button.is-current,
+.repository-sidebar-button.is-current:disabled {
+  color: #aab6c9;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.055);
 }

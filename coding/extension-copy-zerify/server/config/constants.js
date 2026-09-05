@@ -4,6 +4,7 @@ const PROJECT_ROOT = path.resolve(__dirname, "..", "..");
 const SITE_DIR = path.join(PROJECT_ROOT, "site");
 const DATABASE_DIR = path.join(SITE_DIR, "database");
 const DASHBOARD_DIR = path.join(PROJECT_ROOT, "dashboard");
+const DASHBOARD_DIST_DIR = path.join(DASHBOARD_DIR, "dist");
 const SHARE_DASHBOARD_DIR = path.join(PROJECT_ROOT, "share-dashboard");
 const SHARE_DATA_DIR = path.join(PROJECT_ROOT, "server", "data");
 
@@ -22,6 +23,7 @@ module.exports = {
   SITE_DIR,
   DATABASE_DIR,
   DASHBOARD_DIR,
+  DASHBOARD_DIST_DIR,
   SHARE_DASHBOARD_DIR,
   SHARE_DATA_DIR,
   DATABASE_FILES,

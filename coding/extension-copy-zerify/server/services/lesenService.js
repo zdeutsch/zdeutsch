@@ -1,4 +1,9 @@
-const { readJsonByKey, writeJsonByKey } = require("../repositories/jsonRepository");
+const {
+  readJsonByKey,
+  readJsonSnapshotByKey,
+  writeJsonByKey,
+  mutateJsonByKey
+} = require("../repositories/jsonRepository");
 const AppError = require("../utils/appError");
 const { assertString, isPlainObject } = require("../utils/validators");
 
@@ -155,21 +160,24 @@ async function getLesenDb() {
   return readJsonByKey("lesen");
 }
 
-async function listThemes(level) {
-  assertString(level, "level is required");
-  const db = await getLesenDb();
-  const levelEntry = db?.levels?.[level] || null;
-  if (!levelEntry) {
-    return [];
-  }
+async function getLesenSnapshot() {
+  return readJsonSnapshotByKey("lesen");
+}
 
-  const orderedKeys = levelEntry.themeOrder?.length
+function clone(value) {
+  return JSON.parse(JSON.stringify(value));
+}
+
+function orderedThemeKeys(levelEntry) {
+  return Array.isArray(levelEntry?.themeOrder) && levelEntry.themeOrder.length
     ? levelEntry.themeOrder
-    : Object.keys(levelEntry.themes || {});
+    : Object.keys(levelEntry?.themes || {});
+}
 
-  return orderedKeys
+function summarizeThemes(levelEntry) {
+  return orderedThemeKeys(levelEntry)
     .map((themeKey) => {
-      const theme = levelEntry.themes?.[themeKey];
+      const theme = levelEntry?.themes?.[themeKey];
       if (!theme) {
         return null;
       }
@@ -183,17 +191,47 @@ async function listThemes(level) {
     .filter(Boolean);
 }
 
+function summarizeVersions(theme) {
+  const versionKeys = Array.isArray(theme?.versionOrder) && theme.versionOrder.length
+    ? theme.versionOrder
+    : Object.keys(theme?.versions || {});
+
+  return versionKeys
+    .map((versionKey) => {
+      const version = theme?.versions?.[versionKey];
+      if (!version) {
+        return null;
+      }
+      return {
+        key: versionKey,
+        label: version.label || versionKey,
+        title: version.title || theme.title || versionKey
+      };
+    })
+    .filter(Boolean);
+}
+
+async function listThemes(level) {
+  assertString(level, "level is required");
+  const { data: db } = await getLesenSnapshot();
+  const levelEntry = db?.levels?.[level] || null;
+  if (!levelEntry) {
+    return [];
+  }
+  return summarizeThemes(levelEntry);
+}
+
 async function getTheme(level, themeKey) {
   assertString(level, "level is required");
   assertString(themeKey, "themeKey is required");
 
-  const db = await getLesenDb();
+  const { data: db } = await getLesenSnapshot();
   const theme = db?.levels?.[level]?.themes?.[themeKey] || null;
   if (!theme) {
     throw new AppError("Theme not found", 404);
   }
 
-  return theme;
+  return clone(theme);
 }
 
 function resolveTheme(levelEntry, themeKey) {
@@ -232,30 +270,14 @@ async function listVersions(payload) {
   assertString(level, "level is required");
   assertString(themeKey, "themeKey is required");
 
-  const db = await getLesenDb();
+  const { data: db } = await getLesenSnapshot();
   const levelEntry = db?.levels?.[level] || null;
   if (!levelEntry) {
     throw new AppError("Level not found", 404);
   }
 
   const theme = resolveTheme(levelEntry, themeKey);
-  const versionKeys = Array.isArray(theme.versionOrder) && theme.versionOrder.length
-    ? theme.versionOrder
-    : Object.keys(theme.versions || {});
-
-  return versionKeys
-    .map((versionKey) => {
-      const version = theme.versions?.[versionKey];
-      if (!version) {
-        return null;
-      }
-      return {
-        key: versionKey,
-        label: version.label || versionKey,
-        title: version.title || theme.title || themeKey
-      };
-    })
-    .filter(Boolean);
+  return summarizeVersions(theme);
 }
 
 async function getPart(payload) {
@@ -267,7 +289,7 @@ async function getPart(payload) {
   assertString(level, "level is required");
   assertString(themeKey, "themeKey is required");
 
-  const db = await getLesenDb();
+  const { data: db, revision } = await getLesenSnapshot();
   const levelEntry = db?.levels?.[level] || null;
   if (!levelEntry) {
     throw new AppError("Level not found", 404);
@@ -286,7 +308,176 @@ async function getPart(payload) {
     themeKey,
     versionKey,
     partKey,
-    part: JSON.parse(JSON.stringify(part))
+    revision,
+    part: clone(part)
+  };
+}
+
+function normalizeKeywords(value, answerLabel) {
+  const source = value === undefined || value === null
+    ? []
+    : (Array.isArray(value) ? value : String(value).split(","));
+  const seen = new Set();
+  const keywords = [];
+
+  source.forEach((entry) => {
+    const keyword = String(entry || "").replace(/\s+/g, " ").trim();
+    if (!keyword) {
+      return;
+    }
+    if (keyword.length > 120) {
+      throw new AppError(`A keyword for ${answerLabel} is too long`, 400);
+    }
+    const identity = keyword.toLocaleLowerCase("de");
+    if (!seen.has(identity)) {
+      seen.add(identity);
+      keywords.push(keyword);
+    }
+  });
+
+  if (keywords.length > 30) {
+    throw new AppError(`${answerLabel} can contain at most 30 keywords`, 400);
+  }
+  return keywords;
+}
+
+function normalizeReason(value, answerLabel) {
+  const reason = String(value || "").trim();
+  if (reason.length > 6000) {
+    throw new AppError(`The answer reason for ${answerLabel} is too long`, 400);
+  }
+  return reason;
+}
+
+function normalizeHighlights(value, sources, answerLabel) {
+  const highlights = Array.isArray(value) ? value : [];
+  if (highlights.length > 60) {
+    throw new AppError(`${answerLabel} can contain at most 60 highlights`, 400);
+  }
+
+  const normalized = highlights.map((item) => {
+    const source = String(item?.source || "").trim();
+    const start = Number(item?.start);
+    const end = Number(item?.end);
+    const sourceText = sources.get(source);
+    if (sourceText === undefined || !Number.isInteger(start) || !Number.isInteger(end) || start < 0 || end <= start || end > sourceText.length) {
+      throw new AppError(`An invalid highlight range was supplied for ${answerLabel}`, 400, { answer: answerLabel, highlight: item });
+    }
+    const text = sourceText.slice(start, end);
+    if (!text.trim() || text.length > 1000) {
+      throw new AppError(`A highlight for ${answerLabel} is empty or too long`, 400);
+    }
+    return { source, start, end, text };
+  }).sort((left, right) => left.source.localeCompare(right.source) || left.start - right.start);
+
+  normalized.forEach((item, index) => {
+    const previous = normalized[index - 1];
+    if (previous?.source === item.source && previous.end > item.start) {
+      throw new AppError(`Highlights for ${answerLabel} cannot overlap`, 400, { answer: answerLabel, highlights: [previous, item] });
+    }
+  });
+  return normalized;
+}
+
+function assertKeywordsBelongToSource(keywords, sourceText, answerLabel) {
+  const haystack = String(sourceText || "").replace(/\s+/g, " ").toLocaleLowerCase("de");
+  const missing = keywords.filter((keyword) => !haystack.includes(keyword.toLocaleLowerCase("de")));
+  if (missing.length) {
+    throw new AppError(
+      `Some keywords for ${answerLabel} were not found in its text`,
+      400,
+      { answer: answerLabel, keywords: missing }
+    );
+  }
+}
+
+function normalizeTeachingInsights(partKey, rawContent) {
+  const content = clone(rawContent);
+
+  if (partKey === "teil-1") {
+    const texts = new Map((content.texts || []).map((item) => [String(item.id), item]));
+    const headlines = new Map((content.headlines || []).map((item) => [String(item.id), item]));
+    content.answers = (content.answers || []).map((answer) => {
+      const answerLabel = `text ${answer.textId}`;
+      const keywords = normalizeKeywords(answer.keywords, answerLabel);
+      const text = String(texts.get(String(answer.textId))?.text || "");
+      const headline = String(headlines.get(String(answer.headlineId))?.text || "");
+      assertKeywordsBelongToSource(keywords, [text, headline].filter(Boolean).join(" "), answerLabel);
+      return {
+        ...answer,
+        reason: normalizeReason(answer.reason, answerLabel),
+        keywords,
+        highlights: normalizeHighlights(answer.highlights, new Map([["text", text], ["headline", headline]]), answerLabel)
+      };
+    });
+  } else if (partKey === "teil-2") {
+    const passageText = [content.passage?.text, ...(content.passage?.paragraphs || [])].filter(Boolean).join(" ");
+    content.questions = (content.questions || []).map((question) => {
+      const answerLabel = `question ${question.id}`;
+      const keywords = normalizeKeywords(question.keywords, answerLabel);
+      const source = [passageText, question.prompt, ...(question.options || []).map((option) => option.text)].filter(Boolean).join(" ");
+      assertKeywordsBelongToSource(keywords, source, answerLabel);
+      const sources = new Map([
+        ["passage-title", String(content.passage?.title || "")],
+        ["question", String(question.prompt || "")],
+        ...(content.passage?.paragraphs || []).map((paragraph, index) => [`passage:${index}`, String(paragraph || "")]),
+        ...(question.options || []).map((option) => [`option:${String(option.id || "").toLowerCase()}`, String(option.text || "")])
+      ]);
+      return {
+        ...question,
+        reason: normalizeReason(question.reason, answerLabel),
+        keywords,
+        highlights: normalizeHighlights(question.highlights, sources, answerLabel)
+      };
+    });
+  } else if (partKey === "teil-3") {
+    const situations = new Map((content.situations || []).map((item) => [String(item.id), item]));
+    const ads = new Map((content.ads || []).map((item) => [String(item.id), item]));
+    content.answers = (content.answers || []).map((answer) => {
+      const answerLabel = `situation ${answer.situationId}`;
+      const keywords = normalizeKeywords(answer.keywords, answerLabel);
+      const situation = String(situations.get(String(answer.situationId))?.text || "");
+      const ad = String(ads.get(String(answer.adId))?.text || "");
+      assertKeywordsBelongToSource(keywords, [situation, ad].filter(Boolean).join(" "), answerLabel);
+      return {
+        ...answer,
+        reason: normalizeReason(answer.reason, answerLabel),
+        keywords,
+        highlights: normalizeHighlights(answer.highlights, new Map([["situation", situation], ["ad", ad]]), answerLabel)
+      };
+    });
+  }
+
+  return content;
+}
+
+async function getEditorContext(payload) {
+  const requestedLevel = String(payload.level || "").trim().toLowerCase();
+  const partKey = assertPartKey(payload.partKey);
+  const { data: db, revision } = await getLesenSnapshot();
+  const levels = Object.keys(db?.levels || {});
+  const level = levels.includes(requestedLevel) ? requestedLevel : (levels[0] || requestedLevel);
+  const levelEntry = db?.levels?.[level] || null;
+  const themes = summarizeThemes(levelEntry);
+  const requestedTheme = String(payload.themeKey || "").trim();
+  const themeKey = themes.some((theme) => theme.key === requestedTheme)
+    ? requestedTheme
+    : (themes[0]?.key || "");
+  const theme = levelEntry?.themes?.[themeKey] || null;
+  const versions = summarizeVersions(theme);
+  const requestedVersion = String(payload.versionKey || "").trim();
+  const versionKey = versions.some((version) => version.key === requestedVersion)
+    ? requestedVersion
+    : (versions[0]?.key || "default");
+  const part = theme?.versions?.[versionKey]?.lesen?.parts?.[partKey] || null;
+
+  return {
+    revision,
+    levels,
+    themes,
+    versions,
+    selection: { level, themeKey, versionKey, partKey },
+    part: part ? clone(part) : null
   };
 }
 
@@ -306,36 +497,44 @@ async function updatePart(payload) {
     throw new AppError("content must be an object", 400);
   }
 
-  const db = await getLesenDb();
-  const levelEntry = db?.levels?.[level] || null;
-  if (!levelEntry) {
-    throw new AppError("Level not found", 404);
-  }
+  const normalizedContent = normalizeTeachingInsights(partKey, payload.content);
+  const mutation = await mutateJsonByKey("lesen", (db) => {
+    const levelEntry = db?.levels?.[level] || null;
+    if (!levelEntry) {
+      throw new AppError("Level not found", 404);
+    }
 
-  const theme = resolveTheme(levelEntry, themeKey);
-  const { versionKey, version } = resolveVersion(theme, versionKeyInput);
+    const theme = resolveTheme(levelEntry, themeKey);
+    const { versionKey, version } = resolveVersion(theme, versionKeyInput);
 
-  if (!version.lesen || typeof version.lesen !== "object") {
-    version.lesen = { partOrder: [...LESEN_PART_ORDER], parts: {} };
-  }
-  if (!version.lesen.parts || typeof version.lesen.parts !== "object") {
-    version.lesen.parts = {};
-  }
+    if (!version.lesen || typeof version.lesen !== "object") {
+      version.lesen = { partOrder: [...LESEN_PART_ORDER], parts: {} };
+    }
+    if (!version.lesen.parts || typeof version.lesen.parts !== "object") {
+      version.lesen.parts = {};
+    }
 
-  version.lesen.parts[partKey] = {
-    ...(version.lesen.parts[partKey] || {}),
-    meta: payload.meta,
-    content: payload.content
-  };
+    version.lesen.parts[partKey] = {
+      ...(version.lesen.parts[partKey] || {}),
+      meta: payload.meta,
+      content: normalizedContent
+    };
 
-  await writeJsonByKey("lesen", db);
+    return {
+      data: db,
+      result: {
+        level,
+        themeKey,
+        versionKey,
+        partKey,
+        part: clone(version.lesen.parts[partKey])
+      }
+    };
+  }, { expectedRevision: payload.revision });
 
   return {
-    level,
-    themeKey,
-    versionKey,
-    partKey,
-    part: version.lesen.parts[partKey]
+    ...mutation.result,
+    revision: mutation.revision
   };
 }
 
@@ -439,7 +638,9 @@ module.exports = {
   getTheme,
   listVersions,
   getPart,
+  getEditorContext,
   updatePart,
+  normalizeTeachingInsights,
   createTheme,
   updateTheme,
   deleteTheme

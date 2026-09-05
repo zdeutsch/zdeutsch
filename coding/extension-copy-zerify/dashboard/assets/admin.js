@@ -1,7 +1,12 @@
 (function managerBootstrap(window) {
   const API_BASE = "/api";
+  let repositorySyncPromise = null;
+  let repositoryStatusTimer = null;
+  let repositoryButton = null;
+  let repositoryCancelButton = null;
+  let repositoryDetail = null;
 
-  async function api(path, options = {}) {
+  async function request(path, options = {}) {
     const method = options.method || "GET";
     const headers = {
       "Content-Type": "application/json",
@@ -29,6 +34,190 @@
     }
 
     return payload.data;
+  }
+
+  function setRepositoryButtonState(state, data = {}) {
+    if (!repositoryButton || !repositoryDetail) {
+      return;
+    }
+
+    repositoryButton.className = "btn repository-sidebar-button w-100";
+    repositoryButton.disabled = false;
+    if (repositoryCancelButton) {
+      repositoryCancelButton.classList.toggle("d-none", state !== "pending");
+      repositoryCancelButton.disabled = state !== "pending";
+    }
+
+    if (state === "loading") {
+      repositoryButton.classList.add("btn-outline-secondary");
+      repositoryButton.disabled = true;
+      repositoryButton.innerHTML = '<span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span> Fetching changes...';
+      repositoryDetail.textContent = "Checking GitHub before edits are enabled.";
+      return;
+    }
+
+    if (state === "pending") {
+      const changeCount = Number(data.changeCount || 0);
+      const ahead = Number(data.ahead || 0);
+      repositoryButton.classList.add("is-pending");
+      repositoryButton.innerHTML = '<i class="bi bi-cloud-arrow-up me-1"></i> Push changes';
+      repositoryDetail.textContent = changeCount
+        ? `${changeCount} database file${changeCount === 1 ? "" : "s"} waiting to upload.`
+        : `${ahead} local commit${ahead === 1 ? "" : "s"} waiting to upload.`;
+      return;
+    }
+
+    if (state === "error") {
+      repositoryButton.classList.add("is-error");
+      repositoryButton.innerHTML = '<i class="bi bi-arrow-clockwise me-1"></i> Retry sync';
+      repositoryDetail.textContent = data.message || "Could not check the repository.";
+      return;
+    }
+
+    repositoryButton.classList.add("is-current");
+    repositoryButton.disabled = true;
+    repositoryButton.innerHTML = '<i class="bi bi-check2-circle me-1"></i> Everything uploaded';
+    repositoryDetail.textContent = "Repository data is up to date.";
+  }
+
+  function renderRepositoryStatus(status) {
+    const pending = Number(status?.changeCount || 0) > 0 || Number(status?.ahead || 0) > 0;
+    setRepositoryButtonState(pending ? "pending" : "current", status || {});
+  }
+
+  async function refreshRepositoryStatus() {
+    try {
+      const status = await request("/repository/status");
+      renderRepositoryStatus(status);
+      return status;
+    } catch (error) {
+      setRepositoryButtonState("error", { message: error.message });
+      return null;
+    }
+  }
+
+  async function syncRepository() {
+    setRepositoryButtonState("loading");
+    try {
+      const result = await request("/repository/sync", { method: "POST", body: {} });
+      renderRepositoryStatus(result?.status || {});
+      return { ready: true, result };
+    } catch (error) {
+      setRepositoryButtonState("error", { message: error.message });
+      return { ready: false, error };
+    }
+  }
+
+  function ensureRepositorySynced() {
+    if (!repositorySyncPromise) {
+      repositorySyncPromise = syncRepository();
+    }
+    return repositorySyncPromise;
+  }
+
+  async function publishRepositoryChanges() {
+    const confirmed = window.confirm("Commit and push all saved database changes to GitHub?");
+    if (!confirmed) {
+      return;
+    }
+
+    setRepositoryButtonState("loading");
+    if (repositoryButton) {
+      repositoryButton.innerHTML = '<span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span> Uploading changes...';
+    }
+
+    try {
+      const result = await request("/repository/publish", {
+        method: "POST",
+        body: { message: "Update exam data from dashboard" }
+      });
+      renderRepositoryStatus(result?.status || {});
+    } catch (error) {
+      setRepositoryButtonState("error", { message: error.message });
+      window.alert(`The changes could not be uploaded.\n\n${error.message}`);
+      await refreshRepositoryStatus();
+    }
+  }
+
+  async function discardRepositoryChanges() {
+    const confirmed = window.confirm(
+      "Permanently discard all unpushed database changes and restore the latest GitHub version?\n\nThis cannot be undone."
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    setRepositoryButtonState("loading");
+    if (repositoryButton) {
+      repositoryButton.innerHTML = '<span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span> Canceling changes...';
+    }
+
+    try {
+      const result = await request("/repository/discard", { method: "POST", body: {} });
+      renderRepositoryStatus(result?.status || {});
+      repositorySyncPromise = Promise.resolve({ ready: true, result });
+      window.location.reload();
+    } catch (error) {
+      window.alert(`The changes could not be canceled.\n\n${error.message}`);
+      await refreshRepositoryStatus();
+    }
+  }
+
+  function installRepositoryControl() {
+    const sidebar = document.querySelector(".manager-sidebar");
+    if (!sidebar) {
+      return;
+    }
+
+    const control = document.createElement("div");
+    control.className = "repository-sidebar-control";
+    control.innerHTML = `
+      <button class="btn btn-outline-secondary repository-sidebar-button w-100" type="button" disabled>
+        <span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span> Fetching changes...
+      </button>
+      <button class="btn btn-outline-danger repository-cancel-button w-100 mt-2 d-none" type="button" disabled>
+        <i class="bi bi-arrow-counterclockwise me-1"></i> Cancel changes
+      </button>
+      <small class="repository-sidebar-detail">Checking GitHub before edits are enabled.</small>
+    `;
+    sidebar.append(control);
+    repositoryButton = control.querySelector("button");
+    repositoryCancelButton = control.querySelector(".repository-cancel-button");
+    repositoryDetail = control.querySelector("small");
+
+    repositoryButton.addEventListener("click", async () => {
+      if (repositoryButton.classList.contains("is-pending")) {
+        await publishRepositoryChanges();
+        return;
+      }
+      repositorySyncPromise = null;
+      await ensureRepositorySynced();
+    });
+
+    repositoryCancelButton.addEventListener("click", discardRepositoryChanges);
+
+    ensureRepositorySynced();
+    repositoryStatusTimer = window.setInterval(refreshRepositoryStatus, 15000);
+    window.addEventListener("focus", refreshRepositoryStatus);
+    window.addEventListener("beforeunload", () => window.clearInterval(repositoryStatusTimer), { once: true });
+  }
+
+  async function api(path, options = {}) {
+    const method = options.method || "GET";
+    const isRepositoryRequest = path.startsWith("/repository/");
+    if (!isRepositoryRequest) {
+      const syncState = await ensureRepositorySynced();
+      const isMutation = !["GET", "HEAD", "OPTIONS"].includes(method.toUpperCase());
+      if (!syncState.ready && isMutation) {
+        throw new Error(`Repository sync must succeed before saving changes. ${syncState.error?.message || ""}`.trim());
+      }
+    }
+
+    const data = await request(path, options);
+    if (!isRepositoryRequest && !["GET", "HEAD", "OPTIONS"].includes(method.toUpperCase())) {
+      window.setTimeout(refreshRepositoryStatus, 150);
+    }
+    return data;
   }
 
   function showAlert(host, message, type = "success") {
@@ -146,6 +335,9 @@
     linesToArray,
     dateTime,
     escapeHtml,
-    createTableSearch
+    createTableSearch,
+    refreshRepositoryStatus
   };
+
+  installRepositoryControl();
 })(window);
