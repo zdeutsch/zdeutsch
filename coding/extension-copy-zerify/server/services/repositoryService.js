@@ -4,8 +4,8 @@ const AppError = require("../utils/appError");
 const { SITE_DIR } = require("../config/constants");
 
 const execFileAsync = promisify(execFile);
-const DATA_PATHSPEC = "database";
-const DEFAULT_COMMIT_MESSAGE = "Update exam data from dashboard";
+const MANAGED_PATHS = Object.freeze(["database", "assets/audio/horen"]);
+const DEFAULT_COMMIT_MESSAGE = "Update exam data and audio from dashboard";
 
 function cleanOutput(value) {
   return String(value || "").trim();
@@ -63,7 +63,7 @@ async function getRepositoryStatus() {
   const [branch, remote, statusOutput, lastCommitOutput, upstream] = await Promise.all([
     runGit(["branch", "--show-current"]),
     runGit(["remote", "get-url", "origin"], { allowFailure: true }),
-    runGit(["status", "--porcelain=v1", "--untracked-files=all", "--", DATA_PATHSPEC], { preserveLeadingWhitespace: true }),
+    runGit(["status", "--porcelain=v1", "--untracked-files=all", "--", ...MANAGED_PATHS], { preserveLeadingWhitespace: true }),
     runGit(["log", "-1", "--pretty=format:%h%x09%s%x09%cI"], { allowFailure: true }),
     runGit(["rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{upstream}"], { allowFailure: true })
   ]);
@@ -114,7 +114,7 @@ async function syncRepositoryData() {
     return {
       synced: true,
       updated: true,
-      message: "Remote database changes were downloaded.",
+      message: "Remote exam data and audio changes were downloaded.",
       status
     };
   }
@@ -131,7 +131,7 @@ async function syncRepositoryData() {
   return {
     synced: true,
     updated: false,
-    message: hasLocalWork ? "Local database changes are ready to publish." : "Repository data is up to date.",
+    message: hasLocalWork ? "Local exam data or audio changes are ready to publish." : "Repository data is up to date.",
     status
   };
 }
@@ -141,9 +141,11 @@ function normalizeCommitMessage(value) {
   return message || DEFAULT_COMMIT_MESSAGE;
 }
 
-function isDatabasePath(filePath) {
+function isManagedPath(filePath) {
   const normalized = String(filePath || "").replace(/\\/g, "/");
-  return normalized === DATA_PATHSPEC || normalized.startsWith(`${DATA_PATHSPEC}/`);
+  return MANAGED_PATHS.some((managedPath) => (
+    normalized === managedPath || normalized.startsWith(`${managedPath}/`)
+  ));
 }
 
 function outputPaths(output) {
@@ -164,23 +166,23 @@ async function discardRepositoryData() {
   if (!hasLocalWork) {
     return {
       discarded: false,
-      message: "There are no local database changes to cancel.",
+      message: "There are no local exam data or audio changes to cancel.",
       status
     };
   }
 
   const aheadPaths = outputPaths(await runGit(["log", "--format=", "--name-only", `${upstream}..HEAD`], { allowFailure: true }));
-  const unsafeAheadPaths = aheadPaths.filter((filePath) => !isDatabasePath(filePath));
+  const unsafeAheadPaths = aheadPaths.filter((filePath) => !isManagedPath(filePath));
   if (unsafeAheadPaths.length) {
     throw new AppError(
-      "Cancel was stopped because local commits also contain non-database files",
+      "Cancel was stopped because local commits also contain unmanaged files",
       409,
       unsafeAheadPaths
     );
   }
 
   const stagedPaths = outputPaths(await runGit(["diff", "--cached", "--name-only"]));
-  const unsafeStagedPaths = stagedPaths.filter((filePath) => !isDatabasePath(filePath));
+  const unsafeStagedPaths = stagedPaths.filter((filePath) => !isManagedPath(filePath));
   if (unsafeStagedPaths.length) {
     throw new AppError(
       "Cancel was stopped because unrelated files are staged",
@@ -192,12 +194,13 @@ async function discardRepositoryData() {
   if (Number(status.ahead || 0) > 0 || Number(status.behind || 0) > 0) {
     await runGit(["reset", "--mixed", upstream]);
   }
-  await runGit(["restore", `--source=${upstream}`, "--staged", "--worktree", "--", DATA_PATHSPEC]);
-  await runGit(["clean", "-fd", "--", DATA_PATHSPEC]);
+  await runGit(["restore", `--source=${upstream}`, "--staged", "--worktree", "--", "database"]);
+  await runGit(["restore", `--source=${upstream}`, "--staged", "--worktree", "--", "assets/audio/horen"], { allowFailure: true });
+  await runGit(["clean", "-fd", "--", ...MANAGED_PATHS]);
 
   return {
     discarded: true,
-    message: "Unpushed database changes were canceled.",
+    message: "Unpushed exam data and audio changes were canceled.",
     status: await getRepositoryStatus()
   };
 }
@@ -222,12 +225,13 @@ async function publishRepositoryData(commitMessage) {
   }
 
   await ensureCommitIdentity();
-  await runGit(["add", "--", DATA_PATHSPEC]);
+  await runGit(["add", "--", "database"]);
+  await runGit(["add", "-A", "--", "assets/audio/horen"], { allowFailure: true });
 
-  const stagedFiles = await runGit(["diff", "--cached", "--name-only", "--", DATA_PATHSPEC]);
+  const stagedFiles = await runGit(["diff", "--cached", "--name-only", "--", ...MANAGED_PATHS]);
   let committed = false;
   if (stagedFiles) {
-    await runGit(["commit", "-m", normalizeCommitMessage(commitMessage), "--", DATA_PATHSPEC]);
+    await runGit(["commit", "-m", normalizeCommitMessage(commitMessage), "--", ...outputPaths(stagedFiles)]);
     committed = true;
   }
 
@@ -235,7 +239,7 @@ async function publishRepositoryData(commitMessage) {
   if (!committed && Number(aheadBeforePull || 0) === 0) {
     return {
       published: false,
-      message: "There are no database changes to publish.",
+      message: "There are no exam data or audio changes to publish.",
       status: await getRepositoryStatus()
     };
   }

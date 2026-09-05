@@ -1,5 +1,5 @@
 (function initHorenPage() {
-  const { api, setActiveNav, showAlert, escapeHtml, createTableSearch } = window.ManagerApi;
+  const { api, uploadBinary, setActiveNav, showAlert, escapeHtml, createTableSearch } = window.ManagerApi;
   setActiveNav("horen");
 
   const alertHost = document.getElementById("alert-host");
@@ -15,6 +15,14 @@
   const topicIdInput = document.getElementById("topic-id");
   const topicTitleInput = document.getElementById("topic-title");
   const topicTagInput = document.getElementById("topic-tag");
+  const topicAudioInput = document.getElementById("topic-audio");
+  const uploadAudioBtn = document.getElementById("upload-audio-btn");
+  const removeAudioBtn = document.getElementById("remove-audio-btn");
+  const currentAudioPanel = document.getElementById("current-audio-panel");
+  const currentAudioPlayer = document.getElementById("current-audio-player");
+  const currentAudioDetails = document.getElementById("current-audio-details");
+  const audioStatusBadge = document.getElementById("audio-status-badge");
+  const audioUploadProgress = document.getElementById("audio-upload-progress");
   const statementsContainer = document.getElementById("statements-container");
 
   const addStatementBtn = document.getElementById("add-statement-btn");
@@ -24,7 +32,7 @@
   const applyTableSearch = createTableSearch({
     inputEl: topicsSearchInput,
     tbodyEl: topicsBody,
-    emptyColspan: 5,
+    emptyColspan: 6,
     emptyMessage: "No matching topics found"
   });
 
@@ -73,6 +81,42 @@
     return row;
   }
 
+  function formatBytes(value) {
+    const bytes = Number(value || 0);
+    if (!Number.isFinite(bytes) || bytes <= 0) {
+      return "";
+    }
+    if (bytes < 1024 * 1024) {
+      return `${Math.max(1, Math.round(bytes / 1024))} KB`;
+    }
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  }
+
+  function renderAudio(audio) {
+    const source = String(audio?.src || "");
+    const hasAudio = source.startsWith("assets/audio/horen/");
+    currentAudioPanel.classList.toggle("d-none", !hasAudio);
+    removeAudioBtn.classList.toggle("d-none", !hasAudio);
+    audioStatusBadge.className = `badge ${hasAudio ? "text-bg-success" : "text-bg-secondary"}`;
+    audioStatusBadge.textContent = hasAudio ? "Audio ready" : "No audio";
+
+    if (hasAudio) {
+      const previewPath = source.slice("assets/".length);
+      currentAudioPlayer.src = `/site-assets/${previewPath}?v=${encodeURIComponent(audio.uploadedAt || "1")}`;
+      const details = [audio.fileName || "Audio", formatBytes(audio.sizeBytes)].filter(Boolean);
+      currentAudioDetails.textContent = details.join(" · ");
+    } else {
+      currentAudioPlayer.removeAttribute("src");
+      currentAudioPlayer.load();
+      currentAudioDetails.textContent = "";
+    }
+  }
+
+  function syncAudioUploadButton() {
+    const hasFile = Boolean(topicAudioInput.files?.[0]);
+    uploadAudioBtn.disabled = !state.selectedTopicId || !hasFile;
+  }
+
   function syncStatementNumbers() {
     const rows = Array.from(statementsContainer.querySelectorAll(".statement-row"));
     rows.forEach((row, index) => {
@@ -90,6 +134,10 @@
     topicIdInput.value = "";
     topicTitleInput.value = "";
     topicTagInput.value = "";
+    topicAudioInput.value = "";
+    audioUploadProgress.textContent = "Save the topic before uploading audio.";
+    renderAudio(null);
+    syncAudioUploadButton();
     statementsContainer.innerHTML = "";
 
     for (let i = 0; i < 5; i += 1) {
@@ -104,6 +152,10 @@
     topicIdInput.value = topic.id || "";
     topicTitleInput.value = topic.title || "";
     topicTagInput.value = topic.tag || "";
+    topicAudioInput.value = "";
+    audioUploadProgress.textContent = "";
+    renderAudio(topic.audio);
+    syncAudioUploadButton();
 
     statementsContainer.innerHTML = "";
     const statements = Array.isArray(topic.statements) && topic.statements.length
@@ -117,7 +169,7 @@
 
   function renderTopics() {
     if (!state.topics.length) {
-      topicsBody.innerHTML = '<tr><td colspan="5" class="text-center text-secondary py-4">No topics in this part</td></tr>';
+      topicsBody.innerHTML = '<tr><td colspan="6" class="text-center text-secondary py-4">No topics in this part</td></tr>';
       return;
     }
 
@@ -127,6 +179,7 @@
           <td><code class="kbd-inline">${escapeHtml(topic.id)}</code></td>
           <td>${escapeHtml(topic.title || "")}</td>
           <td>${escapeHtml(topic.tag || "")}</td>
+          <td>${topic.audio?.src ? '<span class="badge text-bg-success">Ready</span>' : '<span class="badge text-bg-light">None</span>'}</td>
           <td>${topic.statementsCount || 0}</td>
           <td class="text-end">
             <button class="btn btn-sm ${state.selectedTopicId === topic.id ? "btn-primary" : "btn-outline-primary"}" type="button" data-topic-id="${escapeHtml(topic.id)}">
@@ -164,8 +217,8 @@
     });
   }
 
-  async function loadTopics() {
-    topicsBody.innerHTML = '<tr><td colspan="5" class="text-center text-secondary py-4">Loading...</td></tr>';
+  async function loadTopics(preferredTopicId = "") {
+    topicsBody.innerHTML = '<tr><td colspan="6" class="text-center text-secondary py-4">Loading...</td></tr>';
 
     const context = getContext();
     const query = new URLSearchParams({
@@ -186,11 +239,16 @@
         themeKeyInput.value = state.themeKey;
       }
 
+      const selectedTopic = state.topics.find((topic) => topic.id === preferredTopicId);
+      if (selectedTopic) {
+        fillForm(selectedTopic);
+      } else {
+        resetForm();
+      }
       renderTopics();
-      resetForm();
     } catch (error) {
       showAlert(alertHost, error.message, "error");
-      topicsBody.innerHTML = '<tr><td colspan="5" class="text-center text-danger py-4">Failed to load topics</td></tr>';
+      topicsBody.innerHTML = '<tr><td colspan="6" class="text-center text-danger py-4">Failed to load topics</td></tr>';
     }
   }
 
@@ -200,6 +258,72 @@
   });
 
   clearFormBtn.addEventListener("click", resetForm);
+
+  topicAudioInput.addEventListener("change", () => {
+    const file = topicAudioInput.files?.[0];
+    if (file && file.size > 50 * 1024 * 1024) {
+      topicAudioInput.value = "";
+      showAlert(alertHost, "Audio file is too large (maximum 50 MB)", "error");
+    }
+    syncAudioUploadButton();
+  });
+
+  uploadAudioBtn.addEventListener("click", async () => {
+    const file = topicAudioInput.files?.[0];
+    if (!state.selectedTopicId || !file) {
+      return;
+    }
+
+    const context = getContext();
+    const query = new URLSearchParams({ level: context.level, part: context.part });
+    if (context.themeKey) {
+      query.set("themeKey", context.themeKey);
+    }
+
+    uploadAudioBtn.disabled = true;
+    topicAudioInput.disabled = true;
+    audioUploadProgress.textContent = `Uploading ${file.name}…`;
+    try {
+      await uploadBinary(
+        `/horen/topics/${encodeURIComponent(state.selectedTopicId)}/audio?${query.toString()}`,
+        file,
+        { "X-Audio-File-Name": encodeURIComponent(file.name) }
+      );
+      showAlert(alertHost, "Audio uploaded successfully", "success");
+      await loadTopics(state.selectedTopicId);
+    } catch (error) {
+      audioUploadProgress.textContent = "Upload failed.";
+      showAlert(alertHost, error.message, "error");
+    } finally {
+      topicAudioInput.disabled = false;
+      syncAudioUploadButton();
+    }
+  });
+
+  removeAudioBtn.addEventListener("click", async () => {
+    if (!state.selectedTopicId || !window.confirm("Remove the audio from this Thema?")) {
+      return;
+    }
+    const context = getContext();
+    const query = new URLSearchParams({ level: context.level, part: context.part });
+    if (context.themeKey) {
+      query.set("themeKey", context.themeKey);
+    }
+    removeAudioBtn.disabled = true;
+    audioUploadProgress.textContent = "Removing audio…";
+    try {
+      await api(`/horen/topics/${encodeURIComponent(state.selectedTopicId)}/audio?${query.toString()}`, {
+        method: "DELETE"
+      });
+      showAlert(alertHost, "Audio removed", "success");
+      await loadTopics(state.selectedTopicId);
+    } catch (error) {
+      audioUploadProgress.textContent = "Could not remove audio.";
+      showAlert(alertHost, error.message, "error");
+    } finally {
+      removeAudioBtn.disabled = false;
+    }
+  });
 
   saveTopicBtn.addEventListener("click", async () => {
     const title = topicTitleInput.value.trim();
@@ -232,20 +356,21 @@
     }
 
     try {
+      let saved;
       if (state.selectedTopicId) {
-        await api(`/horen/topics/${encodeURIComponent(state.selectedTopicId)}`, {
+        saved = await api(`/horen/topics/${encodeURIComponent(state.selectedTopicId)}`, {
           method: "PUT",
           body
         });
       } else {
-        await api("/horen/topics", {
+        saved = await api("/horen/topics", {
           method: "POST",
           body
         });
       }
 
       showAlert(alertHost, "Topic saved successfully", "success");
-      await loadTopics();
+      await loadTopics(saved?.topic?.id || state.selectedTopicId);
     } catch (error) {
       showAlert(alertHost, error.message, "error");
     }
@@ -282,9 +407,9 @@
     }
   });
 
-  levelSelect.addEventListener("change", loadTopics);
-  partSelect.addEventListener("change", loadTopics);
-  refreshBtn.addEventListener("click", loadTopics);
+  levelSelect.addEventListener("change", () => loadTopics());
+  partSelect.addEventListener("change", () => loadTopics());
+  refreshBtn.addEventListener("click", () => loadTopics());
 
   resetForm();
   loadTopics();

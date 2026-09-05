@@ -36,6 +36,35 @@
     return payload.data;
   }
 
+  async function uploadBinary(path, file, headers = {}) {
+    const syncState = await ensureRepositorySynced();
+    if (!syncState.ready) {
+      throw new Error(`Repository sync must succeed before uploading audio. ${syncState.error?.message || ""}`.trim());
+    }
+
+    const response = await fetch(`${API_BASE}${path}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": file?.type || "application/octet-stream",
+        ...headers
+      },
+      body: file
+    });
+
+    let payload = null;
+    try {
+      payload = await response.json();
+    } catch (error) {
+      payload = null;
+    }
+
+    if (!response.ok || !payload?.ok) {
+      throw new Error(payload?.message || `Upload failed with status ${response.status}`);
+    }
+    window.setTimeout(refreshRepositoryStatus, 150);
+    return payload.data;
+  }
+
   function setRepositoryButtonState(state, data = {}) {
     if (!repositoryButton || !repositoryDetail) {
       return;
@@ -62,7 +91,7 @@
       repositoryButton.classList.add("is-pending");
       repositoryButton.innerHTML = '<i class="bi bi-cloud-arrow-up me-1"></i> Push changes';
       repositoryDetail.textContent = changeCount
-        ? `${changeCount} database file${changeCount === 1 ? "" : "s"} waiting to upload.`
+        ? `${changeCount} data or audio file${changeCount === 1 ? "" : "s"} waiting to upload.`
         : `${ahead} local commit${ahead === 1 ? "" : "s"} waiting to upload.`;
       return;
     }
@@ -116,7 +145,7 @@
   }
 
   async function publishRepositoryChanges() {
-    const confirmed = window.confirm("Commit and push all saved database changes to GitHub?");
+    const confirmed = window.confirm("Commit and push all saved exam data and Hören audio changes to GitHub?");
     if (!confirmed) {
       return;
     }
@@ -141,7 +170,7 @@
 
   async function discardRepositoryChanges() {
     const confirmed = window.confirm(
-      "Permanently discard all unpushed database changes and restore the latest GitHub version?\n\nThis cannot be undone."
+      "Permanently discard all unpushed exam data and Hören audio changes and restore the latest GitHub version?\n\nThis cannot be undone."
     );
     if (!confirmed) {
       return;
@@ -336,6 +365,7 @@
     dateTime,
     escapeHtml,
     createTableSearch,
+    uploadBinary,
     refreshRepositoryStatus
   };
 

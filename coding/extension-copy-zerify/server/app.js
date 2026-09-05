@@ -3,7 +3,7 @@ const path = require("path");
 const apiRoutes = require("./routes/api");
 const notFound = require("./middleware/notFound");
 const errorHandler = require("./middleware/errorHandler");
-const { DASHBOARD_DIR, DASHBOARD_DIST_DIR } = require("./config/constants");
+const { DASHBOARD_DIR, DASHBOARD_DIST_DIR, SITE_DIR } = require("./config/constants");
 
 const app = express();
 
@@ -18,6 +18,13 @@ app.use("/api", (req, res, next) => {
 });
 
 app.use("/api", apiRoutes);
+
+app.use("/site-assets", express.static(path.join(SITE_DIR, "assets"), {
+  immutable: true,
+  maxAge: "1y",
+  index: false,
+  redirect: false
+}));
 
 app.get("/dashboard/index.html", (req, res) => res.redirect(302, "/dashboard"));
 app.get("/dashboard/lesen.html", (req, res) => res.redirect(302, "/dashboard/lesen"));
