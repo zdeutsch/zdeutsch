@@ -367,6 +367,10 @@ function normalizeHighlights(value, sources, answerLabel) {
     if (!text.trim() || text.length > 1000) {
       throw new AppError(`A highlight for ${answerLabel} is empty or too long`, 400);
     }
+    const suppliedText = String(item?.text || "");
+    if (suppliedText && suppliedText !== text) {
+      throw new AppError(`A highlight for ${answerLabel} no longer matches its source text`, 400, { answer: answerLabel, highlight: item });
+    }
     return { source, start, end, text };
   }).sort((left, right) => left.source.localeCompare(right.source) || left.start - right.start);
 

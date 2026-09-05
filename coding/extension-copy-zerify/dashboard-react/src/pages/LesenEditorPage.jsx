@@ -34,22 +34,22 @@ function prepareContent(partKey, raw) {
   const content = copy(raw || {});
   if (partKey === "teil-1") {
     content.instruction = String(content.instruction || "").trim();
-    content.texts = (content.texts || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text).trim(), translated: String(item.translated || "").trim() }));
-    content.headlines = (content.headlines || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text).trim(), translated: String(item.translated || "").trim() }));
+    content.texts = (content.texts || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
+    content.headlines = (content.headlines || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
     content.answers = (content.answers || []).filter((item) => String(item.textId ?? "").trim() && String(item.headlineId ?? "").trim()).map((item) => ({ ...item, textId: cleanId(item.textId), headlineId: cleanId(item.headlineId), reason: String(item.reason || "").trim(), highlights: cleanHighlights(item.highlights) }));
   } else if (partKey === "teil-2") {
-    const paragraphs = (content.passage?.paragraphs || []).map((item) => String(item).trim()).filter(Boolean);
+    const paragraphs = (content.passage?.paragraphs || []).map((item) => String(item)).filter((item) => item.trim());
     const translated = (content.passage?.translated || []).map((item) => String(item).trim()).filter(Boolean);
     content.instruction = String(content.instruction || "").trim();
-    content.passage = { ...content.passage, title: String(content.passage?.title || "").trim(), text: paragraphs.join("\n\n"), paragraphs, translated };
+    content.passage = { ...content.passage, title: String(content.passage?.title || ""), text: paragraphs.join("\n\n"), paragraphs, translated };
     content.questions = (content.questions || []).filter((question) => String(question.id ?? "").trim() && String(question.prompt || "").trim()).map((question) => {
-      const options = (question.options || []).filter((option) => String(option.text || "").trim()).map((option) => ({ ...option, id: String(option.id || "").toLowerCase(), text: String(option.text).trim() }));
+      const options = (question.options || []).filter((option) => String(option.text || "").trim()).map((option) => ({ ...option, id: String(option.id || "").toLowerCase(), text: String(option.text) }));
       const answerId = String(question.answerId || options[0]?.id || "a").toLowerCase();
-      return { ...question, id: cleanId(question.id), prompt: String(question.prompt).trim(), options, answerId, answerText: options.find((option) => option.id === answerId)?.text || "", reason: String(question.reason || "").trim(), highlights: cleanHighlights(question.highlights) };
+      return { ...question, id: cleanId(question.id), prompt: String(question.prompt), options, answerId, answerText: options.find((option) => option.id === answerId)?.text || "", reason: String(question.reason || "").trim(), highlights: cleanHighlights(question.highlights) };
     });
   } else if (partKey === "teil-3") {
-    content.situations = (content.situations || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text).trim(), translated: String(item.translated || "").trim() }));
-    content.ads = (content.ads || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text).trim(), translated: String(item.translated || "").trim() }));
+    content.situations = (content.situations || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
+    content.ads = (content.ads || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
     content.answers = (content.answers || []).filter((item) => String(item.situationId ?? "").trim() && String(item.adId ?? "").trim()).map((item) => ({ ...item, situationId: cleanId(item.situationId), adId: cleanId(item.adId), reason: String(item.reason || "").trim(), highlights: cleanHighlights(item.highlights) }));
   }
   return content;

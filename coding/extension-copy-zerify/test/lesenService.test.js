@@ -20,7 +20,7 @@ test("Teil 1 preserves an exact multi-word highlight range", () => {
   const content = normalizeTeachingInsights("teil-1", {
     texts: [{ id: 1, text }],
     headlines: [{ id: "A", text: "Gesund zur Arbeit" }],
-    answers: [{ textId: 1, headlineId: "A", highlights: [{ source: "text", start, end: start + phrase.length, text: "ignored client value" }] }]
+    answers: [{ textId: 1, headlineId: "A", highlights: [{ source: "text", start, end: start + phrase.length, text: phrase }] }]
   });
 
   assert.deepEqual(content.answers[0].highlights, [{ source: "text", start, end: start + phrase.length, text: phrase }]);
@@ -62,6 +62,12 @@ test("rejects stale and overlapping position highlights", () => {
     ads: [{ id: "A", text: "Freizeitpark für Kinder" }],
     answers: [{ situationId: 11, adId: "A", highlights: [{ source: "ad", start: 0, end: 999 }] }]
   }), (error) => error.statusCode === 400 && /invalid highlight range/.test(error.message));
+
+  assert.throws(() => normalizeTeachingInsights("teil-3", {
+    situations: [{ id: 11, text: "Eine Familie sucht einen Ausflug." }],
+    ads: [{ id: "A", text: "Freizeitpark für Kinder" }],
+    answers: [{ situationId: 11, adId: "A", highlights: [{ source: "ad", start: 0, end: 12, text: "alter Inhalt" }] }]
+  }), (error) => error.statusCode === 400 && /no longer matches/.test(error.message));
 });
 
 test("editor context resolves a complete default selection in one read", async () => {
