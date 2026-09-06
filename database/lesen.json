@@ -21635,7 +21635,7 @@
                         },
                         {
                           "situationId": 20,
-                          "adId": "X"
+                          "adId": "G"
                         }
                       ]
                     }
@@ -36616,11 +36616,11 @@
                         },
                         {
                           "situationId": 13,
-                          "adId": "J"
+                          "adId": "X"
                         },
                         {
                           "situationId": 14,
-                          "adId": "X"
+                          "adId": "J"
                         },
                         {
                           "situationId": 15,
@@ -36636,7 +36636,7 @@
                         },
                         {
                           "situationId": 18,
-                          "adId": "G"
+                          "adId": "X"
                         },
                         {
                           "situationId": 19,
@@ -43894,8 +43894,8 @@
                               "text": "alle für die Schüler wichtigen Sachen auf dieser Seite genauso passieren , als wäre es in der eigenen Schule ."
                             }
                           ],
-                          "answerId": "c",
-                          "answerText": "alle für die Schüler wichtigen Sachen auf dieser Seite genauso passieren , als wäre es in der eigenen Schule ."
+                          "answerId": "b",
+                          "answerText": "sie eine Internetseite gegründet haben , die ihrem Schulhof ähnlich ist."
                         },
                         {
                           "id": 9,
@@ -51624,7 +51624,7 @@
                         },
                         {
                           "situationId": 19,
-                          "adId": "A"
+                          "adId": "I"
                         },
                         {
                           "situationId": 20,
@@ -56331,7 +56331,7 @@
                         },
                         {
                           "id": 24,
-                          "answer": "zwar"
+                          "answer": "zwar … aber"
                         },
                         {
                           "id": 24,
@@ -56694,7 +56694,10 @@
                             }
                           ],
                           "answerId": "a",
-                          "answerText": "kommunikativ­er."
+                          "answerText": "kommunikativ­er.",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
                         },
                         {
                           "id": 7,
@@ -56714,7 +56717,10 @@
                             }
                           ],
                           "answerId": "a",
-                          "answerText": "das Kind einen emotionalen Bezug zur Sprache hat."
+                          "answerText": "das Kind einen emotionalen Bezug zur Sprache hat.",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
                         },
                         {
                           "id": 8,
@@ -56733,8 +56739,30 @@
                               "text": "sollte im Kindergarten mit der Sprachvermittlung begonnen werden."
                             }
                           ],
-                          "answerId": "c",
-                          "answerText": "sollte im Kindergarten mit der Sprachvermittlung begonnen werden."
+                          "answerId": "b",
+                          "answerText": "reicht es, im Grundschulalter mit der Zweitsprache zu beginnen.",
+                          "reason": "Lösung b passt, weil die Chancen für zweisprachigen Spracherwerb laut Text ungefähr bis zum zehnten Lebensjahr sehr gut sind: Ein Beginn im Grundschulalter ist also noch möglich. Alternative a fordert dagegen einen möglichst frühen Beginn, obwohl der Kontakt ausdrücklich nicht schon im Babyalter erfolgen muss. Der Kindergartenbeginn in c wird zwar als Möglichkeit genannt, aber nicht als empfohlener Zeitpunkt dargestellt.",
+                          "highlights": [
+                            {
+                              "source": "passage:3",
+                              "start": 0,
+                              "end": 125,
+                              "text": "Der Kontakt mit einer zweiten oder dritten Sprache muss nach Auffassung von Hilt nicht unbedingt schon im Babyalter erfolgen."
+                            },
+                            {
+                              "source": "passage:3",
+                              "start": 126,
+                              "end": 208,
+                              "text": "Man kann mit der mehrsprachigen Erziehung auch erst im Kindergartenalter beginnen."
+                            },
+                            {
+                              "source": "passage:3",
+                              "start": 334,
+                              "end": 400,
+                              "text": "Aber ungefähr bis zum zehnten Lebensjahr sind die Chancen sehr gut"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 9,
@@ -56753,8 +56781,36 @@
                               "text": "wahrscheinlich nicht."
                             }
                           ],
-                          "answerId": "a",
-                          "answerText": "bei systematischer Vermittlung der Sprache."
+                          "answerId": "b",
+                          "answerText": "sofern es versteht, wann die Sprachen gewechselt werden.",
+                          "reason": "Lösung b passt, weil der Sprachwechsel für das Kind einer erkennbaren Regel folgen soll: Die Mutter spricht beispielsweise zu Hause Kroatisch und unterwegs Deutsch. Entscheidend ist also, dass das Kind nachvollziehen kann, wann welche Sprache verwendet wird. Alternative a verwechselt diese Regelmäßigkeit mit systematischer Sprachvermittlung; ausdrückliches Nachsprechen und Vokabellernen werden im Text nicht empfohlen. Alternative c passt nicht, weil der beschriebene Wechsel ausdrücklich als sinnvolle Möglichkeit gilt.",
+                          "highlights": [
+                            {
+                              "source": "passage:4",
+                              "start": 612,
+                              "end": 721,
+                              "text": "Es bringt nichts, wenn man zu Kindern sagt ‘Wiederhol das mal’ oder ‘Schau, Stuhl/ heißt auf Englisch chair’."
+                            },
+                            {
+                              "source": "passage:5",
+                              "start": 0,
+                              "end": 52,
+                              "text": "Susanne Hilt hält auch andere Methoden für sinnvoll."
+                            },
+                            {
+                              "source": "passage:5",
+                              "start": 123,
+                              "end": 262,
+                              "text": "Es sei auch denkbar, dass beispielsweise die kroatische Mutter mit ihrem Kind zu Hause immer nur Kroatisch spreche, unterwegs aber Deutsch."
+                            },
+                            {
+                              "source": "passage:5",
+                              "start": 264,
+                              "end": 347,
+                              "text": "Wichtig ist, dass eine Regelmäßigkeit für das Kind und für die Eltern erkennbar ist"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 10,
@@ -56774,7 +56830,10 @@
                             }
                           ],
                           "answerId": "c",
-                          "answerText": "schadet dies der Entwicklung der Zweitsprache nicht."
+                          "answerText": "schadet dies der Entwicklung der Zweitsprache nicht.",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
                         }
                       ]
                     }
@@ -78507,7 +78566,7 @@
                         },
                         {
                           "id": 29,
-                          "answer": "totalem"
+                          "answer": "totalen"
                         },
                         {
                           "id": 30,
