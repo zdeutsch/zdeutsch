@@ -80539,10 +80539,29 @@
                         },
                         {
                           "textId": 2,
-                          "headlineId": "F",
-                          "reason": "",
+                          "headlineId": "C",
+                          "reason": "C passt, weil sowohl stabile Bahnpreise als auch günstigere Nahverkehrstickets mehr Menschen zum Umstieg vom Auto auf öffentliche Verkehrsmittel bewegen sollen. Die Überschrift fasst damit beide Maßnahmen und ihr gemeinsames Ziel zusammen. F erfasst nur die Bahnpreise, I nur die Preissenkungen im Nahverkehr; bei der Bahn bleiben die Preise dagegen unverändert.",
                           "keywords": [],
-                          "highlights": []
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 53,
+                              "text": "Die Bahn erhöht dieses Jahr die Ticketipreise nicht."
+                            },
+                            {
+                              "source": "text",
+                              "start": 54,
+                              "end": 131,
+                              "text": "Dies soll die Bahn attraktiver machen, sodass mehr Menschen die Züge nutzen."
+                            },
+                            {
+                              "source": "text",
+                              "start": 258,
+                              "end": 402,
+                              "text": "Günstiger werden außerdem die Tickets im öffentlichen Nahverkehr, weil dann nicht mehr so viele Berufstätige mit. dem Auto zur Arbeit fahren."
+                            }
+                          ]
                         },
                         {
                           "textId": 3,
