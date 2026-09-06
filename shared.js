@@ -110,7 +110,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-09-05-horen-audio-v19";
+const SITE_DATA_VERSION = "2026-09-06-mundlich-b2-v20";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {

@@ -40,6 +40,12 @@
         "name": "Schreiben",
         "file": "shreiben.json",
         "description": "Bearbeiten Sie strukturierte Schreibaufgaben mit Leitpunkten."
+      },
+      {
+        "module": "mundlich",
+        "name": "Mündlich",
+        "file": "mundlich.json",
+        "description": "Diskutieren und gemeinsam planen mit prüfungsnahen B2-Themen."
       }
     ]
   }
