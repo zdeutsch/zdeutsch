@@ -1,12 +1,28 @@
 import { useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { ChevronDown, Eye, Highlighter, Plus, RefreshCw, Save, Sparkles, Trash2 } from "lucide-react";
+import { BrainCircuit, ChevronDown, Eye, Highlighter, Plus, RefreshCw, Save, Sparkles, Trash2 } from "lucide-react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { apiRequest, mutationRequest, toQuery } from "../api/client";
 import { AddButton, EmptyState, Field, LoadingState, Notice, PageHeader, RemoveButton, Section } from "../components/UI";
+import { getStoredAiModel, resolveAiModel, storeAiModel } from "../utils/aiModels.mjs";
+import { buildCorrectionCandidates } from "../utils/lesenAi.mjs";
 
-const supportedParts = ["teil-1", "teil-2", "teil-3"];
-const partLabels = { "teil-1": "Lesen Teil 1", "teil-2": "Lesen Teil 2", "teil-3": "Lesen Teil 3" };
+const supportedParts = ["teil-1", "teil-2", "teil-3", "sprachbausteine-1", "sprachbausteine-2"];
+const partLabels = {
+  "teil-1": "Lesen Teil 1",
+  "teil-2": "Lesen Teil 2",
+  "teil-3": "Lesen Teil 3",
+  "sprachbausteine-1": "Sprachbausteine Teil 1",
+  "sprachbausteine-2": "Sprachbausteine Teil 2"
+};
+const shortPartLabels = {
+  "teil-1": "Lesen 1",
+  "teil-2": "Lesen 2",
+  "teil-3": "Lesen 3",
+  "sprachbausteine-1": "Sprach 1",
+  "sprachbausteine-2": "Sprach 2"
+};
+const verdictLabels = { correct: "Richtig", incorrect: "Falsch", uncertain: "Unsicher" };
 
 function copy(value) {
   return typeof structuredClone === "function" ? structuredClone(value) : JSON.parse(JSON.stringify(value));
@@ -51,6 +67,20 @@ function prepareContent(partKey, raw) {
     content.situations = (content.situations || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
     content.ads = (content.ads || []).filter((item) => String(item.id ?? "").trim() && String(item.text || "").trim()).map((item) => ({ ...item, id: cleanId(item.id), text: String(item.text), translated: String(item.translated || "").trim() }));
     content.answers = (content.answers || []).filter((item) => String(item.situationId ?? "").trim() && String(item.adId ?? "").trim()).map((item) => ({ ...item, situationId: cleanId(item.situationId), adId: cleanId(item.adId), reason: String(item.reason || "").trim(), highlights: cleanHighlights(item.highlights) }));
+  } else if (partKey === "sprachbausteine-1") {
+    content.title = String(content.title || "").trim();
+    content.instruction = String(content.instruction || "").trim();
+    content.text = String(content.text || "").trim();
+    content.translated = String(content.translated || "").trim();
+    content.blanks = (content.blanks || []).filter((item) => String(item.id ?? "").trim()).map((item) => ({ id: cleanId(item.id), options: Array.isArray(item.options) ? item.options.map((option) => String(option).trim()).filter(Boolean) : [] }));
+    content.answers = (content.answers || []).filter((item) => String(item.id ?? "").trim() && String(item.answer || "").trim()).map((item) => ({ id: cleanId(item.id), answer: String(item.answer).trim() }));
+  } else if (partKey === "sprachbausteine-2") {
+    content.title = String(content.title || "").trim();
+    content.instruction = String(content.instruction || "").trim();
+    content.text = String(content.text || "").trim();
+    content.translated = String(content.translated || "").trim();
+    content.options = (content.options || []).map((option) => String(option).trim()).filter(Boolean);
+    content.answers = (content.answers || []).filter((item) => String(item.id ?? "").trim() && String(item.answer || "").trim()).map((item) => ({ id: cleanId(item.id), answer: String(item.answer).trim() }));
   }
   return content;
 }
@@ -120,14 +150,14 @@ function HighlightPicker({ sources = [], value = [], onChange }) {
     <div className="keyword-picker">
       <div className="keyword-picker__top">
         <div>
-          <span className="field__label">Highlighted evidence</span>
-          <span className="field__hint">Select any word or phrase below, then click Highlight. Select the same range again to remove it.</span>
+          <span className="field__label">Markierte Textbelege</span>
+          <span className="field__hint">Wählen Sie unten ein Wort oder eine Textstelle aus und markieren Sie diese als Beleg.</span>
         </div>
         <button className={`button button--small ${selection ? "button--keyword" : "button--subtle"}`} type="button" disabled={!selection} onMouseDown={(event) => event.preventDefault()} onClick={toggleSelection}>
-          <Highlighter size={15} /> {exactMatch ? "Remove highlight" : "Highlight selection"}
+          <Highlighter size={15} /> {exactMatch ? "Markierung entfernen" : "Auswahl markieren"}
         </button>
       </div>
-      {highlights.length > 0 && <div className="keyword-chips">{highlights.map((item) => <button type="button" key={`${item.source}-${item.start}-${item.end}`} onClick={() => removeHighlight(item)} title="Remove highlight"><span>{sources.find((source) => source.key === item.source)?.label || item.source}:</span> {item.text}<b>×</b></button>)}</div>}
+      {highlights.length > 0 && <div className="keyword-chips">{highlights.map((item) => <button type="button" key={`${item.source}-${item.start}-${item.end}`} onClick={() => removeHighlight(item)} title="Markierung entfernen"><span>{sources.find((source) => source.key === item.source)?.label || item.source}:</span> {item.text}<b>×</b></button>)}</div>}
       <div className="highlight-sources">
         {sources.filter((source) => source.text).map((source) => (
           <div className="highlight-source" key={source.key}>
@@ -137,19 +167,20 @@ function HighlightPicker({ sources = [], value = [], onChange }) {
             </div>
           </div>
         ))}
-        {!sources.some((source) => source.text) && <span className="muted">Add the source text first.</span>}
+        {!sources.some((source) => source.text) && <span className="muted">Fügen Sie zuerst den Ausgangstext hinzu.</span>}
       </div>
-      {selection && <div className="selection-status">Selected from {sources.find((source) => source.key === selection.source)?.label || selection.source}: “{selection.text}”</div>}
+      {selection && <div className="selection-status">Ausgewählt aus {sources.find((source) => source.key === selection.source)?.label || selection.source}: „{selection.text}“</div>}
     </div>
   );
 }
 
-function useAnswerAnalysis(partKey, content) {
+function useAnswerAnalysis(partKey, content, model) {
   const [activeTarget, setActiveTarget] = useState(null);
   const [reviews, setReviews] = useState({});
   const mutation = useMutation({
-    mutationFn: (targetId) => apiRequest("/lesen/analyze-answer", { method: "POST", body: { partKey, targetId, content } })
+    mutationFn: (targetId) => apiRequest("/lesen/analyze-answer", { method: "POST", body: { partKey, targetId, content, model } })
   });
+  useEffect(() => setReviews({}), [model, partKey]);
   const analyze = (targetId, onSuccess) => {
     const key = String(targetId);
     setActiveTarget(key);
@@ -164,6 +195,33 @@ function useAnswerAnalysis(partKey, content) {
   };
 }
 
+function CorrectionCheckResults({ result }) {
+  if (!result) return null;
+  return (
+    <section className="correction-check-results" aria-label="Ergebnis der KI-Korrekturprüfung">
+      <div className="correction-check-results__header">
+        <div><Sparkles size={17} /><span><strong>KI-Prüfergebnis</strong><small>{result.evaluations.length} Korrekturen mit {result.model} geprüft</small></span></div>
+        <time dateTime={result.checkedAt}>{new Intl.DateTimeFormat("de-DE", { timeStyle: "short" }).format(new Date(result.checkedAt))}</time>
+      </div>
+      <div className="correction-check-results__list">
+        {result.evaluations.map((evaluation) => (
+          <article className={`correction-check-item correction-check-item--${evaluation.verdict}`} key={evaluation.itemNumber}>
+            <div className="correction-check-item__top">
+              <strong>Aufgabe {evaluation.itemNumber}</strong>
+              <span className={`ai-confidence ai-confidence--${evaluation.verdict}`}><span>{verdictLabels[evaluation.verdict] || "Unsicher"}</span><strong>{evaluation.confidence}%</strong></span>
+            </div>
+            <p>Gespeicherte Korrektur: <strong>{evaluation.candidateAnswer}</strong></p>
+            {evaluation.verdict === "incorrect" && evaluation.recommendedAnswer && <p className="correction-check-item__suggestion">Empfohlene Lösung: <strong>{evaluation.recommendedAnswer}</strong></p>}
+            <small>{evaluation.reason}</small>
+            {evaluation.evidence && <small>Beleg: {evaluation.evidence}</small>}
+          </article>
+        ))}
+      </div>
+      {result.overallNote && <p className="correction-check-results__note">{result.overallNote}</p>}
+    </section>
+  );
+}
+
 function AnswerInsight({ title, subtitle, sources, reason, highlights, aiReview, onReason, onHighlights, onAnalyze, analyzing, analysisError, mapping }) {
   return (
     <article className="insight-card">
@@ -176,14 +234,14 @@ function AnswerInsight({ title, subtitle, sources, reason, highlights, aiReview,
       </div>
       {analysisError && <div className="ai-review-error">{analysisError.message}</div>}
       {aiReview && (
-        <div className="ai-review" aria-label="AI analysis visible to admins only">
+        <div className="ai-review" aria-label="KI-Analyse nur für die Verwaltung">
           <div className="ai-review__score"><strong>{aiReview.score}</strong><span>/100</span></div>
           <div><div className="ai-review__meta"><span>Nur Admin</span><code>{aiReview.model}</code></div>{aiReview.alternativeAssessment && <p>{aiReview.alternativeAssessment}</p>}</div>
         </div>
       )}
       {mapping && <div className="mapping-grid">{mapping}</div>}
-      <Field label="Why is this the correct answer?" hint="Students will see this explanation after submitting the part.">
-        <textarea rows="3" value={reason || ""} onChange={(event) => onReason(event.target.value)} placeholder="Explain the relationship between the question and the answer…" />
+      <Field label="Warum ist diese Antwort richtig?" hint="Lernende sehen diese Erklärung nach dem Absenden des Prüfungsteils.">
+        <textarea rows="3" value={reason || ""} onChange={(event) => onReason(event.target.value)} placeholder="Zusammenhang zwischen Aufgabe und Lösung erklären…" />
       </Field>
       <HighlightPicker sources={sources} value={highlights || []} onChange={onHighlights} />
     </article>
@@ -198,35 +256,35 @@ function ItemCollection({ title, description, items, onChange, emptyItem, addLab
       <div className="item-list">
         {items.map((item, index) => (
           <article className="item-editor" key={`${item.id ?? "new"}-${index}`}>
-            <div className="item-editor__top"><span>#{item.id || index + 1}</span><RemoveButton onClick={() => remove(index)} /></div>
+            <div className="item-editor__top"><span>#{item.id || index + 1}</span><RemoveButton label="Eintrag entfernen" onClick={() => remove(index)} /></div>
             <div className="form-grid">{fields(item, index, (patch) => update(index, patch))}</div>
           </article>
         ))}
-        {!items.length && <EmptyState title={`No ${title.toLocaleLowerCase()} yet`} description={`Use “${addLabel}” to create the first one.`} />}
+        {!items.length && <EmptyState title={`Noch keine Einträge: ${title}`} description={`Mit „${addLabel}“ legen Sie den ersten Eintrag an.`} />}
       </div>
     </Section>
   );
 }
 
-function TeilOneEditor({ content, onChange }) {
+function TeilOneEditor({ content, onChange, aiModel }) {
   const set = (key, value) => onChange({ ...content, [key]: value });
   const texts = content.texts || [];
   const headlines = content.headlines || [];
   const answers = content.answers || [];
-  const ai = useAnswerAnalysis("teil-1", content);
+  const ai = useAnswerAnalysis("teil-1", content, aiModel);
   const updateAnswer = (index, patch) => set("answers", answers.map((answer, answerIndex) => answerIndex === index ? { ...answer, ...patch } : answer));
 
   return (
     <>
-      <Section title="Instructions" description="The task shown above the reading texts."><Field label="Student instruction"><textarea rows="3" value={content.instruction || ""} onChange={(event) => set("instruction", event.target.value)} /></Field></Section>
-      <ItemCollection title="Reading texts" description="The five texts students match to headlines." items={texts} onChange={(items) => set("texts", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Add text" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="German text" className="field--wide"><textarea rows="5" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabic translation" className="field--wide"><textarea rows="5" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
-      <ItemCollection title="Headlines" description="Headline options used by students." items={headlines} onChange={(items) => set("headlines", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Add headline" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="German headline"><input value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabic translation"><input dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
-      <Section title="Answers & teaching insights" description="Map every text to a headline, explain the answer, and mark the decisive phrases." action={<AddButton onClick={() => set("answers", [...answers, { textId: texts[answers.length]?.id || "", headlineId: "", reason: "", highlights: [] }])}>Add answer</AddButton>}>
+      <Section title="Arbeitsanweisung" description="Diese Anweisung steht über den Lesetexten."><Field label="Anweisung für Lernende"><textarea rows="3" value={content.instruction || ""} onChange={(event) => set("instruction", event.target.value)} /></Field></Section>
+      <ItemCollection title="Lesetexte" description="Die fünf Texte werden passenden Überschriften zugeordnet." items={texts} onChange={(items) => set("texts", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Text hinzufügen" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Deutscher Text" className="field--wide"><textarea rows="5" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabische Übersetzung" className="field--wide"><textarea rows="5" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
+      <ItemCollection title="Überschriften" description="Die Auswahlmöglichkeiten für die Zuordnung." items={headlines} onChange={(items) => set("headlines", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Überschrift hinzufügen" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Deutsche Überschrift"><input value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabische Übersetzung"><input dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
+      <Section title="Lösungen und Lernhinweise" description="Ordnen Sie jeden Text zu, erklären Sie die Lösung und markieren Sie entscheidende Textstellen." action={<AddButton onClick={() => set("answers", [...answers, { textId: texts[answers.length]?.id || "", headlineId: "", reason: "", highlights: [] }])}>Lösung hinzufügen</AddButton>}>
         <div className="insight-list">
           {answers.map((answer, index) => {
             const text = texts.find((item) => sameId(item.id, answer.textId));
             const headline = headlines.find((item) => sameId(item.id, answer.headlineId));
-            return <AnswerInsight key={`${answer.textId}-${index}`} title={`Text ${answer.textId || index + 1}`} subtitle={headline?.text || "Choose the matching headline"} sources={[{ key: "text", label: `Text ${answer.textId}`, text: text?.text || "" }, { key: "headline", label: `Headline ${answer.headlineId}`, text: headline?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.textId)} onReason={(reason) => { ai.clearReview(answer.textId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.textId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.textId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.textId)} analysisError={ai.errorFor(answer.textId)} mapping={<><Field label="Text"><select value={answer.textId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { textId: event.target.value, highlights: [] }); }}><option value="">Select text</option>{texts.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 55)}</option>)}</select></Field><Field label="Correct headline"><select value={answer.headlineId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { headlineId: event.target.value, highlights: [] }); }}><option value="">Select headline</option>{headlines.map((item) => <option key={item.id} value={item.id}>{item.id} — {item.text}</option>)}</select></Field><RemoveButton label="Remove answer" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
+            return <AnswerInsight key={`${answer.textId}-${index}`} title={`Text ${answer.textId || index + 1}`} subtitle={headline?.text || "Passende Überschrift auswählen"} sources={[{ key: "text", label: `Text ${answer.textId}`, text: text?.text || "" }, { key: "headline", label: `Überschrift ${answer.headlineId}`, text: headline?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.textId)} onReason={(reason) => { ai.clearReview(answer.textId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.textId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.textId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.textId)} analysisError={ai.errorFor(answer.textId)} mapping={<><Field label="Text"><select value={answer.textId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { textId: event.target.value, highlights: [] }); }}><option value="">Text auswählen</option>{texts.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 55)}</option>)}</select></Field><Field label="Richtige Überschrift"><select value={answer.headlineId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { headlineId: event.target.value, highlights: [] }); }}><option value="">Überschrift auswählen</option>{headlines.map((item) => <option key={item.id} value={item.id}>{item.id} — {item.text}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
           })}
         </div>
       </Section>
@@ -239,61 +297,92 @@ function normalizedOptions(question) {
   return ["a", "b", "c"].map((id) => existing.get(id) || { id, text: "" });
 }
 
-function TeilTwoEditor({ content, onChange }) {
+function TeilTwoEditor({ content, onChange, aiModel }) {
   const set = (key, value) => onChange({ ...content, [key]: value });
   const passage = content.passage || { title: "", paragraphs: [], translated: [] };
   const questions = content.questions || [];
-  const ai = useAnswerAnalysis("teil-2", content);
+  const ai = useAnswerAnalysis("teil-2", content, aiModel);
   const passageSources = [
-    { key: "passage-title", label: "Passage title", text: passage.title || "" },
-    ...(passage.paragraphs || []).map((text, index) => ({ key: `passage:${index}`, label: `Passage paragraph ${index + 1}`, text }))
+    { key: "passage-title", label: "Texttitel", text: passage.title || "" },
+    ...(passage.paragraphs || []).map((text, index) => ({ key: `passage:${index}`, label: `Absatz ${index + 1}`, text }))
   ];
   const updateQuestion = (index, patch) => set("questions", questions.map((question, questionIndex) => questionIndex === index ? { ...question, ...patch } : question));
 
   return (
     <>
-      <Section title="Reading passage" description="Maintain the passage and its optional Arabic translation.">
-        <div className="form-grid"><Field label="Instruction" className="field--wide"><textarea rows="2" value={content.instruction || ""} onChange={(event) => set("instruction", event.target.value)} /></Field><Field label="Passage title" className="field--wide"><input value={passage.title || ""} onChange={(event) => set("passage", { ...passage, title: event.target.value })} /></Field><Field label="German paragraphs" hint="One paragraph per line." className="field--wide"><textarea rows="10" value={(passage.paragraphs || []).join("\n")} onChange={(event) => set("passage", { ...passage, paragraphs: event.target.value.split("\n") })} /></Field><Field label="Arabic translation" hint="One paragraph per line, in the same order." className="field--wide"><textarea rows="10" dir="rtl" value={(passage.translated || []).join("\n")} onChange={(event) => set("passage", { ...passage, translated: event.target.value.split("\n") })} /></Field></div>
+      <Section title="Lesetext" description="Verwalten Sie den Text und die optionale arabische Übersetzung.">
+        <div className="form-grid"><Field label="Arbeitsanweisung" className="field--wide"><textarea rows="2" value={content.instruction || ""} onChange={(event) => set("instruction", event.target.value)} /></Field><Field label="Texttitel" className="field--wide"><input value={passage.title || ""} onChange={(event) => set("passage", { ...passage, title: event.target.value })} /></Field><Field label="Deutsche Absätze" hint="Ein Absatz pro Zeile." className="field--wide"><textarea rows="10" value={(passage.paragraphs || []).join("\n")} onChange={(event) => set("passage", { ...passage, paragraphs: event.target.value.split("\n") })} /></Field><Field label="Arabische Übersetzung" hint="Ein Absatz pro Zeile in derselben Reihenfolge." className="field--wide"><textarea rows="10" dir="rtl" value={(passage.translated || []).join("\n")} onChange={(event) => set("passage", { ...passage, translated: event.target.value.split("\n") })} /></Field></div>
       </Section>
-      <Section title="Questions & teaching insights" description="Each question includes its choices, correct answer, explanation, and exact evidence ranges." action={<AddButton onClick={() => set("questions", [...questions, { id: "", prompt: "", options: [{ id: "a", text: "" }, { id: "b", text: "" }, { id: "c", text: "" }], answerId: "a", reason: "", highlights: [] }])}>Add question</AddButton>}>
+      <Section title="Fragen und Lernhinweise" description="Jede Frage enthält Auswahlmöglichkeiten, Lösung, Erklärung und markierte Textbelege." action={<AddButton onClick={() => set("questions", [...questions, { id: "", prompt: "", options: [{ id: "a", text: "" }, { id: "b", text: "" }, { id: "c", text: "" }], answerId: "a", reason: "", highlights: [] }])}>Frage hinzufügen</AddButton>}>
         <div className="insight-list">
           {questions.map((question, index) => {
             const options = normalizedOptions(question);
             const updateOption = (optionIndex, text) => updateQuestion(index, { options: options.map((option, current) => current === optionIndex ? { ...option, text } : option) });
             return (
               <article className="question-editor" key={`${question.id}-${index}`}>
-                <div className="question-editor__top"><span>Question {question.id || index + 1}</span><RemoveButton label="Remove question" onClick={() => set("questions", questions.filter((_, questionIndex) => questionIndex !== index))} /></div>
-                <div className="form-grid"><Field label="ID" className="field--short"><input value={question.id ?? ""} onChange={(event) => updateQuestion(index, { id: event.target.value })} /></Field><Field label="Question" className="field--wide"><input value={question.prompt || ""} onChange={(event) => updateQuestion(index, { prompt: event.target.value })} /></Field>{options.map((option, optionIndex) => <Field label={`Option ${option.id.toUpperCase()}`} key={option.id}><input value={option.text || ""} onChange={(event) => updateOption(optionIndex, event.target.value)} /></Field>)}<Field label="Correct answer"><select value={question.answerId || "a"} onChange={(event) => updateQuestion(index, { answerId: event.target.value })}>{options.map((option) => <option value={option.id} key={option.id}>{option.id.toUpperCase()}</option>)}</select></Field></div>
-                <AnswerInsight title="Learning feedback" sources={[...passageSources, { key: "question", label: `Question ${question.id}`, text: question.prompt || "" }, ...options.map((option) => ({ key: `option:${option.id}`, label: `Option ${option.id.toUpperCase()}`, text: option.text || "" }))]} reason={question.reason} highlights={question.highlights} aiReview={ai.reviewFor(question.id)} onReason={(reason) => { ai.clearReview(question.id); updateQuestion(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(question.id); updateQuestion(index, { highlights }); }} onAnalyze={() => ai.analyze(question.id, (result) => updateQuestion(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(question.id)} analysisError={ai.errorFor(question.id)} />
+                <div className="question-editor__top"><span>Frage {question.id || index + 1}</span><RemoveButton label="Frage entfernen" onClick={() => set("questions", questions.filter((_, questionIndex) => questionIndex !== index))} /></div>
+                <div className="form-grid"><Field label="ID" className="field--short"><input value={question.id ?? ""} onChange={(event) => updateQuestion(index, { id: event.target.value })} /></Field><Field label="Frage" className="field--wide"><input value={question.prompt || ""} onChange={(event) => updateQuestion(index, { prompt: event.target.value })} /></Field>{options.map((option, optionIndex) => <Field label={`Option ${option.id.toUpperCase()}`} key={option.id}><input value={option.text || ""} onChange={(event) => updateOption(optionIndex, event.target.value)} /></Field>)}<Field label="Richtige Antwort"><select value={question.answerId || "a"} onChange={(event) => updateQuestion(index, { answerId: event.target.value })}>{options.map((option) => <option value={option.id} key={option.id}>{option.id.toUpperCase()}</option>)}</select></Field></div>
+                <AnswerInsight title="Lernrückmeldung" sources={[...passageSources, { key: "question", label: `Frage ${question.id}`, text: question.prompt || "" }, ...options.map((option) => ({ key: `option:${option.id}`, label: `Option ${option.id.toUpperCase()}`, text: option.text || "" }))]} reason={question.reason} highlights={question.highlights} aiReview={ai.reviewFor(question.id)} onReason={(reason) => { ai.clearReview(question.id); updateQuestion(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(question.id); updateQuestion(index, { highlights }); }} onAnalyze={() => ai.analyze(question.id, (result) => updateQuestion(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(question.id)} analysisError={ai.errorFor(question.id)} />
               </article>
             );
           })}
-          {!questions.length && <EmptyState title="No questions yet" description="Add the first multiple-choice question." />}
+          {!questions.length && <EmptyState title="Noch keine Fragen" description="Fügen Sie die erste Multiple-Choice-Frage hinzu." />}
         </div>
       </Section>
     </>
   );
 }
 
-function TeilThreeEditor({ content, onChange }) {
+function TeilThreeEditor({ content, onChange, aiModel }) {
   const set = (key, value) => onChange({ ...content, [key]: value });
   const situations = content.situations || [];
   const ads = content.ads || [];
   const answers = content.answers || [];
-  const ai = useAnswerAnalysis("teil-3", content);
+  const ai = useAnswerAnalysis("teil-3", content, aiModel);
   const updateAnswer = (index, patch) => set("answers", answers.map((answer, answerIndex) => answerIndex === index ? { ...answer, ...patch } : answer));
   return (
     <>
-      <ItemCollection title="Situations" description="Student needs that must be matched to an advert." items={situations} onChange={(items) => set("situations", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Add situation" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Situation" className="field--wide"><textarea rows="3" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabic translation" className="field--wide"><textarea rows="3" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
-      <ItemCollection title="Advertisements" description="The source texts students scan for a matching offer." items={ads} onChange={(items) => set("ads", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Add advert" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Advert text" className="field--wide"><textarea rows="6" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabic translation" className="field--wide"><textarea rows="6" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
-      <Section title="Answers & teaching insights" description="Connect each situation to an advert and identify the exact textual evidence." action={<AddButton onClick={() => set("answers", [...answers, { situationId: situations[answers.length]?.id || "", adId: "", reason: "", highlights: [] }])}>Add answer</AddButton>}>
+      <ItemCollection title="Situationen" description="Bedürfnisse, die einer passenden Anzeige zugeordnet werden." items={situations} onChange={(items) => set("situations", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Situation hinzufügen" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Situation" className="field--wide"><textarea rows="3" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabische Übersetzung" className="field--wide"><textarea rows="3" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
+      <ItemCollection title="Anzeigen" description="Quelltexte, in denen Lernende ein passendes Angebot suchen." items={ads} onChange={(items) => set("ads", items)} emptyItem={{ id: "", text: "", translated: "" }} addLabel="Anzeige hinzufügen" fields={(item, _index, update) => <><Field label="ID" className="field--short"><input value={item.id ?? ""} onChange={(event) => update({ id: event.target.value })} /></Field><Field label="Anzeigentext" className="field--wide"><textarea rows="6" value={item.text || ""} onChange={(event) => update({ text: event.target.value })} /></Field><Field label="Arabische Übersetzung" className="field--wide"><textarea rows="6" dir="rtl" value={item.translated || ""} onChange={(event) => update({ translated: event.target.value })} /></Field></>} />
+      <Section title="Lösungen und Lernhinweise" description="Verbinden Sie jede Situation mit einer Anzeige und markieren Sie die entscheidenden Textstellen." action={<AddButton onClick={() => set("answers", [...answers, { situationId: situations[answers.length]?.id || "", adId: "", reason: "", highlights: [] }])}>Lösung hinzufügen</AddButton>}>
         <div className="insight-list">
           {answers.map((answer, index) => {
             const situation = situations.find((item) => sameId(item.id, answer.situationId));
             const ad = ads.find((item) => sameId(item.id, answer.adId));
-            return <AnswerInsight key={`${answer.situationId}-${index}`} title={`Situation ${answer.situationId || index + 1}`} subtitle={ad ? `Matches advert ${ad.id}` : "Choose the matching advert"} sources={[{ key: "situation", label: `Situation ${answer.situationId}`, text: situation?.text || "" }, { key: "ad", label: `Advert ${answer.adId}`, text: ad?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.situationId)} onReason={(reason) => { ai.clearReview(answer.situationId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.situationId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.situationId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.situationId)} analysisError={ai.errorFor(answer.situationId)} mapping={<><Field label="Situation"><select value={answer.situationId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { situationId: event.target.value, highlights: [] }); }}><option value="">Select situation</option>{situations.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><Field label="Correct advert"><select value={answer.adId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { adId: event.target.value, highlights: [] }); }}><option value="">Select advert</option>{ads.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><RemoveButton label="Remove answer" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
+            return <AnswerInsight key={`${answer.situationId}-${index}`} title={`Situation ${answer.situationId || index + 1}`} subtitle={ad ? `Passt zu Anzeige ${ad.id}` : "Passende Anzeige auswählen"} sources={[{ key: "situation", label: `Situation ${answer.situationId}`, text: situation?.text || "" }, { key: "ad", label: `Anzeige ${answer.adId}`, text: ad?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.situationId)} onReason={(reason) => { ai.clearReview(answer.situationId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.situationId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.situationId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.situationId)} analysisError={ai.errorFor(answer.situationId)} mapping={<><Field label="Situation"><select value={answer.situationId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { situationId: event.target.value, highlights: [] }); }}><option value="">Situation auswählen</option>{situations.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><Field label="Richtige Anzeige"><select value={answer.adId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { adId: event.target.value, highlights: [] }); }}><option value="">Anzeige auswählen</option>{ads.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
           })}
         </div>
+      </Section>
+    </>
+  );
+}
+
+function SprachbausteineEditor({ partKey, content, onChange }) {
+  const set = (key, value) => onChange({ ...content, [key]: value });
+  const answers = content.answers || [];
+  const blanks = content.blanks || [];
+  const isFirstPart = partKey === "sprachbausteine-1";
+  const updateAnswer = (index, patch) => set("answers", answers.map((answer, itemIndex) => itemIndex === index ? { ...answer, ...patch } : answer));
+  const updateBlankOptions = (id, value) => {
+    const options = value.split(",").map((entry) => entry.trim()).filter(Boolean);
+    const existingIndex = blanks.findIndex((blank) => sameId(blank.id, id));
+    const next = [...blanks];
+    if (existingIndex >= 0) next[existingIndex] = { ...next[existingIndex], id: cleanId(id), options };
+    else next.push({ id: cleanId(id), options });
+    set("blanks", next);
+  };
+
+  return (
+    <>
+      <Section title="Lückentext" description="Verwenden Sie Platzhalter wie [[21]] oder [[31]] an den Lücken.">
+        <div className="form-grid"><Field label="Titel"><input value={content.title || ""} onChange={(event) => set("title", event.target.value)} /></Field><Field label="Arbeitsanweisung"><input value={content.instruction || ""} onChange={(event) => set("instruction", event.target.value)} /></Field><Field label="Deutscher Text" className="field--wide"><textarea rows="14" value={content.text || ""} onChange={(event) => set("text", event.target.value)} /></Field><Field label="Arabische Übersetzung" className="field--wide"><textarea rows="12" dir="rtl" value={content.translated || ""} onChange={(event) => set("translated", event.target.value)} /></Field></div>
+      </Section>
+      {!isFirstPart && <Section title="Wortbank" description="Eine Auswahlmöglichkeit pro Zeile."><Field label="Auswahlwörter"><textarea rows="7" value={(content.options || []).join("\n")} onChange={(event) => set("options", event.target.value.split("\n"))} /></Field></Section>}
+      <Section title="Lösungen" description={isFirstPart ? "Hinterlegen Sie pro Lücke die Auswahlmöglichkeiten und die richtige Lösung." : "Ordnen Sie jeder Lücke das richtige Wort aus der Wortbank zu."} action={<AddButton onClick={() => set("answers", [...answers, { id: "", answer: "" }])}>Lösung hinzufügen</AddButton>}>
+        <div className="statement-list">{answers.map((answer, index) => {
+          const blank = blanks.find((item) => sameId(item.id, answer.id));
+          return <div className={`statement-row ${isFirstPart ? "statement-row--options" : ""}`} key={`${answer.id}-${index}`}><Field label="Lücken-ID"><input value={answer.id ?? ""} onChange={(event) => updateAnswer(index, { id: event.target.value })} /></Field>{isFirstPart && <Field label="Auswahlmöglichkeiten" hint="Mit Komma trennen"><input value={(blank?.options || []).join(", ")} onChange={(event) => updateBlankOptions(answer.id, event.target.value)} /></Field>}<Field label="Richtige Lösung"><input value={answer.answer || ""} onChange={(event) => updateAnswer(index, { answer: event.target.value })} /></Field><RemoveButton label="Lösung entfernen" onClick={() => onChange({ ...content, answers: answers.filter((_, itemIndex) => itemIndex !== index), ...(isFirstPart ? { blanks: blanks.filter((item) => !sameId(item.id, answer.id)) } : {}) })} /></div>;
+        })}</div>
       </Section>
     </>
   );
@@ -303,8 +392,8 @@ function MetaEditor({ meta, onChange }) {
   const update = (key, value) => onChange({ ...meta, [key]: value });
   return (
     <details className="meta-panel">
-      <summary><span><Eye size={17} /> Exam metadata</span><ChevronDown size={17} /></summary>
-      <div className="form-grid meta-panel__body"><Field label="Title" className="field--wide"><input value={meta.title || ""} onChange={(event) => update("title", event.target.value)} /></Field><Field label="Level"><input value={meta.level || ""} onChange={(event) => update("level", event.target.value)} /></Field><Field label="Part label"><input value={meta.partLabel || ""} onChange={(event) => update("partLabel", event.target.value)} /></Field><Field label="Part number"><input type="number" value={meta.partNumber || 0} onChange={(event) => update("partNumber", Number(event.target.value))} /></Field><Field label="Section"><input value={meta.section || ""} onChange={(event) => update("section", event.target.value)} /></Field><Field label="Source URL" className="field--wide"><input value={meta.sourceUrl || ""} onChange={(event) => update("sourceUrl", event.target.value)} /></Field></div>
+      <summary><span><Eye size={17} /> Prüfungsmetadaten</span><ChevronDown size={17} /></summary>
+      <div className="form-grid meta-panel__body"><Field label="Titel" className="field--wide"><input value={meta.title || ""} onChange={(event) => update("title", event.target.value)} /></Field><Field label="Niveau"><input value={meta.level || ""} onChange={(event) => update("level", event.target.value)} /></Field><Field label="Bezeichnung"><input value={meta.partLabel || ""} onChange={(event) => update("partLabel", event.target.value)} /></Field><Field label="Teilnummer"><input type="number" value={meta.partNumber || 0} onChange={(event) => update("partNumber", Number(event.target.value))} /></Field><Field label="Bereich"><input value={meta.section || ""} onChange={(event) => update("section", event.target.value)} /></Field><Field label="Quellen-URL" className="field--wide"><input value={meta.sourceUrl || ""} onChange={(event) => update("sourceUrl", event.target.value)} /></Field></div>
     </details>
   );
 }
@@ -318,6 +407,8 @@ export function LesenEditorPage() {
   const [revision, setRevision] = useState("");
   const [dirty, setDirty] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [aiModel, setAiModel] = useState(getStoredAiModel);
+  const [correctionCheck, setCorrectionCheck] = useState(null);
   const requested = { level: searchParams.get("level") || "b1", themeKey: searchParams.get("themeKey") || "", versionKey: searchParams.get("versionKey") || "", partKey };
 
   useEffect(() => {
@@ -330,6 +421,12 @@ export function LesenEditorPage() {
     enabled: supportedParts.includes(partKey),
     placeholderData: (previous) => previous
   });
+  const aiConfig = useQuery({
+    queryKey: ["lesen-ai-config"],
+    queryFn: ({ signal }) => apiRequest("/lesen/ai-config", { signal }),
+    retry: false
+  });
+  const { models, selectedModel, selectedModelInfo } = resolveAiModel(aiConfig.data, aiModel);
 
   useEffect(() => {
     if (!editorQuery.data) return;
@@ -340,6 +437,7 @@ export function LesenEditorPage() {
     setDraft(editorQuery.data.part ? copy(editorQuery.data.part) : null);
     setRevision(editorQuery.data.revision || "");
     setDirty(false);
+    setCorrectionCheck(null);
   }, [editorQuery.data?.revision, editorQuery.data?.selection?.level, editorQuery.data?.selection?.themeKey, editorQuery.data?.selection?.versionKey, partKey]);
 
   useEffect(() => {
@@ -348,8 +446,36 @@ export function LesenEditorPage() {
     return () => window.removeEventListener("beforeunload", guard);
   }, [dirty]);
 
-  const updateDraft = (next) => { setDraft(next); setDirty(true); setSaved(false); };
+  const updateDraft = (next) => { setDraft(next); setDirty(true); setSaved(false); setCorrectionCheck(null); };
   const selection = editorQuery.data?.selection || requested;
+  const correctionCandidates = useMemo(
+    () => buildCorrectionCandidates(partKey, draft?.content || {}),
+    [draft?.content, partKey]
+  );
+  const correctionCheckMutation = useMutation({
+    mutationFn: () => {
+      const themeTitle = editorQuery.data?.themes?.find((theme) => theme.key === selection.themeKey)?.title || selection.themeKey;
+      return apiRequest("/lesen/ai-check", {
+        method: "POST",
+        body: {
+          levelKey: selection.level,
+          themeKey: selection.themeKey,
+          themeTitle,
+          partKey,
+          partLabel: draft?.meta?.partLabel || partLabels[partKey],
+          content: prepareContent(partKey, draft?.content || {}),
+          candidates: correctionCandidates,
+          model: selectedModel
+        }
+      });
+    },
+    onSuccess: setCorrectionCheck
+  });
+  const changeAiModel = (model) => {
+    setAiModel(model);
+    storeAiModel(model);
+    setCorrectionCheck(null);
+  };
   const saveMutation = useMutation({
     mutationFn: () => mutationRequest("/lesen/part", { method: "PUT", body: { ...selection, revision, meta: { ...draft.meta, extractedAt: draft.meta?.extractedAt || new Date().toISOString() }, content: prepareContent(partKey, draft.content) } }),
     onSuccess: (result) => {
@@ -365,7 +491,7 @@ export function LesenEditorPage() {
   });
 
   const changeContext = (key, value) => {
-    if (dirty && !window.confirm("Discard your unsaved edits and load another exam?")) return;
+    if (dirty && !window.confirm("Ungespeicherte Änderungen verwerfen und eine andere Prüfung laden?")) return;
     const next = new URLSearchParams(searchParams);
     next.set(key, value);
     if (key === "level") { next.delete("themeKey"); next.delete("versionKey"); }
@@ -375,44 +501,57 @@ export function LesenEditorPage() {
 
   const counts = useMemo(() => {
     const content = draft?.content || {};
-    if (partKey === "teil-1") return [`${content.texts?.length || 0} texts`, `${content.headlines?.length || 0} headlines`, `${content.answers?.length || 0} answers`];
-    if (partKey === "teil-2") return [`${content.passage?.paragraphs?.length || 0} paragraphs`, `${content.questions?.length || 0} questions`];
-    return [`${content.situations?.length || 0} situations`, `${content.ads?.length || 0} adverts`, `${content.answers?.length || 0} answers`];
+    if (partKey === "teil-1") return [`${content.texts?.length || 0} Texte`, `${content.headlines?.length || 0} Überschriften`, `${content.answers?.length || 0} Lösungen`];
+    if (partKey === "teil-2") return [`${content.passage?.paragraphs?.length || 0} Absätze`, `${content.questions?.length || 0} Fragen`];
+    if (partKey === "teil-3") return [`${content.situations?.length || 0} Situationen`, `${content.ads?.length || 0} Anzeigen`, `${content.answers?.length || 0} Lösungen`];
+    return [`${content.answers?.length || 0} Lücken`, `${content.options?.length || content.blanks?.length || 0} Auswahlwörter`];
   }, [draft, partKey]);
 
   const reload = async () => {
-    if (dirty && !window.confirm("Discard your unsaved edits and reload the server version?")) return;
+    if (dirty && !window.confirm("Ungespeicherte Änderungen verwerfen und die Serverversion neu laden?")) return;
     await editorQuery.refetch();
   };
   const queryString = searchParams.toString();
 
   return (
     <div className="page editor-page">
-      <PageHeader eyebrow="Lesen editor" title={partLabels[partKey] || "Reading editor"} description="Shape the exercise and add feedback that teaches students how to find the answer." actions={<div className="header-actions"><button className="button button--secondary" type="button" onClick={reload} disabled={editorQuery.isFetching}><RefreshCw className={editorQuery.isFetching ? "spin" : ""} size={17} /> Reload</button><button className="button button--primary" type="button" onClick={() => saveMutation.mutate()} disabled={!dirty || !draft || saveMutation.isPending}><Save size={17} />{saveMutation.isPending ? "Checking & saving…" : dirty ? "Save changes" : "Saved"}</button></div>} />
+      <PageHeader eyebrow="Lesen" title={partLabels[partKey] || "Lesen bearbeiten"} description="Bearbeiten Sie Aufgabeninhalt, Lösungen, Übersetzungen und Lernhinweise für diesen Prüfungsteil." actions={<div className="header-actions"><button className="button button--secondary" type="button" onClick={reload} disabled={editorQuery.isFetching}><RefreshCw className={editorQuery.isFetching ? "spin" : ""} size={17} /> Neu laden</button><button className="button button--primary" type="button" onClick={() => saveMutation.mutate()} disabled={!dirty || !draft || saveMutation.isPending}><Save size={17} />{saveMutation.isPending ? "Wird geprüft und gespeichert…" : dirty ? "Änderungen speichern" : "Gespeichert"}</button></div>} />
 
-      {(editorQuery.error || saveMutation.error) && <Notice type="error">{saveMutation.error?.message || editorQuery.error?.message}{saveMutation.error?.status === 409 ? " Your changes are still here; reload in another tab to compare before continuing." : ""}</Notice>}
-      {saved && <Notice>Changes saved safely. They are ready to publish from the repository panel.</Notice>}
+      {(editorQuery.error || saveMutation.error) && <Notice type="error">{saveMutation.error?.message || editorQuery.error?.message}{saveMutation.error?.status === 409 ? " Ihre Eingaben bleiben erhalten. Laden Sie die aktuelle Version zum Vergleichen in einem anderen Tab." : ""}</Notice>}
+      {correctionCheckMutation.error && <Notice type="error">{correctionCheckMutation.error.message}</Notice>}
+      {saved && <Notice>Die Änderungen wurden gespeichert und können über den Datenstand veröffentlicht werden.</Notice>}
+
+      <section className="ai-model-toolbar">
+        <div className="ai-model-toolbar__copy"><span><BrainCircuit size={19} /></span><div><strong>KI-Korrekturprüfung</strong><small>{selectedModelInfo.description} Die Auswahl bleibt gespeichert.</small></div></div>
+        <div className="ai-model-toolbar__actions">
+          <label className="compact-field"><span>Modell</span><select value={selectedModel} onChange={(event) => changeAiModel(event.target.value)}>{models.map((model) => <option value={model.id} key={model.id}>{model.label}{model.recommended ? " · Empfohlen" : ""}</option>)}</select></label>
+          <button className="button button--ai" type="button" disabled={!draft || !correctionCandidates.length || correctionCheckMutation.isPending} onClick={() => correctionCheckMutation.mutate()}><Sparkles className={correctionCheckMutation.isPending ? "spin" : ""} size={16} />{correctionCheckMutation.isPending ? "Korrekturen werden geprüft…" : "Korrekturen mit KI prüfen"}</button>
+        </div>
+      </section>
+
+      <CorrectionCheckResults result={correctionCheck} />
 
       <div className="editor-context">
-        <div className="part-tabs">{supportedParts.map((key) => <Link key={key} className={key === partKey ? "active" : ""} to={`/dashboard/lesen/${key}${queryString ? `?${queryString}` : ""}`} onClick={(event) => { if (dirty && !window.confirm("Discard your unsaved edits and open another part?")) event.preventDefault(); }}>{partLabels[key].replace("Lesen ", "")}</Link>)}</div>
+        <div className="part-tabs">{supportedParts.map((key) => <Link key={key} className={key === partKey ? "active" : ""} to={`/dashboard/lesen/${key}${queryString ? `?${queryString}` : ""}`} onClick={(event) => { if (dirty && !window.confirm("Ungespeicherte Änderungen verwerfen und einen anderen Teil öffnen?")) event.preventDefault(); }}>{shortPartLabels[key]}</Link>)}</div>
         <div className="context-selectors">
-          <Field label="Level"><select value={selection.level || ""} onChange={(event) => changeContext("level", event.target.value)}>{(editorQuery.data?.levels || ["b1", "b2"]).map((level) => <option value={level} key={level}>{level.toUpperCase()}</option>)}</select></Field>
-          <Field label="Theme"><select value={selection.themeKey || ""} onChange={(event) => changeContext("themeKey", event.target.value)}>{(editorQuery.data?.themes || []).map((theme) => <option value={theme.key} key={theme.key}>{theme.title}</option>)}</select></Field>
+          <Field label="Niveau"><select value={selection.level || ""} onChange={(event) => changeContext("level", event.target.value)}>{(editorQuery.data?.levels || ["b1", "b2"]).map((level) => <option value={level} key={level}>{level.toUpperCase()}</option>)}</select></Field>
+          <Field label="Thema"><select value={selection.themeKey || ""} onChange={(event) => changeContext("themeKey", event.target.value)}>{(editorQuery.data?.themes || []).map((theme) => <option value={theme.key} key={theme.key}>{theme.title}</option>)}</select></Field>
           <Field label="Version"><select value={selection.versionKey || ""} onChange={(event) => changeContext("versionKey", event.target.value)}>{(editorQuery.data?.versions || []).map((version) => <option value={version.key} key={version.key}>{version.label}</option>)}</select></Field>
         </div>
-        <div className="editor-stats">{counts.map((count) => <span key={count}>{count}</span>)}{dirty && <span className="unsaved-dot">Unsaved changes</span>}</div>
+        <div className="editor-stats">{counts.map((count) => <span key={count}>{count}</span>)}{dirty && <span className="unsaved-dot">Ungespeicherte Änderungen</span>}</div>
       </div>
 
-      {editorQuery.isLoading || !draft ? (editorQuery.data && !editorQuery.data.part ? <EmptyState title="This part has no content" description="Choose another theme or version." /> : <LoadingState label="Loading the reading editor…" />) : (
+      {editorQuery.isLoading || !draft ? (editorQuery.data && !editorQuery.data.part ? <EmptyState title="Dieser Teil enthält noch keine Inhalte" description="Wählen Sie ein anderes Thema oder eine andere Version." /> : <LoadingState label="Leseeditor wird geladen…" />) : (
         <div className="editor-sections">
           <MetaEditor meta={draft.meta || {}} onChange={(meta) => updateDraft({ ...draft, meta })} />
-          {partKey === "teil-1" && <TeilOneEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} />}
-          {partKey === "teil-2" && <TeilTwoEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} />}
-          {partKey === "teil-3" && <TeilThreeEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} />}
+          {partKey === "teil-1" && <TeilOneEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} aiModel={selectedModel} />}
+          {partKey === "teil-2" && <TeilTwoEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} aiModel={selectedModel} />}
+          {partKey === "teil-3" && <TeilThreeEditor content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} aiModel={selectedModel} />}
+          {(partKey === "sprachbausteine-1" || partKey === "sprachbausteine-2") && <SprachbausteineEditor partKey={partKey} content={draft.content || {}} onChange={(content) => updateDraft({ ...draft, content })} />}
         </div>
       )}
 
-      {draft && <div className="sticky-save"><div><strong>{dirty ? "You have unsaved changes" : "All changes saved"}</strong><span>{dirty ? "Save before switching themes or publishing." : "The editor is in sync with the server."}</span></div><button className="button button--primary" type="button" onClick={() => saveMutation.mutate()} disabled={!dirty || saveMutation.isPending}><Save size={17} />{saveMutation.isPending ? "Saving…" : "Save part"}</button></div>}
+      {draft && <div className="sticky-save"><div><strong>{dirty ? "Ungespeicherte Änderungen" : "Alle Änderungen gespeichert"}</strong><span>{dirty ? "Speichern Sie vor dem Themenwechsel oder Veröffentlichen." : "Der Editor entspricht dem aktuellen Serverstand."}</span></div><button className="button button--primary" type="button" onClick={() => saveMutation.mutate()} disabled={!dirty || saveMutation.isPending}><Save size={17} />{saveMutation.isPending ? "Wird gespeichert…" : "Teil speichern"}</button></div>}
     </div>
   );
 }

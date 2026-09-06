@@ -7,6 +7,8 @@ const {
   deleteTopic,
   uploadTopicAudio,
   deleteTopicAudio,
+  getPartStates,
+  setPartVisibility,
   PART_ORDER
 } = require("../../services/horenService");
 const AppError = require("../../utils/appError");
@@ -37,14 +39,20 @@ function decodeFileName(value) {
 
 router.get(
   "/meta",
-  (req, res) => {
-    res.json({
-      ok: true,
-      data: {
-        parts: PART_ORDER
-      }
-    });
-  }
+  asyncHandler(async (req, res) => {
+    const data = req.query.level
+      ? await getPartStates(req.query)
+      : { parts: PART_ORDER.map((key) => ({ key })) };
+    res.json({ ok: true, data });
+  })
+);
+
+router.put(
+  "/parts/visibility",
+  asyncHandler(async (req, res) => {
+    const data = await setPartVisibility(req.body);
+    res.json({ ok: true, data });
+  })
 );
 
 router.get(

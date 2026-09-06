@@ -18,7 +18,7 @@ export function Notice({ type = "info", children }) {
   return <div className={`notice notice--${type}`} role={type === "error" ? "alert" : "status"}><Icon size={18} /> <span>{children}</span></div>;
 }
 
-export function LoadingState({ label = "Loading workspace…" }) {
+export function LoadingState({ label = "Inhalte werden geladen…" }) {
   return <div className="loading-state"><LoaderCircle className="spin" size={24} /><span>{label}</span></div>;
 }
 
@@ -46,7 +46,7 @@ export function AddButton({ children, onClick }) {
   return <button className="button button--secondary button--small" type="button" onClick={onClick}><Plus size={16} />{children}</button>;
 }
 
-export function RemoveButton({ onClick, label = "Remove item" }) {
+export function RemoveButton({ onClick, label = "Eintrag entfernen" }) {
   return <button className="icon-button icon-button--danger" type="button" onClick={onClick} aria-label={label} title={label}><Trash2 size={16} /></button>;
 }
 

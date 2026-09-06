@@ -291,10 +291,19 @@ function normalizeEmail(value) {
   return String(value || "").trim().toLowerCase();
 }
 
+const CASE_SENSITIVE_ANSWER_PARTS = new Set([
+  "sprachbausteine-1",
+  "sprachbausteine-2"
+]);
+
 function normalizeContributionValue(partKey, value) {
   const raw = String(value || "").trim();
   if (!raw) {
     return "";
+  }
+
+  if (CASE_SENSITIVE_ANSWER_PARTS.has(partKey)) {
+    return raw;
   }
 
   if (partKey === "teil-1" || partKey === "teil-3") {
@@ -409,9 +418,34 @@ function buildAllowedValuesByItem(partKey, content, itemNumbers = []) {
 
   if (partKey === "teil-3") {
     const allowedValues = uniqueStrings([
+      "X",
       ...(content.ads || []).map((entry) => normalizeContributionValue(partKey, entry?.id || "")),
       ...(content.answers || []).map((entry) => normalizeContributionValue(partKey, entry?.adId || ""))
     ]);
+    itemList.forEach((itemNumber) => {
+      map[itemNumber] = allowedValues;
+    });
+    return map;
+  }
+
+  if (partKey === "sprachbausteine-1") {
+    (content.blanks || []).forEach((blank) => {
+      const itemNumber = String(blank?.id || "").trim();
+      if (!itemNumber) {
+        return;
+      }
+      map[itemNumber] = uniqueStrings((blank.options || []).map((value) => {
+        return normalizeContributionValue(partKey, value);
+      }));
+    });
+    return map;
+  }
+
+  if (partKey === "sprachbausteine-2") {
+    const allowedValues = uniqueStrings([
+      ...(content.options || []),
+      ...(content.wordBank || []).map((entry) => entry?.text || entry?.value || "")
+    ].map((value) => normalizeContributionValue(partKey, value)));
     itemList.forEach((itemNumber) => {
       map[itemNumber] = allowedValues;
     });
@@ -1120,6 +1154,60 @@ async function listLesenContributions(query = {}) {
   };
 }
 
+async function getLesenContributionAiInput(payload = {}) {
+  const reviewKey = String(payload.reviewKey || "").trim();
+  const answerSet = normalize(payload.answerSet);
+
+  assertString(reviewKey, "Der Beitragsschlüssel fehlt.");
+  if (answerSet !== "current" && answerSet !== "suggested") {
+    throw new AppError("Wählen Sie die aktuelle oder die vorgeschlagene Lösung für die KI-Prüfung.", 400);
+  }
+
+  const state = await buildLesenContributionState("");
+  const item = state.items.find((entry) => entry.reviewKey === reviewKey);
+  if (!item) {
+    throw new AppError("Der Beitrag wurde nicht gefunden.", 404);
+  }
+  if (!item.canAccept) {
+    throw new AppError(item.contextIssue || "Der Beitrag konnte keiner Lesen-Aufgabe zugeordnet werden.", 400);
+  }
+
+  const theme = state.db?.levels?.[item.lookupLevelKey]?.themes?.[item.themeLookupKey];
+  const version = theme?.versions?.[item.currentVersionKey];
+  const content = version?.lesen?.parts?.[item.partKey]?.content;
+  if (!content) {
+    throw new AppError("Die aktuelle Lesen-Aufgabe konnte nicht geladen werden.", 404);
+  }
+
+  const currentAnswerMap = buildCurrentAnswerMap(item.partKey, content);
+  const candidates = (item.comparisonRows || [])
+    .map((row) => {
+      const itemNumber = String(row?.itemNumber || "").trim();
+      const answer = answerSet === "current"
+        ? normalizeContributionValue(item.partKey, currentAnswerMap[itemNumber] || "")
+        : normalizeContributionValue(item.partKey, item.answerValues?.[itemNumber] || row?.submittedValue || "");
+      return itemNumber && answer ? { itemNumber, answer } : null;
+    })
+    .filter(Boolean);
+
+  if (!candidates.length) {
+    throw new AppError("Für diese KI-Prüfung sind keine Antworten vorhanden.", 400);
+  }
+
+  return {
+    reviewKey,
+    answerSet,
+    levelKey: item.lookupLevelKey,
+    themeKey: item.themeLookupKey,
+    themeTitle: item.themeTitle,
+    versionKey: item.currentVersionKey,
+    partKey: item.partKey,
+    partLabel: item.partLabel,
+    content,
+    candidates
+  };
+}
+
 async function editLesenContribution(payload = {}) {
   const reviewKey = String(payload.reviewKey || "").trim();
   const reset = payload.reset === true;
@@ -1352,7 +1440,13 @@ async function reviewLesenContribution(payload = {}) {
 }
 
 module.exports = {
+  normalizeContributionValue,
+  buildAllowedValuesByItem,
+  buildComparisonRows,
+  buildCurrentAnswerMap,
+  applyValueToContent,
   listLesenContributions,
+  getLesenContributionAiInput,
   editLesenContribution,
   reviewLesenContribution
 };

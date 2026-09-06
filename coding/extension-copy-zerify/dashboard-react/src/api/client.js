@@ -65,3 +65,20 @@ export async function mutationRequest(path, options = {}) {
   await ensureRepositoryReady();
   return apiRequest(path, options);
 }
+
+export async function uploadBinaryRequest(path, file) {
+  await ensureRepositoryReady();
+  const response = await fetch(`/api${path}`, {
+    method: "PUT",
+    headers: {
+      Accept: "application/json",
+      "X-Audio-File-Name": encodeURIComponent(file.name)
+    },
+    body: file
+  });
+  const payload = await response.json().catch(() => null);
+  if (!response.ok || !payload?.ok) {
+    throw new ApiError(payload?.message || `Request failed (${response.status})`, response.status, payload?.details || null);
+  }
+  return payload.data;
+}

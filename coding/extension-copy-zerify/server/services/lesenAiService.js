@@ -1,8 +1,12 @@
 const AppError = require("../utils/appError");
+const {
+  AVAILABLE_MODELS,
+  DEFAULT_MODEL
+} = require("./contributionAiService");
 
 const OPENAI_API_URL = "https://api.openai.com/v1/responses";
-const DEFAULT_MODEL = "gpt-5.6-terra";
 const MAX_CONTEXT_CHARACTERS = 120000;
+const MODEL_IDS = new Set(AVAILABLE_MODELS.map((model) => model.id));
 
 const ANALYSIS_SCHEMA = {
   type: "object",
@@ -110,9 +114,12 @@ function buildAnalysisContext(partKey, content, targetId) {
   return context;
 }
 
-function resolveModel() {
-  const configured = String(process.env.OPENAI_LESEN_MODEL || DEFAULT_MODEL).trim();
-  return /^gpt-6-astra(?:$|-)/i.test(configured) ? DEFAULT_MODEL : configured;
+function resolveModel(requestedModel = "") {
+  const configured = String(requestedModel || process.env.OPENAI_LESEN_MODEL || DEFAULT_MODEL).trim();
+  if (!MODEL_IDS.has(configured)) {
+    throw new AppError("Das ausgewählte KI-Modell ist für Lesen-Prüfungen nicht verfügbar.", 400);
+  }
+  return configured;
 }
 
 function getOpenAIHeaders() {
@@ -180,8 +187,8 @@ function analysisPrompt(context) {
   ].join("\n\n");
 }
 
-async function requestAnalysis(context) {
-  const model = resolveModel();
+async function requestAnalysis(context, requestedModel) {
+  const model = resolveModel(requestedModel);
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 60000);
   let response;
@@ -234,7 +241,7 @@ async function requestAnalysis(context) {
 async function analyzeLesenAnswer(payload) {
   const partKey = String(payload?.partKey || "").trim();
   const context = buildAnalysisContext(partKey, payload?.content, payload?.targetId);
-  const { model, parsed } = await requestAnalysis(context);
+  const { model, parsed } = await requestAnalysis(context, payload?.model);
   const reason = String(parsed?.reason || "").trim();
   const alternativeAssessment = String(parsed?.alternativeAssessment || "").trim();
   const highlights = mapEvidenceToHighlights(parsed?.evidence, context.sources);
@@ -253,6 +260,7 @@ async function analyzeLesenAnswer(payload) {
 
 module.exports = {
   DEFAULT_MODEL,
+  resolveModel,
   buildAnalysisContext,
   mapEvidenceToHighlights,
   analyzeLesenAnswer

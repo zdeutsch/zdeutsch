@@ -152,6 +152,34 @@ function outputPaths(output) {
   return String(output || "").split(/\r?\n/).map((entry) => entry.trim()).filter(Boolean);
 }
 
+function parseDivergence(output) {
+  const match = String(output || "").trim().match(/^(\d+)\s+(\d+)$/);
+  return match
+    ? { ahead: Number(match[1]), behind: Number(match[2]) }
+    : { ahead: 0, behind: 0 };
+}
+
+async function prepareBranchForPush(branch, execute = runGit) {
+  await execute(["fetch", "origin", branch], { timeout: 180000 });
+  const divergence = parseDivergence(await execute([
+    "rev-list",
+    "--left-right",
+    "--count",
+    `HEAD...origin/${branch}`
+  ]));
+
+  if (divergence.behind > 0) {
+    try {
+      await execute(["pull", "--rebase", "--autostash", "origin", branch], { timeout: 180000 });
+    } catch (error) {
+      await execute(["rebase", "--abort"], { allowFailure: true });
+      throw error;
+    }
+  }
+
+  return divergence;
+}
+
 async function discardRepositoryData() {
   await ensureRepository();
   const branch = await runGit(["branch", "--show-current"]);
@@ -235,20 +263,13 @@ async function publishRepositoryData(commitMessage) {
     committed = true;
   }
 
-  const aheadBeforePull = await runGit(["rev-list", "--count", "@{upstream}..HEAD"], { allowFailure: true });
-  if (!committed && Number(aheadBeforePull || 0) === 0) {
+  const divergence = await prepareBranchForPush(branch);
+  if (!committed && divergence.ahead === 0) {
     return {
       published: false,
       message: "There are no exam data or audio changes to publish.",
       status: await getRepositoryStatus()
     };
-  }
-
-  try {
-    await runGit(["pull", "--rebase", "origin", branch], { timeout: 180000 });
-  } catch (error) {
-    await runGit(["rebase", "--abort"], { allowFailure: true });
-    throw error;
   }
 
   await runGit(["push", "origin", `HEAD:${branch}`], { timeout: 180000 });
@@ -260,6 +281,8 @@ async function publishRepositoryData(commitMessage) {
 }
 
 module.exports = {
+  parseDivergence,
+  prepareBranchForPush,
   getRepositoryStatus,
   syncRepositoryData,
   discardRepositoryData,

@@ -9,9 +9,18 @@ const {
   updatePart,
   createTheme,
   updateTheme,
-  deleteTheme
+  deleteTheme,
+  setThemeVisibility,
+  moveTheme,
+  createPart,
+  setPartVisibility,
+  deletePart
 } = require("../../services/lesenService");
 const { analyzeLesenAnswer } = require("../../services/lesenAiService");
+const {
+  getContributionAiConfig,
+  checkLesenContributionAnswers
+} = require("../../services/contributionAiService");
 
 const router = express.Router();
 
@@ -27,6 +36,21 @@ router.post(
   "/analyze-answer",
   asyncHandler(async (req, res) => {
     const data = await analyzeLesenAnswer(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.get(
+  "/ai-config",
+  asyncHandler(async (req, res) => {
+    res.json({ ok: true, data: getContributionAiConfig() });
+  })
+);
+
+router.post(
+  "/ai-check",
+  asyncHandler(async (req, res) => {
+    const data = await checkLesenContributionAnswers({ ...req.body, answerSet: "current" }, req.body.model);
     res.json({ ok: true, data });
   })
 );
@@ -80,9 +104,49 @@ router.put(
 );
 
 router.put(
+  "/theme/visibility",
+  asyncHandler(async (req, res) => {
+    const data = await setThemeVisibility(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.put(
+  "/theme/level",
+  asyncHandler(async (req, res) => {
+    const data = await moveTheme(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.post(
+  "/part",
+  asyncHandler(async (req, res) => {
+    const data = await createPart(req.body);
+    res.status(201).json({ ok: true, data });
+  })
+);
+
+router.put(
   "/part",
   asyncHandler(async (req, res) => {
     const data = await updatePart(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.put(
+  "/part/visibility",
+  asyncHandler(async (req, res) => {
+    const data = await setPartVisibility(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.delete(
+  "/part",
+  asyncHandler(async (req, res) => {
+    const data = await deletePart(req.body);
     res.json({ ok: true, data });
   })
 );

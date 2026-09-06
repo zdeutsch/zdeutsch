@@ -8,6 +8,7 @@ const contributionsRoutes = require("./contributions.routes");
 const lesenRoutes = require("./lesen.routes");
 const horenRoutes = require("./horen.routes");
 const shreibenRoutes = require("./shreiben.routes");
+const sprechenRoutes = require("./sprechen.routes");
 const shareRoutes = require("./share.routes");
 const repositoryRoutes = require("./repository.routes");
 
@@ -21,6 +22,7 @@ router.use("/contributions", contributionsRoutes);
 router.use("/lesen", lesenRoutes);
 router.use("/horen", horenRoutes);
 router.use("/shreiben", shreibenRoutes);
+router.use("/sprechen", sprechenRoutes);
 router.use("/share", shareRoutes);
 router.use("/repository", repositoryRoutes);
 

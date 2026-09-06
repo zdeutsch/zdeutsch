@@ -13,7 +13,8 @@ const DATABASE_FILES = Object.freeze({
   parts: "parts.json",
   lesen: "lesen.json",
   horen: "horen-codes.json",
-  shreiben: "shreiben.json"
+  shreiben: "shreiben.json",
+  sprechen: "mundlich.json"
 });
 
 const ALLOWED_FILE_KEYS = Object.freeze(Object.keys(DATABASE_FILES));

@@ -119,13 +119,17 @@ function createEmptyPart(level, partKey, title) {
       title: "Sprachbausteine",
       instruction: "",
       text: "",
+      segments: [],
+      translated: "",
       ...(isSprachOne
         ? {
             blanks: [],
             answers: []
           }
         : {
+            wordBank: [],
             options: [],
+            blanks: [],
             answers: []
           })
     }
@@ -169,9 +173,13 @@ function clone(value) {
 }
 
 function orderedThemeKeys(levelEntry) {
-  return Array.isArray(levelEntry?.themeOrder) && levelEntry.themeOrder.length
-    ? levelEntry.themeOrder
-    : Object.keys(levelEntry?.themes || {});
+  const available = Object.keys(levelEntry?.themes || {});
+  if (!Array.isArray(levelEntry?.themeOrder)) {
+    return available;
+  }
+  const visible = levelEntry.themeOrder.filter((themeKey) => available.includes(themeKey));
+  const hidden = available.filter((themeKey) => !visible.includes(themeKey));
+  return [...visible, ...hidden];
 }
 
 function summarizeThemes(levelEntry) {
@@ -181,11 +189,47 @@ function summarizeThemes(levelEntry) {
       if (!theme) {
         return null;
       }
+      const versionKeys = Array.isArray(theme.versionOrder) && theme.versionOrder.length
+        ? theme.versionOrder
+        : Object.keys(theme.versions || {});
+      const defaultVersionKey = theme.defaultVersion && theme.versions?.[theme.defaultVersion]
+        ? theme.defaultVersion
+        : (versionKeys.includes("default") ? "default" : (versionKeys[0] || "default"));
+      const lesenRoot = theme.versions?.[defaultVersionKey]?.lesen || {};
+      const parts = lesenRoot.parts || {};
+      const visibleParts = Array.isArray(lesenRoot.partOrder)
+        ? lesenRoot.partOrder
+        : Object.keys(parts);
+      const versions = versionKeys.map((versionKey) => {
+        const version = theme.versions?.[versionKey] || {};
+        const versionRoot = version.lesen || {};
+        const versionParts = versionRoot.parts || {};
+        const versionVisibleParts = Array.isArray(versionRoot.partOrder)
+          ? versionRoot.partOrder
+          : Object.keys(versionParts);
+        return {
+          key: versionKey,
+          label: version.label || versionKey,
+          parts: LESEN_PART_ORDER.map((partKey) => ({
+            key: partKey,
+            available: Boolean(versionParts[partKey]),
+            visible: Boolean(versionParts[partKey]) && versionVisibleParts.includes(partKey)
+          }))
+        };
+      });
       return {
         key: themeKey,
         id: theme.id || themeKey,
         title: theme.title || themeKey,
-        versionCount: Object.keys(theme.versions || {}).length
+        visible: !Array.isArray(levelEntry?.themeOrder) || levelEntry.themeOrder.includes(themeKey),
+        versionCount: Object.keys(theme.versions || {}).length,
+        versions,
+        defaultVersionKey,
+        parts: LESEN_PART_ORDER.map((partKey) => ({
+          key: partKey,
+          available: Boolean(parts[partKey]),
+          visible: Boolean(parts[partKey]) && visibleParts.includes(partKey)
+        }))
       };
     })
     .filter(Boolean);
@@ -453,9 +497,41 @@ function normalizeTeachingInsights(partKey, rawContent) {
         aiReview: undefined
       };
     });
+  } else if (partKey === "sprachbausteine-1" || partKey === "sprachbausteine-2") {
+    return buildSprachbausteineDerivedContent(partKey, content);
   }
 
   return content;
+}
+
+function buildSprachbausteineDerivedContent(partKey, rawContent) {
+  const content = clone(rawContent || {});
+  const answers = Array.isArray(content.answers) ? content.answers : [];
+  const answerById = new Map(answers.map((item) => [String(item.id), String(item.answer || "")]));
+  const text = String(content.text || "");
+  const segments = [];
+  const pattern = /\[\[([^\]]+)\]\]/g;
+  let cursor = 0;
+  let match;
+  while ((match = pattern.exec(text))) {
+    if (match.index > cursor) segments.push({ type: "text", value: text.slice(cursor, match.index) });
+    const id = cleanNumericId(match[1]);
+    segments.push({ type: "luecke", id, answer: answerById.get(String(id)) || "" });
+    cursor = pattern.lastIndex;
+  }
+  if (cursor < text.length) segments.push({ type: "text", value: text.slice(cursor) });
+  content.segments = segments;
+
+  if (partKey === "sprachbausteine-2") {
+    content.blanks = answers.map((item) => ({ id: cleanNumericId(item.id), answer: String(item.answer || "") }));
+    content.wordBank = (content.options || []).map((option) => ({ id: "", text: String(option) }));
+  }
+  return content;
+}
+
+function cleanNumericId(value) {
+  const raw = String(value ?? "").trim();
+  return /^-?\d+$/.test(raw) ? Number(raw) : raw;
 }
 
 async function getEditorContext(payload) {
@@ -639,6 +715,146 @@ async function deleteTheme(payload) {
   return { deleted: true };
 }
 
+function normalizeVisibleOrder(currentOrder, allKeys, key, visible) {
+  const current = Array.isArray(currentOrder)
+    ? currentOrder.filter((entry) => allKeys.includes(entry))
+    : [...allKeys];
+  if (!visible) {
+    return current.filter((entry) => entry !== key);
+  }
+  return current.includes(key) ? current : [...current, key];
+}
+
+async function setThemeVisibility(payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  assertString(level, "level is required");
+  assertString(themeKey, "themeKey is required");
+  if (typeof payload.visible !== "boolean") {
+    throw new AppError("visible muss ein Wahrheitswert sein", 400);
+  }
+
+  const db = await getLesenDb();
+  const levelEntry = db?.levels?.[level];
+  if (!levelEntry?.themes?.[themeKey]) {
+    throw new AppError("Thema nicht gefunden", 404);
+  }
+  const allKeys = Object.keys(levelEntry.themes);
+  levelEntry.themeOrder = normalizeVisibleOrder(levelEntry.themeOrder, allKeys, themeKey, payload.visible);
+  await writeJsonByKey("lesen", db);
+  return { level, themeKey, visible: payload.visible };
+}
+
+async function moveTheme(payload) {
+  const sourceLevel = String(payload.sourceLevel || "").trim().toLowerCase();
+  const targetLevel = String(payload.targetLevel || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  assertString(sourceLevel, "sourceLevel is required");
+  assertString(targetLevel, "targetLevel is required");
+  assertString(themeKey, "themeKey is required");
+  if (sourceLevel === targetLevel) {
+    throw new AppError("Quell- und Zielniveau sind identisch", 400);
+  }
+
+  const db = await getLesenDb();
+  const source = db?.levels?.[sourceLevel];
+  const target = db?.levels?.[targetLevel];
+  const theme = source?.themes?.[themeKey];
+  if (!theme) throw new AppError("Thema nicht gefunden", 404);
+  if (!target) throw new AppError("Zielniveau nicht gefunden", 404);
+  if (target.themes?.[themeKey]) throw new AppError("Der Themenschlüssel existiert bereits im Zielniveau", 409);
+
+  const wasVisible = !Array.isArray(source.themeOrder) || source.themeOrder.includes(themeKey);
+  delete source.themes[themeKey];
+  if (Array.isArray(source.themeOrder)) {
+    source.themeOrder = source.themeOrder.filter((entry) => entry !== themeKey);
+  }
+  target.themes = target.themes || {};
+  target.themes[themeKey] = theme;
+  const targetKeys = Object.keys(target.themes);
+  target.themeOrder = normalizeVisibleOrder(target.themeOrder, targetKeys, themeKey, wasVisible);
+
+  Object.values(theme.versions || {}).forEach((version) => {
+    Object.values(version?.lesen?.parts || {}).forEach((part) => {
+      if (part?.meta && typeof part.meta === "object") {
+        part.meta.level = targetLevel.toUpperCase();
+      }
+    });
+  });
+
+  await writeJsonByKey("lesen", db);
+  return { sourceLevel, targetLevel, themeKey, visible: wasVisible };
+}
+
+function resolveLesenRoot(db, payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  const versionKeyInput = String(payload.versionKey || "default").trim() || "default";
+  const partKey = assertPartKey(payload.partKey);
+  assertString(level, "level is required");
+  assertString(themeKey, "themeKey is required");
+  const levelEntry = db?.levels?.[level];
+  if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+  const theme = resolveTheme(levelEntry, themeKey);
+  const { versionKey, version } = resolveVersion(theme, versionKeyInput);
+  version.lesen = version.lesen || { partOrder: [], parts: {} };
+  version.lesen.parts = version.lesen.parts || {};
+  return { level, themeKey, versionKey, partKey, theme, lesenRoot: version.lesen };
+}
+
+async function createPart(payload) {
+  const db = await getLesenDb();
+  const context = resolveLesenRoot(db, payload);
+  if (context.lesenRoot.parts[context.partKey]) {
+    throw new AppError("Dieser Prüfungsteil ist bereits vorhanden", 409);
+  }
+  context.lesenRoot.parts[context.partKey] = createEmptyPart(
+    context.level,
+    context.partKey,
+    context.theme.title || context.themeKey
+  );
+  context.lesenRoot.partOrder = normalizeVisibleOrder(
+    context.lesenRoot.partOrder,
+    LESEN_PART_ORDER.filter((key) => context.lesenRoot.parts[key]),
+    context.partKey,
+    true
+  );
+  await writeJsonByKey("lesen", db);
+  return { ...context, lesenRoot: undefined, theme: undefined, available: true, visible: true };
+}
+
+async function setPartVisibility(payload) {
+  if (typeof payload.visible !== "boolean") {
+    throw new AppError("visible muss ein Wahrheitswert sein", 400);
+  }
+  const db = await getLesenDb();
+  const context = resolveLesenRoot(db, payload);
+  if (!context.lesenRoot.parts[context.partKey]) {
+    throw new AppError("Prüfungsteil nicht gefunden", 404);
+  }
+  const allKeys = LESEN_PART_ORDER.filter((key) => context.lesenRoot.parts[key]);
+  context.lesenRoot.partOrder = normalizeVisibleOrder(
+    context.lesenRoot.partOrder,
+    allKeys,
+    context.partKey,
+    payload.visible
+  );
+  await writeJsonByKey("lesen", db);
+  return { level: context.level, themeKey: context.themeKey, versionKey: context.versionKey, partKey: context.partKey, available: true, visible: payload.visible };
+}
+
+async function deletePart(payload) {
+  const db = await getLesenDb();
+  const context = resolveLesenRoot(db, payload);
+  if (!context.lesenRoot.parts[context.partKey]) {
+    throw new AppError("Prüfungsteil nicht gefunden", 404);
+  }
+  delete context.lesenRoot.parts[context.partKey];
+  context.lesenRoot.partOrder = (context.lesenRoot.partOrder || []).filter((entry) => entry !== context.partKey);
+  await writeJsonByKey("lesen", db);
+  return { level: context.level, themeKey: context.themeKey, versionKey: context.versionKey, partKey: context.partKey, deleted: true };
+}
+
 module.exports = {
   LESEN_PART_ORDER,
   listThemes,
@@ -648,7 +864,15 @@ module.exports = {
   getEditorContext,
   updatePart,
   normalizeTeachingInsights,
+  buildSprachbausteineDerivedContent,
   createTheme,
   updateTheme,
-  deleteTheme
+  deleteTheme,
+  setThemeVisibility,
+  moveTheme,
+  createPart,
+  setPartVisibility,
+  deletePart,
+  normalizeVisibleOrder,
+  summarizeThemes
 };

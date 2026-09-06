@@ -1,10 +1,11 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { DEFAULT_MODEL, buildAnalysisContext, mapEvidenceToHighlights } = require("../server/services/lesenAiService");
+const { DEFAULT_MODEL, resolveModel, buildAnalysisContext, mapEvidenceToHighlights } = require("../server/services/lesenAiService");
 
-test("uses a capable non-Astra model by default", () => {
-  assert.equal(DEFAULT_MODEL, "gpt-5.6-terra");
-  assert.equal(DEFAULT_MODEL.includes("gpt-6-astra"), false);
+test("uses the recommended model by default and accepts a supported selection", () => {
+  assert.equal(DEFAULT_MODEL, "gpt-6-astra");
+  assert.equal(resolveModel("gpt-5.6-terra"), "gpt-5.6-terra");
+  assert.throws(() => resolveModel("unknown-model"), /nicht verfügbar/);
 });
 
 test("Teil 1 AI context includes the correct answer and every distractor", () => {

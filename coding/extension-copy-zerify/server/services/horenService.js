@@ -250,6 +250,61 @@ function normalizeContext(payload) {
   };
 }
 
+function resolvePartManagement(db, payload = {}) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const requestedThemeKey = String(payload.themeKey || "").trim();
+  assertString(level, "level is required");
+  const levelEntry = db?.levels?.[level];
+  if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+  const themeKey = requestedThemeKey || levelEntry.themeOrder?.[0] || Object.keys(levelEntry.themes || {})[0];
+  const theme = levelEntry.themes?.[themeKey];
+  if (!theme) throw new AppError("Hörthema nicht gefunden", 404);
+  const horenRoot = theme["hören"];
+  if (!horenRoot?.parts) throw new AppError("Hörteile nicht gefunden", 404);
+  return { level, themeKey, horenRoot };
+}
+
+function summarizePartStates(context) {
+  const visibleParts = Array.isArray(context.horenRoot.partOrder)
+    ? context.horenRoot.partOrder
+    : Object.keys(context.horenRoot.parts || {});
+  return {
+    themeKey: context.themeKey,
+    parts: PART_ORDER.map((key) => ({
+      key,
+      label: PART_LABELS[key],
+      available: Boolean(context.horenRoot.parts?.[key]),
+      visible: Boolean(context.horenRoot.parts?.[key]) && visibleParts.includes(key)
+    }))
+  };
+}
+
+async function getPartStates(payload) {
+  const db = await getHorenDb();
+  return summarizePartStates(resolvePartManagement(db, payload));
+}
+
+async function setPartVisibility(payload) {
+  const partKey = String(payload.partKey || "").trim().toLowerCase();
+  if (!PART_ORDER.includes(partKey)) {
+    throw new AppError(`partKey muss einer dieser Werte sein: ${PART_ORDER.join(", ")}`, 400);
+  }
+  if (typeof payload.visible !== "boolean") {
+    throw new AppError("visible muss ein Wahrheitswert sein", 400);
+  }
+  const db = await getHorenDb();
+  const context = resolvePartManagement(db, payload);
+  if (!context.horenRoot.parts[partKey]) throw new AppError("Hörteil nicht gefunden", 404);
+  const current = Array.isArray(context.horenRoot.partOrder)
+    ? context.horenRoot.partOrder.filter((key) => context.horenRoot.parts[key])
+    : Object.keys(context.horenRoot.parts);
+  context.horenRoot.partOrder = payload.visible
+    ? (current.includes(partKey) ? current : [...current, partKey])
+    : current.filter((key) => key !== partKey);
+  await writeJsonByKey("horen", db);
+  return summarizePartStates(context);
+}
+
 async function listTopics(payload) {
   const context = normalizeContext(payload);
   const db = await getHorenDb();
@@ -429,6 +484,9 @@ module.exports = {
   MAX_AUDIO_BYTES,
   detectAudioFormat,
   normalizeAudioUpload,
+  summarizePartStates,
+  getPartStates,
+  setPartVisibility,
   listTopics,
   createTopic,
   updateTopic,
