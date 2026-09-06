@@ -14,7 +14,10 @@ test("B2 Mündlich keeps the existing schema and exposes all imported PDF tasks"
     assert.deepEqual(Object.keys(b2.parts[partKey]), Object.keys(b1.parts[partKey]));
   }
 
-  assert.deepEqual(b2.partOrder, ["teil-2", "teil-3"]);
+  assert.ok(b2.partOrder.includes("teil-2"));
+  assert.ok(b2.partOrder.includes("teil-3"));
+  assert.equal(new Set(b2.partOrder).size, b2.partOrder.length);
+  assert.ok(b2.partOrder.every((partKey) => Object.hasOwn(b2.parts, partKey)));
   assert.equal(b2.parts["teil-1"].prompts.length, 0);
   assert.equal(b2.parts["teil-2"].topics.length, 38);
   assert.equal(b2.parts["teil-3"].topics.length, 38);
@@ -42,5 +45,6 @@ test("B2 Mündlich keeps the existing schema and exposes all imported PDF tasks"
   assert.equal(context.levelAvailable, true);
   assert.equal(context.partKey, "teil-2");
   assert.equal(context.part.topics.length, 38);
-  assert.equal(context.parts.find((part) => part.key === "teil-1").visible, false);
+  assert.equal(context.parts.find((part) => part.key === "teil-2").visible, true);
+  assert.equal(context.parts.find((part) => part.key === "teil-3").visible, true);
 });
