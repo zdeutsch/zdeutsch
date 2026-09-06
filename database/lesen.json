@@ -81009,7 +81009,29 @@
                             }
                           ],
                           "answerId": "c",
-                          "answerText": "verbringt die ganze Freizeit mit ihrem Hund."
+                          "answerText": "verbringt die ganze Freizeit mit ihrem Hund.",
+                          "reason": "Richtig ist c, denn Bettina sagt: „wenn ich frei habe, sind wir immer zusammen“. Die Hundeschule gehört zur Tagesbetreuung vor der Arbeit; daraus folgt nicht, dass sie ihren Hund dort erziehen lässt. Ein Wellnesshotel erwähnt sie nur als einmaliges Erlebnis („sogar schon“), nicht als regelmäßigen Urlaub.",
+                          "highlights": [
+                            {
+                              "source": "passage:2",
+                              "start": 159,
+                              "end": 276,
+                              "text": "Morgens vor der Arbeit bringe ich meinen Hund in eine sehr gute Tagesbetreuung, in der es auch eine Hundeschule gibt."
+                            },
+                            {
+                              "source": "passage:2",
+                              "start": 277,
+                              "end": 342,
+                              "text": "Aber wenn ich frei habe, sind wir immer zusammen, auch im Urlaub."
+                            },
+                            {
+                              "source": "passage:2",
+                              "start": 343,
+                              "end": 404,
+                              "text": "Ich war mit ihm sogar schon in einem Wellnesshotel für Hunde."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 7,
@@ -81029,7 +81051,23 @@
                             }
                           ],
                           "answerId": "c",
-                          "answerText": "sich zur Ernährung des Tiers beraten lassen."
+                          "answerText": "sich zur Ernährung des Tiers beraten lassen.",
+                          "reason": "Richtig ist C, weil Marius Klotz zu passendem Futter sagt, man solle sich „am besten Fachleute fragen“. A ist zwar ebenfalls im Text genannt, bezieht sich aber auf die Erziehung des Hundes und nicht auf eine Beratung; B wird nicht als konkrete Empfehlung formuliert.",
+                          "highlights": [
+                            {
+                              "source": "option:c",
+                              "start": 0,
+                              "end": 44,
+                              "text": "sich zur Ernährung des Tiers beraten lassen."
+                            },
+                            {
+                              "source": "passage:3",
+                              "start": 283,
+                              "end": 459,
+                              "text": "Außerdem braucht er viel Bewegung und unbedingt passendes Futter. Frisches Futter ist nicht unbedingt das beste, da sollte man sich gut informieren, am besten Fachleute fragen."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 8,
@@ -81049,7 +81087,23 @@
                             }
                           ],
                           "answerId": "c",
-                          "answerText": "sieht ihren Hund als festes Familienmitglied."
+                          "answerText": "sieht ihren Hund als festes Familienmitglied.",
+                          "reason": "Richtig ist c, weil ausdrücklich steht: „Viele Menschen sehen ihre Katzen und Hunde als Teil der Familie. So auch Ellie Herfried“. Damit wird der Hund als Familienmitglied beschrieben. Antwort a ist zwar plausibel, weil der Hund einen „Geburtstagshundekuchen“ bekommt, aber es steht nicht, dass Elli ihn selbst backt; b verwechselt den Geburtstag des Hundes mit Ellis eigenem Geburtstag.",
+                          "highlights": [
+                            {
+                              "source": "passage:4",
+                              "start": 0,
+                              "end": 118,
+                              "text": "Viele Menschen sehen ihre Katzen und Hunde als Teil der Familie. So auch Ellie Herfried, Hunde- besitzerin aus Erfurt:"
+                            },
+                            {
+                              "source": "passage:4",
+                              "start": 190,
+                              "end": 275,
+                              "text": "Er bekommt einen Geburtstagshundekuchen, natürlich mit Kerzen, und auch ein Geschenk."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 9,
@@ -81069,7 +81123,23 @@
                             }
                           ],
                           "answerId": "a",
-                          "answerText": "die Senioren etwas tun, was gut für sie ist."
+                          "answerText": "die Senioren etwas tun, was gut für sie ist.",
+                          "reason": "Richtig ist A, weil die Senioren durch die Tiere eine Aufgabe und „jeden Tag eine sinnvolle Beschäftigung“ haben; das tut ihnen gut und hält viele fit. B ist nur teilweise zutreffend, denn Spaziergänge gelten im Text nur für Hundebesitzer; A umfasst auch Füttern und die Beschäftigung mit Katzen. C passt nicht, weil die Senioren für die Tiere sorgen – nicht umgekehrt.",
+                          "highlights": [
+                            {
+                              "source": "passage:5",
+                              "start": 179,
+                              "end": 312,
+                              "text": "Dadurch haben sie eine Aufgabe, denn sie müssen sich ja um ihr Tier kümmern, es füttern, oder mit ihm rausgehen wenn er ein Hund ist."
+                            },
+                            {
+                              "source": "passage:5",
+                              "start": 313,
+                              "end": 426,
+                              "text": "So haben sie jeden Tag eine sinnvolle Beschäftigung. Das tut den älteren Menschen gut; viele bleiben dadurch fit."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "id": 10,
@@ -81089,7 +81159,29 @@
                             }
                           ],
                           "answerId": "c",
-                          "answerText": "man sich durch sein Haustier erholen kann."
+                          "answerText": "man sich durch sein Haustier erholen kann.",
+                          "reason": "Richtig ist C, weil Fachleute bestätigen, dass Haustiere bei Stress „ein guter Ausgleich“ sein können und Ruhe sowie Entspannung bieten. A passt nicht, denn der Text sagt ausdrücklich, ein Haustier sei „viel mehr als ein Hobby“. B nennt zwar eine mögliche Beschäftigung mit dem Hund, ist aber keine allgemeine Aussage der Fachleute.",
+                          "highlights": [
+                            {
+                              "source": "passage:6",
+                              "start": 102,
+                              "end": 155,
+                              "text": "Ruhe und Entspannung eine kleine Erholung vom Alltag."
+                            },
+                            {
+                              "source": "passage:6",
+                              "start": 156,
+                              "end": 266,
+                              "text": "Das bestätigen auch Fachleute: Haustiere können gerade bei Stress für viele Menschen ein guter Ausgleich sein."
+                            },
+                            {
+                              "source": "passage:6",
+                              "start": 440,
+                              "end": 491,
+                              "text": "Das Haustier ist dabei auch viel mehr als ein Hobby"
+                            }
+                          ],
+                          "keywords": []
                         }
                       ]
                     }
