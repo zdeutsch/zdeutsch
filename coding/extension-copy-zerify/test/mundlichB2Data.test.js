@@ -18,7 +18,13 @@ test("B2 Mündlich keeps the existing schema and exposes all imported PDF tasks"
   assert.ok(b2.partOrder.includes("teil-3"));
   assert.equal(new Set(b2.partOrder).size, b2.partOrder.length);
   assert.ok(b2.partOrder.every((partKey) => Object.hasOwn(b2.parts, partKey)));
-  assert.equal(b2.parts["teil-1"].prompts.length, 0);
+  const presentation = b2.parts["teil-1"];
+  assert.equal(presentation.durationMinutes, 5);
+  assert.equal(presentation.prompts.length, 7);
+  assert.ok(presentation.followUps.length > 0);
+  assert.match(presentation.prompts[0], /Buch/i);
+  assert.match(presentation.prompts[1], /Film/i);
+  assert.match(presentation.sourceUrl, /^https:\/\/shop\.telc\.net\//);
   assert.equal(b2.parts["teil-2"].topics.length, 38);
   assert.equal(b2.parts["teil-3"].topics.length, 38);
 
