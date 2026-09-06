@@ -79418,6 +79418,863 @@
           "versionOrder": [
             "default"
           ]
+        },
+        "naco": {
+          "id": "naco",
+          "title": "NACO",
+          "defaultVersion": "default",
+          "versions": {
+            "default": {
+              "key": "default",
+              "label": "Standard",
+              "title": "NACO",
+              "lesen": {
+                "parts": {
+                  "teil-1": {
+                    "meta": {
+                      "title": "NACO",
+                      "level": "B2",
+                      "partLabel": "Lesen Teil 1",
+                      "section": "lesen",
+                      "partNumber": 1,
+                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
+                      "extractedAt": "2026-07-27T00:00:00.000Z"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie die Überschriften und die Texte. Finden Sie für jeden Text die passende Überschrift.",
+                      "texts": [
+                        {
+                          "id": 1,
+                          "text": "Berlin wird in 10 Jahren rund 5.000 Lehrkräfte weniger brauchen als derzeit. Für den Unterricht an den Schulen werden dann, wie die Gewerkschaft Erziehung und Wissenschaft (GEW) errechnet hat, noch etwa 25.500 von heute 30.000 Pädagogen benötigt.\nDie Gewerkschaft befürchtet zugleich, dass bis zu diesem Zeitpunkt zu wenig Nachwuchskräfte ausgebildet werden und es deshalb zu einer dramatischer Unterversorgung kommt. Nach Meinung der GEW steuert die Hauptstadt bei der Personalausstattung der Schulen auf ein Fiasko zu, weil in den nächsten 10 Jahren mehr als 10.000 Lehrkräfte aus Altersgründen in den Ruhestand gehen. Außerdem würden jährlich zirka 400 Lehrer die Berliner Schulen verlassen, so dass nach Ansicht der GEW letzlich 9.000 Stellen fehlen. Wenn die Zahl der Studienanfänger nicht kräftig gesteigert werde, könne langfristig nicht einmal die Hälfte des prognostizierten Einstellungsbedarf gedeckt werden. Außerdem sei die Hauptstadt für Berufseinsteiger nicht so attraktiv wie andere Bundesländer, da sie selbst für Mangelfächer nur befristete Verträge anbietet."
+                        },
+                        {
+                          "id": 2,
+                          "text": "Wer sich in Berlin um eine Stelle als Lehrer bewirbt, muss hart im Nehmen sein. “Während man in Hamburgrespektvoll be-handelt wird, rechnen Vertreter der Berliner Schulverwaltung den Bewerbern vor, wie teuer Lehrer sind. Da fühlt man sich nicht richtig gewollt”, sagt Maria Schütz. Die 27-jährige gehört zu den rund 500 Referendaren, die in zwei Wochen mit ihrem Studium fertig werden. Maria Schütz, die ihr Exam mit der Note 1,5 bestanden hat und unbedingt in Berlin unterrichten wollte, hat mit ihrer Bewerbung leidvolle Erfahrungen hinter Sich. “Während man in Hamburg sofort eine feste Stelle im Beamtenverhältnis angeboten hat, konnte mir in Berlin keiner zusagen, dass ich im nächsten Schuljahr gebraucht werde.” Die junge Frau hat das gute Angebot aus Hamburg einer unsi-cheren Zukunft in Berlin vorgezogen.\nFür Anna Richter, Vorsitzende der Lehrergewerkschaft GEW, ist Marias Geschichte nur eine von vielen. Ihre Organisation ist besorgt darüber, dass Berlin auf diese Weise viele gut qualifi-zierte Lehrer an andere Bundesländer verlieren könnte."
+                        },
+                        {
+                          "id": 3,
+                          "text": "Die Hilferufe aus den Schulen wollen nicht verstummen: Schüler klagen über ständigen Lehrerwechsel, Eltern über Stundenausfall und Schulleiter über fehlende Bewerber. Doch es könnte noch schlimmer werden. Der Verband Bildung und Erziehung (VBE) rechnet in den nächsten 15 Jahren mit einem \"gewaltigen Lehrermangel\" in Deutschland. Der Verbandsvorsitzende Ludwig Eckinger sagte am Donnerstag, er gehe für diesen Zeitraum von bis zu 400.000 Lehrern aus, die aus Altersgründen aus dem Schuldienst ausscheiden. Für 100 pensionierte Lehrer kämen jedoch nur 50 neue Kollegen. Der Lehrernotstand kommt nicht überraschend, Forscher sagten ihn längst voraus. Und auch die Konferenz der Kultusminister präsentierte schon vor fünf Jahren beunruhigende Zahlen: Es werden an deutschen Schulen 70.000 Pädagogen fehlen, denn fast die Hälfte der 800.000 Lehrer geht in Pension. Deshalb fordern Experten seit langem einen bundesweiten Entwicklungspan, denn Untersuchungen des Lehrerarbeitsmarkt zeigten eher \"Chaos als systematische Planung\". Deutschland steuere auf Zustände wie in den Niederlanden zu. Dort ist der Lehrermangel so groß, dass sich Schulen gegenseitig Lehrer ausspannen."
+                        },
+                        {
+                          "id": 4,
+                          "text": "Bildungspolitiker und Lehrervertreter wollen Abiturienten scharenweise in den Lehrerberuf locken. Sie sollen große Lücken schließen, die durch Pensionierungen entstehen. Doch das Versprechen vom sicheren Job lässt sich womöglich nicht einlösen - es basiere auf falschen Annahmen, sagen Essener Bildungsforscher. Die Arbeitsgruppe Bildungsforschung/Bildungsplanung unter der Leitung des Wissenschaftlers Klaus Klemm kommt in ihrem Bericht zu einem ganz anderen Ergebnis. Während die Kultusministerkonferenz mit 70.000 fehlenden Lehrern rechnet und der Philologenverband gar mit 80.000, errechnete die Forschungsgruppe, dass es zu einer insgesamt ausgeglichenen Bilanz zwischen Nachfrage und Angebot auf dem Lehrer-Arbeitsmarkt kommen werde. Wenn sich die \"Einstellungspolitik der Bundesländer nicht ändert, dürften wir sogar einen Lehrerüberschuss bekommen\", sagte Klemm. Er warnt Abiturienten, ihre Studienentscheidung von den angeblich rosigen Aussichten für Lehrer abhängig zu machen. \"Die Abiturienten hören, es werden Lehrer gesucht, und schon studieren sie Germanistik fürs Gymnasium. Das ist ein Fehler\", sagt Klemm. Denn schon jetzt zeichne sich ab, dass es Deutsch-, Geschichts- und Fremdsprachenlehrer eher schwer haben werden."
+                        },
+                        {
+                          "id": 5,
+                          "text": "Mädchen haben tendenziell bessere Noten und stellen 56 Prozent der Abiturienten. Dagegen sind zwei Drittel der Schulabbrecher und drei Viertel der Sonderschüler Jungen. Liegt die Ursache in der Grundschule, wo von den knapp 200.000 Lehrkräften nur rund 26.000 männlich sind? An der Grundschule sind Männer eine Rarität. Wer sich dorthin verirrt, arbeitet allein unter Frauen. Im Schuljahr 1990/1991 unterrichtete noch ein Drittel Männer an Grundschulen, im Schuljahr 2006/2007 liegt der Frauenanteil an den Grundschullehrern bei 86,9 Prozent, während an weiterführenden Schulen das Geschlechterverhältnis nahezu ausgeglichen ist. Im Extremfall kann das bedeuten, dass Jungen bis zum Alter von 10 oder 12 Jahren in Krippe, Kindergarten und Grundschule ausschließlich von Frauen betreut und unterrichtet werden. Auch die Familienministerin vermisst die Männer an den Grundschulen. \"In den wichtigen frühen Jahren fehlen den Jungen männliche Vorbilder, an denen sie sich im Alltag ausrichten können\", sagte sie in einem Interview. Das gelte gerade für Kinder mit Migrationshintergrund. Gründe dafür sieht sie in der gesellschaftlichen Anerkennung des Berufs und in den Gehaltsstrukturen."
+                        }
+                      ],
+                      "headlines": [
+                        {
+                          "id": "A",
+                          "text": "An deutschen Grundschulen sind männliche Lehrkräfte selten"
+                        },
+                        {
+                          "id": "B",
+                          "text": "Bildungsexperten warnen: Deutsche Lehrer sind schlecht ausgebildet"
+                        },
+                        {
+                          "id": "C",
+                          "text": "Bildungsforscher: Lehrermangel wird in Deutschland nicht eintreten"
+                        },
+                        {
+                          "id": "D",
+                          "text": "Die Zahl der männlichen Lehrkräfte an Grundschulen nimmt zu"
+                        },
+                        {
+                          "id": "E",
+                          "text": "Experten befürchten zunehmenden Lehrermangel in Deutschland"
+                        },
+                        {
+                          "id": "F",
+                          "text": "Gewerkschaft erwartet Lehrermangel in Berlin"
+                        },
+                        {
+                          "id": "G",
+                          "text": "GEW befürchtet Abwanderung von gut ausgebildeten Lehrkräften aus Berlin"
+                        },
+                        {
+                          "id": "H",
+                          "text": "Immer mehr Berliner wandern aus"
+                        },
+                        {
+                          "id": "I",
+                          "text": "Immer weniger Frauen machen ein Grundschullehrer-Studium"
+                        },
+                        {
+                          "id": "J",
+                          "text": "Vorausschauende Politiker verhindern Lehrermangel in Berlin"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "textId": 1,
+                          "headlineId": "F"
+                        },
+                        {
+                          "textId": 2,
+                          "headlineId": "G"
+                        },
+                        {
+                          "textId": 3,
+                          "headlineId": "E"
+                        },
+                        {
+                          "textId": 4,
+                          "headlineId": "C"
+                        },
+                        {
+                          "textId": 5,
+                          "headlineId": "A"
+                        }
+                      ]
+                    }
+                  },
+                  "teil-2": {
+                    "meta": {
+                      "title": "NACO",
+                      "level": "B2",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
+                      "extractedAt": "2026-07-27T00:00:00.000Z"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie den Text und wählen Sie für jede Aufgabe die richtige Lösung.",
+                      "passage": {
+                        "title": "Dienstmädchen war um1900 der am weitesten verbreitete Beruf für Frauen. Aus heutiger Perspektive ist das verwunderlich, denn der Alltag eines Dienstmädchens war sehr hart. Was trieb also Frauen in diesen Beruf?",
+                        "text": "Es waren vor allem Mädchen vom Land, die von ihren Eltern in die Stadt geschickt wurden, um dort zu arbeiten. Auf dem Land gab es kaum Stellen für Mädchen. Als Dienstmädchen, so hofften die Eltern, würden ihre Töchter wenigstens das Hauswirtschaften lernen - eine wichtige Fertigkeit als spätere Haus - und Ehefrau. Dabei war das enge Leben eines Dienstmädchens ohne viel Zeit genau das, was den Eltern gut an diesem Beruf erschien: da die Mädchen oft erst 14 oder 15 Jahre alt waren, waren sie in einer Familie behüteter als beispielsweise in der Fabrik. Allerdings kam es nicht selten vor, dass die Hoffnung auf eine Ausbildung enttäuscht wurde. Viele Mädchen wurden nicht eingearbeitet und angelernt, sondern mussten selber zusehen, wie sie das Arbeitspensum bewältigten.\nLeider verfügten die Eltern meist nicht über Kontakte in der Stadt. Die Mädchen fuhren mit dem Zug in die Fremde und mussten dann auf eigene Faust eine Stellung finden. Das machten sich auch dubiose Stellenvermittler an den Bahnöfen zu Nutze und verschafften den Mädchen Stellen in Kneipen als Kellnerinnen - damals eine Arbeit mit sehr schlechtem Ruf. Um diesen Missstand zu beenden, gründeten sich übrigens die Bahnhofsmissionen, die damals konfessionsübergreifend von den katholischen, evangelischen und jüdischen Gemeinden den ankommenden Mädchen erst einmal ein Bett bieten sollten.\nWer etwas auf sich hielt, beschäftigte um 1900 ein Dienstmädchen: sowohl kleinbürgerliche Haushalte als auch großbürgerliche. Die unteren Schichten, also Handwerkerfamilien, eiferten den gehobeneren nach. Nach außen durfte es an nichts fehlen, auch wenn das Budget dafür knapp war. Gespart wurde da, wo es nicht sichtbar war: bei der Unterbringung und Ernährung der Dienstmädchen. In gehobeneren Schichten gab es gerne auch mehr Personal - ein Vorteil und Nachteil zugleich. Einerseits hatte das Dienstmädchen so mehr Gesellschaft und war weniger isoliert, anderseits gab es auch unter den Dienstboten eine Hierarchie und das Dienstmädchen war das unterste Glied.\nAnders als Fabrikarbeiter hatten Dienstboten keine geregelte Arbeitszeiten. Sie mussten, wenn nötig, ihren Dienstherren rund um die Uhr zur Verfügung stehen. Das Dienstmädchen stand als Erste auf, befeuerte den Ofen, machte das Wasser zum Waschen und fürs Frühstück warm, servierte die Mahlzeiten, räumte wieder ab, spülte und putzte. Das Einkaufen gehörte zu den beliebten Tätigkeiten, denn das erlaubte es den Mädchen, einmal ohne Aufsicht in der Stadt unterwegs zu sein, andere Dienstmädchen zu treffen und sich auszutauschen. Fließendes Wasser gehörte um die Jahrhundertwende nicht zum Standard, so musste das Dienstmädchen auch Wasser schleppen. Erst wenn alle Arbeit erledigt war, konnte das Dienstmädchen schlafen gehen. Die wenige freie Zeit am Abend reichte oft nur, um die eigene Kleidung auszubessern. Alle vierzehn Tage durften die Mädchen sonntags für zwei Stunden das Haus verlassen, das war der einzige Ausgang, den sie hatten.\nDer Lohn bestand im Wesentlichen aus Kost und Unterkunft. Etwas zurücklegen für später konnte kaum ein Mädchen. Auch die Unterbringung ließ zu wünschen übrig. Von Berliner Dienstmädchen weiß man, dass sie oft noch nicht einmal eine eigene Kammer hatten, sondern auf so genannten Hängeböden schliefen, eine kleine Fläche von vielleicht mal zwei Metern bei einer Raumhöhe von etwa 1,50 Meter. Wenig Schlaf, und dann auch noch schlechter Schlaf: Vielen Mädchen waren die Strapazen trotz ihres jungen Alters anzusehen. Für die meisten war es nur eine Zwischenstation. Heirateten sie, beendeten die jungen Mädchen dieses Arbeitsverhältnis und stattdessen war die junge Frau selbser Hausfrau und Herrin eines eigenen Haushalts.",
+                        "paragraphs": [
+                          "Es waren vor allem Mädchen vom Land, die von ihren Eltern in die Stadt geschickt wurden, um dort zu arbeiten. Auf dem Land gab es kaum Stellen für Mädchen. Als Dienstmädchen, so hofften die Eltern, würden ihre Töchter wenigstens das Hauswirtschaften lernen - eine wichtige Fertigkeit als spätere Haus - und Ehefrau. Dabei war das enge Leben eines Dienstmädchens ohne viel Zeit genau das, was den Eltern gut an diesem Beruf erschien: da die Mädchen oft erst 14 oder 15 Jahre alt waren, waren sie in einer Familie behüteter als beispielsweise in der Fabrik. Allerdings kam es nicht selten vor, dass die Hoffnung auf eine Ausbildung enttäuscht wurde. Viele Mädchen wurden nicht eingearbeitet und angelernt, sondern mussten selber zusehen, wie sie das Arbeitspensum bewältigten.\nLeider verfügten die Eltern meist nicht über Kontakte in der Stadt. Die Mädchen fuhren mit dem Zug in die Fremde und mussten dann auf eigene Faust eine Stellung finden. Das machten sich auch dubiose Stellenvermittler an den Bahnöfen zu Nutze und verschafften den Mädchen Stellen in Kneipen als Kellnerinnen - damals eine Arbeit mit sehr schlechtem Ruf. Um diesen Missstand zu beenden, gründeten sich übrigens die Bahnhofsmissionen, die damals konfessionsübergreifend von den katholischen, evangelischen und jüdischen Gemeinden den ankommenden Mädchen erst einmal ein Bett bieten sollten.\nWer etwas auf sich hielt, beschäftigte um 1900 ein Dienstmädchen: sowohl kleinbürgerliche Haushalte als auch großbürgerliche. Die unteren Schichten, also Handwerkerfamilien, eiferten den gehobeneren nach. Nach außen durfte es an nichts fehlen, auch wenn das Budget dafür knapp war. Gespart wurde da, wo es nicht sichtbar war: bei der Unterbringung und Ernährung der Dienstmädchen. In gehobeneren Schichten gab es gerne auch mehr Personal - ein Vorteil und Nachteil zugleich. Einerseits hatte das Dienstmädchen so mehr Gesellschaft und war weniger isoliert, anderseits gab es auch unter den Dienstboten eine Hierarchie und das Dienstmädchen war das unterste Glied.\nAnders als Fabrikarbeiter hatten Dienstboten keine geregelte Arbeitszeiten. Sie mussten, wenn nötig, ihren Dienstherren rund um die Uhr zur Verfügung stehen. Das Dienstmädchen stand als Erste auf, befeuerte den Ofen, machte das Wasser zum Waschen und fürs Frühstück warm, servierte die Mahlzeiten, räumte wieder ab, spülte und putzte. Das Einkaufen gehörte zu den beliebten Tätigkeiten, denn das erlaubte es den Mädchen, einmal ohne Aufsicht in der Stadt unterwegs zu sein, andere Dienstmädchen zu treffen und sich auszutauschen. Fließendes Wasser gehörte um die Jahrhundertwende nicht zum Standard, so musste das Dienstmädchen auch Wasser schleppen. Erst wenn alle Arbeit erledigt war, konnte das Dienstmädchen schlafen gehen. Die wenige freie Zeit am Abend reichte oft nur, um die eigene Kleidung auszubessern. Alle vierzehn Tage durften die Mädchen sonntags für zwei Stunden das Haus verlassen, das war der einzige Ausgang, den sie hatten.\nDer Lohn bestand im Wesentlichen aus Kost und Unterkunft. Etwas zurücklegen für später konnte kaum ein Mädchen. Auch die Unterbringung ließ zu wünschen übrig. Von Berliner Dienstmädchen weiß man, dass sie oft noch nicht einmal eine eigene Kammer hatten, sondern auf so genannten Hängeböden schliefen, eine kleine Fläche von vielleicht mal zwei Metern bei einer Raumhöhe von etwa 1,50 Meter. Wenig Schlaf, und dann auch noch schlechter Schlaf: Vielen Mädchen waren die Strapazen trotz ihres jungen Alters anzusehen. Für die meisten war es nur eine Zwischenstation. Heirateten sie, beendeten die jungen Mädchen dieses Arbeitsverhältnis und stattdessen war die junge Frau selbser Hausfrau und Herrin eines eigenen Haushalts."
+                        ]
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": "Die Eltern ließen ihre Töchter als Dienstmädchen arbeiten,",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "damit sie die Jahre bis zur Arbeit in der Fabrik überbrücken konnten."
+                            },
+                            {
+                              "id": "b",
+                              "text": "damit sie lernten, einen Haushalt zu führen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "damit sie besser beaufsichtigt waren als zu Hause."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "damit sie lernten, einen Haushalt zu führen."
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "Die Stellen fanden die Mädchen zumeist",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "durch Vermittler, die ins Dorf kamen."
+                            },
+                            {
+                              "id": "b",
+                              "text": "alleine"
+                            },
+                            {
+                              "id": "c",
+                              "text": "mit Hilfe ihrer Eltern."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "alleine"
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "Dienstmädchen gab es",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "fast nur bei reicheren Leuten."
+                            },
+                            {
+                              "id": "b",
+                              "text": "auch bei den weniger reichen Leuten."
+                            },
+                            {
+                              "id": "c",
+                              "text": "in jedem Haus in der Stadt."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "auch bei den weniger reichen Leuten."
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Dienstmädchen",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "mussten länger arbeiten als Fabrikarbeiter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "konnten sich am Sonntag zwei Stunden mit anderen Dienstmädchen treffen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "durften nicht alleine einkaufen gehen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "mussten länger arbeiten als Fabrikarbeiter."
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "Dienstmädchen bekamen",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "fast kein Geld."
+                            },
+                            {
+                              "id": "b",
+                              "text": "ein eigenes Zimmer."
+                            },
+                            {
+                              "id": "c",
+                              "text": "Geld, um für später zu sparen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "fast kein Geld."
+                        }
+                      ]
+                    }
+                  },
+                  "teil-3": {
+                    "meta": {
+                      "title": "NACO",
+                      "level": "B2",
+                      "partLabel": "Lesen Teil 3",
+                      "section": "lesen",
+                      "partNumber": 3,
+                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
+                      "extractedAt": "2026-07-27T00:00:00.000Z"
+                    },
+                    "content": {
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie möchten Ihren Eltern zur Silberhochzeit eine besondere Schiffsreise auf dem Meer schenken."
+                        },
+                        {
+                          "id": 12,
+                          "text": "Ihre Freundin möchte mit ihrem Mann Silvester und Neujahr im Urlaub feiern, aber nicht schon wieder im Gebirge."
+                        },
+                        {
+                          "id": 13,
+                          "text": "Ein Bekannter möchte im Winter ein besinnliches Wochenende in den Bergen verbringen, denn er mag es, durch die verschneite Natur zu laufen."
+                        },
+                        {
+                          "id": 14,
+                          "text": "Eine Bekannte aus dem Rhein-Main-Gebiet sucht Vorschläge für Ein-Tages-Ausflüge, denn sie übernachtet nicht gern in fremden Betten."
+                        },
+                        {
+                          "id": 15,
+                          "text": "Sie wollen wie jedes Jahr in der zweiten Jahreshälfte eine zirka einwöchige organisierte Urlaubsreise in Europa machen und sich dabei viel mit dem Fahrrad fortbewegen."
+                        },
+                        {
+                          "id": 16,
+                          "text": "Sie möchten einen netten Abend mit Freunden bei gutem Essen und außergewöhnlichem Unterhaltungsprogramm verleben."
+                        },
+                        {
+                          "id": 17,
+                          "text": "Sie suchen für eine prunkvolle Hochzeitsfeier geeignete festliche Räumlichkeiten in einer stimmungsvollen klösterlichen Umgebung für zirka 50 Personen."
+                        },
+                        {
+                          "id": 18,
+                          "text": "Sie sind neu in Frankfurt a. M. und suchen deshalb nach nützlichen Informationen und praktischen Tipps, um sich schnell in der neuen Umgebung einzuleben."
+                        },
+                        {
+                          "id": 19,
+                          "text": "Sie interessieren sich für Bücher über Architektur und Gartenarchitektur deutscher Klosteranlagen."
+                        },
+                        {
+                          "id": 20,
+                          "text": "Sie suchen gute Kriminalromane, deren Handlung im Rhein-Main-Gebiet und besonders in Frankfurt spielt."
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "Norwegen: Kirkenes-Bergen\nDie schönste Seereise der Welt - von Anfang April bis Ende Oktober. 6-Tage-Seereise 2009 ab 699,- € p. P. Eindrucksvolle Landschaften entdecken. Die Seele baumeln lassen. Natur mit allen Sinnen genießen. Mit einer Postschiffreise können Sie das unglaubliche Panorama, das Ihnen die norwegische Küste wie im Bilderbuch darbietet, genießen. Erleben Sie die Einzigartigkeit der atemberaubenden Gebirgsketten, der artenreichen Tierwelt und der idyllisch gelegenen Hafenstädte, die wir im Liniendienst anfahren. Buchen Sie innerhalb der nächsten 6 Wochen - und sichern Sie sich Ihre Wunschkabine und einen Frühbucher-Bonus bis 25%. Information, aktueller Katalog und Buchung unter: Tel.: (040) 367 53-496, E-Mail: info@eiligruten.de, www.eiligruten.de."
+                        },
+                        {
+                          "id": "B",
+                          "text": "Mal was ganz anderes machen\nWinterurlaub am Meer. Denn Nord- und Ostseeküste bieten auch in der kalten Jahreszeit Aktivitäten, die der ganzen Familie Spaß machen. Zum Beispiel \"Boßeln\". Welche Mannschaft kullert die bleigefüllte Holzkugel auf den gefrorenen Wegen am weitesten? Zwischendurch gibt es heißen Früchtetee oder Glühwein, hinterher traditionell Grünkohl für alle. Tierfreunde können auf einer Robbensafari zusehen, wie die Robbenmütter ihre Babys säugen. Wer will, kann die Winterlandschaft dick eingemummt von der Pferdekutsche aus genießen. Gleichmäßig stapfen die Hufe im Sand, der Leuchtturm ist das ferne Ziel.\nUnd danach aufwärmen am knisternden Kamin, mit süßem Punsch und Bratapfel. Braucht da noch jemand Berge? Infos unter: www.schleswig-holstein.de."
+                        },
+                        {
+                          "id": "C",
+                          "text": "Meditation im Schnee\nNur die Schritte knirschen gleichmäßig im Schnee. Sonst ist es absolut still. Rechts und links ragen die Berge schroff in den blauen Himmel. Strahlend weiß glitzert die Landschaft wie von Tausenden kleiner Diamanten. Wer in meditativer Stimmung durch den Schnee stapfen möchte, ist auf einer Schneeschuhwanderung in den Ostschweizer Bergen richtig. Beim Schneeschuh-Wochenende wandert man mit großflächigen Schuhen ausgerüstet durch den Tiefschnee. Später fahren dann alle mit dem Schlitten ins Tal, wo im Gasthaus schon eine heiße Suppe auf dem Herd dampft und ein warmes Bett wartet. Für mehr Informationen besuchen Sie unsere Internet-Seite: www.meditation-im-schnee.ch."
+                        },
+                        {
+                          "id": "D",
+                          "text": "Fluss- und Radreise durch Belgien\n8 Tage Fluss- und Radreise durch Belgien. Abseits der Hauptstraßen fahren Sie mit Schiff und Rad durch die flache Polderlandschaft Belgiens, die dafür ideal geeignet ist. Die Städte Brügge und Brüssel bilden den Anfangs- und Endpunkt der Reise. Im Reisepreis enthalten: Bahnreise in der 2. Klasse ab Frankfurt, Transfers vom Bahnhof zum Schiff und zurück. 7 Nächte in Außenkabinen an Board der \"Quo Vadis\", Frühstück, Mittagessen oder Lunchpaket für Fahrradtouren, Abendessen. Tägliche Tourenbesprechungen, Landkarten, alle Hafen-, Schleusen- und Brückengebühren, Leihgebühr für ein 7-Gang-Unisex-Rad, qualifizierte, ortskundige Reiseleitung. Die Radstrecke beträgt ca. 296 km. Termin: 19. bis 26. September. Preis: 1199 € p. P. in Zweibettkabine."
+                        },
+                        {
+                          "id": "E",
+                          "text": "Radwandern durch das Veneto\n8 Tage Radwandern durch das Veneto. Sogar Goethe war sprachlos - so schön ist Norditalien. Ruhige, flache Wege geleiten Sie vom Gardasee über Verona nach Vicenza. Durchs Etschtal und über die Lagunen kommen Sie nach Venedig. Im Reisepreis enthalten: Bahnreise 2. Klasse von Frankfurt nach Verona und zurück von Venedig inklusive Schafwagen. Tranfer von und zum Bahnhof in Verona und Venedig. 6 Übernachtungen in ausgewählten Hotels inkl. Frühstück, 6 Abendessen, Picknickservice, Leih-Tourenrad mit 8-Gang-Schaltung, sämtliche Eintritte laut Programm, qualifizierte, ortskundige Reiseleitung, Kleinbus als Begleitfahrzeug, Gepäcktransport. Termin: 5. bis 12. April. Preis: 1399 € p. P. im DZ."
+                        },
+                        {
+                          "id": "F",
+                          "text": "Übernachten \"Im Namen der Rose\"\nBerühmt wurde Kloster Eberbach 1988 als Schauplatz für die Innenaufnahmen zum Film \"Der Name der Rose\". Zwar gibt es heute kein klösterliches Leben mehr, aber das in seinen Baukörpern erhaltene Kloster gilt als das bedeutendste mittelalterliche Gesamtkunstwerk Hessens. Die jahrhundertealte Weinbautradition hat sich bis heute fortgesetzt. Wer völlig unbeschwert die Weinverkostungen erleben möchte, kann das \"Herbst-Winter-Wochenend-Spezial\" nutzen, das die Gastronomiebetriebe im Kloster Eberbach zusammengestellt haben. Das Angebot umfasst auch eine Übernachtung im Doppelzimmer von Samstag auf Sonntag. Es beinhaltet zudem ein reichhaltiges Früstücksbuffet und ein Vier-Gänge-Überraschungsmenü am Abend. Der Preis pro Person beträgt 97,- €. Weitere Informationen gibt es bei den Gastronomiebetrieben im Kloster Eberbach, Eltville, unter Telefon 06723/993-0."
+                        },
+                        {
+                          "id": "G",
+                          "text": "Tagestouren in Rheinhessen und im Rheingau\nMit der Zahnstangenbahn auf den Wiesbadener Neroberg fahren, in Geisenheim mediterran kochen lernen, wandern mit Lamas und Alpakas als Begleiter, in Siefersheim mit Kräuterfrauen nach vergessenen Pflanzen suchen oder eine Führung durch Kloster Eberrbach mit anschließender Weinprobe — 111 Tipps für Tagestouren in Rheinhessen und im Rheingau stellt der neue Band “Ein schöner Tag” vor. Darunter sind auch echte Geheimtipps. Zum Beispiel, wie Besucher im Mainzer Dom ins Innere der Orgel steigen können oder wo die “Nacht der Verführung” stattfindet."
+                        },
+                        {
+                          "id": "H",
+                          "text": "Abend im Palladio\nWenn die Tage kürzer und die Nächte kälter werden, ist es Zeit für Artistik, Comedy und Gaumenfreuden. Magier, Jongleure, Akrobaten und ein Vier-Gang-Gourmet-Menü im Schein hunderter Kerzen: Ein Abend im Palladio verspricht unterhaltsame Stunden mit perfektem Genuss im stilvollen Ambiente des traumhaft schönen, nostalgischen Spiegelpalastes. Das Gourmet-Theater Palladio serviert Ihnen seine charmante Mixtur aus hochkarätigem Entertainmente und exquisiter Kochkunst. Freuen Sie sich auf köstliche Menükreationen und erleben Sie dreieinhalb Stunden voller Humor und Lebensfreude. Lassen Sie sich verwöhnen und verzaubern! Dienstags bis sonntags sind wir für Sie da: Beginn ist jeweils um 20.00 Uhr. Foyer und Bar sind bereits 90 Minuten vor Showbeginn geöffnet."
+                        },
+                        {
+                          "id": "I",
+                          "text": "Kloster Eberbach\nKloster Eberbach mit seinen eindrucksvollen mittelalterlichen und barocken Bauten bietet seinen Gästen einzigartige Voraussetzungen für eine stilvolle Veranstaltung in altehrwürdigen Klostermauern. Sie können viele unserer repräsentativen Säle und prachtvollen Räume für Veranstaltungen anmieten. Ob Sie einen festlichen Empfang oder ein nobles Bankett planen oder ob Ihnen eine stilvolle Produktpräsentation vorschwebt: Hier lässt sich all dies hervorragend inszenieren. Die breite Palette unserer Räumlichkeiten und Gärten gibt Raum für Gesellschaften von 20 bis 1.000 Personen und lässt im Zusammenspiel mit dem Ambiente der Klosteranlage jede Veranstaltung zu einem ganz besonderen Ereignis werden. Hier finden Sie den richtigen Rahmen für Ihre Familienfeier, Ihr Seminar, Ihren Betriebsausflug, ein festliches Bankett oder eine Vortragsveranstaltung. Einige Räume sind zudem für Hochzeiten, Konzerte und Lesungen geeignet."
+                        },
+                        {
+                          "id": "J",
+                          "text": "Stadt-Führer Frankfurt am Main. Kultur & mehr\nViel Lob von der Lokalpresse für einen neuen Stadt-Führer über die Mainmetropole: Anne Schütz: Frankfurt am Main. Kultur & mehr. Paul Müller Verlag, 15,95 €. Dieser umfangreiche Reise-Führer wartet mit einer ganz besonderen Mischung auf: Rundgänge zur Stadtgeschichte stehen neben einer geballten Ladung an praktischen Informationen. Besonders gelungen ist es, wie die Autorin historische Details mit Spaziergängen verzahnt. Sie rennt keinen Trends hinterher, sondern führt als kenntnisreiche Begleiterin durch ihre Stadt. Ein praktischer Stadtkulturführer für Einheimische und Besucher mit Hunderten von Tipps, Adressen, Öffnungszeiten und Preisen von Parks und Bädern über schöne Lokale bis zu Museen,\nTheatern und Veranstaltungsorten."
+                        },
+                        {
+                          "id": "K",
+                          "text": "Tour zu Schauplätzen der berühmtesten Kriminalfälle Frankfurts\nDer Historiker und Stadtfüher Peter Glock begleitet Sie auf einer interessanten zweistündigen Tour durch die Innenstadt zu Schauplätzen der berühmtesten Kriminalfälle in der Geschichte Frankfurts. Sie erfahren alles über spektakuläre Verbrechen, wie z. B. den Mord an Rosemarie Nitribitt, die Hinrichtung von Vinzenz Fettmilch im Jahre 1616 oder die Ermordung des Klavierhändlers Lichtenstein im Jahre 1904, als erstmals ein Mordfall durch die Abnahme von Fingerabdrücken aufgeklärt wurde. Die Führung findet jeden Sonntag ab 14.00 Uhr statt. Treffpunkt: Café Hauptwache."
+                        },
+                        {
+                          "id": "L",
+                          "text": "Statistisches Jahrbuch der Stadt Frankfurt\nAn einem durchschnittlichen Tag in Frankfurt werden 19 Babya geboren, sieben Brautpaare heiraten, aber fünf Ehepaare lassen sich scheiden. 136 Frankfurter ziehen im Stadtgebiet um, sechs neue Wohnungen werden fertiggestellt und acht Ausländer eingebürgert. Im Statistischen Jahrbuch der Stadt Frankfurt werden alle wichtigen Zahlen zum Leben, Arbeiten und Wohnen in der Stadt erfasst. Das Bürgeramt, Zeil 3, gibt den Bericht alljährlich heraus. Interessierte können das Statistische Jahrbuch im Internet herunterladen (www.frankfurt.de). Der Download ist kostenfrei."
+                        },
+                        {
+                          "id": "X",
+                          "text": "Keine passende Anzeige"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "situationId": 11,
+                          "adId": "A"
+                        },
+                        {
+                          "situationId": 12,
+                          "adId": "B"
+                        },
+                        {
+                          "situationId": 13,
+                          "adId": "C"
+                        },
+                        {
+                          "situationId": 14,
+                          "adId": "G"
+                        },
+                        {
+                          "situationId": 15,
+                          "adId": "D"
+                        },
+                        {
+                          "situationId": 16,
+                          "adId": "H"
+                        },
+                        {
+                          "situationId": 17,
+                          "adId": "I"
+                        },
+                        {
+                          "situationId": 18,
+                          "adId": "J"
+                        },
+                        {
+                          "situationId": 19,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 20,
+                          "adId": "X"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "NACO",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://forms.gle/LvzjNvmbH9P6JuAc8",
+                      "extractedAt": "2026-07-27T00:00:00.000Z"
+                    },
+                    "content": {
+                      "title": "Sehr geehrter Herr Martini,",
+                      "instruction": "Ergänzen Sie die fehlenden Wörter.",
+                      "text": "Sehr geehrter Herr Martini,\nvielen Dank für Ihre Anfrage vom 16. Juni [[21]] der Studienreise Ihrer Schulklasse nach Frankfurt am Main im [[22]] Oktober.\n\nDie Unterkunft bei deutschen Gastfamilien ist prinzipiell möglich. Die Familien werden von uns sorgfältig [[23]] strengen Kriterien ausgewählt, die Sie in der beiliegenden Informationsbroschüre auf den Seiten 15 bis 17 finden. Pro Gastfamilie können ein oder zwei Schülerinnen bzw. Schüler untergebracht werden. Unsere Gastfamilien [[24]] Halbpension, das heißt in der Regel Frühstück und Abendessen, an. Alle Familien wohnen im näheren Umkreis der Schule, [[25]] der Weg von der Unterkunft zum Unterricht innerhalb von maximal 10 Minuten zu Fuß zurückgelegt werden kann.\n\nZweimal pro Woche ist die Teilnahme am Schulunterricht Ihrer Partnerschule in Frankfurt, der Heinrich-Böll-Schule, in den Fächern Geografie, Kunst und Deutsch vorgesehen. Die Unterrichtssprache ist Deutsch. [[26]] Schülerinnen und Schülern der Partnerschule wird das Freizeit- und Kulturprogramm durchgeführt.\n\nDazu gehört zum Beispiel [[27]] der Gemäldegalerie \"Städel\", des Museums für Kunsthandwerk und des Deutschen Postmuseums. Auch ein Besuch beim Hessischen Rundfunk [[28]]. Jeweils dienstags und freitags werden Kulturabende veranstaltet, an denen die verschiedenen Aspekte und Unterschiede der deutschen und der italienischen Kultur [[29]] werden sollen.\n\nWeitere Informationen finden Sie in der beiliegenden Broschüre. Wir hoffen, dass Sie und Ihre Klasse einen erlebnisreichen und unvergesslichen Aufenthalt in Frankfurt [[30]] werden. Bei weiteren Fragen setzen Sie sich bitte mit uns in Verbindung.\n\nMit freundlichen Grüßen\nSibylle Lauterbacher\nStiftung Schüleraustausch Frankfurt",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Sehr geehrter Herr Martini,\nvielen Dank für Ihre Anfrage vom 16. Juni "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "zu"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Studienreise Ihrer Schulklasse nach Frankfurt am Main im "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "kommenden"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Oktober.\n\nDie Unterkunft bei deutschen Gastfamilien ist prinzipiell möglich. Die Familien werden von uns sorgfältig "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "nach"
+                        },
+                        {
+                          "type": "text",
+                          "value": " strengen Kriterien ausgewählt, die Sie in der beiliegenden Informationsbroschüre auf den Seiten 15 bis 17 finden. Pro Gastfamilie können ein oder zwei Schülerinnen bzw. Schüler untergebracht werden. Unsere Gastfamilien "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "bieten"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Halbpension, das heißt in der Regel Frühstück und Abendessen, an. Alle Familien wohnen im näheren Umkreis der Schule, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "so dass"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Weg von der Unterkunft zum Unterricht innerhalb von maximal 10 Minuten zu Fuß zurückgelegt werden kann.\n\nZweimal pro Woche ist die Teilnahme am Schulunterricht Ihrer Partnerschule in Frankfurt, der Heinrich-Böll-Schule, in den Fächern Geografie, Kunst und Deutsch vorgesehen. Die Unterrichtssprache ist Deutsch. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "Gemeinsam mit"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Schülerinnen und Schülern der Partnerschule wird das Freizeit- und Kulturprogramm durchgeführt.\n\nDazu gehört zum Beispiel "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "der Besuch"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Gemäldegalerie \"Städel\", des Museums für Kunsthandwerk und des Deutschen Postmuseums. Auch ein Besuch beim Hessischen Rundfunk "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "ist geplant"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Jeweils dienstags und freitags werden Kulturabende veranstaltet, an denen die verschiedenen Aspekte und Unterschiede der deutschen und der italienischen Kultur "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "besprochen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " werden sollen.\n\nWeitere Informationen finden Sie in der beiliegenden Broschüre. Wir hoffen, dass Sie und Ihre Klasse einen erlebnisreichen und unvergesslichen Aufenthalt in Frankfurt "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "haben"
+                        },
+                        {
+                          "type": "text",
+                          "value": " werden. Bei weiteren Fragen setzen Sie sich bitte mit uns in Verbindung.\n\nMit freundlichen Grüßen\nSibylle Lauterbacher\nStiftung Schüleraustausch Frankfurt"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "options": [
+                            "an",
+                            "von",
+                            "zu"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "options": [
+                            "ankommenden",
+                            "gekommenen",
+                            "kommenden"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "options": [
+                            "aus",
+                            "mit",
+                            "nach"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "options": [
+                            "bieten",
+                            "fordern",
+                            "nehmen"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "options": [
+                            "so dass",
+                            "weil",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "options": [
+                            "Gemeinsam mit",
+                            "Verbunden von",
+                            "Zusammen neben"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "options": [
+                            "die Ansicht",
+                            "der Besuch",
+                            "das Betrachten"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "options": [
+                            "hat geplant",
+                            "ist geplant",
+                            "wird geplant haben"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "options": [
+                            "besprochen",
+                            "gesprochen",
+                            "versprochen"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "options": [
+                            "haben",
+                            "hatten",
+                            "hätten"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "zu"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "kommenden"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "nach"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "bieten"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "so dass"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "Gemeinsam mit"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "der Besuch"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "ist geplant"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "besprochen"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "haben"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "NACO",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "https://forms.gle/LvzjNvmbH9P6JuAc8",
+                      "extractedAt": "2026-07-27T00:00:00.000Z"
+                    },
+                    "content": {
+                      "title": "Deutschland - ein Paradies für Kinder?",
+                      "instruction": "Wählen Sie für jede Lücke das passende Wort aus dem Kasten.",
+                      "text": "Deutschland - ein Paradies für Kinder?\n\n17 Millionen Kinder leben in Deutschland. Verglichen [[31]] der Bevölkerungszahl von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner. Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte zur Verfügung. Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig - und nur ein Viertel kann ganztägig zur Arbeit gehen.\n\nUm dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre [[32]] dem Kind zu Hause zu bleiben. [[33]] hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert. Dennoch wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem. Außerdem gilt die Elternzeit nur für Angestellte. Mütter zum Beispiel, die vor der Geburt des Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da. Kind und Karriere zu vereinbaren ist daher in Deutschland für die meisten Mütter so gut wie unmöglich. Dies scheinen die Hauptgründe [[34]] zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.\n\nDoch auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer: In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch, [[35]] stören mit ihrem Lachen und lauten Sprechen die anderen kinderlosen Gäste. Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt. [[36]] diese selbst häufig lautstark telefonieren, stört das niemanden: Telefonate sind eben wichtiger als Kinder.\n\nIn zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an, an [[37]] die Kinder die Ruhe der benachbarten kinderlosen Hausbewohner stören. Die Folge: Spielplätze werden von Gerichten wegen geschlossen. An Wiesen, auf denen früher Kinder tobten und Ball spielten, stehen nun Schilder: Betreten und spielen verboten. Bei Zuwiderhandlung drohen Geldstrafen.\n\nEltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten. In den meisten Zügen sind die Gänge so angeordnet, [[38]] mit einem Kinderwagen kein Durchkommen ist. Und in den Mutter-Kind-Abteilen haben sich schon andere Reisende breitgemacht, die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten. Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch [[39]] einen Platz. In vielen Berichten in Zeitungen oder im Fernsehen, die sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen, spricht man in Deutschland gerne [[40]] \"Problemen\". Man meint damit die Kinder. Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Deutschland - ein Paradies für Kinder?\n\n17 Millionen Kinder leben in Deutschland. Verglichen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "MIT"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Bevölkerungszahl von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner. Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte zur Verfügung. Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig - und nur ein Viertel kann ganztägig zur Arbeit gehen.\n\nUm dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "BEI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " dem Kind zu Hause zu bleiben. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "DAS"
+                        },
+                        {
+                          "type": "text",
+                          "value": " hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert. Dennoch wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem. Außerdem gilt die Elternzeit nur für Angestellte. Mütter zum Beispiel, die vor der Geburt des Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da. Kind und Karriere zu vereinbaren ist daher in Deutschland für die meisten Mütter so gut wie unmöglich. Dies scheinen die Hauptgründe "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "DAFÜR"
+                        },
+                        {
+                          "type": "text",
+                          "value": " zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.\n\nDoch auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer: In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "DABEI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " stören mit ihrem Lachen und lauten Sprechen die anderen kinderlosen Gäste. Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "OBWOHL"
+                        },
+                        {
+                          "type": "text",
+                          "value": " diese selbst häufig lautstark telefonieren, stört das niemanden: Telefonate sind eben wichtiger als Kinder.\n\nIn zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an, an "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "DENEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " die Kinder die Ruhe der benachbarten kinderlosen Hausbewohner stören. Die Folge: Spielplätze werden von Gerichten wegen geschlossen. An Wiesen, auf denen früher Kinder tobten und Ball spielten, stehen nun Schilder: Betreten und spielen verboten. Bei Zuwiderhandlung drohen Geldstrafen.\n\nEltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten. In den meisten Zügen sind die Gänge so angeordnet, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "DASS"
+                        },
+                        {
+                          "type": "text",
+                          "value": " mit einem Kinderwagen kein Durchkommen ist. Und in den Mutter-Kind-Abteilen haben sich schon andere Reisende breitgemacht, die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten. Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "AUF"
+                        },
+                        {
+                          "type": "text",
+                          "value": " einen Platz. In vielen Berichten in Zeitungen oder im Fernsehen, die sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen, spricht man in Deutschland gerne "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "VON"
+                        },
+                        {
+                          "type": "text",
+                          "value": " \"Problemen\". Man meint damit die Kinder. Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?"
+                        }
+                      ],
+                      "wordBank": [],
+                      "options": [
+                        "AUF",
+                        "BEI",
+                        "DABEI",
+                        "DAFÜR",
+                        "DAS",
+                        "DASS",
+                        "DAVON",
+                        "DENEN",
+                        "DOCH",
+                        "JEDOCH",
+                        "MIT",
+                        "OBWOHL",
+                        "SONDERN",
+                        "VON",
+                        "WEIL"
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "answer": "MIT"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DAS"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "DAFÜR"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "DABEI"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "OBWOHL"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "DENEN"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "DASS"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "AUF"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "VON"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "MIT"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DAS"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "DAFÜR"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "DABEI"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "OBWOHL"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "DENEN"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "DASS"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "AUF"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "VON"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "partOrder": [
+                  "teil-1",
+                  "teil-2",
+                  "teil-3",
+                  "sprachbausteine-1",
+                  "sprachbausteine-2"
+                ],
+                "counts": {
+                  "parts": 5
+                }
+              }
+            }
+          },
+          "versionOrder": [
+            "default"
+          ],
+          "counts": {
+            "parts": 5,
+            "versions": 1
+          }
         }
       },
       "themeOrder": [
@@ -79482,7 +80339,8 @@
         "jens-alt",
         "erfolg-alt",
         "massgeschneidert-alt",
-        "teleshopping-alt"
+        "teleshopping-alt",
+        "naco"
       ],
       "counts": {
         "themes": 62,
@@ -126201,863 +127059,6 @@
             "parts": 3,
             "versions": 1
           }
-        },
-        "naco": {
-          "id": "naco",
-          "title": "NACO",
-          "defaultVersion": "default",
-          "versions": {
-            "default": {
-              "key": "default",
-              "label": "Standard",
-              "title": "NACO",
-              "lesen": {
-                "parts": {
-                  "teil-1": {
-                    "meta": {
-                      "title": "NACO",
-                      "level": "B1",
-                      "partLabel": "Lesen Teil 1",
-                      "section": "lesen",
-                      "partNumber": 1,
-                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
-                      "extractedAt": "2026-07-27T00:00:00.000Z"
-                    },
-                    "content": {
-                      "instruction": "Lesen Sie die Überschriften und die Texte. Finden Sie für jeden Text die passende Überschrift.",
-                      "texts": [
-                        {
-                          "id": 1,
-                          "text": "Berlin wird in 10 Jahren rund 5.000 Lehrkräfte weniger brauchen als derzeit. Für den Unterricht an den Schulen werden dann, wie die Gewerkschaft Erziehung und Wissenschaft (GEW) errechnet hat, noch etwa 25.500 von heute 30.000 Pädagogen benötigt.\nDie Gewerkschaft befürchtet zugleich, dass bis zu diesem Zeitpunkt zu wenig Nachwuchskräfte ausgebildet werden und es deshalb zu einer dramatischer Unterversorgung kommt. Nach Meinung der GEW steuert die Hauptstadt bei der Personalausstattung der Schulen auf ein Fiasko zu, weil in den nächsten 10 Jahren mehr als 10.000 Lehrkräfte aus Altersgründen in den Ruhestand gehen. Außerdem würden jährlich zirka 400 Lehrer die Berliner Schulen verlassen, so dass nach Ansicht der GEW letzlich 9.000 Stellen fehlen. Wenn die Zahl der Studienanfänger nicht kräftig gesteigert werde, könne langfristig nicht einmal die Hälfte des prognostizierten Einstellungsbedarf gedeckt werden. Außerdem sei die Hauptstadt für Berufseinsteiger nicht so attraktiv wie andere Bundesländer, da sie selbst für Mangelfächer nur befristete Verträge anbietet."
-                        },
-                        {
-                          "id": 2,
-                          "text": "Wer sich in Berlin um eine Stelle als Lehrer bewirbt, muss hart im Nehmen sein. “Während man in Hamburgrespektvoll be-handelt wird, rechnen Vertreter der Berliner Schulverwaltung den Bewerbern vor, wie teuer Lehrer sind. Da fühlt man sich nicht richtig gewollt”, sagt Maria Schütz. Die 27-jährige gehört zu den rund 500 Referendaren, die in zwei Wochen mit ihrem Studium fertig werden. Maria Schütz, die ihr Exam mit der Note 1,5 bestanden hat und unbedingt in Berlin unterrichten wollte, hat mit ihrer Bewerbung leidvolle Erfahrungen hinter Sich. “Während man in Hamburg sofort eine feste Stelle im Beamtenverhältnis angeboten hat, konnte mir in Berlin keiner zusagen, dass ich im nächsten Schuljahr gebraucht werde.” Die junge Frau hat das gute Angebot aus Hamburg einer unsi-cheren Zukunft in Berlin vorgezogen.\nFür Anna Richter, Vorsitzende der Lehrergewerkschaft GEW, ist Marias Geschichte nur eine von vielen. Ihre Organisation ist besorgt darüber, dass Berlin auf diese Weise viele gut qualifi-zierte Lehrer an andere Bundesländer verlieren könnte."
-                        },
-                        {
-                          "id": 3,
-                          "text": "Die Hilferufe aus den Schulen wollen nicht verstummen: Schüler klagen über ständigen Lehrerwechsel, Eltern über Stundenausfall und Schulleiter über fehlende Bewerber. Doch es könnte noch schlimmer werden. Der Verband Bildung und Erziehung (VBE) rechnet in den nächsten 15 Jahren mit einem \"gewaltigen Lehrermangel\" in Deutschland. Der Verbandsvorsitzende Ludwig Eckinger sagte am Donnerstag, er gehe für diesen Zeitraum von bis zu 400.000 Lehrern aus, die aus Altersgründen aus dem Schuldienst ausscheiden. Für 100 pensionierte Lehrer kämen jedoch nur 50 neue Kollegen. Der Lehrernotstand kommt nicht überraschend, Forscher sagten ihn längst voraus. Und auch die Konferenz der Kultusminister präsentierte schon vor fünf Jahren beunruhigende Zahlen: Es werden an deutschen Schulen 70.000 Pädagogen fehlen, denn fast die Hälfte der 800.000 Lehrer geht in Pension. Deshalb fordern Experten seit langem einen bundesweiten Entwicklungspan, denn Untersuchungen des Lehrerarbeitsmarkt zeigten eher \"Chaos als systematische Planung\". Deutschland steuere auf Zustände wie in den Niederlanden zu. Dort ist der Lehrermangel so groß, dass sich Schulen gegenseitig Lehrer ausspannen."
-                        },
-                        {
-                          "id": 4,
-                          "text": "Bildungspolitiker und Lehrervertreter wollen Abiturienten scharenweise in den Lehrerberuf locken. Sie sollen große Lücken schließen, die durch Pensionierungen entstehen. Doch das Versprechen vom sicheren Job lässt sich womöglich nicht einlösen - es basiere auf falschen Annahmen, sagen Essener Bildungsforscher. Die Arbeitsgruppe Bildungsforschung/Bildungsplanung unter der Leitung des Wissenschaftlers Klaus Klemm kommt in ihrem Bericht zu einem ganz anderen Ergebnis. Während die Kultusministerkonferenz mit 70.000 fehlenden Lehrern rechnet und der Philologenverband gar mit 80.000, errechnete die Forschungsgruppe, dass es zu einer insgesamt ausgeglichenen Bilanz zwischen Nachfrage und Angebot auf dem Lehrer-Arbeitsmarkt kommen werde. Wenn sich die \"Einstellungspolitik der Bundesländer nicht ändert, dürften wir sogar einen Lehrerüberschuss bekommen\", sagte Klemm. Er warnt Abiturienten, ihre Studienentscheidung von den angeblich rosigen Aussichten für Lehrer abhängig zu machen. \"Die Abiturienten hören, es werden Lehrer gesucht, und schon studieren sie Germanistik fürs Gymnasium. Das ist ein Fehler\", sagt Klemm. Denn schon jetzt zeichne sich ab, dass es Deutsch-, Geschichts- und Fremdsprachenlehrer eher schwer haben werden."
-                        },
-                        {
-                          "id": 5,
-                          "text": "Mädchen haben tendenziell bessere Noten und stellen 56 Prozent der Abiturienten. Dagegen sind zwei Drittel der Schulabbrecher und drei Viertel der Sonderschüler Jungen. Liegt die Ursache in der Grundschule, wo von den knapp 200.000 Lehrkräften nur rund 26.000 männlich sind? An der Grundschule sind Männer eine Rarität. Wer sich dorthin verirrt, arbeitet allein unter Frauen. Im Schuljahr 1990/1991 unterrichtete noch ein Drittel Männer an Grundschulen, im Schuljahr 2006/2007 liegt der Frauenanteil an den Grundschullehrern bei 86,9 Prozent, während an weiterführenden Schulen das Geschlechterverhältnis nahezu ausgeglichen ist. Im Extremfall kann das bedeuten, dass Jungen bis zum Alter von 10 oder 12 Jahren in Krippe, Kindergarten und Grundschule ausschließlich von Frauen betreut und unterrichtet werden. Auch die Familienministerin vermisst die Männer an den Grundschulen. \"In den wichtigen frühen Jahren fehlen den Jungen männliche Vorbilder, an denen sie sich im Alltag ausrichten können\", sagte sie in einem Interview. Das gelte gerade für Kinder mit Migrationshintergrund. Gründe dafür sieht sie in der gesellschaftlichen Anerkennung des Berufs und in den Gehaltsstrukturen."
-                        }
-                      ],
-                      "headlines": [
-                        {
-                          "id": "A",
-                          "text": "An deutschen Grundschulen sind männliche Lehrkräfte selten"
-                        },
-                        {
-                          "id": "B",
-                          "text": "Bildungsexperten warnen: Deutsche Lehrer sind schlecht ausgebildet"
-                        },
-                        {
-                          "id": "C",
-                          "text": "Bildungsforscher: Lehrermangel wird in Deutschland nicht eintreten"
-                        },
-                        {
-                          "id": "D",
-                          "text": "Die Zahl der männlichen Lehrkräfte an Grundschulen nimmt zu"
-                        },
-                        {
-                          "id": "E",
-                          "text": "Experten befürchten zunehmenden Lehrermangel in Deutschland"
-                        },
-                        {
-                          "id": "F",
-                          "text": "Gewerkschaft erwartet Lehrermangel in Berlin"
-                        },
-                        {
-                          "id": "G",
-                          "text": "GEW befürchtet Abwanderung von gut ausgebildeten Lehrkräften aus Berlin"
-                        },
-                        {
-                          "id": "H",
-                          "text": "Immer mehr Berliner wandern aus"
-                        },
-                        {
-                          "id": "I",
-                          "text": "Immer weniger Frauen machen ein Grundschullehrer-Studium"
-                        },
-                        {
-                          "id": "J",
-                          "text": "Vorausschauende Politiker verhindern Lehrermangel in Berlin"
-                        }
-                      ],
-                      "answers": [
-                        {
-                          "textId": 1,
-                          "headlineId": "F"
-                        },
-                        {
-                          "textId": 2,
-                          "headlineId": "G"
-                        },
-                        {
-                          "textId": 3,
-                          "headlineId": "E"
-                        },
-                        {
-                          "textId": 4,
-                          "headlineId": "C"
-                        },
-                        {
-                          "textId": 5,
-                          "headlineId": "A"
-                        }
-                      ]
-                    }
-                  },
-                  "teil-2": {
-                    "meta": {
-                      "title": "NACO",
-                      "level": "B1",
-                      "partLabel": "Lesen Teil 2",
-                      "section": "lesen",
-                      "partNumber": 2,
-                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
-                      "extractedAt": "2026-07-27T00:00:00.000Z"
-                    },
-                    "content": {
-                      "instruction": "Lesen Sie den Text und wählen Sie für jede Aufgabe die richtige Lösung.",
-                      "passage": {
-                        "title": "Dienstmädchen war um1900 der am weitesten verbreitete Beruf für Frauen. Aus heutiger Perspektive ist das verwunderlich, denn der Alltag eines Dienstmädchens war sehr hart. Was trieb also Frauen in diesen Beruf?",
-                        "text": "Es waren vor allem Mädchen vom Land, die von ihren Eltern in die Stadt geschickt wurden, um dort zu arbeiten. Auf dem Land gab es kaum Stellen für Mädchen. Als Dienstmädchen, so hofften die Eltern, würden ihre Töchter wenigstens das Hauswirtschaften lernen - eine wichtige Fertigkeit als spätere Haus - und Ehefrau. Dabei war das enge Leben eines Dienstmädchens ohne viel Zeit genau das, was den Eltern gut an diesem Beruf erschien: da die Mädchen oft erst 14 oder 15 Jahre alt waren, waren sie in einer Familie behüteter als beispielsweise in der Fabrik. Allerdings kam es nicht selten vor, dass die Hoffnung auf eine Ausbildung enttäuscht wurde. Viele Mädchen wurden nicht eingearbeitet und angelernt, sondern mussten selber zusehen, wie sie das Arbeitspensum bewältigten.\nLeider verfügten die Eltern meist nicht über Kontakte in der Stadt. Die Mädchen fuhren mit dem Zug in die Fremde und mussten dann auf eigene Faust eine Stellung finden. Das machten sich auch dubiose Stellenvermittler an den Bahnöfen zu Nutze und verschafften den Mädchen Stellen in Kneipen als Kellnerinnen - damals eine Arbeit mit sehr schlechtem Ruf. Um diesen Missstand zu beenden, gründeten sich übrigens die Bahnhofsmissionen, die damals konfessionsübergreifend von den katholischen, evangelischen und jüdischen Gemeinden den ankommenden Mädchen erst einmal ein Bett bieten sollten.\nWer etwas auf sich hielt, beschäftigte um 1900 ein Dienstmädchen: sowohl kleinbürgerliche Haushalte als auch großbürgerliche. Die unteren Schichten, also Handwerkerfamilien, eiferten den gehobeneren nach. Nach außen durfte es an nichts fehlen, auch wenn das Budget dafür knapp war. Gespart wurde da, wo es nicht sichtbar war: bei der Unterbringung und Ernährung der Dienstmädchen. In gehobeneren Schichten gab es gerne auch mehr Personal - ein Vorteil und Nachteil zugleich. Einerseits hatte das Dienstmädchen so mehr Gesellschaft und war weniger isoliert, anderseits gab es auch unter den Dienstboten eine Hierarchie und das Dienstmädchen war das unterste Glied.\nAnders als Fabrikarbeiter hatten Dienstboten keine geregelte Arbeitszeiten. Sie mussten, wenn nötig, ihren Dienstherren rund um die Uhr zur Verfügung stehen. Das Dienstmädchen stand als Erste auf, befeuerte den Ofen, machte das Wasser zum Waschen und fürs Frühstück warm, servierte die Mahlzeiten, räumte wieder ab, spülte und putzte. Das Einkaufen gehörte zu den beliebten Tätigkeiten, denn das erlaubte es den Mädchen, einmal ohne Aufsicht in der Stadt unterwegs zu sein, andere Dienstmädchen zu treffen und sich auszutauschen. Fließendes Wasser gehörte um die Jahrhundertwende nicht zum Standard, so musste das Dienstmädchen auch Wasser schleppen. Erst wenn alle Arbeit erledigt war, konnte das Dienstmädchen schlafen gehen. Die wenige freie Zeit am Abend reichte oft nur, um die eigene Kleidung auszubessern. Alle vierzehn Tage durften die Mädchen sonntags für zwei Stunden das Haus verlassen, das war der einzige Ausgang, den sie hatten.\nDer Lohn bestand im Wesentlichen aus Kost und Unterkunft. Etwas zurücklegen für später konnte kaum ein Mädchen. Auch die Unterbringung ließ zu wünschen übrig. Von Berliner Dienstmädchen weiß man, dass sie oft noch nicht einmal eine eigene Kammer hatten, sondern auf so genannten Hängeböden schliefen, eine kleine Fläche von vielleicht mal zwei Metern bei einer Raumhöhe von etwa 1,50 Meter. Wenig Schlaf, und dann auch noch schlechter Schlaf: Vielen Mädchen waren die Strapazen trotz ihres jungen Alters anzusehen. Für die meisten war es nur eine Zwischenstation. Heirateten sie, beendeten die jungen Mädchen dieses Arbeitsverhältnis und stattdessen war die junge Frau selbser Hausfrau und Herrin eines eigenen Haushalts.",
-                        "paragraphs": [
-                          "Es waren vor allem Mädchen vom Land, die von ihren Eltern in die Stadt geschickt wurden, um dort zu arbeiten. Auf dem Land gab es kaum Stellen für Mädchen. Als Dienstmädchen, so hofften die Eltern, würden ihre Töchter wenigstens das Hauswirtschaften lernen - eine wichtige Fertigkeit als spätere Haus - und Ehefrau. Dabei war das enge Leben eines Dienstmädchens ohne viel Zeit genau das, was den Eltern gut an diesem Beruf erschien: da die Mädchen oft erst 14 oder 15 Jahre alt waren, waren sie in einer Familie behüteter als beispielsweise in der Fabrik. Allerdings kam es nicht selten vor, dass die Hoffnung auf eine Ausbildung enttäuscht wurde. Viele Mädchen wurden nicht eingearbeitet und angelernt, sondern mussten selber zusehen, wie sie das Arbeitspensum bewältigten.\nLeider verfügten die Eltern meist nicht über Kontakte in der Stadt. Die Mädchen fuhren mit dem Zug in die Fremde und mussten dann auf eigene Faust eine Stellung finden. Das machten sich auch dubiose Stellenvermittler an den Bahnöfen zu Nutze und verschafften den Mädchen Stellen in Kneipen als Kellnerinnen - damals eine Arbeit mit sehr schlechtem Ruf. Um diesen Missstand zu beenden, gründeten sich übrigens die Bahnhofsmissionen, die damals konfessionsübergreifend von den katholischen, evangelischen und jüdischen Gemeinden den ankommenden Mädchen erst einmal ein Bett bieten sollten.\nWer etwas auf sich hielt, beschäftigte um 1900 ein Dienstmädchen: sowohl kleinbürgerliche Haushalte als auch großbürgerliche. Die unteren Schichten, also Handwerkerfamilien, eiferten den gehobeneren nach. Nach außen durfte es an nichts fehlen, auch wenn das Budget dafür knapp war. Gespart wurde da, wo es nicht sichtbar war: bei der Unterbringung und Ernährung der Dienstmädchen. In gehobeneren Schichten gab es gerne auch mehr Personal - ein Vorteil und Nachteil zugleich. Einerseits hatte das Dienstmädchen so mehr Gesellschaft und war weniger isoliert, anderseits gab es auch unter den Dienstboten eine Hierarchie und das Dienstmädchen war das unterste Glied.\nAnders als Fabrikarbeiter hatten Dienstboten keine geregelte Arbeitszeiten. Sie mussten, wenn nötig, ihren Dienstherren rund um die Uhr zur Verfügung stehen. Das Dienstmädchen stand als Erste auf, befeuerte den Ofen, machte das Wasser zum Waschen und fürs Frühstück warm, servierte die Mahlzeiten, räumte wieder ab, spülte und putzte. Das Einkaufen gehörte zu den beliebten Tätigkeiten, denn das erlaubte es den Mädchen, einmal ohne Aufsicht in der Stadt unterwegs zu sein, andere Dienstmädchen zu treffen und sich auszutauschen. Fließendes Wasser gehörte um die Jahrhundertwende nicht zum Standard, so musste das Dienstmädchen auch Wasser schleppen. Erst wenn alle Arbeit erledigt war, konnte das Dienstmädchen schlafen gehen. Die wenige freie Zeit am Abend reichte oft nur, um die eigene Kleidung auszubessern. Alle vierzehn Tage durften die Mädchen sonntags für zwei Stunden das Haus verlassen, das war der einzige Ausgang, den sie hatten.\nDer Lohn bestand im Wesentlichen aus Kost und Unterkunft. Etwas zurücklegen für später konnte kaum ein Mädchen. Auch die Unterbringung ließ zu wünschen übrig. Von Berliner Dienstmädchen weiß man, dass sie oft noch nicht einmal eine eigene Kammer hatten, sondern auf so genannten Hängeböden schliefen, eine kleine Fläche von vielleicht mal zwei Metern bei einer Raumhöhe von etwa 1,50 Meter. Wenig Schlaf, und dann auch noch schlechter Schlaf: Vielen Mädchen waren die Strapazen trotz ihres jungen Alters anzusehen. Für die meisten war es nur eine Zwischenstation. Heirateten sie, beendeten die jungen Mädchen dieses Arbeitsverhältnis und stattdessen war die junge Frau selbser Hausfrau und Herrin eines eigenen Haushalts."
-                        ]
-                      },
-                      "questions": [
-                        {
-                          "id": 6,
-                          "prompt": "Die Eltern ließen ihre Töchter als Dienstmädchen arbeiten,",
-                          "options": [
-                            {
-                              "id": "a",
-                              "text": "damit sie die Jahre bis zur Arbeit in der Fabrik überbrücken konnten."
-                            },
-                            {
-                              "id": "b",
-                              "text": "damit sie lernten, einen Haushalt zu führen."
-                            },
-                            {
-                              "id": "c",
-                              "text": "damit sie besser beaufsichtigt waren als zu Hause."
-                            }
-                          ],
-                          "answerId": "b",
-                          "answerText": "damit sie lernten, einen Haushalt zu führen."
-                        },
-                        {
-                          "id": 7,
-                          "prompt": "Die Stellen fanden die Mädchen zumeist",
-                          "options": [
-                            {
-                              "id": "a",
-                              "text": "durch Vermittler, die ins Dorf kamen."
-                            },
-                            {
-                              "id": "b",
-                              "text": "alleine"
-                            },
-                            {
-                              "id": "c",
-                              "text": "mit Hilfe ihrer Eltern."
-                            }
-                          ],
-                          "answerId": "b",
-                          "answerText": "alleine"
-                        },
-                        {
-                          "id": 8,
-                          "prompt": "Dienstmädchen gab es",
-                          "options": [
-                            {
-                              "id": "a",
-                              "text": "fast nur bei reicheren Leuten."
-                            },
-                            {
-                              "id": "b",
-                              "text": "auch bei den weniger reichen Leuten."
-                            },
-                            {
-                              "id": "c",
-                              "text": "in jedem Haus in der Stadt."
-                            }
-                          ],
-                          "answerId": "b",
-                          "answerText": "auch bei den weniger reichen Leuten."
-                        },
-                        {
-                          "id": 9,
-                          "prompt": "Dienstmädchen",
-                          "options": [
-                            {
-                              "id": "a",
-                              "text": "mussten länger arbeiten als Fabrikarbeiter."
-                            },
-                            {
-                              "id": "b",
-                              "text": "konnten sich am Sonntag zwei Stunden mit anderen Dienstmädchen treffen."
-                            },
-                            {
-                              "id": "c",
-                              "text": "durften nicht alleine einkaufen gehen."
-                            }
-                          ],
-                          "answerId": "a",
-                          "answerText": "mussten länger arbeiten als Fabrikarbeiter."
-                        },
-                        {
-                          "id": 10,
-                          "prompt": "Dienstmädchen bekamen",
-                          "options": [
-                            {
-                              "id": "a",
-                              "text": "fast kein Geld."
-                            },
-                            {
-                              "id": "b",
-                              "text": "ein eigenes Zimmer."
-                            },
-                            {
-                              "id": "c",
-                              "text": "Geld, um für später zu sparen."
-                            }
-                          ],
-                          "answerId": "a",
-                          "answerText": "fast kein Geld."
-                        }
-                      ]
-                    }
-                  },
-                  "teil-3": {
-                    "meta": {
-                      "title": "NACO",
-                      "level": "B1",
-                      "partLabel": "Lesen Teil 3",
-                      "section": "lesen",
-                      "partNumber": 3,
-                      "sourceUrl": "https://forms.gle/D8WaftTL1MmXqjFT6",
-                      "extractedAt": "2026-07-27T00:00:00.000Z"
-                    },
-                    "content": {
-                      "situations": [
-                        {
-                          "id": 11,
-                          "text": "Sie möchten Ihren Eltern zur Silberhochzeit eine besondere Schiffsreise auf dem Meer schenken."
-                        },
-                        {
-                          "id": 12,
-                          "text": "Ihre Freundin möchte mit ihrem Mann Silvester und Neujahr im Urlaub feiern, aber nicht schon wieder im Gebirge."
-                        },
-                        {
-                          "id": 13,
-                          "text": "Ein Bekannter möchte im Winter ein besinnliches Wochenende in den Bergen verbringen, denn er mag es, durch die verschneite Natur zu laufen."
-                        },
-                        {
-                          "id": 14,
-                          "text": "Eine Bekannte aus dem Rhein-Main-Gebiet sucht Vorschläge für Ein-Tages-Ausflüge, denn sie übernachtet nicht gern in fremden Betten."
-                        },
-                        {
-                          "id": 15,
-                          "text": "Sie wollen wie jedes Jahr in der zweiten Jahreshälfte eine zirka einwöchige organisierte Urlaubsreise in Europa machen und sich dabei viel mit dem Fahrrad fortbewegen."
-                        },
-                        {
-                          "id": 16,
-                          "text": "Sie möchten einen netten Abend mit Freunden bei gutem Essen und außergewöhnlichem Unterhaltungsprogramm verleben."
-                        },
-                        {
-                          "id": 17,
-                          "text": "Sie suchen für eine prunkvolle Hochzeitsfeier geeignete festliche Räumlichkeiten in einer stimmungsvollen klösterlichen Umgebung für zirka 50 Personen."
-                        },
-                        {
-                          "id": 18,
-                          "text": "Sie sind neu in Frankfurt a. M. und suchen deshalb nach nützlichen Informationen und praktischen Tipps, um sich schnell in der neuen Umgebung einzuleben."
-                        },
-                        {
-                          "id": 19,
-                          "text": "Sie interessieren sich für Bücher über Architektur und Gartenarchitektur deutscher Klosteranlagen."
-                        },
-                        {
-                          "id": 20,
-                          "text": "Sie suchen gute Kriminalromane, deren Handlung im Rhein-Main-Gebiet und besonders in Frankfurt spielt."
-                        }
-                      ],
-                      "ads": [
-                        {
-                          "id": "A",
-                          "text": "Norwegen: Kirkenes-Bergen\nDie schönste Seereise der Welt - von Anfang April bis Ende Oktober. 6-Tage-Seereise 2009 ab 699,- € p. P. Eindrucksvolle Landschaften entdecken. Die Seele baumeln lassen. Natur mit allen Sinnen genießen. Mit einer Postschiffreise können Sie das unglaubliche Panorama, das Ihnen die norwegische Küste wie im Bilderbuch darbietet, genießen. Erleben Sie die Einzigartigkeit der atemberaubenden Gebirgsketten, der artenreichen Tierwelt und der idyllisch gelegenen Hafenstädte, die wir im Liniendienst anfahren. Buchen Sie innerhalb der nächsten 6 Wochen - und sichern Sie sich Ihre Wunschkabine und einen Frühbucher-Bonus bis 25%. Information, aktueller Katalog und Buchung unter: Tel.: (040) 367 53-496, E-Mail: info@eiligruten.de, www.eiligruten.de."
-                        },
-                        {
-                          "id": "B",
-                          "text": "Mal was ganz anderes machen\nWinterurlaub am Meer. Denn Nord- und Ostseeküste bieten auch in der kalten Jahreszeit Aktivitäten, die der ganzen Familie Spaß machen. Zum Beispiel \"Boßeln\". Welche Mannschaft kullert die bleigefüllte Holzkugel auf den gefrorenen Wegen am weitesten? Zwischendurch gibt es heißen Früchtetee oder Glühwein, hinterher traditionell Grünkohl für alle. Tierfreunde können auf einer Robbensafari zusehen, wie die Robbenmütter ihre Babys säugen. Wer will, kann die Winterlandschaft dick eingemummt von der Pferdekutsche aus genießen. Gleichmäßig stapfen die Hufe im Sand, der Leuchtturm ist das ferne Ziel.\nUnd danach aufwärmen am knisternden Kamin, mit süßem Punsch und Bratapfel. Braucht da noch jemand Berge? Infos unter: www.schleswig-holstein.de."
-                        },
-                        {
-                          "id": "C",
-                          "text": "Meditation im Schnee\nNur die Schritte knirschen gleichmäßig im Schnee. Sonst ist es absolut still. Rechts und links ragen die Berge schroff in den blauen Himmel. Strahlend weiß glitzert die Landschaft wie von Tausenden kleiner Diamanten. Wer in meditativer Stimmung durch den Schnee stapfen möchte, ist auf einer Schneeschuhwanderung in den Ostschweizer Bergen richtig. Beim Schneeschuh-Wochenende wandert man mit großflächigen Schuhen ausgerüstet durch den Tiefschnee. Später fahren dann alle mit dem Schlitten ins Tal, wo im Gasthaus schon eine heiße Suppe auf dem Herd dampft und ein warmes Bett wartet. Für mehr Informationen besuchen Sie unsere Internet-Seite: www.meditation-im-schnee.ch."
-                        },
-                        {
-                          "id": "D",
-                          "text": "Fluss- und Radreise durch Belgien\n8 Tage Fluss- und Radreise durch Belgien. Abseits der Hauptstraßen fahren Sie mit Schiff und Rad durch die flache Polderlandschaft Belgiens, die dafür ideal geeignet ist. Die Städte Brügge und Brüssel bilden den Anfangs- und Endpunkt der Reise. Im Reisepreis enthalten: Bahnreise in der 2. Klasse ab Frankfurt, Transfers vom Bahnhof zum Schiff und zurück. 7 Nächte in Außenkabinen an Board der \"Quo Vadis\", Frühstück, Mittagessen oder Lunchpaket für Fahrradtouren, Abendessen. Tägliche Tourenbesprechungen, Landkarten, alle Hafen-, Schleusen- und Brückengebühren, Leihgebühr für ein 7-Gang-Unisex-Rad, qualifizierte, ortskundige Reiseleitung. Die Radstrecke beträgt ca. 296 km. Termin: 19. bis 26. September. Preis: 1199 € p. P. in Zweibettkabine."
-                        },
-                        {
-                          "id": "E",
-                          "text": "Radwandern durch das Veneto\n8 Tage Radwandern durch das Veneto. Sogar Goethe war sprachlos - so schön ist Norditalien. Ruhige, flache Wege geleiten Sie vom Gardasee über Verona nach Vicenza. Durchs Etschtal und über die Lagunen kommen Sie nach Venedig. Im Reisepreis enthalten: Bahnreise 2. Klasse von Frankfurt nach Verona und zurück von Venedig inklusive Schafwagen. Tranfer von und zum Bahnhof in Verona und Venedig. 6 Übernachtungen in ausgewählten Hotels inkl. Frühstück, 6 Abendessen, Picknickservice, Leih-Tourenrad mit 8-Gang-Schaltung, sämtliche Eintritte laut Programm, qualifizierte, ortskundige Reiseleitung, Kleinbus als Begleitfahrzeug, Gepäcktransport. Termin: 5. bis 12. April. Preis: 1399 € p. P. im DZ."
-                        },
-                        {
-                          "id": "F",
-                          "text": "Übernachten \"Im Namen der Rose\"\nBerühmt wurde Kloster Eberbach 1988 als Schauplatz für die Innenaufnahmen zum Film \"Der Name der Rose\". Zwar gibt es heute kein klösterliches Leben mehr, aber das in seinen Baukörpern erhaltene Kloster gilt als das bedeutendste mittelalterliche Gesamtkunstwerk Hessens. Die jahrhundertealte Weinbautradition hat sich bis heute fortgesetzt. Wer völlig unbeschwert die Weinverkostungen erleben möchte, kann das \"Herbst-Winter-Wochenend-Spezial\" nutzen, das die Gastronomiebetriebe im Kloster Eberbach zusammengestellt haben. Das Angebot umfasst auch eine Übernachtung im Doppelzimmer von Samstag auf Sonntag. Es beinhaltet zudem ein reichhaltiges Früstücksbuffet und ein Vier-Gänge-Überraschungsmenü am Abend. Der Preis pro Person beträgt 97,- €. Weitere Informationen gibt es bei den Gastronomiebetrieben im Kloster Eberbach, Eltville, unter Telefon 06723/993-0."
-                        },
-                        {
-                          "id": "G",
-                          "text": "Tagestouren in Rheinhessen und im Rheingau\nMit der Zahnstangenbahn auf den Wiesbadener Neroberg fahren, in Geisenheim mediterran kochen lernen, wandern mit Lamas und Alpakas als Begleiter, in Siefersheim mit Kräuterfrauen nach vergessenen Pflanzen suchen oder eine Führung durch Kloster Eberrbach mit anschließender Weinprobe — 111 Tipps für Tagestouren in Rheinhessen und im Rheingau stellt der neue Band “Ein schöner Tag” vor. Darunter sind auch echte Geheimtipps. Zum Beispiel, wie Besucher im Mainzer Dom ins Innere der Orgel steigen können oder wo die “Nacht der Verführung” stattfindet."
-                        },
-                        {
-                          "id": "H",
-                          "text": "Abend im Palladio\nWenn die Tage kürzer und die Nächte kälter werden, ist es Zeit für Artistik, Comedy und Gaumenfreuden. Magier, Jongleure, Akrobaten und ein Vier-Gang-Gourmet-Menü im Schein hunderter Kerzen: Ein Abend im Palladio verspricht unterhaltsame Stunden mit perfektem Genuss im stilvollen Ambiente des traumhaft schönen, nostalgischen Spiegelpalastes. Das Gourmet-Theater Palladio serviert Ihnen seine charmante Mixtur aus hochkarätigem Entertainmente und exquisiter Kochkunst. Freuen Sie sich auf köstliche Menükreationen und erleben Sie dreieinhalb Stunden voller Humor und Lebensfreude. Lassen Sie sich verwöhnen und verzaubern! Dienstags bis sonntags sind wir für Sie da: Beginn ist jeweils um 20.00 Uhr. Foyer und Bar sind bereits 90 Minuten vor Showbeginn geöffnet."
-                        },
-                        {
-                          "id": "I",
-                          "text": "Kloster Eberbach\nKloster Eberbach mit seinen eindrucksvollen mittelalterlichen und barocken Bauten bietet seinen Gästen einzigartige Voraussetzungen für eine stilvolle Veranstaltung in altehrwürdigen Klostermauern. Sie können viele unserer repräsentativen Säle und prachtvollen Räume für Veranstaltungen anmieten. Ob Sie einen festlichen Empfang oder ein nobles Bankett planen oder ob Ihnen eine stilvolle Produktpräsentation vorschwebt: Hier lässt sich all dies hervorragend inszenieren. Die breite Palette unserer Räumlichkeiten und Gärten gibt Raum für Gesellschaften von 20 bis 1.000 Personen und lässt im Zusammenspiel mit dem Ambiente der Klosteranlage jede Veranstaltung zu einem ganz besonderen Ereignis werden. Hier finden Sie den richtigen Rahmen für Ihre Familienfeier, Ihr Seminar, Ihren Betriebsausflug, ein festliches Bankett oder eine Vortragsveranstaltung. Einige Räume sind zudem für Hochzeiten, Konzerte und Lesungen geeignet."
-                        },
-                        {
-                          "id": "J",
-                          "text": "Stadt-Führer Frankfurt am Main. Kultur & mehr\nViel Lob von der Lokalpresse für einen neuen Stadt-Führer über die Mainmetropole: Anne Schütz: Frankfurt am Main. Kultur & mehr. Paul Müller Verlag, 15,95 €. Dieser umfangreiche Reise-Führer wartet mit einer ganz besonderen Mischung auf: Rundgänge zur Stadtgeschichte stehen neben einer geballten Ladung an praktischen Informationen. Besonders gelungen ist es, wie die Autorin historische Details mit Spaziergängen verzahnt. Sie rennt keinen Trends hinterher, sondern führt als kenntnisreiche Begleiterin durch ihre Stadt. Ein praktischer Stadtkulturführer für Einheimische und Besucher mit Hunderten von Tipps, Adressen, Öffnungszeiten und Preisen von Parks und Bädern über schöne Lokale bis zu Museen,\nTheatern und Veranstaltungsorten."
-                        },
-                        {
-                          "id": "K",
-                          "text": "Tour zu Schauplätzen der berühmtesten Kriminalfälle Frankfurts\nDer Historiker und Stadtfüher Peter Glock begleitet Sie auf einer interessanten zweistündigen Tour durch die Innenstadt zu Schauplätzen der berühmtesten Kriminalfälle in der Geschichte Frankfurts. Sie erfahren alles über spektakuläre Verbrechen, wie z. B. den Mord an Rosemarie Nitribitt, die Hinrichtung von Vinzenz Fettmilch im Jahre 1616 oder die Ermordung des Klavierhändlers Lichtenstein im Jahre 1904, als erstmals ein Mordfall durch die Abnahme von Fingerabdrücken aufgeklärt wurde. Die Führung findet jeden Sonntag ab 14.00 Uhr statt. Treffpunkt: Café Hauptwache."
-                        },
-                        {
-                          "id": "L",
-                          "text": "Statistisches Jahrbuch der Stadt Frankfurt\nAn einem durchschnittlichen Tag in Frankfurt werden 19 Babya geboren, sieben Brautpaare heiraten, aber fünf Ehepaare lassen sich scheiden. 136 Frankfurter ziehen im Stadtgebiet um, sechs neue Wohnungen werden fertiggestellt und acht Ausländer eingebürgert. Im Statistischen Jahrbuch der Stadt Frankfurt werden alle wichtigen Zahlen zum Leben, Arbeiten und Wohnen in der Stadt erfasst. Das Bürgeramt, Zeil 3, gibt den Bericht alljährlich heraus. Interessierte können das Statistische Jahrbuch im Internet herunterladen (www.frankfurt.de). Der Download ist kostenfrei."
-                        },
-                        {
-                          "id": "X",
-                          "text": "Keine passende Anzeige"
-                        }
-                      ],
-                      "answers": [
-                        {
-                          "situationId": 11,
-                          "adId": "A"
-                        },
-                        {
-                          "situationId": 12,
-                          "adId": "B"
-                        },
-                        {
-                          "situationId": 13,
-                          "adId": "C"
-                        },
-                        {
-                          "situationId": 14,
-                          "adId": "G"
-                        },
-                        {
-                          "situationId": 15,
-                          "adId": "D"
-                        },
-                        {
-                          "situationId": 16,
-                          "adId": "H"
-                        },
-                        {
-                          "situationId": 17,
-                          "adId": "I"
-                        },
-                        {
-                          "situationId": 18,
-                          "adId": "J"
-                        },
-                        {
-                          "situationId": 19,
-                          "adId": "X"
-                        },
-                        {
-                          "situationId": 20,
-                          "adId": "X"
-                        }
-                      ]
-                    }
-                  },
-                  "sprachbausteine-1": {
-                    "meta": {
-                      "title": "NACO",
-                      "level": "B1",
-                      "partLabel": "Sprachbausteine 1",
-                      "section": "sprachbausteine",
-                      "partNumber": 1,
-                      "sourceUrl": "https://forms.gle/LvzjNvmbH9P6JuAc8",
-                      "extractedAt": "2026-07-27T00:00:00.000Z"
-                    },
-                    "content": {
-                      "title": "Sehr geehrter Herr Martini,",
-                      "instruction": "Ergänzen Sie die fehlenden Wörter.",
-                      "text": "Sehr geehrter Herr Martini,\nvielen Dank für Ihre Anfrage vom 16. Juni [[21]] der Studienreise Ihrer Schulklasse nach Frankfurt am Main im [[22]] Oktober.\n\nDie Unterkunft bei deutschen Gastfamilien ist prinzipiell möglich. Die Familien werden von uns sorgfältig [[23]] strengen Kriterien ausgewählt, die Sie in der beiliegenden Informationsbroschüre auf den Seiten 15 bis 17 finden. Pro Gastfamilie können ein oder zwei Schülerinnen bzw. Schüler untergebracht werden. Unsere Gastfamilien [[24]] Halbpension, das heißt in der Regel Frühstück und Abendessen, an. Alle Familien wohnen im näheren Umkreis der Schule, [[25]] der Weg von der Unterkunft zum Unterricht innerhalb von maximal 10 Minuten zu Fuß zurückgelegt werden kann.\n\nZweimal pro Woche ist die Teilnahme am Schulunterricht Ihrer Partnerschule in Frankfurt, der Heinrich-Böll-Schule, in den Fächern Geografie, Kunst und Deutsch vorgesehen. Die Unterrichtssprache ist Deutsch. [[26]] Schülerinnen und Schülern der Partnerschule wird das Freizeit- und Kulturprogramm durchgeführt.\n\nDazu gehört zum Beispiel [[27]] der Gemäldegalerie \"Städel\", des Museums für Kunsthandwerk und des Deutschen Postmuseums. Auch ein Besuch beim Hessischen Rundfunk [[28]]. Jeweils dienstags und freitags werden Kulturabende veranstaltet, an denen die verschiedenen Aspekte und Unterschiede der deutschen und der italienischen Kultur [[29]] werden sollen.\n\nWeitere Informationen finden Sie in der beiliegenden Broschüre. Wir hoffen, dass Sie und Ihre Klasse einen erlebnisreichen und unvergesslichen Aufenthalt in Frankfurt [[30]] werden. Bei weiteren Fragen setzen Sie sich bitte mit uns in Verbindung.\n\nMit freundlichen Grüßen\nSibylle Lauterbacher\nStiftung Schüleraustausch Frankfurt",
-                      "segments": [
-                        {
-                          "type": "text",
-                          "value": "Sehr geehrter Herr Martini,\nvielen Dank für Ihre Anfrage vom 16. Juni "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 21,
-                          "answer": "zu"
-                        },
-                        {
-                          "type": "text",
-                          "value": " der Studienreise Ihrer Schulklasse nach Frankfurt am Main im "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 22,
-                          "answer": "kommenden"
-                        },
-                        {
-                          "type": "text",
-                          "value": " Oktober.\n\nDie Unterkunft bei deutschen Gastfamilien ist prinzipiell möglich. Die Familien werden von uns sorgfältig "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 23,
-                          "answer": "nach"
-                        },
-                        {
-                          "type": "text",
-                          "value": " strengen Kriterien ausgewählt, die Sie in der beiliegenden Informationsbroschüre auf den Seiten 15 bis 17 finden. Pro Gastfamilie können ein oder zwei Schülerinnen bzw. Schüler untergebracht werden. Unsere Gastfamilien "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 24,
-                          "answer": "bieten"
-                        },
-                        {
-                          "type": "text",
-                          "value": " Halbpension, das heißt in der Regel Frühstück und Abendessen, an. Alle Familien wohnen im näheren Umkreis der Schule, "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 25,
-                          "answer": "so dass"
-                        },
-                        {
-                          "type": "text",
-                          "value": " der Weg von der Unterkunft zum Unterricht innerhalb von maximal 10 Minuten zu Fuß zurückgelegt werden kann.\n\nZweimal pro Woche ist die Teilnahme am Schulunterricht Ihrer Partnerschule in Frankfurt, der Heinrich-Böll-Schule, in den Fächern Geografie, Kunst und Deutsch vorgesehen. Die Unterrichtssprache ist Deutsch. "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 26,
-                          "answer": "Gemeinsam mit"
-                        },
-                        {
-                          "type": "text",
-                          "value": " Schülerinnen und Schülern der Partnerschule wird das Freizeit- und Kulturprogramm durchgeführt.\n\nDazu gehört zum Beispiel "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 27,
-                          "answer": "der Besuch"
-                        },
-                        {
-                          "type": "text",
-                          "value": " der Gemäldegalerie \"Städel\", des Museums für Kunsthandwerk und des Deutschen Postmuseums. Auch ein Besuch beim Hessischen Rundfunk "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 28,
-                          "answer": "ist geplant"
-                        },
-                        {
-                          "type": "text",
-                          "value": ". Jeweils dienstags und freitags werden Kulturabende veranstaltet, an denen die verschiedenen Aspekte und Unterschiede der deutschen und der italienischen Kultur "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 29,
-                          "answer": "besprochen"
-                        },
-                        {
-                          "type": "text",
-                          "value": " werden sollen.\n\nWeitere Informationen finden Sie in der beiliegenden Broschüre. Wir hoffen, dass Sie und Ihre Klasse einen erlebnisreichen und unvergesslichen Aufenthalt in Frankfurt "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 30,
-                          "answer": "haben"
-                        },
-                        {
-                          "type": "text",
-                          "value": " werden. Bei weiteren Fragen setzen Sie sich bitte mit uns in Verbindung.\n\nMit freundlichen Grüßen\nSibylle Lauterbacher\nStiftung Schüleraustausch Frankfurt"
-                        }
-                      ],
-                      "blanks": [
-                        {
-                          "id": 21,
-                          "options": [
-                            "an",
-                            "von",
-                            "zu"
-                          ]
-                        },
-                        {
-                          "id": 22,
-                          "options": [
-                            "ankommenden",
-                            "gekommenen",
-                            "kommenden"
-                          ]
-                        },
-                        {
-                          "id": 23,
-                          "options": [
-                            "aus",
-                            "mit",
-                            "nach"
-                          ]
-                        },
-                        {
-                          "id": 24,
-                          "options": [
-                            "bieten",
-                            "fordern",
-                            "nehmen"
-                          ]
-                        },
-                        {
-                          "id": 25,
-                          "options": [
-                            "so dass",
-                            "weil",
-                            "wenn"
-                          ]
-                        },
-                        {
-                          "id": 26,
-                          "options": [
-                            "Gemeinsam mit",
-                            "Verbunden von",
-                            "Zusammen neben"
-                          ]
-                        },
-                        {
-                          "id": 27,
-                          "options": [
-                            "die Ansicht",
-                            "der Besuch",
-                            "das Betrachten"
-                          ]
-                        },
-                        {
-                          "id": 28,
-                          "options": [
-                            "hat geplant",
-                            "ist geplant",
-                            "wird geplant haben"
-                          ]
-                        },
-                        {
-                          "id": 29,
-                          "options": [
-                            "besprochen",
-                            "gesprochen",
-                            "versprochen"
-                          ]
-                        },
-                        {
-                          "id": 30,
-                          "options": [
-                            "haben",
-                            "hatten",
-                            "hätten"
-                          ]
-                        }
-                      ],
-                      "answers": [
-                        {
-                          "id": 21,
-                          "answer": "zu"
-                        },
-                        {
-                          "id": 22,
-                          "answer": "kommenden"
-                        },
-                        {
-                          "id": 23,
-                          "answer": "nach"
-                        },
-                        {
-                          "id": 24,
-                          "answer": "bieten"
-                        },
-                        {
-                          "id": 25,
-                          "answer": "so dass"
-                        },
-                        {
-                          "id": 26,
-                          "answer": "Gemeinsam mit"
-                        },
-                        {
-                          "id": 27,
-                          "answer": "der Besuch"
-                        },
-                        {
-                          "id": 28,
-                          "answer": "ist geplant"
-                        },
-                        {
-                          "id": 29,
-                          "answer": "besprochen"
-                        },
-                        {
-                          "id": 30,
-                          "answer": "haben"
-                        }
-                      ]
-                    }
-                  },
-                  "sprachbausteine-2": {
-                    "meta": {
-                      "title": "NACO",
-                      "level": "B1",
-                      "partLabel": "Sprachbausteine 2",
-                      "section": "sprachbausteine",
-                      "partNumber": 2,
-                      "sourceUrl": "https://forms.gle/LvzjNvmbH9P6JuAc8",
-                      "extractedAt": "2026-07-27T00:00:00.000Z"
-                    },
-                    "content": {
-                      "title": "Deutschland - ein Paradies für Kinder?",
-                      "instruction": "Wählen Sie für jede Lücke das passende Wort aus dem Kasten.",
-                      "text": "Deutschland - ein Paradies für Kinder?\n\n17 Millionen Kinder leben in Deutschland. Verglichen [[31]] der Bevölkerungszahl von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner. Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte zur Verfügung. Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig - und nur ein Viertel kann ganztägig zur Arbeit gehen.\n\nUm dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre [[32]] dem Kind zu Hause zu bleiben. [[33]] hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert. Dennoch wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem. Außerdem gilt die Elternzeit nur für Angestellte. Mütter zum Beispiel, die vor der Geburt des Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da. Kind und Karriere zu vereinbaren ist daher in Deutschland für die meisten Mütter so gut wie unmöglich. Dies scheinen die Hauptgründe [[34]] zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.\n\nDoch auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer: In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch, [[35]] stören mit ihrem Lachen und lauten Sprechen die anderen kinderlosen Gäste. Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt. [[36]] diese selbst häufig lautstark telefonieren, stört das niemanden: Telefonate sind eben wichtiger als Kinder.\n\nIn zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an, an [[37]] die Kinder die Ruhe der benachbarten kinderlosen Hausbewohner stören. Die Folge: Spielplätze werden von Gerichten wegen geschlossen. An Wiesen, auf denen früher Kinder tobten und Ball spielten, stehen nun Schilder: Betreten und spielen verboten. Bei Zuwiderhandlung drohen Geldstrafen.\n\nEltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten. In den meisten Zügen sind die Gänge so angeordnet, [[38]] mit einem Kinderwagen kein Durchkommen ist. Und in den Mutter-Kind-Abteilen haben sich schon andere Reisende breitgemacht, die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten. Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch [[39]] einen Platz. In vielen Berichten in Zeitungen oder im Fernsehen, die sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen, spricht man in Deutschland gerne [[40]] \"Problemen\". Man meint damit die Kinder. Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?",
-                      "segments": [
-                        {
-                          "type": "text",
-                          "value": "Deutschland - ein Paradies für Kinder?\n\n17 Millionen Kinder leben in Deutschland. Verglichen "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 31,
-                          "answer": "MIT"
-                        },
-                        {
-                          "type": "text",
-                          "value": " der Bevölkerungszahl von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner. Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte zur Verfügung. Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig - und nur ein Viertel kann ganztägig zur Arbeit gehen.\n\nUm dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 32,
-                          "answer": "BEI"
-                        },
-                        {
-                          "type": "text",
-                          "value": " dem Kind zu Hause zu bleiben. "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 33,
-                          "answer": "DAS"
-                        },
-                        {
-                          "type": "text",
-                          "value": " hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert. Dennoch wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem. Außerdem gilt die Elternzeit nur für Angestellte. Mütter zum Beispiel, die vor der Geburt des Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da. Kind und Karriere zu vereinbaren ist daher in Deutschland für die meisten Mütter so gut wie unmöglich. Dies scheinen die Hauptgründe "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 34,
-                          "answer": "DAFÜR"
-                        },
-                        {
-                          "type": "text",
-                          "value": " zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.\n\nDoch auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer: In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch, "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 35,
-                          "answer": "DABEI"
-                        },
-                        {
-                          "type": "text",
-                          "value": " stören mit ihrem Lachen und lauten Sprechen die anderen kinderlosen Gäste. Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt. "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 36,
-                          "answer": "OBWOHL"
-                        },
-                        {
-                          "type": "text",
-                          "value": " diese selbst häufig lautstark telefonieren, stört das niemanden: Telefonate sind eben wichtiger als Kinder.\n\nIn zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an, an "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 37,
-                          "answer": "DENEN"
-                        },
-                        {
-                          "type": "text",
-                          "value": " die Kinder die Ruhe der benachbarten kinderlosen Hausbewohner stören. Die Folge: Spielplätze werden von Gerichten wegen geschlossen. An Wiesen, auf denen früher Kinder tobten und Ball spielten, stehen nun Schilder: Betreten und spielen verboten. Bei Zuwiderhandlung drohen Geldstrafen.\n\nEltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten. In den meisten Zügen sind die Gänge so angeordnet, "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 38,
-                          "answer": "DASS"
-                        },
-                        {
-                          "type": "text",
-                          "value": " mit einem Kinderwagen kein Durchkommen ist. Und in den Mutter-Kind-Abteilen haben sich schon andere Reisende breitgemacht, die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten. Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 39,
-                          "answer": "AUF"
-                        },
-                        {
-                          "type": "text",
-                          "value": " einen Platz. In vielen Berichten in Zeitungen oder im Fernsehen, die sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen, spricht man in Deutschland gerne "
-                        },
-                        {
-                          "type": "luecke",
-                          "id": 40,
-                          "answer": "VON"
-                        },
-                        {
-                          "type": "text",
-                          "value": " \"Problemen\". Man meint damit die Kinder. Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?"
-                        }
-                      ],
-                      "wordBank": [],
-                      "options": [
-                        "AUF",
-                        "BEI",
-                        "DABEI",
-                        "DAFÜR",
-                        "DAS",
-                        "DASS",
-                        "DAVON",
-                        "DENEN",
-                        "DOCH",
-                        "JEDOCH",
-                        "MIT",
-                        "OBWOHL",
-                        "SONDERN",
-                        "VON",
-                        "WEIL"
-                      ],
-                      "blanks": [
-                        {
-                          "id": 31,
-                          "answer": "MIT"
-                        },
-                        {
-                          "id": 32,
-                          "answer": "BEI"
-                        },
-                        {
-                          "id": 33,
-                          "answer": "DAS"
-                        },
-                        {
-                          "id": 34,
-                          "answer": "DAFÜR"
-                        },
-                        {
-                          "id": 35,
-                          "answer": "DABEI"
-                        },
-                        {
-                          "id": 36,
-                          "answer": "OBWOHL"
-                        },
-                        {
-                          "id": 37,
-                          "answer": "DENEN"
-                        },
-                        {
-                          "id": 38,
-                          "answer": "DASS"
-                        },
-                        {
-                          "id": 39,
-                          "answer": "AUF"
-                        },
-                        {
-                          "id": 40,
-                          "answer": "VON"
-                        }
-                      ],
-                      "answers": [
-                        {
-                          "id": 31,
-                          "answer": "MIT"
-                        },
-                        {
-                          "id": 32,
-                          "answer": "BEI"
-                        },
-                        {
-                          "id": 33,
-                          "answer": "DAS"
-                        },
-                        {
-                          "id": 34,
-                          "answer": "DAFÜR"
-                        },
-                        {
-                          "id": 35,
-                          "answer": "DABEI"
-                        },
-                        {
-                          "id": 36,
-                          "answer": "OBWOHL"
-                        },
-                        {
-                          "id": 37,
-                          "answer": "DENEN"
-                        },
-                        {
-                          "id": 38,
-                          "answer": "DASS"
-                        },
-                        {
-                          "id": 39,
-                          "answer": "AUF"
-                        },
-                        {
-                          "id": 40,
-                          "answer": "VON"
-                        }
-                      ]
-                    }
-                  }
-                },
-                "partOrder": [
-                  "teil-1",
-                  "teil-2",
-                  "teil-3",
-                  "sprachbausteine-1",
-                  "sprachbausteine-2"
-                ],
-                "counts": {
-                  "parts": 5
-                }
-              }
-            }
-          },
-          "versionOrder": [
-            "default"
-          ],
-          "counts": {
-            "parts": 5,
-            "versions": 1
-          }
         }
       },
       "themeOrder": [
@@ -127089,8 +127090,7 @@
         "viktor",
         "w-unbekannt",
         "mara-alt",
-        "jakob-2-alt",
-        "naco"
+        "jakob-2-alt"
       ],
       "counts": {
         "themes": 28,
