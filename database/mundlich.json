@@ -1426,11 +1426,25 @@
         "teil-1": {
           "title": "Über Erfahrungen sprechen",
           "shortTitle": "Präsentieren",
-          "durationMinutes": 3,
-          "sourceUrl": "",
-          "instruction": "Dieser Prüfungsteil ist in der bereitgestellten PDF nicht enthalten.",
-          "prompts": [],
-          "followUps": []
+          "durationMinutes": 5,
+          "sourceUrl": "https://shop.telc.net/media/catalog/product/file//2/0/20201223_5023-b00-010201_web.pdf",
+          "instruction": "Wählen Sie eines der sieben Themen und berichten Sie Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner etwa 1½ Minuten frei über Ihre Erfahrungen. Beantworten Sie anschließend die Fragen Ihres Gegenübers.",
+          "prompts": [
+            "Ein Buch, das Sie gelesen haben: Thema, Autorin oder Autor und Ihre persönliche Meinung",
+            "Ein Film, den Sie gesehen haben: Thema, Handlung, Schauspielerinnen oder Schauspieler und Ihre persönliche Meinung",
+            "Eine Reise, die Sie unternommen haben: Ziel, Zeitpunkt, Land, Leute und Sehenswürdigkeiten",
+            "Eine Musikveranstaltung, die Sie besucht haben: Musikrichtung, Musikerinnen oder Musiker, Ort und persönliche Vorlieben",
+            "Ein Sportereignis, das Sie besucht haben: Sportart, Ort, beteiligte Personen und Ergebnis",
+            "Eine Person, die in Ihrem Leben wichtig war: Wer, wann und warum diese Person wichtig war",
+            "Eine wichtige Erfahrung in Ihrem Leben: Was, wann, wo, mit wem und warum sie wichtig war"
+          ],
+          "followUps": [
+            "Warum haben Sie dieses Thema gewählt?",
+            "Was ist Ihnen dabei besonders in Erinnerung geblieben?",
+            "Würden Sie das Buch, den Film oder die Erfahrung anderen empfehlen? Warum?",
+            "Welche Person, Figur oder Situation war für Sie besonders wichtig?",
+            "Hat diese Erfahrung Ihre Meinung oder Ihr Verhalten verändert?"
+          ]
         },
         "teil-2": {
           "title": "Diskussion",
