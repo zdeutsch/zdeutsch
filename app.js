@@ -2668,11 +2668,11 @@ function renderSectionButtons() {
 }
 
 function getOrderedThemeKeys(levelEntry) {
-  const configured = Array.isArray(levelEntry?.themeOrder) ? levelEntry.themeOrder : [];
   const available = Object.keys(levelEntry?.themes || {});
-  const ordered = configured.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
-  const extras = available.filter((themeKey) => !ordered.includes(themeKey));
-  return [...ordered, ...extras];
+  if (!Array.isArray(levelEntry?.themeOrder)) {
+    return available;
+  }
+  return levelEntry.themeOrder.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
 }
 
 function renderThemeCards() {

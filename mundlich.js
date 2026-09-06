@@ -1,5 +1,5 @@
 const DATA_URL = "database/mundlich.json";
-const PROGRESS_KEY = "zdeutsch.mundlich.b1.progress.v1";
+const PROGRESS_KEY_PREFIX = "zdeutsch.mundlich";
 const PART_LABELS = {
   "teil-1": "Einander kennenlernen",
   "teil-2": "Über ein Thema sprechen",
@@ -53,7 +53,7 @@ const state = {
   selectedTopics: {},
   search: "",
   followUpIndex: 0,
-  progress: loadProgress(),
+  progress: emptyProgress(),
   timer: {
     durationSeconds: 180,
     remainingSeconds: 180,
@@ -63,9 +63,20 @@ const state = {
   }
 };
 
-function loadProgress() {
+function emptyProgress() {
+  return {
+    prepared: [],
+    done: { "teil-2": [], "teil-3": [] }
+  };
+}
+
+function progressKey(level) {
+  return `${PROGRESS_KEY_PREFIX}.${level}.progress.v1`;
+}
+
+function loadProgress(level) {
   try {
-    const parsed = JSON.parse(window.localStorage.getItem(PROGRESS_KEY) || "{}");
+    const parsed = JSON.parse(window.localStorage.getItem(progressKey(level)) || "{}");
     return {
       prepared: Array.isArray(parsed.prepared) ? parsed.prepared : [],
       done: {
@@ -74,15 +85,12 @@ function loadProgress() {
       }
     };
   } catch (error) {
-    return {
-      prepared: [],
-      done: { "teil-2": [], "teil-3": [] }
-    };
+    return emptyProgress();
   }
 }
 
 function saveProgress() {
-  window.localStorage.setItem(PROGRESS_KEY, JSON.stringify(state.progress));
+  window.localStorage.setItem(progressKey(state.level), JSON.stringify(state.progress));
 }
 
 function escapeHtml(value) {
@@ -561,6 +569,7 @@ async function loadDatabase() {
   if (!level) {
     throw new Error(`Level ${state.level.toUpperCase()} ist nicht verfügbar.`);
   }
+  state.progress = loadProgress(state.level);
   state.partKey = level.partOrder.includes(requestedPart) ? requestedPart : level.partOrder[0];
   elements.discussionCount.textContent = String(level.parts["teil-2"]?.topics?.length || 0);
   elements.planningCount.textContent = String(level.parts["teil-3"]?.topics?.length || 0);

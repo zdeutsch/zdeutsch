@@ -19,6 +19,13 @@ const resultHomeBtn = document.getElementById("result-home-btn");
 
 const leftPanel = document.getElementById("left-panel");
 const rightPanel = document.getElementById("right-panel");
+const {
+  canonicalAnswer: canonicalSprachAnswer,
+  sameAnswer: sameSprachAnswer,
+  countBlankOccurrences,
+  resolveCorrectAnswer: resolveSprachCorrectAnswer,
+  answerForOccurrence: sprachAnswerForOccurrence
+} = globalThis.ZDeutschSprachbausteine;
 
 const themeTitle = document.getElementById("theme-title");
 const levelPill = document.getElementById("level-pill");
@@ -922,6 +929,20 @@ function getTemplateBlankIds(tokens) {
   return ids;
 }
 
+function buildSprachCorrectAnswerMap(content, tokens) {
+  const storedAnswers = getSprachAnswerMap(content);
+  const occurrenceCounts = countBlankOccurrences(tokens);
+  const blanksById = new Map((content.blanks || []).map((blank) => [String(blank.id), blank]));
+  const answerMap = new Map();
+
+  storedAnswers.forEach((answer, id) => {
+    const options = blanksById.get(String(id))?.options || [];
+    answerMap.set(String(id), resolveSprachCorrectAnswer(answer, options, occurrenceCounts.get(String(id)) || 1));
+  });
+
+  return { answerMap, occurrenceCounts };
+}
+
 function createTranslationToggle(translatedText) {
   const text = String(translatedText || "").trim();
   if (!text) {
@@ -969,11 +990,12 @@ function createTranslationToggle(translatedText) {
 }
 
 function countCorrectSprach(content, responses) {
-  const answerMap = getSprachAnswerMap(content);
+  const templateTokens = parseSprachTextTemplate(content.text || "");
+  const { answerMap } = buildSprachCorrectAnswerMap(content, templateTokens);
   let correct = 0;
   answerMap.forEach((answer, id) => {
     const selected = responses[id];
-    if (selected && normalize(selected) === normalize(answer)) {
+    if (selected && sameSprachAnswer(selected, answer)) {
       correct += 1;
     }
   });
@@ -2475,9 +2497,8 @@ function renderSprachbausteine1(content) {
   leftPanel.append(createEl("p", "mt-2 text-sm text-slate", content.instruction || ""));
 
   const blanks = Array.isArray(content.blanks) ? content.blanks : [];
-  const answers = Array.isArray(content.answers) ? content.answers : [];
-  const answerMap = new Map((answers || []).map((item) => [String(item.id), item.answer || item.text || ""]));
   const templateTokens = parseSprachTextTemplate(content.text || "");
+  const { answerMap, occurrenceCounts } = buildSprachCorrectAnswerMap(content, templateTokens);
   const templateBlankIds = getTemplateBlankIds(templateTokens);
   const blankOrder = blanks.length
     ? blanks.map((blank) => String(blank.id))
@@ -2489,6 +2510,7 @@ function renderSprachbausteine1(content) {
   }
 
   const textBlock = createEl("p", "mt-6 text-sm leading-relaxed whitespace-pre-wrap");
+  const renderedOccurrences = new Map();
 
   templateTokens.forEach((token) => {
     if (token.type === "text") {
@@ -2503,8 +2525,14 @@ function renderSprachbausteine1(content) {
 
     const selected = responses[blankId];
     const correct = answerMap.get(blankId) || "";
-    const isCorrect = submitted && selected && normalize(selected) === normalize(correct);
-    const isWrong = submitted && selected && normalize(selected) !== normalize(correct);
+    const occurrenceIndex = renderedOccurrences.get(blankId) || 0;
+    const occurrenceCount = occurrenceCounts.get(blankId) || 1;
+    renderedOccurrences.set(blankId, occurrenceIndex + 1);
+    const displayedSelected = selected
+      ? sprachAnswerForOccurrence(selected, occurrenceIndex, occurrenceCount)
+      : `(${blankId})`;
+    const isCorrect = submitted && selected && sameSprachAnswer(selected, correct);
+    const isWrong = submitted && selected && !sameSprachAnswer(selected, correct);
     const isActive = blankId === String(active.blankId);
 
     const blank = createEl(
@@ -2517,7 +2545,7 @@ function renderSprachbausteine1(content) {
         "border-stone-300 bg-stone-50 text-slate",
         isActive ? "ring-2 ring-azure/20" : ""
       ),
-      selected || `(${blankId})`
+      displayedSelected
     );
     blank.type = "button";
     blank.addEventListener("click", () => {
@@ -2561,9 +2589,9 @@ function renderSprachbausteine1(content) {
 
     const options = createEl("div", "mt-2 space-y-2");
     (blank.options || []).forEach((optionText) => {
-      const isSelected = normalize(optionText) === normalize(selected);
-      const isCorrect = submitted && normalize(optionText) === normalize(correct);
-      const isWrong = submitted && isSelected && normalize(optionText) !== normalize(correct);
+      const isSelected = sameSprachAnswer(optionText, selected);
+      const isCorrect = submitted && sameSprachAnswer(optionText, correct);
+      const isWrong = submitted && isSelected && !sameSprachAnswer(optionText, correct);
 
       const option = createEl(
         "button",
@@ -2602,8 +2630,8 @@ function renderSprachbausteine2(content) {
   leftPanel.append(createEl("p", "mt-2 text-sm text-slate", content.instruction || ""));
 
   const answers = Array.isArray(content.answers) ? content.answers : [];
-  const answerMap = new Map((answers || []).map((item) => [String(item.id), item.answer || item.text || ""]));
   const templateTokens = parseSprachTextTemplate(content.text || "");
+  const { answerMap, occurrenceCounts } = buildSprachCorrectAnswerMap(content, templateTokens);
   const templateBlankIds = getTemplateBlankIds(templateTokens);
   const answerIds = answers.map((item) => String(item.id));
   const blankIds = Array.from(new Set([...templateBlankIds, ...answerIds]));
@@ -2615,10 +2643,11 @@ function renderSprachbausteine2(content) {
   const usedWords = new Map();
   Object.entries(responses).forEach(([blankId, selected]) => {
     if (selected) {
-      usedWords.set(normalize(selected), String(blankId));
+      usedWords.set(canonicalSprachAnswer(selected), String(blankId));
     }
   });
   const textBlock = createEl("p", "mt-6 text-sm leading-relaxed whitespace-pre-wrap");
+  const renderedOccurrences = new Map();
 
   templateTokens.forEach((token) => {
     if (token.type === "text") {
@@ -2633,8 +2662,14 @@ function renderSprachbausteine2(content) {
 
     const selected = responses[blankId];
     const correct = answerMap.get(blankId) || "";
-    const isCorrect = submitted && selected && normalize(selected) === normalize(correct);
-    const isWrong = submitted && selected && normalize(selected) !== normalize(correct);
+    const occurrenceIndex = renderedOccurrences.get(blankId) || 0;
+    const occurrenceCount = occurrenceCounts.get(blankId) || 1;
+    renderedOccurrences.set(blankId, occurrenceIndex + 1);
+    const displayedSelected = selected
+      ? sprachAnswerForOccurrence(selected, occurrenceIndex, occurrenceCount)
+      : `(${blankId})`;
+    const isCorrect = submitted && selected && sameSprachAnswer(selected, correct);
+    const isWrong = submitted && selected && !sameSprachAnswer(selected, correct);
     const isActive = blankId === String(active.blankId);
 
     const blank = createEl(
@@ -2647,12 +2682,12 @@ function renderSprachbausteine2(content) {
         "border-stone-300 bg-stone-50 text-slate",
         isActive ? "ring-2 ring-azure/20" : ""
       ),
-      selected || `(${blankId})`
+      displayedSelected
     );
     blank.type = "button";
     blank.addEventListener("click", () => {
       if (active.wordText) {
-        const usedBy = usedWords.get(normalize(active.wordText));
+        const usedBy = usedWords.get(canonicalSprachAnswer(active.wordText));
         if (!usedBy || usedBy === blankId) {
           responses[blankId] = active.wordText;
           active.blankId = blankId;
@@ -2679,7 +2714,7 @@ function renderSprachbausteine2(content) {
       if (!wordText) {
         return;
       }
-      const usedBy = usedWords.get(normalize(wordText));
+      const usedBy = usedWords.get(canonicalSprachAnswer(wordText));
       if (usedBy && usedBy !== blankId) {
         return;
       }
@@ -2708,12 +2743,12 @@ function renderSprachbausteine2(content) {
   rightPanel.append(header);
 
   const optionSource = Array.isArray(content.options) ? content.options : [];
-  const uniqueOptions = Array.from(new Set(optionSource.map((text) => normalize(text))))
-    .map((key) => optionSource.find((text) => normalize(text) === key))
+  const uniqueOptions = Array.from(new Set(optionSource.map((text) => canonicalSprachAnswer(text))))
+    .map((key) => optionSource.find((text) => canonicalSprachAnswer(text) === key))
     .filter(Boolean);
 
   const wordBankSignature = uniqueOptions
-    .map((word) => normalize(word))
+    .map((word) => canonicalSprachAnswer(word))
     .join("|");
 
   if (!Array.isArray(active.shuffledWordBank) || active.wordBankSignature !== wordBankSignature) {
@@ -2732,12 +2767,12 @@ function renderSprachbausteine2(content) {
     wordBank.forEach((wordText) => {
       const selected = responses[active.blankId];
       const correct = answerMap.get(active.blankId) || "";
-      const isSelected = normalize(wordText) === normalize(selected);
-      const isCorrect = submitted && normalize(wordText) === normalize(correct);
-      const isWrong = submitted && isSelected && normalize(wordText) !== normalize(correct);
-      const usedBy = usedWords.get(normalize(wordText));
+      const isSelected = sameSprachAnswer(wordText, selected);
+      const isCorrect = submitted && sameSprachAnswer(wordText, correct);
+      const isWrong = submitted && isSelected && !sameSprachAnswer(wordText, correct);
+      const usedBy = usedWords.get(canonicalSprachAnswer(wordText));
       const isUsedByOther = !submitted && usedBy && usedBy !== active.blankId;
-      const isChoiceActive = normalize(active.wordText) === normalize(wordText);
+      const isChoiceActive = sameSprachAnswer(active.wordText, wordText);
 
       const card = createEl(
         "button",

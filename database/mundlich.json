@@ -1413,6 +1413,955 @@
           ]
         }
       }
+    },
+    "b2": {
+      "title": "TELC B2 Mündliche Prüfung",
+      "sourceUrl": "",
+      "partOrder": [
+        "teil-2",
+        "teil-3"
+      ],
+      "parts": {
+        "teil-1": {
+          "title": "Über Erfahrungen sprechen",
+          "shortTitle": "Präsentieren",
+          "durationMinutes": 3,
+          "sourceUrl": "",
+          "instruction": "Dieser Prüfungsteil ist in der bereitgestellten PDF nicht enthalten.",
+          "prompts": [],
+          "followUps": []
+        },
+        "teil-2": {
+          "title": "Diskussion",
+          "shortTitle": "Diskutieren",
+          "durationMinutes": 6,
+          "sourceUrl": "",
+          "instruction": "Lesen Sie den folgenden Text aus einer Zeitschrift. Diskutieren Sie mit Ihrer Partnerin oder Ihrem Partner über den Inhalt des Textes, bringen Sie Ihre Erfahrungen ein und äußern Sie Ihre Meinung. Begründen Sie Ihre Argumente und sprechen Sie über mögliche Lösungen.",
+          "topics": [
+            {
+              "id": "diskussion-b2-01",
+              "title": "Die Kleinen wollen's wissen",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Lernen in den Ferien? Für über 500 Kinder die sich im großen Hörsaal der Tübinger Universität versammelt haben, beginnt eine aufregende Zeit.\n\nSeit 2002 bietet die Universität Tübingen als erste deutsche Universität Lehrveranstaltungen für Kinder an. Gelernt wird hier in den Sommerferien ohne Schulstress und Noten Es wird gelauscht, gefragt und gestaunt. Der Besuch der Veranstaltungen ist freiwillig. Das Angebot richtet sich an besonders interessierte Kinder im Alter von acht bis zwölf Jahren Und die Kleinen wollen es ganz genau wissen. Typische Veranstaltungstitel sind etwa: Warum ist Spielen wichtig? Warum müssen wir sterben? Warum sind wir schlauer als Roboter? Die erste Kinderuniversität im deutschsprachigen Raum war die Junge Uni Innsbruck in Österreich, die 2001 ins Leben gerufen wurde. Der Anlass damals Zehn Jahre zuvor hatten Urlauber im österreichischen Ötztal die über 5000 Jahre alte Mumie eines Mannes gefunden. Zum zehnjährigen Jubiläum dieses sensationellen Fundes startete die Junge Uni Innsbruck eine entsprechende Veranstaltungsreihe für Kinder\n\nHeute sind die Kinderuniversitäten aus dem Uni-Alltag nicht mehr wegzudenken Über 50 Kinderuniversitäten! gibt es mittlerweile in Deutschland. Doch die Idee, für Kinder die Türen der Universitäten zu öffnen, findet nicht nur Befürworter. Vor allem Ärzte und Eltern meiden sich mit kritischen Stimmen zu Wort Grundsätzlich seien Veranstaltungen dieser Art eine gute Sache, erklärt Kinderarzt Dr Kleinschmied. Allerdings sollten die Eltern darauf achten, dass auch sportliche Aktivitäten nicht zu kurzkamen. Viele Kinder wurden sich zu wenig bewegen. Das schade der Gesundheit der Kinder.\n\nAuch bei den Eltern stößt die Idee der Kinderuniversität nicht immer auf grenzenlose Begeisterung Michael König, Vater von zwei Kindern, erklärt, warum: Die Veranstaltungen wurden hauptsächlich von guten Schülern besucht, Deutschland brauche aber dringend innovative Lernkonzepte, die auch lernschwache Schüler intensiv fördere.\n\nDie Kinderstudenten aus Tübingen sind sich einig Wissenschaft macht Spaß Der anhaltende Erfolg gibt den Kinderuniversitäten Recht. Die Zahl der Anmeldungen steigt jährlich, sodass die Kinderunis uns auch in Zukunft erhalten bleiben dürften. Die Kinder jedenfalls wird es freuen"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-02",
+              "title": "Alternative Lebensform im Alter",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Das Leben in einer Wohngemeinschaft, einer WG: man liebt es oder man hasst es. Und nicht jeder ist dafür gemacht. Dennoch sammeln viele Menschen im Laufe ihres Lebens Erfahrungen mit Wohngemeinschaft. Mit Gleichgesinnten oder Freunden zusammen zu Wohnen birgt allerdings Konflikte. während unter Studenten noch Berge ungespülten Geschirrs zum Zank führen, sind die Reibungspunkte zwischen Alteren Menschen ganze andere.Dabei blicken Altere Menschen auf ein wesentlich längeres Leben zurück.\n\nAndere Aspekte lassen das Ideal der pflege WGs erstrebenswert erscheinen ein selbst bestimmte möglichst unabhängiges leben in Gemeinschaft führen, der gefürchteten Alter einsamkeit entgehen und trotzdem professionelle Unterstützung erhalten.\n\nDie soziale Verbände fürchten hingegen eine Verschlechterung der aktuellen pflege Situation und sprechen von einer Lösung bei der schwer pflegebedürftig Menschen aus kostengründen in WG's abgeschoben werden sollen.\n\nAuch pflegebedürftig ‚die in einer Wohngemeinschaft leben werden weiter auf ambulante Pflege oder eine Angestellte Pflegekraft angewiesen sein, viele pflegebedürftig Menschen wünschen aber genau das: lediglich, Hilfestellungen um einen durch Selbstständigkeit geprägten Lebens und Wohnstil soweit wie möglich bei behalten zu\n\nEin verklärter Blick auf vermeintliche selbstbestimmtes Leben in pflege Wohngemeinschaften mag naiv erscheinen.für den einen oder anderen kann es aber genau das richtige sein"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-03",
+              "title": "Fast Food kann süchtig machen",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Unappetitliches Ergebnis eines Tierversuchs: Fettiges Essen kann offenbar ebenso süchtig machen wie Drogen. In dem Experiment verloren Ratten zunehmend die Kontrolle über ihr Verhalten. Am Ende waren sie selbst mit Elektroschocks nicht mehr vom Fressen abzuhalten.\n\nNikotin, Kokain, Heroin - und Fast Food? US-Forscher vergleichen exzessives Essen stark fetthaltiger Speisen jetzt auch mit Drogenkonsum. Wer sich hemmungslos mit Fetter, aber auch Kuchen mit Sahne vollstopfe, ähnlich wie ein Junkie - für das Hirn wird das extrem kalorienreiches Essen auf die gleiche Weise wie auf Drogenkonsum.\n\n\"Wenn das Tier die Hirnzentren fürs Wohlbefinden mit dem schmackhaften Essen überreizt, passt sich das System an und schraubt seine Aktivität zurück\", sagt Kenny. Wie bei einer Drogensucht das Hirn von Junk Food - \"um nicht in einem Dauerzustand negativ Befindens zu verfallen\", so der Forscher. Sie hatten erste Ergebnisse im Oktober bei einer Tagung vorgestellt und ein internationales Pressecho ausgelöst. Die jetzt publizierten Studie ist deutlich über die damals verbleibenden Details hinaus.\n\nDiesen Zusammenhang haben Paul Kenny und Paul Johnson vom Scripps-Forschungsinstitut in Jupiter (US-Bundesstaat Florida) nach eigenen Angaben jetzt festgestellt. In ihren Experimenten fütterten sie Ratten mit allem, was auch für Menschen verlockend ist: Würstchen, Schinkenspeck und Käsekuchen. Kaum hatte das Experiment begonnen, legten die Tiere an Gewicht zu. Als ihnen dann das fette Essen vorbestellt, statt verrückterten sie sich - und hungerer lieber.\n\nDer Mechanismus in den Rattenhirnen ist vergleichbar mit den, der bei den menschlichen Sucht nach Rauschmitteln auftritt: Der Konsum aktiviert das Belohnungssystem des Gehirns und sorgt für Wohlgefühl. Doch je mehr man konsumiert, desto mehr Nachschub verlangt das Gehirn, um das gleiche Glücksgefühl wie beim letzten Mal zu erzeugen. \"Wir haben herausgefunden, dass die Entwicklung von Fettleibigkeit mit einem immer größer werdenden Defizit in der neuronalen Belohnung einhergeht\", schreiben Johnson und Kenny. Zwar betonen die Wissenschaftler, dass die Ergebnisse nicht eins zu eins auf den Menschen übertragbar seien. \"Aber die Studie zeigt, dass übermäßiger Konsum von kalorienreicher Nahrung suchtähnliche Reaktionen im Gehirn auslösen kann und dass Junk Food Ratten in zwanghafte Esser verwandeln kann.\" Selbst negative Reize waren wirkungslos, um die Ratten von der Völlerei abzubringen. Sie hatten zuvor leichte Elektroschocks bekommen, wenn ein Licht auftauchte. Hatten die Nager aber Zugang zu Snacks im Überfluss, scherten sie sich nicht um die Gefahr - sie fraßen einfach weiter."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-04",
+              "title": "Englisch als weltweite Unternehmenssprache",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Für international tätige Firmen ist die Konzernsprache Englisch selbst in anderssprachigen lokalen Märkten selbstverständlich geworden Das Internet hat dese Entwicklung noch weiter beschleunigt. Über die Vor und Nachteil kann man geteilter Meinung sein Faktum ist, dass Englisch die Sprache der Wirtschaft und Wissenschaft geworden ist und daran wird sich kaum etwas ändern. Kritker dieser Entwicklung wenden jedoch ein, dass Sprache mehr sei als bloße Information.Die farblose und emotionslose Verwendung von oft unzulänglich beherrschtem Englisch sei nicht geeignet, wirklich Brücken zu schlagen. Dem halten Befürworter entgegen, dass für praktisch alle global tätigen Unternehmen, unabhängig von ihrem Heimatstandort.Englisch zur Sprache für das Anknüpfen und Pflegen von Kontakten auf der Welt geworden sei: vielleicht ein ungeschliffenes Mittel, um die Geschäftskulturen zusammenzubringen, aber immerhin ein erster Schritt. Außerdem spare man so beträchtliche Mitte!für Dolmetscher und Übersetzungen. Was sich für die Unternehmen wirtschaftlich rechnet, löst bei den Mitarbeitern aber oft Ängste aus.Sie fühlen sich in ihren Fähigkeiten eingeschränkt.Besitzen sie in ihrer Muttersprache einen großen Wortschatz und können sich sicher ausdrücken, verlieren sie diese Fähigkeiten oft in einer Fremdsprache Eine gemeinsame Sprache erleichtere zweisprozesse die Kommunikation und die Teambildung, räumen die Gegner ein. Aber eine gemeinsam Sprache vermittle den Menschen auc tlusion, dass sie tatsächlich wirksam alle einander kommunizieren.Die gleichen W können in anderen lokalen Gegebene jedoch eine völlig unterschiedliche bekommen und eine andere oder ein starker Akzent könne Austausch alles andere als gegen's Machen. Unterschiedliche Denkmuster, die mit Sprache verbunden seien, könnten in solchen Unternehmenskultur gar nicht Tragen kommen, und die Organisation können somit das mögliche Potentional Ideen und Perspektiven ihrer Mitarbeite beschränkt nutzen. Deshalb müsst Sprachenvielfalt bewahrt und Werktagen werden und man dürfte auch einem sagen, wenn  man sich auf eine gemeinsame Sprache einigen wolle.."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-05",
+              "title": "Trinkgeld geben",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Sie tragen unsere Koffer, halten uns die Tür auf, fahren uns zur angegebenen Adresse oder bedienen uns bei Tisch: In Hotels und Restaurants, beim Friseur oder im Taxi ist es üblich, den Angestellten Trinkgeld zu geben.Warum eigentlich? Weshalb sollte man Dienstleistungen, für die man ohnehin bezahlen muss, noch extra belohnen? Allgemein gilt der kleine Extrabetrag, den wir zusätzlich zur Rechnung oder für einen kleinen Dienst geben, als Anerkennung für freundlichen oder kompetenten Service Manche sehen im Trinkgeld auch einen Anreiz für bevorzugte Behandlung oder sogar eine Art von Bestechung, vor allem, wenn es im Voraus bezahlt wird Wo wir Trinkgeld geben, stehen wir als Person im Mittelpunkt.Wir werden persönlich angesprochen, bedient, chauffiert, verschönert Diese Dienste sind ein kleiner Luxus, und wir bedanken uns dafür durch eine kleine Geste der Anerkennung.Dabei ist es zum Teil schwer nachvollziehbar, wer tatsächlich Trinkgeld bekommt: Der Kellnerin steht es zu, der Stewardess im Flugzeug nicht.War es früher üblich, dem Zugschaffner ein Trinkgeld zuzustecken, würde das heute niemand mehr verstehen. Tatsache ist, dass in manchen Berufen Trinkgeld als fester Bestandteil des Lohnes gilt und das Grundgehalt deshalb eher niedrig angesetzt wird.Hier sind die Angestellten auf die Großzügigkeit der Kunden angewiesen. Allerdings sollte man aus einem bescheidenen Trinkgeld nicht unmittelbar auf einen Mangel an Großzügigkeit schließen. Menschen, die selbst wenig Geld zur Verfügung haben, können auch keine großen Beträge verteilen. Als selbstverständlich sollte Trinkgeld ohnehin nicht vorausgesetzt werden. Wer m schlecht oder unfreundlich bedient fühlt hat auch das Recht, dies durch Verzicht auf Trinkgeld zu unden. oft gibt es Unsicherheiten über die Höhe des Trinkgeldes, zumal sich die Gepflogenheiten diesbezüglich von Land zu Land unterscheiden.Es gibt auch Länder, in denen Trinkgeld nicht üblich ist.Da ist es gut, sich vor einer Reise über die jeweiligen Gewohnheiten zu formieren."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-06",
+              "title": "Rette Leben mit einer Blutspende",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Wer denkt heute schon an morgen? Unfalle passieren jeden Tag und auch\n\nvor Krank heiten ist kein Mensch gefeit Jeder kann unvorhergesehen fremdes\n\nBlut brauchen und ist froh, im Ernstfall ausreichend durch Blutkonserven versorgt zu werden. 15.000 Blutspenden werden in Deutschland täglich benötigt.\n\nDrohender Blutkonservenmangel ‚Tatsächlich spenden nur etwa drei bis fünf Prozent der Bevölkerung Blut, so Dr.Hans Gert Heuft, Leiter des Blutspendedienstes der Medizinischen Hochschule Hannover (MHH).Mittelfristig werden aber mehr\n\nBlutspenden gebraucht.\n\nWie bereite ich mich auf eine Blutspende vor? Vor einer Spende ist es wichtig zu essen\n\nund viel zu trinken. Vor der Blutentnahme erfolgt ein kleiner Gesundheitscheck,\n\num die Spendetauglichkeit festzustellen. Wenn keine Krankheit zu erkennen ist,\n\ngeht es weiter zur Blutentnahme. Ein kleiner Pieks und nach 20 bis 30 Minuten ist schon alles vorbei. Was bleibt, ist das gute Gefühl, mit der eigenen Spende Leben gerettet zu haben.\n\nWer ist geeignet Blut zu spenden?Doch Blutspendern ist keine große Sache,\n\ndauert nicht besonders lange, tut nicht weh und es kann fast jeder gesunde Mensch, der zwischen ı8 und 68 Jahren alt ist und mindestens so Kilogramm wiegt.\n\nFrauen dürfen maximal viermal, Männer höchstens Sechsmal im Jahr spenden gehen,\n\ndamit der Körper eine ausreichende Erholungszeit bekommt."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-07",
+              "title": "Wie entwickelt sich das Rauchen in Deutschland?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Rauchen ist etwas, war Erwachsene Filmstars tun- und Kinder nicht Dürfen. Kein Wunder that das Rauchen Eine geradezu magische Anziehung auf Jugendliche ausübt! Nach Dem Motto: Seht herl jetzt auch erwachsen und Kann's tun lassen, was ich will Raucher in Werbung wirken schick, kühl und Lässig Raucher in der Wirklichkeit eher schwach, nervös und kränklich. Der Ganze Zauber entpuppt sich als Illusion Reingefallen? Du auch? Wie entwickelt Rauchen in Deutschland? Es Gibt insgesamt Zwar immer Weniger Raucher (ca. zı Millionen) sterben aber Zahl der gerauchten Zigaretten Nimmt weiterhin zu! Jugendliche fangen immer früher mit DM Rauchen ein Die Zahl der rauchenden Mädchen und Frauen hat sich was ist schuld ausprobieren der Ersten Zigarette bin? Die rauchenden Freunde üben Druck aus (Mutprobe „) Man Versuche Durch das die geringe Ansehen Innerhalb Einer Gruppe auszugleichen oder anzuheben Da sterben Eiter und Geschwister Eines seit verrauchen Hält man es für selbstverständlich und macht es nach Man wird rauchend Prominenten aus den Medien nacheifern, da sie Einem als Vorbild Dienen Man lasst sich Durch Die geschickte Werbung verführen. Gerade in den Filmen kommen die rauchenden Hauptfiguren kühl rüber und man wird es them nachtun Man wird zeigen, Dass man erwachsen ist und tun und lassen Kann, war der Mensch es sterben Eltern verbieten, raucht Mann aus Trotz und Protest erst recht Man möchte Durch das Rauchen sterben Persönliche Unsicherheit überspielen. Man ist einfach neugierig, wie es schmeckt."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-08",
+              "title": "Fernsehen macht Kinder dumm",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Wer als Kind viel fernsieht, erreicht als junger Erwachsener einen schlechteren Schulabschluss als jene, die seltener fern sehen.Neue Studien bestätigen zudem.\n\nJe früher Kinder vor dem Fernsehgerät sitzen, desto schwächer sind ihre späteren Lerner figsten\n\nfolge.Und: Kinder mit einem Fernsehgerät konnter in ihrem Zimmer haben durchschnittlich schlechtere Noten als Gleichaltrige ohne eigenen TV-Anschluss.,\n\nEin zu früher und zu häufiger Fernsehkonsum hat, da sind sich die Experten einig, einen negativen Einfluss auf die Gesundheit der Kinder. Denn der passive Fernsten werde sum verführt die Kinder zu körperlicher Inaktivität Außerdem kommen Fernsehen konsumierende Kinder früher in Kontakt mit Alkohol, Tabak und anderen Drogen.\n\nNeue Studien bestätigen nun eine oft geäußert aber bislang nicht belegte Vermutung dass sich der TV-Konsum schädlich auf die Bildung von Kindern auswirkt Jene,Jene ‚die als kinder am meisten vor dem Fernsehgerät gesessen hatten (mehr als drei Stunden pro Tag), hatten öfter keinen Schulabschluss, während die mit dem niedrigsten TV-Konsum in der Kindheit später die häufigsten Universitätsabschlüsse aufweisen konnten-unabhängig vom IQ und von den sozioökonomischen Gegebenheiten.\n\nDas Deutsche Grüne Kreuz e.V. rät daher zu einem gemäßigten Konsum von Filmen oder Computerspielen. Bis zu einer Stunde täglich ist akzeptabel. Hausaufgaben sollten auf keinen Fall vor dem Fernseher gemacht werden. Bilder und Ton lenken viel zu sehr ab. Das Gehirn kann sich so die Inhalte des Lehrstoffes nicht lange merken, das Biffeln war umsonst Eine Stunde vor dem Schlafengehen sind Fernsehen oder Computer ebenfalls tabu"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-09",
+              "title": "Fernsehen bildet",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Weit verbreitet ist die Ansicht, dass das Fernsehen nichts zur Bildung beiträgt, sondern im Gegenteil seine Zuschauer verdummt. Betrachtet man den Großteil der Sendungen, scheint sich diese Ansicht zu bestätigen. Der Großteil der Fernsehsendungen besteht aus Unterhaltung, wenn auch in unterschiedlicher Form. Von Spielfilmen Serien, Talkshows und den immer populärer werdenden Reality-Shows wird kaum jemand ernsthaft behaupten, dass sie zu einem Wissenszuwachs beitragen.\n\nAnders sieht es bei den Informations- und Wissenssendungen aus, welche durchaus bildend wirken können. Vor allem der TV-Wissenschaftsjournalismus hat sich in den letzten Jahren weiter differenziert“, so Prof.\n\nRuhrmann von der Jenaer Universität. Inhaltlich sei er serviceorientierter und unterhaltsamer geworden. Außerdem gebe es mehr und bessere Bilder, die umfassender eingeordnet und erklärt werden, Dies sei ein Gewinn für die Zuschauer. Denn Bilder und Filmbeiträge wirken viel eindringlicher und stärker als gelesene oder gesprochene Texte“, weiß Medien-Experte Ruhrmann.\n\nUm also beim Fernsehen einen Lerneffekt zu erzielen, kommt es auf die Wahl der Programme und somit auch auf ein gutes maß an Selbstdisziplin an. Denn ist es Nicht verlockend, anstatt der Berichter Stattung über die Grundlagen gesunder Ernährung einen unterhaltsamen Film Anzuschauen? Gerade für Kinder ist daher der Nutzen den Fernsehens gering, insbesondere wenn sie Unbeaufsichtigt fernsehen. Zwar gibt es Eine Reihe gut gemachter, lehrreicher und Unterhaltsamer Wissens- und Informationen Sendungen für Kinder, und dessen sind so für viele Eltern und Lehrer bewusst. Allerdings eine Umfrage des Medienpädad Forschungsverbundes Südwest Lediglich acht Prozent der befragten Aufl] den Ratschlag ihrer Eltern hin und Fünf Prozent auf die Empfehlung Sendungen konsumieren.\n\nDoch wenn diese Sendungen von Gesehen werden, können sie eine Ergänzung zur schulischen Wissen sein und die Hemmschwell Wissenschaft nehmen. Denn Wis Sich Kindern am schnellsten Vermitteln, wie zum Beispiel Quizfragen."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-10",
+              "title": "Tiere - eine gute Geschenkidee",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Ältere Verwandte könnten etwas mehr Gesellschaft und Bewegung gebrauchen. Oder die Kinder möchten endlich einen Hund oder eine Katze bekommen. Was liegt dann Näher-gerade zu Weihnachten oder zu einem Großen Familienfest- als auf den Gedanken zu kommen, ein Tier zu verschenken?\n\nStellen Sie sich die Augen der Kinder unter dem Weihnachtsbaum vor oder die Reaktionen der anderen Gratulanten auf einem Familienfest Ihr Geschenk wäre mit Sicherheit das originellste!\n\nFür einen Hund oder eine Katze als Geschenk spricht, dass Sie den Beschenkten eine große Freude machen, indem Sie ihnen einen Gefahrten für viele Jahre schenken.\n\nDoch gerade hierin liegt auch die Schattenseite eines solchen Geschenks. Auch wenn Sie sich sicher sind, dass der Beschenkte sich nichts sehnlicher wünscht, bleiben Unsicherheiten, über die Sie sich im Klaren sein sollten.\n\nHätte sich der Beschenkte wirklich dieses Tier ausgesucht? Was, wenn sich Tier und Mensch nicht verstehen? Hat der Beschenkte ausreichend Platz und Zeit für das Tier? Wird der Beschenkte auch in einigen Wochen, Monaten oder Jahren noch Freude an seinem tierischen Begleiter haben?\n\nEinem tierischen Begleiter ein Zuhause zu geben, ist eine langfristige und verantwortungsvolle Aufgabe. Diese Entscheidung treffen, bedarf einer langen und intensiven zu Überlegung und sollte nicht spontan geschehen.\n\nLeichtfertigkeit, Mitleidskäufe kurz vor Weihnachten oder der Wunsch eines Kindes nach einem tierischen Freund mögen Auslöser für den Kauf eines Tieres sein. Doch bedenken Sie: Tiere sind Lebewesen und keine Handelsware, die wie ein Pullover nach Weihnachten einfach wieder umgetauscht werden kann. Und gerade bei Kindern geschieht es oft, dass sie schnell das Interesse an dem ehemals heiß herbeigesehnten Vierbeiner verlieren.\n\nAndererseits hat ein Tier bei Kindern einen Pädagogischen Wert: Sie lernen, Verantwortung zu übernehmen. Und älteren Menschen können Sie mit einem Hund, mit dem man jeden Tag spazieren gehen muss, ein Stück Gesundheit schenken.\n\nWas also kann man empfehlen?"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-11",
+              "title": "Sind Klassenfahrten sinnvoll?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Klassenfahrten sind unserer Meinung nach wichtig und gut, weil sie die Klassengemeischaft stärken.\n\nMan lernt sich noch besser kennen und lernt Lehrer auch mal etwas anders kennen und nicht nur vom Unterricht her. Man lernt, miteinander klar zu kommen und ist selber für sich verantwortlich. Vernünftige Klassenfahrtsziele sind von der 4.-9. Klasse eventuell Nordsee, Köln und Berlin. Ab der 10. Klasse oder Oberstufe sind auch Spanien oder Frankreich in Ordnung. Klassenfahrten sollten nicht zu teuer sein, damit auch Familien mit nicht so viel Geld es sich leisten können. Falls es nicht bezahlt werden kann, sollte die Stadt oder die Schule finanziell ein bisschen nachhelfen, damit jeder Schüler dabei sein kann. Sie sollte maximal 500€ kosten und eine Woche lang sein. Klassenfahrtsziele wie Australien oder Südamerika sind eher nicht so angebracht. Eine Klassenfahrt sollte von vornherein gut strukturiert sein, damit die Schüler sich an einen Tagesablauf halten können und damit es nicht langweilig wird. Angebrachte Sehenswürdigkeiten sind z.B in Berlin das Brandenburger Tor, der Reichstag oder in Köln der Dom. Es sollte auch Wert auf die Wünsche und Vorschläge der Schüler gelegt werden.\n\nMalte, Noah\n\nDie Hauptgründe von Klassenfahrten sind die Stärkung der Klassengemeinschaft und des Zusammenhaltes sowie das Bilden von Freundschaften (z.B. Kennenlernfahrt in der 5., die extra darauf ausgelegt ist) und diese sind meiner Meinung nach gar nicht so schlecht, gerade wenn es um Sachen wie Stadtralleys geht, wo man viel Zeit mit seinen Klassenkameraden verbringen muss. Da kann man sich auf eine Art und Weise kennen lernen, die im normalen Alltag nicht stattfinden kann.\n\nDemnach sind Klassenfahrten meiner Meinung nach gut, wenn sie gut durchdacht sind und die Schüler auch genug Zeit haben sich auszuruhen.\n\n-Dominik\n\nUnserer Meinung nach sind Klassenfahrten sehr gut, weil sich die Schüler im fünften Jahrgang zum Beispiel besser kennen lernen können. Außerdem machen Klassenfahrten den Schülern und Lehrern meistens sehr viel Spaß und sie sind pädagogisch wertvoll, da man auch Dinge besichtigt, die man nicht immer in den Schulbüchern finden kann. Es ist eine sehr gute Möglichkeit für Schüler, deren Eltern nicht so viel Geld haben, wichtige Städte und Landschaften zu besichtigen. Wenn die Klassenfahrten dann doch zu teuer sind für manche Eltern, können sie Unterstützung von der Gemeinde bzw. Stadt beantragen.\n\nAußerdem stärken Klassenfahrten die Klassengemeinschaft und die Schüler bekommen ein besseres Verhältnis zu ihren Lehrern, woraufhin sie im Unterricht besser klar kommen können."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-12",
+              "title": "Glücklich ohne Geld und Karriere",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Wenig oder gar kein Geld, kaum Karrierechancen aber zufrieden:\n\nZu diesem Ergebnis kommt eine Befragung von Praktikanten in Deutschland.Praktikanten soll im Rahmen der beruflichen Ausbildung praktische Erfahrung im künftigen Beruf vermittelt werden.\n\nFast zwei Drittel aller Praktikanten sind zufrieden mit ihren Einblicken in die Berufswelt, obwohl sie nur sehr wenig oder gar nichts.\n\nZufrieden mit ihren Erfahrungen sind vor allem Praktikanten in den Branchen Konsumgüterindustrie, Versicherungen, Telekommunikation und Internet/Multimedia (84 Prozent).In der Gastronomie und der Metallverarbeitung sind dagegen über 50 Prozent der Befragten unglücklich. Außerdem gibt es einen deutlichen Unterschied zwischen Praktikanten mit Hochschulabschluss und solchen aus anderen Ausbildungsgängen:\n\nJe qualifizierter die Teilnehmer, desto zufriedener sind sie.\n\nDas liegt vielleicht daran, dass gerade Hochschulabsolventen zwar viel Theorie gelernt haben, aber die berufliche Praxis an der Hochschule nicht kennenlernen.\n\nEinige Experten halten die ‚Generation Praktikum aber vor allem für ein von den Medien konstruiertes Gebilde.Das Phänomen, dass ein Praktikant von einem Unternehmen zum nächsten wechseln muss und nie eine Festanstellung bekommt, sei höchstens in einigen wenigen Branchen anzutreffen. In der Vergangenheit hat die Politik mehrfach versucht, ein Gesetz zu Arbeitsverträgen und zur Entlohnung von Praktikanten einführen bislang aber ohne Erfolg."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-13",
+              "title": "Solarium im Winter - gut für die Gesundheit?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Menschen brauchen Sonnenlicht für th Wohlbefinden Wenn im Winter die Sonne nur kurz scheint, wirkt sich das oft negativ aus.Nicht umsonst neigen immer meh Menschen in Nordeuropa im Winter zu Depressionen und Lustlosigkeit Doch nicht nur für das Wohlbefinden ist Sonnenlicht wichtig, sondern auch für die Produktion von Vitamin D.\n\nAlso hat ein Solarium nur Vorteile? Nein, amen zum Beispiel Ärzte, man muss - wie auch bei der ‚echten Sonne vorsichtig in. Genau wie die natürliche Sonne kann Licht im Solarium Hautzellen schädigen ein d Hautkrebs auslösen. Auch Gesund ist Organisationen und Krankenkassen vor Solarienbesuchen zu kosmetischen Zwecken.\n\nAußerdem sind manche Gerate gefährlich, denn der Anteil an gesundheitsschädigenden Strahlen ist zu hoch. Wählen Sie lieber ein Gerät mit niedriger Strahlenbelastung Dann müssen Sie auch keine Angst haben, im Winter plötzlich wie ein Brathähnchen auszusehenl.\n\nBesonders Kinder und Jugendliche sind aufgrund er empfinden Haut gefahrdet und sollen gar nicht ins Solarium gehen. Auch Menschen mit sehr heller oder empfindlicher Haut sollen nicht dem künstlichen Licht im Solarium aussetzen.\n\nAus diesen Gründen gehen viele Deutsche im Winter in das Sonnenstudio oder Solarium.Die meisten Besucher nutzen das Solarium jedoch, um immer so schön braun zu sein wie nach einem Spanienurlaub,"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-14",
+              "title": "Gesund durch Lachen",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Zwei Nachbarinnen unterhalten sich. Sagt die eine: „Ich konnte die ganze Nacht vor Zahnschmerzen nicht schlaten“ Sagt die ander: „Das kann mir nicht passieren. Ich und meine Zähne schlafen getrennt“\n\nGanz ehrlich: Wann haben Sie das letzte Mal Gelacht? Vor zehn Minuten? Heute noch gar Nicht? Gestern Abend, als Sie Ihr Kind ins Bett gebracht haben? Kinder lachen öfter als Erwachsene.\n\nBis zu 400 Mal am Tag. Erwachsene verziehen nur 15 Mal am Tag die Mundwinkel nach oben.\n\nDas haben die Lachforscher herausgefunden. Kinderkrankenhäuser setzen Lachen sogar in der Therapie ein.\n\nBei schmerzhaften Behandlungen sind manchmal Clowns dabei Wer lacht, hat weniger Angst, verkrampft nicht so sehr und hat dadurch nicht so große Schmerzen.\n\nEine Minute Lachen soll so erfrischend wie 45 Minuten Entspannungstraining sein. Wer sich beim Lachen s richtig ausschüttelt, bewegt bis zu 80 Muskeln. Für diese kurze Zeit gerät der Körper in einen positiven Stress-Zustand, der unser Leben erfrischt und das Immunsystem stärkt.\n\nAber warum verkümmert im Laufe unseres Lebens der wichtigste Lachmuskei? Sind wir zu emst oder ist es das Leben?\n\n„ Spaß bei Seite“ soll eine der liebsten Redewendungen der Deutschen sein. Interkulturelle Missverständnisse sind denn auch beim Lachen vorprogrammiert. Schließlich lachen nicht in allen Kulturen alle Menschen gleich viel und nicht zu den gleichen Anlässen.\n\nDas Lachen ist auch nicht immer und nicht für jeden lustig. Innerhalb der eigenen Gruppe stärkt es das Gemeinschaft's und Zusammengehörigkeitsgefühl. Eine gegenteilige Wirkung entfaltet es aber bei denen, die nicht zur Gruppe gehören. Diese können leicht zu denjenigen werden, über die und auf deren Kosten gelacht wird (zum Beispiel als Opfer von hamischem, geringschätzigem „Auslachen“). Das Lachen kann aus der Sicht des Verlachten zu einer demütigenden, ehrverletzenden Waffe werden und ist dann überhaupt nicht mehr erheiternd."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-15",
+              "title": "Selbst gekocht schmeckt es am besten",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Kochen am eigenen Herd liegt im Trend: “Selbst gekocht schmeckt besser, und ich weiß, was Drin ist.“ Dieser Meinung sind immerhin 84 Prozent aller Deutschen, wie eine Befragung der Gesellschaft für Konsumforschung (GfK) ergab. Das ist jedoch nur einer der guten Gründe dafür, dass Selber-Kochen viel Zukunft hat.\n\nWarum noch selbst kochen, wo doch Fertiggerichte, Fast Food und Essen außer Haus die Bequeme Lösung der täglichen Nahrungsfrage versprechen? Weil das Essen auf die Schnelle Nicht selten mit Einbußen bei Geschmack und Qualität verbunden ist. Dabei liegen die vielen Vorteile des Selbstkochens auf der Hand.\n\nMan weiß, was im Essen drin ist. Wo Zutaten wie Obst, Gemüse und Kartoffeln im Supermarkt, auf dem Wochenmarkt oder beim Erzeuger eingekauft werden, bleiben Konservierung und Zusatzstoffe weitgehend aus dem Spiel. Selbstgekochtes bürgt für eine weitgehend natürliche Kost mit einem Minimum an unerwünschten Fremd-oder Hilfsstoffen. Gesund\n\nGeschmack lassen sich am leichtesten verbinden, wenn man selbst kocht. So hat man sein Ernährungsschicksal“ ganz in der eigenen Hand. Wer mit ernährungsbedingten Besuch Kämpft — z. B. Menschen mit Lebensmittelallergie oder anderen Unverträglichkeit kann Persönliche Risikolebensmittel oder bestimmte Inhaltsstoffe am eigenen Herd am leichtesten Vermeiden. Selbst-Kochen bringt Qualität und Frische auf den Tisch. Wer regelmäßig kocht, entwickelt bald einen Blick für die Frische und Qualität. Wer seine Sinne beim Einkauf benutzt, lernt schnell, Frisches und Knackiges zu erkennen"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-16",
+              "title": "Arbeiten bis 75 - eine utopische Vorstellung?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Das Rentensystem in seiner derzeitigen Form ist auf Dauer nicht finanzierbar Doch ist „Arbeiten bis 75“ die Lösung?\n\nIn der Debatte um das Renteneintrittsalter wird stets darauf hingewiesen, dass in Deutschland wie auch im übrigen Europa die Rente im Durchschnitt deutlich vor dem Gesetzlichen Rentenalter angetreten wird. Es sei gar nicht notwendig, das Rentenalter zu erhöhen; es würde reichen, es auch tatsächlich einzuhalten.\n\nDem kann man entgegenhalten, dass das Pensionssystem vor 100 Jahren eingeführt wurde und dringend angepasst werden muss. Die Lebenserwartung ist seit den 1970er Jahren von 70 auf 81 Jahre angestiegen, und der Rentenzeitraum hat sich von sieben auf 23 Jahre verlängert. Diesen Veränderten Gegebenheiten sollte Rechnung getragen werden.\n\nDoch schon jetzt haben es ältere Arbeitnehmer schwer, eine Beschäftigung zu finden. Spätestens ab 50 gelten Arbeitslose als kaum vermittelbar. Zudem kann nicht jeder bis ins hohe Alter arbeiten. Auch wenn die Menschen heute länger gesund bleiben, steigt die Neigung zu Krankheiten ab 65 dennoch stark an.\n\nDeshalb empfehlen viele Experten, das Rentenalter flexibel zu gestalten. Die Menschen sollen selbst entscheiden, wann sie in Rente gehen mit entsprechenden Zuschlägen oder Abschlägen. So bringe man Menschen eher dazu, länger zu arbeiten, als mit Modellen, die nur die Zahl der Frührentner und Arbeitslosen in die Höhe schrauben.\n\nSkeptiker bezweifeln, dass eine Flexibilisierung die Lösung sein kann. Bei einer Nicht- Anpassung des gesetzlichen Rentenantrittsalters an die Lebenserwartung würde der Staat Milliarden weniger einnehmen. Zudem müsse auch das Eintrittsalter von Frauen an jenes der Männer angeglichen werden. Durch die längere Arbeitszeit hätten Frauen die Chance, beruflich Karriere zu machen und trotzdern eine Familie zu haben.\n\nAuch das Auftreten eines Pensionsschocks könnte durch einen späteren Renteneintritt verringert werden. Körperlich und geistig agile Personen könnten ihr Wissen an die Jungen weitergeben und sich noch gebraucht fühlen."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-17",
+              "title": "Die Schuluniform: Pro und Contra",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Der Gruppenzwang unter den Jugendlichen ist ein Problem, das man mit allen möglichen Mitteln zu bekämpfen versuchte. Wer die falschen Klamotten trägt, kann schnell zum Außenseiter werden. Ist die Schuluniform vielleicht eine Hilfe?\n\nSeit Jahren klagt man gegen die zunehmende Markenorientierung von Schülern und die damit verbundene soziale Ausgrenzung. Der dadurch entstehende soziale Druck, teure und angesagte Marken zu tragen,\n\nist für Schülerinnen und Schüler extrem hoch und trägt nicht selten zum angespannten Arbeitsklima und zur abgeschwächten Konzentration im Unterricht bei. Wer nicht mitmachen möchte oder nicht mithalten kann, wird leicht ausgegrenzt und im negativen Licht betrachtet.\n\nEine einheitliche Schulkleidung würde das Zusammengehörigkeitsgefühl der Schülerinnen und Schuler untereinander starken. Mehrere erfolgreiche Modellversuche belegen, dass -wenn Äußerlichkeiten keine so große Rolle spielen - auch die Integration von Kindern unterschiedlicher sozialer und ökonomischer Herkunft Nationalität und Religion verbessert werden kann. Außerdem sollen die Jugendlichen lernen, sich mehr über ihre Persönlichkeit und soziale Kompetenz identifizieren und weniger über ihre Kleidung.\n\nAuf der anderen Seite sind Schuluniformen kein Allheilmittel. Sie werden vorgeschlagen oder sogar eingesetzt, um viele Probleme im jugendlichen Dasein zu entschärfen. Dabei wird jedoch gerne übersehen, dass dieser Konflikt nicht so einfach zu lösen ist. Denn Aggressionen lassen sich durch Uniformen nicht verhindern, ganz im Gegenteil: Die Einoffen besprochen und gemeinsam gelöst werden sollte. Die Vermittlung von grundlegenden Werten wie gegenseitigem Respekt oder der Akzeptanz unterschiedlicher Geschmäcker und Ansichten kann nur im Dialog mit allen Beteiligten erfolgen. Darum halten es viele für ein völlig falsches Vorgehen, den Schulen Uniformen zu verordnen."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-18",
+              "title": "Leistungssport und Doping",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Dass Doping im Hochleistungssport.gängige Praxis und Dopingkontrollen nicht unbedingt Wirksam sind, tauben zuletzt wieder die negativen Schlagzeilen um die nachträgliche Aberkennung einer Reihe von Siegen in der Tour de France belegt\n\nEn gibt durchaus Stimmen, die eine Freigäbe von Dopingmitteln fordern und dabei argumentieren, dass damit endlich der Verlogenheit ein Ende gesetzt würde. Leistungssteigernde Mittel würden schließlich auch in anderen Bereichen unserer Gesellschaft eingesetzt.Menschen greifen zu biochernischen Stimulationsmitteln wie Kaffee, Zigaretten oder Kokain; der Gebrauch von Psychopharmaka ist bei Schülern innerhalb der vergangenen zehn Jahre um das Hundertfache gestiegen. Wenn also die ganze Gesellschaft dopt warum sollte es dann im Leistungssport verboten sein?\n\nDem halten die Gegner einer Freigabe entgegen, dass gerade der Sport Vorbild sein sollte im Kampf gegen den Gebrauch leistungssteigernder Substanzen. Ihrer Meinung nach ist Drogenkonsum ungesund und mit Sport unvereinbar. Im Übrigen vertreten sie die Ansicht, dass Dopingmittel unfair seien, weil bei ihrer Benutzung keine Chancengleichheit mehr gegeben ist.\n\nIm Gegenteil, entgegnen die Befürworter Einzelne Athleten werden stets Mittel und Wege finden, Kontrollen zu umgehen, und die Chancenungleichheit würde dadurch verstärkt. Offensichtlich seien Kontrollen nicht in der Lage, den Missbrauch zu verhindern, sondern erhöhen lediglich die unkontrollierte Einnahme. Bei sachgemäßer, kontrollierter Einnahme Seien die Gesundheitsrisiken aber überschaubar. Darüber hinaus sei es Privatsache eines jeden Sportlers, ob er chemische Substanzen einnimmt, um seine Leistung zu steigern.\n\nDass die derzeitigen Kontrollen offenbar leicht zu umgehen sind, ist auch den Verfechtern eines drogenfreien Leistungssports klar. Überprüfungen müssen eben wirksamer gestaltet werden. Die möglichen Nebenwirkungen seien selbst bei einer kontrollierten Einnahme viel zu gefährlich.\n\nWenn man Doping im Leistungssport erlauben wurde, würden auch im Freizeitbereich die Sportler vermehrt dopen. Die Folgen einer weit verbreiteten Einnahme von Dopingmitteln wären unabsehbar."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-19",
+              "title": "Wie lange dürfen Jugendliche abends ausgehen?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Viele Eltern verlangen von ihren minderjährigen Kindern, dass sie spätestens um 22.00 Uhr zu Hause sind. Um ihre Entscheidung zu untermauern, berufen sie sich dabei gerne auf die Autorität des Jugendschutzgesetzes. Bei vielen öffentlichern Veranstaltungen gilt für Jugendliche unter 16 Jahren tatsächlich die Grenze von 22.00 Uhr. Das Jugendschutzgesetz regelt aber lediglich den Aufenthalt Jugendlicher an bestimmten Orten. Grundsätzlich bleibt es Sache der Eltern, zu entscheiden, wie lange sie ihren Kindern Ausgang gewähren.\n\nDamit argumentieren die Jugendlichen, wenn sie von ihren Eltern verlangen, bis 23.00 oder 24.00 Uhr Ausgang zu bekommen. Aber die Angst, ihre Aufsichtspflicht zu verletzen und mit dem Gesetz in Konflikt zu geraten, ist ohnehin nicht der entscheidende Grund, weshalb Eltern ihre Sprösslinge gerne früh zu Hause sehen. Sie möchten sie in erster Linie vor schlechten Einflüssen und vor Gefahren schützen, die Jugendliche vielleicht noch nicht richtig einschätzen können.\n\nAndererseits sollten Eltern natürlich auch die Fähigkeit ihrer Kinder, selbst für sich Verantwortung zu übernehmen, zunehmend Fördern. Dies kann aber nur auf der Grundlage gegenseitigen Vertrauens geschehen. Wenn Eltern ihre Kinder länger ausgehen lassen sollen, müssen sie sich auf sie verlassen können. Sie müssen wissen, mit wem und wo ihre Kinder sich aufhalten, und sie müssen sicher sein können, dass diese sich auch an verabredete Zeiten halten. Um ein zufrieden stellendes Gleichgewicht zwischen Eigenverantwortung und Schutz zu finden, wird ein Vorschuss an Vertrauen unerlässlich sein."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-20",
+              "title": "Antibiotika: Gibt es Alternativen?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Als Antibiotika werden Medikamente bezeichnet, die gegen krankmachende Bakterien eingesetzt werden. Früher starten auch in Deutschland Menschen an Halsentzündung oder Lungenentzündungen. Das ist durch Antibiotika heute kaum noch der Fall. Doch in dem letzten Jahren haben Ärzte und Patienten immer öfter festgestellt. Das Medikament, das Antibiotikum wirkt nicht mehr.\n\nbestimmte Bakterien lassen sich nicht mehr mit Antibiotika bekämpfen. Sie sind gegen Antibiotika resistent geworden und wieder gefährlich wie früher.Gründe für diese Resistenz Entwicklung sind einerseits darin zu sehen, dass Antibiotika oft verschrieben wurden, obwohl es gar nicht nötig war bei einer banalen Erkältung mit Halsweh, Husten und Schnupfen zum Beispiel, die in der Regel gar nicht durch Bakterien verursacht wird. Der Einsatz von Antibiotika in der Tierhaltung fordert auch über unsere Nahrung die Resistenzen.\n\nAuf der anderen Seite kann sicherlich auch die unsachgemäße Anwendung durch den Patienten für die schwindende Wirksamkeit der Antibiotika mitverantwortlich gemacht werden. Insbesondere ein vorzeitiger Abbruch der Therapie bei abnehmenden Beschwerden kann dazu führen, dass einige Bakterien überleben, sich erneut vermehren und dabei auch noch Resistenzen gegen das Medikament entwickeln.\n\nWas soll man also tun? Für viele bakteriell verursachte Beschwerden können zunächsten Heilpflanzen eingesetzt werden. So hilft Salbei bei Entzündungen im Mund und Rauchenraum und Thymian gegen Husten oder Teebaumöl bei Hautinfektionen.Es gibt noch immer Patienten, die lieber Tabletten schlucken wollen, weil sie des für wirksamer halten aber hier müssen Ärzte die Patienten besser informieren.\n\nAuf der anderen Seite wollen viele Patienten heute gar keine Antibiotika mehr nehmen, weil sie schlechte Erfahrungen gemacht haben. Aber Vorsicht auch das ist gefährlich.Noch immer gibt es Bakterien, die lebensgefährlich für den Menschen sein können, und dann hält meist nichts anderes als ein Antibiotikum. Wenn eine Behandlung mit Antibiotika unumgänglich ist, sollten die Patienten in der Arztpraxis auch über die Folgen einer fehlerhalten Einnahme aufgeklärt werden."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-21",
+              "title": "Haustausch",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Dass es in dem Low-Budget-Feriendomizil weder ein Buffet noch eine Poollandschaft gibt, muss kein Nachteil sein. Der große Vorteil für den Familienurlaub ist, dass Sie auf keine anderen Hotelgäste oder Campingplatzbesucher Rücksicht nehmen müssen.\n\nAußerdem können Sie den Ferienort so erkunden, als würden Sie selbst dort wohnen. Das ist vor allem dann aufregend, wenn beide Tauschpartner möglichst weit voneinander entfernt leben, idealerweise sogar in verschiedenen Ländern.\n\nSo können Sie den Alltag hinter sich lassen und das Leben in einer anderen Kultur kennenlernen. Neben den sehr geringen Kosten besteht der Reiz eines Haustauschs also vor allem in dem Abenteuer, sich auf etwas Neues einzulassen.\n\nVoraussetzung zum Haustausch: Vertrauen\n\nWas für manche Menschen ein Vorteil darstellt, ist für andere ein gravierender Nachteil: Dadurch, dass Sie nicht genau wissen, worauf Sie sich einlassen, können Sie auch Pech beim Haustausch haben.\n\nUm zu vermeiden, dass Sie am Ferienort aus allen Wolken fallen, weil Ihnen die Einrichtung nicht zusagt oder Sie andere Hygienestandards haben, sollten Sie von Ihrem Tauschpartner nicht nur Adressen, sondern auch Fotos verlangen. Telefonieren Sie am besten ausführlich und legen klare Regeln für den Familienurlaub im fremden Heim fest.\n\nJuristische Nachteile sind schwerwiegend\n\nDer größte Nachteil des Haustauschtrends sind juristische Fallstricke: Da keine Verträge zwischen den beiden Parteien geschlossen werden, bleibt die Haftungsfrage ungeklärt. Im Klartext: Geht etwas kaputt oder verloren, besteht die Gefahr, dass Sie auf dem Schaden sitzen bleiben.\n\nDas jeweilige Webportal, das lediglich als Vermittler auftritt, kann nicht belangt werden. Und da die\n\nVerabredung zum Haustausch anonym via E-Mail vonstattengeht, bestehen auch kaum Möglichkeiten zur Prävention. Die Portale wollen an dem Problem arbeiten. Bis dahin ist Vertrauen und Menschenkenntnis Ihre einzige Möglichkeit, böse Überraschungen zu verhindern"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-22",
+              "title": "Zweisprachigkeit bei Kindern",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Die Gründe für eine zweioder mehrsprachige Erziehung können ganz vielfältig sein. Tatsächlich ist die Mehrheit aller Menschen bilingual. Viele wohnen in mehrsprachigen Ländern, andere lernen neben der Landessprache auch die Sprache(n) ihrer Eltern oder Grosseltern. Auch die Erziehung in einer Fremdsprache ist möglich, wenn die Eltern diese Sprache gut beherrschen und gerne in ihr kommunizieren. Die Vorteile einer mehrsprachigen Erziehung liegen meist auf der Hand. Indem Eltern in ihrer Muttersprache mit ihrem Kind sprechen, helfen sie diesem, eine Beziehung zu ihrer Kultur aufzubauen und eine eigene kulturelle Identität zu entwickeln. Wer sein Kind in mehr als einer Sprache erzieht, möchte ihm zudem vielleicht einen Vorsprung für später — für die Schule, den Beruf und das Reisen —- geben. Doch das Aufwachsen mit mehreren Sprachen bringt nicht nur Vorteile für die Kommunikation oder etwa die Karriere. „Mehrsprachigkeit erlaubt Kindern, die Welt in einem vollkommen anderen Licht zu sehen“, sagt Stephanie Meade vom Online-Magazin InCultureParent. Sie werden offener und toleranter anderen Kulturen gegenüber und verfügen über die besten Voraussetzungen, um ihren Horizont ihr Leben lang zu erweitern.\n\nIst es denn sinnvoll, Kinder mehrsprachig zu erziehen?\n\nWährend noch vor wenigen Jahrzehnten angenommen wurde, dass eine zweisprachige Erziehung Kinder überfordert, ihre Entwicklung hemmt oder sie beide Sprachen nur unvollkommen lernen lässt, sind heute die kognitiven Vorteile einer mehrsprachigen Erziehung anerkannt. Unter Wissenschaftlern besteht Übereinstimmung, dass mehrsprachige Kinder mühelos zwischen den verschiedenen Sprachen unterscheiden und separate Kompetenzen in ihnen entwickeln können. Die „Critical Period Hypothesis“ geht darüber hinaus davon aus, dass Kinder nicht nur problemlos mehrere Sprachen lernen können, sondern dass| sie es sogar besser tun als Erwachsene und dabei grössere Erfolge erzielen als Menschen, die erst später im Leben anfangen, eine Sprache zu lernen. Unumstritten ist diese These allerdings nicht. So vertritt der Sprachwissenschaftler Francois Grosjean beispielsweise, dass man in jedem Alter mehrsprachig werden kann und oft nur seinen Akzent beibehält. Der entscheidenden Vorteil beim Spracherwerb von Kindern ist allerdings offensichtlich: Während Erwachsene meist systematisch Vokabeln, Grammatik und Syntax einer neuen Sprache pauken müssen, lernen Kinder diese intuitiv und relativ mühelos."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-23",
+              "title": "Hochzeit nur zu zweit",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Für Christiane und Olaf Witte ist der Traum vom glücklichsten Tag im Leben endlich Wirklichkeit geworden. Vor drei Tagen haben ich die 29-jährige Bankkauffrau und der 30-jährige Berufsschullehrer aus dem hessischen Marburg das Ja-Wort gegeben Verheiratet zu sein ist ein unbeschreiblich schönes Gefühl. Wir sind sehr glücklich“ erzählt Christiane Witte. Auch Olaf Witte schwelgt in Erinnerungen: Die Hochzeitszeremonie war phantastisch. Es war genauso wie wir uns das vorgestellt und gewünscht haben.“ Es ist eine Hochzeit ohne Gäste. Nur ein Standesbeamter.und ein Fotograf begleiteten das Brautpaar an diesem besonderen Tag Geheiratet wurde weit weg von zu Hause, im 400 Kilometer entfernten Sankt Peter Ording an der Nordseekuste. Familie und Freunde waren nicht eingeladen. ‚Unsere Eltern denken, wir würden in Norddeutschland Urlaub machen. Wir hoffen, dass sie nicht allzu sehr enttäuscht sind und unsere Entscheidung akzeptierent, gesteht Olaf Witte. Was die Hochzeitsfeierlichkeiten (und die Flitterwochen gekostet haben? Etwa 1.800 Euro haben die beiden für alles eingeplant. Mit ihrem Wunsch, bescheiden zu heiraten, sind Christiane und Olaf Witte nicht allein.\n\nWährend für die Deutschen in vielen Bereichen das Beste gerade gut genug ist, zeigen sie sich beim Thema Hochzeit von ihrer sparsamen Seite. Viele Paare wünschen sich statt Feierlichkeiten im großen Stil eine Eheschließung im kleinen Kreis ohne großen finanziellen Aufwand. 38 Prozent würden höchstens 5.000 Euro für den schönsten Tag ihres Lebens ausgeben. Neun Prozent der Deutschen ist die eigene Hochzeit sogar nur bis zu 1.000 Euro wert. Das sind Ergebnisse einer aktuellen Umfrage der CreditPlus Bank AG.\n\nIndessen genießt Familie Witte vor Ort ihre Hochzeitreise. Geplant sind Tagesausflüge in die nähere Umgebung, romantische Spaziergänge am Strand und Wattwanderungen. Zwei Wochen pures Glück und Entspannung aber ob sich Familie und Freunde wirklich mit den beiden freuen können, wenn sie von ihrer Hochzeitsreise zurückkommen?"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-24",
+              "title": "Sollen Schönheitsoperationen bei Minderjährigen verboten werden?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Poltiker fordern ein Verbot unnötiger Eingriffe be Minderjährigen Ihre Forderung stutzen diese Politiker auf eine Reihe von Argumenten. Für sie stellen Schönheitsoperationen bei Minderjährigen eine Körperverletzung dar und müssen daher verboten werden. Die Risiken sind Ihrer Meinung nach noch größer als jene be Erwachsenen Sie sehen allerdings auch, dass es Ausnahmen gibt, bei denen auch bei Jugendlichen eine Operation notwendig ist. Wenn ein Kind beispielsweise nach einem Unfall schwere Brandverletrungen im Gesicht hat muss es zweifellos operiert werden, weil die seelische Belastung sonst unzumutbar ware Gegner des Verbots geben aber zu bedenken, dass es schwer ist, eine klare Grenze zwischen seelischen Schmerzen und Schönheitsidealen zu Tiehen. Das könne man nicht in die Praxis unsetzen, und ein gesetriches Verbot ist daher sinnlos, Was genau Ware denn strafbar? Die abstehenden Ohren eines Kindes zu korrigieren ein Muttermals auf der Nase zu entfemen? Eine Brust zu verkleinern? Darüber hinaus würde ein Verbot die Rechte von Eltern beschneiden Aber was ist wichtiger? Elternrecht oder der Schutz des Kindes? Manche Eltern seien nu schwach, um ihrem Kind Grenzen zu setzen Dem wird entgegengehalten, dass staatliche Regulierung keine falschen Schönheitsideale korrigieren kann. Aufklärung ist hier gefragt Lehrer k können solche Schönheitsbilder mit ihren Klassen diskutieren, um deutlich zu machen, wie willkürlich sie sind. Ein verantwortungsvoller Arzt wird Eltern davon überzeugen, dass ihr Kind keine Schönheitsoperation braucht, sondern jemanden, der ihm hilft, selbstbewusster zu werden Die var über eine Schön heitsoperation kann die Justiz nicht.treffen, Sie muss bei Eltern und rzten bleiben"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-25",
+              "title": "Ganztagsschule: Pro und Contra",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Die richtige Schule zu finden, ist für Kinder und Eltern ein wachsendes Problem. Schule ist erst einmal Ländersache und damit von Bundesland zu Bundesland verschieden und immer abhängig von der jeweiligen Landesregierung. Entsprechend vielfältig sind nach der Grundschule die weiterführenden Schulformen und Bezeichnungen quer durch die Republik: Hauptschule, Realschule, Regionalschule, Regelschule, Sekundarschule, Mittelschule, Oberschule, Realschule plus, erweiterte Realschule, Gesamtschule, Förderschule, Gymnasium und berufsbildende Schule.\n\nAndererseits gibt es aber einen gemeinsamen bundesweiten Trend —- hin zu mehr Ganztagsschulen für Grundschüler und die der sogenannten Sekundarstufe | von der fünften bis zur zehnten Klasse. Haben 2002 rund 10 % der Schüler eine Ganztagsschule besucht, waren es 2014 bereits knapp 36 %. Auch in 2016 nahm die Zahl der Ganztagesschüler nochmal zu und stieg auf 42,5 %. Nach einer aktuellen Umfrage aus 2019 sprechen sich 78 % für einen Ausbau des Systems der Ganztagsschulen aus.\n\nWas Ganztagsschule bedeutet\n\nPrinzipiell gibt es die Ganztagsschule für jede Schulform, egal ob Grund-, Hauptoder Realschule bzw. Gymnasium. Doch die Ganztagsschule gibt es nicht. Per Definition der deutschen Kultusministerkonferenz im Oktober 2003 sind Schulen, die im Primaroder Sekundarbereich | über den Vormittagsunterricht hinaus an mindestens drei Tagen in der Woche ein ganztägiges Angebot haben, das täglich mindestens sieben Zeitstunden umfasst, Ganztagsschulen. Das bedeutet: Wo Ganztagsschule draufsteht, ist nicht unbedingt eine Schule drin, die tatsächlich jeden Tag der Schulwoche eine Ganztagsbetreuung bietet. Und weil eben jedes Bundesland seine eigene Ganztagsschulpolitik verfolgt, gibt es einige wichtige Unterschiede bei den Unterrichtsformen, Betreuungskonzepten und auch den Kosten für die Eltern. Einzig gleich ist, dass niemand Anspruch auf den Besuch einer Ganztagsschule hat.\n\nDass es kein einheitliches Ganztagsschulkonzept gibt, hat verschiedene Gründe, aber im Kern geht es um Kosten, Chancengleichheit und die Frage, in welchem Maß Eltern oder Staat für die Bildung der Kinder verantwortlich sind — oder sein sollen.\n\nDie wichtige Frage, ob Schüler einer Ganztagsschule — unabhängig von der Schulform — bessere oder schlechtere Leistungen als an einer Halbtagsschule erbringen, ist bislang nicht geklärt, denn die Unterschiede von Schule zu Schule sind zu vielfältig, um sie vergleichen zu können. Die Entscheidung für oder gegen den Besuch einer Ganztagsschule ist daher in erster Linie abhängig von individuellen Ansichten, Wünschen und Bedürfnissen des Schülers und seiner Eltern."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-26",
+              "title": "Verbot von Gewaltspielen: Pro und Contra",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Nachdem sich in Deutschland mehrere Male Amokläufe ereigneten, bei denen die Täter Jugendliche waren, die teilweise noch zur Schule gingen, wurde von Lehrern und Politikern das Verbot Gewaltverherrlichender Computerspiele gefordert. Doch abgesehen davon, dass ein solches Verbot kaum umsetzbar ist, ist unklar, ob es überhaupt Sinn ergibt und Gewalttaten verringern oder gar vermeiden würde.\n\nEinige Politiker meinen, dass man die globale und höchst problematische Diskussion um Gewaltausbrüche bei der jungen Generation nicht auf das bloße Verbot von Computerspielen verengen sollte. Vielmehr sollte das Gewaltphänomen breiter analysiert werden. Denn es sind komplexe Prozesse, die schließlich zu einem schrecklichen Ereignis führen können und nicht allein auf das Spielen solcher,Killerspiele zurückzuführen sind. Vielmehr spielt da das Umfeld des Kindes eine entscheidende Rolle, vor allem seine Eltern und Lehrer. Sie sollen für den Heranwachsenden richtige Vorbilder sein. Wenn sich das Kind einsam fühlt und zu den fraglichen Computerspielen greift, wäre es verfehlt, lediglich die Spiele für den möglichen Gewaltausbruch verantwortlich zu machen. Folglich würde ein Verbot am eigentlichen Ziel vorbei laufen.\n\nAuf der anderen Seite bekommen Kinder in solchen Spielen virtuelle Vorbilder zu sehen. Brutale Computerspiele und Videofilme gaukeln Jugendliche den schnellen Sieg des Stärkeren vor und Auswege für den Verlierer bieten sie nicht. Wer andere Menschen mordet, der ist stark und wird als Gewinner geehrt. Diese logischen Denkweisen werden vom heranwachsenden Gehirn aufgenommen und fälschlicherweise, wenn auch unter Einfluss anderer Faktoren, in die Wirklichkeit projiziert. Genau deshalb soll das Verbot ausgesprochen werden, und zwar sowohl ein Herstellung's als auch ein Verbreitungsverbot. Das sei nach Meinung der Verbotsbefürworter notwendig, damit Jugendliche nicht zum Töter anderer Menschen motiviert werden, egal ob real oder virtuell.\n\nWürden sie im Falle einer Vernachlässigung durch Familie oder Freunde zu Freizeitaktivitäten greifen, die keine Gewalt beinhalten, so würden sie auch keine gewaltbereiten Pseudo-starken Figuren vor Augen haben und viel weniger Lust verspüren, denen irgendwann ähnlich zu sein."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-27",
+              "title": "Praktische Lerntipps",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Forschungen haben gezeigt, dass bei mehrkanaligem lernen durch Lesen und Anschauen ‚Hören,sprechen\n\nschreiben (Tun) der Lernerfolg höher ist.\n\nDie sinne sollen also beim lernen zusammen arbeiten.in der Tabelle wird dargestellt ‚wie groß das Erinnem\n\nbei den einzelnen Aktivitäten ist.Durch Schnittswerte.\n\nHören 20%\n\nSehen 30 %\n\nHören +sehen 50%\n\nHören +sehen +Reden 70%\n\nHören +sehen +Reden +Tun 90%\n\nversuchen sie ‚den Lernstoff in einige Wort zu fassen.versuchen sie ‚Zusammenhänge bildhaft\n\ndarzustellen (Z.B einem Diagramm.\n\nschrieben sie bei einem Vortrag mit ‚da bei gilt nicht wörtlich sondern sinngemäß über lernen heißt mehr\n\nlernen als eigentlich nötig wäre immer noch Lernzeit auf obwohl man den Lernstoff eigentlich schon\n\nbeherrscht.\n\nMit dieser Form können sie ihre Behaltensleistung vor allem auf die Dauer gesehen ganz erheblich\n\nsteigern.unbegrenzt funktioniert diesen Prinzip jedoch nicht.Ab einem bestimmten Punkt müssen sie immen\n\nmehr Zeit aufwenden, ohne wesentlich bessere Ergebnisse zu erzielen:mit anderen Worten das überlernen\n\nnicht übertrieben.\n\nwiederholen, wiederholen wiederholen!Die richtige und rationelle Methode um das lernen durch\n\nVerknüpfungen dauerhaft zu machen, ist wiederholen..Anfangs in Kurzen Zeitabständen die dann immer\n\nlänger werden.Hilfreich ist hier eine Art Wiederholungskalender in dem sie feste Termine für\n\nWiederholungsübungen einplanen.\n\nNatürlich gibt es viel mehr Punkte, die man beachten sollte z.B Zeitmanagement absolute Ruhe beim\n\nlernen oder Biorhythmus ‚Pausen zur rechten zeit wichtig ist nur ‚das sie den Lernstoff behalten und später bei Bedarf anhand dieses System reproduzieren können..Quelle leichter lernen mehr behalten."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-28",
+              "title": "Ist „bequemes Essen“ gut für uns?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Immer schneller und einfacher soll unser Leben werden, auch beim Essen. Es soll gut schmecken, abwechslungsreich und bequem zuzubereiten sein. Convenience food, also vorgefertigte oder teilfertige Lebensmittel, scheinen all diese Eigenschaften zu erfüllen. aber ist dieses Essen gut für uns?\n\nJa, meinen viele. Diese durchaus praktischen Produkte ersparen im Alltag viel Zeit, gewährleisten eine stets gleich bleibende Qualität und sind saisonunabhängig.\n\nGenau in diesem Zeitvorteil sehen Gegner einen schwerwiegenden Nachteil, denn Essen finde so immer mehr schnell und nebenbei, sozusagen im Vorbeigehen, statt.\n\nSchnelles Essen sei jedoch nicht nur unserem körperlichen Wohlbefinden abträglich, sondern nehme uns auch die Möglichkeit zum bewussten Pausemachen in der Hektik des Alltags.\n\nAuch die Argumente der gleich bleibenden Qualität und der Saisonunabhängigkeit möchten Gegner von Fertigprodukten nicht gelten lassen. Durch die Konservierungsverfahren gehen viele wertvolle Nährstoffe der Lebensmittel verloren, die dem fertigen Produkt dann fehlen oder künstlich hinzugesetzt werden müssen. Und zu essen, was je nach Jahreszeit zur Verfügung stehe, sei ganz im Sinne eines bewussten Umgangs mit Lebensmittelressourcen. Zudem seien Fertigprodukte wesentlich am erhöhten Müllaufkommen beteiligt.\n\nDie Kritiker führen auch an, dass Fertigprodukte häufig hohe Mengen an Salz, Zucker und Fett enthalten und so wesentlich zu Übergewicht und Zivilisationskrankheiten wie Diabetes oder Herz- und Kreislauferkrankungen beitragen.\n\nQualität und Bequemlichkeit müssen jedoch Kein Widerspruch sein, entgegnen die Befürworter schnellen Essens. Fertigprodukte gebe es in allen Qualitätsklassen; das Angebot reiche von regionalen Produkten in Bio-Qualität bis zu hochwertigen Produkten für die Spitzengastronomie.\n\nFür die Gegner steht Convenience Food aber in jedem Fall für einen kulturellen und Sozialen Verlust. Wissen um bewusste Ernährung und vielfältige Kochkenntnisse gingen verloren. Vor allem aber das gemeinsame Vorbereiten und Verzehren vor Speisen sei im Zusammenleben von unschätzbarem Wert."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-29",
+              "title": "Darf man behalten, was man findet?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Was sollte man tun, wenn man Geld oder eine Brieftasche auf der Straße findet?Und was, wenn man etwas sehr Wertvolles entdeckt, wie zum Beispiel Schmuck oder einen Lottoschein, der tatsächlich gewonnen hat?\n\nWährend einige die Fundsache im Fundbüro abgeben möchten, besinnen sich manch andere auf das Kinderlied der Finder behält es, der Verlierer weint.Das klingt verlokkend, ist aber nicht richtig.\n\nVor kurzem wurde ein deutsches Pärchen zu einer Haftstrafe verurteilt, weil es einen gefundenen 30,000 -Lottoschein einlöste und die Hälfte von dem Geld ausgab.Und sie wurden angewiesen, der Dame, die den Lottoschein ursprünglich gekauft hatte, die restlichen 15,000 zurückzuzahlen.\n\nIn den meisten Ländern der Erde muss der Finder von Gesetzes wegen alle zumutbaren Mittel\" aufwenden, um Eigentümer zu finden.\n\nzahlreichen Ländern steht dem Finder eine Belohnung zu, oft ein prozentuale Anteil am Wert des Gegenstandes.\n\nSelbstverständlich kann man eine 1 -Münze aufheben und behalten, außer man eine rechtlich genauere Aussa ge: -Finder können etwas behalten, wenn sie versuchen, den Eigentümer zu finden, aber kein Eigentümer identifiziert werden kann.Und diejenigen, die etwas verloren haben, haben den besten Rechtsanspruch.Aber was passiert im wirklichen Leben?"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-30",
+              "title": "Hausaufgaben - unnötig oder unvermeidlich?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Jeder kennt sie, viele drücken sich vor ihnen und so mancher erinnert sich mit Schrecken: Die Rede ist von ie Be Lieben Generationen von Schülern waren es gewohnt, in ihrer Freizeit diese unangenehme Pflicht zu erledigen.\n\nDoch stellt sich heute, da nach modernen Methoden und neuen pädagogischen Ansätzen unterrichtet wird, immer mehr die Frage, Ob Hausaufgaben noch zeitgemäß sind. Sowohl Gegner als auch Befürworter von Hausaufgaben haben hier gute Argumente auf Ihrer Seite.\n\nNicht nur viele Schüler, auch manche Eltern und Pädagogen sind der Auffassung, dass man Hausaufgaben abschaffen sollte. Ganztagsunterricht, Sport- und Musikkurse sowie die Vorbereitung auf Tests und Abschlussprüfungen führen dazu, dass viele Schüler Abends völlig müde am Schreibtisch\n\nsitzen und der Lerneffekt weitestgehend auf der Strecke bleibt.\n\nGegner von Hausaufgaben geben außerdem zu bedenken, dass in diesem Bereich wenig Chancengleichheit herrscht. Manche Schüler bekommen Hilfe von ihren Eltern, andere sind auf sich alleine gestellt und haben entsprechend mehr Mühe. Dadurch sinkt bei diesen Schülern die Motivation, was wiederum zu Schlechteren schulischen Leistungen führt und den Abstand zwischen guten und Schlechten Schülern erhöht.\n\nBefürworter von Hausaufgaben weisen darauf hin, dass für das Lernen von neuem Stoff das Wiederholen erwiesenermaßen eine wirksame Methode sei, sodass ein gewisses maß an konzentriertem, ungestörtem\n\nlernen zu Hause nötig sei.\n\nUnd zu Hause bietet sich die Möglichkeit, das im Unterricht Gelernte in neue Zusammenhänge zu setzen und richtig zu durchdenken. Denn wenn es nicht nur vom Lehrer erklärt wird, sondern vom Schüler selbst nochmals erarbeitet wird, wird das Gelernte wirklich verinnerlicht.\n\nUnbestritten ist sicherlich, dass Hausaufgaben durchaus auf das wirkliche Leben nach der Schulzeit vorbereiten. Schon in jungen jahren werden Selbstdisziplin und die Fähigkeit, Probleme selbstständig zu lösen, herausgebildet. Schließlich bringt auch das Erwachsenenleben viele unangenehme und schwierige Aufgaben mit sich, die erledigt werden müssen, bevor man sich seinem Hobby widmen kann."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-31",
+              "title": "Stadtwohnung oder Haus im Grünen",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Junge Singles oder kinderlose Paare entscheiden sich oft für eine Stadtwohnung In der Stadt finden sie\n\nArbeit und Ausbildung, Kultur und Vergnügen im Idealfall direkt vor der Tür.\n\nDoch bei vielen Stadtbewohnern taucht spätestens mit dem Wunsch nach Kindern auch\n\ndie Sehnsucht nach einem Haus im Grünen auf. Leben in den eigenen vier Wänden inmitten saftiger Wiesen erscheint als erstrebenswerte Idylle.\n\nDie Kinder sollen möglichst frei aufwachsen,\n\nOhne Autoabgase, ohne Lärm und ohne hektik. Entspricht diese Vorstellung der verklichkeit? experten warnen immer wieder, dass ade der Wunsch so vieler Menschen h einem eigenen Haus, oft außerhalb gewachsenen Ortsgebiete, die viel verklagte Zersiedelung begünstigt.\n\nAusgedehnte Siedlungsbereiche wachsen in die waldschaft hinein.\n\nOft wird dafür und in Bauland umgewidmet, obwohl es verfügbare Baugründe innerhalb der Orte.\n\nDas Bestreben nach einem Leben auf dem Land gefährdet damit die Natur und die Kulturfandschaften.\n\nIn den wenigsten Fällen werden solche Siedlungsgebiete durch öffentliche Verkehrsmittel bedient, und oft wird zweites Auto erforderlich, damit die Familien den Weg zur Arbeit und zur Schule bewältigen können. Dadurch wächst de Verkehr und mithin die Umweltbelastung.Oft sind auch die Kinder auf ihre Elte und deren Auto argewiesen, um Freunde zu besuchen, zum Fußballplatz zu kommen oder die Musikschule zu erreichen als dass sie frei aufwachsen könnt Natürlich ist es einzusehen dass Menschen der Enge einer Stadtwohnun fliehen und vor allem im Sommer Garten genießen mochten. Eine Haus bietet ihnen zudem mehr Möglichkeiten, es nach ihren eigenen Wünschen zu gestalten. In der Stadt bekommt dagegen selten die Gelegenheit eigenen Vorstellungen zu planen."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-32",
+              "title": "Kinder unterschätzen Gefahren von Handy und Internet",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Die EU-Kommission hat eine Befragung Von Kindern und Jugendlichen zur Handy-Und Internetnutzung durchgeführt. Im Ergebnis zeigt sich, dass sich die jungen Nutzer zwar selbstbewusst mit den neuen Medien auseinandersetzen, die Gefahren Und Risiken allerdings unterschätzen.\n\nDabei sind die neuen Technologien oft nicht Ungefährlich, denn mit den Geräten können Gewaltspiele\n\nund pornographische Inhalte Abgerufen werden. Auch Telefonterror Gegen Kinder in Form von Drohungen, Erpressungen oder Beschimpfungen kommt Immer häufiger vor. Und nicht zuletzt lädt die Fotofunktion von Handys zu Missbräuchen Ein. Auf unbemerkt gemachten Fotos kann Man sich plötzlich im Internet wiederfinden.\n\nFür Kinder und Jugendliche in Europa ist die Internet- und Handynutzung selbstverständlich geworden\n\nund im Allgemeinen sind ihnen die Gefahren in der virtuellen Welt bekannt. Bei Problemen würden sie allerdings nur als letzten Ausweg einen Erwachsenen um Hilfe bittern. Das ist das Ergebnis einer Befragung von Kindern im Alter zwischen 9-10 und 12-14 Jahren aus Allen EU-Mitgliedsstaaten sowie Norwegen Und Island, die im Auftrag der Europäischen Union durchgeführt wurde.\n\nVor allem die Mobilfunknutzung wird von Kindern und Jugendlichen als gefahrios Eingestuft. Knapp 75 Prozent der 9 bis 10-Jährigen und sogar 90 Prozent den 12-bis 14-Jährigen besitzen ein Handy.\n\nObwohl vielen der jungen Nutzer die Risiken der Handy- und Internetnutzung durchaus Bewusst sind, würden die meisten versuchen, das Problem selbst oder mit Hilfe von Freunden zu lösen, und ihren Eltern nur in Ernsten Fällen davon erzählen,.Ich würde allen außer meinen Eltern davon erzählen so ein befragtes Mädchen im Alter zwischen 9-10 Jahren aus Deutschland."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-33",
+              "title": "Eine Woche ohne Internet",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Sind Seepferdchen Fische Säugetiere?\n\nSchnell hat das Kind mein inkompetentes Gerede satt und schlagt vor: Schau doch im Computer nach Aber das kann ich nicht ‚denn das Experiment heißt: eine Woche ohne Netz\n\nAb sofort gibt es auch keinen Zugang mehr zu Sehnsuchtsdingen wie einer neuen Schultasche oder der kommenden Sommermode. Die tauschen nämlich ebenfalls im Rechner auf ‚um wenige Tage später geliefert zu werden. In den Augen des Kindes ist der Computer deshalb eine Art moderner Weihnachtsmann\n\nAm Ende der Woche hatte ich Rückenschmerzen ‚weil ich dank eines Online Lieferservice verlernt habe ‚wie man Getränkekisten korrekt aus den Knien stemmt.Und es gab einen unerfreulichen Aufenthalt am Bahnhof ‚wo ich versuchte zwei Fahrscheine zu kaufen.im Internet dauert das etwas drei Minuten.Am Schalter brauchte ich ein Vielfaches da Zeit.möglicherweise hat mir das angewöhnt, auch in schwierigen Site Gespräche höflich zu führen? Die Bahnangestellten signalisierte je etwas in der Art\n\nAm Samstag waren wir auf einer Party von Freunden eingeladen ‚wir fanden die Adresse, obwohl wir den alten Stadtplan benutzen. Doch die Bar lag im Dunkeln, ein Fenster war mit Brettern vernagelt.\n\nAls wir sie auf dem Handy anriefen, klingelte es ins leere, wahrscheinlich hörte es keiner wegen der Musik. Und natürlich hatten sie Beschied gegeben. Am nächsten Morgen laß ich in einer Email „IM Pudel hat es gebrannt.wir feiern deshalb im...“\n\nAm Ende der Woche notierte ich: Das Internet ist so etwas wie ein allwissender Weihnachtsmann, der allen Menschen gewogen ist und sie zueinanderbringt.\n\nDer hätte ebenfalls gewusst, dass Seepferdchen Fische sind."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-34",
+              "title": "Soll digitales Unterrichtsmaterial in den Schulen eingesetzt werden?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "In Amerika zum Teil bereits Realität, in Deutschland an manchen Schulen in Erprobung: wird der Einsatz von elektronischem Unterrichtsmaterial bald flächendeckend Wirklichkeit werden? Noch scheint dies in ferner Zukunft zu liegen, auch wenn die Buchmessen zunehmend im Zeichen der Digitalisierung stehen.\n\nBefürworter argumentieren, dass traditionelle Schulbucher bereits jetzt auf Zusatzmaterial aus\n\ndem Internet verweisen. Es sei also Nur folgerichtig, dass Lerninhalte über Elektronische Bücher vermittelt würden. Dieses sei auch unbedingt notwendig, damit Die Schule den Anschluss an aktuelle Entwicklungen nicht verliere.\n\nDagegen wenden die Verfechter gedrückter Schulbücher ein, dass die Schule kein Experimentierfeld für neue Technologien werden dürfe Methoden und Auswirkungen eines breiten Einsatzes von E-Books seien unzureichend erforscht Darüber hinaus se die Finanzierung eines solches Vorhabens mehr als unsicher.\n\nDass es beachtlicher Investitionen bedarf, um E-Books im Unterricht einzuführen, räumen selbst die Befürworter ein. Aber angesichts der vielen Vorteile besteht ihrer Meinung nach kein Zweifel, dass diese Investitionen sinnvoll wären. Zur Verteidigung von E-Books wird angeführt, dass diese rasch und unkompliziert aktualisiert wer den können, während Schulbücher schnell veraltet sind. Zahlreiche Funktionen unterstützen in ihren Augen die Schüler beim Lernen: Verlinkungen bieten zusätzliche Informationen; die Vorlesefunktion schult das Hörverständnis und Notizfunktionen ergänzen und festigen das Gelernte.\n\nSchüler gehen heute längst ganz selbstverständlich mit mobilen Endgeräten um, und der Einsatz digitaler Medien im Unterricht fördert die Medienkompetenz, die Kritik Fähigkeit und die Selbstorganisation der Schüler, so das Fazit der Befürworter."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-35",
+              "title": "Spezielle Schulen für hochbegabte Schüler: Separation oder Integration",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Bekannt sind sie als Wunderkinder und Genies, doch ihr Potenzial können hochbegabte Kinder nur dann entfalten, wenn sie als solche erkannt und entsprechend gefördert werden. Aber wie fördert man außergewöhnliche Talente richtig? Eine Frage, über die Pädagogen und Bildung's Politiker seit Jahren debattieren.\n\nUnbestritten ist die Tatsache, dass talentierte Sportler nur dann zu Olympiasiegern werden, wenn sie in Schwerpunktzentren ihre Fähigkeiten gezielt entwickeln können.\n\nWas für Musiker, Sportler oder Tänzer gilt, wird für intellektuell Hochbegabte nicht immer akzeptiert. Unterricht muss auf einem hohen Niveau stattfinden und viele zusätzliche Angebote in Kleingruppen sind notwendig Denn auch hochbegabte Schüler sind verschieden. Dies können Spezialschulen bieten. Andererseits sollen außergewöhnlich begabte Schüler nicht ausgegrenzt werden. Eine ganzheitliche Begabungsentfaltung und Persönlichkeitsentwicklung erfordert Klassen, die aus hochbegabten und normal begabten Schülern zusammengesetzt sind. Andernfalls erreicht man eine einseitige Förderung im kognitiven Bereich.\n\nDoch was ist eigentlich Hochbegabung? Hochbegabung ist zunächst nichts anderes als die Fähigkeit (‚Potenzial“), Leistungen zu erbringen. Hochbegabung ist nicht dasselbe wie hohe Leistung selbst. Damit außergewöhnliche Begabungen auch tatsächlich zu außergewöhnlichen Leistungen führen können, sind neben der Intelligenz des Kindes weitere Faktoren nötig: Kreativität, Motivation, soziale Kompetenz, bestimmte Persönlichkeitsmerkmale und nicht zuletzt ein liebevolles, herausforderndes Umfeld, das das Kind anerkennt und optimal unterstützt."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-36",
+              "title": "Sparkonto für Kinder",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Früher gab es Geld ins Sparschwein, das einmal im Jahr aufs Sparbuch wanderte. Oder einen Banksparplan mit monatlichen Einzahlungen. Beides lohnt sich derzeit nicht mehr, wenn man Geld für seine Kinder, Enkel oder Paten sparen will.\n\nDie Zeitschrift \"Finanztest\" hat in ihrer neuesten Ausgabe Geldanlagen von rund 150 Banken für Kinder untersucht. Das Ergebnis: Es ist gar nicht so einfach, noch eine einigermaßen zufriedenstellende Rendite zu finden - aber es geht.\n\nDabei unterscheiden die Experten zwischen verschiedenen Kategorien:\n\nSparoder Girokonten für kleine Geldgeschenke: Viele Banken und Sparkassen bieten spezielle Guthabenkonten für Minderjährige an, die meist besser verzinst sind, als normale Konten - allerdings gelten dafür in der Regel Höchstanlagebeträge. Bundesweit bietet etwa die Evenord-Bank das E-Elefanto-Sparbuch an, bei dem Beträge bis 2500 Euro mit zwei Prozent pro Jahr verzinst werden. In Berlin oder Hamburg bieten auch die Sparkassen attraktive Zinsen für kleine Sparbeträge.\n\nEinmalanlagen für größere Geldgeschenke: Bei höheren Beträgen rät \"Finanztest\" zum Festgeldkonto. Auch dabei gibt es teilweise spezielle Angebote für Minderjährige. Bei der Frankfurter Eurocity Bank etwa erhalten Kinder und Jugendliche für Summen ab 5000 Euro derzeit 1,85 Prozent Zinsen pro Jahr, wenn sie das Geld auf zehn Jahre festlegen. Bei der Cronbank aus Dreieich sind es immerhin 1,8 Prozent, dafür reicht schon eine Mindestanlage von 1000 Euro.\n\nETF-Sparpläne für monatliche Einzahlungen: Wer das Risiko nicht scheut, kann mit einem ETF-Sparplan deutlich mehr Rendite rausholen. \"Finanztest\" empfiehlt solche Pläne für alle, die dem Nachwuchs ein kleines Vermögen aufbauen wollen. Dabei reicht oft schon eine Einzahlung von 25 Euro pro Monat, das Geld fließt in sogenannte Indexfonds (ETF), die einen bestimmten Aktienindex nachbilden. Die Experten empfehlen dabei möglichst breit gefasste Indizes wie den MSCI World oder den MSCI ALL Country World, da diese das Risiko stärker streuen als etwa der deutsche Aktienindex"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-37",
+              "title": "Tierversuche: Pro und Contra",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Pro- Argumente für Tierversuchen\n\nLebensretter für Menschen:\n\nViele Errungenschaften der modernen Medizin basieren auf Tierversuchen und dabei insbesondere der Grundlagenforschung. Tuberkulose, Diabetes und viele Krebsleiden könnten nur mithilfe von Tierversuchen erforscht werden.\n\nAlternativen sind begrenzt:Medikamente oder Chemikalien können nicht nur an einzelnen Zellen im Reagenzglas getestet werden, Vielmehr muss erforscht werden, wie die Auswirkungen auf einen lebenden Organismus wirken. Auch Computersimulation sind begrenzt einsetzbar:Eine virtuelle Hausmaus kann man nur programmieren, wenn man alle Mechanismen im Körper kennt.\n\nTierversuche sind streng reglementiert, genehmigungspflichtig und finden nur dann statt ‚wenn dadurch ein erheblicher Nutzen für den Menschen entsteht\n\nContra-Argumente gegen Tierversuche\n\nLeiden der Versuchstiere:\n\nJa Nachdem was erforscht ‚können den Tieren erheblicher Schmerz und Leid zugefügt werden.\n\nZudem werden die Tiere nach Ende der Versuche meistens getötet, Viele halten es ethisch nicht für vertretbar, Tiere für das Wohl des Menschen leiden zu lassen\n\nGrundlagenforschung: Viele Experimente finden in der Grundlagenforschung statt.\n\nDieses Experimentieren,,ins Blaue \"ohne klares Zielhalten einige für nicht vertretbar, wenn auf der anderen Seite das Leid von Tieren steht.\n\nÜbertragbarkeit auf den Menschen:Auch wenn Ratten und Mäuse dem Menschen ähnlich sind viele Erkenntnisse lassen sich den noch nicht auf den Menschen übertragen. Dann sind die Tierversuche sinnlos Alternativen verfügbar:Die Forschung ist inzwischen so weit ‚dass künstliche Organe gezüchtet werden können, hier auf sollten sich Versuche beschränken, Auch Computer Simulationen sind eine Alternative"
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            },
+            {
+              "id": "diskussion-b2-38",
+              "title": "Darf man Hausfrau auf Lebenszeit sein?",
+              "personA": {
+                "speaker": "Zeitschriftentext",
+                "opinion": "Die bürgerliche Hausfrau war über Jahrhunderte eine machtvolle Person. Sie war Wirtschafterin das Wort ” Haushalt \" bedeutet ja nichts anderes als Ökonomie \", Sie war Schneiderin, Wäscherin und Bäuerin, Krankenschwester und Lehrerin. Und heute? Hausfrau sein könne ein alternativer Lebensentwurf sein, ein Widerstand gegen alle Aufdringlichkeiten des Zeitgeistes. Die bewusste Hausfrau habe, was Kinder zum Großwerden brauchen, sagen Befürworter dieses Lebensentwurfs: Zeit. Zeit zum Spazierengehen, zum Plätzchenbacken, zum Basteln, zum Vorlesen. Die Entscheidung einer Frau ‚ sich für den absehbaren Rest Ihres Lebens nur noch um die Familie und den Haushalt zu kümmern, betreffe nicht nur ihr eigenes Leben, sondern auch das des Mannes ‚, lautet ein Einwand gegen diese Vorstellung. Sie verpasse ihm die alleinige Rolle des Ernährers, was nicht mehr zeitgemäß sei, Biologisch sei das nicht länger notwendig als bis zum Ende der Stillzeit, Zudem würde in die Bildung von Mädchen Geld investiert, und diese Bildung solle der Gesellschaft zugutekommen. Diesem Einwand kann man entgegenhalten, dass die Ausbildung nicht brachliegt, sondern in die Erziehung der Kinder einfließt und Hausfrauen dadurch einen unschätzbaren Beitrag zur Zukunft der Gesellschaft leisten, Die Hausfrau sei eine wohltuende altruistische Erscheinung in einer Welt von Egomanen; sie arbeite nicht an Ihrer Selbstoptimierung, sondern am Wohlergehen anderer ‚ an der Stabilität von Bindungen in einer Zeit der Unverbindlichkeit, meinen Befürworter. Einer solchen Arbeit fehle es an Anerkennung, lautet ein Einwand, und mit der Zeit würden die betroffenen Frauen darunter leiden, ihre eigene Biografie dauernd rechtfertigen zu müssen. Wenn die Kinder erwachsen seien, würde den Nur - Hausfrauen \" zudem klar, dass die Zeit zu Hause eine nicht rückholbare Lebenszeit gewesen sei. Früher sei eine Eheschließung ein Versorgungspakt gewesen, der jedem der beiden Beteiligten seine Rolle zuschrieb, Heute sei eine Partnerschaft eine Vereinbarung, den zunehmend unberechenbaren Erwerbsweg gemeinsam zu bewältigen mit wechselnden Rollenverteilungen."
+              },
+              "personB": {
+                "speaker": "Diskussionsauftrag",
+                "opinion": "Geben Sie den Inhalt mit eigenen Worten wieder. Bringen Sie Ihre Erfahrungen ein, äußern und begründen Sie Ihre Meinung und sprechen Sie über mögliche Lösungen."
+              }
+            }
+          ]
+        },
+        "teil-3": {
+          "title": "Problemlösung",
+          "shortTitle": "Planen",
+          "durationMinutes": 6,
+          "sourceUrl": "",
+          "instruction": "Machen Sie Vorschläge, reagieren Sie auf die Ideen Ihres Gegenübers und einigen Sie sich auf einen konkreten Plan.",
+          "topics": [
+            {
+              "id": "planung-b2-01",
+              "title": "Interkulturelles Sportfest",
+              "prompt": "In Ihrer Stadt organisieren Sie ein interkulturelles Sportfest. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Planen Sie gemeinsam, was Sie organisieren können.",
+              "notes": [
+                "Ort und Termin",
+                "Sportarten",
+                "Teilnehmende",
+                "Verpflegung",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-02",
+              "title": "Buchmesse im Kulturzentrum",
+              "prompt": "An einem Kulturzentrum in Ihrer Stadt soll eine Buchmesse stattfinden. Sie wollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Denken Sie beispielsweise an Informationsmaterial oder Poster.",
+              "notes": [
+                "Termin und Räume",
+                "Bücher und Aussteller",
+                "Informationsmaterial",
+                "Werbung",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-03",
+              "title": "Überraschungsfest für die Lehrerin",
+              "prompt": "Ihre Kursteilnehmerinnen und Kursteilnehmer möchten ein Überraschungsfest für Ihre Lehrerin organisieren. Sie sollen bei der Planung helfen. Überlegen Sie gemeinsam, was Sie tun können.",
+              "notes": [
+                "Termin und Ort",
+                "Einladung",
+                "Essen und Getränke",
+                "Geschenk",
+                "Programm"
+              ]
+            },
+            {
+              "id": "planung-b2-04",
+              "title": "Ein Buch in der Klasse vorstellen",
+              "prompt": "Sie sollen gemeinsam ein Buch in Ihrer Klasse vorstellen. Überlegen Sie, welches Buch Sie präsentieren möchten, wie Sie die Präsentation strukturieren und wer welche Schwerpunkte übernimmt. Überlegen Sie auch, ob Sie aus dem Buch vorlesen und Handzettel erstellen und verteilen möchten. Planen Sie gemeinsam, was Sie tun wollen.",
+              "notes": [
+                "Buch auswählen",
+                "Präsentation gliedern",
+                "Schwerpunkte verteilen",
+                "Vorlesen",
+                "Handzettel"
+              ]
+            },
+            {
+              "id": "planung-b2-05",
+              "title": "Interview mit einem bekannten Sänger",
+              "prompt": "Sie haben als Journalisten einer großen Zeitung die Chance, einen sehr bekannten Sänger zu interviewen. Bereiten Sie gemeinsam einen Fragenkatalog vor. Einigen Sie sich zunächst auf eine Person, die Sie interviewen wollen, und darauf, was Sie beruflich oder privat von dieser Person wissen möchten.",
+              "notes": [
+                "Person auswählen",
+                "Beruflicher Werdegang",
+                "Privatleben",
+                "Aktuelle Projekte",
+                "Fragen verteilen"
+              ]
+            },
+            {
+              "id": "planung-b2-06",
+              "title": "Infotag Gesundheit",
+              "prompt": "An einer Gesundheitszentrale in Ihrer Stadt soll ein Infotag zum Thema Gesundheit stattfinden. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Denken Sie beispielsweise an Aufklärungskampagnen, Vorträge und einen Ernährungsplan. Planen Sie gemeinsam, was Sie organisieren können.",
+              "notes": [
+                "Zielgruppe",
+                "Aufklärungskampagne",
+                "Vorträge",
+                "Ernährungsangebot",
+                "Werbung"
+              ]
+            },
+            {
+              "id": "planung-b2-07",
+              "title": "Stadtbesichtigung für Studierende",
+              "prompt": "Ihr Chef hat Ihnen mitgeteilt, dass Sie sich nächste Woche um eine Gruppe Studentinnen und Studenten kümmern sollen. Die Gruppe möchte Ihre Stadt besichtigen. Planen Sie gemeinsam ein gutes Programm.",
+              "notes": [
+                "Sehenswürdigkeiten",
+                "Route",
+                "Transport",
+                "Pausen und Essen",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-08",
+              "title": "Geld für Straßenkinder sammeln",
+              "prompt": "Sie wollen gemeinsam Geld für Straßenkinder sammeln. Sie kennen eine Hilfsorganisation, die in den nächsten drei Monaten ein spezielles Programm für diese Kinder durchführt. Besprechen Sie Ihre Ideen und einigen Sie sich auf die Einzelheiten: wer was wann machen soll.",
+              "notes": [
+                "Spendenaktion",
+                "Ort und Zeitraum",
+                "Werbung",
+                "Hilfsorganisation",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-09",
+              "title": "Schulnoten eines Kindes verbessern",
+              "prompt": "Das dreizehnjährige Kind eines Freundes hat schlechte Noten in der Schule. Überlegen Sie, was Sie tun können, um ihm zu helfen und seine Noten zu verbessern. Entwickeln Sie gemeinsam einen Plan, wie das Kind in der Schule erfolgreicher werden kann.",
+              "notes": [
+                "Ursachen klären",
+                "Lernplan",
+                "Nachhilfe",
+                "Motivation",
+                "Gespräch mit der Schule"
+              ]
+            },
+            {
+              "id": "planung-b2-10",
+              "title": "Austauschprogramm organisieren",
+              "prompt": "Ihre Schule nimmt an einem Austauschprogramm mit deutschen Schülerinnen und Schülern teil. Die ausländischen Gastschüler bleiben vier Wochen in Ihrem Land. Organisieren Sie gemeinsam den gesamten Aufenthalt und machen Sie Programmvorschläge.",
+              "notes": [
+                "Unterkunft",
+                "Schulprogramm",
+                "Ausflüge",
+                "Freizeit",
+                "Betreuung"
+              ]
+            },
+            {
+              "id": "planung-b2-11",
+              "title": "Besuch im Kinderkrankenhaus",
+              "prompt": "Sie organisieren einen Besuch im Kinderkrankenhaus und sollen bei der Planung helfen. Überlegen Sie, wie der Besuch ablaufen sollte. Entwickeln Sie gemeinsam einen Plan, wie Sie den Kindern Freude bereiten können.",
+              "notes": [
+                "Termin abstimmen",
+                "Geschenke",
+                "Spiele und Unterhaltung",
+                "Hygiene",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-12",
+              "title": "Studienreise ins Heimatland",
+              "prompt": "Eine Gruppe von Schülerinnen und Schülern macht eine Studienreise in Ihr Heimatland und möchte erfahren, wie man dort in der Schule lernt. Planen Sie gemeinsam das Programm. Falls Sie aus unterschiedlichen Heimatländern kommen, einigen Sie sich auf ein Land. Denken Sie an Schulen, Universitäten, Bibliotheken und Vorträge.",
+              "notes": [
+                "Land auswählen",
+                "Schulbesuch",
+                "Universität und Bibliothek",
+                "Vorträge",
+                "Tagesprogramm"
+              ]
+            },
+            {
+              "id": "planung-b2-13",
+              "title": "Informationsveranstaltung zu Schule, Ausbildung und Beruf",
+              "prompt": "Sie wollen an einer Schule eine Informationsveranstaltung zum Thema Schule, Ausbildung und Beruf organisieren. Überlegen Sie, welche Expertinnen oder Experten Sie für einen Vortrag einladen möchten. Besprechen Sie auch die Rahmenbedingungen wie Zeitpunkt, Räume, Dauer und Verpflegung sowie Material und Technik.",
+              "notes": [
+                "Experten",
+                "Zeit und Räume",
+                "Dauer",
+                "Verpflegung",
+                "Material und Technik"
+              ]
+            },
+            {
+              "id": "planung-b2-14",
+              "title": "Straßenfest organisieren",
+              "prompt": "In vielen deutschen Städten gibt es im Sommer Straßenfeste, die von den Nachbarn organisiert werden. Sie möchten auch in Ihrer Straße ein Fest veranstalten. Sammeln Sie Ideen für das Fest und teilen Sie die Aufgaben unter sich auf. Sie haben insgesamt sechs Minuten Zeit.",
+              "notes": [
+                "Termin und Dauer",
+                "Bänke und Tische",
+                "Essen",
+                "Musik und Spiele",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-15",
+              "title": "Sportveranstaltung für Kinder",
+              "prompt": "In Ihrer Stadt organisieren Sie eine Sportveranstaltung für Kinder. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Planen Sie gemeinsam, was Sie organisieren können.",
+              "notes": [
+                "Sportarten",
+                "Ort und Termin",
+                "Altersgruppen",
+                "Sicherheit",
+                "Verpflegung"
+              ]
+            },
+            {
+              "id": "planung-b2-16",
+              "title": "Hilfe beim Umzug",
+              "prompt": "Ihr Freund möchte in eine andere Stadt umziehen und Sie wollen beim Umzug helfen. Überlegen Sie, wie Sie helfen können, und machen Sie Ihrer Partnerin oder Ihrem Partner Vorschläge.",
+              "notes": [
+                "Termin",
+                "Transport",
+                "Helfer",
+                "Kartons und Möbel",
+                "Verpflegung"
+              ]
+            },
+            {
+              "id": "planung-b2-17",
+              "title": "Hilfe beim Umzug - zweite Variante",
+              "prompt": "Ihr Freund möchte in eine andere Stadt umziehen und Sie wollen beim Umzug helfen. Überlegen Sie, wie Sie helfen können, und machen Sie Ihrer Partnerin oder Ihrem Partner Vorschläge.",
+              "notes": [
+                "Termin",
+                "Transport",
+                "Helfer",
+                "Kartons und Möbel",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-18",
+              "title": "Software-Seminar",
+              "prompt": "Sie organisieren ein Software-Seminar. Überlegen Sie gemeinsam, was Sie tun können. Teilen Sie Ihrer Partnerin oder Ihrem Partner Ihre Ideen mit und entwickeln Sie gemeinsam Ihre Vorschläge für das Seminar.",
+              "notes": [
+                "Thema und Software",
+                "Zielgruppe",
+                "Raum und Technik",
+                "Referenten",
+                "Zeitplan"
+              ]
+            },
+            {
+              "id": "planung-b2-19",
+              "title": "Blutspendeveranstaltung",
+              "prompt": "An einer Gesundheitszentrale in Ihrer Stadt organisieren Sie eine Blutspendeveranstaltung. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Denken Sie beispielsweise an Informationsmaterial oder Poster. Planen Sie gemeinsam, was Sie organisieren können.",
+              "notes": [
+                "Termin",
+                "Medizinisches Personal",
+                "Informationsmaterial",
+                "Werbung",
+                "Verpflegung"
+              ]
+            },
+            {
+              "id": "planung-b2-20",
+              "title": "Infotag Neue Medien",
+              "prompt": "An einem Bildungsinstitut in Ihrer Stadt soll ein Infotag zum Thema Neue Medien - Internet, Handys, Smartphones und mehr - stattfinden. Sie sollen bei der Planung helfen. Denken Sie an Informationsmaterial, Poster, Vorträge, Präsentationen und Werbung für den Infotag.",
+              "notes": [
+                "Zielgruppe",
+                "Vorträge",
+                "Präsentationen",
+                "Informationsmaterial",
+                "Werbung"
+              ]
+            },
+            {
+              "id": "planung-b2-21",
+              "title": "Lehrveranstaltung Deutsch als Fremdsprache",
+              "prompt": "Ihre Lehrerin hat Sie zu einer Lehrveranstaltung mit dem Titel „Deutsch als Fremdsprache“ eingeladen. Sie möchten helfen. Überlegen Sie, wie Sie helfen können, und machen Sie Ihrer Partnerin oder Ihrem Partner Vorschläge.",
+              "notes": [
+                "Inhalte",
+                "Beispiele",
+                "Material",
+                "Technik",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-22",
+              "title": "Spielemesse im Kulturzentrum",
+              "prompt": "An einem Kulturzentrum in Ihrer Stadt soll eine Spielemesse stattfinden. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Denken Sie beispielsweise an Informationsmaterial oder Poster.",
+              "notes": [
+                "Spiele und Aussteller",
+                "Räume",
+                "Programm",
+                "Informationsmaterial",
+                "Werbung"
+              ]
+            },
+            {
+              "id": "planung-b2-23",
+              "title": "Reise in ein deutschsprachiges Land",
+              "prompt": "Viele Teilnehmerinnen und Teilnehmer aus Ihrem Kurs möchten eine Reise in eines der deutschsprachigen Länder machen. Sie sollen gemeinsam bei der Planung helfen. Überlegen Sie, was Sie tun können.",
+              "notes": [
+                "Land und Reiseziel",
+                "Anreise",
+                "Unterkunft",
+                "Programm",
+                "Kosten"
+              ]
+            },
+            {
+              "id": "planung-b2-24",
+              "title": "Kinderbetreuung nach einem Krankenhausaufenthalt",
+              "prompt": "Ihre alleinerziehende Nachbarin wurde unerwartet ins Krankenhaus eingeliefert. Sie möchten ihre Kinder besuchen und die Betreuung für die erste Zeit organisieren. Planen Sie gemeinsam Hilfe für Schule, Kochen, Einkaufen und Übernachtungen.",
+              "notes": [
+                "Schulweg",
+                "Kochen",
+                "Einkaufen",
+                "Übernachtung",
+                "Betreuungsplan"
+              ]
+            },
+            {
+              "id": "planung-b2-25",
+              "title": "Besuch aus Amerika",
+              "prompt": "Ein Freund kommt aus Amerika nach Deutschland, um Urlaub zu machen, und Sie wollen ihm helfen. Überlegen Sie gemeinsam, was Sie tun können.",
+              "notes": [
+                "Unterkunft",
+                "Abholung",
+                "Sehenswürdigkeiten",
+                "Ausflüge",
+                "Verpflegung"
+              ]
+            },
+            {
+              "id": "planung-b2-26",
+              "title": "Museumsbesuch mit dem Sprachkurs",
+              "prompt": "Sie wollen mit Ihren Kolleginnen und Kollegen aus dem Sprachkurs ein Museum besuchen. Überlegen Sie gemeinsam, was Sie tun können. Teilen Sie Ihre Ideen mit und entwickeln Sie gemeinsam Vorschläge für den Besuch.",
+              "notes": [
+                "Museum auswählen",
+                "Termin",
+                "Eintritt",
+                "Anreise",
+                "Führung"
+              ]
+            },
+            {
+              "id": "planung-b2-27",
+              "title": "Hochzeitsüberraschung",
+              "prompt": "Ihr gemeinsamer Freund möchte heiraten. Organisieren Sie eine Hochzeitsüberraschung für ihn. Überlegen Sie, welche Überraschung Sie anbieten können, und machen Sie Ihrer Partnerin oder Ihrem Partner Vorschläge.",
+              "notes": [
+                "Überraschung",
+                "Ort und Termin",
+                "Gäste",
+                "Geschenk",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-28",
+              "title": "Theaterstück für einen guten Zweck",
+              "prompt": "Sie organisieren ein Theaterstück und spenden das Geld für wohltätige Zwecke. Sie sollen bei der Planung helfen. Überlegen Sie, was Sie tun können. Planen Sie gemeinsam, was Sie organisieren können.",
+              "notes": [
+                "Stück auswählen",
+                "Mitwirkende",
+                "Ort und Termin",
+                "Werbung",
+                "Spendenzweck"
+              ]
+            },
+            {
+              "id": "planung-b2-29",
+              "title": "Freund im Krankenhaus aufmuntern",
+              "prompt": "Ihr Freund Valentin hat sich das Bein gebrochen und muss noch eine Woche im Krankenhaus bleiben. Er langweilt sich, weil er nicht herumlaufen darf. Überlegen Sie, wie Sie ihn aufmuntern können. Diskutieren Sie Ihre Ideen und denken Sie sich gemeinsam einen Plan für die Woche aus.",
+              "notes": [
+                "Besuchszeiten",
+                "Unterhaltung",
+                "Freunde einbeziehen",
+                "Mitbringsel",
+                "Wochenplan"
+              ]
+            },
+            {
+              "id": "planung-b2-30",
+              "title": "Kochnachmittag im Deutschkurs",
+              "prompt": "Sie organisieren einen Kochnachmittag in Ihrem Deutschkurs. Planen Sie mit Ihrer Partnerin oder Ihrem Partner ein Programm. Überlegen Sie, welche Programmpunkte Sie anbieten können, und machen Sie gemeinsam Vorschläge.",
+              "notes": [
+                "Gerichte",
+                "Einkauf",
+                "Küche und Geräte",
+                "Aufgabenverteilung",
+                "Gemeinsames Essen"
+              ]
+            },
+            {
+              "id": "planung-b2-31",
+              "title": "Kursraum freundlicher gestalten",
+              "prompt": "Ihre Kursleiterin möchte den Kursraum freundlicher gestalten und bittet Sie um Hilfe. Welche Vorschläge können Sie ihr machen? Überlegen Sie gemeinsam, was zu tun ist, und denken Sie auch an die Kosten und daran, wer helfen könnte.",
+              "notes": [
+                "Farben",
+                "Möbel",
+                "Pflanzen und Dekoration",
+                "Kosten",
+                "Helfer"
+              ]
+            },
+            {
+              "id": "planung-b2-32",
+              "title": "Geburtstagsfeier im Sprachkurs",
+              "prompt": "Ein Teilnehmer aus Ihrem Sprachkurs hat am Wochenende Geburtstag. Überlegen Sie, was der Kurs ihm schenken und wie die Feier ablaufen könnte. Teilen Sie Ihre Ideen mit und entwickeln Sie gemeinsam Vorschläge für das Geschenk und das Programm.",
+              "notes": [
+                "Geschenk",
+                "Budget",
+                "Essen und Getränke",
+                "Programm",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-33",
+              "title": "Präsentation über Fremdsprachenlernen",
+              "prompt": "Sie sind von einer Schule eingeladen worden, um über die Notwendigkeit des Fremdsprachenlernens aus Ihrer Sicht und Ihren Erfahrungen zu berichten. Sammeln Sie Argumente und erstellen Sie zusammen eine Liste mit Stichpunkten für eine 15-minütige Präsentation vor den Schülerinnen und Schülern.",
+              "notes": [
+                "Nutzen von Fremdsprachen",
+                "Eigene Erfahrungen",
+                "Argumente",
+                "Präsentationsstruktur",
+                "Aufgabenverteilung"
+              ]
+            },
+            {
+              "id": "planung-b2-34",
+              "title": "Flohmarkt im Stadtviertel",
+              "prompt": "Zum Frühlingsbeginn möchten Sie in Ihrem Stadtviertel einen Flohmarkt organisieren. Laden Sie Ihre Nachbarn zur gemeinsamen Organisation ein. Legen Sie ein passendes Datum und geeignete Örtlichkeiten fest, besprechen Sie die organisatorischen Details und überlegen Sie, wie Sie möglichst viele Nachbarn zum Mitmachen bewegen.",
+              "notes": [
+                "Datum",
+                "Ort",
+                "Stände",
+                "Werbung",
+                "Nachbarn motivieren"
+              ]
+            },
+            {
+              "id": "planung-b2-35",
+              "title": "Gemeinsamer Kinobesuch",
+              "prompt": "Nächsten Freitag ist der letzte Tag des Deutschkurses und Sie wollen zusammen ins Kino gehen. Schmieden Sie mit Ihrer Partnerin oder Ihrem Partner einen Plan für das aktuelle Kinoprogramm. Überlegen Sie, was Sie machen können, und machen Sie gemeinsam Vorschläge.",
+              "notes": [
+                "Film auswählen",
+                "Kino und Uhrzeit",
+                "Tickets",
+                "Treffpunkt",
+                "Anschließendes Programm"
+              ]
+            },
+            {
+              "id": "planung-b2-36",
+              "title": "Bücherspende für die lokale Bibliothek",
+              "prompt": "Sie organisieren eine Veranstaltung, um in Ihrer Straße Bücherspenden für die lokale Bibliothek zu sammeln. Sammeln Sie Ideen für diese gemeinsame Aktion und teilen Sie die Aufgaben unter sich auf.",
+              "notes": [
+                "Sammelstelle",
+                "Zeitraum",
+                "Geeignete Bücher",
+                "Werbung",
+                "Transport"
+              ]
+            },
+            {
+              "id": "planung-b2-37",
+              "title": "Dreitägige Reise ans Meer",
+              "prompt": "Sie möchten mit einigen Teilnehmerinnen und Teilnehmern aus Ihrem Sprachkurs eine dreitägige Reise ans Meer machen. Überlegen Sie, was Sie dafür brauchen. Planen Sie gemeinsam den Aufenthalt der Gruppe.",
+              "notes": [
+                "Anreise",
+                "Unterkunft",
+                "Verpflegung",
+                "Programm",
+                "Kosten"
+              ]
+            },
+            {
+              "id": "planung-b2-38",
+              "title": "Ein Land in der Klasse beschreiben",
+              "prompt": "Sie müssen ein Land in Ihrer Klasse beschreiben. Entscheiden Sie, welches Land Sie vorstellen möchten. Erwähnen und beschreiben Sie die schönsten und berühmtesten Städte sowie das bekannte traditionelle Essen und die Musik dieses Landes.",
+              "notes": [
+                "Land auswählen",
+                "Berühmte Städte",
+                "Sehenswürdigkeiten",
+                "Traditionelles Essen",
+                "Musik"
+              ]
+            }
+          ]
+        }
+      }
     }
   }
 }

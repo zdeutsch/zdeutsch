@@ -814,6 +814,9 @@ async function init() {
   } else if (availableLevels.length) {
     state.levelKey = availableLevels[0];
   }
+  const requestedPart = params.get("part");
+  const visibleParts = getThemeEntry()?.hören?.partOrder || PART_ORDER;
+  state.partKey = visibleParts.includes(requestedPart) ? requestedPart : (visibleParts[0] || null);
   notch();
 }
 
