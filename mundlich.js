@@ -6,9 +6,16 @@ const PART_LABELS = {
   "teil-3": "Gemeinsam etwas planen"
 };
 const PART_SUBTITLES = {
-  "teil-1": "Vorstellen & nachfragen",
-  "teil-2": "Positionen austauschen",
-  "teil-3": "Vorschlagen & einigen"
+  b1: {
+    "teil-1": "Vorstellen & nachfragen",
+    "teil-2": "Positionen austauschen",
+    "teil-3": "Vorschlagen & einigen"
+  },
+  b2: {
+    "teil-1": "Präsentieren & nachfragen",
+    "teil-2": "Text besprechen",
+    "teil-3": "Vorschlagen & einigen"
+  }
 };
 const LANGUAGE_BANKS = {
   "teil-2": [
@@ -30,6 +37,9 @@ const LANGUAGE_BANKS = {
 };
 
 const elements = {
+  brandRoute: document.getElementById("oral-brand-route"),
+  levelBadge: document.getElementById("oral-level-badge"),
+  oralIntro: document.getElementById("oral-intro"),
   partTabs: document.getElementById("part-tabs"),
   libraryTitle: document.getElementById("library-title"),
   randomTopic: document.getElementById("random-topic"),
@@ -93,6 +103,15 @@ function saveProgress() {
   window.localStorage.setItem(progressKey(state.level), JSON.stringify(state.progress));
 }
 
+function reconcileProgress() {
+  ["teil-2", "teil-3"].forEach((partKey) => {
+    const validTopicKeys = new Set(getTopics(partKey).map(getTopicKey));
+    state.progress.done[partKey] = (state.progress.done[partKey] || [])
+      .filter((topicKey) => validTopicKeys.has(topicKey));
+  });
+  saveProgress();
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -130,12 +149,15 @@ function getFilteredTopics() {
   return getTopics().filter((topic) => {
     return normalize([
       topic.title,
+      topic.text,
       topic.prompt,
-      topic.personA?.opinion,
-      topic.personB?.opinion,
       ...(topic.notes || [])
     ].filter(Boolean).join(" ")).includes(query);
   });
+}
+
+function getTopicKey(topic) {
+  return String(topic?.id || topic?.title || "");
 }
 
 function getSelectedTopic() {
@@ -144,7 +166,7 @@ function getSelectedTopic() {
     return null;
   }
   const selectedId = state.selectedTopics[state.partKey];
-  return topics.find((topic) => topic.id === selectedId) || topics[0];
+  return topics.find((topic) => getTopicKey(topic) === selectedId) || topics[0];
 }
 
 function getCompletedSet(partKey) {
@@ -250,7 +272,7 @@ function renderPartTabs() {
         <span class="oral-part-number">0${index + 1}</span>
         <span>
           <strong>${escapeHtml(level.parts[partKey].shortTitle || PART_LABELS[partKey])}</strong>
-          <small>${escapeHtml(PART_SUBTITLES[partKey])}</small>
+          <small>${escapeHtml(PART_SUBTITLES[state.level]?.[partKey] || "")}</small>
         </span>
         <span class="oral-part-progress">${completed}/${total}</span>
       </button>
@@ -281,16 +303,20 @@ function renderTopicList() {
   const topics = getFilteredTopics();
   const selected = getSelectedTopic();
   if (selected) {
-    state.selectedTopics[state.partKey] = selected.id;
+    state.selectedTopics[state.partKey] = getTopicKey(selected);
   }
   const completed = getCompletedSet(state.partKey);
-  elements.topicList.innerHTML = topics.map((topic, index) => `
-    <button class="oral-topic-button${topic.id === selected?.id ? " is-active" : ""}${completed.has(topic.id) ? " is-done" : ""}" type="button" data-topic-id="${escapeHtml(topic.id)}"${topic.id === selected?.id ? " aria-current=\"true\"" : ""}>
+  elements.topicList.innerHTML = topics.map((topic, index) => {
+    const topicKey = getTopicKey(topic);
+    const selectedKey = getTopicKey(selected);
+    return `
+    <button class="oral-topic-button${topicKey === selectedKey ? " is-active" : ""}${completed.has(topicKey) ? " is-done" : ""}" type="button" data-topic-id="${escapeHtml(topicKey)}"${topicKey === selectedKey ? " aria-current=\"true\"" : ""}>
       <span class="oral-topic-index">${String(index + 1).padStart(2, "0")}</span>
       <span class="oral-topic-name">${escapeHtml(topic.title)}</span>
       <span class="oral-topic-check" aria-hidden="true">✓</span>
     </button>
-  `).join("");
+  `;
+  }).join("");
   elements.topicResultStatus.textContent = topics.length
     ? `${topics.length} ${topics.length === 1 ? "Thema" : "Themen"} · ${completed.size} geübt`
     : "Kein passendes Thema gefunden";
@@ -313,11 +339,12 @@ function renderLanguageBank(partKey) {
 
 function renderPracticeFooter(topic) {
   const completed = getCompletedSet(state.partKey);
-  const isDone = completed.has(topic.id);
+  const topicKey = getTopicKey(topic);
+  const isDone = completed.has(topicKey);
   return `
     <footer class="oral-practice-footer">
       <p>Sprechen Sie frei. Nutzen Sie die Stichpunkte nur als Leitplanken.</p>
-      <button class="oral-complete-button${isDone ? " is-done" : ""}" type="button" data-action="toggle-complete" data-topic-id="${escapeHtml(topic.id)}">
+      <button class="oral-complete-button${isDone ? " is-done" : ""}" type="button" data-action="toggle-complete" data-topic-id="${escapeHtml(topicKey)}">
         ${isDone ? "Als geübt markiert ✓" : "Als geübt markieren"}
       </button>
     </footer>
@@ -370,27 +397,19 @@ function renderPart1() {
 
 function renderPart2(topic) {
   const part = getPart();
+  const topicNumber = getTopics("teil-2").indexOf(topic) + 1;
   elements.practicePanel.innerHTML = `
     <header class="oral-practice-head">
       <div>
-        <span class="oral-practice-label">Teil 2 · Thema ${escapeHtml(topic.id.split("-").slice(-1)[0])}</span>
+        <span class="oral-practice-label">Teil 2 · Thema ${topicNumber}</span>
         <h2>${escapeHtml(topic.title)}</h2>
       </div>
       <span class="oral-time-chip">${part.durationMinutes} Minuten</span>
     </header>
     <p class="oral-instruction">${escapeHtml(part.instruction)}</p>
-    <div class="oral-position-grid">
-      <section class="oral-position-card">
-        <span class="oral-position-tag">Position A</span>
-        <p class="oral-position-speaker">${escapeHtml(topic.personA?.speaker || "Person A")}</p>
-        <p class="oral-position-opinion">${escapeHtml(topic.personA?.opinion)}</p>
-      </section>
-      <section class="oral-position-card position-b">
-        <span class="oral-position-tag">Position B</span>
-        <p class="oral-position-speaker">${escapeHtml(topic.personB?.speaker || "Person B")}</p>
-        <p class="oral-position-opinion">${escapeHtml(topic.personB?.opinion)}</p>
-      </section>
-    </div>
+    <section class="oral-text-card">
+      <p>${escapeHtml(topic.text)}</p>
+    </section>
     ${renderLanguageBank("teil-2")}
     ${renderPracticeFooter(topic)}
   `;
@@ -484,9 +503,9 @@ function chooseRandomTopic() {
     return;
   }
   const currentId = state.selectedTopics[state.partKey];
-  const choices = topics.length > 1 ? topics.filter((topic) => topic.id !== currentId) : topics;
+  const choices = topics.length > 1 ? topics.filter((topic) => getTopicKey(topic) !== currentId) : topics;
   const topic = choices[Math.floor(Math.random() * choices.length)];
-  state.selectedTopics[state.partKey] = topic.id;
+  state.selectedTopics[state.partKey] = getTopicKey(topic);
   render();
   elements.practicePanel.scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -569,14 +588,20 @@ async function loadDatabase() {
   if (!level) {
     throw new Error(`Level ${state.level.toUpperCase()} ist nicht verfügbar.`);
   }
+  const levelLabel = state.level.toUpperCase();
+  document.title = `ZDeutsch | ${levelLabel} Mündlich`;
+  elements.brandRoute.textContent = `Prüfungsstudio / ${levelLabel} Mündlich`;
+  elements.levelBadge.textContent = levelLabel;
+  elements.oralIntro.textContent = `Alle drei ${levelLabel}-Prüfungsteile in einem fokussierten Übungsraum: klare Rollen, prüfungsnahe Impulse und ein Timer für realistische Runden.`;
   state.progress = loadProgress(state.level);
+  reconcileProgress();
   state.partKey = level.partOrder.includes(requestedPart) ? requestedPart : level.partOrder[0];
   elements.discussionCount.textContent = String(level.parts["teil-2"]?.topics?.length || 0);
   elements.planningCount.textContent = String(level.parts["teil-3"]?.topics?.length || 0);
   level.partOrder.forEach((partKey) => {
     const firstTopic = level.parts[partKey]?.topics?.[0];
     if (firstTopic) {
-      state.selectedTopics[partKey] = firstTopic.id;
+      state.selectedTopics[partKey] = getTopicKey(firstTopic);
     }
   });
   resetTimer();

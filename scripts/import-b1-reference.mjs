@@ -360,14 +360,7 @@ async function loadText(url) {
 function parseDiscussionTopics(text) {
   const headingPattern = /^\s*(\d+(?:\.\d+)?)\.?\s*Thema\s+[„"]([^”"“\n]+)[”"“]\s*$/gm;
   const matches = Array.from(text.matchAll(headingPattern));
-  let series = 1;
-  let previousNumber = 0;
   return matches.flatMap((match, index) => {
-    const numeric = Number.parseFloat(match[1]);
-    if (numeric < previousNumber) {
-      series += 1;
-    }
-    previousNumber = numeric;
     const chunkStart = match.index + match[0].length;
     const chunkEnd = matches[index + 1]?.index ?? text.length;
     const chunk = text.slice(chunkStart, chunkEnd).trim();
@@ -395,10 +388,14 @@ function parseDiscussionTopics(text) {
       return [];
     }
     return [{
-      id: `diskussion-${series}-${String(match[1]).replace(".", "-")}`,
       title: normalizeWhitespace(match[2]),
-      personA,
-      personB
+      text: [
+        `Person A: ${personA.speaker}`,
+        `Position A: ${personA.opinion}`,
+        "",
+        `Person B: ${personB.speaker}`,
+        `Position B: ${personB.opinion}`
+      ].join("\n")
     }];
   });
 }
