@@ -347,6 +347,12 @@
           "istructions": "## Aufgabe\n\nAntworten Sie Jakob. Schreiben Sie etwas zu allen vier Punkten:",
           "content": "## E-Mail\n\nLiebe(r)...\n\nWie geht es dir? Ich wollte dir schon lange schreiben, aber ich hatte nach meinem Urlaub noch so viel zu tun.\n\nIm Moment habe ich leider ein Problem mit meinem Nachbarn. Er hört oft sehr laut Musik, auch abends. Das stört mich sehr. Ich weiß nicht, was ich machen soll. Hast du einen Tipp?\n\nHattest du auch schon mal solche Schwierigkeiten? Wie sind denn deine Nachbarn? Ich habe dich übrigens noch nie in deiner Wohnung besucht. Wie ist sie? Erzähl doch mal ein bisschen. Hast du bald mal Zeit? Dann könnten wir was unternehmen. Worauf hast du Lust? Meld dich doch mal.\n\nViele Grüße\nJakob",
           "tasks": "- Problem mit dem Nachbarn: Tipp\n- Ihre Wohnung\n- Vorschlag für ein Treffen\n- Wie Ihre Nachbarn sind"
+        },
+        {
+          "title": "Emilia",
+          "istructions": "Schreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) …,\n\nwie geht es dir?\n\nIch habe bald Uni-Prüfungen und lerne abends sehr fleißig. Ich dachte, du könntest mir ein paar Tipps zum Lernen geben. Außerdem würde ich gerne wissen, wo du bist. Vielleicht kann ich dich nach den Prüfungen besuchen. Ende Juli oder August hast du Zeit. Ich würde gerne fragen, ob ich bei dir übernachten kann oder ob du genug Platz hast. Ich kenne mich in deiner Stadt nicht so gut aus.\n\nSchreibe mir doch bald!\n\nViele Grüße\nEmilia",
+          "tasks": "- Punktzeit\n- Tipps für Lernen\n- Gemeinsame Unternehmung\n- Übernachtung"
         }
       ]
     }
