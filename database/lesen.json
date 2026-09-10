@@ -80566,23 +80566,74 @@
                         {
                           "textId": 3,
                           "headlineId": "A",
-                          "reason": "",
+                          "reason": "Überschrift A passt, weil 80 % der Eltern die Schule gut oder sehr gut bewerten, obwohl sie zugleich Defizite bei Berufsvorbereitung, Ökonomie und Umweltschutz nennen. D ist ein plausibler Ablenker, doch Umweltschutz erscheint nur als ein gewünschter Verbesserungsbereich und nicht als Hauptthema. B, C, E, F und I betreffen Verkehr, G und J die Lehrersituation; beides kommt im Text nicht vor.",
                           "keywords": [],
-                          "highlights": []
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 137,
+                              "end": 199,
+                              "text": "Dabei sagten 80%, dass die Schule gut oder sogar sehr gut sei."
+                            },
+                            {
+                              "source": "text",
+                              "start": 200,
+                              "end": 306,
+                              "text": "Und das, obwohl nur 40% der Eitern denken, dass die Kinder in der Schule auf den Beruf vorbereitet werden."
+                            },
+                            {
+                              "source": "text",
+                              "start": 375,
+                              "end": 479,
+                              "text": "Außerdem sagten über 60%, dass das Thema Umweltschutz im Unterricht eine größere Rolle spielen sollte."
+                            }
+                          ]
                         },
                         {
                           "textId": 4,
                           "headlineId": "J",
-                          "reason": "",
+                          "reason": "Überschrift J passt, weil der Text den Lehrermangel in Berlin beschreibt und als Reaktion des Senats eine Werbekampagne sowie mögliche Gehaltserhöhungen nennt. G ist ein plausibler Ablenker, doch der Lehrerberuf wird nicht bereits attraktiver, sondern soll erst attraktiver gestaltet werden. A betrifft Elternzufriedenheit, D und H Umweltschutz sowie B, C, E, F und I Verkehrs- oder Mobilitätsthemen, die im Text nicht vorkommen.",
                           "keywords": [],
-                          "highlights": []
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 8,
+                              "end": 87,
+                              "text": "in der Hauptstadt herrscht weiterhin Lehrermangel: Tausende Lehrkräfte fehlen."
+                            },
+                            {
+                              "source": "text",
+                              "start": 289,
+                              "end": 386,
+                              "text": "Daher plant der Berliner Senat eine Werbekampagne, um den Lehrerberuf attrakti- ver zu gestalten."
+                            }
+                          ]
                         },
                         {
                           "textId": 5,
                           "headlineId": "H",
-                          "reason": "",
+                          "reason": "Überschrift H passt, weil der Text ausdrücklich zum Engagement für Umwelt-, Tier- und Naturschutz aufruft. Der Ablenker D enthält zwar ebenfalls das Thema Umweltschutz, doch eine Schule wird im Text nicht erwähnt. Die übrigen Überschriften betreffen Schule und Lehrer beziehungsweise Verkehr, Fahrpreise oder Firmenwagen und haben keinen Bezug zum Text.",
                           "keywords": [],
-                          "highlights": []
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 24,
+                              "text": "Engagement für die Natur"
+                            },
+                            {
+                              "source": "text",
+                              "start": 59,
+                              "end": 105,
+                              "text": "Er engagiert sich für Umwelt- und Tierschutz."
+                            },
+                            {
+                              "source": "text",
+                              "start": 170,
+                              "end": 220,
+                              "text": "Sie wöllen sich für mehr Naturschutz engagieren?"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -81397,43 +81448,263 @@
                       "answers": [
                         {
                           "situationId": 11,
-                          "adId": "H"
+                          "adId": "H",
+                          "reason": "Anzeige H passt, weil „Kaffee so viel du willst“ einen langen Caféaufenthalt ermöglicht, ohne ständig neue Getränke bestellen zu müssen. A und E sind zwar ebenfalls Cafés, nennen aber keinen Preisvorteil; C wirbt mit preiswertem Essen, nicht mit günstigem langem Kaffeetrinken. Die übrigen Anzeigen betreffen andere Angebote oder bieten ebenfalls keinen passenden Sparvorteil.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 67,
+                              "end": 91,
+                              "text": "Kaffee so viel du willst"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 0,
+                              "end": 80,
+                              "text": "Sie verbringen gern viele Stunden im Cafe, wollen aber nicht viel Geld ausgeben."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 12,
-                          "adId": "G"
+                          "adId": "G",
+                          "reason": "Gesucht werden Grundkenntnisse am Computer für die neue berufliche Aufgabe. Anzeige G passt, weil sie einen Einsteigerkurs mit praktischem Einstieg in Windows und Linux anbietet. D ist trotz des berufsbegleitenden Angebots unpassend, da es um interkulturelle Arbeit geht; A–C, E–F und H–L behandeln Gastronomie, allgemeine Bildungswege oder andere Themen. Daher ist auch X ausgeschlossen.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 0,
+                              "end": 24,
+                              "text": "Abendkurs für Einsteiger"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 207,
+                              "end": 284,
+                              "text": "ein praktischer Einstieg in die Betriebssysteme Windows und Linux vermittelt."
+                            },
+                            {
+                              "source": "situation",
+                              "start": 72,
+                              "end": 116,
+                              "text": "Grundkenntnisse für die Arbeit am Compurter."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 13,
-                          "adId": "D"
+                          "adId": "D",
+                          "reason": "Anzeige D passt, weil eine berufsbegleitende Fortbildung zur „Interkulturellen Arbeit“ ausdrücklich für Fachkräfte in Gesundheitsberufen angeboten wird. Das entspricht sowohl der Arbeit im Krankenhaus als auch dem Kontakt mit Patienten aus aller Welt. Der plausible Ablenker J ist zwar international ausgerichtet, bietet aber ein Studium in Fremdsprachen und Betriebswirtschaft statt einer Fortbildung für Gesundheitsberufe; F und G behandeln allgemeine Berufsorientierung beziehungsweise Computerkenntnisse. A, B, C, E, H, I, K und L betreffen Gastronomie, Tourismus, einen Schüleraufenthalt oder Freizeitangebote und passen daher ebenfalls nicht; X scheidet aus, weil D eindeutig passt.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 0,
+                              "end": 22,
+                              "text": "Interkulturelle Arbeit"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 24,
+                              "end": 119,
+                              "text": "Berufsbegleitende Fortbildung für Fachkräfte in pädagogischen, sozialen und Gesundheitsberufen."
+                            },
+                            {
+                              "source": "situation",
+                              "start": 0,
+                              "end": 92,
+                              "text": "Sie arbeiten in einem Krankenhaus und haben dort häufig mit Patienten aus aller Welt zu tun."
+                            },
+                            {
+                              "source": "situation",
+                              "start": 93,
+                              "end": 152,
+                              "text": "Sie möchten für diese Arbeit noch besser qualitiziert sein."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 14,
-                          "adId": "X"
+                          "adId": "X",
+                          "reason": "Gesucht ist ein Tanzkurs für Anfänger, der abends stattfindet; keine Anzeige erfüllt alle drei Bedingungen. Anzeige L bietet zwar abends Tanz, aber keinen Tanzkurs für Anfänger, während Anzeige G ein Abendkurs für Einsteiger ist, der jedoch Computerkenntnisse vermittelt. Die übrigen Anzeigen betreffen Gastronomie, Ausbildung, Beratung, Fortbildung oder Auslandsaufenthalte.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 0,
+                              "end": 22,
+                              "text": "Keine passende Anzeige"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 17,
+                              "end": 44,
+                              "text": "einen Tanzkurs für Anfänger"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 65,
+                              "end": 80,
+                              "text": "nur abends Zeit"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 15,
-                          "adId": "J"
+                          "adId": "J",
+                          "reason": "Anzeige J passt, weil sie Fremdsprachen mit einem Hochschulstudium und einem Studienjahr in England oder Frankreich verbindet. K ist ein plausibler Ablenker, bietet aber nur ein High-School-Jahr für Schüler; B, D, F und G betreffen andere Bildungs- oder Informationsangebote. A, C, E, H, I und L sind Gastronomieangebote, sodass auch X nicht zutrifft.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 25,
+                              "end": 40,
+                              "text": "Fremdsprachen +"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 138,
+                              "end": 172,
+                              "text": "1 Jahr in England\noder Frankreich."
+                            },
+                            {
+                              "source": "situation",
+                              "start": 12,
+                              "end": 52,
+                              "text": "beruflich etwas mit Fremdsprachen machen"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 73,
+                              "end": 93,
+                              "text": "im Ausland studierem"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 16,
-                          "adId": "A"
+                          "adId": "A",
+                          "reason": "Anzeige A passt, weil ein Konditor in Passau ausdrücklich Pralinen, Kuchen, Torten und Eis anbietet – ideal für einen Nachmittag mit jemandem, der Süßes liebt. H und E sind zwar Cafés in Passau, nennen aber keine süßen Speisen; C, I und L bieten vor allem herzhafte Speisen beziehungsweise Getränke, alle übrigen Anzeigen betreffen Bildung oder Beruf.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 11,
+                              "end": 37,
+                              "text": "3 × in Passau Ihr Konditor"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 96,
+                              "end": 144,
+                              "text": "• Hausgemachte Pralinen\n• Kuchen, Torten und Eis"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 85,
+                              "end": 145,
+                              "text": "Sie wissen, dass Ihr Bekannter am Liebsten süße Sachen isst."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 17,
-                          "adId": "I"
+                          "adId": "I",
+                          "reason": "Anzeige I passt eindeutig, weil der Freund europäische Weine probieren möchte und dort österreichische, italienische und französische Qualitätsweine angeboten werden. Die gastronomischen Alternativen A, C, E, H und L nennen keine entsprechende Weinauswahl; H wirbt beispielsweise nur mit Kaffee und Bier. Die übrigen Anzeigen betreffen Bildungs- oder Informationsangebote und passen daher ebenfalls nicht.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 42,
+                              "end": 107,
+                              "text": "österreichischen, italienischen und französischen Qualitätsweinen"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 38,
+                              "end": 94,
+                              "text": "Er ist Weinkenner und möchte europäische Weine probieren"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 18,
-                          "adId": "X"
+                          "adId": "X",
+                          "reason": "Richtig ist X, weil keine Anzeige ein Freizeitangebot zum Kennenlernen anderer Länder, Kulturen und Traditionen enthält. D ist nur eine berufsbegleitende Fortbildung für Fachkräfte; J und K betreffen Studium beziehungsweise Schüleraustausch. A, C, E, H, I und L sind Gastronomieangebote, B und F dienen der Berufs- oder Ausbildungsinformation, und G ist ein Computerkurs.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 0,
+                              "end": 22,
+                              "text": "Keine passende Anzeige"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 0,
+                              "end": 101,
+                              "text": "In Ihrer Freizeit möchten Sie sich mit anderen Ländern, fremden Kulteren und Traditionen beschäftigen"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 19,
-                          "adId": "F"
+                          "adId": "F",
+                          "reason": "Anzeige F passt, weil die Tochter vor einer beruflichen Entscheidung steht und dort Informationen zu „AUSBILDUNG • STUDIUM“ findet. Besonders Anzeige J wirkt plausibel, bietet aber nur einen bestimmten Studiengang statt einer breiten Berufs- und Studienorientierung. B, D, G und K sind ebenfalls spezielle Bildungsangebote; A, C, E, H, I und L betreffen Gastronomie oder Freizeit.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 33,
+                              "end": 74,
+                              "text": "Sie stehen vor beruflichen Entscheidungen"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 344,
+                              "end": 364,
+                              "text": "AUSBILDUNG • STUDIUM"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 56,
+                              "end": 100,
+                              "text": "ist nicht sicher, was sie später machen will"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "situationId": 20,
-                          "adId": "C"
+                          "adId": "C",
+                          "reason": "Anzeige C passt, weil „KLEINKUNST“ ein Unterhaltungsprogramm bezeichnet und zugleich „Vegetarische Spezialitäten“ angeboten werden. Der besonders plausible Ablenker L bietet zwar Live-Musik und Essen, wirbt aber ausdrücklich mit Fleischspezialitäten; A, E, H und I erfüllen nicht beide Bedingungen. B, D, F, G, J und K sind keine passenden Lokale, daher ist auch X falsch.",
+                          "highlights": [
+                            {
+                              "source": "ad",
+                              "start": 22,
+                              "end": 45,
+                              "text": "KLEINKUNST VOM FEINSTEN"
+                            },
+                            {
+                              "source": "ad",
+                              "start": 123,
+                              "end": 149,
+                              "text": "Vegetarische Spezialitäten"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 25,
+                              "end": 71,
+                              "text": "in einem Lokal mit Unterhaltungsprogramm essen"
+                            },
+                            {
+                              "source": "situation",
+                              "start": 97,
+                              "end": 121,
+                              "text": "weder Fleisch noch Fisch"
+                            }
+                          ],
+                          "keywords": []
                         }
                       ]
                     }
