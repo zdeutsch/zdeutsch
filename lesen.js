@@ -9,6 +9,8 @@ const partCards = document.getElementById("part-cards");
 const timerDisplay = document.getElementById("timer-display");
 const timerValue = document.getElementById("timer-value");
 const timerToggle = document.getElementById("timer-toggle");
+const versionSwitcher = document.getElementById("version-switcher");
+const versionSwitchSelect = document.getElementById("version-switch-select");
 const resultView = document.getElementById("result-view");
 const resultTitle = document.getElementById("result-title");
 const resultSubtitle = document.getElementById("result-subtitle");
@@ -1520,13 +1522,18 @@ function parseContextMeta(rawContext, fallbackPartKey) {
     || null;
 }
 
-function resolveReportThemeKey(levelKey, rawTheme) {
+function resolveReportThemeContext(levelKey, rawTheme, rawVersion = "") {
   const levelEntry = state.db?.levels?.[levelKey];
   if (!levelEntry?.themes) {
     return null;
   }
   if (levelEntry.themes[rawTheme]) {
-    return rawTheme;
+    return { themeKey: rawTheme, versionKey: rawVersion };
+  }
+
+  const alias = levelEntry.themeAliases?.[rawTheme];
+  if (alias?.themeKey && levelEntry.themes[alias.themeKey]) {
+    return { themeKey: alias.themeKey, versionKey: alias.versionKey || rawVersion };
   }
 
   const wanted = normalize(rawTheme);
@@ -1534,7 +1541,7 @@ function resolveReportThemeKey(levelKey, rawTheme) {
     const themeTitle = levelEntry.themes?.[themeKey]?.title || "";
     return normalize(themeKey) === wanted || normalize(themeTitle) === wanted;
   });
-  return found || null;
+  return found ? { themeKey: found, versionKey: rawVersion } : null;
 }
 
 function getReportItemPrefix(partKey) {
@@ -1634,9 +1641,10 @@ async function loadReportGroups(partKey) {
       }
 
       const levelKey = normalize(meta.level);
-      const themeKey = resolveReportThemeKey(levelKey, meta.theme);
+      const themeContext = resolveReportThemeContext(levelKey, meta.theme, meta.version);
+      const themeKey = themeContext?.themeKey;
       const resolvedPartKey = normalizePartKey(meta.part, partKey);
-      const versionKey = String(meta.version || "default");
+      const versionKey = String(themeContext?.versionKey || meta.version || "default");
       if (levelKey !== state.level || themeKey !== state.theme || resolvedPartKey !== partKey) {
         return;
       }
@@ -2923,6 +2931,10 @@ function resolveTheme(levelEntry, themeKey) {
   if (themeKey && orderedThemes.includes(themeKey)) {
     return themeKey;
   }
+  const alias = levelEntry?.themeAliases?.[themeKey];
+  if (alias?.themeKey && orderedThemes.includes(alias.themeKey)) {
+    return alias.themeKey;
+  }
   return orderedThemes[0];
 }
 
@@ -2935,6 +2947,43 @@ function resolveVersion(themeEntry, versionKey) {
     return versionKey;
   }
   return versionKeys.includes(versionKey) ? versionKey : null;
+}
+
+function renderVersionSwitcher() {
+  if (!versionSwitcher || !versionSwitchSelect) return;
+  const themeEntry = getThemeEntry();
+  const versionKeys = getVersionKeys(themeEntry);
+  const show = versionKeys.length > 1;
+  versionSwitcher.classList.toggle("hidden", !show);
+  versionSwitcher.classList.toggle("flex", show);
+  versionSwitchSelect.innerHTML = "";
+  versionKeys.forEach((versionKey) => {
+    const version = themeEntry?.versions?.[versionKey];
+    const option = document.createElement("option");
+    option.value = versionKey;
+    option.textContent = version?.label || versionKey;
+    versionSwitchSelect.append(option);
+  });
+  if (show) versionSwitchSelect.value = getActiveVersionKey();
+}
+
+if (versionSwitchSelect) {
+  versionSwitchSelect.addEventListener("change", () => {
+    const themeEntry = getThemeEntry();
+    const nextVersionKey = resolveVersion(themeEntry, versionSwitchSelect.value);
+    if (!nextVersionKey || nextVersionKey === getActiveVersionKey()) return;
+    state.version = nextVersionKey;
+    const order = getLesenPartOrder(getActiveLesen(themeEntry));
+    if (!order.includes(state.part)) state.part = order[0] || null;
+    const params = new URLSearchParams(window.location.search);
+    params.set("theme", state.theme);
+    params.set("version", nextVersionKey);
+    window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
+    setView("exam");
+    startExamTimer();
+    renderVersionSwitcher();
+    renderCurrentPart();
+  });
 }
 
 if (backBtn) {
@@ -3092,19 +3141,21 @@ async function init() {
     window.localStorage.setItem("lastLevel", state.level);
   }
   const levelEntry = state.db.levels?.[state.level] || null;
+  const themeAlias = levelEntry?.themeAliases?.[themeKey] || null;
   state.theme = resolveTheme(levelEntry, themeKey);
   const themeEntry = getThemeEntry();
   if (!themeEntry) {
     renderMessage("Theme not found. Return to library.");
     return;
   }
-  state.version = resolveVersion(themeEntry, versionKey);
+  state.version = resolveVersion(themeEntry, themeAlias?.versionKey || versionKey);
 
   const lesenEntry = getActiveLesen(themeEntry);
   const order = getLesenPartOrder(lesenEntry);
   state.part = order[0] || null;
 
   setView("exam");
+  renderVersionSwitcher();
   startExamTimer();
   renderCurrentPart();
 }

@@ -143,6 +143,11 @@
             <div id="part-cards" class="hidden w-full flex items-center justify-start gap-2 overflow-x-auto"></div>
           </div>
           <div id="header-actions" class="flex items-center gap-2 shrink-0">
+            <label id="version-switcher" class="hidden items-center gap-2 rounded-xl border border-black/10 bg-white/80 px-2 py-1 shadow-sm">
+              <i data-lucide="layers-3" class="h-4 w-4 text-azure" aria-hidden="true"></i>
+              <span class="sr-only">Version wechseln</span>
+              <select id="version-switch-select" aria-label="Version wechseln" class="max-w-36 bg-transparent text-xs font-display text-ink outline-none"></select>
+            </label>
             <div id="timer-display" class="hidden items-center gap-2 rounded-full border border-azure/40 bg-azure/10 px-3 py-1 text-[10px] font-display uppercase tracking-[0.2em] text-azure">
               <span id="timer-value">90:00</span>
             </div>
@@ -226,8 +231,8 @@
     <div id="aside-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
 
     <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
-    <script src="shared.js?v=20260905-position-highlights-1"></script>
+    <script src="shared.js?v=20260911-theme-versions-v22"></script>
     <script src="sprachbausteine-utils.js?v=20260906-paired-answers-1"></script>
-    <script src="lesen.js?v=20260906-paired-answers-1"></script>
+    <script src="lesen.js?v=20260911-theme-versions-1"></script>
   </body>
 </html>
