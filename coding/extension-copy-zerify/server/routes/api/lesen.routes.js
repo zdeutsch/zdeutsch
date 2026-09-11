@@ -9,6 +9,10 @@ const {
   updatePart,
   createTheme,
   updateTheme,
+  createVersion,
+  updateVersion,
+  deleteVersion,
+  moveVersion,
   deleteTheme,
   setThemeVisibility,
   moveTheme,
@@ -115,6 +119,38 @@ router.put(
   "/theme/level",
   asyncHandler(async (req, res) => {
     const data = await moveTheme(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.post(
+  "/version",
+  asyncHandler(async (req, res) => {
+    const data = await createVersion(req.body);
+    res.status(201).json({ ok: true, data });
+  })
+);
+
+router.put(
+  "/version",
+  asyncHandler(async (req, res) => {
+    const data = await updateVersion(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.put(
+  "/version/theme",
+  asyncHandler(async (req, res) => {
+    const data = await moveVersion(req.body);
+    res.json({ ok: true, data });
+  })
+);
+
+router.delete(
+  "/version",
+  asyncHandler(async (req, res) => {
+    const data = await deleteVersion(req.body);
     res.json({ ok: true, data });
   })
 );

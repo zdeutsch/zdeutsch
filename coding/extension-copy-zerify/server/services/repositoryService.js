@@ -15,6 +15,24 @@ function errorOutput(error) {
   return cleanOutput(error?.stderr || error?.stdout || error?.message);
 }
 
+function gitEnvironment() {
+  const env = {
+    ...process.env,
+    GIT_TERMINAL_PROMPT: "0"
+  };
+  const configuredCommand = cleanOutput(process.env.ZDEUTSCH_GIT_SSH_COMMAND);
+  const configuredKey = cleanOutput(process.env.ZDEUTSCH_GIT_SSH_KEY);
+
+  if (configuredCommand) {
+    env.GIT_SSH_COMMAND = configuredCommand;
+  } else if (configuredKey) {
+    const escapedKey = configuredKey.replace(/"/g, "\\\"");
+    env.GIT_SSH_COMMAND = `ssh -i "${escapedKey}" -o IdentitiesOnly=yes -o BatchMode=yes`;
+  }
+
+  return env;
+}
+
 async function runGit(args, options = {}) {
   try {
     const result = await execFileAsync("git", args, {
@@ -22,10 +40,7 @@ async function runGit(args, options = {}) {
       windowsHide: true,
       timeout: options.timeout || 120000,
       maxBuffer: 2 * 1024 * 1024,
-      env: {
-        ...process.env,
-        GIT_TERMINAL_PROMPT: "0"
-      }
+      env: gitEnvironment()
     });
     if (options.preserveLeadingWhitespace) {
       return String(result.stdout || "").replace(/\s+$/, "");
@@ -54,6 +69,24 @@ async function ensureRepository() {
   const inside = await runGit(["rev-parse", "--is-inside-work-tree"], { allowFailure: true });
   if (inside !== "true") {
     throw new AppError("The site folder is not a Git repository", 409);
+  }
+}
+
+async function ensureConfiguredRemote() {
+  const configuredRemote = cleanOutput(process.env.ZDEUTSCH_GIT_REMOTE);
+  if (!configuredRemote) {
+    return;
+  }
+
+  const currentRemote = await runGit(["remote", "get-url", "origin"], { allowFailure: true });
+  if (currentRemote === configuredRemote) {
+    return;
+  }
+
+  if (currentRemote) {
+    await runGit(["remote", "set-url", "origin", configuredRemote]);
+  } else {
+    await runGit(["remote", "add", "origin", configuredRemote]);
   }
 }
 
@@ -99,6 +132,7 @@ async function getRepositoryStatus() {
 
 async function syncRepositoryData() {
   await ensureRepository();
+  await ensureConfiguredRemote();
   const branch = await runGit(["branch", "--show-current"]);
   if (!branch) {
     throw new AppError("Cannot sync a detached Git checkout", 409);
@@ -182,6 +216,7 @@ async function prepareBranchForPush(branch, execute = runGit) {
 
 async function discardRepositoryData() {
   await ensureRepository();
+  await ensureConfiguredRemote();
   const branch = await runGit(["branch", "--show-current"]);
   if (!branch) {
     throw new AppError("Cannot cancel changes from a detached Git checkout", 409);
@@ -247,6 +282,7 @@ async function ensureCommitIdentity() {
 
 async function publishRepositoryData(commitMessage) {
   await ensureRepository();
+  await ensureConfiguredRemote();
   const branch = await runGit(["branch", "--show-current"]);
   if (!branch) {
     throw new AppError("Cannot publish from a detached Git checkout", 409);
@@ -281,6 +317,7 @@ async function publishRepositoryData(commitMessage) {
 }
 
 module.exports = {
+  gitEnvironment,
   parseDivergence,
   prepareBranchForPush,
   getRepositoryStatus,

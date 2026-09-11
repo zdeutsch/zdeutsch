@@ -156,8 +156,54 @@ function createEmptyTheme(level, themeKey, title) {
         }
       }
     },
+    defaultVersion: "default",
     versionOrder: ["default"]
   };
+}
+
+function orderedVersionKeys(theme) {
+  const available = Object.keys(theme?.versions || {});
+  const configured = Array.isArray(theme?.versionOrder) ? theme.versionOrder : [];
+  const ordered = configured.filter((versionKey, index) => (
+    available.includes(versionKey) && configured.indexOf(versionKey) === index
+  ));
+  const extras = available.filter((versionKey) => !ordered.includes(versionKey));
+  return [...ordered, ...extras];
+}
+
+function createEmptyVersion(level, versionKey, label, title) {
+  const parts = {};
+  LESEN_PART_ORDER.forEach((partKey) => {
+    parts[partKey] = createEmptyPart(level, partKey, title);
+  });
+  return {
+    key: versionKey,
+    label,
+    title,
+    lesen: {
+      partOrder: [...LESEN_PART_ORDER],
+      parts
+    }
+  };
+}
+
+function setVersionIdentity(version, { versionKey, label, title }) {
+  version.key = versionKey;
+  version.label = label;
+  version.title = title;
+  Object.values(version?.lesen?.parts || {}).forEach((part) => {
+    if (part?.meta && typeof part.meta === "object") {
+      part.meta.title = title;
+    }
+  });
+  return version;
+}
+
+function ensureThemeAliases(levelEntry) {
+  if (!levelEntry.themeAliases || typeof levelEntry.themeAliases !== "object" || Array.isArray(levelEntry.themeAliases)) {
+    levelEntry.themeAliases = {};
+  }
+  return levelEntry.themeAliases;
 }
 
 async function getLesenDb() {
@@ -189,9 +235,7 @@ function summarizeThemes(levelEntry) {
       if (!theme) {
         return null;
       }
-      const versionKeys = Array.isArray(theme.versionOrder) && theme.versionOrder.length
-        ? theme.versionOrder
-        : Object.keys(theme.versions || {});
+      const versionKeys = orderedVersionKeys(theme);
       const defaultVersionKey = theme.defaultVersion && theme.versions?.[theme.defaultVersion]
         ? theme.defaultVersion
         : (versionKeys.includes("default") ? "default" : (versionKeys[0] || "default"));
@@ -236,9 +280,7 @@ function summarizeThemes(levelEntry) {
 }
 
 function summarizeVersions(theme) {
-  const versionKeys = Array.isArray(theme?.versionOrder) && theme.versionOrder.length
-    ? theme.versionOrder
-    : Object.keys(theme?.versions || {});
+  const versionKeys = orderedVersionKeys(theme);
 
   return versionKeys
     .map((versionKey) => {
@@ -270,7 +312,9 @@ async function getTheme(level, themeKey) {
   assertString(themeKey, "themeKey is required");
 
   const { data: db } = await getLesenSnapshot();
-  const theme = db?.levels?.[level]?.themes?.[themeKey] || null;
+  const levelEntry = db?.levels?.[level] || null;
+  const selection = resolveThemeSelection(levelEntry, themeKey);
+  const theme = levelEntry?.themes?.[selection.themeKey] || null;
   if (!theme) {
     throw new AppError("Theme not found", 404);
   }
@@ -284,6 +328,24 @@ function resolveTheme(levelEntry, themeKey) {
     throw new AppError("Theme not found", 404);
   }
   return theme;
+}
+
+function resolveThemeSelection(levelEntry, themeKeyRaw, versionKeyRaw = "") {
+  const requestedThemeKey = String(themeKeyRaw || "").trim();
+  if (levelEntry?.themes?.[requestedThemeKey]) {
+    return {
+      themeKey: requestedThemeKey,
+      versionKey: String(versionKeyRaw || "").trim()
+    };
+  }
+  const alias = levelEntry?.themeAliases?.[requestedThemeKey];
+  if (alias?.themeKey && levelEntry?.themes?.[alias.themeKey]) {
+    return {
+      themeKey: alias.themeKey,
+      versionKey: String(alias.versionKey || versionKeyRaw || "").trim()
+    };
+  }
+  return { themeKey: requestedThemeKey, versionKey: String(versionKeyRaw || "").trim() };
 }
 
 function resolveVersion(theme, versionKeyRaw) {
@@ -320,15 +382,16 @@ async function listVersions(payload) {
     throw new AppError("Level not found", 404);
   }
 
-  const theme = resolveTheme(levelEntry, themeKey);
+  const selection = resolveThemeSelection(levelEntry, themeKey);
+  const theme = resolveTheme(levelEntry, selection.themeKey);
   return summarizeVersions(theme);
 }
 
 async function getPart(payload) {
   const level = String(payload.level || "").trim().toLowerCase();
-  const themeKey = String(payload.themeKey || "").trim();
+  let themeKey = String(payload.themeKey || "").trim();
   const partKey = assertPartKey(payload.partKey);
-  const versionKeyInput = String(payload.versionKey || "default").trim() || "default";
+  let versionKeyInput = String(payload.versionKey || "default").trim() || "default";
 
   assertString(level, "level is required");
   assertString(themeKey, "themeKey is required");
@@ -339,6 +402,9 @@ async function getPart(payload) {
     throw new AppError("Level not found", 404);
   }
 
+  const selection = resolveThemeSelection(levelEntry, themeKey, versionKeyInput);
+  themeKey = selection.themeKey;
+  versionKeyInput = selection.versionKey || "default";
   const theme = resolveTheme(levelEntry, themeKey);
   const { versionKey, version } = resolveVersion(theme, versionKeyInput);
   const part = version?.lesen?.parts?.[partKey] || null;
@@ -542,13 +608,13 @@ async function getEditorContext(payload) {
   const level = levels.includes(requestedLevel) ? requestedLevel : (levels[0] || requestedLevel);
   const levelEntry = db?.levels?.[level] || null;
   const themes = summarizeThemes(levelEntry);
-  const requestedTheme = String(payload.themeKey || "").trim();
-  const themeKey = themes.some((theme) => theme.key === requestedTheme)
-    ? requestedTheme
+  const requestedSelection = resolveThemeSelection(levelEntry, payload.themeKey, payload.versionKey);
+  const themeKey = themes.some((theme) => theme.key === requestedSelection.themeKey)
+    ? requestedSelection.themeKey
     : (themes[0]?.key || "");
   const theme = levelEntry?.themes?.[themeKey] || null;
   const versions = summarizeVersions(theme);
-  const requestedVersion = String(payload.versionKey || "").trim();
+  const requestedVersion = requestedSelection.versionKey;
   const versionKey = versions.some((version) => version.key === requestedVersion)
     ? requestedVersion
     : (versions[0]?.key || "default");
@@ -675,6 +741,7 @@ async function updateTheme(payload) {
   }
 
   const theme = levelEntry.themes[activeKey];
+  const previousTitle = String(theme.title || "");
   theme.id = activeKey;
 
   if (title) {
@@ -682,10 +749,24 @@ async function updateTheme(payload) {
     const versionKeys = Object.keys(theme.versions || {});
     versionKeys.forEach((versionKey) => {
       const version = theme.versions[versionKey];
-      if (version && typeof version === "object") {
-        version.title = title;
+      if (version && typeof version === "object" && (!version.title || version.title === previousTitle)) {
+        setVersionIdentity(version, {
+          versionKey,
+          label: version.label || versionKey,
+          title
+        });
       }
     });
+  }
+
+  const aliases = ensureThemeAliases(levelEntry);
+  Object.values(aliases).forEach((alias) => {
+    if (alias?.themeKey === themeKey && activeKey !== themeKey) {
+      alias.themeKey = activeKey;
+    }
+  });
+  if (activeKey !== themeKey) {
+    aliases[themeKey] = { themeKey: activeKey };
   }
 
   await writeJsonByKey("lesen", db);
@@ -693,6 +774,226 @@ async function updateTheme(payload) {
     key: activeKey,
     theme
   };
+}
+
+async function createVersion(payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  const versionKey = String(payload.versionKey || "").trim();
+  const copyFromVersionKey = String(payload.copyFromVersionKey || "").trim();
+
+  assertString(level, "level is required");
+  assertString(themeKey, "themeKey is required");
+  assertString(versionKey, "versionKey is required");
+
+  const mutation = await mutateJsonByKey("lesen", (db) => {
+    const levelEntry = db?.levels?.[level];
+    if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+    const theme = resolveTheme(levelEntry, themeKey);
+    theme.versions = theme.versions || {};
+    if (theme.versions[versionKey]) {
+      throw new AppError("Der Versionsschlüssel existiert bereits in diesem Thema", 409);
+    }
+
+    const fallbackNumber = orderedVersionKeys(theme).length + 1;
+    const label = String(payload.label || "").trim() || `Version ${fallbackNumber}`;
+    const title = String(payload.title || "").trim() || `${theme.title || themeKey} · ${label}`;
+    let version;
+    if (copyFromVersionKey) {
+      const source = theme.versions[copyFromVersionKey];
+      if (!source) throw new AppError("Die zu kopierende Version wurde nicht gefunden", 404);
+      version = clone(source);
+      setVersionIdentity(version, { versionKey, label, title });
+    } else {
+      version = createEmptyVersion(level, versionKey, label, title);
+    }
+
+    theme.versions[versionKey] = version;
+    theme.versionOrder = orderedVersionKeys(theme);
+    if (!theme.defaultVersion || !theme.versions[theme.defaultVersion]) {
+      theme.defaultVersion = theme.versionOrder[0];
+    }
+
+    return {
+      data: db,
+      result: {
+        level,
+        themeKey,
+        version: clone(version),
+        defaultVersionKey: theme.defaultVersion
+      }
+    };
+  });
+
+  return mutation.result;
+}
+
+async function updateVersion(payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  const versionKey = String(payload.versionKey || "").trim();
+  const newVersionKey = String(payload.newVersionKey || "").trim() || versionKey;
+
+  assertString(level, "level is required");
+  assertString(themeKey, "themeKey is required");
+  assertString(versionKey, "versionKey is required");
+
+  const mutation = await mutateJsonByKey("lesen", (db) => {
+    const levelEntry = db?.levels?.[level];
+    if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+    const theme = resolveTheme(levelEntry, themeKey);
+    const version = theme?.versions?.[versionKey];
+    if (!version) throw new AppError("Version nicht gefunden", 404);
+    if (newVersionKey !== versionKey && theme.versions[newVersionKey]) {
+      throw new AppError("Der neue Versionsschlüssel existiert bereits", 409);
+    }
+
+    const label = String(payload.label || "").trim() || version.label || newVersionKey;
+    const title = String(payload.title || "").trim() || version.title || theme.title || label;
+    if (newVersionKey !== versionKey) {
+      theme.versions[newVersionKey] = version;
+      delete theme.versions[versionKey];
+      theme.versionOrder = orderedVersionKeys(theme).map((entry) => entry === versionKey ? newVersionKey : entry);
+      if (theme.defaultVersion === versionKey) theme.defaultVersion = newVersionKey;
+      Object.values(levelEntry.themeAliases || {}).forEach((alias) => {
+        if (alias?.themeKey === themeKey && alias.versionKey === versionKey) {
+          alias.versionKey = newVersionKey;
+        }
+      });
+    }
+
+    setVersionIdentity(version, { versionKey: newVersionKey, label, title });
+    theme.versionOrder = orderedVersionKeys(theme);
+    if (payload.isDefault === true || !theme.defaultVersion || !theme.versions[theme.defaultVersion]) {
+      theme.defaultVersion = newVersionKey;
+    }
+
+    return {
+      data: db,
+      result: {
+        level,
+        themeKey,
+        versionKey: newVersionKey,
+        defaultVersionKey: theme.defaultVersion,
+        version: clone(version)
+      }
+    };
+  });
+
+  return mutation.result;
+}
+
+async function deleteVersion(payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const themeKey = String(payload.themeKey || "").trim();
+  const versionKey = String(payload.versionKey || "").trim();
+
+  assertString(level, "level is required");
+  assertString(themeKey, "themeKey is required");
+  assertString(versionKey, "versionKey is required");
+
+  const mutation = await mutateJsonByKey("lesen", (db) => {
+    const levelEntry = db?.levels?.[level];
+    if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+    const theme = resolveTheme(levelEntry, themeKey);
+    if (!theme?.versions?.[versionKey]) throw new AppError("Version nicht gefunden", 404);
+    if (Object.keys(theme.versions).length <= 1) {
+      throw new AppError("Die einzige Version eines Themas kann nicht gelöscht werden", 400);
+    }
+
+    delete theme.versions[versionKey];
+    theme.versionOrder = orderedVersionKeys(theme);
+    if (theme.defaultVersion === versionKey || !theme.versions[theme.defaultVersion]) {
+      theme.defaultVersion = theme.versionOrder[0];
+    }
+    Object.keys(levelEntry.themeAliases || {}).forEach((aliasKey) => {
+      const alias = levelEntry.themeAliases[aliasKey];
+      if (alias?.themeKey === themeKey && alias.versionKey === versionKey) {
+        delete levelEntry.themeAliases[aliasKey];
+      }
+    });
+
+    return {
+      data: db,
+      result: { level, themeKey, versionKey, defaultVersionKey: theme.defaultVersion, deleted: true }
+    };
+  });
+
+  return mutation.result;
+}
+
+async function moveVersion(payload) {
+  const level = String(payload.level || "").trim().toLowerCase();
+  const sourceThemeKey = String(payload.sourceThemeKey || "").trim();
+  const sourceVersionKey = String(payload.sourceVersionKey || "").trim();
+  const targetThemeKey = String(payload.targetThemeKey || "").trim();
+  const targetVersionKey = String(payload.targetVersionKey || "").trim();
+
+  assertString(level, "level is required");
+  assertString(sourceThemeKey, "sourceThemeKey is required");
+  assertString(sourceVersionKey, "sourceVersionKey is required");
+  assertString(targetThemeKey, "targetThemeKey is required");
+  assertString(targetVersionKey, "targetVersionKey is required");
+  if (sourceThemeKey === targetThemeKey) {
+    throw new AppError("Quell- und Zielthema müssen unterschiedlich sein", 400);
+  }
+
+  const mutation = await mutateJsonByKey("lesen", (db) => {
+    const levelEntry = db?.levels?.[level];
+    if (!levelEntry) throw new AppError("Niveau nicht gefunden", 404);
+    const sourceTheme = resolveTheme(levelEntry, sourceThemeKey);
+    const targetTheme = resolveTheme(levelEntry, targetThemeKey);
+    const version = sourceTheme?.versions?.[sourceVersionKey];
+    if (!version) throw new AppError("Version nicht gefunden", 404);
+    targetTheme.versions = targetTheme.versions || {};
+    if (targetTheme.versions[targetVersionKey]) {
+      throw new AppError("Der Versionsschlüssel existiert bereits im Zielthema", 409);
+    }
+
+    const label = String(payload.label || "").trim() || version.label || targetVersionKey;
+    const title = String(payload.title || "").trim() || version.title || sourceTheme.title || label;
+    setVersionIdentity(version, { versionKey: targetVersionKey, label, title });
+    targetTheme.versions[targetVersionKey] = version;
+    targetTheme.versionOrder = orderedVersionKeys(targetTheme);
+    if (!targetTheme.defaultVersion || !targetTheme.versions[targetTheme.defaultVersion]) {
+      targetTheme.defaultVersion = targetTheme.versionOrder[0];
+    }
+
+    delete sourceTheme.versions[sourceVersionKey];
+    sourceTheme.versionOrder = orderedVersionKeys(sourceTheme);
+    const aliases = ensureThemeAliases(levelEntry);
+    Object.values(aliases).forEach((alias) => {
+      if (alias?.themeKey === sourceThemeKey && alias.versionKey === sourceVersionKey) {
+        alias.themeKey = targetThemeKey;
+        alias.versionKey = targetVersionKey;
+      }
+    });
+
+    let sourceThemeDeleted = false;
+    if (!sourceTheme.versionOrder.length) {
+      delete levelEntry.themes[sourceThemeKey];
+      levelEntry.themeOrder = (levelEntry.themeOrder || []).filter((entry) => entry !== sourceThemeKey);
+      aliases[sourceThemeKey] = { themeKey: targetThemeKey, versionKey: targetVersionKey };
+      sourceThemeDeleted = true;
+    } else if (sourceTheme.defaultVersion === sourceVersionKey || !sourceTheme.versions[sourceTheme.defaultVersion]) {
+      sourceTheme.defaultVersion = sourceTheme.versionOrder[0];
+    }
+
+    return {
+      data: db,
+      result: {
+        level,
+        sourceThemeKey,
+        sourceVersionKey,
+        sourceThemeDeleted,
+        targetThemeKey,
+        targetVersionKey,
+        defaultVersionKey: targetTheme.defaultVersion
+      }
+    };
+  });
+
+  return mutation.result;
 }
 
 async function deleteTheme(payload) {
@@ -710,6 +1011,11 @@ async function deleteTheme(payload) {
 
   delete levelEntry.themes[themeKey];
   levelEntry.themeOrder = levelEntry.themeOrder.filter((entry) => entry !== themeKey);
+  Object.keys(levelEntry.themeAliases || {}).forEach((aliasKey) => {
+    if (aliasKey === themeKey || levelEntry.themeAliases[aliasKey]?.themeKey === themeKey) {
+      delete levelEntry.themeAliases[aliasKey];
+    }
+  });
 
   await writeJsonByKey("lesen", db);
   return { deleted: true };
@@ -773,6 +1079,14 @@ async function moveTheme(payload) {
   target.themes[themeKey] = theme;
   const targetKeys = Object.keys(target.themes);
   target.themeOrder = normalizeVisibleOrder(target.themeOrder, targetKeys, themeKey, wasVisible);
+  const sourceAliases = ensureThemeAliases(source);
+  const targetAliases = ensureThemeAliases(target);
+  Object.keys(sourceAliases).forEach((aliasKey) => {
+    if (sourceAliases[aliasKey]?.themeKey === themeKey) {
+      targetAliases[aliasKey] = sourceAliases[aliasKey];
+      delete sourceAliases[aliasKey];
+    }
+  });
 
   Object.values(theme.versions || {}).forEach((version) => {
     Object.values(version?.lesen?.parts || {}).forEach((part) => {
@@ -867,6 +1181,10 @@ module.exports = {
   buildSprachbausteineDerivedContent,
   createTheme,
   updateTheme,
+  createVersion,
+  updateVersion,
+  deleteVersion,
+  moveVersion,
   deleteTheme,
   setThemeVisibility,
   moveTheme,
@@ -874,5 +1192,8 @@ module.exports = {
   setPartVisibility,
   deletePart,
   normalizeVisibleOrder,
-  summarizeThemes
+  summarizeThemes,
+  orderedVersionKeys,
+  createEmptyVersion,
+  resolveThemeSelection
 };

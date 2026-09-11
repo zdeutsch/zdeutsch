@@ -556,23 +556,34 @@ function validateEditedAnswerValues(partKey, content, itemNumbers = [], answerVa
   });
 }
 
-function resolveThemeKey(db, levelKey, rawTheme) {
+function resolveThemeContext(db, levelKey, rawTheme, rawVersion = "") {
   const levelEntry = db?.levels?.[levelKey];
   if (!levelEntry?.themes) {
     return null;
   }
 
-  if (levelEntry.themes[rawTheme]) {
-    return rawTheme;
-  }
-
   const wanted = normalize(rawTheme);
-  const found = Object.keys(levelEntry.themes).find((themeKey) => {
-    const title = levelEntry.themes?.[themeKey]?.title || "";
-    return normalize(themeKey) === wanted || normalize(title) === wanted;
-  });
+  const exactThemeKey = levelEntry.themes[rawTheme] ? rawTheme : null;
+  const aliasEntry = !exactThemeKey
+    ? Object.entries(levelEntry.themeAliases || {}).find(([aliasKey]) => normalize(aliasKey) === wanted)
+    : null;
+  const alias = aliasEntry?.[1] || null;
+  const titleThemeKey = !exactThemeKey && !alias
+    ? Object.keys(levelEntry.themes).find((themeKey) => {
+        const title = levelEntry.themes?.[themeKey]?.title || "";
+        return normalize(themeKey) === wanted || normalize(title) === wanted;
+      })
+    : null;
+  const themeKey = exactThemeKey || alias?.themeKey || titleThemeKey || null;
+  const theme = levelEntry.themes?.[themeKey] || null;
+  if (!theme) return null;
 
-  return found || null;
+  const requestedVersionKey = String(alias?.versionKey || rawVersion || "").trim();
+  const versionKey = requestedVersionKey && theme.versions?.[requestedVersionKey]
+    ? requestedVersionKey
+    : resolveCurrentVersion(theme).versionKey;
+
+  return { themeKey, versionKey };
 }
 
 function resolveCurrentVersion(theme) {
@@ -644,7 +655,7 @@ function createSubmissionReviewKey(submission) {
   const hash = crypto.createHash("sha1");
   hash.update(JSON.stringify({
     levelKey: submission.levelKey,
-    themeKey: submission.themeKey,
+    themeKey: submission.rawTheme || submission.themeKey,
     partKey: submission.partKey,
     email: submission.email || "",
     submissionOrder: submission.submissionOrder,
@@ -834,9 +845,10 @@ async function buildLesenContributionState(levelFilter = "") {
         return;
       }
 
-      const resolvedThemeKey = lookupLevelKey && rawTheme
-        ? resolveThemeKey(db, lookupLevelKey, rawTheme)
+      const resolvedThemeContext = lookupLevelKey && rawTheme
+        ? resolveThemeContext(db, lookupLevelKey, rawTheme, meta?.version)
         : null;
+      const resolvedThemeKey = resolvedThemeContext?.themeKey || null;
       const hasKnownTheme = Boolean(lookupLevelKey && resolvedThemeKey);
       const displayLevelKey = lookupLevelKey || "unknown";
       const displayThemeKey = hasKnownTheme
@@ -870,6 +882,7 @@ async function buildLesenContributionState(levelFilter = "") {
         lookupLevelKey,
         themeKey: displayThemeKey,
         themeLookupKey: resolvedThemeKey || "",
+        versionLookupKey: resolvedThemeContext?.versionKey || "",
         rawTheme,
         partKey: resolvedPartKey,
         email: normalizeEmail(emailIndex >= 0 ? row[emailIndex] : ""),
@@ -901,7 +914,9 @@ async function buildLesenContributionState(levelFilter = "") {
         ? db?.levels?.[submission.lookupLevelKey]?.themes?.[submission.themeLookupKey]
         : null;
       const { versionKey, version } = theme
-        ? resolveCurrentVersion(theme)
+        ? (submission.versionLookupKey && theme.versions?.[submission.versionLookupKey]
+            ? { versionKey: submission.versionLookupKey, version: theme.versions[submission.versionLookupKey] }
+            : resolveCurrentVersion(theme))
         : { versionKey: "", version: null };
       const content = version?.lesen?.parts?.[submission.partKey]?.content || null;
       const canAcceptAgainstCurrent = Boolean(submission.canAccept && content);
@@ -1054,15 +1069,20 @@ function buildAcceptedHistoryItems(db, reviewStore, levelFilter = "") {
         return null;
       }
 
-      const theme = db?.levels?.[levelKey]?.themes?.[themeKey] || null;
-      const version = theme?.versions?.[review.currentVersionKey] || null;
+      const themeContext = resolveThemeContext(db, levelKey, themeKey, review.currentVersionKey);
+      const resolvedThemeKey = themeContext?.themeKey || themeKey;
+      const resolvedVersionKey = themeContext?.versionKey || review.currentVersionKey || "default";
+      const theme = db?.levels?.[levelKey]?.themes?.[resolvedThemeKey] || null;
+      const version = theme?.versions?.[resolvedVersionKey] || null;
 
       return {
         reviewKey,
         reviewStatus: "accepted",
         levelKey,
-        themeKey,
-        themeTitle: review.themeTitle || theme?.title || themeKey,
+        themeKey: resolvedThemeKey,
+        lookupLevelKey: levelKey,
+        themeLookupKey: resolvedThemeKey,
+        themeTitle: review.themeTitle || theme?.title || resolvedThemeKey,
         partKey,
         partLabel: review.partLabel || PART_CONFIG[partKey]?.partLabel || partKey,
         email: review.email || "",
@@ -1071,8 +1091,8 @@ function buildAcceptedHistoryItems(db, reviewStore, levelFilter = "") {
         submittedAt: review.submittedAt || "",
         reviewedAt: review.reviewedAt || "",
         submissionOrder: Date.parse(review.reviewedAt || review.submittedAt || "") || 0,
-        currentVersionKey: review.currentVersionKey || "default",
-        currentVersionLabel: review.currentVersionLabel || version?.label || review.currentVersionKey || "default",
+        currentVersionKey: resolvedVersionKey,
+        currentVersionLabel: review.currentVersionLabel || version?.label || resolvedVersionKey,
         differenceCount: differences.length,
         matchesCurrent: review.matchesCurrent === true || differences.length === 0,
         hasLocalEdits: false,
@@ -1313,8 +1333,9 @@ async function reviewLesenContribution(payload = {}) {
     }
 
     const db = await readJsonByKey("lesen");
-    const theme = db?.levels?.[review.levelKey]?.themes?.[review.themeKey];
-    const version = theme?.versions?.[review.currentVersionKey];
+    const themeContext = resolveThemeContext(db, review.levelKey, review.themeKey, review.currentVersionKey);
+    const theme = db?.levels?.[review.levelKey]?.themes?.[themeContext?.themeKey];
+    const version = theme?.versions?.[themeContext?.versionKey];
     const content = version?.lesen?.parts?.[review.partKey]?.content;
     const differences = Array.isArray(review.differences) ? review.differences : [];
 
@@ -1445,6 +1466,7 @@ module.exports = {
   buildComparisonRows,
   buildCurrentAnswerMap,
   applyValueToContent,
+  resolveThemeContext,
   listLesenContributions,
   getLesenContributionAiInput,
   editLesenContribution,

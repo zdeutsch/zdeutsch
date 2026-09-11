@@ -631,7 +631,17 @@ body { background: var(--canvas); }
 .management-block__heading > div { display: grid; gap: 3px; }
 .management-block__heading strong { color: #26342f; font-size: 14px; }
 .management-block__heading span { color: #7a8782; font-size: 12px; }
+.management-block__heading .version-badge { display: inline-flex; color: #596863; }
+.version-badge svg { margin-right: 5px; }
 .move-control { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 9px; }
+.version-switch-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 9px; }
+.version-details { display: grid; gap: 9px; padding: 12px; border: 1px solid #e0e6e3; border-radius: 9px; background: #f8faf9; }
+.inline-actions { display: flex; align-items: center; gap: 7px; }
+.management-disclosure { overflow: hidden; border: 1px solid #e0e6e3; border-radius: 9px; background: #fff; }
+.management-disclosure > summary { display: flex; min-height: 42px; align-items: center; gap: 8px; padding: 10px 12px; color: #34423d; cursor: pointer; font-size: 12px; font-weight: 750; list-style: none; }
+.management-disclosure > summary::-webkit-details-marker { display: none; }
+.management-disclosure[open] > summary { border-bottom: 1px solid #e6ebe8; background: #f8faf9; }
+.management-disclosure__body { display: grid; gap: 10px; padding: 12px; }
 .part-manager { display: grid; gap: 7px; }
 .part-manager__row { display: flex; min-height: 54px; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 10px; border: 1px solid #e0e6e3; border-radius: 8px; background: #f8faf9; }
 .part-manager__row > span { display: grid; min-width: 0; gap: 2px; }
@@ -702,6 +712,8 @@ body { background: var(--canvas); }
   .contributor-review-row .review-card__actions { width: 100%; justify-content: flex-start; }
   .module-config-row { grid-template-columns: 1fr; }
   .management-block__heading, .part-visibility-bar { align-items: stretch; flex-direction: column; }
+  .version-switch-row, .move-control { grid-template-columns: 1fr; }
+  .inline-actions { align-items: stretch; flex-direction: column; }
   .part-visibility-bar > div { justify-content: flex-start; }
   .part-manager__row { align-items: flex-start; flex-direction: column; }
   .part-manager__row > div { width: 100%; }

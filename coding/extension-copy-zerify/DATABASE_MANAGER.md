@@ -64,6 +64,10 @@ WEB_PORT=8080 APP_PORT=3031 docker compose up --build -d
 - `GET /api/lesen/part?level=...&themeKey=...&versionKey=default&partKey=...`
 - `POST /api/lesen/theme`
 - `PUT /api/lesen/theme`
+- `POST /api/lesen/version`
+- `PUT /api/lesen/version`
+- `PUT /api/lesen/version/theme` (move a version into another theme group)
+- `DELETE /api/lesen/version`
 - `PUT /api/lesen/part`
 - `DELETE /api/lesen/theme`
 - `GET /api/horen/topics?level=...&part=...&themeKey=...`
@@ -75,6 +79,17 @@ WEB_PORT=8080 APP_PORT=3031 docker compose up --build -d
 - `POST /api/shreiben/tasks`
 - `PUT /api/shreiben/tasks/:taskId`
 - `DELETE /api/shreiben/tasks/:taskId`
+
+### Windows Git push repair
+
+On the Windows dashboard host, run this once from PowerShell after the project has been copied to `C:\Users\Hp\ZDeutschManager`:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+.\windows\configure-git-push.ps1
+```
+
+The script sets the repository remote to GitHub, configures the dashboard SSH key, and verifies `git ls-remote`. If the key is new, it prints the public key that must be added to the write-enabled GitHub account before publishing can succeed.
 
 ## Notes
 
