@@ -10,6 +10,7 @@ import {
   FilePenLine,
   Grid2X2,
   Headphones,
+  LogOut,
   MessagesSquare,
   Menu,
   RotateCcw,
@@ -152,6 +153,17 @@ function RepositoryControl() {
   );
 }
 
+function LogoutControl() {
+  const logout = async () => {
+    try {
+      await fetch("/auth/logout", { method: "POST", headers: { Accept: "application/json" } });
+    } finally {
+      window.location.replace("/login");
+    }
+  };
+  return <button className="logout-button" type="button" onClick={logout}><LogOut size={16} /><span>Abmelden</span></button>;
+}
+
 export function AdminLayout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
@@ -182,6 +194,8 @@ export function AdminLayout() {
         </nav>
 
         <Link className="settings-link" to="/dashboard/einstellungen"><Settings2 size={16} /><span>Einstellungen</span></Link>
+
+        <LogoutControl />
 
         <RepositoryControl />
       </aside>

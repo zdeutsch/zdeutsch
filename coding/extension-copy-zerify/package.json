@@ -9,14 +9,16 @@
     "dev": "vite --host 127.0.0.1",
     "start": "node server.js",
     "start:build": "npm run build && node server.js",
-    "check": "node --check server.js && node --check server/services/lesenService.js && node --check server/services/lesenAiService.js && node --check server/services/contributionService.js && node --check server/services/contributionAiService.js && node --check server/services/horenService.js && node --check server/services/sprechenService.js && node --check server/routes/api/lesen.routes.js && node --check server/routes/api/contributions.routes.js && node --check server/routes/api/horen.routes.js && node --check server/routes/api/sprechen.routes.js && node --check server/repositories/jsonRepository.js && node --check site/sprachbausteine-utils.js && node --check site/lesen.js && node --check site/app.js && node --check site/horen.js",
+    "check": "node --check server.js && node --check server/services/dashboardAuthService.js && node --check server/services/lesenService.js && node --check server/services/lesenAiService.js && node --check server/services/contributionService.js && node --check server/services/contributionAiService.js && node --check server/services/horenService.js && node --check server/services/sprechenService.js && node --check server/routes/dashboardAuth.routes.js && node --check server/routes/api/lesen.routes.js && node --check server/routes/api/contributions.routes.js && node --check server/routes/api/horen.routes.js && node --check server/routes/api/sprechen.routes.js && node --check server/repositories/jsonRepository.js && node --check site/sprachbausteine-utils.js && node --check site/lesen.js && node --check site/app.js && node --check site/horen.js",
     "test": "node --test"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.85.5",
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.3.1",
     "express": "^4.21.2",
     "lucide-react": "^0.542.0",
+    "mysql2": "^3.24.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.2",

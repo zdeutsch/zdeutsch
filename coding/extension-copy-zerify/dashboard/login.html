@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Anmelden · ZDeutsch Prüfungsverwaltung</title>
+    <style>
+      :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; color: #14201d; background: radial-gradient(circle at 78% 12%, rgba(204,255,68,.18), transparent 30%), #edf3ef; }
+      main { width: min(100%, 440px); overflow: hidden; border: 1px solid #d9e2dd; border-radius: 22px; background: #fff; box-shadow: 0 24px 70px rgba(20,32,29,.13); }
+      .brand { display: flex; align-items: center; gap: 13px; padding: 28px 30px 21px; background: #111b1a; color: #fff; }
+      .mark { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 13px; color: #17201d; background: #cfff3d; font-size: 25px; font-weight: 900; transform: rotate(-2deg); }
+      .brand strong { display: block; font-size: 18px; }
+      .brand span { display: block; margin-top: 3px; color: #92a29d; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+      form { display: grid; gap: 18px; padding: 30px; }
+      h1 { margin: 0; font-size: 31px; letter-spacing: -.04em; }
+      p { margin: -10px 0 2px; color: #6f7e78; font-size: 14px; line-height: 1.5; }
+      label { display: grid; gap: 7px; color: #394741; font-size: 12px; font-weight: 800; }
+      input { min-height: 50px; width: 100%; padding: 0 14px; border: 1px solid #cbd6d1; border-radius: 10px; color: #17221e; background: #fbfcfb; font: inherit; outline: none; }
+      input:focus { border-color: #6f8b22; box-shadow: 0 0 0 3px rgba(207,255,61,.25); }
+      button { min-height: 52px; border: 0; border-radius: 10px; color: #14201d; background: #cfff3d; cursor: pointer; font: inherit; font-weight: 850; }
+      button:hover { background: #c4f636; }
+      button:disabled { cursor: wait; opacity: .65; }
+      #error { min-height: 20px; margin: -4px 0; color: #b43b2c; font-size: 13px; font-weight: 700; }
+      footer { padding: 0 30px 26px; color: #87938f; font-size: 11px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand"><div class="mark">Z</div><div><strong>ZDeutsch</strong><span>Prüfungsverwaltung</span></div></div>
+      <form id="login-form">
+        <h1>Admin-Anmeldung</h1>
+        <p>Melden Sie sich mit einem aktiven ZDeutsch-Administratorkonto an.</p>
+        <label>E-Mail-Adresse<input name="email" type="email" autocomplete="username" required autofocus /></label>
+        <label>Passwort<input name="password" type="password" autocomplete="current-password" required /></label>
+        <div id="error" role="alert" aria-live="polite"></div>
+        <button type="submit">Sicher anmelden</button>
+      </form>
+      <footer>Zugriff nur für autorisierte ZDeutsch-Administratoren</footer>
+    </main>
+    <script>
+      const form = document.querySelector("#login-form");
+      const errorBox = document.querySelector("#error");
+      const button = form.querySelector("button");
+      const requested = new URLSearchParams(location.search).get("next") || "/dashboard";
+      const nextPath = requested.startsWith("/dashboard") ? requested : "/dashboard";
+      fetch("/auth/session", { headers: { Accept: "application/json" } })
+        .then((response) => response.json())
+        .then((payload) => { if (payload?.data?.authenticated) location.replace(nextPath); })
+        .catch(() => {});
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        errorBox.textContent = "";
+        button.disabled = true;
+        try {
+          const data = new FormData(form);
+          const response = await fetch("/auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({ email: data.get("email"), password: data.get("password") })
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok) throw new Error(payload.message || "Anmeldung fehlgeschlagen.");
+          location.replace(nextPath);
+        } catch (error) {
+          errorBox.textContent = error.message;
+          button.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>

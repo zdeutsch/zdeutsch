@@ -32,6 +32,10 @@ export async function apiRequest(path, options = {}) {
   });
 
   const payload = await response.json().catch(() => null);
+  if (response.status === 401 && typeof window !== "undefined") {
+    const nextPath = `${window.location.pathname}${window.location.search}`;
+    window.location.replace(`/login?next=${encodeURIComponent(nextPath)}`);
+  }
   if (!response.ok || !payload?.ok) {
     throw new ApiError(
       payload?.message || `Request failed (${response.status})`,
@@ -77,6 +81,10 @@ export async function uploadBinaryRequest(path, file) {
     body: file
   });
   const payload = await response.json().catch(() => null);
+  if (response.status === 401 && typeof window !== "undefined") {
+    const nextPath = `${window.location.pathname}${window.location.search}`;
+    window.location.replace(`/login?next=${encodeURIComponent(nextPath)}`);
+  }
   if (!response.ok || !payload?.ok) {
     throw new ApiError(payload?.message || `Request failed (${response.status})`, response.status, payload?.details || null);
   }
