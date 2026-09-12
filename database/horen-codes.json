@@ -542,6 +542,598 @@
                           "correct": true
                         }
                       ]
+                    },
+                    {
+                      "id": "topic-1788977942087-1ijc",
+                      "title": "Kinder in der Schule",
+                      "tag": "Kinder in der Schule",
+                      "statements": [
+                        {
+                          "id": "topic-1788977942087-1ijc-s1",
+                          "number": 1,
+                          "text": "Für das Sprechen ist es unwichtig, ob ihre Kinder in der Schule gut sind.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788977942087-1ijc-s2",
+                          "number": 2,
+                          "text": "Der Sprecher findet es wichtig, dass Eltern immer für ihre Kinder da sind.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788977942087-1ijc-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin glaubt, dass sie mehr mit ihrer Tochter sprechen müsste.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788977942087-1ijc-s4",
+                          "number": 4,
+                          "text": "Es ist dem Sprecher wichtig, dass seine Kinder gesund leben",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788977942087-1ijc-s5",
+                          "number": 5,
+                          "text": "Der Sprecher möchte, dass sein Kind die eigenen Ideen realisieren kann.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788978138720-1mnf",
+                      "title": "Kinder in der Schule (Kinder / Stelle) (المعدل)",
+                      "tag": "Kinder in der Schule (Kinder / Stelle) (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788978138720-1mnf-s1",
+                          "number": 1,
+                          "text": "Für die Sprecherin steht der schulische Erfolg ihrer Kinder nicht an erster Stelle.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978138720-1mnf-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin ist immer für ihre Kinder da.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978138720-1mnf-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin glaubt, dass sie mehr mit ihrer Tochter sprechen müsste.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978138720-1mnf-s4",
+                          "number": 4,
+                          "text": "Der Sprecher achtet sehr auf die Ernährung seiner Kinder.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978138720-1mnf-s5",
+                          "number": 5,
+                          "text": "Der Sprecher möchte, dass sein Kind die eigenen Ideen realisieren kann.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788978463561-1qb7",
+                      "title": "Radwege (الأساسي)",
+                      "tag": "Radwege (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788978463561-1qb7-s1",
+                          "number": 1,
+                          "text": "Für den Sprecher haben Radwege Vorteile",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978463561-1qb7-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin möchte mehr Radwege.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978463561-1qb7-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin meint, dass Radwege unnötig sind.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978463561-1qb7-s4",
+                          "number": 4,
+                          "text": "Der Sprecher denkt, dass Radfahrer auf der Straße den Verkehr behindern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978463561-1qb7-s5",
+                          "number": 5,
+                          "text": "Für den Sprecher machen Radwege das Radfahren sicherer.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788978598906-1c25",
+                      "title": "Radwege (المعدل)",
+                      "tag": "Radwege (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788978598906-1c25-s1",
+                          "number": 1,
+                          "text": "Der Sprecher sieht in Radwegen klare Vorteile",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978598906-1c25-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin wünscht sich mehr Radwege in ihrer Stadt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978598906-1c25-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin hält Radwege für überflüssig.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978598906-1c25-s4",
+                          "number": 4,
+                          "text": "Der Sprecher ist der Meinung, dass Radfahrer auf der Straße den Verkehr behindern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978598906-1c25-s5",
+                          "number": 5,
+                          "text": "Der Sprecher findet, dass Radwege das Radfahren sicherer machen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788978900912-4wd",
+                      "title": "Fremdsprache (المعدل)",
+                      "tag": "Fremdsprache (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788978900912-4wd-s1",
+                          "number": 1,
+                          "text": "Die Sprecherin lehnt es ab, dass Kinder schon sehr früh eine Fremdsprache lernen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788978900912-4wd-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin ist überzeugt, dass frühes Fremdsprachenlernen für viele Kinder eher Nachteile bringt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978900912-4wd-s3",
+                          "number": 3,
+                          "text": "Der Sprecher bedauert, dass er im Kindergarten keine Fremdsprache lernen konnte.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978900912-4wd-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin findet, dass Fremdsprachen erst ab der Schulzeit eingeführt werden sollten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788978900912-4wd-s5",
+                          "number": 5,
+                          "text": "Der Sprecher spricht sich klar dagegen aus, Kindern schon früh eine Fremdsprache beizubringen.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788979138170-21j8",
+                      "title": "Filme",
+                      "tag": "Filme",
+                      "statements": [
+                        {
+                          "id": "topic-1788979138170-21j8-s1",
+                          "number": 1,
+                          "text": "Der Mann sieht sich am liebsten lustige Filme an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979138170-21j8-s2",
+                          "number": 2,
+                          "text": "Die Frau sieht sich am liebsten politische Sendungen an.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979138170-21j8-s3",
+                          "number": 3,
+                          "text": "Der Mann sieht gern Familienfilme.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979138170-21j8-s4",
+                          "number": 4,
+                          "text": "Das Kind sieht sich am liebsten spannende Krimis an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979138170-21j8-s5",
+                          "number": 5,
+                          "text": "Die Sprecherin sieht sich am liebsten Liebes- und Familienfilme an.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788979316324-wqd",
+                      "title": "Urlaub oft auf dem Land",
+                      "tag": "Urlaub oft auf dem Land",
+                      "statements": [
+                        {
+                          "id": "topic-1788979316324-wqd-s1",
+                          "number": 1,
+                          "text": "Die Sprecherin verbringt ihren Urlaub oft auf dem Land.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979316324-wqd-s2",
+                          "number": 2,
+                          "text": "Der Sprecher findet Stadturlaub in Wien interessanter als die Berge.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979316324-wqd-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin meint, dass sich ihre ganze Familie im Urlaub gut erholt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979316324-wqd-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin findet den Urlaub in Österreich langweilig.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979316324-wqd-s5",
+                          "number": 5,
+                          "text": "Die Sprecherin denkt, dass Österreich vor allem für ältere Menschen interessant ist.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788979527354-1k2w",
+                      "title": "Fleisch",
+                      "tag": "Fleisch",
+                      "statements": [
+                        {
+                          "id": "topic-1788979527354-1k2w-s1",
+                          "number": 1,
+                          "text": "Der Sprecher isst nicht mehr so viel Fleisch wie früher.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979527354-1k2w-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin ist überzeugt, dass die Lebensmittel in den Supermärkten kontrolliert werden",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979527354-1k2w-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin hat Angst vor Krankheiten, weil die Lebensmittel so schlecht sind.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979527354-1k2w-s4",
+                          "number": 4,
+                          "text": "Dem Sprecher gefällt die Atmosphäre auf dem Wochenmarkt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979527354-1k2w-s5",
+                          "number": 5,
+                          "text": "Der Sprecher findet, dass die meisten Menschen zu viel Geld für unwichtige Dinge ausgeben",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788979656744-1xwp",
+                      "title": "Meinung",
+                      "tag": "Meinung",
+                      "statements": [
+                        {
+                          "id": "topic-1788979656744-1xwp-s1",
+                          "number": 1,
+                          "text": "Der Sprecher würde lieber zu Hause bleiben und sich um sein Kind kümmern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979656744-1xwp-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin muss arbeiten, weil sonst das Geld nicht reicht.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979656744-1xwp-s3",
+                          "number": 3,
+                          "text": "Der Sprecher findet es nicht gut, wenn beide Eltern arbeiten müssen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979656744-1xwp-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin ist der Meinung, dass Kinder von der eigenen Mutter betreut werden sollten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979656744-1xwp-s5",
+                          "number": 5,
+                          "text": "Der Sprecher hat trotz Kindertagesstätte manchmal Probleme bei der Arbeit",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788979803440-1ymu",
+                      "title": "München",
+                      "tag": "München",
+                      "statements": [
+                        {
+                          "id": "topic-1788979803440-1ymu-s1",
+                          "number": 1,
+                          "text": "Der Zug um 18:16 Uhr fahrt direkt nach München.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979803440-1ymu-s2",
+                          "number": 2,
+                          "text": "Sie müssen Frau Meissner noch die Pläne für Ihr Wohnzimmer schicken.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979803440-1ymu-s3",
+                          "number": 3,
+                          "text": "Die Schnellbahn S7 hat den ganzen Tag über Verspätung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788979803440-1ymu-s4",
+                          "number": 4,
+                          "text": "Das Wetter in Füssen-Reutte ist zum Schifahren besser als in Garmisch.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788979803440-1ymu-s5",
+                          "number": 5,
+                          "text": "Den Kunden werden heute die Computer der Firma Hypersoft besonders günstig angeboten.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788980476292-10wr",
+                      "title": "Haushalt",
+                      "tag": "Haushalt",
+                      "statements": [
+                        {
+                          "id": "topic-1788980476292-10wr-s1",
+                          "number": 1,
+                          "text": "Die Sprecherin muss im Haushalt fast alles alleine machen",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980476292-10wr-s2",
+                          "number": 2,
+                          "text": "Der Sprecher wäscht das Geschirr und die Wäsche.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980476292-10wr-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin ist berufstätig und hat keine Zeit für die Hausarbeit.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980476292-10wr-s4",
+                          "number": 4,
+                          "text": "Der Sprecher teilt sich mit seiner Partnerin die Arbeit je nach Situation auf.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980476292-10wr-s5",
+                          "number": 5,
+                          "text": "Die Sprecherin ist froh, dass ihr Mann so viele Hausarbeiten übernimmt.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788980671111-102g",
+                      "title": "Einkäufe im Internet (المعدل)",
+                      "tag": "Einkäufe im Internet (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788980671111-102g-s1",
+                          "number": 1,
+                          "text": "Der Sprecher erledigt alle seine Einkäufe im Internet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980671111-102g-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin legt beim Einkaufen großen Wert auf persönlichen Kontakt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980671111-102g-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin findet zu Hause nicht genug Ruhe, um im Internet einzukaufen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980671111-102g-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin ist vom Einkaufen im Internet nicht überzeugt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980671111-102g-s5",
+                          "number": 5,
+                          "text": "Der Sprecher kauft seine Medikamente am liebsten in der nächsten Stadt.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788980818341-13ok",
+                      "title": "Bus zur Arbeit (Vera) (1 المعدل)",
+                      "tag": "Bus zur Arbeit (Vera) (1 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788980818341-13ok-s1",
+                          "number": 1,
+                          "text": "Die Sprecherin könnte sich vorstellen, mit dem Bus zur Arbeit zu fahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980818341-13ok-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin geht den ganzen Weg zur Arbeit zu Fuß.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980818341-13ok-s3",
+                          "number": 3,
+                          "text": "Der Sprecher fährt nie mit dem Auto zur Arbeit.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980818341-13ok-s4",
+                          "number": 4,
+                          "text": ".\nDer Sprecher benutzt für den Weg zur Arbeit zurzeit verschiedene Verkehrsmittel.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980818341-13ok-s5",
+                          "number": 5,
+                          "text": "Für die Sprecherin ist der Firmenbus die einzige Möglichkeit zur Arbeit zu kommen.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788980986873-rap",
+                      "title": "Bus zur Arbeit (2 المعدل)",
+                      "tag": "Bus zur Arbeit (2 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788980986873-rap-s1",
+                          "number": 1,
+                          "text": "Der Sprecher könnte sich vorstellen, mit dem Bus zur Arbeit zu fahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980986873-rap-s2",
+                          "number": 2,
+                          "text": "Die Sprecherin geht gern zu Fuß.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788980986873-rap-s3",
+                          "number": 3,
+                          "text": "Der Sprecher findet es in Ordnung, dass seine Frau immer das Auto hat.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980986873-rap-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin fährt jeden Tag mit ihrem Motorrad zur Arbeit.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788980986873-rap-s5",
+                          "number": 5,
+                          "text": "Die Sprecherin fährt immer mit dem Fahrrad zur Arbeit.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788981222783-1kld",
+                      "title": "Einzelkind (المعدل)",
+                      "tag": "Einzelkind (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788981222783-1kld-s1",
+                          "number": 1,
+                          "text": "Die Sprecherin muss sich oft um ihre Geschwister kümmern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981222783-1kld-s2",
+                          "number": 2,
+                          "text": "Der Sprecher hat heute ein gutes Verhältnis zu seinem Bruder.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981222783-1kld-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin wünscht sich, dass ihre Eltern mehr mit ihr unternehmen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981222783-1kld-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin wäre gerne Einzelkind.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981222783-1kld-s5",
+                          "number": 5,
+                          "text": "Die Sprecherin verbringt nicht gerne Zeit mit ihrem Bruder.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788981369993-cc9",
+                      "title": "Urlaub (المعدل)",
+                      "tag": "Urlaub (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788981369993-cc9-s1",
+                          "number": 1,
+                          "text": "Der Sprecher ist als Kind mit seiner Familie nie in Urlaub gefahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981369993-cc9-s2",
+                          "number": 2,
+                          "text": "Der Sprecher hatte als Kind andere Urlaubswünsche als seine Eltern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981369993-cc9-s3",
+                          "number": 3,
+                          "text": "Die Sprecherin fand die Fahrt in die Ferien immer aufregend.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981369993-cc9-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin hat immer mit ihren Eltern Urlaub gemacht.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981369993-cc9-s5",
+                          "number": 5,
+                          "text": "Der Sprecher hat den Urlaub mit den Eltern gemeinsam geplant.",
+                          "correct": true
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1357,6 +1949,1346 @@
                           "correct": true
                         }
                       ]
+                    },
+                    {
+                      "id": "topic-1788981748159-18eb",
+                      "title": "Herr Thurcherr (الأساسي)",
+                      "tag": "Herr Thurcherr (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788981748159-18eb-s1",
+                          "number": 1,
+                          "text": "Herr Thurcherr ist Chef in einem großen Reisebüro in Bern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s2",
+                          "number": 2,
+                          "text": "Jährlich wollen über 100 Personen eine Ausbildung in einem Reisebüro machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s3",
+                          "number": 3,
+                          "text": "Während der Ausbildung kann man noch keine Studienreisen machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s4",
+                          "number": 4,
+                          "text": "Herr Thurcherr meint, die Arbeit in einem Reisebüro sei anstrengend.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s5",
+                          "number": 5,
+                          "text": "In einem Reisebüro muss man oft Überstunden machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s6",
+                          "number": 6,
+                          "text": "In einem Reisebüro verdient man gut.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s7",
+                          "number": 7,
+                          "text": "Auf Studienreisen besichtigt man viele Hotels.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s8",
+                          "number": 8,
+                          "text": "Im schriftlichen Teil des Tests wird vor allem politisches Wissen geprüft.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s9",
+                          "number": 9,
+                          "text": "Jährlich können 50 Jugendliche an einem Eignungstest teilnehmen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788981748159-18eb-s10",
+                          "number": 10,
+                          "text": "Das Reisebüro muss für die Fehler der Mitarbeitenden bezahlen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788982015281-qd7",
+                      "title": "Herr Thurcherr(المعدل)",
+                      "tag": "Herr Thurcherr(المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788982015281-qd7-s1",
+                          "number": 1,
+                          "text": "Herr Thurcherr ist Chef eines großen Reisebüros in Bern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s2",
+                          "number": 2,
+                          "text": "Jedes Jahr bewerben sich über 100 Personen um ein Praktikum im Reisebüro.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s3",
+                          "number": 3,
+                          "text": "Praktikanten können während ihrer Ausbildung an Studienreisen teilnehmen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s4",
+                          "number": 4,
+                          "text": "Herr Thurcherr empfindet die Arbeit in einem Reisebüro als stressig.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s5",
+                          "number": 5,
+                          "text": "Reisebüromitarbeiter müssen oft länger arbeiten als geplant.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s6",
+                          "number": 6,
+                          "text": "Dieser Beruf bietet besonders gute Bezahlung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s7",
+                          "number": 7,
+                          "text": "Studienreisen beinhalten Besuche in verschiedenen Hotels.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s8",
+                          "number": 8,
+                          "text": "Der schriftliche Teil des Eignungstests prüft vor allem politisches Wissen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s9",
+                          "number": 9,
+                          "text": "Jedes Jahr werden genau 50 junge Menschen zum Eignungstest zugelassen",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982015281-qd7-s10",
+                          "number": 10,
+                          "text": "Das Reisebüro muss seine Mitarbeiter für Fehler entschädigen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788982302778-124p",
+                      "title": "Frau Reiter / Lokführerin (المعدل)",
+                      "tag": "Frau Reiter / Lokführerin (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788982302778-124p-s1",
+                          "number": 1,
+                          "text": "Frau Reiter ist die einzige Lokführerin in Deutschland.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s2",
+                          "number": 2,
+                          "text": "Sie wollte schon mit 10 Jahren Lokführerin werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s3",
+                          "number": 3,
+                          "text": "Nach der Schule absolvierte Frau Reiter eine Ausbildung zur Elektronikerin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s4",
+                          "number": 4,
+                          "text": "Nach ihrer Ausbildung arbeitete Frau Reiter als Kfz-Mechanikerin.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s5",
+                          "number": 5,
+                          "text": "Frau Reiters Eltern waren mit der Berufswahl ihrer Tochter einverstanden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s6",
+                          "number": 6,
+                          "text": "Frau Reiter muss gelegentlich Reparaturen durchführen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s7",
+                          "number": 7,
+                          "text": "Frau Reiter arbeitet gerne im Nachtdienst.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s8",
+                          "number": 8,
+                          "text": "Frau Reiter ist oft müde von der Arbeit",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s9",
+                          "number": 9,
+                          "text": "Frau Reiters Ehemann hat normale Arbeitszeiten",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982302778-124p-s10",
+                          "number": 10,
+                          "text": "Frau Reiter möchte später einmal Lokführer ausbilden.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788982633296-21c0",
+                      "title": "Frau Schäffer (الأساسي)",
+                      "tag": "Frau Schäffer (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788982633296-21c0-s1",
+                          "number": 1,
+                          "text": "Frau Schäffer hat von dem Verein kurz nach der Gründung zum ersten Mal gehört.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s2",
+                          "number": 2,
+                          "text": "Die Mitglieder des Vereins kommen aus ganz Deutschland.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s3",
+                          "number": 3,
+                          "text": "Die Mitglieder des Vereins wissen über Hausarbeit gut Bescheid.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s4",
+                          "number": 4,
+                          "text": "Im Verein werden oft Feste gefeiert",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s5",
+                          "number": 5,
+                          "text": "Der Verein bietet auch die Organisation von Festen an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s6",
+                          "number": 6,
+                          "text": "Der Verein vermittelt Senioren, die tagsüber Kinder betreuen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s7",
+                          "number": 7,
+                          "text": "Laut Frau Schäfer vertrauen viele Familien den Mitarbeiterinnen des Vereins mehr als anderen",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s8",
+                          "number": 8,
+                          "text": "Vereinsmitglied kann nur werden, wer einen Beruf gelernt hat.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s9",
+                          "number": 9,
+                          "text": "Die Mitarbeiterinnen bekommen für ihre Arbeiten 13 Euro pro Stunde.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982633296-21c0-s10",
+                          "number": 10,
+                          "text": "Kunden mit wenig Geld zahlen für den Service nichts.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788982946871-6l5",
+                      "title": "Frau Schäffer (المعدل)",
+                      "tag": "Frau Schäffer (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788982946871-6l5-s1",
+                          "number": 1,
+                          "text": "Frau Schäffer hat von dem Verein kurz nach der Gründung zum ersten Mal gehört.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s2",
+                          "number": 2,
+                          "text": "Die Mitglieder des Vereins kommen aus ganz Deutschland.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s3",
+                          "number": 3,
+                          "text": "Die Mitglieder des Vereins wissen über Hausarbeit gut Bescheid.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s4",
+                          "number": 4,
+                          "text": "Im Verein werden oft Feste gefeiert.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s5",
+                          "number": 5,
+                          "text": "Der Verein bietet auch die Organisation von Festen an",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s6",
+                          "number": 6,
+                          "text": "Der Verein kümmert sich auch um Kinder und alte Menschen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s7",
+                          "number": 7,
+                          "text": "Laut Frau Schäfer vertrauen viele Familien den Mitarbeiterinnen des Vereins mehr als anderen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s8",
+                          "number": 8,
+                          "text": "Vereinsmitglied kann nur werden, wer einen Beruf gelernt hat.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s9",
+                          "number": 9,
+                          "text": "Die Mitarbeiterinnen bekommen für ihre Arbeiten 10 Euro pro Stunde.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788982946871-6l5-s10",
+                          "number": 10,
+                          "text": "Kunden mit wenig Geld zahlen für den Service nichts.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788983294781-1y4w",
+                      "title": "Frau Wallner (الأساسي)",
+                      "tag": "Frau Wallner (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788983294781-1y4w-s1",
+                          "number": 1,
+                          "text": "Frau Wallner-Calletti lebt seit fünf Jahren in Italien",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s2",
+                          "number": 2,
+                          "text": "Sie wollen zuerst nur ein Jahr an einem italienischen Gymnasium unterrichten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s3",
+                          "number": 3,
+                          "text": "Sie hat ihren Mann bei einem Italienischkurs kennengelernt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s4",
+                          "number": 4,
+                          "text": "Sie eröffnete ein Wiener Restaurant in Rom.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s5",
+                          "number": 5,
+                          "text": "Sie hatte am Anfang große Probleme, da sie das Kochen erst lernen musste.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s6",
+                          "number": 6,
+                          "text": "Frau Wallner-Calletti besitzt Inzwischen auch ein italienisches Weinlokal.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s7",
+                          "number": 7,
+                          "text": "Sie hatte immer große Schwierigkeiten mit den Behörden",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s8",
+                          "number": 8,
+                          "text": "Ihre Tochter lernt die deutsche und die italienische Sprache.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s9",
+                          "number": 9,
+                          "text": "Sie möchte bald eine Filiale des Wiener Café Central in Rom eröffnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983294781-1y4w-s10",
+                          "number": 10,
+                          "text": "Sie glaubt, dass man überall Erfolg haben kann, wenn man sich bemüht.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788983522768-17nv",
+                      "title": "Frau Wallner (المعدل)",
+                      "tag": "Frau Wallner (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788983522768-17nv-s1",
+                          "number": 1,
+                          "text": "Frau Wallner-Calletti ist vor fünf Jahren nach Italien umgezogen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s2",
+                          "number": 2,
+                          "text": "Sie ist aus beruflichen Gründen länger als geplant in Italien geblieben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s3",
+                          "number": 3,
+                          "text": "Sie hat ihren Mann bei einem Italienischkurs kennengelernt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s4",
+                          "number": 4,
+                          "text": "Sie eröffnete ein Wiener Restaurant in Rom.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s5",
+                          "number": 5,
+                          "text": "Die Eltern von Frau Wallner-Calletti sind in der Gastronomie tätig.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s6",
+                          "number": 6,
+                          "text": "Frau Wallner-Calletti besitzt inzwischen auch ein italienisches Weinlokal.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s7",
+                          "number": 7,
+                          "text": "Sie hatte immer große Schwierigkeiten mit den Behörden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s8",
+                          "number": 8,
+                          "text": "Sie hat bisher nicht viele italienische Freunde gefunden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s9",
+                          "number": 9,
+                          "text": "Sie möchte bald eine Filiale des Wiener Café Central in Rom eröffnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983522768-17nv-s10",
+                          "number": 10,
+                          "text": "Sie empfiehlt jungen Menschen, nicht ins Ausland zu gehen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788983864732-1t7c",
+                      "title": "Nordsee / Klassenfahrt (المعدل)",
+                      "tag": "Nordsee / Klassenfahrt (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788983864732-1t7c-s1",
+                          "number": 1,
+                          "text": "Die Lehrerin fährt mit ihrer Klasse an die Nordsee.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s2",
+                          "number": 2,
+                          "text": "Herr Kühne hat den Brief der Lehrerin nicht erhalten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s3",
+                          "number": 3,
+                          "text": "Die Klassenfahrt beginnt an einem Samstag.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s4",
+                          "number": 4,
+                          "text": "Herrn Kunes Sohn Martin wird bei Busfahrten oft schlecht.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s5",
+                          "number": 5,
+                          "text": "Die Fahrt mit dem Schiff dauert fünf bis sechs Stunden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s6",
+                          "number": 6,
+                          "text": "Das Haus, in dem die Schülerinnen und Schüler wohnen, gehört zu einem Hotel.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s7",
+                          "number": 7,
+                          "text": "Die Klassenfahrt wird von einer Lehrerin und einem Lehrer geleitet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s8",
+                          "number": 8,
+                          "text": "Die Lehrerin rät dazu, höchstens etwa 50 Euro Taschengeld mitzunehmen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s9",
+                          "number": 9,
+                          "text": "Katerina hat die Wahl, entweder mitzufahren oder vorübergehend in eine andere Klasse zu gehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788983864732-1t7c-s10",
+                          "number": 10,
+                          "text": "Während der Klassenfahrt ist Rauchen nur mit Erlaubnis der Eltern erlaubt.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788993419545-2g",
+                      "title": "Touristen / Spielpark (1 المعدل)",
+                      "tag": "Touristen / Spielpark (1 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788993419545-2g-s1",
+                          "number": 1,
+                          "text": "Torgau ist mit seinen historischen Bauten eine Touristenattraktion.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s2",
+                          "number": 2,
+                          "text": "Den Spielpark Hartenfels gibt es schon seit vielen Jahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s3",
+                          "number": 3,
+                          "text": "Außer dem Spielpark gibt es in der Umgebung viele andere Freizeitmöglichkeiten für die Kinder.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s4",
+                          "number": 4,
+                          "text": "Im Spielpark gibt es nur Geräte, die man auf anderen Spielplätzen nicht findet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s5",
+                          "number": 5,
+                          "text": "Wenn die Kinder bauen wollen, müssen sie eigenes Werkzeug mitbringen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s6",
+                          "number": 6,
+                          "text": "Das Spielen am Bach kann für die Kinder gefährlich werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s7",
+                          "number": 7,
+                          "text": "Beide Elternteile müssen auf die Kinder aufpassen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s8",
+                          "number": 8,
+                          "text": "Nach 19 Uhr gibt es keine Kinderbetreuung mehr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s9",
+                          "number": 9,
+                          "text": "Der Eintritt in den Spielpark ist frei.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993419545-2g-s10",
+                          "number": 10,
+                          "text": "Es gibt spezielle Schlossführungen für Kinder.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788993720478-kc4",
+                      "title": "Touristen / Spielpark (2 المعدل)",
+                      "tag": "Touristen / Spielpark (2 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788993720478-kc4-s1",
+                          "number": 1,
+                          "text": "Viele Touristen besuchen Kronstadt wegen der alten Stadtarchitektur.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s2",
+                          "number": 2,
+                          "text": "Der Mitmachpark Kronstein besteht schon seit mehreren Jahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s3",
+                          "number": 3,
+                          "text": "In Kronstadt gibt es viele andere Angebote für Kinder in den Ferien.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s4",
+                          "number": 4,
+                          "text": "Im Mitmachpark dürfen die Kinder Dinge tun, die sie zu Hause oft nicht dürfen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s5",
+                          "number": 5,
+                          "text": "Die Kinder können im Park auch mit Werkzeugen arbeiten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s6",
+                          "number": 6,
+                          "text": "Der Teich im Park ist für Kinder gefährlich und nicht zugänglich.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s7",
+                          "number": 7,
+                          "text": "Eltern müssen ihre Kinder im Park jederzeit begleiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s8",
+                          "number": 8,
+                          "text": "Auch jüngere Kinder können im Park allein bleiben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s9",
+                          "number": 9,
+                          "text": "Der Eintritt in den Mitmachpark ist momentan kostenpflichtig.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993720478-kc4-s10",
+                          "number": 10,
+                          "text": "Während des Parkbesuchs können Eltern die Stadt genießen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788993914793-mzs",
+                      "title": "Praktikum",
+                      "tag": "Praktikum",
+                      "statements": [
+                        {
+                          "id": "topic-1788993914793-mzs-s1",
+                          "number": 1,
+                          "text": "Mit einem Praktikum können sich Jugendliche auf das Studium vorbereiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s2",
+                          "number": 2,
+                          "text": "Herrn Mahlers Firma bietet jungen Leuten in verschiedenen Abteilungen ein Praktikum an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s3",
+                          "number": 3,
+                          "text": "Herrn Mahlers Firma stellt alle Praktikanten nach der Ausbildung ein.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s4",
+                          "number": 4,
+                          "text": "Bei einer Bewerbung ist das Schulzeugnis für Herrn Mahler das Wichtigste.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s5",
+                          "number": 5,
+                          "text": "Praktikanten sollten selbst erkennen, wo man sie brauchen könnte.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s6",
+                          "number": 6,
+                          "text": "Herr Mahler meint, dass die Ideen der Praktikanten bei der Arbeit stören.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s7",
+                          "number": 7,
+                          "text": "Herr Mahler legt großen Wert auf Teamarbeit.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s8",
+                          "number": 8,
+                          "text": "Nach Frau Bachs Meinung verhalten sich Praktikanten im Betrieb oft wie in der Schule oder an der Universität.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s9",
+                          "number": 9,
+                          "text": "Für den Praktikanten ist es gut, wenn er Interesse an der Arbeit zeigt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788993914793-mzs-s10",
+                          "number": 10,
+                          "text": "Herr Mahler empfiehlt den Praktikanten, das Team mit Fleiß und guter Laune zu unterstützen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788994125936-1jzt",
+                      "title": "Herr Bachinger (الأساسي)",
+                      "tag": "Herr Bachinger (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788994125936-1jzt-s1",
+                          "number": 1,
+                          "text": "Herr Bachinger hat ein Buch über Väter geschrieben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s2",
+                          "number": 2,
+                          "text": "Herr Bachinger hat vor zehn Monaten geheiratet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s3",
+                          "number": 3,
+                          "text": "Herr Bachinger meint, dass die Zeitungen mehr über moderne Familien berichten sollen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s4",
+                          "number": 4,
+                          "text": "Herr Bachinger konnte seinen Chef sofort überzeugen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s5",
+                          "number": 5,
+                          "text": "Hausarbeit war für Herrn Bachinger nichts Neues.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s6",
+                          "number": 6,
+                          "text": "Seine Kollegen haben ihn anfangs sehr vermisst.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s7",
+                          "number": 7,
+                          "text": "Herr Bachinger hat gegen viele Vorurteile kämpfen müssen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s8",
+                          "number": 8,
+                          "text": "Herr Bachinger hat das Buch für andere Väter geschrieben.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s9",
+                          "number": 9,
+                          "text": "Er will erst wieder arbeiten gehen, wenn sein Sohn in die Schule kommt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994125936-1jzt-s10",
+                          "number": 10,
+                          "text": "Herr Bachinger meint, dass Teilzeitarbeit für ihn das Beste sei.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788994404968-lv1",
+                      "title": "Herr Bachinger (المعدل)",
+                      "tag": "Herr Bachinger (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788994404968-lv1-s1",
+                          "number": 1,
+                          "text": "Herr Baschinger hat ein Buch über Väter geschrieben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s2",
+                          "number": 2,
+                          "text": "Herr Baschinger hat vor etwa zehn Monaten geheiratet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s3",
+                          "number": 3,
+                          "text": "Herr Baschinger ist der Meinung, dass Zeitungen häufiger über moderne Familien berichten sollten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s4",
+                          "number": 4,
+                          "text": "Herr Baschinger konnte seinen Chef ohne große Diskussionen überzeugen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s5",
+                          "number": 5,
+                          "text": "Hausarbeit gehörte bereits vor der Geburt seines Sohnes zu Herrn Baschingers Alltag.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s6",
+                          "number": 6,
+                          "text": "Seine Kollegen haben seine Abwesenheit besonders stark gespürt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s7",
+                          "number": 7,
+                          "text": "Herr Baschinger musste sich mit vielen Vorurteilen auseinandersetzen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s8",
+                          "number": 8,
+                          "text": "Herr Baschinger wollte mit seinem Buch vor allem andere Väter erreichen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s9",
+                          "number": 9,
+                          "text": "Herr Baschinger plant, erst wieder zu arbeiten, wenn sein Sohn in die Schule kommt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994404968-lv1-s10",
+                          "number": 10,
+                          "text": "Teilzeitarbeit ist derzeit die beste Lösung für Herrn Baschinger.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788994588821-148j",
+                      "title": "Kinder und Computer",
+                      "tag": "Kinder und Computer",
+                      "statements": [
+                        {
+                          "id": "topic-1788994588821-148j-s1",
+                          "number": 1,
+                          "text": "Die Sendung heißt „Kinder und Computer“.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s2",
+                          "number": 2,
+                          "text": "Herr Russo findet es gut, dass Kinder Interesse an Neuem haben.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s3",
+                          "number": 3,
+                          "text": "Früher hielt man das Lesen für gefährlich.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s4",
+                          "number": 4,
+                          "text": "Eltern kennen das Verhalten ihrer Kinder aus ihrer eigenen Jugend.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s5",
+                          "number": 5,
+                          "text": "Eltern sollen Kindern Computerspiele verbieten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s6",
+                          "number": 6,
+                          "text": "Für viele Eltern sind die Neuen Medien nach wie vor unheimlich.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s7",
+                          "number": 7,
+                          "text": "Erst ab 19 Uhr sind elektronische Spielsachen bei Familie Russo erlaubt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s8",
+                          "number": 8,
+                          "text": "Der Experte hält nichts von Chats für Kinder.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s9",
+                          "number": 9,
+                          "text": "Herr Russo empfiehlt, dass Kinder mehr Bücher lesen sollten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788994588821-148j-s10",
+                          "number": 10,
+                          "text": "In der kommenden Sendung geht es um Ernährung.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788995314441-3tn",
+                      "title": "Frau Wenger (المعدل)",
+                      "tag": "Frau Wenger (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788995314441-3tn-s1",
+                          "number": 1,
+                          "text": "Frau Wenger träumte schon immer davon, Feuerwehrfrau zu werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s2",
+                          "number": 2,
+                          "text": "Frau Wenger und ihr Freund haben jetzt ein gemeinsames Hobby.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s3",
+                          "number": 3,
+                          "text": "Frau Wenger hat bereits einer Freundin geholfen, deren Wohnung in Flammen stand.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s4",
+                          "number": 4,
+                          "text": "Probleme mit der Ausrüstung werden im Team gelöst.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s5",
+                          "number": 5,
+                          "text": "Die Ausbildung der Feuerwehrleute war sehr intensiv.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s6",
+                          "number": 6,
+                          "text": "Feuerwehruniformen passen oft nur Männern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s7",
+                          "number": 7,
+                          "text": "Frau Wenger ist jederzeit bereit, zu einem Notfall auszurücken.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s8",
+                          "number": 8,
+                          "text": "Als Feuerwehrfrau hat Frau Wenger viele Unfälle miterlebt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s9",
+                          "number": 9,
+                          "text": "Frau Wenger wünscht sich, anders behandelt zu werden als ihre männlichen Kollegen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995314441-3tn-s10",
+                          "number": 10,
+                          "text": "Interessierte können sich gerne an Frau Wenger wenden.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788995508797-132n",
+                      "title": "Deutschkurs (المعدل)",
+                      "tag": "Deutschkurs (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788995508797-132n-s1",
+                          "number": 1,
+                          "text": "Der Verein UKI hilft ausschließlich Menschen, die neu nach Österreich gekommen sind.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s2",
+                          "number": 2,
+                          "text": "Die Angebote des Vereins richten sich besonders an Führungskräfte aus dem Ausland.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s3",
+                          "number": 3,
+                          "text": "Die Abendkurse für Berufstätige dauern neun Monate.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s4",
+                          "number": 4,
+                          "text": "Es gibt einen Deutschkurs für Jugendliche, die eine Schule in Österreich besuchen möchten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s5",
+                          "number": 5,
+                          "text": "Der Verein bietet auch Kurse an, die keinen klassischen Deutschunterricht darstellen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s6",
+                          "number": 6,
+                          "text": "Die Deutschlehrkräfte übernehmen zusätzlich soziale Aufgaben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s7",
+                          "number": 7,
+                          "text": "Sozialarbeiter helfen bei Kontakten mit Behörden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s8",
+                          "number": 8,
+                          "text": "Im Unterricht werden Bewerbungen gemeinsam vorbereitet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s9",
+                          "number": 9,
+                          "text": "Frauen und Kinder nehmen zusammen an einem Deutschkurs teil.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995508797-132n-s10",
+                          "number": 10,
+                          "text": "Neue gesetzliche Regelungen erschweren aktuell die Arbeit des Vereins.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788995690491-1oee",
+                      "title": "Filmbühne (المعدل)",
+                      "tag": "Filmbühne (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788995690491-1oee-s1",
+                          "number": 1,
+                          "text": "Das Kino Freie Filmbühne befindet sich iin Burgoberdorf.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s2",
+                          "number": 2,
+                          "text": "Die Freie Filmbühne wird geschlossen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s3",
+                          "number": 3,
+                          "text": "In diesem Jahr hat die Freie Filmbühne zum ersten Mal eine offizielle Auszeichnung erhalten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s4",
+                          "number": 4,
+                          "text": "Das Gebäude, in dem die Freie Filmbühne heute ist, wurde früher für den Schulunterricht genutzt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s5",
+                          "number": 5,
+                          "text": "In unmittelbarer Nähe des Kinos gibt es eine Möglichkeit, etwas zu trinken.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s6",
+                          "number": 6,
+                          "text": "An der Stelle der heutigen Freien Filmbühne sind neue Wohnungen und ein Freizeitangebot geplant.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s7",
+                          "number": 7,
+                          "text": "Es wird wahrscheinlich zwei Jahre dauern, bis die neuen Gebäude fertig sind.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s8",
+                          "number": 8,
+                          "text": "Heute interessieren sich nicht mehr so viele Menschen für die Freie Filmbühne wie zu Beginn.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s9",
+                          "number": 9,
+                          "text": "Frau Imbach möchte, dass die Freie Filmbühne umzieht.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788995690491-1oee-s10",
+                          "number": 10,
+                          "text": "Bis die Freie Filmbühne schließt, werden keine Filme mehr gezeigt.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788996122370-sf4",
+                      "title": "Das Jugendzentrum",
+                      "tag": "Das Jugendzentrum",
+                      "statements": [
+                        {
+                          "id": "topic-1788996122370-sf4-s1",
+                          "number": 1,
+                          "text": "Das Jugendzentrum existiert seit 5 Monaten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s2",
+                          "number": 2,
+                          "text": "Das Jugendzentrum wurde geschlossen, weil sich die Nachbarn aufregten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s3",
+                          "number": 3,
+                          "text": "herr Konrad interessiert sich für Jugendliche und ihr Leben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s4",
+                          "number": 4,
+                          "text": "Die Gemeinde wollte das Jugendzentrum auf keinen Fall wieder eröffnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s5",
+                          "number": 5,
+                          "text": "Die Gemeinde war bereit, herrn Konrad Geld zu geben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s6",
+                          "number": 6,
+                          "text": "Früher gab es ein gutes Freizeitprogramm.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s7",
+                          "number": 7,
+                          "text": "Die Jugendlichen können im Jugendzentrum auch fotografieren lernen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s8",
+                          "number": 8,
+                          "text": "Das Wichtigste für Jugendliche ist, dass man sich für sie und ihre Probleme interessiert.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s9",
+                          "number": 9,
+                          "text": "Leider helfen Eltern im Jugendzentrum niemals mit.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996122370-sf4-s10",
+                          "number": 10,
+                          "text": "herr Konrad glaubt, dass alles gut klappen wird.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788996542167-mkl",
+                      "title": "Herr Schütz (المعدل)",
+                      "tag": "Herr Schütz (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788996542167-mkl-s1",
+                          "number": 1,
+                          "text": "Herr Schütz übt seinen Beruf erst seit kurzer Zeit aus.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s2",
+                          "number": 2,
+                          "text": "In der Kleinstadt hatte Herr Schütz keine Geschäftsleute als Kunden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s3",
+                          "number": 3,
+                          "text": "Herr Schütz hat sich schon einmal in einen Fahrgast verliebt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s4",
+                          "number": 4,
+                          "text": "Die Fahrgäste erzählen viel, wenn sie den Taxifahrer schon länger kennen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s5",
+                          "number": 5,
+                          "text": "Herr Schütz unterhält sich mit weiblichen Fahrgästen nicht über persönliche Dinge.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s6",
+                          "number": 6,
+                          "text": "Herr Schütz bekommt von den Fahrgästen manchmal auch einen Tipp.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s7",
+                          "number": 7,
+                          "text": "In der Freizeit steht Sport für Herr Schütz an erster Stelle.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s8",
+                          "number": 8,
+                          "text": "Herr Schütz geht vor der Arbeit regelmäßig schwimmen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s9",
+                          "number": 9,
+                          "text": "Herr Schütz macht nur noch selten Nachtschichten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996542167-mkl-s10",
+                          "number": 10,
+                          "text": "Herr Schütz meint, dass jüngere Kollegen bei der Nachtarbeit weniger Angst haben.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788996741573-anb",
+                      "title": "Sportverein",
+                      "tag": "Sportverein",
+                      "statements": [
+                        {
+                          "id": "topic-1788996741573-anb-s1",
+                          "number": 1,
+                          "text": "Der Sportverein plant eine große Feier.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s2",
+                          "number": 2,
+                          "text": "Der Journalist unterhält sich mit einer Vertreterin des Sportvereins.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s3",
+                          "number": 3,
+                          "text": "Viele Papiere aus den Anfängen des Vereins sind im Krieg verloren gegangen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s4",
+                          "number": 4,
+                          "text": "Der Verein veröffentlicht jedes Jahr eine Festzeitung",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s5",
+                          "number": 5,
+                          "text": "Der Verein hatte von Anfang an auch Frauen als Mitglieder.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s6",
+                          "number": 6,
+                          "text": "Heute gibt es im Verein mehr Frauen als Männer.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s7",
+                          "number": 7,
+                          "text": "Im Verein kann man Sport im Freien und in der Halle treiben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s8",
+                          "number": 8,
+                          "text": "Die Mitglieder müssen die Kosten für ihren Verein alleine tragen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s9",
+                          "number": 9,
+                          "text": "Der Sportverein bietet auch Schwimmkurse an.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788996741573-anb-s10",
+                          "number": 10,
+                          "text": "Einige Leute, die im Verein ausgebildet wurden, arbeiten dort heute als Lehrer.",
+                          "correct": true
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1810,6 +3742,561 @@
                           "number": 5,
                           "text": "Der Zug um 18:16 Uhr fahrt direkt nach Münschen.",
                           "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788998559482-1dvb",
+                      "title": "Regensburg / Ingolstadt (المعدل)",
+                      "tag": "Regensburg / Ingolstadt (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788998559482-1dvb-s1",
+                          "number": 1,
+                          "text": "Sie müssen in Ingolstadt die Regionalbahn nach Regensburg nehmen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998559482-1dvb-s2",
+                          "number": 2,
+                          "text": "Clara kann die Theaterkarten erst um zehn vor acht abholen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998559482-1dvb-s3",
+                          "number": 3,
+                          "text": "Im Schwarzwald kann es morgen schneien.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788998559482-1dvb-s4",
+                          "number": 4,
+                          "text": "Der neue Termin für den Liederabend steht schon fest.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788998559482-1dvb-s5",
+                          "number": 5,
+                          "text": "Im Untergeschoss gibt es Winterkleidung zum halben Preis.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788998698920-12aj",
+                      "title": "Mannheim (1 المعدل)",
+                      "tag": "Mannheim (1 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788998698920-12aj-s1",
+                          "number": 1,
+                          "text": "Der Zug nach Mannheim fährt um 13:14 Uhr ab.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788998698920-12aj-s2",
+                          "number": 2,
+                          "text": "Dr. Hoffmann ist im Urlaub.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998698920-12aj-s3",
+                          "number": 3,
+                          "text": "Sie können den Film „Das Leben ist schön“ schon um 18:15 Uhr im Central sehen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998698920-12aj-s4",
+                          "number": 4,
+                          "text": "Heute Abend beginnt es zu schneien.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998698920-12aj-s5",
+                          "number": 5,
+                          "text": "Katrin hätte am 20. Dezember Zeit.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788998788517-13iy",
+                      "title": "Mannheim (2 المعدل)",
+                      "tag": "Mannheim (2 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788998788517-13iy-s1",
+                          "number": 1,
+                          "text": "Der Zug nach Hamburg verspätet sich um 20 Minuten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788998788517-13iy-s2",
+                          "number": 2,
+                          "text": "Dr. Kaiser ist unter der Nummer 957 30 75 zu erreichen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998788517-13iy-s3",
+                          "number": 3,
+                          "text": "Sie können den Film „Das Leben ist schön“ um 19:30 Uhr im Capitol sehen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998788517-13iy-s4",
+                          "number": 4,
+                          "text": "Heute Abend beginnt es zu schneien.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998788517-13iy-s5",
+                          "number": 5,
+                          "text": "Kathrin sagt das Treffen am 23. ab.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788998896904-1043",
+                      "title": "Füssen (المعدل)",
+                      "tag": "Füssen (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788998896904-1043-s1",
+                          "number": 1,
+                          "text": "Die nächste Bahn nach Füssen fährt um 10:56 Uhr ab.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788998896904-1043-s2",
+                          "number": 2,
+                          "text": "Der Parkplatz ist in der Fortunastraße.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998896904-1043-s3",
+                          "number": 3,
+                          "text": "Im City-Kino werden alte Filme gezeigt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998896904-1043-s4",
+                          "number": 4,
+                          "text": "Das Zugteam bringt Ihnen Südtiroler Käsespezialitäten an Ihren Platz.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788998896904-1043-s5",
+                          "number": 5,
+                          "text": "Die Frau hat um 15 Uhr einen Arzttermin.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999002170-vch",
+                      "title": "Musik und Speisen",
+                      "tag": "Musik und Speisen",
+                      "statements": [
+                        {
+                          "id": "topic-1788999002170-vch-s1",
+                          "number": 1,
+                          "text": "Man kann z.B. Musik und Speisen aus verschiedenen Ländern kennenlernen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999002170-vch-s2",
+                          "number": 2,
+                          "text": "Sie können das Buch schon heute abholen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999002170-vch-s3",
+                          "number": 3,
+                          "text": "Rauchen darf man nur in den U- Bahn- Stationen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999002170-vch-s4",
+                          "number": 4,
+                          "text": "Die Flughafengebühren muss man extra bezahlen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999002170-vch-s5",
+                          "number": 5,
+                          "text": "Die neue Ausstellung kann man ab nächster Woche sehen.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999113410-1lr4",
+                      "title": "Prag (المعدل)",
+                      "tag": "Prag (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788999113410-1lr4-s1",
+                          "number": 1,
+                          "text": "Ihr Flug nach Prag ist nicht pünktlich.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999113410-1lr4-s2",
+                          "number": 2,
+                          "text": "Im Speisewagen kann man ins Internet gehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999113410-1lr4-s3",
+                          "number": 3,
+                          "text": "Montags bis freitags ab 8:00 Uhr kann man sich persönlich beraten lassen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999113410-1lr4-s4",
+                          "number": 4,
+                          "text": "Das Hörspiel „Katzen gehen in die Nacht“ wird morgen um 20:30 Uhr gesendet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999113410-1lr4-s5",
+                          "number": 5,
+                          "text": "Das Flugzeug landet mit Verspätung in Dortmund.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999208443-au6",
+                      "title": "Nebels",
+                      "tag": "Nebels",
+                      "statements": [
+                        {
+                          "id": "topic-1788999208443-au6-s1",
+                          "number": 1,
+                          "text": "Wegen des Nebels sollte man heute nicht nach München fahren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999208443-au6-s2",
+                          "number": 2,
+                          "text": "In der Buchabteilung ist ein berühmter Autor zu Gast.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999208443-au6-s3",
+                          "number": 3,
+                          "text": "Der Zug nach Wein fährt heute von einem anderen Bahnsteig ab.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999208443-au6-s4",
+                          "number": 4,
+                          "text": "Die Firma ist mit der Straßenbahn in Richtung Königsplatz zu erreichen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999208443-au6-s5",
+                          "number": 5,
+                          "text": "Ab nächsten Montag kann man wieder einen Termin vereinbaren.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999312734-19va",
+                      "title": "Frau Meissner",
+                      "tag": "Frau Meissner",
+                      "statements": [
+                        {
+                          "id": "topic-1788999312734-19va-s1",
+                          "number": 1,
+                          "text": "Sie müssen Frau Meissner noch die Pläne für Ihr Wohnzimmer schicken.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999312734-19va-s2",
+                          "number": 2,
+                          "text": "Der Zug um 18:16 Uhr fährt direkt nach München.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999312734-19va-s3",
+                          "number": 3,
+                          "text": "Die Schnellbahn S7 hat den ganzen Tag über Verspätung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999312734-19va-s4",
+                          "number": 4,
+                          "text": "Das Wetter in Füssen/Reutte ist zum Skifahren besser als in Garmisch.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999312734-19va-s5",
+                          "number": 5,
+                          "text": "Den Kunden werden heute die Computer der Firma Hypersoft besonders günstig angeboten.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999407367-bdu",
+                      "title": "Ausbildung",
+                      "tag": "Ausbildung",
+                      "statements": [
+                        {
+                          "id": "topic-1788999407367-bdu-s1",
+                          "number": 1,
+                          "text": "Es ist alles fertig. Sie brauchen nichts mehr mitzubringen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999407367-bdu-s2",
+                          "number": 2,
+                          "text": "Das Wetter bleibt heute Abend überall warm und trocken.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999407367-bdu-s3",
+                          "number": 3,
+                          "text": "Am Freitagnachmittag ist die Praxis von Dr. Traber geschlossen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999407367-bdu-s4",
+                          "number": 4,
+                          "text": "Die Sprecherin bittet um Geld für die Ausbildung von Lehrern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999407367-bdu-s5",
+                          "number": 5,
+                          "text": "Sie müssen ab der nächsten haltestelle mit dem Bus weiterfahren.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999511951-kx1",
+                      "title": "Schillerstraße (الأساسي)",
+                      "tag": "Schillerstraße (الأساسي)",
+                      "statements": [
+                        {
+                          "id": "topic-1788999511951-kx1-s1",
+                          "number": 1,
+                          "text": "Das Büro ist in der Schillerstraße.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999511951-kx1-s2",
+                          "number": 2,
+                          "text": "Der Film „Sommer“ läuft im Filmcasino",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999511951-kx1-s3",
+                          "number": 3,
+                          "text": "Im Süden Bayerns wird es am Nachmittag schön und nicht sehr warm.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999511951-kx1-s4",
+                          "number": 4,
+                          "text": "Im Zugrestaurant können Sie auch Zeitungen kaufen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999511951-kx1-s5",
+                          "number": 5,
+                          "text": "Damenröcke kosten heute 39 Euro.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999601263-oj6",
+                      "title": "Schillerstraße (المعدل)",
+                      "tag": "Schillerstraße (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788999601263-oj6-s1",
+                          "number": 1,
+                          "text": "Das Büro liegt am Marktplatz.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999601263-oj6-s2",
+                          "number": 2,
+                          "text": "Der Film „Sommer in der Stadt“ läuft im Apollo-Kino.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999601263-oj6-s3",
+                          "number": 3,
+                          "text": "Im Westen wird es am Nachmittag freundlich und nicht sehr warm.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999601263-oj6-s4",
+                          "number": 4,
+                          "text": "Im Bordrestaurant können Sie auch Zeitungen kaufen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999601263-oj6-s5",
+                          "number": 5,
+                          "text": "Damenröcke kosten heute 39 Euro.",
+                          "correct": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999700254-108m",
+                      "title": "Buchhandlung",
+                      "tag": "Buchhandlung",
+                      "statements": [
+                        {
+                          "id": "topic-1788999700254-108m-s1",
+                          "number": 1,
+                          "text": "Das Buch kann erst morgen ab 9 Uhr in der Buchhandlung abgeholt werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999700254-108m-s2",
+                          "number": 2,
+                          "text": "Die Firma ist in der Wilhelmstraße.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999700254-108m-s3",
+                          "number": 3,
+                          "text": "Sie können den Film von Rainer Bolkow heute Abend im Kino sehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999700254-108m-s4",
+                          "number": 4,
+                          "text": "Sie können eine Zeitung im Zugrestaurant kaufen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999700254-108m-s5",
+                          "number": 5,
+                          "text": "Vom Bahnhof zur Universität dauert es mit der U-Bahn und dem Bus nur 5 Minuten.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999809104-43s",
+                      "title": "Der Fahrer (المعدل)",
+                      "tag": "Der Fahrer (المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788999809104-43s-s1",
+                          "number": 1,
+                          "text": "Der Fahrer des Wagens mit dem Kennzeichen HB-BO 2929 soll ins Erdgeschoss kommen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999809104-43s-s2",
+                          "number": 2,
+                          "text": "Die Firma liefert das bestellte Sofa am Dienstagnachmittag zwischen drei und sechs Uhr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999809104-43s-s3",
+                          "number": 3,
+                          "text": "Der Gasthof Lindner liegt neben einer Tankstelle.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999809104-43s-s4",
+                          "number": 4,
+                          "text": "Der Film Komiker wird mehrmals am Tag gezeigt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999809104-43s-s5",
+                          "number": 5,
+                          "text": "Für den Abend wird kein Regen erwartet.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1788999915151-1l4t",
+                      "title": "Der Fahrer (3 المعدل)",
+                      "tag": "Der Fahrer (3 المعدل)",
+                      "statements": [
+                        {
+                          "id": "topic-1788999915151-1l4t-s1",
+                          "number": 1,
+                          "text": "Der Fahrer des Wagens mit dem Kennzeichen HB-D 256 soll ins Erdgeschoss kommen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999915151-1l4t-s2",
+                          "number": 2,
+                          "text": "Die Firma liefert das bestellte Sofa am Dienstag ab drei Uhr nachmittags.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1788999915151-1l4t-s3",
+                          "number": 3,
+                          "text": "Der Gasthof Lindner ist neben einer Tankstelle.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999915151-1l4t-s4",
+                          "number": 4,
+                          "text": "Der Film Komiker läuft täglich um 20 Uhr.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1788999915151-1l4t-s5",
+                          "number": 5,
+                          "text": "Das Wetter ist am Abend noch gut.",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "id": "topic-1789000011017-1qej",
+                      "title": "Sommerfest",
+                      "tag": "Sommerfest",
+                      "statements": [
+                        {
+                          "id": "topic-1789000011017-1qej-s1",
+                          "number": 1,
+                          "text": "Das Sommerfest beginnt am Sonntagnachmittag um zwei Uhr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "topic-1789000011017-1qej-s2",
+                          "number": 2,
+                          "text": "Sie müssen am Hauptbahnhof umsteigen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1789000011017-1qej-s3",
+                          "number": 3,
+                          "text": "Heute gibt es Sommersalate im Angebot.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1789000011017-1qej-s4",
+                          "number": 4,
+                          "text": "Herr Voigt kann Sie am 5.6. beraten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "topic-1789000011017-1qej-s5",
+                          "number": 5,
+                          "text": "Die Pause dauert 30 Minuten.",
+                          "correct": true
                         }
                       ]
                     }

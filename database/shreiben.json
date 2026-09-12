@@ -224,15 +224,15 @@
         },
         {
           "title": "Annika",
-          "istructions": "## Aufgabe\n\nSchreiben Sie etwas zu allen vier Punkten:",
-          "content": "## Brief\n\nLiebe(r).......\n\nWie geht’s dir? Hattest du ein schönes Wochenende? Hier hat es die ganze Zeit geregnet, deshalb bin ich zuhause geblieben.\n\nDu hattest vorgeschlagen, dass wir im Sommer zusammen verreisen könnten. Die Idee finde ich super! An welches Reiseziel denkst du? Ich bin gerne am Meer, mag aber auch Städtereisen. Wichtig ist für mich nur, dass ich auch ein bisschen Sport machen kann. Die Reise sollte aber nicht zu viel kosten, denn ich habe vor Kurzem schon viel für eine Autoreparatur bezahlen müssen. Was meinst du: wie können wir günstig Urlaub machen? Es muss ja kein Luxushotel sein.\n\nSchreib mir bald, dann können wir anfangen zu planen.\n\nViele Grüße\nAnnika",
-          "tasks": "- Was Sie am Wochenende unternommen haben\n- Wohin Sie gerne reisen würden\n- Was Sie im Urlaub gerne machen\n- Wie man beim Reisen Geld sparen kann"
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) ……..\n\nWie geht’s dir? Hattest du ein schönes Wochenende? Hier hat es die ganze Zeit geregnet, deshalb bin ich zuhause geblieben.\n\nDu hattest vorgeschlagen, dass wir im Sommer zusammen verreisen könnten. Die Idee finde ich super! An welches Reiseziel denkst du? Ich bin gerne am Meer, mag aber auch Städtereisen. Wichtig ist für mich nur, dass ich auch ein bisschen Sport machen kann. Die Reise sollte aber nicht zu viel kosten, denn ich habe vor Kurzem schon viel für eine Autoreparatur bezahlen müssen. Was meinst du: wie können wir günstig Urlaub machen? Es muss ja kein Luxushotel sein.\n\nSchreib mir bald, dann können wir anfangen zu planen.\n\nViele Grüße\nAnnika",
+          "tasks": "1 Was Sie am Wochenende unternommen haben\n2 Wohin Sie gerne reisen würden\n3 Was Sie im Urlaub gerne machen\n4 Wie man beim Reisen Geld sparen kann"
         },
         {
           "title": "Iris",
-          "istructions": "## Aufgabe\n\nAntworten Sie Ihrer Bekannten. Schreiben Sie etwas zu allen vier Punkten:",
-          "content": "## Brief\n\nLiebe(r).......\n\nendlich habe ich die Deutschprüfung hinter mir. Ich glaube, es ist gut gelaufen. Jetzt soll für unseren Kurs eine Party organisieren. Du hast doch kürzlich erzählt, dass Du für Euren Kurs auch ein Abschlussfest organisiert hast. Sicher kannst du mir ein paar Tipps geben. Ich habe mir gedacht, wir könnten vielleicht in einem Restaurant feiern. Da kann jeder essen und trinken, was er will. Was meinst Du? Essen zu kochen ist doch ziemlich viel Arbeit. und natürlich brauchen wir Musik. Welche Musik ist am besten geeignet? Was schlägst Du vor?\n\nMelde Dich bald.\nIch freue mich schon auf deine Antwort.\n\nLiebe Grüße\nIris",
-          "tasks": "- Reaktion auf die Prüfung\n- Wo feiern? Restaurant- Ihre Meinung\n- Welche Musik\n- Urlaubspläne\n- Überlegen Sie sich vor dem Schreiben eine passende Reihenfolge der Punkte\n- eine passende Betreff\n- eine passende Anrede\n- Einleitung und einen passenden Schluss."
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) ……..\n\nendlich habe ich die Deutschprüfung hinter mir. Ich glaube, es ist gut gelaufen. Jetzt soll für unseren Kurs eine Party organisiert werden. Du hast doch kürzlich erzählt, dass du für euren Kurs auch ein Abschlussfest organisiert hast. Sicher kannst du mir ein paar Tipps geben. Ich habe mir gedacht, wir könnten vielleicht in einem Restaurant feiern. Da kann jeder essen und trinken, was er will. Was meinst du? Essen zu kochen ist doch ziemlich viel Arbeit. Und natürlich brauchen wir Musik. Welche Musik ist am besten geeignet? Was schlägst du vor?\n\nMelde dich bald.\nIch freue mich schon auf deine Antwort.\n\nLiebe Grüße\nIris",
+          "tasks": "1 Reaktion auf die Prüfung\n2 Wo feiern? Restaurant – Ihre Meinung\n3 Welche Musik\n4 Urlaubspläne"
         },
         {
           "title": "Caroline",
@@ -344,15 +344,63 @@
         },
         {
           "title": "Jakob",
-          "istructions": "## Aufgabe\n\nAntworten Sie Jakob. Schreiben Sie etwas zu allen vier Punkten:",
-          "content": "## E-Mail\n\nLiebe(r)...\n\nWie geht es dir? Ich wollte dir schon lange schreiben, aber ich hatte nach meinem Urlaub noch so viel zu tun.\n\nIm Moment habe ich leider ein Problem mit meinem Nachbarn. Er hört oft sehr laut Musik, auch abends. Das stört mich sehr. Ich weiß nicht, was ich machen soll. Hast du einen Tipp?\n\nHattest du auch schon mal solche Schwierigkeiten? Wie sind denn deine Nachbarn? Ich habe dich übrigens noch nie in deiner Wohnung besucht. Wie ist sie? Erzähl doch mal ein bisschen. Hast du bald mal Zeit? Dann könnten wir was unternehmen. Worauf hast du Lust? Meld dich doch mal.\n\nViele Grüße\nJakob",
-          "tasks": "- Problem mit dem Nachbarn: Tipp\n- Ihre Wohnung\n- Vorschlag für ein Treffen\n- Wie Ihre Nachbarn sind"
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) …\n\nwie geht es dir? Ich wollte dir schon lange schreiben, aber ich hatte nach meinem Urlaub noch so viel zu tun.\n\nIm Moment habe ich leider ein Problem mit meinem Nachbarn. Er hört oft sehr laut Musik, auch abends. Das stört mich sehr. Ich weiß nicht, was ich machen soll – hast du einen Tipp? Hattest du auch schon mal solche Schwierigkeiten? Wie sind denn deine Nachbarn? Ich habe dich übrigens noch nie in deiner Wohnung besucht. Wie ist sie? Erzähl doch mal ein bisschen.\n\nHast du bald mal Zeit? Dann könnten wir was unternehmen. Worauf hast du Lust? Meld dich doch mal.\n\nViele Grüße\nJakob",
+          "tasks": "1 Problem mit dem Nachbarn – Tipp\n2 Ihre Wohnung\n3 Vorschlag für Treffen\n4 Wie Ihre Nachbarn sind"
         },
         {
           "title": "Emilia",
           "istructions": "Schreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
           "content": "Liebe(r) …,\n\nwie geht es dir?\n\nIch habe bald Uni-Prüfungen und lerne abends sehr fleißig. Ich dachte, du könntest mir ein paar Tipps zum Lernen geben. Außerdem würde ich gerne wissen, wo du bist. Vielleicht kann ich dich nach den Prüfungen besuchen. Ende Juli oder August hast du Zeit. Ich würde gerne fragen, ob ich bei dir übernachten kann oder ob du genug Platz hast. Ich kenne mich in deiner Stadt nicht so gut aus.\n\nSchreibe mir doch bald!\n\nViele Grüße\nEmilia",
-          "tasks": "- Punktzeit\n- Tipps für Lernen\n- Gemeinsame Unternehmung\n- Übernachtung"
+          "tasks": "1 - Punktzeit\n2 - Tipps für Lernen\n3 - Gemeinsame Unternehmung\n4 - Übernachtung"
+        },
+        {
+          "title": "Tobias",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Wien, den …\n\nLiebe/r …,\n\nerinnerst du dich an den schönen Urlaub am Bodensee? Ich wollte dir schon die ganze Zeit schreiben, hatte aber wenig Zeit. Jetzt hat es endlich geklappt.\n\nWie geht es dir? Bei mir läuft alles super. Ich bin inzwischen mit dem Studium fertig und hoffe, dass ich bald eine Arbeit finde.\n\nUnd das Beste: Ich habe endlich eine größere Wohnung gefunden. Und das möchte ich feiern. Hast du Lust, mich zu besuchen und mitzufeiern?\n\nDie Party findet am Samstag, dem 5. September statt. Für Essen und Trinken ist gesorgt. Du brauchst nichts mitzubringen außer vielleicht Musik aus deinem Land. Wir wollen ja auch tanzen!\n\nUnd wenn du schon mal in Wien bist, kannst du auch etwas länger bleiben. Schlafen kannst du bei mir, Platz gibt es genug. Überleg es dir, ich würde mich sehr freuen, dich wiederzusehen. Meine neue Adresse ist Linzer Straße 400, 1140 Wien. Und am Sonntag könnte ich dir Wien zeigen, die Stadt wird dir bestimmt gefallen.\n\nLass bald etwas von dir hören!\n\nViele Grüße\nTobias",
+          "tasks": "1 dass Sie gern kommen möchten\n\n2 ob Sie noch jemanden mitbringen können\n\n3 was Sie mitbringen möchten: Musik? Sonst etwas?\n\n4 wie Sie sich auf einen Besuch Wiens vorbereiten können"
+        },
+        {
+          "title": "Naco",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) …\n\nWie geht es dir und deiner Familie?\n\nBei mir läuft alles prima. Endlich habe ich eine neue Wohnung gefunden, die in der Nähe von meiner Firma liegt. Weißt du, dass ich zu Fuß zur Arbeit gehen kann?\n\nObwohl der Umzug mir sehr müde macht, fühle ich mich sehr wohl. Meine neue Wohnung hat 3 Zimmer. Zum Glück habe ich ein Arbeitszimmer für meine Lieblingsbücher. Ich mag am liebsten den Balkon, auf dem ich mich nach der anstrengenden Arbeit entspannen kann. Außerdem ist die Stadt nämlich sehr schön und das Essen schmeckt mir auch lecker. Willst du mich besuchen und die Stadt mit mir entdecken?\n\nAllerdings muss ich jeden Tag ins Büro gehen. Deshalb kenne ich noch niemanden hier und manchmal bin ich einsam. Hattest du schon mal dieses Problem? Was würdest du tun? Wie kann ich die Nachbarn kennenlernen?\n\nWir haben uns lange schon nicht getroffen. Ich würde mich freuen, wenn du mich bald besuchen könntest. Schreib mir bald.\n\nNaco",
+          "tasks": "1 Reaktion auf den Vorschlag (ob Sie Naco besuchen möchten)\n\n2 Etwas über Ihre Wohnung\n\n3 Tipps für Naco, wie er Nachbarn kennenlernen kann\n\n4 Was es bei Ihnen Neues gibt"
+        },
+        {
+          "title": "Alicia",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "ich hoffe, es geht dir gut.\n\nIch habe eine Idee: Ich möchte die Leute aus unserem Englischkurs gerne einladen. Bei gutem Wetter feiern wir in meinem Garten. Aber was machen wir bei Regen?\n\nKannst du mir vielleicht bei den Vorbereitungen helfen? Ich weiß noch nicht, was ich Gästen zu essen anbieten kann. Hast du einen Vorschlag? Du weißt ja, dass ich beste Köchin bin. Den genauen Termin habe ich mir noch nicht überlegt. Meinst du, ich soll lieber an einem Freitag oder an einem Samstag feiern?\n\nSchreib mir doch mal, was du über meine Pläne denkst.\n\nLiebe Grüße\nAlicia",
+          "tasks": "1 Party – welcher Tag?\n\n2 Wie Sie helfen können\n\n3 Bei Regen – wo?\n\n4 Essen"
+        },
+        {
+          "title": "Cora und Alex",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r)…,\n\nwie geht’s? Wir haben lange nichts von dir gehört. Wir leben nun fast ein Jahr in Frankreich – und Marseille ist einfach eine tolle Stadt!\n\nGestern haben wir lange überlegt, was wir im Sommer machen möchten. Wir dachten, es wäre schön, einige Freunde wiederzusehen. Und wir könnten auch dich besuchen. Wie findest du diese Idee?\n\nWürde dir Ende Juni passen? Oder bist du in dieser Zeit selbst weg? Falls ja, könnten wir auch erst Ende August kommen. Wir möchten nicht so lange bei dir bleiben, höchstens drei Tage. Wäre das in Ordnung?\n\nBitte melde dich bald, damit wir unsere Reise planen können. Da wir zurzeit kein Auto haben, schreibe uns ein paar Tipps, wie wir am besten zu dir kommen.\n\nBis bald\nCora und Alex",
+          "tasks": "1 beste Zeit für den Besuch, warum?\n2 wie Ihre Freunde am besten anreisen\n3 was Sie gerne zusammen mit Ihren Freunden machen möchten\n4 Fragen zu Marseille"
+        },
+        {
+          "title": "Miroslav",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) …\n\nes tut mir leid, dass ich mich so lange nicht gemeldet habe, aber ich hatte in den vergangenen Wochen sehr viel zu tun. Ich habe eine kleine Firma gegründet.\n\nNachdem ich einen Lieferwagen und Werkzeug gekauft habe, biete ich nun Gartenarbeiten und Reparaturen rund ums Haus an. Ich pflanze und pflege Blumen, schneide Gras und Bäume. Manchmal putze ich auch Gartenhäuschen und Garagen.\n\nSchon nach kurzer Zeit habe ich viele Kunden gewonnen, die mich immer wieder anrufen, wenn sie mich brauchen. Endlich bin ich mein eigener Chef.\n\nWas gibt es bei dir Neues? Schreib mir bald!\n\nBeste Grüße\nMiroslav",
+          "tasks": "1 Welche Arbeit Sie machen/suchen\n2 Was Sie von Miroslavs Tätigkeit halten\n3 Was es bei Ihnen Neues gibt\n4 Frage zu Miroslavs Kunden"
+        },
+        {
+          "title": "Corinna",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe(r) …\n\nich habe lange nichts von dir gehört. Nun habe ich von Sina erfahren, dass du bald eine Prüfung machst. Das ist ja ganz toll. Sina hat mir auch gesagt, dass du jeden Tag fleißig Deutsch lernst und wenig Zeit hast, andere Dinge zu machen. Daher schreibe ich dir lieber eine E-Mail, denn ich wollte dich fragen, ob wir nach deiner Prüfung etwas zusammen machen sollen? Wie wäre es mit einer Tour an die Nordsee, nach Prag oder Amsterdam, oder in den Schwarzwald? Was denkst du? Wenn du Zeit hast, schreibe mir bitte bald. Und für deine Prüfung wünsche ich dir viel Erfolg.\n\nBis bald\nCorinna",
+          "tasks": "1 Wohin Sie mit Corinna fahren möchten\n2 Wie Sie Deutsch lernen\n3 Was es bei Ihnen Neues gibt\n4 Was Sie von Corinna wissen wollen"
+        },
+        {
+          "title": "Moritz",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe …,\n\nich sende dir ganz viele Grüße aus San Diego. Du weißt ja, wie sehr ich Kalifornien mag! Ich habe mir ein Auto gemietet und bin von morgens bis abends nur unterwegs. Ich liebe die Architektur hier, diese Hochhäuser und natürlich die Strände – wunderbar. Gestern Abend war ich übrigens in einem Club: Die Musik war super.\n\nDoch leider ist mein Urlaub schon fast vorbei, in zwei Tagen fliege ich zurück und dann beginnt der Alltag wieder – vielleicht können wir uns ja in der nächsten Woche treffen. Dann erzähle ich dir alles genauer.\n\nWelches Land ist eigentlich dein Lieblingsland?\n\nViele Grüße\nMoritz",
+          "tasks": "1 Ihr Lieblingsland\n2 Was Sie an fremden Orten interessiert\n3 Welche Musik Sie gern hören\n4 Vorschlag für Treffen mit Moritz"
+        },
+        {
+          "title": "Clara",
+          "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
+          "content": "Liebe/r ...,\n\nin zwei Wochen arbeite ich für zwei Wochen in einer Firma. Danach habe ich endlich Urlaub. Ich freue mich schon sehr darauf.\n\nFür meinen Urlaub möchte ich neue Kleidung kaufen. Deshalb möchte ich dich fragen, ob du mit mir einkaufen gehen möchtest.\n\nAußerdem möchte ich wissen, ob du schon einmal Kleidung online gekauft hast. Kaufst du lieber online oder in Geschäften?\n\nWas sind deine Urlaubspläne für diesen Sommer? Hast du schon etwas vor?\n\nSchreib mir bitte bald.\n\nLiebe Grüße\n\nClara",
+          "tasks": "1 Haben Sie Erfahrungen mit Online-Shopping?\n2 Wo kaufen Sie Kleidung lieber?\n3 Was sind Ihre Urlaubspläne für diesen Sommer?\n4 Möchten Sie mit Clara einkaufen gehen?"
         }
       ]
     }

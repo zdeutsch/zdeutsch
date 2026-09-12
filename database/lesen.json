@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T12:33:38.171Z",
+  "generatedAt": "2026-09-12T17:57:00.787Z",
   "levels": {
     "b2": {
       "themes": {
@@ -85465,10 +85465,1321 @@
                   "parts": 5
                 }
               }
+            },
+            "version-2": {
+              "key": "version-2",
+              "label": "Version 2",
+              "title": "Miroslav 2",
+              "lesen": {
+                "partOrder": [
+                  "teil-1",
+                  "teil-2",
+                  "teil-3",
+                  "sprachbausteine-1",
+                  "sprachbausteine-2"
+                ],
+                "parts": {
+                  "teil-1": {
+                    "meta": {
+                      "title": "Miroslav 2",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 1",
+                      "section": "lesen",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-11T16:55:08.259Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "texts": [
+                        {
+                          "id": 1,
+                          "text": "Der Stararchitekt Norman Foster plant jetzt ein Natur-Wohnprojekt auf den Aspang-Gründen und will das historische Gebiet damit zu neuem Leben erwecken. Grünflächen und ein Teich sollen im Mittelpunkt der künftigen Stadt-Oase liegen. Wohnungen mit freiem Blick aufs Grüne, Geschäfte und Bildungseinrichtungen soll es ebenso geben wie Bürotürme, die bis zu 110 Meter hoch in den Himmel wachsen. Der Stararchitekt, der auch für den Umbau des Berliner Reichstagsgebäudes verantwortlich ist, plant weiters den optimalen Anschluss des Areals an die U- und S-Bahn.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 2,
+                          "text": "Viele Wunder der Natur warten direkt vor unserer Haustür – wir kennen jedoch nur die wenigsten davon. Deshalb haben jetzt drei Schweizer Experten 14 tolle Wanderrouten mit den interessantesten „Natur-Geheimtipps“ zusammengestellt. Auf insgesamt 240 Seiten werden in dem Wanderführer besondere Pflanzenarten ebenso detailreich beschrieben wie häufig zu beobachtende oder gefährdete Tierarten und kulturhistorische Besonderheiten der Schweiz. Weiteres Plus des schlauen Buches: Es ist so handlich, dass es sogar in die Hosentasche passt!",
+                          "translated": ""
+                        },
+                        {
+                          "id": 3,
+                          "text": "Oft ist es schwierig, sich in dem großen Angebot an Restaurants und Gasthäusern in Wien zurechtzufinden, vor allem wenn man nicht viel Geld ausgeben möchte. Die neue Broschüre „Wiener Küche“ listet 80 empfehlenswerte Beisln, Cafés und Restaurants auf, wo man preiswert typische Wiener Speisen genießen kann. Gratis unter Tel. 4000/8080 (Tonband).",
+                          "translated": ""
+                        },
+                        {
+                          "id": 4,
+                          "text": "Die Mehrheit der Österreicher hat am heimischen Schulsystem nichts auszusetzen. In einer im Juni durchgeführten Umfrage des Meinungsforschungsinstituts Ifes gaben 74 Prozent von 2000 Befragten den Schulen die Note 1 oder 2. Befragt nach dem vorhandenen Fremdsprachenangebot sprachen sich immerhin 39 Prozent dafür aus, dass dieser Bereich noch weiter ausgebaut werden sollte. Vor allem die Jungen (57 Prozent) können von anderen Sprachen nicht genug bekommen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 5,
+                          "text": "Jetzt liegt ein idealer Wegweiser durch den Ernährungsdschungel druckfrisch auf dem Tisch. Das praxisorientierte Schulbuch, das auch für Erwachsene eine empfehlenswerte Lektüre ist, zeigt die wichtigsten Zusammenhänge zwischen Nährstoffen, Lebensmitteln und den täglichen Essgewohnheiten auf und beinhaltet ein umfangreiches Basiswissen über die wesentlichen Fragen zur Ernährung. Dazu gibt es in jedem Kapitel zahlreiche Tipps, Aufgaben und einfache Rezepte zum Probieren. Brigitte Pleyer: „(Er)lebensmittel“, rororo, 15 Euro",
+                          "translated": ""
+                        }
+                      ],
+                      "headlines": [
+                        {
+                          "id": "A",
+                          "text": "Fremdsprachengymnasium im Grünen",
+                          "translated": ""
+                        },
+                        {
+                          "id": "B",
+                          "text": "Wohnen in der Natur",
+                          "translated": ""
+                        },
+                        {
+                          "id": "C",
+                          "text": "Neu eröffnet: Lokal mit typischer Wiener Küche",
+                          "translated": ""
+                        },
+                        {
+                          "id": "D",
+                          "text": "Mehrheit der österreichischen Schüler ernährt sich ungesund",
+                          "translated": ""
+                        },
+                        {
+                          "id": "E",
+                          "text": "Beim Wandern die Natur entdecken",
+                          "translated": ""
+                        },
+                        {
+                          "id": "F",
+                          "text": "Gute Noten für Österreichs Schulen",
+                          "translated": ""
+                        },
+                        {
+                          "id": "G",
+                          "text": "Moderne Architektur zerstört Umwelt",
+                          "translated": ""
+                        },
+                        {
+                          "id": "H",
+                          "text": "Ernährungstipps für Jung und Alt",
+                          "translated": ""
+                        },
+                        {
+                          "id": "I",
+                          "text": "Österreichische Experten entdecken neue Pflanzenart",
+                          "translated": ""
+                        },
+                        {
+                          "id": "J",
+                          "text": "Gut Essen trotz kleiner Brieftasche",
+                          "translated": ""
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "textId": 1,
+                          "headlineId": "B",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "textId": 2,
+                          "headlineId": "E",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "textId": 3,
+                          "headlineId": "J",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "textId": 4,
+                          "headlineId": "F",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "textId": 5,
+                          "headlineId": "H",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        }
+                      ]
+                    }
+                  },
+                  "teil-2": {
+                    "meta": {
+                      "title": "Miroslav 2",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-11T16:55:08.259Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "passage": {
+                        "title": "",
+                        "paragraphs": [
+                          "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?",
+                          "Bienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.",
+                          "In den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.",
+                          "Manche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.",
+                          "Die Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.",
+                          "In Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\""
+                        ],
+                        "text": "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?\n\nBienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.\n\nIn den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.\n\nManche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.\n\nDie Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.\n\nIn Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\"",
+                        "translated": []
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": " Das Bienensterben",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "ist ein noch ungelöstes Problem."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man nur in bestimmten Regionen beobachten."
+                            },
+                            {
+                              "id": "c",
+                              "text": "lässt sich auf eine einzige Ursache zurückführen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "ist ein noch ungelöstes Problem.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "In vielen Städten",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "finden Bienen wenig Futter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man keine Bienen mehr sehen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "schafft man mehr Platz für Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schafft man mehr Platz für Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "Werner, Gottlieb und Kessel",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "arbeiten in einer Parkanlage in Frankfurt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "forschen über Bienen und ihren Lebensraum."
+                            },
+                            {
+                              "id": "c",
+                              "text": "organisieren eine Veranstaltung über Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "organisieren eine Veranstaltung über Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Experten nehmen an, dass",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "es in vier Jahren keine Bienen mehr gibt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "man viele Lebensmittel ohne Bienen herstellen kann"
+                            },
+                            {
+                              "id": "c",
+                              "text": "menschliches Leben ohne Bienen nicht möglich ist."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "menschliches Leben ohne Bienen nicht möglich ist.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "In Frankfurt gibt es",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "schon lange Bienenhalter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "viele kranke Bienenvölker."
+                            },
+                            {
+                              "id": "c",
+                              "text": "zurzeit 60 000 Bienen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schon lange Bienenhalter.",
+                          "keywords": []
+                        }
+                      ]
+                    }
+                  },
+                  "teil-3": {
+                    "meta": {
+                      "title": "Miroslav 2",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-11T16:55:08.259Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "passage": {
+                        "title": "",
+                        "paragraphs": [
+                          "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?",
+                          "Bienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.",
+                          "In den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.",
+                          "Manche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.",
+                          "Die Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.",
+                          "In Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\""
+                        ],
+                        "text": "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?\n\nBienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.\n\nIn den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.\n\nManche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.\n\nDie Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.\n\nIn Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\"",
+                        "translated": []
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": " Das Bienensterben",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "ist ein noch ungelöstes Problem."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man nur in bestimmten Regionen beobachten."
+                            },
+                            {
+                              "id": "c",
+                              "text": "lässt sich auf eine einzige Ursache zurückführen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "ist ein noch ungelöstes Problem.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "In vielen Städten",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "finden Bienen wenig Futter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man keine Bienen mehr sehen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "schafft man mehr Platz für Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schafft man mehr Platz für Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "Werner, Gottlieb und Kessel",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "arbeiten in einer Parkanlage in Frankfurt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "forschen über Bienen und ihren Lebensraum."
+                            },
+                            {
+                              "id": "c",
+                              "text": "organisieren eine Veranstaltung über Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "organisieren eine Veranstaltung über Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Experten nehmen an, dass",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "es in vier Jahren keine Bienen mehr gibt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "man viele Lebensmittel ohne Bienen herstellen kann"
+                            },
+                            {
+                              "id": "c",
+                              "text": "menschliches Leben ohne Bienen nicht möglich ist."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "menschliches Leben ohne Bienen nicht möglich ist.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "In Frankfurt gibt es",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "schon lange Bienenhalter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "viele kranke Bienenvölker."
+                            },
+                            {
+                              "id": "c",
+                              "text": "zurzeit 60 000 Bienen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schon lange Bienenhalter.",
+                          "keywords": []
+                        }
+                      ],
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie suchen für Ihre Tochter eine Au-Pair-Stelle in Deutschland",
+                          "translated": ""
+                        },
+                        {
+                          "id": 12,
+                          "text": "Ein Freund von Ihnen ist Pflegekraft und möchte im medizinischen Bereich eine neue Stelle finden.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 13,
+                          "text": "Ihre Freundin sucht eine Stelle, die mit Mode zu tun hat und wo sie kreativ sein kann.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 14,
+                          "text": "Sie wollen eine aufregende und abenteuerliche Ferienreise machen und suchen ein entsprechendes Angebot.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 15,
+                          "text": "Eine befreundete Arztfamilie mit 5 Kindern möchte ein Haus in ruhiger Lage kaufen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 16,
+                          "text": "Sie möchten im Sommer eine Kulturreise nach Kanada machen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 17,
+                          "text": "Ein Schweizer Bekannter aus Zürich hat gern Kontakt mit anderen Leuten und sucht eine Arbeit für zwei Monate, da er danach ins Ausland geht.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 18,
+                          "text": "Ihre Tochter sucht eine kleine Wohnung mit Balkon.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 19,
+                          "text": "Sie haben die Absicht, eine kleine Sprachschule zu eröffnen, und suchen geeignete Räume.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 20,
+                          "text": "Sie sind in Zürich und möchten über das Wochenende eine Flugreise machen.",
+                          "translated": ""
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "Interviewer(innen)\n\nWir suchen kontaktfreudige Interviewer(innen) deutscher Muttersprache mit Ausdauer. Zeitraum November bis Dezember. Einsatzorte: Zürich, Winterthur. Flexible Einsatzzeiten und leistungsgerechte Entlohnung.\n\nFür weitere Informationen steht Ihnen Herr M. Flury gerne zur Verfügung, (071) 245 77 06.\n\nIhren Lebenslauf mit Foto senden Sie bitte an MF Mail Force AG, Kundenbefragung, Postfach 336, Brühlgasse 28, 9004 St. Gallen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": "B",
+                          "text": "Kilchberg ZH\n\nAb sofort zu vermieten\n\nBüro-/Atelierraum, 100 m²\n3 Räume + Entrée, Garderobe, WC, (78 m²)\n2 Nebenräume (Sitzungen, Kaffee, Archiv, 24 m²)\nFr. 1990,– mtl. (Fr. 239,–/m²) + NK.\nPP in Garage Fr. 125,– mtl. PP im Freien Fr. 45,–mtl.\n\nOption: Lagerraum im UG, 80 m², Fr. 490,– mtl. (Fr. 73,–/m²)\n\nAuskünfte erteilt gerne:\nTel. (01) 202 46 56, Fax (01) 202 23 92",
+                          "translated": ""
+                        },
+                        {
+                          "id": "C",
+                          "text": "Wir haben eine große Auswahl an attraktiven und interessanten Stellen für\n\nKrankenpfleger/-in FA SRK\nKrankenschwester/-pfleger\n\n... von der Mitarbeit im Team über Nachtwache, Führungsaufgaben bis Stv. Heimleitung.\n\nRufen Sie uns an, wir informieren Sie gerne.\n\nLöwenstraße 29 – 8023 Zürich – 01/225 40 38",
+                          "translated": ""
+                        },
+                        {
+                          "id": "D",
+                          "text": "Winterthur-Seen\nZu verkaufen an äußerst ruhiger und sonniger sowie zentraler Lage gepflegtes, freistehendes\n\n6 ½-Zr.-Einfamilienhaus (1046 m³)\n\nDiese 1976 erstellte Liegenschaft überzeugt außerdem durch eine großzügige und gefällige Grundriss- sowie Fassadengestaltung.\nDie Grundstücksgröße beträgt 642 m²\nVerhandlungspreis Fr. 980 000,–\nHeinzer Immobilien und Treuhand, Birmensdorf\nTel. (01) 737 26 26 / Fax (01) 737 29 28",
+                          "translated": ""
+                        },
+                        {
+                          "id": "E",
+                          "text": "Birmensdorf\nAb August vermieten wir in einer neueren Überbauung an der Ascherstraße eine großzügige, moderne und helle  \n\n1-Zimmer-Wohnung\nmit Balkon, im 2. Stock  \n\nTiefgaragen im Haus usw.  \nDer Mietzins beträgt Fr. 921,–  \nincl. Nebenkosten.",
+                          "translated": ""
+                        },
+                        {
+                          "id": "F",
+                          "text": "Wir suchen genau Sie!\nWenn Sie eine Stelle suchen als...\n\n- Sekretärin\n- kaufm. Angestellte/r\n\ndann rufen Sie noch heute an und verlangen Herrn Andes für mehr Infos.\nTel. 01 / 740 29 30, 8953 Dietikon\n\nNEW JOB 2000",
+                          "translated": ""
+                        },
+                        {
+                          "id": "G",
+                          "text": "\nSt. Moritz — DAMENMODE\nFür unser Damenmode- und Wäschegeschäft in St. Moritz mit Filialen im Engadin suchen wir auf Anfang Juni kreative, selbstständige\n\nDekorateurin\nWir bieten Ihnen als Jahresstelle eine selbstständige, interessante Tätigkeit. Führerausweis erforderlich. Studio vorhanden.  \n\nWir freuen uns auf Ihre schriftliche Bewerbung, oder rufen Sie uns an.  \n\nE. Kriemler-Müller  \nDamenmode  \n7500 St. Moritz  \nTel. 0817833 33 27",
+                          "translated": ""
+                        },
+                        {
+                          "id": "H",
+                          "text": "USA                                                 ASPECT                         \nKanada                                  Sprachen Weltweit                  \nEngland                                            \nIrland                           • Kurz und Langzeitprogramme  \nAustralien                  • Sprachkurse mit Praktikum     \nNeuseeland               • High School Jahr                  \nMalta                           • College Jahr              \nFrankreich                  • Au Pair              \nItalien                                   \nSpanien                                                     ASPECT              \nDeutschland                               Talacker 42, 8001 Zürich      \nSüdamerika                        Tel.: 01-2102212, Fax: 01-2125514     \n                                                    Brüggligasse 9, 6004 Luzern  \n                                               Tel.: 041-4107272, Fax: 041-4102140     ",
+                          "translated": ""
+                        },
+                        {
+                          "id": "I",
+                          "text": "In Adliswil, Riterstrasse 6 A, vermieten wir per sofort oder nach Vereinbarung\n\n6½-Zimmer-Wohnung\n\n(143,9 m²) im Obergeschoss.\nModerne Küche, Bad/WC, Dusche/WC, Cheminée, 2 Balkone.\nFr. 2600,– incl. Nebenkosten, 2 Garagen à Fr. 150,–",
+                          "translated": ""
+                        },
+                        {
+                          "id": "J",
+                          "text": "Kur- Ferienaufenthalt\nEin Angebot für Senioren\nSchweizer Pflegepersonal\nÄrztliche Betreuung\nIm Ferienort Brunnen am Vierwaldstättersee\n\nKurhaus Vierländerclub, Brunnen\nTel. 041-820 29 25\nFax 041-820 60 69",
+                          "translated": ""
+                        },
+                        {
+                          "id": "K",
+                          "text": "London täglich ab Fr. 295,–\nABC Flug, incl. SBB Bahnbillet. Zuzügl. Versich.\nFr. 12,– und Flughafentaxen Schweiz/GB Fr. 36,–\nVerlangen Sie unseren Spezial-Katalog\n\nPlus Reisen\n3x in Zürich\nSchützengasse 22                               01-224 20 20\nLimmatquai/Preyergasse                  01-252 08 80\nZollikerstrasse 3/Kreuzplatz             01-388 80 80",
+                          "translated": ""
+                        },
+                        {
+                          "id": "L",
+                          "text": "Australien\nErlebnisreisen ab Sydney und in New South Wales\n- Faszination Sydney\n- Blue Mountains und Hunter Valley\n- Delphine bei Port Stephens\n- Abenteuer im Outback ab Broken Hill\n\n**** Flüge nach Sydney ab SFr. 1560,– ****\nNova Tours, Schönenwerderstrasse 35b, 5001 Aarau\nTel.: 062 823 33 23 / Fax: 062 824 78 27 / e-mail: novatours@bluewin.ch\nSenden Sie mir die ausführlichen Unterlagen über Sydney und New South Wales:\nName/Vorname: __________\nStrasse: ____________ PLZ/Ort: ________",
+                          "translated": ""
+                        },
+                        {
+                          "id": "X",
+                          "text": "Keine Anzeige",
+                          "translated": ""
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "situationId": 11,
+                          "adId": "H",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 12,
+                          "adId": "C",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 13,
+                          "adId": "G",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 14,
+                          "adId": "L",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 15,
+                          "adId": "D",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 17,
+                          "adId": "A",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 18,
+                          "adId": "E",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 19,
+                          "adId": "B",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 20,
+                          "adId": "K",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 16,
+                          "adId": "X",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Miroslav 2",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-11T16:55:08.259Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "passage": {
+                        "title": "",
+                        "paragraphs": [
+                          "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?",
+                          "Bienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.",
+                          "In den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.",
+                          "Manche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.",
+                          "Die Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.",
+                          "In Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\""
+                        ],
+                        "text": "Seit einiger Zeit hört man immer wieder, dass Bienen vom Aussterben bedroht sind. Welche Folgen hat dies für die Menschheit und was wird dagegen unternommen?\n\nBienen spielen eine sehr wichtige Rolle für unsere Umwelt. Weltweit stirbt seit Jahren ein großer Teil der Bienenbevölkerung. Warum so viele Bienen sterben, lässt sich nicht so einfach sagen. Hier spielen mehrere Faktoren eine Rolle, wie zum Beispiel der Gebrauch von Pestiziden in der Landwirtschaft, fehlende Wiesen und Grünflächen, Luftverschmutzung und Klimawandel.\n\nIn den letzten Jahren sind vor allem in den Städten! verschiedene Aktionen ins Leben gerufen worden, um den Lebensraum von Bienen zu vergrößern. Schon heute finden Bienen in vielen Städten genug. Nahrung, weil immer mehr Menschen dafür sorgen “Bienen sind spannend”, sagt Sebastian Werner. “Man sieht sie nicht immer, sie sind oft im Verborgenen und haben etwas Geheimnisvolles\" - “Die Biene ist für viele Menschen auch ein Symbol für Wildnis\", sagt Thorsten Gottlieb. “Und es ist schön für uns Menschen, das zu erleben, Faszinierend, ihnen zuzuschauen, Bienen zu beobachten, stundenlang”, sagt Manfred Kessel.\n\nManche Wissenschaftler sind der Überzeugung, dass die Menschheit ohne die Arbeit der Bienen keine vier Jahre überleben könne. Denn ohne Bienen würde ein Großteil unserer Nahrung wegfallen. Diese drei sind mit dem Thema vertraut, da sie das jährliche Frankfurter Bienenfestival vorbereiten. Gottlieb und Werner sind Gründer der Initiative und Kessel ist der Gastgeber und Leiter des Botanischen Gartens, wo das Festival stattfindet.\n\nDie Beschäftigung mit Bienen wirkt entspannend im stressigen Tempo des Alltags. Außerdem ist die Welt, wie sie ist. ohne Bienen gar nichts vorstellbar. Sie sorgen für die Verbreitung hunderttausender Pflanzen, die Mensch und Tiere zur Ernährung brauchen.\n\nIn Frankfurt besteht seit vielen hundert Jahren eine Tradition der Bienenhaltung. Für Einsteiger gibt es ein großes Angebot an Kursen. “Du brauchst Grundlagen und eine gute Ausbildung, sonst machst du einfach zu viele Fehler”, warnt Thorsten Gottlieb. “Du hast eine riesengroße Verantwortung”, fügt Sebastian Werner hinzu. “Du musst wissen, was du da tust - nicht nur, weil du für bis zu 60.000 Bienen in einem einzigen Volk zu sorgen hast. Alle Bienenvölker im Umkreis sind betroffen, wenn dein Volk krank ist.\"",
+                        "translated": []
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": " Das Bienensterben",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "ist ein noch ungelöstes Problem."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man nur in bestimmten Regionen beobachten."
+                            },
+                            {
+                              "id": "c",
+                              "text": "lässt sich auf eine einzige Ursache zurückführen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "ist ein noch ungelöstes Problem.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "In vielen Städten",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "finden Bienen wenig Futter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "kann man keine Bienen mehr sehen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "schafft man mehr Platz für Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schafft man mehr Platz für Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "Werner, Gottlieb und Kessel",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "arbeiten in einer Parkanlage in Frankfurt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "forschen über Bienen und ihren Lebensraum."
+                            },
+                            {
+                              "id": "c",
+                              "text": "organisieren eine Veranstaltung über Bienen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "organisieren eine Veranstaltung über Bienen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Experten nehmen an, dass",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "es in vier Jahren keine Bienen mehr gibt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "man viele Lebensmittel ohne Bienen herstellen kann"
+                            },
+                            {
+                              "id": "c",
+                              "text": "menschliches Leben ohne Bienen nicht möglich ist."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "menschliches Leben ohne Bienen nicht möglich ist.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "In Frankfurt gibt es",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "schon lange Bienenhalter."
+                            },
+                            {
+                              "id": "b",
+                              "text": "viele kranke Bienenvölker."
+                            },
+                            {
+                              "id": "c",
+                              "text": "zurzeit 60 000 Bienen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "schon lange Bienenhalter.",
+                          "keywords": []
+                        }
+                      ],
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie suchen für Ihre Tochter eine Au-Pair-Stelle in Deutschland",
+                          "translated": ""
+                        },
+                        {
+                          "id": 12,
+                          "text": "Ein Freund von Ihnen ist Pflegekraft und möchte im medizinischen Bereich eine neue Stelle finden.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 13,
+                          "text": "Ihre Freundin sucht eine Stelle, die mit Mode zu tun hat und wo sie kreativ sein kann.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 14,
+                          "text": "Sie wollen eine aufregende und abenteuerliche Ferienreise machen und suchen ein entsprechendes Angebot.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 15,
+                          "text": "Eine befreundete Arztfamilie mit 5 Kindern möchte ein Haus in ruhiger Lage kaufen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 16,
+                          "text": "Sie möchten im Sommer eine Kulturreise nach Kanada machen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 17,
+                          "text": "Ein Schweizer Bekannter aus Zürich hat gern Kontakt mit anderen Leuten und sucht eine Arbeit für zwei Monate, da er danach ins Ausland geht.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 18,
+                          "text": "Ihre Tochter sucht eine kleine Wohnung mit Balkon.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 19,
+                          "text": "Sie haben die Absicht, eine kleine Sprachschule zu eröffnen, und suchen geeignete Räume.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 20,
+                          "text": "Sie sind in Zürich und möchten über das Wochenende eine Flugreise machen.",
+                          "translated": ""
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "Interviewer(innen)\n\nWir suchen kontaktfreudige Interviewer(innen) deutscher Muttersprache mit Ausdauer. Zeitraum November bis Dezember. Einsatzorte: Zürich, Winterthur. Flexible Einsatzzeiten und leistungsgerechte Entlohnung.\n\nFür weitere Informationen steht Ihnen Herr M. Flury gerne zur Verfügung, (071) 245 77 06.\n\nIhren Lebenslauf mit Foto senden Sie bitte an MF Mail Force AG, Kundenbefragung, Postfach 336, Brühlgasse 28, 9004 St. Gallen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": "B",
+                          "text": "Kilchberg ZH\n\nAb sofort zu vermieten\n\nBüro-/Atelierraum, 100 m²\n3 Räume + Entrée, Garderobe, WC, (78 m²)\n2 Nebenräume (Sitzungen, Kaffee, Archiv, 24 m²)\nFr. 1990,– mtl. (Fr. 239,–/m²) + NK.\nPP in Garage Fr. 125,– mtl. PP im Freien Fr. 45,–mtl.\n\nOption: Lagerraum im UG, 80 m², Fr. 490,– mtl. (Fr. 73,–/m²)\n\nAuskünfte erteilt gerne:\nTel. (01) 202 46 56, Fax (01) 202 23 92",
+                          "translated": ""
+                        },
+                        {
+                          "id": "C",
+                          "text": "Wir haben eine große Auswahl an attraktiven und interessanten Stellen für\n\nKrankenpfleger/-in FA SRK\nKrankenschwester/-pfleger\n\n... von der Mitarbeit im Team über Nachtwache, Führungsaufgaben bis Stv. Heimleitung.\n\nRufen Sie uns an, wir informieren Sie gerne.\n\nLöwenstraße 29 – 8023 Zürich – 01/225 40 38",
+                          "translated": ""
+                        },
+                        {
+                          "id": "D",
+                          "text": "Winterthur-Seen\nZu verkaufen an äußerst ruhiger und sonniger sowie zentraler Lage gepflegtes, freistehendes\n\n6 ½-Zr.-Einfamilienhaus (1046 m³)\n\nDiese 1976 erstellte Liegenschaft überzeugt außerdem durch eine großzügige und gefällige Grundriss- sowie Fassadengestaltung.\nDie Grundstücksgröße beträgt 642 m²\nVerhandlungspreis Fr. 980 000,–\nHeinzer Immobilien und Treuhand, Birmensdorf\nTel. (01) 737 26 26 / Fax (01) 737 29 28",
+                          "translated": ""
+                        },
+                        {
+                          "id": "E",
+                          "text": "Birmensdorf\nAb August vermieten wir in einer neueren Überbauung an der Ascherstraße eine großzügige, moderne und helle  \n\n1-Zimmer-Wohnung\nmit Balkon, im 2. Stock  \n\nTiefgaragen im Haus usw.  \nDer Mietzins beträgt Fr. 921,–  \nincl. Nebenkosten.",
+                          "translated": ""
+                        },
+                        {
+                          "id": "F",
+                          "text": "Wir suchen genau Sie!\nWenn Sie eine Stelle suchen als...\n\n- Sekretärin\n- kaufm. Angestellte/r\n\ndann rufen Sie noch heute an und verlangen Herrn Andes für mehr Infos.\nTel. 01 / 740 29 30, 8953 Dietikon\n\nNEW JOB 2000",
+                          "translated": ""
+                        },
+                        {
+                          "id": "G",
+                          "text": "\nSt. Moritz — DAMENMODE\nFür unser Damenmode- und Wäschegeschäft in St. Moritz mit Filialen im Engadin suchen wir auf Anfang Juni kreative, selbstständige\n\nDekorateurin\nWir bieten Ihnen als Jahresstelle eine selbstständige, interessante Tätigkeit. Führerausweis erforderlich. Studio vorhanden.  \n\nWir freuen uns auf Ihre schriftliche Bewerbung, oder rufen Sie uns an.  \n\nE. Kriemler-Müller  \nDamenmode  \n7500 St. Moritz  \nTel. 0817833 33 27",
+                          "translated": ""
+                        },
+                        {
+                          "id": "H",
+                          "text": "USA                                                 ASPECT                         \nKanada                                  Sprachen Weltweit                  \nEngland                                            \nIrland                           • Kurz und Langzeitprogramme  \nAustralien                  • Sprachkurse mit Praktikum     \nNeuseeland               • High School Jahr                  \nMalta                           • College Jahr              \nFrankreich                  • Au Pair              \nItalien                                   \nSpanien                                                     ASPECT              \nDeutschland                               Talacker 42, 8001 Zürich      \nSüdamerika                        Tel.: 01-2102212, Fax: 01-2125514     \n                                                    Brüggligasse 9, 6004 Luzern  \n                                               Tel.: 041-4107272, Fax: 041-4102140     ",
+                          "translated": ""
+                        },
+                        {
+                          "id": "I",
+                          "text": "In Adliswil, Riterstrasse 6 A, vermieten wir per sofort oder nach Vereinbarung\n\n6½-Zimmer-Wohnung\n\n(143,9 m²) im Obergeschoss.\nModerne Küche, Bad/WC, Dusche/WC, Cheminée, 2 Balkone.\nFr. 2600,– incl. Nebenkosten, 2 Garagen à Fr. 150,–",
+                          "translated": ""
+                        },
+                        {
+                          "id": "J",
+                          "text": "Kur- Ferienaufenthalt\nEin Angebot für Senioren\nSchweizer Pflegepersonal\nÄrztliche Betreuung\nIm Ferienort Brunnen am Vierwaldstättersee\n\nKurhaus Vierländerclub, Brunnen\nTel. 041-820 29 25\nFax 041-820 60 69",
+                          "translated": ""
+                        },
+                        {
+                          "id": "K",
+                          "text": "London täglich ab Fr. 295,–\nABC Flug, incl. SBB Bahnbillet. Zuzügl. Versich.\nFr. 12,– und Flughafentaxen Schweiz/GB Fr. 36,–\nVerlangen Sie unseren Spezial-Katalog\n\nPlus Reisen\n3x in Zürich\nSchützengasse 22                               01-224 20 20\nLimmatquai/Preyergasse                  01-252 08 80\nZollikerstrasse 3/Kreuzplatz             01-388 80 80",
+                          "translated": ""
+                        },
+                        {
+                          "id": "L",
+                          "text": "Australien\nErlebnisreisen ab Sydney und in New South Wales\n- Faszination Sydney\n- Blue Mountains und Hunter Valley\n- Delphine bei Port Stephens\n- Abenteuer im Outback ab Broken Hill\n\n**** Flüge nach Sydney ab SFr. 1560,– ****\nNova Tours, Schönenwerderstrasse 35b, 5001 Aarau\nTel.: 062 823 33 23 / Fax: 062 824 78 27 / e-mail: novatours@bluewin.ch\nSenden Sie mir die ausführlichen Unterlagen über Sydney und New South Wales:\nName/Vorname: __________\nStrasse: ____________ PLZ/Ort: ________",
+                          "translated": ""
+                        },
+                        {
+                          "id": "X",
+                          "text": "Keine Anzeige",
+                          "translated": ""
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "obwohl"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "in"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "der"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "dir"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "weil"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "kleinen"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "eins"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "nächsten"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "mitzufahren"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "Grüße"
+                        }
+                      ],
+                      "title": "Lieber Richard",
+                      "text": "Lieber Richard,\n\nich melde mich aus dem Urlaub in den Bergen, der leider schon bald zu Ende geht. Ich möchte dir schreiben, weil du mir das letzte Mal ja auch aus deinem Urlaub geschrieben hast.\n\nIch hatte mit dem Wetter sehr viel Glück, [[21]] es im April in den Bergen sonst meistens kalt und regnerisch ist. Aber [[22]] meinem Urlaub gab es eine Woche lang nur Sonne und wir konnten schon am Morgen auf [[23]] Terrasse frühstücken! Du kannst [[24]] sicher vorstellen, wie sehr ich das genossen habe, [[25]] ich doch sonst immer im Büro hinter meinem Computer sitze! Ich habe jeden Tag eine lange Wanderung gemacht – die Landschaft ist wirklich wunderschön –, oder ich bin zum Kaffeetrinken an einen der vielen [[26]] Seen gefahren.\n\nAlso, [[27]] ist auf jeden Fall sicher: Im [[28]] Jahr komme ich bestimmt wieder hierher. Es wäre schön, wenn du dann auch Zeit hättest [[29]].\n\nLiebe [[30]]\n\nDeine Gudrun",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "options": [
+                            "deshalb",
+                            "indem",
+                            "obwohl"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "options": [
+                            "aus",
+                            "in",
+                            "von"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "options": [
+                            "den",
+                            "der",
+                            "die"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "options": [
+                            "dich",
+                            "dir",
+                            "du"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "options": [
+                            "denn",
+                            "wegen",
+                            "weil"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "options": [
+                            "klein",
+                            "kleine",
+                            "kleinen"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "options": [
+                            "ein",
+                            "einer",
+                            "eins"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "options": [
+                            "nächste",
+                            "nächsten",
+                            "nächstes"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "options": [
+                            "mitfahren",
+                            "mitgefahren",
+                            "mitzufahren"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "options": [
+                            "Gruß",
+                            "Grüße",
+                            "Grüßen"
+                          ]
+                        }
+                      ],
+                      "translated": "",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Lieber Richard,\n\nich melde mich aus dem Urlaub in den Bergen, der leider schon bald zu Ende geht. Ich möchte dir schreiben, weil du mir das letzte Mal ja auch aus deinem Urlaub geschrieben hast.\n\nIch hatte mit dem Wetter sehr viel Glück, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "obwohl"
+                        },
+                        {
+                          "type": "text",
+                          "value": " es im April in den Bergen sonst meistens kalt und regnerisch ist. Aber "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "in"
+                        },
+                        {
+                          "type": "text",
+                          "value": " meinem Urlaub gab es eine Woche lang nur Sonne und wir konnten schon am Morgen auf "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "der"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Terrasse frühstücken! Du kannst "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "dir"
+                        },
+                        {
+                          "type": "text",
+                          "value": " sicher vorstellen, wie sehr ich das genossen habe, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "weil"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich doch sonst immer im Büro hinter meinem Computer sitze! Ich habe jeden Tag eine lange Wanderung gemacht – die Landschaft ist wirklich wunderschön –, oder ich bin zum Kaffeetrinken an einen der vielen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "kleinen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Seen gefahren.\n\nAlso, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "eins"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ist auf jeden Fall sicher: Im "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "nächsten"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Jahr komme ich bestimmt wieder hierher. Es wäre schön, wenn du dann auch Zeit hättest "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "mitzufahren"
+                        },
+                        {
+                          "type": "text",
+                          "value": ".\n\nLiebe "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "Grüße"
+                        },
+                        {
+                          "type": "text",
+                          "value": "\n\nDeine Gudrun"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "Miroslav 2",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-11T16:55:08.260Z"
+                    },
+                    "content": {
+                      "title": "Sehr geehrter Herr Schreiber",
+                      "instruction": "",
+                      "text": "Sehr geehrter Herr Schreiber,\n\nim „Tages-Anzeiger“ [[31]] 29. Mai habe ich Ihre Reklame für Sommerdeutschkurse gesehen. Meine Tochter ist in der 2. Klasse Gymnasium hier in Lausanne. Sie wird nächstes Jahr [[32]] Abschluss machen. Leider ist sie in Deutsch nicht sehr gut, [[33]] interessiere ich mich sehr für Ihr Angebot.\n\nZuerst [[34]] ich gern einige Auskünfte über Ihre Deutschkurse: [[35]] finden Ihre Kurse statt? (Meine Tochter hat vom 4. Juli - 23. August Ferien.) Wie lange dauert der Unterricht pro Tag? Wieviel kostet ein vierwöchiger Intensivkurs?\n\nIn Ihrem Inserat steht, [[36]] der Kurs kreativ, kommunikativ und spielerisch ist. Ich frage mich, ob meine Tochter da überhaupt etwas lernen wird? Könnten Sie [[37]] das bitte näher erklären?\n\n[[38]] möchte ich noch wissen, ob Sie sich auch um die Zimmervermittlung kümmern. Wenn ja, könnten Sie mir mitteilen, wie hoch der Preis für ein Zimmer ist?\n\nFür eine schnelle Antwort auf meine Fragen [[39]] ich Ihnen sehr dankbar, da der Sommer schon vor der Tür steht. Auch würde ich mich [[40]] einen Prospekt Ihrer Schule sehr freuen.\n\nMit freundlichen Grüßen\n\nJeanne Martin",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Sehr geehrter Herr Schreiber,\n\nim „Tages-Anzeiger“ "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "VOM"
+                        },
+                        {
+                          "type": "text",
+                          "value": " 29. Mai habe ich Ihre Reklame für Sommerdeutschkurse gesehen. Meine Tochter ist in der 2. Klasse Gymnasium hier in Lausanne. Sie wird nächstes Jahr "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "IHREN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Abschluss machen. Leider ist sie in Deutsch nicht sehr gut, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "DESHALB"
+                        },
+                        {
+                          "type": "text",
+                          "value": " interessiere ich mich sehr für Ihr Angebot.\n\nZuerst "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "HÄTTE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich gern einige Auskünfte über Ihre Deutschkurse: "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "WANN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " finden Ihre Kurse statt? (Meine Tochter hat vom 4. Juli - 23. August Ferien.) Wie lange dauert der Unterricht pro Tag? Wieviel kostet ein vierwöchiger Intensivkurs?\n\nIn Ihrem Inserat steht, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "DASS"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Kurs kreativ, kommunikativ und spielerisch ist. Ich frage mich, ob meine Tochter da überhaupt etwas lernen wird? Könnten Sie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "MIR"
+                        },
+                        {
+                          "type": "text",
+                          "value": " das bitte näher erklären?\n\n"
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "AUßERDEM"
+                        },
+                        {
+                          "type": "text",
+                          "value": " möchte ich noch wissen, ob Sie sich auch um die Zimmervermittlung kümmern. Wenn ja, könnten Sie mir mitteilen, wie hoch der Preis für ein Zimmer ist?\n\nFür eine schnelle Antwort auf meine Fragen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich Ihnen sehr dankbar, da der Sommer schon vor der Tür steht. Auch würde ich mich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "ÜBER"
+                        },
+                        {
+                          "type": "text",
+                          "value": " einen Prospekt Ihrer Schule sehr freuen.\n\nMit freundlichen Grüßen\n\nJeanne Martin"
+                        }
+                      ],
+                      "translated": "",
+                      "wordBank": [],
+                      "options": [],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "answer": "VOM"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "IHREN"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DESHALB"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "HÄTTE"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "WANN"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "DASS"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "MIR"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "AUßERDEM"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "ÜBER"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "VOM"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "IHREN"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DESHALB"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "HÄTTE"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "WANN"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "DASS"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "MIR"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "AUßERDEM"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "ÜBER"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "version-2"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -86299,8 +87610,8 @@
             }
           },
           "counts": {
-            "parts": 5,
-            "versions": 1
+            "parts": 10,
+            "versions": 2
           }
         },
         "sonja": {
@@ -115765,9 +117076,9 @@
         "jakob-2-alt"
       ],
       "counts": {
-        "themes": 28,
-        "versions": 28,
-        "parts": 132
+        "themes": 27,
+        "versions": 30,
+        "parts": 146
       },
       "themeAliases": {
         "andreas-1": {
@@ -115784,6 +117095,10 @@
         },
         "annika-2": {
           "themeKey": "annika",
+          "versionKey": "version-2"
+        },
+        "Miroslav 2": {
+          "themeKey": "miroslav",
           "versionKey": "version-2"
         }
       }
