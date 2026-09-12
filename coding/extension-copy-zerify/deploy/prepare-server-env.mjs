@@ -34,7 +34,7 @@ const output = {
   DASHBOARD_AUTH_REQUIRED: "true",
   DASHBOARD_SESSION_SECRET: existing.DASHBOARD_SESSION_SECRET || crypto.randomBytes(48).toString("base64url"),
   ZDEUTSCH_GIT_REMOTE: "git@github.com:zdeutsch/zdeutsch.git",
-  ZDEUTSCH_GIT_SSH_KEY: "/opt/zdeutsch/admin/shared/git/id_ed25519"
+  ZDEUTSCH_GIT_SSH_COMMAND: "ssh -i /opt/zdeutsch/admin/shared/git/id_ed25519 -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/opt/zdeutsch/admin/shared/git/known_hosts"
 };
 
 copiedNames.forEach((name) => {
