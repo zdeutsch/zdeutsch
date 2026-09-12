@@ -1,0 +1,23 @@
+[Unit]
+Description=ZDeutsch database management dashboard
+After=network-online.target mariadb.service
+Wants=network-online.target
+Requires=mariadb.service
+
+[Service]
+Type=simple
+User=zdeutsch
+Group=zdeutsch
+WorkingDirectory=/opt/zdeutsch/admin/current
+EnvironmentFile=/opt/zdeutsch/admin/shared/.env
+ExecStart=/usr/bin/node /opt/zdeutsch/admin/current/server.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+KillSignal=SIGTERM
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
