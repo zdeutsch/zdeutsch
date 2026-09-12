@@ -5,6 +5,7 @@ const {
   authenticateAdmin,
   clearSessionCookie,
   createSessionToken,
+  exchangeSsoToken,
   setSessionCookie
 } = require("../services/dashboardAuthService");
 
@@ -52,6 +53,17 @@ router.post("/login", async (req, res, next) => {
     attempts.delete(key);
     setSessionCookie(req, res, createSessionToken(admin));
     return res.json({ ok: true, data: { user: admin } });
+  } catch (error) {
+    return next(error);
+  }
+});
+
+router.post("/sso", async (req, res, next) => {
+  try {
+    const admin = await exchangeSsoToken(req.body?.token);
+    if (!admin) return res.redirect(303, "/login?error=sso");
+    setSessionCookie(req, res, createSessionToken(admin));
+    return res.redirect(303, "/dashboard");
   } catch (error) {
     return next(error);
   }

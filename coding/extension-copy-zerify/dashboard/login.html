@@ -46,6 +46,9 @@
       const button = form.querySelector("button");
       const requested = new URLSearchParams(location.search).get("next") || "/dashboard";
       const nextPath = requested.startsWith("/dashboard") ? requested : "/dashboard";
+      if (new URLSearchParams(location.search).get("error") === "sso") {
+        errorBox.textContent = "Die automatische Anmeldung ist abgelaufen. Bitte melden Sie sich erneut an.";
+      }
       fetch("/auth/session", { headers: { Accept: "application/json" } })
         .then((response) => response.json())
         .then((payload) => { if (payload?.data?.authenticated) location.replace(nextPath); })
