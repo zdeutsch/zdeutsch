@@ -75099,10 +75099,1016 @@
                   "parts": 5
                 }
               }
+            },
+            "version-1": {
+              "key": "version-1",
+              "label": "Version 2",
+              "title": "C",
+              "lesen": {
+                "parts": {
+                  "teil-1": {
+                    "meta": {
+                      "title": "C",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 1",
+                      "section": "lesen",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:41.864Z"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie die Überschriften und die Texte. Finden Sie für jeden Text die passende Überschrift.",
+                      "texts": [
+                        {
+                          "id": 1,
+                          "text": "Der Frankfurter Flughafen wird weiter ausgebaut. Eine Gruppe von Frankfurter Bürgern aus den östlichen Stadtteilen, die sich seit Jahren aktiv für den Naturschutz und die Umwelt einsetzt, lädt für Donnerstag dieser Woche um 19.30 Uhr zu einem Informationsabend über den Ausbau des Frankfurter Flughafens ein. Im Bürgerhaus Ostend, Parkstraße 24, Clubraurn 12, werden verschiedene Sprecher zu hören sein. Die Gruppe möchte Antworten auf folgende Fragen suchen: Wie viel Lärm durch Flugzeuge verträgt die Stadt? Oder Welche Auswirkungen hat der Flugverkehr auf Umwelt und Natur?",
+                          "translated": "يتم توسيع مطار فرانكفورت. تدعو مجموعة من مواطني فرانكفورت من الأحياء الشرقية، الذين ينشطون منذ سنوات في حماية الطبيعة والبيئة، إلى أمسية معلومات يوم الخميس من هذا الأسبوع الساعة 19:30. في بيت المواطنين أوستند، شارع بارك 24، غرفة النادي 12، سيكون هناك متحدثون مختلفون. ترغب المجموعة في البحث عن إجابات للأسئلة التالية: كم من الضجيج الناتج عن الطائرات يمكن أن تتحمله المدينة؟ أو ما هي تأثيرات حركة الطيران على البيئة والطبيعة؟"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Der Frankfurter Flughafen erfreut sich bei vielen Firmen als beliebter Ort für Veranstaltungen und Tagungen. Dies zeigt ein Bericht des Frankfurter Flughafens, der beim zehnjährigen Jubiläum des Kongresszentruns vorgelegt wurde. Im Jubiläumsjahr haben am Frankfurter Flughafen 6800 Veranstaltungen mit insgesamt 72000 Teilnehmern stattgefunden. Im Jahr davor waren es nur 6300 Veranstaltungen mit 70000 Gästen. Im Kongresszentrum, das direkt gegenüber dem Hauptgebäude des Flughafens liegt, gibt es 28 Konferenzräume für bis zu 200 Teilnehmer. Modernste Technik wie Laptop-Anschlüsse und Internetzugänge in allen Konferenzräumen sind ebenso vorhanden, wie ein Dolmetscherdienst und verschiedene Speisemöglichkeiten. Eine transportable Videokonferenz-Anlage ermöglicht Verbindungen in die ganze Welt.",
+                          "translated": "يتمتع مطار فرانكفورت بشعبية كبيرة بين الشركات كمكان مفضل للفعاليات والمؤتمرات. يظهر ذلك في تقرير لمطار فرانكفورت قُدم في الذكرى العاشرة لمركز المؤتمرات. في عام الاحتفال، أقيمت في مطار فرانكفورت 6800 فعالية بمشاركة 72000 مشارك. في العام السابق، كانت هناك 6300 فعالية فقط مع 70000 ضيف. في مركز المؤتمرات، الذي يقع مباشرة مقابل المبنى الرئيسي للمطار، هناك 28 غرفة مؤتمرات تتسع لما يصل إلى 200 مشارك. تتوفر أحدث التقنيات مثل وصلات الكمبيوتر المحمول والوصول إلى الإنترنت في جميع غرف المؤتمرات، بالإضافة إلى خدمة الترجمة الفورية وخيارات الطعام المختلفة. تتيح وحدة مؤتمرات الفيديو المحمولة الاتصالات مع جميع أنحاء العالم."
+                        },
+                        {
+                          "id": 3,
+                          "text": "Eine Bürgergruppe mit dem Namen Südliches Frankfurt lädt für Montag kommender Woche, um 19.30 Uhr ins Pfarrhaus St. Mauritius, Mauritiusstraße 14, zu einer öffentlichen Expertenbefragung zum Thema Arbeitsplätze am Frankfurter Flughafen ein. Der Gruppe liegen Berichte und Daten vor, die nach den Worten der Sprecher der Gruppe sehr fantastisch und zweifelhaft sind. Deshalb hat die Bürgergruppe Südliches Frankfurt den Personalleiter des Frankfurter Flughafens, einen Experten aus dem Wirtschaftsministerium, einen bekannten Stadtentwicklungsplaner und einen Soziologen, der sich mit der Arbeitsplatzentwicklung in der Frankfurter Region beschäftigt, eingeladen. Im Anschluss an die Vorträge der Experten haben die Gäste Zeit, Fragen zu stellen.",
+                          "translated": "تدعو مجموعة مواطنين باسم جنوب فرانكفورت إلى اجتماع عام يوم الاثنين المقبل الساعة 19:30 في بيت القسيس سانت موريتيوس، شارع موريتيوس 14، لاستجواب خبراء حول موضوع الوظائف في مطار فرانكفورت. تمتلك المجموعة تقارير وبيانات تعتبرها المتحدثون عنها رائعة ومشكوك فيها. لذلك دعت مجموعة جنوب فرانكفورت مدير الموارد البشرية في مطار فرانكفورت، وخبيرًا من وزارة الاقتصاد، ومخططًا حضريًا معروفًا وعالم اجتماع يدرس تطور الوظائف في منطقة فرانكفورت. بعد محاضرات الخبراء، سيكون لدى الحضور وقت لطرح الأسئلة."
+                        },
+                        {
+                          "id": 4,
+                          "text": "Das neue Halbjahresprogramm der Evangelischen Familienbildungsstätte bringt eine Übersicht über viele Veranstaltungen. Neben Kursen wie Geburtsvorbereitung und Babypflege steht diesmal das Thema Berufstätige Eltern im Mittelpunkt. In Gruppen und Kursen vor allem für Frauen geht es darum, wie sich nach der Geburt eines Kindes Beruf und Familie miteinander vereinbaren lassen. Das Verhältnis zwischen Mann und Frau spielt eine große Rolle im Angebot der Familienbildung; hierzu gibt es wieder spezielle Programme nur für Frauen oder nur für Männer. Auch zum Verhältnis der Generationen (Großeltern und Enkelkinder) gibt es wieder Angebote. Darüber hinaus wartet das Programm mit Kursen für Entspannung und Zeitmanagement auf, die bei Fragen des Alltags helfen wollen.",
+                          "translated": "يقدم البرنامج نصف السنوي الجديد لمركز التعليم العائلي الإنجيلي نظرة عامة على العديد من الفعاليات. إلى جانب دورات مثل التحضير للولادة ورعاية الأطفال، يركز هذا البرنامج على موضوع الآباء العاملين. في مجموعات ودورات مخصصة للنساء بشكل خاص، يتم مناقشة كيفية التوفيق بين العمل والأسرة بعد ولادة الطفل. تلعب العلاقة بين الرجل والمرأة دورًا كبيرًا في عروض التعليم العائلي؛ وهناك برامج خاصة للنساء فقط أو للرجال فقط. كما توجد عروض حول العلاقة بين الأجيال (الأجداد والأحفاد). بالإضافة إلى ذلك، يقدم البرنامج دورات للاسترخاء وإدارة الوقت لمساعدة في مسائل الحياة اليومية."
+                        },
+                        {
+                          "id": 5,
+                          "text": "Die Volkshochschule Dornbirn bietet in den kommenden Wochen neue Kurse an. Am Mittwoch nächster Woche beginnen zwei Malkurse für Kinder. Zweieinhalb- bis vierjährige Kinder treffen sich um 15.30 Uhr, Kinder im Alter von fünf und sechs Jahren um 17.00 Uhr. Für Kinder im Alter zwischen eineinhalb und sechs Jahren und ihre Väter beginnt am Samstag um 10.00 Uhr eine feste Vater-Kind-Gruppe. Am darauf-folgenden Samstag gibt es dann auch ein Treffen für Väter und Kinder bis dreieinhalb Jahren. Etwas anderes ist die Kultur- und Kreativwerkstatt am Montag nächster Woche. Aus Ton und Erde sollen Figuren nach afrikanischen Beispielen gebastelt werden. Zur Vorbereitung treffen sich die Teilnehmer am kommenden Montag zuerst im Museum. Anmeldung spätestens morgen bis 15.00 Uhr.",
+                          "translated": "تقدم مدرسة التعليم المستمر في دورنبرين دورات جديدة في الأسابيع القادمة. تبدأ يوم الأربعاء المقبل دورتان للرسم للأطفال. يلتقي الأطفال من عمر سنتين ونصف إلى أربع سنوات في الساعة 15:30، والأطفال من عمر خمس وست سنوات في الساعة 17:00. تبدأ مجموعة ثابتة للأبناء والآباء للأطفال بين عمر سنة ونصف وست سنوات يوم السبت الساعة 10:00. في السبت التالي، سيكون هناك لقاء للآباء والأطفال حتى عمر ثلاث سنوات ونصف. شيء مختلف هو ورشة الثقافة والإبداع يوم الاثنين المقبل. سيتم صنع تماثيل من الطين والتراب مستوحاة من أمثلة أفريقية. للتحضير، يلتقي المشاركون أولاً في المتحف يوم الاثنين المقبل. التسجيل حتى الغد الساعة 15:00."
+                        }
+                      ],
+                      "headlines": [
+                        {
+                          "id": "A",
+                          "text": "Familienbildung Schwerpunkt Beruf und Familie",
+                          "translated": "التعليم العائلي مع التركيز على العمل والأسرة"
+                        },
+                        {
+                          "id": "B",
+                          "text": "Demonstration gegen Fluglärm",
+                          "translated": "تظاهرة ضد ضجيج الطائرات"
+                        },
+                        {
+                          "id": "C",
+                          "text": "Flughafen Frankfurt wird 10 Jahre",
+                          "translated": "مطار فرانكفورت يحتفل بعامه العاشر"
+                        },
+                        {
+                          "id": "D",
+                          "text": "Flughafen Frankfurt beliebter Veranstaltungsort",
+                          "translated": "مطار فرانكفورت مكان مفضل للفعاليات"
+                        },
+                        {
+                          "id": "E",
+                          "text": "Experten gegen Vergrößerung des Flughafens",
+                          "translated": "خبراء ضد توسيع المطار"
+                        },
+                        {
+                          "id": "F",
+                          "text": "Diskussion über Flughafen und Arbeitsplätze",
+                          "translated": "نقاش حول المطار والوظائف"
+                        },
+                        {
+                          "id": "G",
+                          "text": "Neue Kurse: Spiele für Mütter und Kinder",
+                          "translated": "دورات جديدة: ألعاب للأمهات والأطفال"
+                        },
+                        {
+                          "id": "H",
+                          "text": "Umwelt und Flughafen: Ein Informationsabend der Bürger",
+                          "translated": "البيئة والمطار: أمسية معلومات للمواطنين"
+                        },
+                        {
+                          "id": "I",
+                          "text": "Neue Kurse für Kinder",
+                          "translated": "دورات جديدة للأطفال"
+                        },
+                        {
+                          "id": "J",
+                          "text": "Neue Kurse: Museumsführung für junge Väter",
+                          "translated": "دورات جديدة: جولة في المتحف للآباء الشباب"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "textId": 1,
+                          "headlineId": "H"
+                        },
+                        {
+                          "textId": 2,
+                          "headlineId": "D"
+                        },
+                        {
+                          "textId": 3,
+                          "headlineId": "F"
+                        },
+                        {
+                          "textId": 4,
+                          "headlineId": "A"
+                        },
+                        {
+                          "textId": 5,
+                          "headlineId": "I"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "C",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:42.864Z"
+                    },
+                    "content": {
+                      "title": "Liebe Catherine",
+                      "instruction": "Ergänzen Sie die fehlenden Wörter.",
+                      "text": "Liebe Catherine,\n\nseit ich dir letzte Mal von meinem Sprachhaufenhalt in der Schweiz [[21]] habe, ist viel passiert. Ich kenne [[22]] Land jetzt schon recht gut. Die Schweiz ist ja wirklich nicht groß. [[23]] in jeder Gegend wird ein anderer Dialekt oder gar eine andere Sprache gesprochen. Das ist [[24]] mich fast unglaublich! Bei uns in Australien fährt man mit dem Auto 24 Stunden lang geradeaus, und [[25]] man ankommt, dann sprechen die Leute dort immer noch dieselbe Sprache. Am Anfang hat mich das Sprachgemisch [[26]] sehr verwirrt, aber [[27]] verstehe ich fast alles, wenn jemand auf Schweizerdeutsch zu mir spricht. Ich kann aber nur auf Hochdeutsch antworten. Zwischen der Schule hier und unserem Schulsystem in Australien gibt es einige [[28]]: In der Schweiz sprechen die Lehrer viel und die Schüler [[29]] Vieles im Kopf behalten oder aufschreiben. In Australien arbeiten wir meistens im Rahmen von Projekten und machen eigentlich alle Aufgaben auf [[30]] Computer.\n\nViele Grüße\n\nJack",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Liebe Catherine,\n\nseit ich dir letzte Mal von meinem Sprachhaufenhalt in der Schweiz "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "erzählt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " habe, ist viel passiert. Ich kenne "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "dieses"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Land jetzt schon recht gut. Die Schweiz ist ja wirklich nicht groß. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "aber"
+                        },
+                        {
+                          "type": "text",
+                          "value": " in jeder Gegend wird ein anderer Dialekt oder gar eine andere Sprache gesprochen. Das ist "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "für"
+                        },
+                        {
+                          "type": "text",
+                          "value": " mich fast unglaublich! Bei uns in Australien fährt man mit dem Auto 24 Stunden lang geradeaus, und "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "wenn"
+                        },
+                        {
+                          "type": "text",
+                          "value": " man ankommt, dann sprechen die Leute dort immer noch dieselbe Sprache. Am Anfang hat mich das Sprachgemisch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "schon"
+                        },
+                        {
+                          "type": "text",
+                          "value": " sehr verwirrt, aber "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "jetzt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " verstehe ich fast alles, wenn jemand auf Schweizerdeutsch zu mir spricht. Ich kann aber nur auf Hochdeutsch antworten. Zwischen der Schule hier und unserem Schulsystem in Australien gibt es einige "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "Unterschiede"
+                        },
+                        {
+                          "type": "text",
+                          "value": ": In der Schweiz sprechen die Lehrer viel und die Schüler "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "müssen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Vieles im Kopf behalten oder aufschreiben. In Australien arbeiten wir meistens im Rahmen von Projekten und machen eigentlich alle Aufgaben auf "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "dem"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Computer.\n\nViele Grüße\n\nJack"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "options": [
+                            "erzähle",
+                            "erzählen",
+                            "erzählt"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "options": [
+                            "diese",
+                            "diesen",
+                            "dieses"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "options": [
+                            "aber",
+                            "obwohl",
+                            "sondern"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "options": [
+                            "an",
+                            "für",
+                            "vor"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "options": [
+                            "als",
+                            "wann",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "options": [
+                            "wenn",
+                            "ganz",
+                            "schon"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "options": [
+                            "früher",
+                            "jetzt",
+                            "seit"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "options": [
+                            "Unterschied",
+                            "Unterschiede",
+                            "Unterschieden"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "options": [
+                            "brauchen",
+                            "haben",
+                            "müssen"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "options": [
+                            "dem",
+                            "den",
+                            "der"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "erzählt"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "dieses"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "aber"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "für"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "wenn"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "schon"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "jetzt"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "Unterschiede"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "müssen"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "dem"
+                        }
+                      ],
+                      "translated": "عزيزتي كاثرين،\n\nمنذ آخر مرة أخبرتك فيها عن إقامتي اللغوية في سويسرا [[21]] حدث الكثير. أنا أعرف [[22]] البلد جيدًا الآن. سويسرا ليست كبيرة حقًا. [[23]] في كل منطقة يتم التحدث بلهجة مختلفة أو حتى بلغة مختلفة. هذا [[24]] يكاد يكون لا يصدق بالنسبة لي! في أستراليا، تقود السيارة لمدة 24 ساعة على التوالي، وعندما تصل، لا يزال الناس هناك يتحدثون نفس اللغة. في البداية، كان مزيج اللغات [[26]] محيرًا جدًا بالنسبة لي، لكن [[27]] أفهم تقريبًا كل شيء عندما يتحدث إلي أحدهم باللهجة السويسرية الألمانية. لكن يمكنني الرد فقط بالألمانية الفصحى. هناك بعض [[28]] بين المدرسة هنا ونظامنا التعليمي في أستراليا: في سويسرا يتحدث المعلمون كثيرًا ويجب على الطلاب [[29]] حفظ الكثير في أذهانهم أو كتابته. في أستراليا نعمل غالبًا في إطار مشاريع ونقوم بكل المهام على [[30]] الكمبيوتر.\n\nمع أطيب التحيات\n\nجاك"
+                    }
+                  },
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "C",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:43.031Z"
+                    },
+                    "content": {
+                      "title": "QUANTUM-SYSTEM",
+                      "instruction": "Wählen Sie für jede Lücke das passende Wort aus dem Kasten.",
+                      "text": "Das Lotterie – Systemspiel\n\nOtto – Suhr- Allee 100. D- 10120 Berlin\n\nSehr geehrte Lottospieler,\nwer möchte nicht auch [[31]] bei sechs Richtigen im Lotto dabei sein? Vertrauen Sie beim Lottospiel nicht [[32]] auf das Glück, denn Sie [[33]] Ihre Chancen selbst stark verbessern, [[34]] Sie mit unserem Lotterie-System spielen – und das für nur 5 Euro in der Woche! [[35]] allein zu spielen, spielen Sie mit uns in einer starken Spielergemeinschaft. Dadurch erhöhen sich [[36]] automatisch Ihre Chancen! Und was Sie gewinnen können? [[37]] unserem Quantum-System spielen Sie mit einer Chance auf einen Gewinn von 1 Million Euro! Alle Gewinne erhalten Sie umgehend und ungekürzt zu 100% – das [[38]] wir Ihnen!\n\nDavon habe ich mich selbst überzeugt! Spielen Sie mit uns das Quantum-System: [[39]] 700 Quantum-Systemspielgruppen haben zusammen schon über sieben Millionen Euro gewonnen.\nHerzliche Grüße\nIhre SABINE MEIER-PÜTZ\n\nPS: Als besondere Gewinnchance erhalten Sie heute das Vier-Richtige-Gratisspiel. [[40]] Sie hier unbedingt mit und gewinnen Sie! Ich drücke Ihnen die Daumen……",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Das Lotterie – Systemspiel\n\nOtto – Suhr- Allee 100. D- 10120 Berlin\n\nSehr geehrte Lottospieler,\nwer möchte nicht auch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "EINMAL"
+                        },
+                        {
+                          "type": "text",
+                          "value": " bei sechs Richtigen im Lotto dabei sein? Vertrauen Sie beim Lottospiel nicht "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "NUR"
+                        },
+                        {
+                          "type": "text",
+                          "value": " auf das Glück, denn Sie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "KÖNNEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Ihre Chancen selbst stark verbessern, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "WENN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie mit unserem Lotterie-System spielen – und das für nur 5 Euro in der Woche! "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "STATT"
+                        },
+                        {
+                          "type": "text",
+                          "value": " allein zu spielen, spielen Sie mit uns in einer starken Spielergemeinschaft. Dadurch erhöhen sich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "GANZ"
+                        },
+                        {
+                          "type": "text",
+                          "value": " automatisch Ihre Chancen! Und was Sie gewinnen können? "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "BEI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " unserem Quantum-System spielen Sie mit einer Chance auf einen Gewinn von 1 Million Euro! Alle Gewinne erhalten Sie umgehend und ungekürzt zu 100% – das "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "GARANTIEREN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " wir Ihnen!\n\nDavon habe ich mich selbst überzeugt! Spielen Sie mit uns das Quantum-System: "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "BEREITS"
+                        },
+                        {
+                          "type": "text",
+                          "value": " 700 Quantum-Systemspielgruppen haben zusammen schon über sieben Millionen Euro gewonnen.\nHerzliche Grüße\nIhre SABINE MEIER-PÜTZ\n\nPS: Als besondere Gewinnchance erhalten Sie heute das Vier-Richtige-Gratisspiel. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "MACHEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie hier unbedingt mit und gewinnen Sie! Ich drücke Ihnen die Daumen……"
+                        }
+                      ],
+                      "wordBank": [],
+                      "options": [
+                        "EINMAL",
+                        "NUR",
+                        "KÖNNEN",
+                        "WENN",
+                        "STATT",
+                        "GANZ",
+                        "BEI",
+                        "GARANTIEREN",
+                        "BEREITS",
+                        "MACHEN"
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "answer": "EINMAL"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "NUR"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "KÖNNEN"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "STATT"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "GANZ"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "GARANTIEREN"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "BEREITS"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "MACHEN"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "EINMAL"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "NUR"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "KÖNNEN"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "STATT"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "GANZ"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "GARANTIEREN"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "über"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "MACHEN"
+                        }
+                      ],
+                      "translated": "نظام اليانصيب – لعبة النظام\n\nأوتو – شارع سوهرا 100. د- 10120 برلين\n\nأعزائي لاعبي اليانصيب،\nمن لا يرغب في [[31]] الفوز بستة أرقام صحيحة في اليانصيب؟ لا تعتمدوا في لعبة اليانصيب على [[32]] الحظ فقط، لأنكم [[33]] يمكنكم تحسين فرصكم بشكل كبير بأن [[34]] تلعبوا بنظام اليانصيب الخاص بنا – وذلك مقابل 5 يورو فقط في الأسبوع! [[35]] بدلاً من اللعب بمفردكم، العبوا معنا في مجتمع لاعبين قوي. وبهذا تزيد [[36]] فرصكم تلقائيًا! وماذا يمكنكم أن تربحوا؟ [[37]] عند اللعب بنظام كوانتوم، لديكم فرصة للفوز بمليون يورو! ستحصلون على جميع الجوائز فورًا وبالكامل 100% – هذا [[38]] ما نعدكم به!\n\nلقد اقتنعت بنفسي بذلك! العبوا معنا نظام كوانتوم: [[39]] 700 مجموعة لعب بنظام كوانتوم فازت معًا بأكثر من سبعة ملايين يورو.\nمع أطيب التحيات\nسابين ماير-بوتس\n\nملاحظة: كفرصة ربح خاصة، تحصلون اليوم على لعبة مجانية لأربعة أرقام صحيحة. [[40]] شاركوا هنا بالتأكيد واربحوا! أتمنى لكم التوفيق……"
+                    }
+                  },
+                  "teil-2": {
+                    "meta": {
+                      "title": "C",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:42.198Z"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie die richtige Lösung.",
+                      "passage": {
+                        "title": "Computerprobleme – ein Kinderspiel",
+                        "text": "Anne und Melanie (beide 6) stehen Erzieherinnen mit Vorschlägen hilfreich zur Seite\n\nVon Christiane Altenberger\n\nSie sind die Problemlöser im Kindergarten an der Munckerstraße. Wenn das Malprogram spinnt, plötzlich ein Spiel auftaucht, das keiner kennt, dann rufen die Erzieherinnen nach Anne und Melanie. Die sind zwar erst sechs Jahre alt, aber mit den Computerspielen kennen sie sich aus. Die Kinder wissen manchmal mehr als wir sagt Eva Schilling. Leiterin des Kindergartens. Gelernt haben die beiden ihr Know-how bei Multimedia - Landschaften für Kinder, einem Projekt, das das Schulamt zusammen mit dem Studio im Netz gestartet hat.\n\nIm Rahmen dieses Projekts werden in städtischen Kindergärten zwei Wanderstationen mit je drei Multimedia- Computern und einem Farbdrucker installiert. Die Stationen wandern durch 14 Kindergärten, wo sie jeweils für vier Wochen installiert werden. Mit dabei in den Kindergärten: ein ganzer Satz von Spiel – Software. Vierjährige am Computer? In Pädagogen kreisen sind viele Berührungsängste da, weiß Edith llg, Fachberaterin für Kindergärten beim Schulamt, aber wir können uns aus dieser Entwicklung nicht ausklinken. Die Kinder wollen sich mit ihrer Umwelt auseinandersetzen. Angefangen hat diese Auseinandersetzung im Studio im Netz – 193 Kinder waren eingeladen, um erste Erfahrungen am Computer zu sammeln. Die Kinder waren absolut begeistert, haben immer wieder gefragt, wann gehen wir da wieder hin, so Frau llg.\n\nBevor jedoch die Computer in die Kindergärten kamen, waren die Eltern aufzuklären. Bei manchen Eltern löste das Stichwort Computer akute Ängste aus nach dem Motto: Mein fröhliches, gesundes Kind setzt sich vor den Computer und steht sechs Stunden später krank, sprachlos und einsam wieder auf.\n\nDiese Ängste haben sich inzwischen gelegt und die Erfahrung vor Ort zeigt, dass sie weitgehend über flüssig sind. Die Erzieherinnen achten auch darauf, dass die Kinder nie länger als 15 bis 20 Minuten vor den Computern sitzen, und holen vor allem kreative Software auf den Bildschirm.\n\nDas einsame Dämmern vor dem Computer ist wohl ohnehin eher Sache der Erwachsenen – die Kinder spielen immer zu zweit oder zu dritt an der Maschine. Eva Schilling hat beobachtet, dass die Kinder am Computer sehr friedlich miteinander umgehen, sie helfen sich gegenseitig, es gibt wenig Konflikte. Dabei entwickeln gerade Kinder, die sich sonst nur schwer auf etwas konzentrieren können, plötzlich ungeahnte Konzentrationszeiten. Eva Schilling kann sich deshalb die Computer als Dauereinrichtung im Kindergarten vorstellen.",
+                        "paragraphs": [
+                          "Anne und Melanie (beide 6) stehen Erzieherinnen mit Vorschlägen hilfreich zur Seite",
+                          "Von Christiane Altenberger",
+                          "Sie sind die Problemlöser im Kindergarten an der Munckerstraße. Wenn das Malprogram spinnt, plötzlich ein Spiel auftaucht, das keiner kennt, dann rufen die Erzieherinnen nach Anne und Melanie. Die sind zwar erst sechs Jahre alt, aber mit den Computerspielen kennen sie sich aus. Die Kinder wissen manchmal mehr als wir sagt Eva Schilling. Leiterin des Kindergartens. Gelernt haben die beiden ihr Know-how bei Multimedia - Landschaften für Kinder, einem Projekt, das das Schulamt zusammen mit dem Studio im Netz gestartet hat.",
+                          "Im Rahmen dieses Projekts werden in städtischen Kindergärten zwei Wanderstationen mit je drei Multimedia- Computern und einem Farbdrucker installiert. Die Stationen wandern durch 14 Kindergärten, wo sie jeweils für vier Wochen installiert werden. Mit dabei in den Kindergärten: ein ganzer Satz von Spiel – Software. Vierjährige am Computer? In Pädagogen kreisen sind viele Berührungsängste da, weiß Edith llg, Fachberaterin für Kindergärten beim Schulamt, aber wir können uns aus dieser Entwicklung nicht ausklinken. Die Kinder wollen sich mit ihrer Umwelt auseinandersetzen. Angefangen hat diese Auseinandersetzung im Studio im Netz – 193 Kinder waren eingeladen, um erste Erfahrungen am Computer zu sammeln. Die Kinder waren absolut begeistert, haben immer wieder gefragt, wann gehen wir da wieder hin, so Frau llg.",
+                          "Bevor jedoch die Computer in die Kindergärten kamen, waren die Eltern aufzuklären. Bei manchen Eltern löste das Stichwort Computer akute Ängste aus nach dem Motto: Mein fröhliches, gesundes Kind setzt sich vor den Computer und steht sechs Stunden später krank, sprachlos und einsam wieder auf.",
+                          "Diese Ängste haben sich inzwischen gelegt und die Erfahrung vor Ort zeigt, dass sie weitgehend über flüssig sind. Die Erzieherinnen achten auch darauf, dass die Kinder nie länger als 15 bis 20 Minuten vor den Computern sitzen, und holen vor allem kreative Software auf den Bildschirm.",
+                          "Das einsame Dämmern vor dem Computer ist wohl ohnehin eher Sache der Erwachsenen – die Kinder spielen immer zu zweit oder zu dritt an der Maschine. Eva Schilling hat beobachtet, dass die Kinder am Computer sehr friedlich miteinander umgehen, sie helfen sich gegenseitig, es gibt wenig Konflikte. Dabei entwickeln gerade Kinder, die sich sonst nur schwer auf etwas konzentrieren können, plötzlich ungeahnte Konzentrationszeiten. Eva Schilling kann sich deshalb die Computer als Dauereinrichtung im Kindergarten vorstellen."
+                        ],
+                        "translated": [
+                          "آن وملاني (كلاهما في السادسة من العمر) تساعدان المربيات باقتراحات مفيدة",
+                          "بقلم كريستيان ألتنبرغر",
+                          "هم حلالو المشاكل في روضة الأطفال في شارع مونكر. عندما يتعطل برنامج الرسم، أو يظهر فجأة لعبة لا يعرفها أحد، تنادي المربيات آن وملاني. على الرغم من أن عمرهما ست سنوات فقط، إلا أنهما تعرفان ألعاب الكمبيوتر جيدًا. الأطفال أحيانًا يعرفون أكثر منا، تقول إيفا شيلينغ، مديرة الروضة. تعلم الاثنتان مهاراتهما في مشروع \"المناظر المتعددة الوسائط للأطفال\"، وهو مشروع أطلقته إدارة المدارس مع استوديو الإنترنت.",
+                          "في إطار هذا المشروع، يتم تركيب محطتين متنقلتين في رياض الأطفال البلدية، كل واحدة تحتوي على ثلاثة حواسيب متعددة الوسائط وطابعة ملونة. تنتقل هذه المحطات عبر 14 روضة أطفال، حيث تُثبت لمدة أربعة أسابيع في كل منها. تشمل رياض الأطفال مجموعة كاملة من برامج الألعاب. هل يستخدم الأطفال في الرابعة من عمرهم الكمبيوتر؟ في أوساط التربويين هناك مخاوف كثيرة، كما تعرف إديث إلج، المستشارة الفنية لرياض الأطفال في إدارة المدارس، لكن لا يمكننا تجاهل هذا التطور. يريد الأطفال التفاعل مع بيئتهم. بدأت هذه التجربة في استوديو الإنترنت – حيث دُعي 193 طفلاً لتجربة الكمبيوتر لأول مرة. كان الأطفال متحمسين للغاية، وسألوا مرارًا متى سنعود إلى هناك، كما تقول السيدة إلج.",
+                          "لكن قبل وصول الحواسيب إلى رياض الأطفال، كان لا بد من توعية الآباء. لدى بعض الآباء، أثار مصطلح الكمبيوتر مخاوف حادة على غرار: طفلي السعيد والصحي يجلس أمام الكمبيوتر ثم يقف بعد ست ساعات مريضًا، عاجزًا ووحيدًا.",
+                          "لقد تلاشت هذه المخاوف الآن، وتُظهر التجربة الميدانية أنها غير مبررة إلى حد كبير. كما تحرص المربيات على ألا يجلس الأطفال أمام الحواسيب لأكثر من 15 إلى 20 دقيقة، ويعرضن بشكل خاص برامج إبداعية على الشاشة.",
+                          "الجلوس المنعزل أمام الكمبيوتر هو على الأرجح أمر للكبار – الأطفال يلعبون دائمًا في مجموعات من اثنين أو ثلاثة على الجهاز. لاحظت إيفا شيلينغ أن الأطفال يتعاملون بسلام مع بعضهم البعض عند استخدام الكمبيوتر، يساعدون بعضهم البعض، وهناك قليل من النزاعات. كما يطور الأطفال الذين يجدون صعوبة في التركيز عادةً أوقات تركيز غير متوقعة. لذلك يمكن لإيفا شيلينغ تخيل الحواسيب كجزء دائم في رياض الأطفال."
+                        ]
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": "Das Schulamt hat ein Projekt gestartet, bei dem",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "Computer in Kindergärten aufgestellt werden."
+                            },
+                            {
+                              "id": "b",
+                              "text": "Computerspiele für Vierjährige entwickelt werden sollen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "Kinder neue Farbdrucker ausprobieren sollen."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "Computer in Kindergärten aufgestellt werden."
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "Die Kinder",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "hatten großen Spaß bei dem Projekt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "wollten lieber draußen im Freien spielen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "wussten nicht, wann sie ins Studio im Netz gehen sollten."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "hatten großen Spaß bei dem Projekt."
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "Eltern fürchten, dass",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "der Computer ihren Kindern schadet."
+                            },
+                            {
+                              "id": "b",
+                              "text": "ihre Kinder nicht so früh aufstehen können."
+                            },
+                            {
+                              "id": "c",
+                              "text": "ihre Kinder vor dem Computer Angst haben."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "der Computer ihren Kindern schadet."
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Die Erzieherinnen",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "arbeiten jeden Tag 15 bis 20 Minuten am Computer."
+                            },
+                            {
+                              "id": "b",
+                              "text": "spielen immer mit zwei oder drei Kindern am Computer."
+                            },
+                            {
+                              "id": "c",
+                              "text": "wählen für die Kinder die Software aus."
+                            }
+                          ],
+                          "answerId": "c",
+                          "answerText": "wählen für die Kinder die Software aus."
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "Wenn die Kinder am Computer sitzen, dann",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "gibt es häufig Streit."
+                            },
+                            {
+                              "id": "b",
+                              "text": "hilft ein Kind dem anderen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "können sich die meisten nicht lange konzentrieren."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "hilft ein Kind dem anderen."
+                        }
+                      ]
+                    }
+                  },
+                  "teil-3": {
+                    "meta": {
+                      "title": "C",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 3",
+                      "section": "lesen",
+                      "partNumber": 3,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:42.364Z"
+                    },
+                    "content": {
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie wollen am Wochenende gerne in ein Klavierkonzert gehen.",
+                          "translated": "يريدون الذهاب إلى حفل بيانو في عطلة نهاية الأسبوع."
+                        },
+                        {
+                          "id": 12,
+                          "text": "Sie sind in Füssen und wollen am Montag ins Museum gehen.",
+                          "translated": "هم في فويسن ويريدون الذهاب إلى المتحف يوم الاثنين."
+                        },
+                        {
+                          "id": 13,
+                          "text": "Sie sind in Süddeutschland im Urlaub und möchten gerne eine bayerische Spezialität essen.",
+                          "translated": "هم في جنوب ألمانيا في عطلة ويرغبون في تناول تخصص بافاري."
+                        },
+                        {
+                          "id": 14,
+                          "text": "Sie haben sich mit Bekannten zu einem Fischessen verabredet.",
+                          "translated": "لقد اتفقوا مع معارفهم على تناول وجبة سمك."
+                        },
+                        {
+                          "id": 15,
+                          "text": "Sie sind in Bayern und wollen Käsespezialitäten einkaufen.",
+                          "translated": "هم في بافاريا ويريدون شراء تخصصات الجبن."
+                        },
+                        {
+                          "id": 16,
+                          "text": "Sie möchten einen Deutschkurs in Wien besuchen.",
+                          "translated": "يريدون حضور دورة لغة ألمانية في فيينا."
+                        },
+                        {
+                          "id": 17,
+                          "text": "Ihr 16 jähriger Sohn soll in den Ferien im Ausland Englisch lernen.",
+                          "translated": "ابنهم البالغ من العمر 16 عامًا يجب أن يتعلم الإنجليزية في الخارج خلال العطلة."
+                        },
+                        {
+                          "id": 18,
+                          "text": "Sie interessieren sich für einen Sprachkurs auf CD.",
+                          "translated": "هم مهتمون بدورة لغة على قرص مضغوط."
+                        },
+                        {
+                          "id": 19,
+                          "text": "Sie wollen, dass Ihre 10- jährige Tochter in den Ferien eine Fremdsprache lernt.",
+                          "translated": "يريدون أن تتعلم ابنتهم البالغة من العمر 10 سنوات لغة أجنبية خلال العطلة."
+                        },
+                        {
+                          "id": 20,
+                          "text": "Eine Bekannte will ihren Geburtstag in einem Restaurant feiern und dort auch übernachten.",
+                          "translated": "صديقة تريد الاحتفال بعيد ميلادها في مطعم والبقاء هناك أيضًا."
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "MUSEUM DER STADT FÜSSEN\nLechhalde 3 · 87629 Füssen\nTel. (08362) 50 53 – 45 u. -43\n\nSTAATSGALERIE IM HOHEN SCHLOSS FÜSSEN\nMagnusplatz 10 · 87629 Füssen\nTel. (08362) 50 53 – 64\n\nÖffnungszeiten:\nApril bis Oktober:\nDi.–So. 11.00–16.00 Uhr\nMo. geschlossen\n\nNovember bis März:\nDi.–So. 14.00–16.00 Uhr\nMo. geschlossen",
+                          "translated": "متحف مدينة فويسن\nليخهالده 3 · 87629 فويسن\nهاتف (08362) 50 53 – 45 و -43\n\nمعرض الدولة في القلعة العليا فويسن\nماغنوسبلاتس 10 · 87629 فويسن\nهاتف (08362) 50 53 – 64\n\nساعات العمل:\nمن أبريل إلى أكتوبر:\nالثلاثاء–الأحد 11:00–16:00\nالإثنين مغلق\n\nمن نوفمبر إلى مارس:\nالثلاثاء–الأحد 14:00–16:00\nالإثنين مغلق"
+                        },
+                        {
+                          "id": "B",
+                          "text": "Franziskaner Stüberl\n87629 Füssen – Eingang Fußgängerzone\nKemptener Straße 1\nTelefon (08362) 37124\n\nInh. Bernd Zientek\n\nGutbürgerliche Allgäuer und Bayerische Küche\n\nDer beliebte Treffpunkt in gemütlicher Atmosphäre\n\nSonntag-Ruhetag\n\nAuf Ihren Besuch freut sich\nBernd Zientek mit Team",
+                          "translated": "فرانزيسكانر شتوبيرل\n87629 فويسن – مدخل منطقة المشاة\nشارع كيمبتنر 1\nهاتف (08362) 37124\n\nالمالك: بيرند زيينتيك\n\nمطبخ ألماني وبافاري شعبي\n\nنقطة اللقاء المحبوبة في جو مريح\n\nيوم الأحد عطلة\n\nبيرند زيينتيك وفريقه يتطلعون لزيارتكم"
+                        },
+                        {
+                          "id": "C",
+                          "text": "SENNEREI–GENOSSENSCHAFT BAYERN\nHochplateau – Lechlenfeld · Telefon (08362) 917214\n\nFrisch vom Erzeuger:\n\nAllgäuer Emmentaler\n\nAllgäuer Bergkäse\n\nTilsiter\n\nFrisch-Milch\n\neigene Butterherstellung\n\nÖFFNUNGSZEITEN:\nWochentags: 7.30–12.30 h, 16.30–18.30 h\nSa. u. Feiertag: 7.30–13.00 h, 16.30–17.00 h",
+                          "translated": "جمعية الألبان – بافاريا\nهوتشبلاتو – ليخلينفيلد · هاتف (08362) 917214\n\nطازج من المنتج:\n\nإمنتالر ألغوي\n\nجبن جبال ألغوي\n\nتيلسيتر\n\nحليب طازج\n\nإنتاج الزبدة الخاص\n\nساعات العمل:\nأيام الأسبوع: 7:30–12:30، 16:30–18:30\nالسبت والعطلات: 7:30–13:00، 16:30–17:00"
+                        },
+                        {
+                          "id": "D",
+                          "text": "Sprachen lernen & Leute treffen\n\nBildungsurlaub für Erwachsene in\nEngland, Malta, Frankreich, Spanien, Italien und Kalifornien\n\nFordern Sie unsere für Sie kostenlose Broschüre an.\n\nSchicken Sie uns ein Kennwort Ihrer Wahl, und wir senden Ihnen die Broschüre samt Einstufungstest.\n\nSPRACHCAFFEE\nHolbeinstr. 16\n60596 Frankfurt\n\nTel.: 069-61 90 120\nFax: 069-63 13 95",
+                          "translated": "تعلم اللغات والتعرف على الناس\n\nإجازة تعليمية للبالغين في\nإنجلترا، مالطا، فرنسا، إسبانيا، إيطاليا وكاليفورنيا\n\nاطلب كتيبنا المجاني لك.\n\nأرسل لنا كلمة مرور من اختيارك، وسنرسل لك الكتيب مع اختبار تحديد المستوى.\n\nسبراش كافي\nهولباينشتراسه 16\n60596 فرانكفورت\n\nهاتف: 069-61 90 120\nفاكس: 069-63 13 95"
+                        },
+                        {
+                          "id": "E",
+                          "text": "Jahreskonzert Füssen\n\nWolfgang Amadeus Mozart\nKlavierkonzert Nr. 21 in C-Dur\n\nPianist: Hanno Porter\n\nLeitung:\nStadtmusikdirektor Robert Maul\n\nKarten bei der Kurverwaltung Füssen",
+                          "translated": "حفل السنة في فويسن\n\nفولفغانغ أماديوس موزارت\nكونشيرتو بيانو رقم 21 في دو الكبير\n\nعازف البيانو: هانو بورتر\n\nالإدارة:\nمدير الموسيقى في المدينة روبرت ماول\n\nتذاكر لدى إدارة السياحة في فويسن"
+                        },
+                        {
+                          "id": "F",
+                          "text": "Das Heimatmuseum Füssen lädt zum Besuch ein\n\nInteressante Einblicke in die Geschichte des ehemals fürstlichen Städtchens.\nBedeutende gotische Skulpturen- und Tafelmalerei.\nSehenswerte Sammlung von Lauten und Geigen aus fünf Jahrhunderten.\n\nTäglich außer Montag geöffnet von 10–12 Uhr und 14–17 Uhr.\n\nTelefon (08362) 93 25 11",
+                          "translated": "يدعو متحف الوطن في فويسن للزيارة\n\nنظرات مثيرة في تاريخ المدينة التي كانت سابقًا أميرية.\nتماثيل ولوحات جدارية قوطية مهمة.\nمجموعة جديرة بالمشاهدة من العود والكمان تعود إلى خمسة قرون.\n\nمفتوح يوميًا ما عدا الإثنين من 10–12 ومن 14–17.\n\nهاتف (08362) 93 25 11"
+                        },
+                        {
+                          "id": "G",
+                          "text": "bonCas\nSpezialitätenkäserei\nP. und U. Moser-Kolb\nHessenbohlstraße 14\nCH – 8512 Lustdorf\nSchweiz\n\nE-Mail: kieronkoelbi@bluewin.ch",
+                          "translated": "بونكاس\nمصنع جبن متخصص\nب. و ي. موزر-كولب\nشارع هيسنبول 14\nCH – 8512 لوستدورف\nسويسرا\n\nالبريد الإلكتروني: kieronkoelbi@bluewin.ch"
+                        },
+                        {
+                          "id": "H",
+                          "text": "Alfa Sprachreisen\n\nCrash-Kurse für Manager.\nSprachkurse und High-School-Programme für 12- bis 18-Jährige.\n\nEnglisch, Französisch, Spanisch, 17 Länder, mehr als 60 Kursorte.\n\nFordern Sie unsere kostenlose Broschüre an!\n\nAlfa-Sprachreisen GmbH\nRotebühlplatz 75 · 70178 Stuttgart\nTel. 0711-61 55 300 · Fax 0711-61 55 3010\n\nhttp://www.alfa-sprachreisen.de",
+                          "translated": "ألفا للسفر اللغوي\n\nدورات مكثفة للمديرين.\nدورات لغات وبرامج المدارس الثانوية للسن 12 إلى 18.\n\nالإنجليزية، الفرنسية، الإسبانية، 17 دولة، أكثر من 60 موقعًا للدورات.\n\nاطلب كتيبنا المجاني!\n\nشركة ألفا للسفر اللغوي المحدودة\nروتيبوهلبلاتس 75 · 70178 شتوتغارت\nهاتف 0711-61 55 300 · فاكس 0711-61 55 3010\n\nhttp://www.alfa-sprachreisen.de"
+                        },
+                        {
+                          "id": "I",
+                          "text": "6. APRIL „Deutsche Schlagernacht“\n12. APRIL Donnerstag: 70er/80er Jahre Party\n\nNEU: Schnitzel-Woche\n\nCafe • Bistro\nAmadeus\n\nZirler Straße 19–21\n87450 FÜSSEN/ALLGÄU\nTel. 08362/93540",
+                          "translated": "6 أبريل \"ليلة الأغاني الألمانية الشعبية\"\n12 أبريل الخميس: حفلة السبعينيات والثمانينيات\n\nجديد: أسبوع شنيتزل\n\nمقهى • بيسترو\nأماديوس\n\nشارع زيرلر 19–21\n87450 فويسن/ألغوي\nهاتف 08362/93540"
+                        },
+                        {
+                          "id": "J",
+                          "text": "Free-System\n\nEnglisch, Französisch, Italienisch, Spanisch, Deutsch für Ausländer\nMaschinenschreiben/Steno\n\nSie bestimmen die Unterrichtszeit\n\nSie lernen, so rasch Sie wollen\n\nIntensivkurse, Einzel-/Privat- und\nKleingruppen (2–3 Teilnehmer)\n\nIntensivkurse Crash Courses\n\nBrush up und Business\n\nSprachkurse für Manager\n\nEnglisch for Secretaries\n\nPrüfungen (intern/extern)\n\nFirst/Proficiency/TOEFL/MAT Alliance Française\n\nInstitut Grünberger\nRostock, direkt beim Hauptbahnhof",
+                          "translated": "فري-سيستم\n\nالإنجليزية، الفرنسية، الإيطالية، الإسبانية، الألمانية للأجانب\nالكتابة على الآلة/الاختزال\n\nأنت تحدد وقت الدرس\n\nتتعلم بالسرعة التي تريدها\n\nدورات مكثفة، دروس فردية/خاصة ومجموعات صغيرة (2–3 مشاركين)\n\nدورات مكثفة وسريعة\n\nتجديد المهارات والأعمال\n\nدورات لغات للمديرين\n\nالإنجليزية للسكرتيرات\n\nالامتحانات (داخلية/خارجية)\n\nFirst/Proficiency/TOEFL/اتحاد اللغة الفرنسية\n\nمعهد جرونبرغر\nروستوك، مباشرة عند المحطة الرئيسية"
+                        },
+                        {
+                          "id": "K",
+                          "text": "Ritterstub’n\n\nFischspezialitäten\n\nDas Restaurant mit gepflegter Gastlichkeit im Herzen der Altstadt\n\n(geöffnet von 11–14½ Uhr und 17½–24 Uhr)\nMontag Ruhetag\nWarme Küche bis 22 Uhr\n\nRitterstraße 4, 87629 Füssen\nTel. 08362/7759\n\nFam. Roth-Winter freut sich auf Ihren Besuch",
+                          "translated": "ريترشتوبن\n\nتخصصات السمك\n\nالمطعم مع الضيافة الراقية في قلب المدينة القديمة\n\n(مفتوح من 11–14:30 ومن 17:30–24:00)\nالإثنين عطلة\nالمطبخ الساخن حتى الساعة 22:00\n\nشارع ريتر 4، 87629 فويسن\nهاتف 08362/7759\n\nعائلة روث-وينتر تتطلع لزيارتكم"
+                        },
+                        {
+                          "id": "L",
+                          "text": "Wollen Sie fein essen gehen?\n\nHotel–Restaurant\nAlpenrösle\n\nFüssen-Bad Faulenbach\nTel. (08362) 4017\n\nAuf Ihren Besuch freut sich Familie Hummel\n\nHotel • Café • Pension",
+                          "translated": "هل تريد تناول طعام فاخر؟\n\nفندق–مطعم\nألبنروزله\n\nفويسن-باد فاولنباخ\nهاتف (08362) 4017\n\nعائلة هومل تتطلع لزيارتكم\n\nفندق • مقهى • نزل"
+                        },
+                        {
+                          "id": "X",
+                          "text": "Keine passende Anzeige",
+                          "translated": "لا يوجد إعلان مناسب"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "situationId": 11,
+                          "adId": "E"
+                        },
+                        {
+                          "situationId": 12,
+                          "adId": "F"
+                        },
+                        {
+                          "situationId": 13,
+                          "adId": "B"
+                        },
+                        {
+                          "situationId": 14,
+                          "adId": "K"
+                        },
+                        {
+                          "situationId": 15,
+                          "adId": "C"
+                        },
+                        {
+                          "situationId": 16,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 17,
+                          "adId": "H"
+                        },
+                        {
+                          "situationId": 18,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 19,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 20,
+                          "adId": "L"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "partOrder": [
+                  "teil-1",
+                  "teil-2",
+                  "teil-3",
+                  "sprachbausteine-1",
+                  "sprachbausteine-2"
+                ],
+                "counts": {
+                  "parts": 5
+                }
+              }
+            },
+            "version-2": {
+              "key": "version-2",
+              "label": "Version 3",
+              "title": "Caroline · Version 3",
+              "lesen": {
+                "partOrder": [
+                  "teil-1",
+                  "teil-2",
+                  "teil-3",
+                  "sprachbausteine-1",
+                  "sprachbausteine-2"
+                ],
+                "parts": {
+                  "teil-1": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 1",
+                      "section": "lesen",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-12T20:03:21.603Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "texts": [],
+                      "headlines": [],
+                      "answers": []
+                    }
+                  },
+                  "teil-2": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-12T20:03:21.603Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "passage": {
+                        "title": "",
+                        "paragraphs": []
+                      },
+                      "questions": []
+                    }
+                  },
+                  "teil-3": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 3",
+                      "section": "lesen",
+                      "partNumber": 3,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-12T20:03:21.603Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "situations": [],
+                      "ads": [],
+                      "answers": []
+                    }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-12T20:03:21.603Z"
+                    },
+                    "content": {
+                      "title": "Sprachbausteine",
+                      "instruction": "",
+                      "text": "",
+                      "segments": [],
+                      "translated": "",
+                      "blanks": [],
+                      "answers": []
+                    }
+                  },
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-12T20:03:21.604Z"
+                    },
+                    "content": {
+                      "title": "Sprachbausteine",
+                      "instruction": "",
+                      "text": "",
+                      "segments": [],
+                      "translated": "",
+                      "wordBank": [],
+                      "options": [],
+                      "blanks": [],
+                      "answers": []
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "version-1",
+            "version-2"
           ],
           "defaultVersion": "default",
           "lesen": {
