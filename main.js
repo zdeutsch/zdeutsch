@@ -10,11 +10,6 @@ const homeLoader = document.getElementById("home-loader");
 const homeLoaderStage = document.getElementById("home-loader-stage");
 const homeLoaderPercent = document.getElementById("home-loader-percent");
 const homeLoaderBar = document.getElementById("home-loader-bar");
-const versionModal = document.getElementById("version-modal");
-const versionOverlay = document.getElementById("version-overlay");
-const versionTitle = document.getElementById("version-title");
-const versionOptions = document.getElementById("version-options");
-const versionCloseBtn = document.getElementById("version-close");
 const installPromptCard = document.getElementById("install-prompt-card");
 const installPromptText = document.getElementById("install-prompt-text");
 const installPromptButton = document.getElementById("install-prompt-button");
@@ -25,8 +20,15 @@ const homeStagePath = document.getElementById("home-stage-path");
 const homeLevelStage = document.getElementById("home-level-stage");
 const homeSectionStage = document.getElementById("home-section-stage");
 const homeThemeStage = document.getElementById("home-theme-stage");
+const homeVersionStage = document.getElementById("home-version-stage");
 const homeHero = document.getElementById("home-hero");
 const homeSectionStageCopy = document.getElementById("home-section-stage-copy");
+const homeContextSwitcher = document.getElementById("home-context-switcher");
+const homeQuickLevelList = document.getElementById("home-quick-level-list");
+const homeQuickSectionList = document.getElementById("home-quick-section-list");
+const homeVersionContext = document.getElementById("home-version-context");
+const homeVersionTitle = document.getElementById("home-version-title");
+const versionList = document.getElementById("version-list");
 
 const state = {
   db: null,
@@ -34,7 +36,6 @@ const state = {
   shreibenDb: null,
   level: null,
   theme: null,
-  pendingTheme: null,
   search: "",
   section: "lesen",
   parts: null,
@@ -68,7 +69,8 @@ const SUGGEST_THEME_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfbWVEy
 const HOME_STAGE_LEVEL = "level";
 const HOME_STAGE_SECTION = "section";
 const HOME_STAGE_THEMES = "themes";
-const HOME_STATE_STORAGE_KEY = "zdeutsch.home-state.v2";
+const HOME_STAGE_VERSIONS = "versions";
+const HOME_STATE_STORAGE_KEY = "zdeutsch.home-state.v3";
 const HOME_RESTORE_QUERY_KEY = "restoreHome";
 
 const MAIN_DEFAULT_CONFIG = (typeof DEFAULT_CONFIG === "object" && DEFAULT_CONFIG)
@@ -232,7 +234,12 @@ function syncSectionHash(section, options = {}) {
 
 function sanitizeHomeStage(value) {
   const stage = String(value || "").trim().toLowerCase();
-  if (stage === HOME_STAGE_LEVEL || stage === HOME_STAGE_SECTION || stage === HOME_STAGE_THEMES) {
+  if (
+    stage === HOME_STAGE_LEVEL
+    || stage === HOME_STAGE_SECTION
+    || stage === HOME_STAGE_THEMES
+    || stage === HOME_STAGE_VERSIONS
+  ) {
     return stage;
   }
   return HOME_STAGE_LEVEL;
@@ -245,6 +252,7 @@ function buildHomeStateSnapshot(options = {}) {
   return {
     level: state.level || "",
     section: state.section || "lesen",
+    theme: state.theme || "",
     search: state.search || "",
     homeStage: sanitizeHomeStage(state.homeStage),
     scrollY
@@ -272,6 +280,7 @@ function loadSavedHomeState() {
     return {
       level: String(parsed.level || "").trim().toLowerCase(),
       section: String(parsed.section || "lesen").trim().toLowerCase(),
+      theme: String(parsed.theme || "").trim(),
       search: String(parsed.search || ""),
       homeStage: sanitizeHomeStage(parsed.homeStage),
       scrollY: Number.isFinite(parsed.scrollY) ? parsed.scrollY : null
@@ -387,6 +396,8 @@ function updateHeader() {
       themeTitle.textContent = "Niveau wählen";
     } else if (state.homeStage === HOME_STAGE_SECTION) {
       themeTitle.textContent = "Modul wählen";
+    } else if (state.homeStage === HOME_STAGE_VERSIONS) {
+      themeTitle.textContent = "Version wählen";
     } else {
       themeTitle.textContent = "Thema wählen";
     }
@@ -479,6 +490,15 @@ function getSectionLabel(sectionKey) {
   return SECTION_LABELS[key] || String(sectionKey || "").toUpperCase();
 }
 
+function getAvailableSections(levelKey) {
+  const levelEntry = state.parts?.levels?.[levelKey];
+  const partConfigs = Array.isArray(levelEntry) ? levelEntry : (levelEntry?.parts || []);
+  const sections = partConfigs.length
+    ? Array.from(new Set(partConfigs.map((entry) => normalize(entry.module)).filter(Boolean)))
+    : ["lesen", "horen"];
+  return sections.filter((sectionKey) => SECTION_KEYS.includes(sectionKey));
+}
+
 function clearThemeSearch() {
   state.search = "";
   if (themeSearchInput) {
@@ -514,19 +534,143 @@ function updateSearchInputContext() {
   }
 }
 
-function getHomeStagePathLabel() {
-  const parts = [];
-  if (state.level) {
-    parts.push((state.level || "").toUpperCase());
+function navigateToHomeStage(stage) {
+  const nextStage = sanitizeHomeStage(stage);
+  if (nextStage === HOME_STAGE_LEVEL) {
+    state.theme = null;
+  } else if (nextStage === HOME_STAGE_SECTION) {
+    state.theme = null;
   }
-  if (state.homeStage === HOME_STAGE_THEMES && state.section) {
-    parts.push(getSectionLabel(state.section));
-  } else if (state.homeStage === HOME_STAGE_SECTION) {
-    parts.push("Modul wählen");
+  state.homeStage = nextStage;
+  saveHomeState({ scrollY: 0 });
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  renderHome();
+}
+
+function makeHomePathButton(label, targetStage, current = false) {
+  const button = createEl("button", "home-stage-path-button", label);
+  button.type = "button";
+  if (current) {
+    button.classList.add("home-stage-path-current");
+    button.setAttribute("aria-current", "step");
+    button.disabled = true;
   } else {
-    parts.push("Niveau wählen");
+    button.addEventListener("click", () => navigateToHomeStage(targetStage));
   }
-  return parts.join(" · ");
+  return button;
+}
+
+function renderHomeStagePath() {
+  if (!homeStagePath) {
+    return;
+  }
+  homeStagePath.innerHTML = "";
+  const items = [];
+  if (state.level) {
+    items.push({
+      label: (state.level || "").toUpperCase(),
+      target: HOME_STAGE_LEVEL,
+      current: state.homeStage === HOME_STAGE_LEVEL
+    });
+  }
+  if (state.homeStage === HOME_STAGE_SECTION) {
+    items.push({ label: "Modul wählen", target: HOME_STAGE_SECTION, current: true });
+  } else if (state.section) {
+    items.push({
+      label: getSectionLabel(state.section),
+      target: HOME_STAGE_SECTION,
+      current: false
+    });
+  }
+  if (state.homeStage === HOME_STAGE_THEMES || state.homeStage === HOME_STAGE_VERSIONS) {
+    items.push({
+      label: "Themen",
+      target: HOME_STAGE_THEMES,
+      current: state.homeStage === HOME_STAGE_THEMES
+    });
+  }
+  if (state.homeStage === HOME_STAGE_VERSIONS && state.theme) {
+    const themeEntry = state.db?.levels?.[state.level]?.themes?.[state.theme];
+    items.push({
+      label: themeEntry?.title || state.theme,
+      target: HOME_STAGE_VERSIONS,
+      current: true
+    });
+  }
+
+  items.forEach((item, index) => {
+    if (index > 0) {
+      homeStagePath.append(createEl("span", "home-stage-path-separator", "›"));
+    }
+    homeStagePath.append(makeHomePathButton(item.label, item.target, item.current));
+  });
+  if (state.homeStage === HOME_STAGE_VERSIONS) {
+    window.requestAnimationFrame(() => {
+      homeStagePath.scrollLeft = homeStagePath.scrollWidth;
+    });
+  }
+}
+
+function makeContextButton(label, active, onClick) {
+  const button = createEl(
+    "button",
+    classNames("home-context-button", active ? "home-context-button-active" : ""),
+    label
+  );
+  button.type = "button";
+  button.setAttribute("aria-pressed", active ? "true" : "false");
+  if (!active) {
+    button.addEventListener("click", onClick);
+  }
+  return button;
+}
+
+function renderQuickNavigation() {
+  if (!homeContextSwitcher || !homeQuickLevelList || !homeQuickSectionList) {
+    return;
+  }
+  const visible = state.homeStage === HOME_STAGE_THEMES || state.homeStage === HOME_STAGE_VERSIONS;
+  homeContextSwitcher.classList.toggle("hidden", !visible);
+  homeQuickLevelList.innerHTML = "";
+  homeQuickSectionList.innerHTML = "";
+  if (!visible) {
+    return;
+  }
+
+  Object.keys(state.db?.levels || {}).forEach((levelKey) => {
+    homeQuickLevelList.append(makeContextButton(levelKey.toUpperCase(), levelKey === state.level, () => {
+      state.level = levelKey;
+      state.theme = null;
+      const availableSections = getAvailableSections(levelKey);
+      if (!availableSections.includes(state.section)) {
+        state.section = availableSections[0] || "lesen";
+      }
+      clearThemeSearch();
+      window.localStorage.setItem("lastLevel", levelKey);
+      syncSectionHash(state.section, { replace: true });
+      state.homeStage = HOME_STAGE_THEMES;
+      saveHomeState({ scrollY: 0 });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      renderHome();
+    }));
+  });
+
+  getAvailableSections(state.level).forEach((sectionKey) => {
+    homeQuickSectionList.append(makeContextButton(
+      getSectionLabel(sectionKey),
+      sectionKey === state.section,
+      () => {
+        state.section = sectionKey;
+        state.theme = null;
+        clearThemeSearch();
+        state.homeStage = HOME_STAGE_THEMES;
+        syncSectionHash(state.section);
+        saveHomeState({ scrollY: 0 });
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        renderHome();
+      }
+    ));
+  });
 }
 
 function updateHomeStageUi() {
@@ -539,6 +683,9 @@ function updateHomeStageUi() {
   if (homeThemeStage) {
     homeThemeStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_THEMES);
   }
+  if (homeVersionStage) {
+    homeVersionStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_VERSIONS);
+  }
   if (homeHero) {
     homeHero.classList.toggle("hidden", state.homeStage !== HOME_STAGE_LEVEL);
   }
@@ -549,7 +696,7 @@ function updateHomeStageUi() {
     homeStageBack.disabled = state.homeStage === HOME_STAGE_LEVEL;
   }
   if (homeStagePath) {
-    homeStagePath.textContent = getHomeStagePathLabel();
+    renderHomeStagePath();
   }
   if (homeSectionStageCopy) {
     const levelLabel = state.level ? (state.level || "").toUpperCase() : "B1/B2";
@@ -593,6 +740,19 @@ function makeMetaPill(label) {
     "theme-meta-pill",
     label
   );
+}
+
+function formatPartCountLabel(value) {
+  const count = Number.isFinite(Number(value)) ? Math.max(0, Math.round(Number(value))) : 0;
+  return count === 1 ? "1 Teil" : `${count} Teile`;
+}
+
+function formatVersionLabel(value, index) {
+  const label = String(value || "").trim();
+  if (!label || normalize(label) === "default") {
+    return index === 0 ? "Standard" : `Version ${index + 1}`;
+  }
+  return label;
 }
 
 function clampPercent(value) {
@@ -3093,14 +3253,6 @@ async function downloadAllThemesWithFormat() {
   await downloadAllThemesPdf(levelKey, options);
 }
 
-function closeVersionModal() {
-  if (!versionModal) {
-    return;
-  }
-  versionModal.classList.add("hidden");
-  state.pendingTheme = null;
-}
-
 function buildLesenUrl(themeKey, versionKey) {
   const params = new URLSearchParams();
   if (state.level) {
@@ -3191,56 +3343,102 @@ async function shareThemePage(themeKey, themeEntry) {
 }
 
 function selectThemeVersion(themeKey, versionKey) {
-  closeVersionModal();
+  state.theme = themeKey;
+  saveHomeState({ scrollY: 0 });
   window.location.href = buildLesenUrl(themeKey, versionKey);
 }
 
-function openVersionModal(themeKey, themeEntry) {
-  if (!versionModal || !versionOptions) {
-    const versionKeys = getVersionKeys(themeEntry);
-    const fallback = themeEntry.defaultVersion || versionKeys[0] || "default";
-    selectThemeVersion(themeKey, fallback);
+function renderVersionCards() {
+  if (!versionList) {
     return;
   }
-  state.pendingTheme = themeKey;
-  if (versionTitle) {
-    versionTitle.textContent = themeEntry.title || "Select version";
+  versionList.innerHTML = "";
+  if (state.homeStage !== HOME_STAGE_VERSIONS) {
+    return;
   }
-  versionOptions.innerHTML = "";
+
+  const themeEntry = state.db?.levels?.[state.level]?.themes?.[state.theme];
+  if (!themeEntry) {
+    versionList.append(
+      createEl("div", "home-version-empty", "Dieses Thema ist nicht mehr verfügbar. Bitte wähle ein anderes Thema.")
+    );
+    return;
+  }
+
+  const themeLabel = themeEntry.title || state.theme;
+  if (homeVersionContext) {
+    homeVersionContext.textContent = `${(state.level || "").toUpperCase()} · ${getSectionLabel(state.section)} · ${themeLabel}`;
+  }
+  if (homeVersionTitle) {
+    homeVersionTitle.textContent = `${themeLabel}: Version wählen`;
+  }
+
   const versionKeys = getVersionKeys(themeEntry);
-  versionKeys.forEach((versionKey) => {
-    const versionEntry = themeEntry.versions?.[versionKey];
-    const label = versionEntry?.label || `Version ${versionKey}`;
+  if (!versionKeys.length) {
+    versionList.append(createEl("div", "home-version-empty", "Für dieses Thema ist noch keine Version verfügbar."));
+    return;
+  }
+
+  versionKeys.forEach((versionKey, index) => {
+    const versionEntry = themeEntry.versions?.[versionKey] || {};
+    const label = formatVersionLabel(versionEntry.label || versionEntry.title, index);
     const isDefault = versionKey === themeEntry.defaultVersion;
+    const lesenEntry = versionEntry.lesen || themeEntry.lesen;
+    const partCount = lesenEntry?.partOrder?.length
+      || lesenEntry?.counts?.parts
+      || themeEntry.counts?.parts
+      || 0;
+    const progressSummary = getThemeProgressSummary(state.level, state.theme, [versionKey]);
+    const status = getThemeStatus(progressSummary);
+    const lastPercent = clampPercent(progressSummary?.lastPercent || 0);
     const button = createEl(
       "button",
-      classNames(
-        "w-full rounded-2xl border border-stone-300 bg-white/90 p-4 text-left shadow-sm transition-transform",
-        isDefault ? "ring-2 ring-azure/20" : "hover:border-stone-300 hover:-translate-y-0.5"
-      )
+      classNames("home-version-card", isDefault ? "home-version-card-default" : "")
     );
     button.type = "button";
-    button.append(
-      createEl("div", "text-sm font-display text-ink", label),
-      createEl("div", "mt-1 text-xs text-slate", versionEntry?.title || "")
+    button.setAttribute("aria-label", `${themeLabel}, ${label} öffnen`);
+
+    const top = createEl("span", "home-version-card-top");
+    const number = createEl("span", "home-version-number", String(index + 1).padStart(2, "0"));
+    const badges = createEl("span", "home-version-badges");
+    if (isDefault) {
+      badges.append(createEl("span", "home-version-badge home-version-badge-default", "Empfohlen"));
+    }
+    badges.append(createEl("span", classNames("home-version-badge", status.className), status.label));
+    top.append(number, badges);
+
+    const copy = createEl("span", "home-version-card-copy");
+    copy.append(createEl("span", "home-version-label", label));
+    if (versionEntry.title && normalize(versionEntry.title) !== normalize(label)) {
+      copy.append(createEl("span", "home-version-description", versionEntry.title));
+    }
+
+    const footer = createEl("span", "home-version-card-footer");
+    const meta = createEl("span", "home-version-meta");
+    meta.append(
+      createEl("span", "theme-meta-pill", formatPartCountLabel(partCount)),
+      createEl("span", "theme-meta-pill", progressSummary ? `Letztes Ergebnis ${lastPercent}%` : "Noch kein Versuch")
     );
+    footer.append(meta, createEl("span", "home-version-open", progressSummary ? "Fortsetzen →" : "Starten →"));
+
+    button.append(top, copy, footer);
     button.addEventListener("click", () => {
-      selectThemeVersion(themeKey, versionKey);
+      selectThemeVersion(state.theme, versionKey);
     });
-    versionOptions.append(button);
+    versionList.append(button);
   });
-  versionModal.classList.remove("hidden");
 }
 
 function handleThemeSelection(themeKey, themeEntry) {
-  saveHomeState();
-  const versionKeys = getVersionKeys(themeEntry);
-  if (versionKeys.length > 1) {
-    openVersionModal(themeKey, themeEntry);
+  if (!themeKey || !themeEntry) {
     return;
   }
-  const fallback = themeEntry.defaultVersion || versionKeys[0] || "default";
-  selectThemeVersion(themeKey, fallback);
+  state.theme = themeKey;
+  state.homeStage = HOME_STAGE_VERSIONS;
+  saveHomeState({ scrollY: 0 });
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  renderHome();
+  homeVersionStage?.focus({ preventScroll: true });
 }
 
 function renderLevelButtons() {
@@ -3275,11 +3473,7 @@ function renderSectionButtons() {
     return;
   }
   const levelKey = state.level || "b1";
-  const levelEntry = state.parts?.levels?.[levelKey];
-  const partConfigs = Array.isArray(levelEntry) ? levelEntry : (levelEntry?.parts || []);
-  const availableSections = partConfigs.length
-    ? Array.from(new Set(partConfigs.map((entry) => normalize(entry.module)).filter(Boolean)))
-    : ["lesen", "horen"];
+  const availableSections = getAvailableSections(levelKey);
 
   if (!availableSections.includes(state.section)) {
     state.section = availableSections[0] || "lesen";
@@ -3421,15 +3615,16 @@ function renderThemeCards() {
     themes = themes.filter((themeKey) => {
       const entry = levelEntry.themes?.[themeKey];
       const title = entry?.title || themeKey;
-      return normalize(title).includes(query);
+      const versionValues = getVersionKeys(entry).flatMap((versionKey) => {
+        const versionEntry = entry?.versions?.[versionKey] || {};
+        return [versionKey, versionEntry.label, versionEntry.title];
+      });
+      return matchesSearchQuery(query, themeKey, title, ...versionValues);
     });
   }
   updateSearchResultCount(themes.length, query);
   if (state.theme && !themes.includes(state.theme)) {
     state.theme = null;
-  }
-  if (!state.theme && themes.length) {
-    state.theme = themes[0] || null;
   }
 
   themes.forEach((themeKey, themeIndex) => {
@@ -3451,7 +3646,7 @@ function renderThemeCards() {
     const header = createEl("div", "theme-card-header");
     const titleWrap = createEl("button", "theme-card-title-wrap theme-card-open");
     titleWrap.type = "button";
-    titleWrap.setAttribute("aria-label", `${themeLabel} öffnen`);
+    titleWrap.setAttribute("aria-label", `Versionen für ${themeLabel} anzeigen`);
     titleWrap.append(
       createEl("span", "theme-card-title", themeLabel),
       createEl("span", "theme-card-subtitle", `Leseprüfung ${String(themeIndex + 1).padStart(2, "0")}`)
@@ -3503,10 +3698,8 @@ function renderThemeCards() {
     progressBar.append(progressFill);
 
     const meta = createEl("div", "theme-card-meta");
-    meta.append(makeMetaPill(`${partCount} Teile`));
-    if (versionKeys.length > 1) {
-      meta.append(makeMetaPill(`${versionKeys.length} Versionen`));
-    }
+    meta.append(makeMetaPill(formatPartCountLabel(partCount)));
+    meta.append(makeMetaPill(versionKeys.length === 1 ? "1 Version" : `${versionKeys.length} Versionen`));
     if (progressSummary) {
       meta.append(makeMetaPill(formatPassedExamsLabel(progressSummary.passedExams)));
       if (progressSummary.versionCount > 1) {
@@ -3521,10 +3714,10 @@ function renderThemeCards() {
     const openButton = createEl(
       "button",
       "theme-card-cta",
-      progressSummary ? "Fortsetzen →" : "Starten →"
+      versionKeys.length === 1 ? "Version ansehen →" : `${versionKeys.length} Versionen →`
     );
     openButton.type = "button";
-    openButton.setAttribute("aria-label", `${themeLabel} ${progressSummary ? "fortsetzen" : "starten"}`);
+    openButton.setAttribute("aria-label", `Versionen für ${themeLabel} anzeigen`);
     titleWrap.addEventListener("click", openTheme);
     openButton.addEventListener("click", openTheme);
     footer.append(meta, openButton);
@@ -3693,11 +3886,24 @@ function renderHome() {
   if (!state.level && state.homeStage !== HOME_STAGE_LEVEL) {
     state.homeStage = HOME_STAGE_LEVEL;
   }
+  if (state.homeStage === HOME_STAGE_VERSIONS) {
+    const selectedTheme = state.db?.levels?.[state.level]?.themes?.[state.theme];
+    if (!selectedTheme || state.section !== "lesen") {
+      state.theme = null;
+      state.homeStage = HOME_STAGE_THEMES;
+    }
+  }
   updateHomeStageUi();
   renderLevelButtons();
   renderSectionButtons();
+  renderQuickNavigation();
   updateSearchInputContext();
-  renderThemeCards();
+  if (state.homeStage === HOME_STAGE_THEMES) {
+    renderThemeCards();
+  } else {
+    updateDownloadAllThemesButton(0);
+  }
+  renderVersionCards();
   updateHeader();
   updateInstallPromptUi();
   restoreHomeScrollIfNeeded();
@@ -3790,11 +3996,16 @@ function resolveInitialHomeState() {
       ? saved.section
       : (SECTION_KEYS.includes(fromHashSection) ? fromHashSection : "lesen");
     const hasLevel = Boolean(level);
+    const themeExists = Boolean(state.db?.levels?.[level]?.themes?.[saved.theme]);
+    const homeStage = hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL;
     return {
       level: hasLevel ? level : null,
       section,
+      theme: homeStage === HOME_STAGE_VERSIONS && section === "lesen" && themeExists ? saved.theme : null,
       search: saved.search || "",
-      homeStage: hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL,
+      homeStage: homeStage === HOME_STAGE_VERSIONS && (!themeExists || section !== "lesen")
+        ? HOME_STAGE_THEMES
+        : homeStage,
       scrollY: saved.scrollY
     };
   }
@@ -3805,6 +4016,7 @@ function resolveInitialHomeState() {
     return {
       level,
       section: SECTION_KEYS.includes(section) ? section : "lesen",
+      theme: null,
       search: "",
       homeStage: level ? HOME_STAGE_THEMES : HOME_STAGE_LEVEL,
       scrollY: 0
@@ -3814,11 +4026,17 @@ function resolveInitialHomeState() {
   if (saved) {
     const level = saved.level ? resolveInitialLevel(saved.level) : null;
     const hasLevel = Boolean(level);
+    const section = SECTION_KEYS.includes(saved.section) ? saved.section : "lesen";
+    const themeExists = Boolean(state.db?.levels?.[level]?.themes?.[saved.theme]);
+    const homeStage = hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL;
     return {
       level: hasLevel ? level : null,
-      section: SECTION_KEYS.includes(saved.section) ? saved.section : "lesen",
+      section,
+      theme: homeStage === HOME_STAGE_VERSIONS && section === "lesen" && themeExists ? saved.theme : null,
       search: saved.search || "",
-      homeStage: hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL,
+      homeStage: homeStage === HOME_STAGE_VERSIONS && (!themeExists || section !== "lesen")
+        ? HOME_STAGE_THEMES
+        : homeStage,
       scrollY: saved.scrollY
     };
   }
@@ -3826,6 +4044,7 @@ function resolveInitialHomeState() {
   return {
     level: null,
     section: "lesen",
+    theme: null,
     search: "",
     homeStage: HOME_STAGE_LEVEL,
     scrollY: 0
@@ -3842,7 +4061,9 @@ if (themeSearchInput) {
 
 if (homeStageBack) {
   homeStageBack.addEventListener("click", () => {
-    if (state.homeStage === HOME_STAGE_THEMES) {
+    if (state.homeStage === HOME_STAGE_VERSIONS) {
+      state.homeStage = HOME_STAGE_THEMES;
+    } else if (state.homeStage === HOME_STAGE_THEMES) {
       state.homeStage = HOME_STAGE_SECTION;
     } else if (state.homeStage === HOME_STAGE_SECTION) {
       state.homeStage = HOME_STAGE_LEVEL;
@@ -3930,18 +4151,6 @@ window.addEventListener("pagehide", () => {
   saveHomeState();
 });
 
-if (versionCloseBtn) {
-  versionCloseBtn.addEventListener("click", () => {
-    closeVersionModal();
-  });
-}
-
-if (versionOverlay) {
-  versionOverlay.addEventListener("click", () => {
-    closeVersionModal();
-  });
-}
-
 async function init() {
   setHomeLoaderVisible(true);
   setHomeLoaderStage("Preparing library...");
@@ -4008,6 +4217,7 @@ async function init() {
   const initialHomeState = resolveInitialHomeState();
   state.level = initialHomeState.level;
   state.section = initialHomeState.section;
+  state.theme = initialHomeState.theme;
   state.search = initialHomeState.search;
   state.homeStage = initialHomeState.homeStage;
   state.pendingScrollY = initialHomeState.scrollY;

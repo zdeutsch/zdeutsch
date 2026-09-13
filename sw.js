@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-09-11-theme-versions-v22";
+const SW_VERSION = "2026-09-13-navigation-v23";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [

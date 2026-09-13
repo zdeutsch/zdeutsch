@@ -115,7 +115,7 @@
   </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="theme.css?v=20260426-19">
-    <link rel="stylesheet" href="ui-refresh.css?v=20260715-2">
+    <link rel="stylesheet" href="ui-refresh.css?v=20260913-1">
   </head>
 
 <body class="theme-body font-body min-h-screen home-page">
@@ -183,7 +183,8 @@
             <ol class="home-hero-route" aria-label="So funktioniert ZDeutsch">
               <li><span>01</span><strong>Niveau wählen</strong></li>
               <li><span>02</span><strong>Modul öffnen</strong></li>
-              <li><span>03</span><strong>Fortschritt sichern</strong></li>
+              <li><span>03</span><strong>Thema finden</strong></li>
+              <li><span>04</span><strong>Version starten</strong></li>
             </ol>
           </div>
 
@@ -217,11 +218,23 @@
 
           <div class="home-sections mt-8 space-y-6">
             <div id="home-stage-bar" class="home-stage-bar hidden">
-              <button id="home-stage-back" type="button" class="home-stage-back">
-                <span>←</span>
-                <span>Zurück</span>
-              </button>
-              <div id="home-stage-path" class="home-stage-path" aria-live="polite"></div>
+              <div class="home-stage-main">
+                <button id="home-stage-back" type="button" class="home-stage-back">
+                  <span aria-hidden="true">←</span>
+                  <span>Zurück</span>
+                </button>
+                <nav id="home-stage-path" class="home-stage-path" aria-label="Aktuelle Auswahl" aria-live="polite"></nav>
+              </div>
+              <div id="home-context-switcher" class="home-context-switcher hidden" aria-label="Auswahl schnell ändern">
+                <div class="home-context-group">
+                  <span class="home-context-label font-display">Niveau</span>
+                  <div id="home-quick-level-list" class="home-context-options"></div>
+                </div>
+                <div class="home-context-group">
+                  <span class="home-context-label font-display">Modul</span>
+                  <div id="home-quick-section-list" class="home-context-options"></div>
+                </div>
+              </div>
             </div>
 
             <section id="home-level-stage" class="home-control-card home-stage-card" tabindex="-1">
@@ -268,6 +281,16 @@
                 <div id="theme-grid" class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3"></div>
               </div>
             </section>
+
+            <section id="home-version-stage" class="home-control-card home-stage-card home-version-stage hidden" tabindex="-1">
+              <div class="home-stage-intro">
+                <div class="home-step-label font-display">Schritt 4 · Version</div>
+                <p id="home-version-context" class="home-version-context font-display"></p>
+                <h3 id="home-version-title" class="home-stage-heading">Welche Version möchtest du üben?</h3>
+                <p class="home-stage-copy">Jede Version ist eine eigene Prüfung. Wähle eine aus, um direkt mit der Übung zu beginnen.</p>
+              </div>
+              <div id="version-list" class="home-version-grid" aria-live="polite"></div>
+            </section>
           </div>
 
           <div id="community-promo-target" class="home-community-slot"></div>
@@ -278,28 +301,10 @@
     </section>
   </div>
 
-  <div id="version-modal" class="fixed inset-0 z-50 hidden">
-    <div id="version-overlay" class="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
-    <div
-      class="relative mx-auto mt-28 w-[90%] max-w-lg rounded-3xl border border-stone-300 bg-white/95 shadow-panel p-6">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Select version</div>
-          <h3 id="version-title" class="mt-2 text-lg font-display text-ink">Choose a version</h3>
-        </div>
-        <button id="version-close" aria-label="Versionsauswahl schließen"
-          class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
-          <i data-lucide="x" class="h-4 w-4" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div id="version-options" class="mt-5 grid gap-3"></div>
-    </div>
-  </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
   <script src="shared.js?v=20260911-theme-versions-v22"></script>
-  <script src="main.js?v=20260906-mundlich-b2-v20"></script>
+  <script src="main.js?v=20260913-navigation-v23"></script>
 </body>
 
 </html>
