@@ -110826,12 +110826,192 @@
                         }
                       ]
                     }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Mara",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-14T19:16:15.539Z"
+                    },
+                    "content": {
+                      "title": "Sprachbausteine",
+                      "instruction": "",
+                      "text": "",
+                      "segments": [],
+                      "translated": "",
+                      "blanks": [],
+                      "answers": []
+                    }
                   }
                 },
                 "partOrder": [
                   "teil-1",
                   "teil-2",
-                  "teil-3"
+                  "teil-3",
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 3
+                }
+              }
+            },
+            "version-1": {
+              "key": "version-1",
+              "label": "Version 2",
+              "title": "Mara · Version 2",
+              "lesen": {
+                "parts": {
+                  "teil-2": {
+                    "meta": {
+                      "title": "Mara",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-14T19:18:16.038Z"
+                    },
+                    "content": {
+                      "instruction": "",
+                      "passage": {
+                        "title": "",
+                        "paragraphs": [
+                          "Leseverstehen Teil 2",
+                          "Das Projekt Sonnenhalde richtet sich an Männer, die wieder berufstätig werden wollen. Viele Männer haben jahrelang zu Hause gearbeitet, sich um Haushalt und Kinder gekümmert, aber möchten jetzt in den Arbeitsmarkt zurückkehren. Sie lernen im Projekt, wie sie sich für eine Ausbildung anmelden können und welche Schritte notwendig sind, um wieder eine berufliche Perspektive zu bekommen. Im Kurs erfahren die Männer, wie sie ihre Stärken und Schwächen besser kennenlernen und welche Fähigkeiten sie in den verschiedenen Bereichen entwickeln können.",
+                          "Nach Auskunft von Frau Hanni, die das Projekt leitet, lernen die Teilnehmer vor allem, wie sie den Alltag ihrer Familie besser organisieren können. Dies ist besonders hilfreich für Männer, die in der Vergangenheit viel zu Hause waren und nun lernen möchten, wie sie ihre Zeit effektiver nutzen können. Dabei erhalten sie auch wertvolle Tipps zur Bewerbung und zur Arbeitsorganisation. Sie erfahren, welche Arbeiten sie erledigen können und welche Anforderungen es gibt, um erfolgreich eine Stelle zu finden. Ein weiteres wichtiges Thema im Kurs ist, wie man Bewerbungen schreibt.",
+                          "Die Männer lernen, ihre bisherigen Erfahrungen und Fähigkeiten zu dokumentieren und sich für verschiedene Berufe zu bewerben. Frau Kadshi, eine Personalverantwortliche, unterstützt die Teilnehmer dabei, ihre Bewerbungen zu verbessern und zeigt ihnen, wie sie sich in der Arbeitswelt besser präsentieren können. Sie ist dafür zuständig, die Kommunikation zwischen den Kursteilnehmern und den Personalverantwortlichen zu verbessern, sodass die Männer am Ende des Kurses genau wissen, wie sie sich für eine neue Stelle bewerben können.",
+                          "Viele der Kursteilnehmer sagen, dass sie sich auf das Projekt freuen, weil sie dadurch eine klare Perspektive auf ihre berufliche Zukunft bekommen. Sie sind motiviert, den nächsten Schritt zu gehen und endlich eine neue berufliche Herausforderung anzunehmen. Das Projekt bietet ihnen nicht nur die Möglichkeit, praktische Fähigkeiten zu erlernen, sondern hilft ihnen auch, ihr Selbstbewusstsein zu stärken und ihre beruflichen Ziele klar zu definieren.",
+                          "Zusammengefasst bietet das Projekt Sonnenhalde eine wertvolle Unterstützung für Männer, die nach einer längeren Pause in den Arbeitsmarkt zurückkehren wollen. Die Teilnahme an diesem Kurs kann ihnen helfen, ihre berufliche Zukunft zu sichern und eine erfüllende Tätigkeit zu finden."
+                        ],
+                        "text": "Leseverstehen Teil 2\n\nDas Projekt Sonnenhalde richtet sich an Männer, die wieder berufstätig werden wollen. Viele Männer haben jahrelang zu Hause gearbeitet, sich um Haushalt und Kinder gekümmert, aber möchten jetzt in den Arbeitsmarkt zurückkehren. Sie lernen im Projekt, wie sie sich für eine Ausbildung anmelden können und welche Schritte notwendig sind, um wieder eine berufliche Perspektive zu bekommen. Im Kurs erfahren die Männer, wie sie ihre Stärken und Schwächen besser kennenlernen und welche Fähigkeiten sie in den verschiedenen Bereichen entwickeln können.\n\nNach Auskunft von Frau Hanni, die das Projekt leitet, lernen die Teilnehmer vor allem, wie sie den Alltag ihrer Familie besser organisieren können. Dies ist besonders hilfreich für Männer, die in der Vergangenheit viel zu Hause waren und nun lernen möchten, wie sie ihre Zeit effektiver nutzen können. Dabei erhalten sie auch wertvolle Tipps zur Bewerbung und zur Arbeitsorganisation. Sie erfahren, welche Arbeiten sie erledigen können und welche Anforderungen es gibt, um erfolgreich eine Stelle zu finden. Ein weiteres wichtiges Thema im Kurs ist, wie man Bewerbungen schreibt.\n\nDie Männer lernen, ihre bisherigen Erfahrungen und Fähigkeiten zu dokumentieren und sich für verschiedene Berufe zu bewerben. Frau Kadshi, eine Personalverantwortliche, unterstützt die Teilnehmer dabei, ihre Bewerbungen zu verbessern und zeigt ihnen, wie sie sich in der Arbeitswelt besser präsentieren können. Sie ist dafür zuständig, die Kommunikation zwischen den Kursteilnehmern und den Personalverantwortlichen zu verbessern, sodass die Männer am Ende des Kurses genau wissen, wie sie sich für eine neue Stelle bewerben können.\n\nViele der Kursteilnehmer sagen, dass sie sich auf das Projekt freuen, weil sie dadurch eine klare Perspektive auf ihre berufliche Zukunft bekommen. Sie sind motiviert, den nächsten Schritt zu gehen und endlich eine neue berufliche Herausforderung anzunehmen. Das Projekt bietet ihnen nicht nur die Möglichkeit, praktische Fähigkeiten zu erlernen, sondern hilft ihnen auch, ihr Selbstbewusstsein zu stärken und ihre beruflichen Ziele klar zu definieren.\n\nZusammengefasst bietet das Projekt Sonnenhalde eine wertvolle Unterstützung für Männer, die nach einer längeren Pause in den Arbeitsmarkt zurückkehren wollen. Die Teilnahme an diesem Kurs kann ihnen helfen, ihre berufliche Zukunft zu sichern und eine erfüllende Tätigkeit zu finden.",
+                        "translated": []
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": "Nach Auskunft von Frau Hänni lernen Männer im Projekt Sonnenhalde:",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "wie sie an einem Kurs teilnehmen können."
+                            },
+                            {
+                              "id": "b",
+                              "text": " wie sie den Alltag ihrer Familie besser organisieren können."
+                            },
+                            {
+                              "id": "c",
+                              "text": "welche Arbeiten sie erledigen können."
+                            }
+                          ],
+                          "answerId": "b",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": " wie sie den Alltag ihrer Familie besser organisieren können.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "Männer, die sich nur um Haushalt und Kinder gekümmert haben:",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "sagen, dass das Schreiben von Bewerbungen schwierig für sie ist."
+                            },
+                            {
+                              "id": "b",
+                              "text": "wissen genau, was sie können."
+                            },
+                            {
+                              "id": "c",
+                              "text": "sagen, dass sie jahrelang nicht außer Haus gearbeitet haben"
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "sagen, dass sie jahrelang nicht außer Haus gearbeitet haben",
+                          "keywords": []
+                        },
+                        {
+                          "id": 8,
+                          "prompt": " Im Kurs können die Männer:",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "ihre Stärken und Schwächen kennenlernen."
+                            },
+                            {
+                              "id": "b",
+                              "text": "lernen, wie sie Bewerbungen schreiben."
+                            },
+                            {
+                              "id": "c",
+                              "text": "lernen, wie sie sich für eine Ausbildung anmelden können."
+                            }
+                          ],
+                          "answerId": "a",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "ihre Stärken und Schwächen kennenlernen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 9,
+                          "prompt": " Frau Kadshi:",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "ist Personalverantwortliche in einem großen Betrieb."
+                            },
+                            {
+                              "id": "b",
+                              "text": "hilft Männern, ihre Projekte der Familie zu präsentieren."
+                            },
+                            {
+                              "id": "c",
+                              "text": "verbessert die Kommunikation zwischen den Kursteilnehmern und den Personalverantwortlichen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "verbessert die Kommunikation zwischen den Kursteilnehmern und den Personalverantwortlichen.",
+                          "keywords": []
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "Das Projekt richtet sich an",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "Männer, die ihre bezahlte Arbeit aufgeben wollen."
+                            },
+                            {
+                              "id": "b",
+                              "text": "Männer, die wieder berufstätig sein wollen."
+                            },
+                            {
+                              "id": "c",
+                              "text": "Männer, die den Beruf wechseln wollen."
+                            }
+                          ],
+                          "answerId": "b",
+                          "reason": "",
+                          "highlights": [],
+                          "answerText": "Männer, die wieder berufstätig sein wollen.",
+                          "keywords": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "partOrder": [
+                  "teil-2"
                 ],
                 "counts": {
                   "parts": 3
@@ -110840,7 +111020,8 @@
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "version-1"
           ],
           "counts": {
             "parts": 3,
