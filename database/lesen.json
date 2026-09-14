@@ -75244,11 +75244,231 @@
                   "parts": 5
                 }
               }
+            },
+            "version-2": {
+              "key": "version-2",
+              "label": "Version 3",
+              "title": "Caroline · Version 3",
+              "lesen": {
+                "parts": {
+                  "teil-3": {
+                    "meta": {
+                      "title": "Caroline · Version 3",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 3",
+                      "section": "lesen",
+                      "partNumber": 3,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-01-20T22:45:42.364Z"
+                    },
+                    "content": {
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie lieben Klaviermusik und möchten am Wochenende eine Veranstaltung besuchen.\n",
+                          "translated": ""
+                        },
+                        {
+                          "id": 12,
+                          "text": "Sie möchten am Sonntagnachmittag ins Museum gehen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 13,
+                          "text": "Sie sind in Süddeutschland im Urlaub und möchten gerne eine bayerische Spezialität essen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 14,
+                          "text": "Sie haben sich mit Bekannten zu einem Fischessen verabreden",
+                          "translated": ""
+                        },
+                        {
+                          "id": 15,
+                          "text": "Sie sind in Bayern und wollen Käsespezialitäten einkaufen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 16,
+                          "text": "Ein Bekannter möchte abends nach der Arbeit einen Deutschkurs besuchen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 17,
+                          "text": "Ihr Vater möchte im Ausland Englisch lernen.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 18,
+                          "text": "Sie interessieren sich für einen Online-Sprachkurs.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 19,
+                          "text": "Sie wollen, dass Ihre 10-jährige Tochter in den Ferien eine Fremdsprache lernt.",
+                          "translated": ""
+                        },
+                        {
+                          "id": 20,
+                          "text": "Eine Bekannte will ihren Geburtstag in einem Restaurant feiern und dort auch übernachten.",
+                          "translated": ""
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "MUSEUM DER STADT FÜSSEN\nLechhalde 3 · 87629 Füssen\nTel. (08362) 50 53 – 45 u. -43\nSTAATSGALERIE IM HOHEN SCHLOSS FÜSSEN\nMagnusplatz 10 · 87629 Füssen\nTel. (08362) 50 53 – 64\nÖffnungszeiten:\nApril bis Oktober:\nDi.–So. 11.00–16.00 Uhr\nMo. geschlossen\nNovember bis März:\nDi.–So. 14.00–16.00 Uhr\nMo. geschlossen",
+                          "translated": ""
+                        },
+                        {
+                          "id": "B",
+                          "text": "Franziskaner Stüberl\n87629 Füssen - Eingang Fußgängerzone\nKemptener Straße 1 - Telefon (08362) 37124\nIm Herzen der Stadt\nInh. Bernd Zienteck\nGutbürgerliche Allgäuer und Bayerische Küche\nDer beliebte Treffpunkt in gemütlicher Atmosphäre\nSonntag Ruhetag\nAuf Ihren Besuch freut sich Bernd Zienteck mit Team\n\n",
+                          "translated": ""
+                        },
+                        {
+                          "id": "C",
+                          "text": "SENNEREI–GENOSSENSCHAFT BAYERN\nHochplateau – Lechlenfeld · Telefon (08362) 917214\n\nFrisch vom Erzeuger:\n\nAllgäuer Emmentaler\n\nAllgäuer Bergkäse\n\nTilsiter\n\nFrisch-Milch\n\neigene Butterherstellung\n\nÖFFNUNGSZEITEN:\nWochentags: 7.30–12.30 h, 16.30–18.30 h\nSa. u. Feiertag: 7.30–13.00 h, 16.30–17.00 h",
+                          "translated": ""
+                        },
+                        {
+                          "id": "D",
+                          "text": "D\nSprachen lernen & Leute treffen\nBildungsurlaub für Erwachsene in England, Malta, Frankreich, Spanien, Italien und Kalifornien\nFordern Sie heute unseren 56-seitigen Katalog an; ein Exemplar des Sprachtests schicken wir Ihnen gleich mit, selbstverständlich kostenlos.\nTel: 069-61 09 120 | Fax: 069-6 03 13 95\nMorgensternstr. 180\n60596 Frankfurt\nSPRACHCAFFE\ns p r a c h r e i s e n",
+                          "translated": ""
+                        },
+                        {
+                          "id": "E",
+                          "text": "Jahreskonzert Füssen\nWolfgang Amadeus Mozart\nKlavierkonzert Nr. 21 in C-Dur\nPianist: Hanno Porter\nLeitung: Stadtmusikdirektor Robert Maul\nKarten bei der Kurverwaltung Füssen und an der Abendkasse",
+                          "translated": ""
+                        },
+                        {
+                          "id": "F",
+                          "text": "Das Heimatmuseum Füssen lädt zum Besuch ein\nÖffnungszeiten:\nMontag bis Freitag: 10.00–12.00 Uhr und 14.00–16.45 Uhr\nSamstag und Sonntag: 10.00–12.00 Uhr\nIn der Instrumentensammlung sind wertvolle Geigen von Mittenwalder Meistern ausgestellt. Außerdem kann man in einer besonders eingerichteten Werkstatt dem Geigenbauer bei der Arbeit zuschauen.\nAußerhalb der Öffnungszeiten sind Gruppen ab 20 Personen nach Voranmeldung willkommen.\nTelefon (0 83 62) 25 11",
+                          "translated": ""
+                        },
+                        {
+                          "id": "G",
+                          "text": "bonCas\nSpezialitätenkäserei\nP. und U. Moser-Kolb\nHessenbohlstraße 14\nCH – 8512 Lustdorf\nSchweiz\nE-Mail: kieronkoelbi@bluewin.ch",
+                          "translated": ""
+                        },
+                        {
+                          "id": "H",
+                          "text": "Alfa Sprachreisen\nCrash-Kurse für Manager.\nSprachkurse und High-School-Programme für 12- bis 18-Jährige.\nEnglisch, Französisch, Spanisch, 17 Länder, mehr als 60 Kursorte.\nFordern Sie unsere kostenlose Broschüre an!\nAlfa-Sprachreisen GmbH\nRotebühlplatz 75 · 70178 Stuttgart\nTel. 0711-61 55 300 · Fax 0711-61 55 3010\nhttp://www.alfa-sprachreisen.de",
+                          "translated": ""
+                        },
+                        {
+                          "id": "I",
+                          "text": "4. APRIL „Deutsche Schlagernacht“\n12. APRIL Donnerstag: 70er/80er Jahre Party\nNEU: Schnitzel-Woche\nCafe • Bistro\nCafé · Bistro\nAmadeus\nTiroler Straße 19\n87459 PFRONTEN-DORF · Tel. 08363/474",
+                          "translated": ""
+                        },
+                        {
+                          "id": "J",
+                          "text": "Free-System\nEnglisch, Französisch, Italienisch, Spanisch, Deutsch für Ausländer\nMaschinenschreiben/Steno\n•Sie bestimmen die Unterrichtszeit\n•Sie lernen, so rasch Sie wollen\n•Intensivkurse, Einzel-/Privat- und Kleingruppen (1-5 Teilnehmer)\n•Intensive Crash Courses\n•Brush up and Business\n•Sprachkurse für Manager\n•English for Secretaries\n•Firmenkurse (intern/extern)\n•First/Proficiency/TOEFL/GMAT Alliance Française\n\nKursbeginn jetzt!\n\nInstitut Grünberger\nRostock, direkt beim Hauptbahnhof",
+                          "translated": ""
+                        },
+                        {
+                          "id": "K",
+                          "text": "Ritterstub'n\nFischspezialitäten\nDas Restaurant mit gepflegter Gastlichkeit im Herzen der Altstadt\ngeöffnet von 11:00–14:00 Uhr und 17:00–24:00 Uhr\nMontag Ruhetag\nWarme Küche bis 22:00 Uhr\nRitterstraße 4 · 87629 Füssen\nTel. 08362 / 7759\nFam. Roth-Winter freut sich auf Ihren Besuch",
+                          "translated": ""
+                        },
+                        {
+                          "id": "L",
+                          "text": "Wollen Sie fein essen gehen?\nAlpenschlössle\nFüssen-Bad Faulenbach\nTel. (08362) 4017\nHotel-Restaurant Alpenschlössle\nAuf Ihren Besuch freut sich Familie Hummel\nHotel · Café · Pension",
+                          "translated": ""
+                        },
+                        {
+                          "id": "X",
+                          "text": "Keine passende Anzeige",
+                          "translated": "لا يوجد إعلان مناسب"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "situationId": 11,
+                          "adId": "E",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 12,
+                          "adId": "A",
+                          "highlights": [],
+                          "reason": "",
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 13,
+                          "adId": "B",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 14,
+                          "adId": "K",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 15,
+                          "adId": "C",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 16,
+                          "adId": "J",
+                          "highlights": [],
+                          "reason": "",
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 17,
+                          "adId": "D",
+                          "highlights": [],
+                          "reason": "",
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 18,
+                          "adId": "X",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 19,
+                          "adId": "X",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        },
+                        {
+                          "situationId": 20,
+                          "adId": "L",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "partOrder": [
+                  "teil-3"
+                ],
+                "counts": {
+                  "parts": 5
+                }
+              }
             }
           },
           "versionOrder": [
             "default",
-            "version-1"
+            "version-1",
+            "version-2"
           ],
           "defaultVersion": "default",
           "lesen": {
