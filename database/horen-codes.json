@@ -1025,43 +1025,6 @@
                       ]
                     },
                     {
-                      "id": "topic-1788980986873-rap",
-                      "title": "Bus zur Arbeit (2 المعدل)",
-                      "tag": "Bus zur Arbeit (2 المعدل)",
-                      "statements": [
-                        {
-                          "id": "topic-1788980986873-rap-s1",
-                          "number": 1,
-                          "text": "Der Sprecher könnte sich vorstellen, mit dem Bus zur Arbeit zu fahren.",
-                          "correct": false
-                        },
-                        {
-                          "id": "topic-1788980986873-rap-s2",
-                          "number": 2,
-                          "text": "Die Sprecherin geht gern zu Fuß.",
-                          "correct": true
-                        },
-                        {
-                          "id": "topic-1788980986873-rap-s3",
-                          "number": 3,
-                          "text": "Der Sprecher findet es in Ordnung, dass seine Frau immer das Auto hat.",
-                          "correct": false
-                        },
-                        {
-                          "id": "topic-1788980986873-rap-s4",
-                          "number": 4,
-                          "text": "Die Sprecherin fährt jeden Tag mit ihrem Motorrad zur Arbeit.",
-                          "correct": false
-                        },
-                        {
-                          "id": "topic-1788980986873-rap-s5",
-                          "number": 5,
-                          "text": "Die Sprecherin fährt immer mit dem Fahrrad zur Arbeit.",
-                          "correct": false
-                        }
-                      ]
-                    },
-                    {
                       "id": "topic-1788981222783-1kld",
                       "title": "Einzelkind (المعدل)",
                       "tag": "Einzelkind (المعدل)",
