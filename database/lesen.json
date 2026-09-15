@@ -110492,18 +110492,84 @@
                           "value": " wir Ihnen dankbar.\n\nMit freundlichen Grüßen\nADRIAN SCHÖLLER\nEVD Trans GmbH"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "AM"
+                        },
+                        {
+                          "id": "",
+                          "text": "AUFTRAG"
+                        },
+                        {
+                          "id": "",
+                          "text": "NENNEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "FRAGEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "GEEIGNET"
+                        },
+                        {
+                          "id": "",
+                          "text": "GEGENÜBER"
+                        },
+                        {
+                          "id": "",
+                          "text": "INFORMATIONEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "KÖNNTEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "STATTFINDEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "NUN"
+                        },
+                        {
+                          "id": "",
+                          "text": "TERMIN"
+                        },
+                        {
+                          "id": "",
+                          "text": "TROTZDEM"
+                        },
+                        {
+                          "id": "",
+                          "text": "VOR"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÄREN"
+                        },
+                        {
+                          "id": "",
+                          "text": "WEGEN"
+                        }
+                      ],
                       "options": [
-                        "AUFTRAG",
-                        "STATTFINDEN",
-                        "INFORMATIONEN",
-                        "NENNEN",
-                        "GEEIGNET",
-                        "WEGEN",
-                        "NUN",
                         "AM",
+                        "AUFTRAG",
+                        "NENNEN",
+                        "FRAGEN",
+                        "GEEIGNET",
+                        "GEGENÜBER",
+                        "INFORMATIONEN",
+                        "KÖNNTEN",
+                        "STATTFINDEN",
+                        "NUN",
                         "TERMIN",
-                        "WÄREN"
+                        "TROTZDEM",
+                        "VOR",
+                        "WÄREN",
+                        "WEGEN"
                       ],
                       "blanks": [
                         {
