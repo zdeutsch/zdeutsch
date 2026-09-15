@@ -108081,10 +108081,263 @@
                   "parts": 5
                 }
               }
+            },
+            "version-1": {
+              "key": "version-1",
+              "label": "Version 2",
+              "title": "Alicia · Version 2",
+              "lesen": {
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Alicia",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "extractedAt": "2026-09-15T20:03:52.339Z"
+                    },
+                    "content": {
+                      "title": "Sprachbausteine",
+                      "instruction": "",
+                      "text": "Here you go:\n\nLiebe Catherine,\n\n seit ich dir das letzte Mal von meinem Sprachaufenthalt in der Schweiz [[21]] habe, ist viel passiert. Ich kenne [[22]] Land jetzt schon recht gut. Die Schweiz ist ja wirklich nicht groß, [[23]] in jeder Gegend wird ein anderer Dialekt oder gar eine andere Sprache gesprochen. Das ist für mich fast unglaublich! [[24]] uns in Australien fährt man mit dem Auto 24 Stunden lang geradeaus, und [[25]] man ankommt, dann sprechen die Leute dort immer noch dieselbe Sprache. Am Anfang hat [[26]] das Sprachgemisch schon sehr verwirrt, aber jetzt verstehe ich fast alles, wenn jemand auf Schweizerdeutsch [[27]] mir spricht. Ich kann aber nur auf Hochdeutsch antworten. Es gibt einige Unterschiede [[28]] der Schule hier und unserem Schulsystem in Australien. In der Schweiz sprechen die Lehrer viel und die Schüler [[29]] vieles im Kopf behalten oder aufschreiben. In Australien arbeiten wir meistens im Rahmen von Projekten und machen eigentlich [[30]] Aufgaben auf dem Computer.\n\nViele Grüße Jack",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Here you go:\n\nLiebe Catherine,\n\n seit ich dir das letzte Mal von meinem Sprachaufenthalt in der Schweiz "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " habe, ist viel passiert. Ich kenne "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " Land jetzt schon recht gut. Die Schweiz ist ja wirklich nicht groß, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " in jeder Gegend wird ein anderer Dialekt oder gar eine andere Sprache gesprochen. Das ist für mich fast unglaublich! "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " uns in Australien fährt man mit dem Auto 24 Stunden lang geradeaus, und "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " man ankommt, dann sprechen die Leute dort immer noch dieselbe Sprache. Am Anfang hat "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " das Sprachgemisch schon sehr verwirrt, aber jetzt verstehe ich fast alles, wenn jemand auf Schweizerdeutsch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " mir spricht. Ich kann aber nur auf Hochdeutsch antworten. Es gibt einige Unterschiede "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Schule hier und unserem Schulsystem in Australien. In der Schweiz sprechen die Lehrer viel und die Schüler "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " vieles im Kopf behalten oder aufschreiben. In Australien arbeiten wir meistens im Rahmen von Projekten und machen eigentlich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": ""
+                        },
+                        {
+                          "type": "text",
+                          "value": " Aufgaben auf dem Computer.\n\nViele Grüße Jack"
+                        }
+                      ],
+                      "translated": "",
+                      "blanks": [
+                        {
+                          "id": "Lücke 21",
+                          "options": [
+                            "erzähle",
+                            "erzählen",
+                            "erzählt"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 22",
+                          "options": [
+                            "diese",
+                            "diesen",
+                            "dieses"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 23",
+                          "options": [
+                            "aber",
+                            "obwohl",
+                            "sondern"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 24",
+                          "options": [
+                            "Bei",
+                            "Für",
+                            "Zu"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 25",
+                          "options": [
+                            "damit",
+                            "weil",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 26",
+                          "options": [
+                            "dich",
+                            "mich",
+                            "sich"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 27",
+                          "options": [
+                            "an",
+                            "bei",
+                            "mit"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 28",
+                          "options": [
+                            "neben",
+                            "unter",
+                            "zwischen"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 29",
+                          "options": [
+                            "brauchen",
+                            "haben",
+                            "müssen"
+                          ]
+                        },
+                        {
+                          "id": "Lücke 30",
+                          "options": [
+                            "alle",
+                            "allen",
+                            "alles"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": "Lücke 21",
+                          "answer": "erzählt"
+                        },
+                        {
+                          "id": "Lücke 22",
+                          "answer": "dieses"
+                        },
+                        {
+                          "id": "Lücke 23",
+                          "answer": "aber"
+                        },
+                        {
+                          "id": "Lücke 24",
+                          "answer": "Bei"
+                        },
+                        {
+                          "id": "Lücke 25",
+                          "answer": "wenn"
+                        },
+                        {
+                          "id": "Lücke 26",
+                          "answer": "mich"
+                        },
+                        {
+                          "id": "Lücke 27",
+                          "answer": "mit"
+                        },
+                        {
+                          "id": "Lücke 28",
+                          "answer": "zwischen"
+                        },
+                        {
+                          "id": "Lücke 29",
+                          "answer": "müssen"
+                        },
+                        {
+                          "id": "Lücke 30",
+                          "answer": "alle"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 5
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "version-1"
           ],
           "defaultVersion": "default",
           "lesen": {
