@@ -97642,18 +97642,84 @@
                           "value": " Sie hier unbedingt mit und gewinnen Sie! Ich drücke Ihnen die Daumen……"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "BEI"
+                        },
+                        {
+                          "id": "",
+                          "text": "BEREITS"
+                        },
+                        {
+                          "id": "",
+                          "text": "EINMAL"
+                        },
+                        {
+                          "id": "",
+                          "text": "EURE"
+                        },
+                        {
+                          "id": "",
+                          "text": "GANZ"
+                        },
+                        {
+                          "id": "",
+                          "text": "GARANTIEREN"
+                        },
+                        {
+                          "id": "",
+                          "text": "GESTERN"
+                        },
+                        {
+                          "id": "",
+                          "text": "KÖNNEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "MACHEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "NUR"
+                        },
+                        {
+                          "id": "",
+                          "text": "STATT"
+                        },
+                        {
+                          "id": "",
+                          "text": "TECHNISCH"
+                        },
+                        {
+                          "id": "",
+                          "text": "ÜBER"
+                        },
+                        {
+                          "id": "",
+                          "text": "UNSER"
+                        },
+                        {
+                          "id": "",
+                          "text": "WENN"
+                        }
+                      ],
                       "options": [
-                        "EINMAL",
-                        "NUR",
-                        "KÖNNEN",
-                        "WENN",
-                        "STATT",
-                        "GANZ",
                         "BEI",
-                        "GARANTIEREN",
                         "BEREITS",
-                        "MACHEN"
+                        "EINMAL",
+                        "EURE",
+                        "GANZ",
+                        "GARANTIEREN",
+                        "GESTERN",
+                        "KÖNNEN",
+                        "MACHEN",
+                        "NUR",
+                        "STATT",
+                        "TECHNISCH",
+                        "ÜBER",
+                        "UNSER",
+                        "WENN"
                       ],
                       "blanks": [
                         {
