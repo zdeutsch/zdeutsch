@@ -70896,18 +70896,84 @@
                           "value": " ausgebucht sein, geben Sie mir bitte umgehend Bescheid.\n\nMit freundlichen Grüßen\nBarbara Heuberger"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "AN"
+                        },
+                        {
+                          "id": "",
+                          "text": "BEKANNTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "BEREITS"
+                        },
+                        {
+                          "id": "",
+                          "text": "DAFÜR"
+                        },
+                        {
+                          "id": "",
+                          "text": "DARÜBER"
+                        },
+                        {
+                          "id": "",
+                          "text": "DASS"
+                        },
+                        {
+                          "id": "",
+                          "text": "FAMILIE"
+                        },
+                        {
+                          "id": "",
+                          "text": "KANN"
+                        },
+                        {
+                          "id": "",
+                          "text": "MICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "MIT"
+                        },
+                        {
+                          "id": "",
+                          "text": "MUSS"
+                        },
+                        {
+                          "id": "",
+                          "text": "OB"
+                        },
+                        {
+                          "id": "",
+                          "text": "SEHR"
+                        },
+                        {
+                          "id": "",
+                          "text": "WAS"
+                        },
+                        {
+                          "id": "",
+                          "text": "WELCHE"
+                        }
+                      ],
                       "options": [
-                        "MICH",
-                        "BEKANNTE",
-                        "DAFÜR",
                         "AN",
-                        "WELCHE",
+                        "BEKANNTE",
+                        "BEREITS",
+                        "DAFÜR",
+                        "DARÜBER",
                         "DASS",
-                        "SEHR",
+                        "FAMILIE",
                         "KANN",
+                        "MICH",
                         "MIT",
-                        "BEREITS"
+                        "MUSS",
+                        "OB",
+                        "SEHR",
+                        "WAS",
+                        "WELCHE"
                       ],
                       "blanks": [
                         {
