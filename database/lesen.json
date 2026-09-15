@@ -113311,18 +113311,84 @@
                           "value": " Sie noch weitere Fragen an mich haben, können Sie mich gerne anrufen, meine Telefonnummer ist 07612/64788980.\n\nIch würde mich freuen, bald von Ihnen zu hören.\n\nMit freundlichen Grüßen\n\nKAROLINE POINTNER"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "BEQUEM"
+                        },
+                        {
+                          "id": "",
+                          "text": "GEEIGNET"
+                        },
+                        {
+                          "id": "",
+                          "text": "HÄTTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "IHNEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "JEDEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "KÖNNTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MEHR"
+                        },
+                        {
+                          "id": "",
+                          "text": "NICHTS"
+                        },
+                        {
+                          "id": "",
+                          "text": "OHNE"
+                        },
+                        {
+                          "id": "",
+                          "text": "SCHON"
+                        },
+                        {
+                          "id": "",
+                          "text": "SIE"
+                        },
+                        {
+                          "id": "",
+                          "text": "TÄGLICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "WIE HOCH"
+                        },
+                        {
+                          "id": "",
+                          "text": "WIE VIEL"
+                        },
+                        {
+                          "id": "",
+                          "text": "ZWAR"
+                        }
+                      ],
                       "options": [
-                        "INTERESSIERT",
-                        "ÖFTER",
-                        "NUR",
-                        "VOR",
-                        "ARBEITEN",
-                        "UNBEKANNT",
-                        "MÖGLICH",
-                        "ERZÄHLT",
-                        "WÜRDE",
-                        "FALLS"
+                        "BEQUEM",
+                        "GEEIGNET",
+                        "HÄTTE",
+                        "IHNEN",
+                        "JEDEN",
+                        "KÖNNTE",
+                        "MEHR",
+                        "NICHTS",
+                        "OHNE",
+                        "SCHON",
+                        "SIE",
+                        "TÄGLICH",
+                        "WIE HOCH",
+                        "WIE VIEL",
+                        "ZWAR"
                       ],
                       "blanks": [
                         {
