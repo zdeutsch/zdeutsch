@@ -84322,18 +84322,84 @@
                           "value": " Sie noch weitere Fragen an mich haben, können Sie mich gerne anrufen, meine Telefonnummer ist 07612/64788980.\n\nIch würde mich freuen, bald von Ihnen zu hören.\n\nMit freundlichen Grüßen\n\nKAROLINE POINTNER"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "ALS"
+                        },
+                        {
+                          "id": "",
+                          "text": "ANFANGEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "ARBEITEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "ERZÄHLT"
+                        },
+                        {
+                          "id": "",
+                          "text": "FALLS"
+                        },
+                        {
+                          "id": "",
+                          "text": "INFORMIERT"
+                        },
+                        {
+                          "id": "",
+                          "text": "INTERESSIERT"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÖCHTEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÖGLICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "NUR"
+                        },
+                        {
+                          "id": "",
+                          "text": "ÖFTER"
+                        },
+                        {
+                          "id": "",
+                          "text": "UNBEKANNT"
+                        },
+                        {
+                          "id": "",
+                          "text": "VOR"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÜRDE"
+                        },
+                        {
+                          "id": "",
+                          "text": "ZWISCHEN"
+                        }
+                      ],
                       "options": [
-                        "INTERESSIERT",
-                        "ÖFTER",
-                        "NUR",
-                        "VOR",
+                        "ALS",
+                        "ANFANGEN",
                         "ARBEITEN",
-                        "UNBEKANNT",
-                        "MÖGLICH",
                         "ERZÄHLT",
+                        "FALLS",
+                        "INFORMIERT",
+                        "INTERESSIERT",
+                        "MÖCHTEN",
+                        "MÖGLICH",
+                        "NUR",
+                        "ÖFTER",
+                        "UNBEKANNT",
+                        "VOR",
                         "WÜRDE",
-                        "FALLS"
+                        "ZWISCHEN"
                       ],
                       "blanks": [
                         {
