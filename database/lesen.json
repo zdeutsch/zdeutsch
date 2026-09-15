@@ -78896,18 +78896,84 @@
                           "value": " für die Informationen.\n\nMit freundlichen Grüßen"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "AUßERDEM"
+                        },
+                        {
+                          "id": "",
+                          "text": "DÜRFEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "ERSTENS"
+                        },
+                        {
+                          "id": "",
+                          "text": "FÜR"
+                        },
+                        {
+                          "id": "",
+                          "text": "KEINES"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÖCHTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÜSSEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "NICHTS"
+                        },
+                        {
+                          "id": "",
+                          "text": "OB"
+                        },
+                        {
+                          "id": "",
+                          "text": "OBWOHL"
+                        },
+                        {
+                          "id": "",
+                          "text": "TAGE"
+                        },
+                        {
+                          "id": "",
+                          "text": "ÜBER"
+                        },
+                        {
+                          "id": "",
+                          "text": "VORAUS"
+                        },
+                        {
+                          "id": "",
+                          "text": "WENN"
+                        },
+                        {
+                          "id": "",
+                          "text": "WOCHENENDE"
+                        }
+                      ],
                       "options": [
-                        "WOCHENENDE",
-                        "FÜR",
-                        "MÖCHTE",
-                        "TAGE",
-                        "MÜSSEN",
-                        "OB",
-                        "NICHTS",
                         "AUßERDEM",
+                        "DÜRFEN",
+                        "ERSTENS",
+                        "FÜR",
+                        "KEINES",
+                        "MÖCHTE",
+                        "MÜSSEN",
+                        "NICHTS",
+                        "OB",
+                        "OBWOHL",
+                        "TAGE",
+                        "ÜBER",
+                        "VORAUS",
                         "WENN",
-                        "VORAUS"
+                        "WOCHENENDE"
                       ],
                       "blanks": [
                         {
