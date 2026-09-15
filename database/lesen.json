@@ -107980,18 +107980,84 @@
                           "value": " gerne ausprobieren, wie ihre Methode funktioniert.\n\nMit freundlichen Grüßen\n\nIhre KARIN ÜBERSCHÄR"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "AM"
+                        },
+                        {
+                          "id": "",
+                          "text": "BIS"
+                        },
+                        {
+                          "id": "",
+                          "text": "DASS"
+                        },
+                        {
+                          "id": "",
+                          "text": "FÜR"
+                        },
+                        {
+                          "id": "",
+                          "text": "GUTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "KEINE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "MIR"
+                        },
+                        {
+                          "id": "",
+                          "text": "MIT"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÖCHTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "OHNE"
+                        },
+                        {
+                          "id": "",
+                          "text": "PRO"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÄHREND"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÄRE"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÜRDEN"
+                        }
+                      ],
                       "options": [
-                        "MIR",
-                        "FÜR",
-                        "KEINE",
-                        "MIT",
-                        "GUTE",
                         "AM",
-                        "DASS",
                         "BIS",
+                        "DASS",
+                        "FÜR",
+                        "GUTE",
+                        "KEINE",
+                        "MICH",
+                        "MIR",
+                        "MIT",
+                        "MÖCHTE",
+                        "OHNE",
                         "PRO",
-                        "MÖCHTE"
+                        "WÄHREND",
+                        "WÄRE",
+                        "WÜRDEN"
                       ],
                       "blanks": [
                         {
