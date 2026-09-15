@@ -112358,18 +112358,84 @@
                           "value": " bin.\n\nMit freundlichen Grüßen\nEBERHARD SPITZWEG"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "BEQUEM"
+                        },
+                        {
+                          "id": "",
+                          "text": "GEEIGNET"
+                        },
+                        {
+                          "id": "",
+                          "text": "HÄTTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "IHNEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "JEDEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "KÖNNTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MEHR"
+                        },
+                        {
+                          "id": "",
+                          "text": "NICHTS"
+                        },
+                        {
+                          "id": "",
+                          "text": "OHNE"
+                        },
+                        {
+                          "id": "",
+                          "text": "SCHON"
+                        },
+                        {
+                          "id": "",
+                          "text": "SIE"
+                        },
+                        {
+                          "id": "",
+                          "text": "TÄGLICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "WIE HOCH"
+                        },
+                        {
+                          "id": "",
+                          "text": "WIE VIEL"
+                        },
+                        {
+                          "id": "",
+                          "text": "ZWAR"
+                        }
+                      ],
                       "options": [
-                        "SCHON",
+                        "BEQUEM",
+                        "GEEIGNET",
                         "HÄTTE",
-                        "ZWAR",
-                        "OHNE",
-                        "JEDEN",
-                        "NICHTS",
-                        "TÄGLICH",
-                        "WIE VIEL",
                         "IHNEN",
-                        "GEEIGNET"
+                        "JEDEN",
+                        "KÖNNTE",
+                        "MEHR",
+                        "NICHTS",
+                        "OHNE",
+                        "SCHON",
+                        "SIE",
+                        "TÄGLICH",
+                        "WIE HOCH",
+                        "WIE VIEL",
+                        "ZWAR"
                       ],
                       "blanks": [
                         {
