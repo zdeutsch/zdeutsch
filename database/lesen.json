@@ -92618,18 +92618,84 @@
                           "value": " Woche bei dir aus?\n\nLiebe Grüße\nMadeleine"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "DURFTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "EINIGE"
+                        },
+                        {
+                          "id": "",
+                          "text": "GLEICHZEITIG"
+                        },
+                        {
+                          "id": "",
+                          "text": "IHRE"
+                        },
+                        {
+                          "id": "",
+                          "text": "KEINE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MUSSTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "NÄCHSTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "PAAR"
+                        },
+                        {
+                          "id": "",
+                          "text": "SEIT"
+                        },
+                        {
+                          "id": "",
+                          "text": "SIE"
+                        },
+                        {
+                          "id": "",
+                          "text": "SONDERN"
+                        },
+                        {
+                          "id": "",
+                          "text": "STATT"
+                        },
+                        {
+                          "id": "",
+                          "text": "UNTERLAGEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÜRDEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "ZUSÄTZLICHE"
+                        }
+                      ],
                       "options": [
-                        "MUSSTE",
-                        "SEIT",
-                        "KEINE",
-                        "PAAR",
+                        "DURFTE",
+                        "EINIGE",
                         "GLEICHZEITIG",
+                        "IHRE",
+                        "KEINE",
+                        "MUSSTE",
+                        "NÄCHSTE",
+                        "PAAR",
+                        "SEIT",
+                        "SIE",
                         "SONDERN",
-                        "WÜRDEN",
-                        "ZUSÄTZLICHE",
+                        "STATT",
                         "UNTERLAGEN",
-                        "NÄCHSTE"
+                        "WÜRDEN",
+                        "ZUSÄTZLICHE"
                       ],
                       "blanks": [
                         {
