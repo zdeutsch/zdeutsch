@@ -82404,6 +82404,206 @@
                           "id": 40,
                           "answer": "IHNEN"
                         }
+                      ],
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Sehr geehrter Herr Frankel,\n\nwir möchten Sie darüber informieren, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "DASS"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Ihre Versicherungen künftig von Herrn Max Kuhne bearbeitet werden. Ihm wurden "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "ihre"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Unterlagen übergeben.\nAlle Kundendaten "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "WERDEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " selbstverständlich streng vertraulich behandelt. Wenn Sie also "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "FRAGEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " zu Ihren Versicherungen haben, wenden Sie sich in Zukunft bitte an Herrn Kuhne. Er berät und "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "informiert"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie gern. Auch im Schadensfall "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "HILFT"
+                        },
+                        {
+                          "type": "text",
+                          "value": " er Ihnen schnell und zuverlässig weiter. Im Übrigen möchten wir uns "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "FÜR"
+                        },
+                        {
+                          "type": "text",
+                          "value": " einen Fehler in unserer letzten Beitragsrechnung entschuldigen. Leider ist "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "dort"
+                        },
+                        {
+                          "type": "text",
+                          "value": " die Adresse von Herrn Kuhne nicht korrekt.\nSeine "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "richtige"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Anschrift und Telefonnummer finden Sie auf diesem Brief oben rechts.\nWir danken "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "IHNEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " für Ihr Vertrauen.\n\nMit freundlichen Grüßen\nIhre Frankfurter Allianz"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "answer": "DASS"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "ihre"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "WERDEN"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "FRAGEN"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "informiert"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "HILFT"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "FÜR"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "dort"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "richtige"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "IHNEN"
+                        }
+                      ],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "ANTWORTEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "AUF"
+                        },
+                        {
+                          "id": "",
+                          "text": "DASS"
+                        },
+                        {
+                          "id": "",
+                          "text": "DORT"
+                        },
+                        {
+                          "id": "",
+                          "text": "FRAGEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "FÜR"
+                        },
+                        {
+                          "id": "",
+                          "text": "HABEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "HILFT"
+                        },
+                        {
+                          "id": "",
+                          "text": "IHNEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "IHRE"
+                        },
+                        {
+                          "id": "",
+                          "text": "INFORMIERT"
+                        },
+                        {
+                          "id": "",
+                          "text": "OB"
+                        },
+                        {
+                          "id": "",
+                          "text": "RICHTIGE"
+                        },
+                        {
+                          "id": "",
+                          "text": "WERDEN"
+                        },
+                        {
+                          "id": "",
+                          "text": "ZU"
+                        }
                       ]
                     }
                   },
