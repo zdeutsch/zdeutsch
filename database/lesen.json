@@ -116061,18 +116061,84 @@
                           "value": ".\n\nMit freundlichen Grüßen\n\nANNETTE LUCHSINGER"
                         }
                       ],
-                      "wordBank": [],
+                      "wordBank": [
+                        {
+                          "id": "",
+                          "text": "ANFRAGE"
+                        },
+                        {
+                          "id": "",
+                          "text": "ANGEBOT"
+                        },
+                        {
+                          "id": "",
+                          "text": "DABEI"
+                        },
+                        {
+                          "id": "",
+                          "text": "DAFÜR"
+                        },
+                        {
+                          "id": "",
+                          "text": "DANACH"
+                        },
+                        {
+                          "id": "",
+                          "text": "DARIN"
+                        },
+                        {
+                          "id": "",
+                          "text": "DESHALB"
+                        },
+                        {
+                          "id": "",
+                          "text": "HÄTTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "MIT"
+                        },
+                        {
+                          "id": "",
+                          "text": "MÖCHTE"
+                        },
+                        {
+                          "id": "",
+                          "text": "NÄMLICH"
+                        },
+                        {
+                          "id": "",
+                          "text": "UNTER"
+                        },
+                        {
+                          "id": "",
+                          "text": "WÄRE"
+                        },
+                        {
+                          "id": "",
+                          "text": "WELCHE"
+                        },
+                        {
+                          "id": "",
+                          "text": "WENN"
+                        }
+                      ],
                       "options": [
-                        "DARIN",
-                        "NÄMLICH",
-                        "DANACH",
-                        "WENN",
-                        "HÄTTE",
-                        "UNTER",
-                        "MÖCHTE",
-                        "WELCHE",
+                        "ANFRAGE",
+                        "ANGEBOT",
                         "DABEI",
-                        "ANGEBOT"
+                        "DAFÜR",
+                        "DANACH",
+                        "DARIN",
+                        "DESHALB",
+                        "HÄTTE",
+                        "MIT",
+                        "MÖCHTE",
+                        "NÄMLICH",
+                        "UNTER",
+                        "WÄRE",
+                        "WELCHE",
+                        "WENN"
                       ],
                       "blanks": [
                         {
