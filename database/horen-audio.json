@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceType": "audio",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLfFAuCcpV83pUqKXLq5A7ShIkw9gOkoP6",
   "levels": {
     "b1": {
       "title": "B1 Hören mit Audio",
-      "description": "24 vollständige Hörverstehen-Themen mit Teil 1, Teil 2 und Teil 3.",
+      "description": "39 vollständige Hörverstehen-Themen mit Teil 1, Teil 2 und Teil 3.",
       "themeOrder": [
         "andreas-2",
         "sophie",
@@ -30,7 +30,22 @@
         "rita",
         "laura",
         "nadia",
-        "annika-2"
+        "annika-2",
+        "landleben-in-anklam",
+        "modedesignerin-donatella",
+        "jugendmuseum",
+        "thomas-und-computer",
+        "squashspielerin-sabine",
+        "infofon-berlin",
+        "urlaubs-express",
+        "au-pair-in-amerika",
+        "computerpionierin-holberton",
+        "jugendfarm",
+        "schuelerzeitung-xyz",
+        "umweltschutz-beim-bund",
+        "rennfahrer-mika",
+        "sean-lennon",
+        "guardian-angels"
       ],
       "themes": {
         "andreas-2": {
@@ -5360,8 +5375,3342 @@
               }
             }
           }
+        },
+        "landleben-in-anklam": {
+          "title": "Landleben in Anklam",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "YbWt73LhTmQ",
+            "url": "https://www.youtube.com/watch?v=YbWt73LhTmQ",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-landleben-in-anklam-teil-1",
+                      "title": "Mode und Kleidung",
+                      "tag": "Landleben in Anklam · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-25-landleben-in-anklam-teil-1.mp3",
+                        "fileName": "b1-25-landleben-in-anklam-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2320597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 290
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin kleidet sich immer modern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-1-s2",
+                          "number": 42,
+                          "text": "Dem Sprecher gefällt es, modische Kleidung zu tragen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher kleidet sich, wie es ihm gefällt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-1-s4",
+                          "number": 44,
+                          "text": "Für die Sprecherin ist Mode unwichtig.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-1-s5",
+                          "number": 45,
+                          "text": "Der Sprecher gibt nicht mehr viel Geld für Kleidung aus.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-landleben-in-anklam-teil-2",
+                      "title": "Landleben in Anklam",
+                      "tag": "Landleben in Anklam · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-25-landleben-in-anklam-teil-2.mp3",
+                        "fileName": "b1-25-landleben-in-anklam-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4368469
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 286,
+                        "endSeconds": 832
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s1",
+                          "number": 46,
+                          "text": "Anklam liegt in der Nähe von Berlin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s2",
+                          "number": 47,
+                          "text": "In Anklam kennen sich alle Einwohner.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s3",
+                          "number": 48,
+                          "text": "Zweimal pro Woche kann man in einen Jugendklub gehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s4",
+                          "number": 49,
+                          "text": "Die Jugendlichen von Anklam treffen sich am Wochenende immer auf der Straße.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s5",
+                          "number": 50,
+                          "text": "Connys Freund wohnt in einem anderen Dorf.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s6",
+                          "number": 51,
+                          "text": "Conny mag das Landleben nicht.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s7",
+                          "number": 52,
+                          "text": "Viele Leute denken, dass die jungen Leute auf dem Land nicht informiert sind.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s8",
+                          "number": 53,
+                          "text": "Conny fährt manchmal mit ihrem Moped zur Schule.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s9",
+                          "number": 54,
+                          "text": "Conny hat schon feste Berufspläne.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-2-s10",
+                          "number": 55,
+                          "text": "Connys Eltern sind berufstätig.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-landleben-in-anklam-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Landleben in Anklam · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-25-landleben-in-anklam-teil-3.mp3",
+                        "fileName": "b1-25-landleben-in-anklam-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4912597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 828,
+                        "endSeconds": 1442
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-3-s1",
+                          "number": 56,
+                          "text": "Der Zug aus Berlin kommt mit 30 Minuten Verspätung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-3-s2",
+                          "number": 57,
+                          "text": "Dr. Herrmann hat nur am Nachmittag Sprechstunde.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-3-s3",
+                          "number": 58,
+                          "text": "Man kann direkt in amerikanische Städte fliegen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-3-s4",
+                          "number": 59,
+                          "text": "Das Kurhaus liegt an der Nordsee.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-landleben-in-anklam-teil-3-s5",
+                          "number": 60,
+                          "text": "Ein Kasten Bier enthält zwanzig Flaschen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "modedesignerin-donatella": {
+          "title": "Modedesignerin Donatella",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "I5y0PS7B9Ko",
+            "url": "https://www.youtube.com/watch?v=I5y0PS7B9Ko",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-modedesignerin-donatella-teil-1",
+                      "title": "Ferien",
+                      "tag": "Modedesignerin Donatella · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-26-modedesignerin-donatella-teil-1.mp3",
+                        "fileName": "b1-26-modedesignerin-donatella-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2560602
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 320
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher verbringt seine Ferien mit Freunden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin ist in den Ferien dauernd mit ihren Eltern zusammen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher kann in seinen Ferien machen, was er will.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-1-s4",
+                          "number": 44,
+                          "text": "Der Sprecher verbringt seit vier Jahren seine Ferien in Amerika.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin macht Ferien mit ihrer Clique.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-modedesignerin-donatella-teil-2",
+                      "title": "Modedesignerin Donatella",
+                      "tag": "Modedesignerin Donatella · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-26-modedesignerin-donatella-teil-2.mp3",
+                        "fileName": "b1-26-modedesignerin-donatella-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4784538
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 316,
+                        "endSeconds": 914
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s1",
+                          "number": 46,
+                          "text": "Donatella lebt in München.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s2",
+                          "number": 47,
+                          "text": "Donatella braucht nicht viel Schlaf.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s3",
+                          "number": 48,
+                          "text": "Donatella macht alle Kleider selbst.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s4",
+                          "number": 49,
+                          "text": "Alle Ideen für Donatellas Kleider stammen aus der Musikszene.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s5",
+                          "number": 50,
+                          "text": "Donatella ist reich.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s6",
+                          "number": 51,
+                          "text": "Donatella meint, dass ihr Erfolg ein Geschenk ist.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s7",
+                          "number": 52,
+                          "text": "Eine Modenschau ist für Donatella wie eine Prüfung in der Schule.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s8",
+                          "number": 53,
+                          "text": "Donatellas Mutter wollte, dass ihre Tochter selbstständig wird.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s9",
+                          "number": 54,
+                          "text": "Donatellas Kinder sollen etwas Besonderes sein.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-2-s10",
+                          "number": 55,
+                          "text": "Donatellas Mann geht nicht gern auf Partys.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-modedesignerin-donatella-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Modedesignerin Donatella · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-26-modedesignerin-donatella-teil-3.mp3",
+                        "fileName": "b1-26-modedesignerin-donatella-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4680474
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 910,
+                        "endSeconds": 1495
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-3-s1",
+                          "number": 56,
+                          "text": "Jemand hat eine schwarze Sporttasche verloren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-3-s2",
+                          "number": 57,
+                          "text": "Der Zug nach Bern fährt pünktlich ab.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-3-s3",
+                          "number": 58,
+                          "text": "Zum Sonderpreis gibt es Wanderrucksäcke, Wanderschuhe für Männer und Schlafsäcke.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-3-s4",
+                          "number": 59,
+                          "text": "Die Radwanderstrecke ist 10 km lang.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-modedesignerin-donatella-teil-3-s5",
+                          "number": 60,
+                          "text": "Es gibt vormittags keine Vorstellungen.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "jugendmuseum": {
+          "title": "Jugendmuseum",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "Ozmod1iGH6Q",
+            "url": "https://www.youtube.com/watch?v=Ozmod1iGH6Q",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendmuseum-teil-1",
+                      "title": "Freundschaft",
+                      "tag": "Jugendmuseum · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-27-jugendmuseum-teil-1.mp3",
+                        "fileName": "b1-27-jugendmuseum-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2408526
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 301
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher kann sich ein Leben ohne Freundschaft nicht vorstellen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-1-s2",
+                          "number": 42,
+                          "text": "Der Sprecher meint, dass er viele wahre Freunde hat.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin hält Freunde für wichtig, weil man ihnen alles sagen kann.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-1-s4",
+                          "number": 44,
+                          "text": "Der Sprecher braucht keine Freunde.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin hat ihren Freunden viel gegeben, aber nichts bekommen.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendmuseum-teil-2",
+                      "title": "Jugendmuseum",
+                      "tag": "Jugendmuseum · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-27-jugendmuseum-teil-2.mp3",
+                        "fileName": "b1-27-jugendmuseum-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4560462
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 297,
+                        "endSeconds": 867
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s1",
+                          "number": 46,
+                          "text": "Das Jugendmuseum befindet sich in Berlin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s2",
+                          "number": 47,
+                          "text": "In dem Museum kann man auch mit Chemie experimentieren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s3",
+                          "number": 48,
+                          "text": "Kisten gibt es nur in den gelben Räumen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s4",
+                          "number": 49,
+                          "text": "Für jedes Thema gibt es eine Kiste.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s5",
+                          "number": 50,
+                          "text": "Im Museum kann man Sachen aus dem vorigen Jahrhundert besichtigen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s6",
+                          "number": 51,
+                          "text": "Es ist verboten, die historischen Kostüme anzufassen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s7",
+                          "number": 52,
+                          "text": "Es gibt auch Berichte von Leuten, die den Zweiten Weltkrieg miterlebt haben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s8",
+                          "number": 53,
+                          "text": "Wer etwas basteln möchte, muss in einen besonderen Raum gehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s9",
+                          "number": 54,
+                          "text": "Heute ist Schöneberg kein Dorf mehr.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-2-s10",
+                          "number": 55,
+                          "text": "Im Museum gibt es manchmal kulturelle Veranstaltungen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendmuseum-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Jugendmuseum · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-27-jugendmuseum-teil-3.mp3",
+                        "fileName": "b1-27-jugendmuseum-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5472462
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 863,
+                        "endSeconds": 1547
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-3-s1",
+                          "number": 56,
+                          "text": "Man kann in Rieden Rad- oder Bootsfahrten machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-3-s2",
+                          "number": 57,
+                          "text": "In Düsseldorf schneit es.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-3-s3",
+                          "number": 58,
+                          "text": "Es gibt keine Filme für Kinder.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-3-s4",
+                          "number": 59,
+                          "text": "Von der Schillerstraße bis zum Hotel „Rex\" sind es 30 Meter.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendmuseum-teil-3-s5",
+                          "number": 60,
+                          "text": "Bei „Möbel-Mahler\" gibt es einen Einkaufssonntag. Es gibt dann viele Sonderangebote.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "thomas-und-computer": {
+          "title": "Thomas und Computer",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "JYDf0zhTsJQ",
+            "url": "https://www.youtube.com/watch?v=JYDf0zhTsJQ",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-thomas-und-computer-teil-1",
+                      "title": "Technomusik",
+                      "tag": "Thomas und Computer · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-28-thomas-und-computer-teil-1.mp3",
+                        "fileName": "b1-28-thomas-und-computer-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2464597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 308
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher hört gern Technomusik.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-1-s2",
+                          "number": 42,
+                          "text": "Technomusik ist gut für die Nerven.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin findet, dass Technomusik Maschinenmusik ist.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-1-s4",
+                          "number": 44,
+                          "text": "Der Sprecher spielt ein Musikinstrument.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin meint, dass nur tolerante Menschen Technomusik hören.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-thomas-und-computer-teil-2",
+                      "title": "Thomas und Computer",
+                      "tag": "Thomas und Computer · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-28-thomas-und-computer-teil-2.mp3",
+                        "fileName": "b1-28-thomas-und-computer-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4440469
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 304,
+                        "endSeconds": 859
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s1",
+                          "number": 46,
+                          "text": "Thomas hat bei einem Wettbewerb in seiner Schule gewonnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s2",
+                          "number": 47,
+                          "text": "Thomas zeichnet gern mit der Hand.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s3",
+                          "number": 48,
+                          "text": "Der Vater von Thomas arbeitet nur in der Universität mit dem Computer.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s4",
+                          "number": 49,
+                          "text": "Thomas hatte schon in der Grundschule Informatik-Unterricht.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s5",
+                          "number": 50,
+                          "text": "Am Wochenende sitzt Thomas nicht die ganze Zeit am Computer.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s6",
+                          "number": 51,
+                          "text": "Thomas sucht Informationen im Internet statt in einem Lexikon.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s7",
+                          "number": 52,
+                          "text": "Thomas schickt E-Mails nach Amerika.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s8",
+                          "number": 53,
+                          "text": "Thomas interessiert sich für die Meinung von Pädagogen über Computerspiele.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s9",
+                          "number": 54,
+                          "text": "Der Computer kann Thomas später in seinem Beruf helfen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-2-s10",
+                          "number": 55,
+                          "text": "Wer Angst vor dem Computer hat, sollte sich öfter damit beschäftigen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-thomas-und-computer-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Thomas und Computer · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-28-thomas-und-computer-teil-3.mp3",
+                        "fileName": "b1-28-thomas-und-computer-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4616533
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 855,
+                        "endSeconds": 1432
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-3-s1",
+                          "number": 56,
+                          "text": "In einem Monat nimmt man 15 Kilo ab.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-3-s2",
+                          "number": 57,
+                          "text": "Die Lebensmittel bei „Shopping Box\" kosten genauso viel wie im Supermarkt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-3-s3",
+                          "number": 58,
+                          "text": "Das Mittagessen im Zug wird ab 12.30 Uhr serviert.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-3-s4",
+                          "number": 59,
+                          "text": "Auf dem Kinderflohmarkt gibt es auch gebrauchte Spielsachen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-thomas-und-computer-teil-3-s5",
+                          "number": 60,
+                          "text": "Gestern Nacht gab es einen Autounfall. Ein Mann starb dabei.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "squashspielerin-sabine": {
+          "title": "Squashspielerin Sabine",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "UeCidIA7Ijc",
+            "url": "https://www.youtube.com/watch?v=UeCidIA7Ijc",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-squashspielerin-sabine-teil-1",
+                      "title": "Extremsport",
+                      "tag": "Squashspielerin Sabine · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-29-squashspielerin-sabine-teil-1.mp3",
+                        "fileName": "b1-29-squashspielerin-sabine-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2408536
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 301
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin macht Bungee-Jumping.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-1-s2",
+                          "number": 42,
+                          "text": "Der Sprecher macht schon seit 20 Jahren Extremsport.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher mag Extremsport nicht.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin hält nichts von Extremsport.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-1-s5",
+                          "number": 45,
+                          "text": "Der Sprecher hat schon oft Extremsport gemacht.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-squashspielerin-sabine-teil-2",
+                      "title": "Squashspielerin Sabine",
+                      "tag": "Squashspielerin Sabine · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-29-squashspielerin-sabine-teil-2.mp3",
+                        "fileName": "b1-29-squashspielerin-sabine-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 3968536
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 297,
+                        "endSeconds": 793
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s1",
+                          "number": 46,
+                          "text": "Sabine hat einen jüngeren Bruder.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s2",
+                          "number": 47,
+                          "text": "Sabines Bruder spielt schon länger Squash als sie.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s3",
+                          "number": 48,
+                          "text": "Sabine spielt auch gegen ältere Sportlerinnen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s4",
+                          "number": 49,
+                          "text": "Sabines Lehrerin war immer mit auf den Turnieren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s5",
+                          "number": 50,
+                          "text": "Sabine fährt viermal im Jahr auf Meisterschaften und Turniere.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s6",
+                          "number": 51,
+                          "text": "Nach der Schule hat Sabine eine Firma eröffnet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s7",
+                          "number": 52,
+                          "text": "Eine Herren-Bundesliga gibt es nur in anderen Ländern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s8",
+                          "number": 53,
+                          "text": "Sabine hört gern Techno beim Training.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s9",
+                          "number": 54,
+                          "text": "Sabine isst nur italienische und indische Gerichte.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-2-s10",
+                          "number": 55,
+                          "text": "Bei einer Diät nimmt Sabine zwei bis drei Kilo ab.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-squashspielerin-sabine-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Squashspielerin Sabine · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-29-squashspielerin-sabine-teil-3.mp3",
+                        "fileName": "b1-29-squashspielerin-sabine-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5536600
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 789,
+                        "endSeconds": 1481
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-3-s1",
+                          "number": 56,
+                          "text": "Kinder unter 11 Jahren zahlen extra.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-3-s2",
+                          "number": 57,
+                          "text": "Am Montag ist das Museum geschlossen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-3-s3",
+                          "number": 58,
+                          "text": "Die Bücher bekommt man meist schon am nächsten Tag.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-3-s4",
+                          "number": 59,
+                          "text": "Die Veranstaltung ist für Kinder. Für Schulklassen ist sie auch offen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-squashspielerin-sabine-teil-3-s5",
+                          "number": 60,
+                          "text": "Das Doppelbettsofa gibt es in vielen Farben.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "infofon-berlin": {
+          "title": "Infofon Berlin",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "_GnxEA3XXks",
+            "url": "https://www.youtube.com/watch?v=_GnxEA3XXks",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-infofon-berlin-teil-1",
+                      "title": "Weihnachten",
+                      "tag": "Infofon Berlin · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-30-infofon-berlin-teil-1.mp3",
+                        "fileName": "b1-30-infofon-berlin-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2688464
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 336
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin verbringt Weihnachten zu Hause.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-1-s2",
+                          "number": 42,
+                          "text": "Der Sprecher möchte Weihnachten gern auf Mallorca verbringen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin findet Weihnachten in Österreich schön.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin verbringt Weihnachten am liebsten in Tunesien.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-1-s5",
+                          "number": 45,
+                          "text": "Der Sprecher mag die Weihnachtseinkäufe überhaupt nicht.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-infofon-berlin-teil-2",
+                      "title": "Infofon Berlin",
+                      "tag": "Infofon Berlin · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-30-infofon-berlin-teil-2.mp3",
+                        "fileName": "b1-30-infofon-berlin-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4088528
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 332,
+                        "endSeconds": 843
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s1",
+                          "number": 46,
+                          "text": "Der Journalist telefoniert mit Frau Böhme vom „infofon\"-Büro.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s2",
+                          "number": 47,
+                          "text": "Jugendliche können sich bei „infofon\" informieren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s3",
+                          "number": 48,
+                          "text": "Das „infofon\"-Büro gibt Schulklassen Tipps für ihren Aufenthalt in Berlin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s4",
+                          "number": 49,
+                          "text": "Zur Zeit ist ein Zirkus in Berlin.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s5",
+                          "number": 50,
+                          "text": "Am Sonntag kann man nicht im „infofon\"-Büro anrufen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s6",
+                          "number": 51,
+                          "text": "Informationen von „infofon\" bekommt man nur am Telefon.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s7",
+                          "number": 52,
+                          "text": "Manchmal muss man ein paar Tage warten, bis man die gewünschte Information bekommt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s8",
+                          "number": 53,
+                          "text": "„infofon\" sucht auch Ausbildungsstellen für Jugendliche, die eine Lehre machen wollen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s9",
+                          "number": 54,
+                          "text": "Ein normales Telefongespräch mit „infofon\" dauert eine Stunde.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-2-s10",
+                          "number": 55,
+                          "text": "Das „infofon\"-Büro gibt auch Tipps, wo man Hilfe bei ernsten Problemen finden kann.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-infofon-berlin-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Infofon Berlin · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-30-infofon-berlin-teil-3.mp3",
+                        "fileName": "b1-30-infofon-berlin-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4312592
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 839,
+                        "endSeconds": 1378
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-3-s1",
+                          "number": 56,
+                          "text": "Am Freitag regnet es, aber ab Samstag wird das Wetter besser.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-3-s2",
+                          "number": 57,
+                          "text": "Gunther kann Sie nicht am Bahnhof abholen. An seiner Stelle kommt ein Bekannter.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-3-s3",
+                          "number": 58,
+                          "text": "Dr. Baum hat jeden Tag vormittags und nachmittags Sprechstunde.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-3-s4",
+                          "number": 59,
+                          "text": "Für den Modekatalog von „Brigitte\" braucht man nichts zu bezahlen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-infofon-berlin-teil-3-s5",
+                          "number": 60,
+                          "text": "Die Besucher wählen die schönsten Katzen- und Hundebabys.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "urlaubs-express": {
+          "title": "Urlaubs-Express",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "4SVnNfQP214",
+            "url": "https://www.youtube.com/watch?v=4SVnNfQP214",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-urlaubs-express-teil-1",
+                      "title": "Kinder und Beruf",
+                      "tag": "Urlaubs-Express · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-31-urlaubs-express-teil-1.mp3",
+                        "fileName": "b1-31-urlaubs-express-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2360529
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 295
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher meint, dass Kinder das Leben reicher machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin findet den Beruf wichtiger als Kinder.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher findet das Leben mit Kindern schön.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin möchte jetzt noch kein Kind haben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin glaubt, dass nur die Kinder für eine Frau wichtig sind.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-urlaubs-express-teil-2",
+                      "title": "Urlaubs-Express",
+                      "tag": "Urlaubs-Express · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-31-urlaubs-express-teil-2.mp3",
+                        "fileName": "b1-31-urlaubs-express-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4856529
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 291,
+                        "endSeconds": 898
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s1",
+                          "number": 46,
+                          "text": "Reisen mit dem Flugzeug sind für viele Familien zu teuer.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s2",
+                          "number": 47,
+                          "text": "Im Zug sitzen die Kinder an großen Tischen und hören Musik.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s3",
+                          "number": 48,
+                          "text": "Die Kinder können im Zug auch ins Kino gehen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s4",
+                          "number": 49,
+                          "text": "Im Zug gibt es auch Kindergärtnerinnen, die auf die Kleinen aufpassen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s5",
+                          "number": 50,
+                          "text": "Im Juli fährt der Zug zweimal pro Woche.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s6",
+                          "number": 51,
+                          "text": "Der Zug hält in mehreren deutschen Städten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s7",
+                          "number": 52,
+                          "text": "Eltern mit Kindern bis 17 Jahre zahlen 198 Euro für den Urlaub an der Ostsee.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s8",
+                          "number": 53,
+                          "text": "Im Zug kann man im Restaurant oder an seinem Platz essen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s9",
+                          "number": 54,
+                          "text": "Fahrkarten gibt es in jedem Reisebüro.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-2-s10",
+                          "number": 55,
+                          "text": "Telefonisch bekommt man Tag und Nacht Auskunft über den Urlaubs-Express.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-urlaubs-express-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Urlaubs-Express · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-31-urlaubs-express-teil-3.mp3",
+                        "fileName": "b1-31-urlaubs-express-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4552593
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 894,
+                        "endSeconds": 1463
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-3-s1",
+                          "number": 56,
+                          "text": "In Berlin ist das Wetter gut.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-3-s2",
+                          "number": 57,
+                          "text": "Man kann bei Firma Bauer nur zwei Minuten auf den telefonischen Anrufbeantworter sprechen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-3-s3",
+                          "number": 58,
+                          "text": "Ein Kilo Kartoffeln kostet 2,15 Euro.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-3-s4",
+                          "number": 59,
+                          "text": "Die Deutschen verbrauchen zu viel Waschmittel.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-urlaubs-express-teil-3-s5",
+                          "number": 60,
+                          "text": "Morgen wird es in Oberösterreich wärmer.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "au-pair-in-amerika": {
+          "title": "Au-pair in Amerika",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "qw1uMifIZ0w",
+            "url": "https://www.youtube.com/watch?v=qw1uMifIZ0w",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-au-pair-in-amerika-teil-1",
+                      "title": "Computer in der Schule",
+                      "tag": "Au-pair in Amerika · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-32-au-pair-in-amerika-teil-1.mp3",
+                        "fileName": "b1-32-au-pair-in-amerika-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2560596
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 320
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Kinder sollten in der Schule Spiele am Computer spielen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-1-s2",
+                          "number": 42,
+                          "text": "Der Sprecher glaubt, dass alle Lehrer mit dem Computer Unterricht machen könnten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin glaubt, dass Kinder am Computer nicht nur spielen sollten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-1-s4",
+                          "number": 44,
+                          "text": "Der Sprecher meint, dass der Computer in vielen Fächern benutzt werden kann.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-1-s5",
+                          "number": 45,
+                          "text": "Kinder sollten schon früh lernen, wie man mit dem Computer umgeht.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-au-pair-in-amerika-teil-2",
+                      "title": "Au-pair in Amerika",
+                      "tag": "Au-pair in Amerika · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-32-au-pair-in-amerika-teil-2.mp3",
+                        "fileName": "b1-32-au-pair-in-amerika-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4000596
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 316,
+                        "endSeconds": 816
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s1",
+                          "number": 46,
+                          "text": "Meike ist Ausländerin.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s2",
+                          "number": 47,
+                          "text": "Für Wohnung und Essen brauchte Meike nichts zu bezahlen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s3",
+                          "number": 48,
+                          "text": "Meike ist noch Studentin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s4",
+                          "number": 49,
+                          "text": "Meike musste auf zwei Jungen aufpassen, die 5 und 7 Jahre alt waren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s5",
+                          "number": 50,
+                          "text": "An dem Seminar für Au-pair-Mädchen haben nur Frauen aus Deutschland teilgenommen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s6",
+                          "number": 51,
+                          "text": "In Amerika darf man nicht rauchen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s7",
+                          "number": 52,
+                          "text": "Meike musste immer das Essen für die Familie kochen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s8",
+                          "number": 53,
+                          "text": "Die Familie hatte auch eine große Tochter.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s9",
+                          "number": 54,
+                          "text": "Wenn die Au-pair-Mädchen Probleme haben, hilft ihnen die Seminarleiterin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-2-s10",
+                          "number": 55,
+                          "text": "Meike war 13 Monate in Amerika.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-au-pair-in-amerika-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Au-pair in Amerika · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-32-au-pair-in-amerika-teil-3.mp3",
+                        "fileName": "b1-32-au-pair-in-amerika-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4680468
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 812,
+                        "endSeconds": 1397
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-3-s1",
+                          "number": 56,
+                          "text": "Morgen scheint den ganzen Tag die Sonne.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-3-s2",
+                          "number": 57,
+                          "text": "Sofas und Sessel, Couchtische, Lampen und Regale werden billiger verkauft.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-3-s3",
+                          "number": 58,
+                          "text": "Die Koffer im Set sind alle gleich groß.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-3-s4",
+                          "number": 59,
+                          "text": "Das Theaterstück „Misery\" wird noch bis zum 12. Juni gespielt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-au-pair-in-amerika-teil-3-s5",
+                          "number": 60,
+                          "text": "Das Flugzeug wird 2 Stunden und 15 Minuten später als geplant in Athen landen.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "computerpionierin-holberton": {
+          "title": "Computerpionierin Holberton",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "s0MhSpN9hP4",
+            "url": "https://www.youtube.com/watch?v=s0MhSpN9hP4",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-computerpionierin-holberton-teil-1",
+                      "title": "Kommunikation",
+                      "tag": "Computerpionierin Holberton · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-33-computerpionierin-holberton-teil-1.mp3",
+                        "fileName": "b1-33-computerpionierin-holberton-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2344605
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 293
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher schreibt Briefe nur mit dem Füller.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin glaubt, dass man zum Briefeschreiben mehr Zeit braucht als zum Telefonieren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher meint, dass Mobiltelefone sehr nützlich sind.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin kann ihre Gefühle in einem Fax gut ausdrücken.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-1-s5",
+                          "number": 45,
+                          "text": "Heute ist es wichtig, dass man schnell Informationen austauschen kann.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-computerpionierin-holberton-teil-2",
+                      "title": "Computerpionierin Holberton",
+                      "tag": "Computerpionierin Holberton · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-33-computerpionierin-holberton-teil-2.mp3",
+                        "fileName": "b1-33-computerpionierin-holberton-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5072541
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 289,
+                        "endSeconds": 923
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s1",
+                          "number": 46,
+                          "text": "Frau Holberton gehört zu den Leuten, die den ersten Computer bauten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s2",
+                          "number": 47,
+                          "text": "Junge Leute von heute haben alle einen Computer.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s3",
+                          "number": 48,
+                          "text": "Frau Holberton studierte an einer Universität für Frauen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s4",
+                          "number": 49,
+                          "text": "Frau Holberton hat das Studium der Mathematik nicht abgeschlossen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s5",
+                          "number": 50,
+                          "text": "Frau Holberton hat fünf Geschwister.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s6",
+                          "number": 51,
+                          "text": "Die Arbeit an den mechanischen Rechenmaschinen war für Frau Holberton etwas Neues und Interessantes.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s7",
+                          "number": 52,
+                          "text": "Der erste Computer war viel größer als die Computer heute.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s8",
+                          "number": 53,
+                          "text": "Wegen der Computersprache konnte der erste Rechner viel schneller als der Mensch arbeiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s9",
+                          "number": 54,
+                          "text": "Frau Holberton war auch nach ihrer Heirat weiter berufstätig.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-2-s10",
+                          "number": 55,
+                          "text": "Frau Holberton hat die Computersprache Cobol erfunden.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-computerpionierin-holberton-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Computerpionierin Holberton · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-33-computerpionierin-holberton-teil-3.mp3",
+                        "fileName": "b1-33-computerpionierin-holberton-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 3968541
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 919,
+                        "endSeconds": 1415
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-3-s1",
+                          "number": 56,
+                          "text": "Ein Nachbar hat den Kofferraum des Autos geöffnet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-3-s2",
+                          "number": 57,
+                          "text": "Der Markt für alte Autos findet an zwei Tagen von 9.00 bis 18.00 Uhr statt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-3-s3",
+                          "number": 58,
+                          "text": "Der Berufsinformationstag findet fünfmal im Jahr statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-3-s4",
+                          "number": 59,
+                          "text": "Das Möbelhaus liegt rechts gegenüber der Bushaltestelle.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-computerpionierin-holberton-teil-3-s5",
+                          "number": 60,
+                          "text": "Die Stadtrundfahrt endet am Alexanderplatz.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "jugendfarm": {
+          "title": "Jugendfarm",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "GmokjI-L7N4",
+            "url": "https://www.youtube.com/watch?v=GmokjI-L7N4",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendfarm-teil-1",
+                      "title": "Konflikte in der Familie",
+                      "tag": "Jugendfarm · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-34-jugendfarm-teil-1.mp3",
+                        "fileName": "b1-34-jugendfarm-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2528524
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 316
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendfarm-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin hat immer Streit mit ihrer Mutter, wenn sie zu lange telefoniert.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-1-s2",
+                          "number": 42,
+                          "text": "Dem Sprecher gefällt es nicht, dass er jeden Tag sein Zimmer aufräumen muss.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin mag es gar nicht, dass sie oft von ihrer Mutter gestört wird.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-1-s4",
+                          "number": 44,
+                          "text": "Den Sprecher stört es, dass sich seine Eltern so viele Sorgen um ihn machen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin passt nicht gern auf die kleinen Geschwister auf.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendfarm-teil-2",
+                      "title": "Jugendfarm",
+                      "tag": "Jugendfarm · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-34-jugendfarm-teil-2.mp3",
+                        "fileName": "b1-34-jugendfarm-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4344460
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 312,
+                        "endSeconds": 855
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s1",
+                          "number": 46,
+                          "text": "Im Stadtzentrum von Essen gibt es viel Natur.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s2",
+                          "number": 47,
+                          "text": "Heute wohnen alle Kinder in Essen in Hochhäusern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s3",
+                          "number": 48,
+                          "text": "Jeden Tag kommen 30 bis 50 Jugendliche auf die Jugendfarm.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s4",
+                          "number": 49,
+                          "text": "Die Kinder mögen am liebsten Pferde.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s5",
+                          "number": 50,
+                          "text": "Jedes Kind kann sich sein Tier allein aussuchen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s6",
+                          "number": 51,
+                          "text": "Die Tiere auf der Jugendfarm haben einen Namen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s7",
+                          "number": 52,
+                          "text": "Die Kinder brauchen Hilfe bei der Pflege der Tiere.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s8",
+                          "number": 53,
+                          "text": "Die Arbeit auf der Jugendfarm ist ziemlich anstrengend.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s9",
+                          "number": 54,
+                          "text": "Auf der Jugendfarm kann man auch tanzen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-2-s10",
+                          "number": 55,
+                          "text": "Schulklassen können zwei Wochen lang das Leben auf der Jugendfarm kennenlernen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-jugendfarm-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Jugendfarm · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-34-jugendfarm-teil-3.mp3",
+                        "fileName": "b1-34-jugendfarm-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4336588
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 851,
+                        "endSeconds": 1393
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-jugendfarm-teil-3-s1",
+                          "number": 56,
+                          "text": "Nicht nur die Sportler, sondern auch die Besucher können im Boot fahren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-3-s2",
+                          "number": 57,
+                          "text": "Stellenanzeigen gibt es im Münchner Merkur an zwei Tagen in der Woche.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-3-s3",
+                          "number": 58,
+                          "text": "Auf der Veranstaltung kann man auch Kinderbücher kaufen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-3-s4",
+                          "number": 59,
+                          "text": "Alle können an dem Internet-Einführungskurs teilnehmen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-jugendfarm-teil-3-s5",
+                          "number": 60,
+                          "text": "Der Schulverbund berät auf Wunsch jeden persönlich.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "schuelerzeitung-xyz": {
+          "title": "Schülerzeitung xyz",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "jBdpAoHs3Ng",
+            "url": "https://www.youtube.com/watch?v=jBdpAoHs3Ng",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-schuelerzeitung-xyz-teil-1",
+                      "title": "Partnerschaft",
+                      "tag": "Schülerzeitung xyz · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-35-schuelerzeitung-xyz-teil-1.mp3",
+                        "fileName": "b1-35-schuelerzeitung-xyz-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2488597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 311
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher hatte keine gemeinsamen Interessen mit seiner Freundin.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin kann ihren Freund nicht vergessen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher war am Anfang gern mit seiner Freundin zusammen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-1-s4",
+                          "number": 44,
+                          "text": "Der Sprecher und seine Freundin sind jetzt getrennt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin ist nicht so glücklich mit ihrem Freund.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-schuelerzeitung-xyz-teil-2",
+                      "title": "Schülerzeitung xyz",
+                      "tag": "Schülerzeitung xyz · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-35-schuelerzeitung-xyz-teil-2.mp3",
+                        "fileName": "b1-35-schuelerzeitung-xyz-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4792597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 307,
+                        "endSeconds": 906
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s1",
+                          "number": 46,
+                          "text": "Das LesArt Zentrum ist in Berlin.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s2",
+                          "number": 47,
+                          "text": "Stefan Walz ist Leiter des LesArt Zentrums.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s3",
+                          "number": 48,
+                          "text": "In der Zeitung „xyz\" gibt es Artikel und Anzeigen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s4",
+                          "number": 49,
+                          "text": "Die Artikel der Zeitung haben alle mit demselben Thema zu tun.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s5",
+                          "number": 50,
+                          "text": "Die Zeitung „xyz\" gibt es zweimal pro Jahr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s6",
+                          "number": 51,
+                          "text": "Die Zeitung hat zwischen fünf und zwölf Seiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s7",
+                          "number": 52,
+                          "text": "Die Mitarbeiter der Zeitung arbeiten auch am Computer.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s8",
+                          "number": 53,
+                          "text": "Nur Schüler dürfen für „xyz\" schreiben.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s9",
+                          "number": 54,
+                          "text": "Manche Schüler und Studenten, die bei „xyz\" mitmachen, wollen später Journalisten werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-2-s10",
+                          "number": 55,
+                          "text": "Im LesArt Zentrum kann man sich auch Videofilme ausleihen.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-schuelerzeitung-xyz-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Schülerzeitung xyz · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-35-schuelerzeitung-xyz-teil-3.mp3",
+                        "fileName": "b1-35-schuelerzeitung-xyz-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5344597
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 902,
+                        "endSeconds": 1570
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-3-s1",
+                          "number": 56,
+                          "text": "Der Partyservice bringt nach der Party auch die Gäste nach Hause.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-3-s2",
+                          "number": 57,
+                          "text": "Es gibt keine Eintrittskarten mehr für die Konzerte von Michael Jackson.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-3-s3",
+                          "number": 58,
+                          "text": "Man kann sich zu Hause von dem Möbelhaus beraten lassen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-3-s4",
+                          "number": 59,
+                          "text": "Es wird an allen Tagen regnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-schuelerzeitung-xyz-teil-3-s5",
+                          "number": 60,
+                          "text": "Den Film „Mulan\" kann man am Samstag und am Sonntag sehen. Es gibt je eine Nachmittags- und eine Abendvorstellung.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "umweltschutz-beim-bund": {
+          "title": "Umweltschutz beim BUND",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "RsRoBdiM_Qs",
+            "url": "https://www.youtube.com/watch?v=RsRoBdiM_Qs",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-umweltschutz-beim-bund-teil-1",
+                      "title": "Weihnachtsgeschenke",
+                      "tag": "Umweltschutz beim BUND · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-36-umweltschutz-beim-bund-teil-1.mp3",
+                        "fileName": "b1-36-umweltschutz-beim-bund-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2704600
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 338
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Kinder des Sprechers bekommen zu Weihnachten Kleidung und Spielzeug.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin schenkt ihren Kindern nur Kleidung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Kinder des Sprechers bekommen keine Geschenke zu Weihnachten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Kinder der Sprecherin haben ganz spezielle Weihnachtswünsche.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Sprecherin kauft ihren Kindern immer Spielzeug zu Weihnachten.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-umweltschutz-beim-bund-teil-2",
+                      "title": "Umweltschutz beim BUND",
+                      "tag": "Umweltschutz beim BUND · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-36-umweltschutz-beim-bund-teil-2.mp3",
+                        "fileName": "b1-36-umweltschutz-beim-bund-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4480600
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 334,
+                        "endSeconds": 894
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s1",
+                          "number": 46,
+                          "text": "Der Bund hat heute 200 000 Mitglieder.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s2",
+                          "number": 47,
+                          "text": "Bayern hat den ältesten Landesverband.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s3",
+                          "number": 48,
+                          "text": "Nur die Politiker können etwas gegen die Umweltprobleme tun.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s4",
+                          "number": 49,
+                          "text": "Die Mitglieder der Bundjugend dürfen nicht älter als 25 Jahre sein.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s5",
+                          "number": 50,
+                          "text": "Das Recycling von Dosen ist schädlich für die Umwelt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s6",
+                          "number": 51,
+                          "text": "Es werden immer mehr Getränke in Dosen verkauft.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s7",
+                          "number": 52,
+                          "text": "Im Fernsehen und Radio gibt der Bund Tipps für den Umweltschutz.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s8",
+                          "number": 53,
+                          "text": "Das Verhalten der Deutschen ist heute umweltfreundlicher als früher.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s9",
+                          "number": 54,
+                          "text": "Wer beim Bund mitmachen möchte, darf sein Auto nicht benutzen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-2-s10",
+                          "number": 55,
+                          "text": "Wenn man Mitglied werden möchte, muss man an den Bund schreiben.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-umweltschutz-beim-bund-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Umweltschutz beim BUND · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-36-umweltschutz-beim-bund-teil-3.mp3",
+                        "fileName": "b1-36-umweltschutz-beim-bund-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5360536
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 890,
+                        "endSeconds": 1560
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-3-s1",
+                          "number": 56,
+                          "text": "Die Hockey-Herren-Nationalmannschaft hat drei Testspiele gewonnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-3-s2",
+                          "number": 57,
+                          "text": "Ein Kilo Eis kostet weniger als 3 Euro.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-3-s3",
+                          "number": 58,
+                          "text": "An der Bader Straße kann man von der U-Bahn nur in einen Bus umsteigen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-3-s4",
+                          "number": 59,
+                          "text": "Das Hotel „Alpenrose\" bietet kostenlos Wanderungen an.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-umweltschutz-beim-bund-teil-3-s5",
+                          "number": 60,
+                          "text": "Am Wochenende sind die Verkaufsausstellungen nicht geöffnet.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "rennfahrer-mika": {
+          "title": "Rennfahrer Mika",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "q9Mgrv22KJQ",
+            "url": "https://www.youtube.com/watch?v=q9Mgrv22KJQ",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-rennfahrer-mika-teil-1",
+                      "title": "Zukunft der Kinder",
+                      "tag": "Rennfahrer Mika · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-37-rennfahrer-mika-teil-1.mp3",
+                        "fileName": "b1-37-rennfahrer-mika-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2576529
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 322
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin möchte, dass ihr Kind möglichst viel Zeit zum Spielen hat.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin möchte, dass ihre Töchter später in einer Fabrik arbeiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher hat den Wunsch, dass seine Kinder später Politik machen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin glaubt, dass Kinder heute zu viel leisten müssen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-1-s5",
+                          "number": 45,
+                          "text": "Der Sprecher hofft, dass seine Kinder später nicht arbeitslos sind.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-rennfahrer-mika-teil-2",
+                      "title": "Rennfahrer Mika",
+                      "tag": "Rennfahrer Mika · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-37-rennfahrer-mika-teil-2.mp3",
+                        "fileName": "b1-37-rennfahrer-mika-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4728465
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 318,
+                        "endSeconds": 909
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s1",
+                          "number": 46,
+                          "text": "Autosport ist nicht besonders beliebt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s2",
+                          "number": 47,
+                          "text": "Mika wurde bei seinem Unfall mit dem Rennwagen nur leicht verletzt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s3",
+                          "number": 48,
+                          "text": "Heute fährt Mika genauso schnell wie vor dem Unfall.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s4",
+                          "number": 49,
+                          "text": "Auf der Straße hat Mika mehr Angst als auf der Rennbahn.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s5",
+                          "number": 50,
+                          "text": "Mika kann mit seiner Frau über alles reden, nur nicht über seine Arbeit.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s6",
+                          "number": 51,
+                          "text": "Teure Autos sind Schuhmachers Hobby.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s7",
+                          "number": 52,
+                          "text": "Mika hat noch andere Berufspläne.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s8",
+                          "number": 53,
+                          "text": "Mika hat auch ein eigenes Flugzeug.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s9",
+                          "number": 54,
+                          "text": "Als Mika das erste Fahrrad bekam, war er dreizehn Jahre alt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-2-s10",
+                          "number": 55,
+                          "text": "Mika hat sich nach der Schule sofort mit dem Motorsport beschäftigt.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-rennfahrer-mika-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Rennfahrer Mika · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-37-rennfahrer-mika-teil-3.mp3",
+                        "fileName": "b1-37-rennfahrer-mika-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 6304593
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 905,
+                        "endSeconds": 1693
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-3-s1",
+                          "number": 56,
+                          "text": "Es kostet nichts, bei „Regena\" anzurufen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-3-s2",
+                          "number": 57,
+                          "text": "Das Gläser-Set besteht aus sechs Gläsern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-3-s3",
+                          "number": 58,
+                          "text": "Theaterkarten bekommt man an den Kassen des Opernhauses. Man kann aber auch telefonisch Karten reservieren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-3-s4",
+                          "number": 59,
+                          "text": "Durch ISKA-Sprachreisen können Schüler ein Jahr lang in England oder in den USA zur Schule gehen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-rennfahrer-mika-teil-3-s5",
+                          "number": 60,
+                          "text": "Sie sollen Oliver heute Nachmittag anrufen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "sean-lennon": {
+          "title": "Sean Lennon",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "AMdMx7-2G-k",
+            "url": "https://www.youtube.com/watch?v=AMdMx7-2G-k",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-sean-lennon-teil-1",
+                      "title": "Umweltschutz",
+                      "tag": "Sean Lennon · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-38-sean-lennon-teil-1.mp3",
+                        "fileName": "b1-38-sean-lennon-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2440589
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 305
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-sean-lennon-teil-1-s1",
+                          "number": 41,
+                          "text": "Der Sprecher versucht Energie zu sparen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin ist für Mülltrennung.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-1-s3",
+                          "number": 43,
+                          "text": "Die Sprecherin fährt oft mit dem Bus.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-1-s4",
+                          "number": 44,
+                          "text": "Nur wenn man gezwungen wird, tut man etwas für die Umwelt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Mitschüler der Sprecherin tun gar nichts für die Umwelt.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-sean-lennon-teil-2",
+                      "title": "Sean Lennon",
+                      "tag": "Sean Lennon · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-38-sean-lennon-teil-2.mp3",
+                        "fileName": "b1-38-sean-lennon-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4808525
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 301,
+                        "endSeconds": 902
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s1",
+                          "number": 46,
+                          "text": "Sean Lennon gibt Konzerte in drei deutschen Städten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s2",
+                          "number": 47,
+                          "text": "Sean Lennon erinnert sich sehr gut an seinen Vater.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s3",
+                          "number": 48,
+                          "text": "John Lennon war ein Vorbild für seinen Sohn.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s4",
+                          "number": 49,
+                          "text": "Im Alter von zwölf Jahren hat Sean angefangen, Gitarre spielen zu lernen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s5",
+                          "number": 50,
+                          "text": "Zu John Lennons 50. Geburtstag gab Sean zusammen mit seiner Freundin ein Konzert.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s6",
+                          "number": 51,
+                          "text": "Sean möchte gern mal als Kellner arbeiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s7",
+                          "number": 52,
+                          "text": "Mit seinem Halbbruder Julian trifft sich Sean nicht regelmäßig.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s8",
+                          "number": 53,
+                          "text": "Sean will eine Platte zusammen mit Julian machen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s9",
+                          "number": 54,
+                          "text": "Bei den Konzerten trägt Sean immer T-Shirts seiner Eltern.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-2-s10",
+                          "number": 55,
+                          "text": "Die Lieder von Seans Vater handelten von Liebe und Frieden.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-sean-lennon-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Sean Lennon · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-38-sean-lennon-teil-3.mp3",
+                        "fileName": "b1-38-sean-lennon-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 6720461
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 898,
+                        "endSeconds": 1738
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-sean-lennon-teil-3-s1",
+                          "number": 56,
+                          "text": "Das Hotel bietet Sonderpreise. Kinder unter 12 Jahren zahlen nichts.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-3-s2",
+                          "number": 57,
+                          "text": "Wegen eines Unfalls konnten zwischen München und Rosenheim zwei Stunden lang keine Züge fahren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-3-s3",
+                          "number": 58,
+                          "text": "Im Getränkemarkt gibt es nur Kästen mit 20 Flaschen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-3-s4",
+                          "number": 59,
+                          "text": "In den USA starben 44 deutsche Schüler bei einem Busunglück.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-sean-lennon-teil-3-s5",
+                          "number": 60,
+                          "text": "Beim Lotto wurden folgende Zahlen gezogen: 6 - 8 - 15 - 37 - 24 - 44.",
+                          "correct": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "guardian-angels": {
+          "title": "Guardian Angels",
+          "section": "horen",
+          "sourceType": "audio",
+          "description": "TELC B1 Hörverstehen mit Teil 1–3, korrigierten Aussagen und Audiodateien.",
+          "source": {
+            "platform": "youtube",
+            "videoId": "eD9VQ_49N_k",
+            "url": "https://www.youtube.com/watch?v=eD9VQ_49N_k",
+            "playlistUrl": "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+          },
+          "hören": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "partLabel": "Teil 1"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-guardian-angels-teil-1",
+                      "title": "Kinder und Geld",
+                      "tag": "Guardian Angels · Teil 1 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-39-guardian-angels-teil-1.mp3",
+                        "fileName": "b1-39-guardian-angels-teil-1.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 2648529
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 0,
+                        "endSeconds": 331
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-guardian-angels-teil-1-s1",
+                          "number": 41,
+                          "text": "Die Sprecherin meint, dass Zeit mit der Familie wichtiger als Geld ist.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-1-s2",
+                          "number": 42,
+                          "text": "Die Sprecherin meint, dass Kinder für Arbeiten im Haushalt Geld bekommen sollten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-1-s3",
+                          "number": 43,
+                          "text": "Der Sprecher meint, dass auch Kinder lernen sollen, wie man Geld verdient.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-1-s4",
+                          "number": 44,
+                          "text": "Die Sprecherin erlaubt ihrer Tochter noch nicht zu arbeiten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-1-s5",
+                          "number": 45,
+                          "text": "Die Kinder des Sprechers arbeiten im Haushalt, wenn sie Extrawünsche haben.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "partLabel": "Teil 2"
+                },
+                "content": {
+                  "instruction": "Sie hören ein längeres Gespräch. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-guardian-angels-teil-2",
+                      "title": "Guardian Angels",
+                      "tag": "Guardian Angels · Teil 2 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-39-guardian-angels-teil-2.mp3",
+                        "fileName": "b1-39-guardian-angels-teil-2.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 4560465
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 327,
+                        "endSeconds": 897
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s1",
+                          "number": 46,
+                          "text": "Die „Guardian Angels\" haben ein Büro in einem Berliner Wohnhaus.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s2",
+                          "number": 47,
+                          "text": "Frau Seemann leitet schon mehr als zwei Jahre die „Guardian Angels\".",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s3",
+                          "number": 48,
+                          "text": "Dem Interviewer waren die „Guardian Angels\" schon lange bekannt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s4",
+                          "number": 49,
+                          "text": "Man sieht die „Guardian Angels\" nur nachts in U-Bahnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s5",
+                          "number": 50,
+                          "text": "Die Idee der „Guardian Angels\" kommt von der New Yorker U-Bahn.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s6",
+                          "number": 51,
+                          "text": "Sliwa gründete die „Guardian Angels\" zusammen mit armen Jugendlichen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s7",
+                          "number": 52,
+                          "text": "In Berlin sind alle „Guardian Angels\" Schüler oder Lehrlinge.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s8",
+                          "number": 53,
+                          "text": "Die „Guardian Angels\" in Berlin tragen alle ein rotes T-Shirt mit weißen Buchstaben.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s9",
+                          "number": 54,
+                          "text": "Die „Guardian Angels\" dürfen nicht rauchen und keinen Alkohol trinken.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-2-s10",
+                          "number": 55,
+                          "text": "In Deutschland gibt es die „Guardian Angels\" nur in Berlin.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "partLabel": "Teil 3"
+                },
+                "content": {
+                  "instruction": "Sie hören fünf kurze Texte. Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                  "topics": [
+                    {
+                      "id": "b1-audio-guardian-angels-teil-3",
+                      "title": "Alltagsinformationen",
+                      "tag": "Guardian Angels · Teil 3 · Mit Audio",
+                      "audio": {
+                        "src": "assets/audio/horen/b1-39-guardian-angels-teil-3.mp3",
+                        "fileName": "b1-39-guardian-angels-teil-3.mp3",
+                        "mimeType": "audio/mpeg",
+                        "sizeBytes": 5192529
+                      },
+                      "sourceTiming": {
+                        "startSeconds": 893,
+                        "endSeconds": 1542
+                      },
+                      "statements": [
+                        {
+                          "id": "b1-audio-guardian-angels-teil-3-s1",
+                          "number": 56,
+                          "text": "Auf der A 15 ist ein Unfall passiert.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-3-s2",
+                          "number": 57,
+                          "text": "Drei Lose haben 2,80 Euro gewonnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-3-s3",
+                          "number": 58,
+                          "text": "Der Zug nach Hamburg-Altona wird später abfahren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-3-s4",
+                          "number": 59,
+                          "text": "Im Flugzeug darf man nicht rauchen. Nur auf den Toiletten ist das Rauchen erlaubt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "b1-audio-guardian-angels-teil-3-s5",
+                          "number": 60,
+                          "text": "Sie sollen Ihre Freundin heute zu Hause oder morgen im Büro anrufen.",
+                          "correct": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
         }
       }
     }
-  }
+  },
+  "playlistUrls": [
+    "https://www.youtube.com/playlist?list=PLfFAuCcpV83pUqKXLq5A7ShIkw9gOkoP6",
+    "https://www.youtube.com/playlist?list=PLrsXRzvIseAe2EAEL899clfXrSAylGg52"
+  ]
 }
