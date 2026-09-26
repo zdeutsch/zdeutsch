@@ -34,6 +34,7 @@ const state = {
   db: null,
   config: null,
   shreibenDb: null,
+  horenAudioDb: null,
   level: null,
   theme: null,
   search: "",
@@ -3531,33 +3532,48 @@ function renderThemeCards() {
   updateSearchResultCount(0, query);
   if (state.section === "horen") {
     const partConfig = getPartConfig(levelKey, "horen");
-    const hasMatch = partConfig && matchesSearchQuery(
+    const codesMatch = partConfig && matchesSearchQuery(
       query,
       partConfig?.name,
       partConfig?.description,
-      partConfig?.module
+      partConfig?.module,
+      "Hören Codes ohne Audio richtig falsch"
     );
-    updateSearchResultCount(hasMatch ? 1 : 0, query);
-    if (hasMatch) {
-      // themeGrid.append(
-      //   createEl(
-      //     "div",
-      //     "rounded-3xl border border-stone-200 bg-white/90 p-6 text-sm text-slate",
-      //     "Hören-Codes öffnen eine separate Übung, bei der Sie Aussagen als richtig oder falsch markieren."
-      //   )
-      // );
+    const audioLevel = state.horenAudioDb?.levels?.[levelKey];
+    const audioThemeKeys = getOrderedThemeKeys(audioLevel).filter((themeKey) => {
+      const theme = audioLevel?.themes?.[themeKey];
+      const topicTitles = Object.values(theme?.["hören"]?.parts || {})
+        .flatMap((part) => part?.content?.topics || [])
+        .map((topic) => topic?.title);
+      return matchesSearchQuery(
+        query,
+        themeKey,
+        theme?.title,
+        theme?.description,
+        "Hören mit Audio Teil 1 Teil 2 Teil 3",
+        ...topicTitles
+      );
+    });
+    const resultCount = (codesMatch ? 1 : 0) + audioThemeKeys.length;
+    updateSearchResultCount(resultCount, query);
+    if (codesMatch) {
       themeGrid.append(buildHorenCard(levelKey, partConfig));
-    } else if (query) {
+    }
+    audioThemeKeys.forEach((themeKey, index) => {
+      themeGrid.append(buildHorenAudioCard(levelKey, themeKey, audioLevel.themes[themeKey], index));
+    });
+    if (!resultCount && query) {
       renderThemeEmptyState(`No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`);
-    } else {
+    } else if (!resultCount) {
       themeGrid.append(
         createEl(
           "div",
           "rounded-2xl border border-rose/30 bg-rose/10 p-4 text-sm text-rose",
-          "Für diese Ebene sind noch keine Hören-Codes verfügbar."
+          "Für diese Ebene sind noch keine Hören-Übungen verfügbar."
         )
       );
     }
+    refreshIcons();
     return;
   }
   if (state.section === "shreiben") {
@@ -3752,11 +3768,44 @@ function buildHorenCard(levelKey, partConfig) {
       "ring-2 ring-mint/10"
     )
   );
-  card.href = `horen.html?level=${levelKey}`;
+  card.href = `horen.html?level=${encodeURIComponent(levelKey)}&source=codes`;
   card.append(
     createEl("div", "text-sm font-display text-ink", title),
     createEl("div", "mt-2 text-xs text-slate", subtitle)
   );
+  return card;
+}
+
+function buildHorenAudioCard(levelKey, themeKey, themeEntry, index) {
+  const title = themeEntry?.title || themeKey;
+  const card = createEl("a", "theme-card");
+  card.href = `horen.html?level=${encodeURIComponent(levelKey)}&source=audio&theme=${encodeURIComponent(themeKey)}`;
+
+  const header = createEl("div", "theme-card-header");
+  const titleWrap = createEl("div", "theme-card-title-wrap");
+  titleWrap.append(
+    createEl("span", "theme-card-title", title),
+    createEl("span", "theme-card-subtitle", `Hörprüfung ${String(index + 1).padStart(2, "0")} · Mit Audio`)
+  );
+  header.append(titleWrap, createEl("span", "theme-card-level", levelKey.toUpperCase()));
+
+  const summary = createEl("div", "theme-card-summary");
+  summary.append(
+    createEl("span", "theme-card-status theme-card-status-progress", "Audio bereit"),
+    createEl("span", "text-xs text-slate", "Korrigierte Richtig/Falsch-Aussagen")
+  );
+
+  const progressBar = createEl("div", "theme-card-progress-track");
+  const progressFill = createEl("div", "theme-card-progress-fill");
+  progressFill.style.width = "100%";
+  progressBar.append(progressFill);
+
+  const footer = createEl("div", "theme-card-footer");
+  const meta = createEl("div", "theme-card-meta");
+  meta.append(makeMetaPill("Teil 1–3"), makeMetaPill("3 MP3"), makeMetaPill("20 Aussagen"));
+  footer.append(meta, createEl("span", "theme-card-cta", "Audio-Übung öffnen →"));
+
+  card.append(header, summary, progressBar, footer);
   return card;
 }
 
@@ -4185,6 +4234,16 @@ async function init() {
       completeLabel: "Schreiben tasks ready"
     },
     () => loadNamedDatabase("shreiben.json")
+  );
+
+  state.horenAudioDb = await runHomeLoaderStep(
+    {
+      label: "Loading Hören audio...",
+      holdPercent: 89,
+      completePercent: 91,
+      completeLabel: "Hören audio ready"
+    },
+    () => loadNamedDatabase("horen-audio.json")
   );
 
   state.parts = await runHomeLoaderStep(

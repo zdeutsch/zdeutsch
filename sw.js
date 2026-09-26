@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-09-13-navigation-v23";
+const SW_VERSION = "2026-09-26-horen-audio-v26";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -21,6 +21,7 @@ const APP_SHELL = [
   "./shreiben.js",
   "./mundlich.js",
   "./database/mundlich.json",
+  "./database/horen-audio.json",
   "./manifest.webmanifest",
   "./logo.svg",
   "./pwa/icon-192.png",

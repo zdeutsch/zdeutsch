@@ -20,6 +20,7 @@ const searchInput = document.getElementById("horen-topic-search");
 const sourceKicker = document.getElementById("horen-source-kicker");
 const sourceCopy = document.getElementById("horen-source-copy");
 const sourceLink = document.getElementById("horen-source-link");
+const sourcePanel = document.getElementById("horen-source-panel");
 const HIDE_AUSSAGE_KEY = "horenHideAussage";
 const HOREN_SOURCE_PDF_PATH = "assets/horen-b2-source.pdf";
 
@@ -32,7 +33,9 @@ const PART_LABELS = {
 
 const state = {
   data: null,
+  sourceType: "codes",
   levelKey: "b1",
+  themeKey: null,
   partKey: "teil-1",
   responses: {},
   activeTopicIndex: 0,
@@ -100,7 +103,7 @@ function getLevelEntry() {
 
 function getThemeEntry() {
   const level = getLevelEntry();
-  const key = level?.themeOrder?.[0];
+  const key = state.themeKey || level?.themeOrder?.[0];
   if (!key) {
     return null;
   }
@@ -651,11 +654,21 @@ function goToNextTopic() {
 }
 
 function applyHeaderInfo() {
+  const theme = getThemeEntry();
+  const isAudio = state.sourceType === "audio";
   if (levelPill) {
     levelPill.textContent = (state.levelKey || "B1").toUpperCase();
   }
   if (themeTitle) {
-    themeTitle.textContent = `Hören Codes (${state.levelKey?.toUpperCase() || "B1"})`;
+    themeTitle.textContent = isAudio
+      ? `Hören mit Audio · ${theme?.title || "Thema"}`
+      : `Hören Codes (${state.levelKey?.toUpperCase() || "B1"})`;
+  }
+  document.title = isAudio
+    ? `ZDeutsch | Hören mit Audio · ${theme?.title || "B1"}`
+    : `ZDeutsch | Hören Codes (${state.levelKey?.toUpperCase() || "B1"})`;
+  if (sourcePanel) {
+    sourcePanel.classList.toggle("hidden", isAudio);
   }
   const isB1 = state.levelKey === "b1";
   if (sourceKicker) {
@@ -805,8 +818,10 @@ async function loadFreshJson(path) {
 }
 
 async function init() {
-  state.data = await loadFreshJson("database/horen-codes.json");
   const params = new URLSearchParams(window.location.search);
+  state.sourceType = params.get("source") === "audio" ? "audio" : "codes";
+  const dataFile = state.sourceType === "audio" ? "database/horen-audio.json" : "database/horen-codes.json";
+  state.data = await loadFreshJson(dataFile);
   const requestedLevel = params.get("level");
   const availableLevels = Object.keys(state.data.levels || {});
   if (availableLevels.includes(requestedLevel)) {
@@ -814,6 +829,10 @@ async function init() {
   } else if (availableLevels.length) {
     state.levelKey = availableLevels[0];
   }
+  const levelEntry = getLevelEntry();
+  const requestedTheme = params.get("theme");
+  const availableThemes = levelEntry?.themeOrder || Object.keys(levelEntry?.themes || {});
+  state.themeKey = availableThemes.includes(requestedTheme) ? requestedTheme : (availableThemes[0] || null);
   const requestedPart = params.get("part");
   const visibleParts = getThemeEntry()?.hören?.partOrder || PART_ORDER;
   state.partKey = visibleParts.includes(requestedPart) ? requestedPart : (visibleParts[0] || null);
