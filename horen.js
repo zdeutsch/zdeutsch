@@ -236,11 +236,50 @@ function createChoiceCell(partKey, statementId, value, topicKey, topicIndex) {
   input.className = "h-4 w-4 text-azure accent-azure/70";
   input.checked = getResponse(partKey, statementId) === value;
   input.addEventListener("change", () => {
+    const hadFeedback = Object.keys(state.topicFeedbacks).length > 0 || Boolean(state.lastSummary);
     recordResponse(partKey, statementId, value);
-    renderActivePart();
+    if (hadFeedback) {
+      renderActivePart();
+      return;
+    }
+    refreshResponseControls(partKey, statementId, input);
   });
   cell.append(input);
   return cell;
+}
+
+function refreshResponseControls(partKey, statementId, input) {
+  const allTopics = getTopicsForPart(partKey);
+  const topic = allTopics.find((candidate) => {
+    return (candidate?.statements || []).some((statement) => statement.id === statementId);
+  });
+  const wrapper = input.closest(".horen-topic");
+  const controls = wrapper?.querySelector(".topic-controls");
+  const checkTopicBtn = controls?.querySelector(".topic-check-btn");
+  const completeMessage = controls?.querySelector(".topic-complete-message");
+  const { responses } = ensurePartState(partKey);
+  const topicComplete = isTopicComplete(topic, responses);
+
+  if (checkTopicBtn) {
+    checkTopicBtn.disabled = !topicComplete;
+  }
+  if (topicComplete) {
+    completeMessage?.remove();
+  } else if (controls && !completeMessage) {
+    controls.append(
+      createEl(
+        "p",
+        "topic-complete-message text-[10px] uppercase tracking-[0.2em] text-slate font-display",
+        "Bitte alle Aussagen beantworten."
+      )
+    );
+  }
+
+  const filteredTopics = state.checkOneByOne
+    ? allTopics
+    : getFilteredTopics(allTopics, state.searchQuery);
+  renderFooterControls(filteredTopics);
+  renderSummary();
 }
 
 function renderStatementText(statement) {
@@ -312,7 +351,53 @@ function hasResponseValue(value) {
   return value !== undefined && value !== null && String(value).trim() !== "";
 }
 
+function captureAudioPlayback() {
+  return [...contentContainer.querySelectorAll("audio")].map((player) => ({
+    source: new URL(player.currentSrc || player.getAttribute("src") || "", document.baseURI).href,
+    currentTime: player.currentTime,
+    paused: player.paused,
+    ended: player.ended,
+    muted: player.muted,
+    volume: player.volume,
+    playbackRate: player.playbackRate
+  }));
+}
+
+function restoreAudioPlayback(playback) {
+  if (!playback.length) {
+    return;
+  }
+  contentContainer.querySelectorAll("audio").forEach((player) => {
+    const source = new URL(player.currentSrc || player.getAttribute("src") || "", document.baseURI).href;
+    const previous = playback.find((entry) => entry.source === source);
+    if (!previous) {
+      return;
+    }
+    player.muted = previous.muted;
+    player.volume = previous.volume;
+    player.playbackRate = previous.playbackRate;
+    const restorePosition = () => {
+      if (Number.isFinite(previous.currentTime) && previous.currentTime > 0) {
+        try {
+          player.currentTime = previous.currentTime;
+        } catch {
+          // Some browsers require metadata before accepting currentTime.
+        }
+      }
+      if (!previous.paused && !previous.ended) {
+        player.play().catch(() => {});
+      }
+    };
+    if (player.readyState >= 1) {
+      restorePosition();
+    } else {
+      player.addEventListener("loadedmetadata", restorePosition, { once: true });
+    }
+  });
+}
+
 function renderActivePart() {
+  const playback = captureAudioPlayback();
   const part = getPart(state.partKey);
   if (!part) {
     contentContainer.innerHTML = "<p class=\"text-sm text-slate\">Teil ist noch nicht verfügbar.</p>";
@@ -397,9 +482,9 @@ function renderActivePart() {
       wrapper.append(renderTopicFeedback(feedback));
     }
     const topicComplete = isTopicComplete(topic, responses);
-    const topicControls = createEl("div", "flex items-center mt-3 gap-2 justify-start");
+    const topicControls = createEl("div", "topic-controls flex items-center mt-3 gap-2 justify-start");
     const completeMsg = !topicComplete
-      ? createEl("p", "text-[10px] uppercase tracking-[0.2em] text-slate font-display", "Bitte alle Aussagen beantworten.")
+      ? createEl("p", "topic-complete-message text-[10px] uppercase tracking-[0.2em] text-slate font-display", "Bitte alle Aussagen beantworten.")
       : null;
     const checkTopicBtn = createEl(
       "button",
@@ -430,6 +515,7 @@ function renderActivePart() {
   if (typeof refreshIcons === "function") {
     refreshIcons();
   }
+  restoreAudioPlayback(playback);
 }
 
 function isTopicComplete(topic, responses) {

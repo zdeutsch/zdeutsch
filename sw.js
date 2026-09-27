@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-09-26-horen-audio-v27";
+const SW_VERSION = "2026-09-27-horen-audio-v28";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
