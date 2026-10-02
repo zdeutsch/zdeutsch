@@ -70429,22 +70429,22 @@
                           "reason": "B ist richtig, weil der Text ein Leasingangebot für E-Bikes ausdrücklich an Unternehmen mit „Mitarbeiter[n]“ richtet. Es geht damit um elektrische Mobilität für Angestellte, nicht um eine Abschaffung von Firmenwagen (E), sondern um eine zusätzliche Alternative. Die Überschriften zu Schule/Lehrern (A, D, G, J), Naturengagement (H) sowie Bus, Bahn und Ticketpreisen (C, F, I) passen nicht zum Thema des Textes.",
                           "highlights": [
                             {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 16,
+                              "text": "Elektromobilität"
+                            },
+                            {
                               "source": "text",
                               "start": 0,
-                              "end": 66,
-                              "text": "Sie haben Mitarbeiter, die gern mit dem Fahrrad zur Arbeit kommen?"
+                              "end": 65,
+                              "text": "Sie haben Mitarbeiter, die gern mit dem Fahrrad zur Arbeit kommen"
                             },
                             {
                               "source": "text",
-                              "start": 67,
-                              "end": 132,
-                              "text": "Warum dann nicht mehr E-Bikes leasen statt nur teure Firmenwagen?"
-                            },
-                            {
-                              "source": "text",
-                              "start": 270,
-                              "end": 343,
-                              "text": "Sie fördern zudem die Gesundheit Ihrer Mitarbeiter und schonen die Umwelt"
+                              "start": 89,
+                              "end": 96,
+                              "text": "E-Bikes"
                             }
                           ]
                         },
@@ -70455,22 +70455,22 @@
                           "keywords": [],
                           "highlights": [
                             {
-                              "source": "text",
+                              "source": "headline",
                               "start": 0,
-                              "end": 53,
-                              "text": "Die Bahn erhöht dieses Jahr die Ticketipreise nicht."
+                              "end": 8,
+                              "text": "STÄRKUNG"
                             },
                             {
                               "source": "text",
-                              "start": 54,
-                              "end": 131,
-                              "text": "Dies soll die Bahn attraktiver machen, sodass mehr Menschen die Züge nutzen."
+                              "start": 0,
+                              "end": 8,
+                              "text": "Die Bahn"
                             },
                             {
                               "source": "text",
                               "start": 258,
-                              "end": 402,
-                              "text": "Günstiger werden außerdem die Tickets im öffentlichen Nahverkehr, weil dann nicht mehr so viele Berufstätige mit. dem Auto zur Arbeit fahren."
+                              "end": 324,
+                              "text": "Günstiger werden außerdem die Tickets im öffentlichen Nahverkehr"
                             }
                           ]
                         },
@@ -70481,22 +70481,22 @@
                           "keywords": [],
                           "highlights": [
                             {
-                              "source": "text",
-                              "start": 137,
-                              "end": 199,
-                              "text": "Dabei sagten 80%, dass die Schule gut oder sogar sehr gut sei."
+                              "source": "headline",
+                              "start": 20,
+                              "end": 44,
+                              "text": "mit der Schule zufrieden"
                             },
                             {
                               "source": "text",
-                              "start": 200,
-                              "end": 306,
-                              "text": "Und das, obwohl nur 40% der Eitern denken, dass die Kinder in der Schule auf den Beruf vorbereitet werden."
+                              "start": 93,
+                              "end": 130,
+                              "text": "mit der Schule ihrer Kinder zufrieden"
                             },
                             {
                               "source": "text",
-                              "start": 375,
-                              "end": 479,
-                              "text": "Außerdem sagten über 60%, dass das Thema Umweltschutz im Unterricht eine größere Rolle spielen sollte."
+                              "start": 228,
+                              "end": 234,
+                              "text": "Eitern"
                             }
                           ]
                         },
@@ -70507,16 +70507,16 @@
                           "keywords": [],
                           "highlights": [
                             {
-                              "source": "text",
-                              "start": 8,
-                              "end": 87,
-                              "text": "in der Hauptstadt herrscht weiterhin Lehrermangel: Tausende Lehrkräfte fehlen."
+                              "source": "headline",
+                              "start": 9,
+                              "end": 15,
+                              "text": "LEHRER"
                             },
                             {
                               "source": "text",
-                              "start": 289,
-                              "end": 386,
-                              "text": "Daher plant der Berliner Senat eine Werbekampagne, um den Lehrerberuf attrakti- ver zu gestalten."
+                              "start": 524,
+                              "end": 530,
+                              "text": "Lehrer"
                             }
                           ]
                         },
@@ -70528,21 +70528,15 @@
                           "highlights": [
                             {
                               "source": "headline",
-                              "start": 0,
+                              "start": 15,
                               "end": 24,
-                              "text": "Engagement für die Natur"
+                              "text": "die Natur"
                             },
                             {
                               "source": "text",
-                              "start": 59,
-                              "end": 105,
-                              "text": "Er engagiert sich für Umwelt- und Tierschutz."
-                            },
-                            {
-                              "source": "text",
-                              "start": 170,
-                              "end": 220,
-                              "text": "Sie wöllen sich für mehr Naturschutz engagieren?"
+                              "start": 197,
+                              "end": 208,
+                              "text": "Naturschutz"
                             }
                           ]
                         }
