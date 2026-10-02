@@ -108136,23 +108136,157 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 3,
+                              "text": "Bür"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 15,
+                              "end": 24,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 16,
+                              "end": 25,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 293,
+                              "end": 303,
+                              "text": "Flughafens"
+                            },
+                            {
+                              "source": "text",
+                              "start": 312,
+                              "end": 322,
+                              "text": "Bürgerhaus"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 9,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 20,
+                              "end": 29,
+                              "text": "beliebter"
+                            },
+                            {
+                              "source": "text",
+                              "start": 16,
+                              "end": 25,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 61,
+                              "end": 70,
+                              "text": "beliebter"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 7,
+                              "end": 20,
+                              "text": "Veralstaltung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 128,
+                              "end": 145,
+                              "text": "Die Veranstaltung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 15,
+                              "text": "Familienbildung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 46,
+                              "end": 61,
+                              "text": "Familienbildung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 337,
+                              "end": 344,
+                              "text": "Familie"
+                            },
+                            {
+                              "source": "text",
+                              "start": 450,
+                              "end": 469,
+                              "text": "der Familienbildung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 9,
+                              "text": "Neue Kurs"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 11,
+                              "end": 21,
+                              "text": "für Kinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 60,
+                              "end": 70,
+                              "text": "neue Kurse"
+                            },
+                            {
+                              "source": "text",
+                              "start": 256,
+                              "end": 266,
+                              "text": "Für Kinder"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
