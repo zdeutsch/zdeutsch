@@ -112714,23 +112714,115 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 10,
+                              "text": "Griechisch"
+                            },
+                            {
+                              "source": "text",
+                              "start": 46,
+                              "end": 56,
+                              "text": "Griechisch"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 6,
+                              "end": 12,
+                              "text": "Handel"
+                            },
+                            {
+                              "source": "text",
+                              "start": 191,
+                              "end": 197,
+                              "text": "Handel"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 13,
+                              "end": 30,
+                              "text": "Universitätsstadt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 297,
+                              "end": 314,
+                              "text": "Universitätsstadt"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 13,
+                              "text": "Wissenschaft:"
+                            },
+                            {
+                              "source": "text",
+                              "start": 9,
+                              "end": 27,
+                              "text": "wissenschaftlichen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Latein"
+                            },
+                            {
+                              "source": "text",
+                              "start": 86,
+                              "end": 92,
+                              "text": "Latein"
+                            },
+                            {
+                              "source": "text",
+                              "start": 213,
+                              "end": 219,
+                              "text": "Latein"
+                            },
+                            {
+                              "source": "text",
+                              "start": 398,
+                              "end": 410,
+                              "text": ", das Latein"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
