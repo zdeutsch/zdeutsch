@@ -113759,23 +113759,115 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Bilder"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 34,
+                              "text": "bearbeiten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 98,
+                              "end": 113,
+                              "text": "Bildbearbeitung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 208,
+                              "end": 219,
+                              "text": "Bearbeitung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Kirche"
+                            },
+                            {
+                              "source": "text",
+                              "start": 248,
+                              "end": 254,
+                              "text": "Kirche"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 8,
+                              "end": 18,
+                              "text": "für Kuchen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 102,
+                              "end": 112,
+                              "text": "der Bäcker"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 17,
+                              "end": 29,
+                              "text": "Lernprogramm"
+                            },
+                            {
+                              "source": "text",
+                              "start": 298,
+                              "end": 310,
+                              "text": "Lernprogramm"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 17,
+                              "end": 31,
+                              "text": "ins Café gehen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 439,
+                              "end": 453,
+                              "text": "im Kaffeehaus."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
@@ -115554,23 +115646,139 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 11,
+                              "end": 22,
+                              "text": "es schmeckt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 15,
+                              "end": 20,
+                              "text": "essen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 37,
+                              "end": 41,
+                              "text": "Fett"
+                            },
+                            {
+                              "source": "text",
+                              "start": 51,
+                              "end": 58,
+                              "text": "Fleisch"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 16,
+                              "end": 23,
+                              "text": "Verkehr"
+                            },
+                            {
+                              "source": "text",
+                              "start": 144,
+                              "end": 161,
+                              "text": "des Verkehrsclubs"
+                            },
+                            {
+                              "source": "text",
+                              "start": 226,
+                              "end": 238,
+                              "text": "Bus und Bahn"
+                            },
+                            {
+                              "source": "text",
+                              "start": 405,
+                              "end": 420,
+                              "text": "Verkehrsverbund"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 11,
+                              "text": "Wanderungen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 236,
+                              "end": 247,
+                              "text": "wanderwegen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 442,
+                              "end": 454,
+                              "text": "Wanderungen."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 11,
+                              "end": 31,
+                              "text": "Es schmekt mir nicht"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 25,
+                              "text": "Der Service im Restaurant"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 14,
+                              "end": 29,
+                              "text": "fremde Kulturen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 39,
+                              "end": 54,
+                              "text": "Interkulturelle"
+                            },
+                            {
+                              "source": "text",
+                              "start": 481,
+                              "end": 497,
+                              "text": "fremden Kulturen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
