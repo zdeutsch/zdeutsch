@@ -70439,12 +70439,6 @@
                               "start": 0,
                               "end": 65,
                               "text": "Sie haben Mitarbeiter, die gern mit dem Fahrrad zur Arbeit kommen"
-                            },
-                            {
-                              "source": "text",
-                              "start": 89,
-                              "end": 96,
-                              "text": "E-Bikes"
                             }
                           ]
                         },
@@ -70456,9 +70450,9 @@
                           "highlights": [
                             {
                               "source": "headline",
-                              "start": 0,
-                              "end": 8,
-                              "text": "STÄRKUNG"
+                              "start": 21,
+                              "end": 25,
+                              "text": "BAHN"
                             },
                             {
                               "source": "text",
@@ -70469,8 +70463,8 @@
                             {
                               "source": "text",
                               "start": 258,
-                              "end": 324,
-                              "text": "Günstiger werden außerdem die Tickets im öffentlichen Nahverkehr"
+                              "end": 313,
+                              "text": "Günstiger werden außerdem die Tickets im öffentlichen"
                             }
                           ]
                         },
@@ -70491,12 +70485,6 @@
                               "start": 93,
                               "end": 130,
                               "text": "mit der Schule ihrer Kinder zufrieden"
-                            },
-                            {
-                              "source": "text",
-                              "start": 228,
-                              "end": 234,
-                              "text": "Eitern"
                             }
                           ]
                         },
