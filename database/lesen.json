@@ -76775,23 +76775,115 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Ihre Zeitung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 103,
+                              "end": 133,
+                              "text": "ihre Zeitung in den Urlaubtort"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 8,
+                              "end": 19,
+                              "text": "ohne Gepäck"
+                            },
+                            {
+                              "source": "text",
+                              "start": 91,
+                              "end": 114,
+                              "text": "Wanderungen ohne Gepäck"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 11,
+                              "text": "Laute Musik"
+                            },
+                            {
+                              "source": "text",
+                              "start": 21,
+                              "end": 34,
+                              "text": "musikalischer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 62,
+                              "end": 75,
+                              "text": "schlicht Lärm"
+                            },
+                            {
+                              "source": "text",
+                              "start": 89,
+                              "end": 94,
+                              "text": "Musik"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 18,
+                              "end": 40,
+                              "text": "Literaturinteressierte"
+                            },
+                            {
+                              "source": "text",
+                              "start": 186,
+                              "end": 217,
+                              "text": "der Literatur auf Interessenten"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 25,
+                              "end": 45,
+                              "text": "Bregenzer Festspiele"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 24,
+                              "text": "Die Bregenzer Festspiele"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
