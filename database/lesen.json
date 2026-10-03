@@ -112032,87 +112032,175 @@
                       "texts": [
                         {
                           "id": 1,
-                          "text": "Ein neuer Trend in Sachen Wohnen setzt sich immer mehr durch: Ökodörfer, Ilve. Vielfalt ist groß. Außerdem bieten sie eine echte Alternative zur Anonymität und dem Großstadtleben. Nicht nur auf sich selbst, sondern auch auf einen bewussten Umgang mit Gesellschaft und Natur soll in Zukunft geachtet werden. Bei den neuen Wohnungen setzt man auf ökologisches Bauen und auf erneuerbare Energien. Die meisten Ökosiedlungen verfügen über Se minarzentren, in denen Lehrgänge zu dieser neuen Form des Miteinanders angeboten werden."
+                          "text": "Ein neuer Trend in Sachen Wohnen setzt sich immer mehr durch: Ökodörfer, Ilve. Vielfalt ist groß. Außerdem bieten sie eine echte Alternative zur Anonymität und dem Großstadtleben. Nicht nur auf sich selbst, sondern auch auf einen bewussten Umgang mit Gesellschaft und Natur soll in Zukunft geachtet werden. Bei den neuen Wohnungen setzt man auf ökologisches Bauen und auf erneuerbare Energien. Die meisten Ökosiedlungen verfügen über Se minarzentren, in denen Lehrgänge zu dieser neuen Form des Miteinanders angeboten werden.",
+                          "translated": ""
                         },
                         {
                           "id": 2,
-                          "text": "Angebot für Menschen, die durch ihren Beruf überlastet sind: \"Yoga und Meditation für das innere Gleichgewicht\". Renate Loebner, ausgebildete Yogalehrerin, erklärt und zeigt in Wochenendseminaren in einem Haus am See, wie es funktioniert. Die Diplom-Biologin bezeichnet Yoga als Kraftquelle für Körper, Geist und Seele. Mit diesen Methoden können gestresste Menschen in kurzer Zeit wieder zur Ruhe kom men, da die körperlichen und geistigen Übungen relativ schnell zu erlernen sind."
+                          "text": "Angebot für Menschen, die durch ihren Beruf überlastet sind: \"Yoga und Meditation für das innere Gleichgewicht\". Renate Loebner, ausgebildete Yogalehrerin, erklärt und zeigt in Wochenendseminaren in einem Haus am See, wie es funktioniert. Die Diplom-Biologin bezeichnet Yoga als Kraftquelle für Körper, Geist und Seele. Mit diesen Methoden können gestresste Menschen in kurzer Zeit wieder zur Ruhe kom men, da die körperlichen und geistigen Übungen relativ schnell zu erlernen sind.",
+                          "translated": ""
                         },
                         {
                           "id": 3,
-                          "text": "Grau, trocken und hart: Der Baustoff Beton hat einen eher langweiligen Ruf. Dabei ist er ein Multitalent. Je nach Rezeptur wird Beton nun sogar zum Luftreiniger in Großstädten. Der neue Zement mit dem Namen TioCem ist das Ergebnis eines knapp vierjährigen Forschungsprojekts. Er reagiert auf Licht und kann bis zu 90 Prozent der Schadstoffe aus der Luft entfernen."
+                          "text": "Grau, trocken und hart: Der Baustoff Beton hat einen eher langweiligen Ruf. Dabei ist er ein Multitalent. Je nach Rezeptur wird Beton nun sogar zum Luftreiniger in Großstädten. Der neue Zement mit dem Namen TioCem ist das Ergebnis eines knapp vierjährigen Forschungsprojekts. Er reagiert auf Licht und kann bis zu 90 Prozent der Schadstoffe aus der Luft entfernen.",
+                          "translated": ""
                         },
                         {
                           "id": 4,
-                          "text": "Immer mehr Menschen erfüllen sich einen Traum: ein eigenes Baumhaus. Die Baustile sind so unterschiedlich wie die Besitzer, sie dienen zum Beispiel als Gästezimmer oder Teehäuser. Viele nutzen sie sogar in den Sommermonaten zum Schlafen. Baumhaus-Spezialist Erwin Köstinger freut sich über diese Entwicklung: Kind-Baumhäuser können nicht nur zum Wohnen, sondern auch zum Arbeiten als Büro genutzt werden"
+                          "text": "Immer mehr Menschen erfüllen sich einen Traum: ein eigenes Baumhaus. Die Baustile sind so unterschiedlich wie die Besitzer, sie dienen zum Beispiel als Gästezimmer oder Teehäuser. Viele nutzen sie sogar in den Sommermonaten zum Schlafen. Baumhaus-Spezialist Erwin Köstinger freut sich über diese Entwicklung: Kind-Baumhäuser können nicht nur zum Wohnen, sondern auch zum Arbeiten als Büro genutzt werden",
+                          "translated": ""
                         },
                         {
                           "id": 5,
-                          "text": "In Großstädten gehören sie schon zum Alltagsleben die Partys nach der Arbeit. Neben Musik und Tanz umfasst das Angebot bei solchen Partys auch die Möglichkeit zu einem Imbiss, in der Regel als Ersatz für das Abendessen. Kein Wunder, dass sich aus solchen Treffen, die in der Mehrzahl von Alleinstehenden besucht werden, schon jede Menge Freundschaften und Partnerschaften fürs Leben ergeben haben."
+                          "text": "In Großstädten gehören sie schon zum Alltagsleben die Partys nach der Arbeit. Neben Musik und Tanz umfasst das Angebot bei solchen Partys auch die Möglichkeit zu einem Imbiss, in der Regel als Ersatz für das Abendessen. Kein Wunder, dass sich aus solchen Treffen, die in der Mehrzahl von Alleinstehenden besucht werden, schon jede Menge Freundschaften und Partnerschaften fürs Leben ergeben haben.",
+                          "translated": ""
                         }
                       ],
                       "headlines": [
                         {
                           "id": "A",
-                          "text": "Baumaterial für saubere Luft"
+                          "text": "Baumaterial für saubere Luft",
+                          "translated": ""
                         },
                         {
                           "id": "B",
-                          "text": "Bäume als Lebensraum"
+                          "text": "Bäume als Lebensraum",
+                          "translated": ""
                         },
                         {
                           "id": "C",
-                          "text": "Betonfreies Bauen wieder im Trend"
+                          "text": "Betonfreies Bauen wieder im Trend",
+                          "translated": ""
                         },
                         {
                           "id": "D",
-                          "text": "Entspannungstechniken im Alltag"
+                          "text": "Entspannungstechniken im Alltag",
+                          "translated": ""
                         },
                         {
                           "id": "E",
-                          "text": "Erst die Arbeit, dann das Vergnügen"
+                          "text": "Erst die Arbeit, dann das Vergnügen",
+                          "translated": ""
                         },
                         {
                           "id": "F",
-                          "text": "Firmen organisieren Partys in der Freizeit"
+                          "text": "Firmen organisieren Partys in der Freizeit",
+                          "translated": ""
                         },
                         {
                           "id": "G",
-                          "text": "Fortbildung zur Yogatrainerin"
+                          "text": "Fortbildung zur Yogatrainerin",
+                          "translated": ""
                         },
                         {
                           "id": "H",
-                          "text": "Holz als natürlicher Baustoff"
+                          "text": "Holz als natürlicher Baustoff",
+                          "translated": ""
                         },
                         {
                           "id": "I",
-                          "text": "Neue umweltfreundliche Wohnformen"
+                          "text": "Neue umweltfreundliche Wohnformen",
+                          "translated": ""
                         },
                         {
                           "id": "J",
-                          "text": "Seminar „Umweltbewusstes” Bauen"
+                          "text": "Seminar „Umweltbewusstes” Bauen",
+                          "translated": ""
                         }
                       ],
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 23,
+                              "end": 33,
+                              "text": "Wohnformen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 26,
+                              "end": 32,
+                              "text": "Wohnen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 22,
+                              "end": 31,
+                              "text": "im Alltag"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 20,
+                              "text": "Angebot für Menschen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 28,
+                              "text": "Luft"
+                            },
+                            {
+                              "source": "text",
+                              "start": 148,
+                              "end": 160,
+                              "text": "Luftreiniger"
+                            },
+                            {
+                              "source": "text",
+                              "start": 349,
+                              "end": 353,
+                              "text": "Luft"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "reason": "",
+                          "highlights": [],
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 5,
+                              "end": 15,
+                              "text": "die Arbeit"
+                            },
+                            {
+                              "source": "text",
+                              "start": 70,
+                              "end": 76,
+                              "text": "Arbeit"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
