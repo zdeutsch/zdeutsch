@@ -78748,23 +78748,169 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 4,
+                              "end": 10,
+                              "text": "Männer"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 15,
+                              "end": 28,
+                              "text": "Frauen lachen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 13,
+                              "text": "Frauen lachen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 148,
+                              "end": 166,
+                              "text": "Männern und Frauen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 188,
+                              "end": 194,
+                              "text": "lachen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 21,
+                              "end": 39,
+                              "text": "schützt vor Stress"
+                            },
+                            {
+                              "source": "text",
+                              "start": 18,
+                              "end": 24,
+                              "text": "Stress"
+                            },
+                            {
+                              "source": "text",
+                              "start": 403,
+                              "end": 418,
+                              "text": "Stress schützen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Erfolgreiche"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 37,
+                              "end": 42,
+                              "text": "Väter"
+                            },
+                            {
+                              "source": "text",
+                              "start": 112,
+                              "end": 132,
+                              "text": "erfolgreichen Vätern"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 20,
+                              "end": 29,
+                              "text": "das Leben"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 33,
+                              "end": 40,
+                              "text": "meisten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 55,
+                              "end": 73,
+                              "text": "mit siebzig Jahren"
+                            },
+                            {
+                              "source": "text",
+                              "start": 473,
+                              "end": 480,
+                              "text": "meisten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 495,
+                              "end": 504,
+                              "text": "das Leben"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 21,
+                              "text": "Schlechte Nachrichten"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 46,
+                              "end": 53,
+                              "text": "Lächeln"
+                            },
+                            {
+                              "source": "text",
+                              "start": 34,
+                              "end": 45,
+                              "text": "erfolgreich"
+                            },
+                            {
+                              "source": "text",
+                              "start": 157,
+                              "end": 175,
+                              "text": "schlechte Nachrich"
+                            },
+                            {
+                              "source": "text",
+                              "start": 316,
+                              "end": 326,
+                              "text": "Das Lachen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
