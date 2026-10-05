@@ -84260,23 +84260,133 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 5,
+                              "end": 12,
+                              "text": "Zeitung"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 32,
+                              "end": 38,
+                              "text": "Urlaub"
+                            },
+                            {
+                              "source": "text",
+                              "start": 93,
+                              "end": 174,
+                              "text": "Bitte denken Sie daran, sich ihre Zeitung in den Urlaubtort nachsenden zu lassen."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 19,
+                              "text": "Wandern ohne Gepäck"
+                            },
+                            {
+                              "source": "text",
+                              "start": 91,
+                              "end": 114,
+                              "text": "Wanderungen ohne Gepäck"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 11,
+                              "text": "Laute Musik"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 22,
+                              "end": 30,
+                              "text": "Nachbarn"
+                            },
+                            {
+                              "source": "text",
+                              "start": 21,
+                              "end": 34,
+                              "text": "musikalischer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 62,
+                              "end": 75,
+                              "text": "schlicht Lärm"
+                            },
+                            {
+                              "source": "text",
+                              "start": 89,
+                              "end": 94,
+                              "text": "Musik"
+                            },
+                            {
+                              "source": "text",
+                              "start": 136,
+                              "end": 151,
+                              "text": "Musikinstrument"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 10,
+                              "end": 32,
+                              "text": "Literaturinteressierte"
+                            },
+                            {
+                              "source": "text",
+                              "start": 186,
+                              "end": 217,
+                              "text": "der Literatur auf Interessenten"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 21,
+                              "end": 45,
+                              "text": "der Bregenzer Festspiele"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 24,
+                              "text": "Die Bregenzer Festspiele"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
