@@ -74501,23 +74501,187 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 11,
+                              "end": 20,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 26,
+                              "end": 43,
+                              "text": "Informationsabend"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 48,
+                              "end": 54,
+                              "text": "Bürger"
+                            },
+                            {
+                              "source": "text",
+                              "start": 16,
+                              "end": 25,
+                              "text": "Flughafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 77,
+                              "end": 84,
+                              "text": "Bürgern"
+                            },
+                            {
+                              "source": "text",
+                              "start": 243,
+                              "end": 260,
+                              "text": "Informationsabend"
+                            },
+                            {
+                              "source": "text",
+                              "start": 293,
+                              "end": 322,
+                              "text": "Flughafens ein. Im Bürgerhaus"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 19,
+                              "text": "Flughafen Frankfurt"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 20,
+                              "end": 29,
+                              "text": "beliebter"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 25,
+                              "text": "Der Frankfurter Flughafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 61,
+                              "end": 70,
+                              "text": "beliebter"
+                            },
+                            {
+                              "source": "text",
+                              "start": 132,
+                              "end": 159,
+                              "text": "des Frankfurter Flughafens,"
+                            },
+                            {
+                              "source": "text",
+                              "start": 282,
+                              "end": 297,
+                              "text": "Veranstaltungen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 377,
+                              "end": 392,
+                              "text": "Veranstaltungen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 16,
+                              "end": 43,
+                              "text": "Flughafen und Arbeitsplätze"
+                            },
+                            {
+                              "source": "text",
+                              "start": 450,
+                              "end": 460,
+                              "text": "Flughafens"
+                            },
+                            {
+                              "source": "text",
+                              "start": 588,
+                              "end": 611,
+                              "text": "Arbeitsplatzentwicklung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 15,
+                              "text": "Familienbildung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 46,
+                              "end": 68,
+                              "text": "Familienbildungsstätte"
+                            },
+                            {
+                              "source": "text",
+                              "start": 450,
+                              "end": 469,
+                              "text": "der Familienbildung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 15,
+                              "end": 21,
+                              "text": "Kinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 125,
+                              "end": 135,
+                              "text": "für Kinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 166,
+                              "end": 172,
+                              "text": "Kinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 462,
+                              "end": 468,
+                              "text": "Kinder"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
