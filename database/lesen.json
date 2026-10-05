@@ -92836,23 +92836,127 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "reason": "",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 5,
+                              "end": 17,
+                              "text": "Genussmittel"
+                            },
+                            {
+                              "source": "text",
+                              "start": 150,
+                              "end": 229,
+                              "text": "Aber ab einer bestimmten Menge kann Koffein zu einem erhöhten Blutdruck führen."
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "reason": "",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 7,
+                              "end": 14,
+                              "text": "Getränk"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 25,
+                              "end": 34,
+                              "text": "vermeiden"
+                            },
+                            {
+                              "source": "text",
+                              "start": 40,
+                              "end": 47,
+                              "text": "trinken"
+                            },
+                            {
+                              "source": "text",
+                              "start": 265,
+                              "end": 338,
+                              "text": "Vor allem bei hohen Temperaturen sollte man nicht zu viel Kaffee trinken,"
+                            }
+                          ],
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 35,
+                              "end": 47,
+                              "text": "Schlafmangel"
+                            },
+                            {
+                              "source": "text",
+                              "start": 193,
+                              "end": 206,
+                              "text": "wenig Schlaf."
+                            },
+                            {
+                              "source": "text",
+                              "start": 277,
+                              "end": 292,
+                              "text": "Schlafstörungen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 15,
+                              "text": "Leichter Schlaf"
+                            },
+                            {
+                              "source": "text",
+                              "start": 40,
+                              "end": 64,
+                              "text": "nachts schlecht schlafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 335,
+                              "end": 357,
+                              "text": "schlechter zu schlafen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 23,
+                              "text": "Genuss, der uns gut tut"
+                            },
+                            {
+                              "source": "text",
+                              "start": 73,
+                              "end": 129,
+                              "text": "dann gibt es mehr gesundheitliche Vorteile als Nachteile"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
