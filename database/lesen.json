@@ -96472,23 +96472,157 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 28,
+                              "end": 38,
+                              "text": "Supermarkt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 316,
+                              "end": 326,
+                              "text": "Supermarkt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 377,
+                              "end": 386,
+                              "text": "Das merkt"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 12,
+                              "end": 16,
+                              "text": "Welt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 203,
+                              "end": 209,
+                              "text": "Umwelt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 291,
+                              "end": 303,
+                              "text": "Umweltschutz"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Glasflaschen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 38,
+                              "end": 50,
+                              "text": "Glasflaschen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 228,
+                              "end": 240,
+                              "text": "Glasflaschen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 283,
+                              "end": 298,
+                              "text": "Plastikflaschen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 380,
+                              "end": 392,
+                              "text": "Glasflaschen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 13,
+                              "text": "Bürgermeister"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 23,
+                              "end": 38,
+                              "text": "Weihnachtsmarkt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 47,
+                              "end": 62,
+                              "text": "Weihnachtsmarkt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 164,
+                              "end": 178,
+                              "text": "Bürgermeisters"
+                            },
+                            {
+                              "source": "text",
+                              "start": 425,
+                              "end": 442,
+                              "text": "Weihnachtsliedern"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 15,
+                              "text": "Weihnachtsmarkt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 56,
+                              "end": 70,
+                              "text": "Weihnachtszeit"
+                            },
+                            {
+                              "source": "text",
+                              "start": 133,
+                              "end": 138,
+                              "text": "Markt"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
