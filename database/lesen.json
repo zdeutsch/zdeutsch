@@ -106721,23 +106721,151 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 12,
+                              "end": 32,
+                              "text": "berufstätigen Eltern"
+                            },
+                            {
+                              "source": "text",
+                              "start": 47,
+                              "end": 67,
+                              "text": "berufstätigen Eltern"
+                            },
+                            {
+                              "source": "text",
+                              "start": 130,
+                              "end": 140,
+                              "text": "der Eltern"
+                            },
+                            {
+                              "source": "text",
+                              "start": 297,
+                              "end": 312,
+                              "text": "Eltern wünschen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Umwelt"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 12,
+                              "end": 24,
+                              "text": "Technikpreis"
+                            },
+                            {
+                              "source": "text",
+                              "start": 56,
+                              "end": 75,
+                              "text": "Umwelt oder Technik"
+                            },
+                            {
+                              "source": "text",
+                              "start": 161,
+                              "end": 167,
+                              "text": "Umwelt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 172,
+                              "end": 184,
+                              "text": "Technikpreis"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 8,
+                              "end": 23,
+                              "text": "für Kleinkinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 58,
+                              "end": 85,
+                              "text": "Kinder wurde im Technischen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 150,
+                              "end": 160,
+                              "text": "für Kinder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 213,
+                              "end": 220,
+                              "text": "Technik"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 21,
+                              "end": 37,
+                              "text": "Beruf als Männer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 9,
+                              "end": 15,
+                              "text": "Männer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 220,
+                              "end": 243,
+                              "text": "Arbeit ihnen Spaß mache"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 7,
+                              "end": 40,
+                              "text": "für Zufriedenheit am Arbeitsplatz"
+                            },
+                            {
+                              "source": "text",
+                              "start": 4,
+                              "end": 33,
+                              "text": "Zufriedenheit am Arbeitsplatz"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
