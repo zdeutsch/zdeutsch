@@ -86064,23 +86064,121 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 23,
+                              "end": 33,
+                              "text": "Wohnformen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 26,
+                              "end": 32,
+                              "text": "Wohnen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 307,
+                              "end": 393,
+                              "text": "Bei den neuen Wohnungen setzt man auf ökologisches Bauen und auf erneuerbare Energien."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 31,
+                              "text": "Entspannungstechniken im Alltag"
+                            },
+                            {
+                              "source": "text",
+                              "start": 320,
+                              "end": 405,
+                              "text": "Mit diesen Methoden können gestresste Menschen in kurzer Zeit wieder zur Ruhe kom men"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 28,
+                              "text": "Baumaterial für saubere Luft"
+                            },
+                            {
+                              "source": "text",
+                              "start": 148,
+                              "end": 160,
+                              "text": "Luftreiniger"
+                            },
+                            {
+                              "source": "text",
+                              "start": 276,
+                              "end": 364,
+                              "text": "Er reagiert auf Licht und kann bis zu 90 Prozent der Schadstoffe aus der Luft entfernen."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 5,
+                              "text": "Bäume"
+                            },
+                            {
+                              "source": "text",
+                              "start": 59,
+                              "end": 67,
+                              "text": "Baumhaus"
+                            },
+                            {
+                              "source": "text",
+                              "start": 309,
+                              "end": 403,
+                              "text": "Kind-Baumhäuser können nicht nur zum Wohnen, sondern auch zum Arbeiten als Büro genutzt werden"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 35,
+                              "text": "Erst die Arbeit, dann das Vergnügen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 77,
+                              "text": "In Großstädten gehören sie schon zum Alltagsleben die Partys nach der Arbeit."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
