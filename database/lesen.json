@@ -99767,23 +99767,139 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 178,
+                              "end": 188,
+                              "text": "die Bilder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 220,
+                              "end": 229,
+                              "text": "im Garten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 437,
+                              "end": 449,
+                              "text": "Ein Bildband"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 29,
+                              "end": 37,
+                              "text": "Skikurse"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 42,
+                              "end": 53,
+                              "text": "Zweijährige"
+                            },
+                            {
+                              "source": "text",
+                              "start": 171,
+                              "end": 182,
+                              "text": "zwei Jahren"
+                            },
+                            {
+                              "source": "text",
+                              "start": 507,
+                              "end": 515,
+                              "text": "Skikurse"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 23,
+                              "end": 28,
+                              "text": "Ideen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 306,
+                              "end": 311,
+                              "text": "stolz"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 7,
+                              "text": "Angebot"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 32,
+                              "end": 63,
+                              "text": "Geld öffentliche Verkehrsmittel"
+                            },
+                            {
+                              "source": "text",
+                              "start": 48,
+                              "end": 126,
+                              "text": "mit dem Stadt Ticket können Sie billig die öffentlichen Verkehrsmittel nutzen."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 9,
+                              "text": "Neu: Taxi"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 37,
+                              "text": "Discobesucher"
+                            },
+                            {
+                              "source": "text",
+                              "start": 76,
+                              "end": 102,
+                              "text": "mit dem Taxi auf Discotour"
+                            },
+                            {
+                              "source": "text",
+                              "start": 110,
+                              "end": 117,
+                              "text": "Tickets"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
