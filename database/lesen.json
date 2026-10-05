@@ -94282,23 +94282,109 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Frauen"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 28,
+                              "end": 31,
+                              "text": "Weg"
+                            },
+                            {
+                              "source": "text",
+                              "start": 262,
+                              "end": 308,
+                              "text": "fragen sie öfter nach dem Weg und freuen sich"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Lesen im Zug"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 50,
+                              "text": "Bahnfahren ist entspannend und lädt zum Lesen ein"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 11,
+                              "end": 30,
+                              "text": "Reisen mit der Bahn"
+                            },
+                            {
+                              "source": "text",
+                              "start": 344,
+                              "end": 456,
+                              "text": "Die Reisen werden am Ausgangsbahnhof abgeholt und mit den öffentlich Verkehrsmitteln bis zum Zielort begleitet."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 16,
+                              "end": 30,
+                              "text": "im Zug gelernt"
+                            },
+                            {
+                              "source": "text",
+                              "start": 390,
+                              "end": 419,
+                              "text": "Sprachen zu lernen Zug ab Ber"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 21,
+                              "text": "Per Internet leichter"
+                            },
+                            {
+                              "source": "text",
+                              "start": 125,
+                              "end": 200,
+                              "text": "Seit einiger Zeit hat er Internet Fahrplan der Schweizerischen Bundesbahnen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
