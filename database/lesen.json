@@ -103576,23 +103576,145 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "H"
+                          "headlineId": "H",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 14,
+                              "end": 29,
+                              "text": "Rückenschmerzen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 102,
+                              "end": 117,
+                              "text": "Rückenschmerzen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 4,
+                              "end": 15,
+                              "text": "Jugendliche"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 20,
+                              "end": 32,
+                              "text": "der Computer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Der Computer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 56,
+                              "end": 68,
+                              "text": "Jugendzimmer"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 199,
+                              "end": 208,
+                              "text": "trainiert"
+                            },
+                            {
+                              "source": "text",
+                              "start": 355,
+                              "end": 371,
+                              "text": "Freizeitsportart"
+                            },
+                            {
+                              "source": "text",
+                              "start": 569,
+                              "end": 585,
+                              "text": "Trainingsstunden"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 14,
+                              "text": "Internetnutzer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 72,
+                              "end": 86,
+                              "text": "Internetnutzer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 142,
+                              "end": 150,
+                              "text": "Internet"
+                            },
+                            {
+                              "source": "text",
+                              "start": 387,
+                              "end": 395,
+                              "text": "Internet"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 45,
+                              "text": "Internet für Produkte"
+                            },
+                            {
+                              "source": "text",
+                              "start": 15,
+                              "end": 27,
+                              "text": "das Internet"
+                            },
+                            {
+                              "source": "text",
+                              "start": 172,
+                              "end": 184,
+                              "text": "das Internet"
+                            },
+                            {
+                              "source": "text",
+                              "start": 532,
+                              "end": 553,
+                              "text": "Internet gut verkaufe"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
