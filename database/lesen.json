@@ -80555,23 +80555,109 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 252,
+                              "end": 267,
+                              "text": "Berner Oberland"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "text",
+                              "start": 50,
+                              "end": 77,
+                              "text": "Ausflugsführer für Familien"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 9,
+                              "end": 25,
+                              "text": "preiswert reisen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 17,
+                              "end": 63,
+                              "text": "ist Ihr Schlüssel zu günstigen Reisen mit Bahn"
+                            },
+                            {
+                              "source": "text",
+                              "start": 190,
+                              "end": 198,
+                              "text": "ein Jahr"
+                            },
+                            {
+                              "source": "text",
+                              "start": 210,
+                              "end": 218,
+                              "text": "bezahlen"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 9,
+                              "text": "Jeden Tag"
+                            },
+                            {
+                              "source": "text",
+                              "start": 221,
+                              "end": 318,
+                              "text": "In vielen TV- Serien kann man das wirkliche Leben von Menschen verfolgen und mit ihnen mit leben."
+                            },
+                            {
+                              "source": "text",
+                              "start": 378,
+                              "end": 389,
+                              "text": "die täglich"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "E"
+                          "headlineId": "E",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 19,
+                              "text": "Ein Unternehmen mit"
+                            },
+                            {
+                              "source": "text",
+                              "start": 61,
+                              "end": 89,
+                              "text": "ein Unternehmen mit Zukunft."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
