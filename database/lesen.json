@@ -111968,23 +111968,187 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 8,
+                              "text": "Bildband"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 10,
+                              "end": 15,
+                              "text": "Babys"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 19,
+                              "end": 25,
+                              "text": "Garten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 178,
+                              "end": 188,
+                              "text": "die Bilder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 220,
+                              "end": 229,
+                              "text": "im Garten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 310,
+                              "end": 315,
+                              "text": "Babys"
+                            },
+                            {
+                              "source": "text",
+                              "start": 397,
+                              "end": 402,
+                              "text": "Babys"
+                            },
+                            {
+                              "source": "text",
+                              "start": 437,
+                              "end": 449,
+                              "text": "Ein Bildband"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 29,
+                              "end": 37,
+                              "text": "Skikurse"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 42,
+                              "end": 53,
+                              "text": "Zweijährige"
+                            },
+                            {
+                              "source": "text",
+                              "start": 12,
+                              "end": 20,
+                              "text": "Skikurse"
+                            },
+                            {
+                              "source": "text",
+                              "start": 171,
+                              "end": 182,
+                              "text": "zwei Jahren"
+                            },
+                            {
+                              "source": "text",
+                              "start": 195,
+                              "end": 204,
+                              "text": ". Täglich"
+                            },
+                            {
+                              "source": "text",
+                              "start": 507,
+                              "end": 515,
+                              "text": "Skikurse"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 28,
+                              "text": "Ein Schüler mit vielen Ideen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 343,
+                              "end": 412,
+                              "text": "Wenn Freunde Fußball spielen, tobt Daniels Phantasie im Kinderzimmer."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 7,
+                              "text": "Angebot"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 37,
+                              "end": 72,
+                              "text": "öffentliche Verkehrsmittel benutzen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 48,
+                              "end": 126,
+                              "text": "mit dem Stadt Ticket können Sie billig die öffentlichen Verkehrsmittel nutzen."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 12,
+                              "end": 19,
+                              "text": "Tickets"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 37,
+                              "text": "Discobesucher"
+                            },
+                            {
+                              "source": "text",
+                              "start": 33,
+                              "end": 108,
+                              "text": "junge Leute jetzt für den halben Fahrpreis mit dem Taxi auf Discotour gehen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 110,
+                              "end": 117,
+                              "text": "Tickets"
+                            },
+                            {
+                              "source": "text",
+                              "start": 380,
+                              "end": 394,
+                              "text": "Die Taxifahrer"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
