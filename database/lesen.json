@@ -104915,23 +104915,103 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 12,
+                              "text": "Söhne werden"
+                            },
+                            {
+                              "source": "text",
+                              "start": 279,
+                              "end": 299,
+                              "text": "wurden für die Söhne"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 5,
+                              "end": 10,
+                              "text": "Karte"
+                            },
+                            {
+                              "source": "text",
+                              "start": 283,
+                              "end": 288,
+                              "text": "Karte"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 8,
+                              "text": "Beratung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 298,
+                              "end": 303,
+                              "text": "Tipps"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "D"
+                          "headlineId": "D",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 4,
+                              "text": "Meer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 19,
+                              "end": 27,
+                              "text": "dem Meer"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 21,
+                              "end": 38,
+                              "text": "Vereinsmitglieder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 60,
+                              "end": 70,
+                              "text": "Der Verein"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
