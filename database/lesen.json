@@ -72623,23 +72623,169 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "B"
+                          "headlineId": "B",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 14,
+                              "end": 29,
+                              "text": "Jung und Gesund"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 32,
+                              "end": 50,
+                              "text": "mit dem Schokolade"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 14,
+                              "text": "Der Schokolade"
+                            },
+                            {
+                              "source": "text",
+                              "start": 484,
+                              "end": 499,
+                              "text": "jung und gesund"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 14,
+                              "end": 22,
+                              "text": "Heiraten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 7,
+                              "end": 19,
+                              "text": "verheiratete"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "J"
+                          "headlineId": "J",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 8,
+                              "end": 16,
+                              "text": "schlafen"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 19,
+                              "end": 25,
+                              "text": "länger"
+                            },
+                            {
+                              "source": "text",
+                              "start": 0,
+                              "end": 35,
+                              "text": "Wer acht Stunden und länger schläft"
+                            },
+                            {
+                              "source": "text",
+                              "start": 241,
+                              "end": 249,
+                              "text": "schlafen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 291,
+                              "end": 297,
+                              "text": "länger"
+                            },
+                            {
+                              "source": "text",
+                              "start": 393,
+                              "end": 405,
+                              "text": "lange schläf"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 9,
+                              "text": "Schweizer"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 10,
+                              "end": 25,
+                              "text": "sollen gesunder"
+                            },
+                            {
+                              "source": "text",
+                              "start": 45,
+                              "end": 78,
+                              "text": "die Schweizer Gesundheitsbehörden"
+                            },
+                            {
+                              "source": "text",
+                              "start": 121,
+                              "end": 141,
+                              "text": "sollte die Schweizer"
+                            },
+                            {
+                              "source": "text",
+                              "start": 263,
+                              "end": 270,
+                              "text": "Schweiz"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 7,
+                              "end": 12,
+                              "text": "Essen"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 22,
+                              "end": 42,
+                              "text": "Jugend und Schönheit"
+                            },
+                            {
+                              "source": "text",
+                              "start": 100,
+                              "end": 105,
+                              "text": "Essen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 246,
+                              "end": 268,
+                              "text": "jüngeres und schöneres"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
