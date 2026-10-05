@@ -90979,23 +90979,163 @@
                       "answers": [
                         {
                           "textId": 1,
-                          "headlineId": "A"
+                          "headlineId": "A",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Bilder"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 15,
+                              "end": 23,
+                              "text": "Computer"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 24,
+                              "end": 34,
+                              "text": "bearbeiten"
+                            },
+                            {
+                              "source": "text",
+                              "start": 72,
+                              "end": 113,
+                              "text": "den Computerkurs Digitale Bildbearbeitung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 208,
+                              "end": 219,
+                              "text": "Bearbeitung"
+                            },
+                            {
+                              "source": "text",
+                              "start": 424,
+                              "end": 439,
+                              "text": "Bildbearbeitung"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 2,
-                          "headlineId": "C"
+                          "headlineId": "C",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 0,
+                              "end": 6,
+                              "text": "Kirche"
+                            },
+                            {
+                              "source": "text",
+                              "start": 248,
+                              "end": 254,
+                              "text": "Kirche"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 3,
-                          "headlineId": "G"
+                          "headlineId": "G",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 9,
+                              "end": 18,
+                              "text": "ür Kuchen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 51,
+                              "end": 60,
+                              "text": "des Süßen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 102,
+                              "end": 112,
+                              "text": "der Bäcker"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 4,
-                          "headlineId": "F"
+                          "headlineId": "F",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 17,
+                              "end": 29,
+                              "text": "Lernprogramm"
+                            },
+                            {
+                              "source": "text",
+                              "start": 298,
+                              "end": 310,
+                              "text": "Lernprogramm"
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         },
                         {
                           "textId": 5,
-                          "headlineId": "I"
+                          "headlineId": "I",
+                          "highlights": [
+                            {
+                              "source": "headline",
+                              "start": 10,
+                              "end": 16,
+                              "text": "Wiener"
+                            },
+                            {
+                              "source": "headline",
+                              "start": 21,
+                              "end": 31,
+                              "text": "Café gehen"
+                            },
+                            {
+                              "source": "text",
+                              "start": 61,
+                              "end": 67,
+                              "text": "Wiener"
+                            },
+                            {
+                              "source": "text",
+                              "start": 107,
+                              "end": 117,
+                              "text": "Kaffeehaus"
+                            },
+                            {
+                              "source": "text",
+                              "start": 126,
+                              "end": 132,
+                              "text": "Wiener"
+                            },
+                            {
+                              "source": "text",
+                              "start": 349,
+                              "end": 359,
+                              "text": "Kaffeehaus"
+                            },
+                            {
+                              "source": "text",
+                              "start": 439,
+                              "end": 453,
+                              "text": "im Kaffeehaus."
+                            }
+                          ],
+                          "reason": "",
+                          "keywords": []
                         }
                       ]
                     }
