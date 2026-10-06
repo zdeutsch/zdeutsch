@@ -899,6 +899,58 @@ body.home-loader-active {
   }
 }
 
+.zd-premium-banner {
+  width: min(100%, 75rem);
+  margin: 1.5rem auto 0;
+  font-family: "Noto Sans Arabic", "IBM Plex Sans Arabic", Arial, sans-serif;
+}
+
+.zd-premium-banner-link {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(202, 154, 43, 0.28);
+  border-radius: 1rem;
+  background: #f8f4ea;
+  box-shadow: 0 16px 34px rgba(19, 58, 43, 0.12);
+}
+
+.zd-premium-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+}
+
+.zd-premium-motion {
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #dce5de;
+  border-radius: 0.65rem;
+  background: #fff;
+  color: #176746;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.zd-premium-banner :focus-visible {
+  outline: 3px solid #ca9a2b;
+  outline-offset: 4px;
+}
+
+@media (max-width: 699px) {
+  .zd-premium-banner {
+    width: min(100%, 26.25rem);
+    margin-top: 1.25rem;
+  }
+
+  .zd-premium-banner-image {
+    aspect-ratio: 3 / 4;
+  }
+}
+
 /* Header responsive tweaks for all pages on small screens */
 @media (max-width: 767px) {
   .home-page .home-header-inner {
