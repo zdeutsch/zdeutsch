@@ -112,7 +112,7 @@
       };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="theme.css?v=20260426-19">
+    <link rel="stylesheet" href="theme.css?v=20261006-premium-banner-1">
     <link rel="stylesheet" href="ui-refresh.css?v=20260715-2">
   </head>
   <body class="theme-body font-body min-h-screen correction-page">
@@ -144,6 +144,20 @@
       <main class="home-view pb-16 px-6 relative">
         <div class="w-full">
           <div class="home-shell rounded-3xl border border-stone-300 bg-white/90 shadow-panel p-8">
+            <aside id="zdeutsch-premium-banner" class="zd-premium-banner" aria-label="ZDeutsch Premium" dir="rtl">
+              <a class="zd-premium-banner-link" href="https://zdeutsch.app/subscription"
+                aria-label="استكشف مزايا ZDeutsch Premium واختر اشتراكك">
+                <img id="zdeutsch-premium-creative" class="zd-premium-banner-image"
+                  src="assets/campaigns/zdeutsch-premium-animated-20261006/poster-desktop.jpg" width="1200"
+                  height="400"
+                  alt="ZDeutsch Premium: شرح الكلمات، ألعاب المفردات، التدريب والتصحيح. اختر اشتراكك."
+                  decoding="async">
+              </a>
+              <button id="zdeutsch-premium-motion" class="zd-premium-motion" type="button" hidden>
+                إيقاف الحركة
+              </button>
+            </aside>
+
             <div class="space-y-2" style="direction: rtl;">
               <h2 class="text-2xl font-display text-ink">أرسل اقتراح تصحيح</h2>
               <p class="text-sm text-slate">
@@ -245,6 +259,7 @@
     </div>
 
     <script src="shared.js?v=20260727-b1-2"></script>
+    <script src="premium-banner.js?v=20261006-1"></script>
     <script src="correction.js?v=20260426-cache-12"></script>
   </body>
 </html>
