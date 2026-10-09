@@ -3,7 +3,7 @@
     "module": "shreiben",
     "title": "Schreiben",
     "description": "Beschwerde- und formelle Schreibaufgaben",
-    "generatedAt": "2026-04-28T17:50:20Z"
+    "generatedAt": "2026-10-09T15:57:45.685Z"
   },
   "levels": {
     "b2": {
@@ -401,6 +401,13 @@
           "istructions": "Aufgabe\n\nSchreiben Sie eine Antwort. Behandeln Sie folgende Punkte:",
           "content": "Liebe/r ...,\n\nin zwei Wochen arbeite ich für zwei Wochen in einer Firma. Danach habe ich endlich Urlaub. Ich freue mich schon sehr darauf.\n\nFür meinen Urlaub möchte ich neue Kleidung kaufen. Deshalb möchte ich dich fragen, ob du mit mir einkaufen gehen möchtest.\n\nAußerdem möchte ich wissen, ob du schon einmal Kleidung online gekauft hast. Kaufst du lieber online oder in Geschäften?\n\nWas sind deine Urlaubspläne für diesen Sommer? Hast du schon etwas vor?\n\nSchreib mir bitte bald.\n\nLiebe Grüße\n\nClara",
           "tasks": "- Haben Sie Erfahrungen mit Online-Shopping?\n- Wo kaufen Sie Kleidung lieber?\n- Was sind Ihre Urlaubspläne für diesen Sommer?\n- Möchten Sie mit Clara einkaufen gehen?"
+        },
+        {
+          "title": "Laura",
+          "istructions": "## Aufgabe\n\nSie haben von einer Freundin folgende E-Mail erhalten. Antworten Sie auf die E-Mail. Schreiben Sie etwas zu den folgenden vier Punkten.\n\nÜberlegen Sie sich vor dem Schreiben eine passende Reihenfolge der Punkte, einen passenden Betreff, eine passende Anrede, Einleitung und einen passenden Schluss.",
+          "content": "## E-Mail\n\nLiebe/r _______________,\n\ndu weißt ja, dass ich schon lange nach einem Job suche, der mit meinem Hobby Musik zu tun hat. Stell dir vor, nun habe ich den perfekten Job gefunden. Ich gehe für sechs Monate mit der berühmten deutschen Musikgruppe „Wohnraumhelden“ auf Tournee durch verschiedene Länder – als Assistentin des Managers. Dabei kommen wir auch ganz in die Nähe deiner Stadt. Leider war ich ja noch nie da. Kannst du mir ein paar Tipps geben, was ich dort so machen kann?\n\nIm Moment sind wir noch mit der Planung beschäftigt. Deshalb weiß ich noch nicht genau, wann es losgeht. Wenn ich den genauen Termin kenne, melde ich mich sofort bei dir. Ich hoffe, dass wir uns dann einmal treffen können, und natürlich organisiere ich auch Freikarten für dich und deine Freunde. Ich freue mich schon!\n\nLiebe Grüße\nLaura",
+          "tasks": "- Ihre Lieblingsmusik\n- wichtige Tipps\n- Reaktion auf Freikarten\n- Treffen?",
+          "addedAt": "2026-10-09T15:57:45.685Z"
         }
       ]
     }

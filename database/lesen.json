@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T17:57:00.787Z",
+  "generatedAt": "2026-10-09T15:57:45.685Z",
   "levels": {
     "b2": {
       "themes": {
@@ -147664,6 +147664,1895 @@
             "parts": 5,
             "versions": 1
           }
+        },
+        "laura": {
+          "id": "laura",
+          "title": "Laura",
+          "addedAt": "2026-10-09T15:57:45.685Z",
+          "versions": {
+            "default": {
+              "key": "default",
+              "label": "Default",
+              "title": "Laura",
+              "addedAt": "2026-10-09T15:57:45.685Z",
+              "lesen": {
+                "partOrder": [
+                  "teil-1",
+                  "teil-2",
+                  "teil-3",
+                  "sprachbausteine-1",
+                  "sprachbausteine-2"
+                ],
+                "parts": {
+                  "teil-1": {
+                    "meta": {
+                      "title": "Laura",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 1",
+                      "section": "lesen",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "sourceFile": "Laura yeni (2).pdf",
+                      "sourcePages": [
+                        1,
+                        2
+                      ],
+                      "extractedAt": "2026-10-09T15:57:45.685Z",
+                      "addedAt": "2026-10-09T15:57:45.685Z",
+                      "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift. Sie können jede Überschrift nur einmal benutzen.",
+                      "texts": [
+                        {
+                          "id": 1,
+                          "text": "London. Der wohl teuerste Hamburger der Welt wird seit gestern in London verkauft. Der Hamburger besteht aus japanischem Kobe-Rindfleisch, weißen Trüffeln sowie iranischem Safran und kostet umgerechnet 120 Euro. Das übertrifft den bisherigen Weltrekordhalter in New York: Dort bot ein Bistro ein edles Fleischbrötchen für rund 80 Euro an. „The Burger“ ist nur in einer Londoner Filiale zu haben. Bereits am Morgen wurde ein Dutzend der Hamburger verkauft."
+                        },
+                        {
+                          "id": 2,
+                          "text": "Bielefeld. Die Benutzung eines Handys bei ausgeschaltetem Motor wird nicht mit einem Bußgeld bestraft. Das geht aus einem Urteil des Landgerichts Bielefeld hervor. Ein Autofahrer hatte an einer roten Ampel den Motor abgestellt und mit seinem Handy telefoniert, ohne die Freisprechanlage einzuschalten. Bevor die Ampel auf Grün schaltete, beendete er das Gespräch. Trotzdem wurde der Autofahrer von einem Polizisten angehalten und bekam eine Strafe von 40 Euro. Zu Unrecht, wie das Gericht jetzt urteilte."
+                        },
+                        {
+                          "id": 3,
+                          "text": "Wuppertal. Drei Jungen haben mit einem Physik-Test der besonderen Art den Bahnverkehr stark gestört. Die Schüler im Alter von zehn und elf Jahren hatten ihre Butterbrote und Getränkekartons auf die Gleise der S-Bahnstrecke Wuppertal-Essen gelegt. „Sie wollten beobachten, was passiert“, sagte die Polizei gestern in Düsseldorf. Der Bahnverkehr wurde gestoppt und das Trio von den Gleisen geholt. Die Polizei erklärte den Jungs, wie gefährlich ihre Aktion war. Mehrere Züge verspäteten sich."
+                        },
+                        {
+                          "id": 4,
+                          "text": "Paris. In Frankreich hat ein junger Mann bei Tempo 200 auf einer Autobahn am Steuer Filme auf DVD angeschaut. „Ich habe nicht gewusst, dass das verboten ist“, sagte der 21-jährige Pascal A. vor Gericht in Tours. Das Gericht nahm ihm nicht nur den Führerschein weg, sondern beschlagnahmte auch das Auto. Außerdem bekam er eine Geldstrafe von 150 Euro. Die Polizei hatte den Fahranfänger auf der Autobahn angehalten, nachdem er vorher mit über 200 Stundenkilometern viel zu schnell unterwegs gewesen war. Erlaubt war nur Tempo 110."
+                        },
+                        {
+                          "id": 5,
+                          "text": "Frankfurt. Die gebürtige Hamburgerin Tanja Bauer beliefert das „Main Äppel Haus Lohrberg“ schon lange mit ihren Marmeladen-Variationen. Jetzt möchte sie ihr Wissen und ihre Leidenschaft teilen: Am Dienstag weiht sie Interessierte in ihre Tricks ein. Der Kurs dauert von 18 Uhr bis 20 Uhr und findet im „Main Äppel Haus“ in Frankfurt statt. Die Teilnahme kostet 15 Euro pro Person. Anmeldung ist erforderlich unter (06 109) 22 59 13."
+                        }
+                      ],
+                      "headlines": [
+                        {
+                          "id": "A",
+                          "text": "Ampel auf Rot: Motor abstellen"
+                        },
+                        {
+                          "id": "B",
+                          "text": "Autofahrer telefoniert bei mehr als 180 km/h"
+                        },
+                        {
+                          "id": "C",
+                          "text": "Bahn mit Butterbroten angehalten"
+                        },
+                        {
+                          "id": "D",
+                          "text": "Frankfurter lieben Hamburger mit Marmelade"
+                        },
+                        {
+                          "id": "E",
+                          "text": "Gefährlicher Physik-Test: Marmelade auf den Gleisen"
+                        },
+                        {
+                          "id": "F",
+                          "text": "Handys an der Ampel in bestimmten Fällen erlaubt"
+                        },
+                        {
+                          "id": "G",
+                          "text": "Kurs: Marmeladen selbst kochen"
+                        },
+                        {
+                          "id": "H",
+                          "text": "Luxus-Hamburger in Englands Hauptstadt"
+                        },
+                        {
+                          "id": "I",
+                          "text": "Niemand will den teuersten Hamburger der Welt"
+                        },
+                        {
+                          "id": "J",
+                          "text": "Strafe für Filmeschauen beim Autofahren"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "textId": 1,
+                          "headlineId": "H"
+                        },
+                        {
+                          "textId": 2,
+                          "headlineId": "F"
+                        },
+                        {
+                          "textId": 3,
+                          "headlineId": "B"
+                        },
+                        {
+                          "textId": 4,
+                          "headlineId": "J"
+                        },
+                        {
+                          "textId": 5,
+                          "headlineId": "G"
+                        }
+                      ]
+                    }
+                  },
+                  "teil-2": {
+                    "meta": {
+                      "title": "Laura",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 2",
+                      "section": "lesen",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "sourceFile": "Laura yeni (2).pdf",
+                      "sourcePages": [
+                        3,
+                        4
+                      ],
+                      "extractedAt": "2026-10-09T15:57:45.685Z",
+                      "addedAt": "2026-10-09T15:57:45.685Z",
+                      "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie den Text und die Aufgaben 6–10. Welche Lösung (a, b oder c) ist jeweils richtig?",
+                      "passage": {
+                        "title": "Weltreise? Lieber ein Praktikum in Kuala Lumpur!",
+                        "text": "Umfrage unter Abiturienten: Welche Pläne gibt es für die Zeit nach der Schule? Jura-Studium sehr beliebt\n\n„Nachdem ich das Abitur nun bestanden habe, fühle ich mich befreit. Jetzt gehe ich einen Monat nach San Francisco, um Freunde zu besuchen. Danach wartet ein Praktikum bei der Lufthansa in Kuala Lumpur auf mich, weil ich Luftverkehrsmanagement studieren möchte.“ Das sagt die 19-jährige Aynur Üstüner, die gerade erst ihr Abitur gemacht hat.\n\nNicht nur für Aynur, sondern auch für 85 weitere Schüler der Heinrich-Mann-Schule (HMS) und der Rudolf-Steiner-Schule (RSS) fängt nun das Berufs- oder Universitätsleben an. Alle können sehr stolz auf sich sein: Zweimal gab es sogar die Bestnote 1,0. Insgesamt lag der Durchschnitt bei 2,5 und war damit etwas besser als im Vorjahr. Durchgefallen ist keiner, nur ein Teilnehmer hat das Abitur abgebrochen. Für alle Grund genug, um den Erfolg richtig zu feiern.\n\nWährend die Steiner-Schüler eine ganz ruhige Feier machten, drehten die Abiturienten der Heinrich-Mann-Schule im Bürgerhaus so richtig auf und präsentierten dem Publikum eine filmreife, fantastische Show. Bilder von den beiden Partys zeigen wir ab heute in unserer Bilder-Galerie im Internet.\n\nNun haben also alle ihre Zeugnisse und endlich einmal richtig ausgeschlafen. Kein Wunder: In den letzten Wochen haben die Abiturienten nächtelang gelernt und gleichzeitig Abschied gefeiert – das war sehr anstrengend. Aber jetzt müssen wichtige Entscheidungen getroffen werden: Eine Ausbildung machen? Studieren? Oder vielleicht doch lieber eine Weltreise unternehmen? Wir haben außer Aynur Üstüner noch vier weitere Abiturienten nach ihren Plänen gefragt. Hier sind ihre Antworten:\n\nChristopher Hallgarten (20, RSS): „Ich bin froh, dass das Abitur vorbei ist. Nach einem kurzen Urlaub werde ich erstmal zwei Praktika in Krankenhäusern machen. Danach möchte ich Medizin studieren. Am liebsten in Bayreuth, da soll es schön gemütlich sein.“\n\nInka Schröder (18, RSS): „Jetzt werde ich erstmal die freien Wochen bis zum Studium genießen. Wahrscheinlich wird es Jura werden. Natürlich will ich später auch einige Zeit im Ausland studieren. Eine Pause nach dem Abitur brauche ich nicht unbedingt, schließlich freue ich mich auf mein Studium.“\n\nFabian Sänger (20, HMS): „Ich mache zunächst ein Freiwilliges Soziales Jahr. Auf diese Zeit freue ich mich schon sehr. Danach will ich unbedingt Sport studieren, weiß aber noch nicht, welche Uni mich nehmen wird. Ich lasse mich einfach überraschen, wohin die Reise geht.“\n\nAlexander Michels (19, HMS): „Ich habe mich für das Fach Jura entschieden und werde dafür nach München ziehen. Zuerst brauche ich aber ein paar Wochen Urlaub, um mich von dem Abi-Stress zu erholen. Die Schule werde ich nicht vermissen!“",
+                        "paragraphs": [
+                          "Umfrage unter Abiturienten: Welche Pläne gibt es für die Zeit nach der Schule? Jura-Studium sehr beliebt",
+                          "„Nachdem ich das Abitur nun bestanden habe, fühle ich mich befreit. Jetzt gehe ich einen Monat nach San Francisco, um Freunde zu besuchen. Danach wartet ein Praktikum bei der Lufthansa in Kuala Lumpur auf mich, weil ich Luftverkehrsmanagement studieren möchte.“ Das sagt die 19-jährige Aynur Üstüner, die gerade erst ihr Abitur gemacht hat.",
+                          "Nicht nur für Aynur, sondern auch für 85 weitere Schüler der Heinrich-Mann-Schule (HMS) und der Rudolf-Steiner-Schule (RSS) fängt nun das Berufs- oder Universitätsleben an. Alle können sehr stolz auf sich sein: Zweimal gab es sogar die Bestnote 1,0. Insgesamt lag der Durchschnitt bei 2,5 und war damit etwas besser als im Vorjahr. Durchgefallen ist keiner, nur ein Teilnehmer hat das Abitur abgebrochen. Für alle Grund genug, um den Erfolg richtig zu feiern.",
+                          "Während die Steiner-Schüler eine ganz ruhige Feier machten, drehten die Abiturienten der Heinrich-Mann-Schule im Bürgerhaus so richtig auf und präsentierten dem Publikum eine filmreife, fantastische Show. Bilder von den beiden Partys zeigen wir ab heute in unserer Bilder-Galerie im Internet.",
+                          "Nun haben also alle ihre Zeugnisse und endlich einmal richtig ausgeschlafen. Kein Wunder: In den letzten Wochen haben die Abiturienten nächtelang gelernt und gleichzeitig Abschied gefeiert – das war sehr anstrengend. Aber jetzt müssen wichtige Entscheidungen getroffen werden: Eine Ausbildung machen? Studieren? Oder vielleicht doch lieber eine Weltreise unternehmen? Wir haben außer Aynur Üstüner noch vier weitere Abiturienten nach ihren Plänen gefragt. Hier sind ihre Antworten:",
+                          "Christopher Hallgarten (20, RSS): „Ich bin froh, dass das Abitur vorbei ist. Nach einem kurzen Urlaub werde ich erstmal zwei Praktika in Krankenhäusern machen. Danach möchte ich Medizin studieren. Am liebsten in Bayreuth, da soll es schön gemütlich sein.“",
+                          "Inka Schröder (18, RSS): „Jetzt werde ich erstmal die freien Wochen bis zum Studium genießen. Wahrscheinlich wird es Jura werden. Natürlich will ich später auch einige Zeit im Ausland studieren. Eine Pause nach dem Abitur brauche ich nicht unbedingt, schließlich freue ich mich auf mein Studium.“",
+                          "Fabian Sänger (20, HMS): „Ich mache zunächst ein Freiwilliges Soziales Jahr. Auf diese Zeit freue ich mich schon sehr. Danach will ich unbedingt Sport studieren, weiß aber noch nicht, welche Uni mich nehmen wird. Ich lasse mich einfach überraschen, wohin die Reise geht.“",
+                          "Alexander Michels (19, HMS): „Ich habe mich für das Fach Jura entschieden und werde dafür nach München ziehen. Zuerst brauche ich aber ein paar Wochen Urlaub, um mich von dem Abi-Stress zu erholen. Die Schule werde ich nicht vermissen!“"
+                        ]
+                      },
+                      "questions": [
+                        {
+                          "id": 6,
+                          "prompt": "An den beiden Schulen",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "haben alle teilnehmenden Schüler das Abitur bestanden."
+                            },
+                            {
+                              "id": "b",
+                              "text": "haben zwei Schüler die Note 2,5 erreicht."
+                            },
+                            {
+                              "id": "c",
+                              "text": "sind die Durchschnittsnoten gleich geblieben."
+                            }
+                          ],
+                          "answerId": "a",
+                          "answerText": "haben alle teilnehmenden Schüler das Abitur bestanden."
+                        },
+                        {
+                          "id": 7,
+                          "prompt": "Die Abiparty der Heinrich-Mann-Schule war fantastisch, weil",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "die Abiturienten einen Film über die Party gemacht haben."
+                            },
+                            {
+                              "id": "b",
+                              "text": "die ganze Party im Internet gezeigt wurde."
+                            },
+                            {
+                              "id": "c",
+                              "text": "es eine tolle Show gab."
+                            }
+                          ],
+                          "answerId": "c",
+                          "answerText": "es eine tolle Show gab."
+                        },
+                        {
+                          "id": 8,
+                          "prompt": "In den letzten Wochen haben die Schülerinnen und Schüler",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "immer nur nachts für das Abitur gelernt."
+                            },
+                            {
+                              "id": "b",
+                              "text": "lieber gefeiert als gelernt."
+                            },
+                            {
+                              "id": "c",
+                              "text": "viel zu wenig geschlafen."
+                            }
+                          ],
+                          "answerId": "c",
+                          "answerText": "viel zu wenig geschlafen."
+                        },
+                        {
+                          "id": 9,
+                          "prompt": "Inka und Alexander",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "finden es schade, dass die Schulzeit vorbei ist."
+                            },
+                            {
+                              "id": "b",
+                              "text": "haben vor, Jura zu studieren."
+                            },
+                            {
+                              "id": "c",
+                              "text": "machen erst einmal zusammen Urlaub im Ausland."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "haben vor, Jura zu studieren."
+                        },
+                        {
+                          "id": 10,
+                          "prompt": "Einer der vier Abiturienten",
+                          "options": [
+                            {
+                              "id": "a",
+                              "text": "möchte in Bayreuth studieren, weil die Stadt so schön groß ist."
+                            },
+                            {
+                              "id": "b",
+                              "text": "weiß noch nicht genau, wo er studieren wird."
+                            },
+                            {
+                              "id": "c",
+                              "text": "will nach dem Freiwilligen Sozialen Jahr zwei Praktika machen."
+                            }
+                          ],
+                          "answerId": "b",
+                          "answerText": "weiß noch nicht genau, wo er studieren wird."
+                        }
+                      ]
+                    }
+                  },
+                  "teil-3": {
+                    "meta": {
+                      "title": "Laura",
+                      "level": "B1",
+                      "partLabel": "Lesen Teil 3",
+                      "section": "lesen",
+                      "partNumber": 3,
+                      "sourceUrl": "",
+                      "sourceFile": "Laura yeni (2).pdf",
+                      "sourcePages": [
+                        5,
+                        6
+                      ],
+                      "extractedAt": "2026-10-09T15:57:45.685Z",
+                      "addedAt": "2026-10-09T15:57:45.685Z",
+                      "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie die Situationen 11–20 und die Anzeigen a–l. Finden Sie für jede Situation die passende Anzeige. Sie können jede Anzeige nur einmal benutzen. Wenn Sie zu einer Situation keine Anzeige finden, markieren Sie ein x.",
+                      "situations": [
+                        {
+                          "id": 11,
+                          "text": "Sie suchen zwei Stühle für Ihren Garten, möchten aber insgesamt nicht mehr als 15 € bezahlen."
+                        },
+                        {
+                          "id": 12,
+                          "text": "Sie müssen Ihren guten Teppich reinigen lassen und suchen eine Firma mit langjähriger Erfahrung."
+                        },
+                        {
+                          "id": 13,
+                          "text": "Sie haben Geburtstag und möchten mit Ihren Gästen etwas Besonderes machen: Abends in den Zoo gehen."
+                        },
+                        {
+                          "id": 14,
+                          "text": "Sie sind gerade umgezogen und möchten sich eine neue Waschmaschine kaufen."
+                        },
+                        {
+                          "id": 15,
+                          "text": "Die Tochter Ihrer Nachbarin will später einmal Tierärztin werden und sucht einen Job für die Sommerferien. Geben Sie ihr einen Tipp."
+                        },
+                        {
+                          "id": 16,
+                          "text": "Kindergeburtstag! Ihr kleiner Sohn wird fünf. Sie möchten ihn und seine Freunde ins Kino einladen."
+                        },
+                        {
+                          "id": 17,
+                          "text": "Ein guter Freund hat ein Aquarium. Schenken Sie ihm etwas für sein Hobby."
+                        },
+                        {
+                          "id": 18,
+                          "text": "Sie bekommen mitten in der Nacht starke Kopfschmerzen und brauchen schnell Tabletten."
+                        },
+                        {
+                          "id": 19,
+                          "text": "Ihre Kinder möchten gerne ein Haustier. Sie haben nichts dagegen, es soll aber ein Tier aus dem Tierheim sein."
+                        },
+                        {
+                          "id": 20,
+                          "text": "Sie richten Ihr Schlafzimmer neu ein und suchen einen Kleiderschrank aus Skandinavien."
+                        }
+                      ],
+                      "ads": [
+                        {
+                          "id": "A",
+                          "text": "Neueröffnung · LADIC Teppichreinigung\n\nWir waschen Ihre Teppiche! Unsere Teppichwäsche ist das Beste, was Sie für Ihre wertvollen Teppiche tun können.\n\n– Teppich-Wäsche\n– Orientteppich-Handwäsche\n– Teppichreparaturen\n– KOSTENFREIE ABHOLUNG\n\nFrankfurt (06 9) 56 09 08 10\nwww.ladic-teppich.com"
+                        },
+                        {
+                          "id": "B",
+                          "text": "SUCHE\n\nWohnung oder Haus mit Balkon/Garten, WG-tauglich mit tierlieben Menschen. Du hast Platz? Dann hole mich aus dem Heim.\n\nTierschutzverein Langen / Egelsbach e.V.\nDieburger Str. 56 a, 63225 Langen\nFon: 06 10 3/92 95 32 · Fax: 06 10 3/45 92 62\nDeutscher Tierschutzbund e. V."
+                        },
+                        {
+                          "id": "C",
+                          "text": "NOTDIENSTE\n\nAPOTHEKEN\nGoethe-Apotheke, Neu-Isenburg, Bahnhofstr. 173, Tel: 0600 2/77 12 01.\nLöwen-Apotheke, Langen, Bahnstr. 31, Tel.: 06 11 39 09 81.\n\nÄRZTE\nÄrztlicher Notdienst: zu erfahren über den Anrufbeantworter des Hausarztes.\nTierärztlicher Notdienst: Dr. Thomas Würz, Neu-Isenburg, Tel.: 06 00 2/31 85 5."
+                        },
+                        {
+                          "id": "D",
+                          "text": "FLOHMARKT AKTUELL\n\nEckcouch, 6-Sitzer, braun/beige, Hocker, Couchtisch, 25,00 €, Tel. 06 18 2-31 50.\n\nKoffer Stratic m. Rollen (alte Form), 65×47×13 cm, (erweiterbar), 15,00 €, Tel. 07 05 4-88 46 2.\n\nGartenstühle blau, 2 Stück mit hoher Lehne, klappbar zus. für nur 13 €, Tel. 06 08 3/29 01 33.\n\nRucksäcke von 5–15,00 € zu verkaufen, Tel.-Nr. 06 68 1/50 05 7.\n\nKinderhüpfpferd „Rody“ rot 10,– €, Tel. 06 17 1/94 44 0.\n\nSideboard Eiche hell H 74, B 138 und T 42 mit 3 Türen und 4 Schubl. für 25 €, Tel. 06 07 4/13 98.\n\nWaschmaschine, 2 Jahre alt, wie neu, 150 EUR für Selbstabholer, Tel.: [Nummer im Scan nicht eindeutig lesbar; siehe Original]."
+                        },
+                        {
+                          "id": "E",
+                          "text": "PROFI-ZOO-WERNER\n\nExotische Fische, gesunde Japan-Kois, Aquarien-Zubehör!\nAquarien-Möbel\nSüß- und Meerwasserfische\nTerraristik\n\nDorfelder Str. 50 – Tel. 06 03 1 – 28 4 20\n61169 Friedberg-Dorheim\nwww.profi-zoo-werner.de"
+                        },
+                        {
+                          "id": "F",
+                          "text": "Der Zoo sucht Pferdefreunde\n\nFrankfurt. Der Zoo sucht für den Sommer tierliebe und pferdekundige Personen, die täglich zwei Stunden lang das Ponyreiten für Kinder betreuen.\n\nWeitere Informationen – auch zum Honorar – hat Erwin May, Telefon: 47 46 81 28."
+                        },
+                        {
+                          "id": "G",
+                          "text": "Alte Küche?\n\nWir modernisieren preiswert an einem Tag!\n\nSieht man Ihrer Küche die Jahre an, aber zum Wegwerfen ist sie zu schade? PORTE hat die Lösung: Alte Küchen wieder neu und modern mit neuen Fronten nach Maß!\nFordern Sie unseren Gratiskatalog an.\n\nPORTE-Ausstellungs-Center\nAssar-Gabrielsson-Straße\n63128 Dietzenbach-Steinberg\nTel. 06 07 4 – 30 67 27\nwww.porte-kuechen.de\nPORTE – Europas Renovierer Nr. 1"
+                        },
+                        {
+                          "id": "H",
+                          "text": "CINEMAXX Offenbach\n\nDer Filmpalast in der Berliner Straße 210\nAktuelles Programm\n\nKartenreservierung: 01 80 5-24 63 62 99 (0,14 EUR/Min., 0,50 EUR Aufschlag/Ticket), kostenlose Onlinereservierung: www.cinemaxx.de\n\nBank Job ab 12: 17.50, 20.20, Fr./Sa. auch 23.00 Uhr\nDie Insel der Abenteuer ab 6: 15.10, 17.40, So. auch 12.30 Uhr\nThe Happening ab 16: 17.30, 20.00, Fr./Sa. auch 22.40 Uhr\nIndiana Jones ab 12: 15.00, 17.10 (außer Mo.), 20.00 (außer Mi.), Fr./Sa. auch 23.00\nPenelope ab 6: So. 12.40\nKirschblüten ab 12: Nur montags 17 Uhr\nVerliebt in die Braut ab 12: Sa./So. 15.30"
+                        },
+                        {
+                          "id": "I",
+                          "text": "Führung · Konzert · Oper · Schauspiel\n\nFührung\nZoo Ffm: 19.30 Uhr, Nächtliche Expeditionen mit Lagerfeuer, Tel.: 069/22 34 77 12.\n\nKonzert\nInnenstadt Idstein: Jazzfestival, 62 Bands, 10 Bühnen, www.idstein-jazzfestival.de\nSpritzenhaus, Ffm: 21 Uhr, „The Time Bandits“.\n\nOper\nAlte Oper, Ffm: 20 Uhr, „Tanguera“, Tel.: 069/21 00 600.\nOper, Ffm: 19.30 Uhr, „Fidelio“, Tel.: 069/31 3-48 099.\n\nSchauspiel\nDie Komödie, Ffm: 20 Uhr, „Bitte nicht stören“, Ron Clark, Sam Bobrick, Tel.: 069/39 55 80.\nFritz-Remond-Theater im Zoo: 20 Uhr, „Der Kontrabass“, Patrick Süskind, Tel.: 069/54 62 66.\nVolkstheater, Ffm: 20 Uhr, „Volpone oder Der Fuchs“, Ben Jonson, Tel.: 069/39 96 09."
+                        },
+                        {
+                          "id": "J",
+                          "text": "POWALLA\n\nIhr freundliches Fachgeschäft für finnische und schwedische Möbel\n\nFrankfurt, Gr. Friedberger Str. 13–17\nTel. 069 39 93 73\n\nImport aus Skandinavien\nMöbel nach Maß, eigene Werkstatt\ngut – schnell – preiswert"
+                        },
+                        {
+                          "id": "K",
+                          "text": "Wer will mich haben?\n\nElvis (1) hat bereits die Schattenseiten des Lebens kennen lernen müssen. Sein Besitzer hat den freundlichen Hund ausgesetzt. Der Beagle ist ein unkomplizierter und idealer Freund einer Familie mit größeren Kindern.\n\nTelefon 464999 (von privat)"
+                        },
+                        {
+                          "id": "L",
+                          "text": "50 Jahre Erfahrung · BIO Handwäsche\n\nTeppichreinigung\nUnser Dauerangebot:\n• Kontrollieren\n• Waschen\n• Spülen\n• Trocknen: nur 7 € pro m²\n\nKostenloser Abhol- und Lieferservice im Umkreis von 100 km.\nTeppichreparaturen aller Art!\n\nPAULOWITSCH Dietzenbach\nTel.: 06 0 74 – 44 12 47"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "situationId": 11,
+                          "adId": "D"
+                        },
+                        {
+                          "situationId": 12,
+                          "adId": "L"
+                        },
+                        {
+                          "situationId": 13,
+                          "adId": "I"
+                        },
+                        {
+                          "situationId": 14,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 15,
+                          "adId": "F"
+                        },
+                        {
+                          "situationId": 16,
+                          "adId": "X"
+                        },
+                        {
+                          "situationId": 17,
+                          "adId": "E"
+                        },
+                        {
+                          "situationId": 18,
+                          "adId": "C"
+                        },
+                        {
+                          "situationId": 19,
+                          "adId": "B"
+                        },
+                        {
+                          "situationId": 20,
+                          "adId": "J"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Laura",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "",
+                      "sourceFile": "Laura yeni (2).pdf",
+                      "sourcePages": [
+                        7
+                      ],
+                      "extractedAt": "2026-10-09T15:57:45.685Z",
+                      "addedAt": "2026-10-09T15:57:45.685Z",
+                      "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                    },
+                    "content": {
+                      "title": "Hallo Nikolas — Los Mutantes",
+                      "instruction": "Lesen Sie den Text und schließen Sie die Lücken 21–30. Welche Lösung (a, b oder c) ist jeweils richtig?",
+                      "text": "Hallo Nikolas,\n\nin knapp einer Woche ist es so weit: Unsere spanische Theatergruppe „Los Mutantes“ geht auf große Tour [[21]] Deutschland und Spanien mit dem Stück „Niebla“ (Nebel).\nWir planen, mindestens 30 Vorstellungen zu geben und das mit so [[22]] bunt gemischten Gruppe aus zehn (!!) Ländern. Am 7. April beginnen wir unsere Theaterreise an der Uni von Alicante/Spanien. Du kannst [[23]] denken, dass ich als Nichtmuttersprachlerin sehr [[24]] bin, dort vor spanischem Publikum zu spielen, [[25]] ich ja fließend und fast ohne Akzent Spanisch spreche.\n[[26]] Herbst steht vielleicht auch meine alte „Wahlheimatstadt“ Barcelona auf dem Programm, wie gerne [[27]] ich euch alle wiedersehen! Ohne eure Hilfe hätte ich die Sprache niemals so gut lernen [[28]]. Ich denke oft an unsere multikulturelle Wohngemeinschaft: das gemeinsame Kochen, die tollen Feste … Ein bisschen [[29]] habe ich jetzt in der Theatergruppe [[30]].\n\nLiebe Grüße auch an deine Mitbewohner\nschickt dir\nSarah",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Hallo Nikolas,\n\nin knapp einer Woche ist es so weit: Unsere spanische Theatergruppe „Los Mutantes“ geht auf große Tour "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "durch"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Deutschland und Spanien mit dem Stück „Niebla“ (Nebel).\nWir planen, mindestens 30 Vorstellungen zu geben und das mit so "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "einer"
+                        },
+                        {
+                          "type": "text",
+                          "value": " bunt gemischten Gruppe aus zehn (!!) Ländern. Am 7. April beginnen wir unsere Theaterreise an der Uni von Alicante/Spanien. Du kannst "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "dir"
+                        },
+                        {
+                          "type": "text",
+                          "value": " denken, dass ich als Nichtmuttersprachlerin sehr "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "aufgeregt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " bin, dort vor spanischem Publikum zu spielen, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "obwohl"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich ja fließend und fast ohne Akzent Spanisch spreche.\n"
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "Im"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Herbst steht vielleicht auch meine alte „Wahlheimatstadt“ Barcelona auf dem Programm, wie gerne "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "würde"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich euch alle wiedersehen! Ohne eure Hilfe hätte ich die Sprache niemals so gut lernen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "können"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Ich denke oft an unsere multikulturelle Wohngemeinschaft: das gemeinsame Kochen, die tollen Feste … Ein bisschen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "davon"
+                        },
+                        {
+                          "type": "text",
+                          "value": " habe ich jetzt in der Theatergruppe "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "wiedergefunden"
+                        },
+                        {
+                          "type": "text",
+                          "value": ".\n\nLiebe Grüße auch an deine Mitbewohner\nschickt dir\nSarah"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "options": [
+                            "aus",
+                            "durch",
+                            "von"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "options": [
+                            "eine",
+                            "einen",
+                            "einer"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "options": [
+                            "dich",
+                            "dir",
+                            "sich"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "options": [
+                            "aufgeregt",
+                            "aufregend",
+                            "aufzuregen"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "options": [
+                            "obwohl",
+                            "weil",
+                            "zwar"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "options": [
+                            "Im",
+                            "In",
+                            "Während"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "options": [
+                            "hätte",
+                            "würde",
+                            "wurde"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "options": [
+                            "können",
+                            "müssen",
+                            "sollen"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "options": [
+                            "damit",
+                            "davon",
+                            "dazu"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "options": [
+                            "wiederfinden",
+                            "wiedergefunden",
+                            "wiederzufinden"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "durch"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "einer"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "dir"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "aufgeregt"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "obwohl"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "Im"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "würde"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "können"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "davon"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "wiedergefunden"
+                        }
+                      ]
+                    }
+                  },
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "Laura",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "",
+                      "sourceFile": "Laura yeni (2).pdf",
+                      "sourcePages": [
+                        8
+                      ],
+                      "extractedAt": "2026-10-09T15:57:45.685Z",
+                      "addedAt": "2026-10-09T15:57:45.685Z",
+                      "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                    },
+                    "content": {
+                      "title": "Hallo Benny, hallo Verena — Burg Tanneck",
+                      "instruction": "Lesen Sie den Text und schließen Sie die Lücken 31–40. Benutzen Sie die Wörter a–o. Jedes Wort passt nur einmal.",
+                      "text": "Songwettbewerb auf der Burg Tanneck\nvom 5. bis 7. September\n\nDer Songwettbewerb findet statt für\n– Sologesang\n– Sologesang mit Instrument\n– Gruppengesang (2–5 Teilnehmer)\n\nProfessionelle Musiker dürfen nicht teilnehmen.\nInformationen zur Anmeldung und zum Ort unter:\nwww.burg-tanneck.de\n\nHallo Benny, hallo Verena,\n\ndiese kurze Notiz habe ich gestern im Internet gefunden und [[31]] gleich an euch [[32]] denken. Es waren doch wunderbare Abende, [[33]] wir im letzten Urlaub in Griechenland verbracht haben. Eure Lieder und Bennys tolles Gitarrenspiel sind mir in guter Erinnerung geblieben. Wie [[34]] es, hättet ihr nicht mal Lust, bei so einem Songwettbewerb mitzumachen?\n\nIch kenne die Burg Tanneck [[35]] seit meiner Kindheit, als mich meine musikbegeisterten Eltern zu den Festivals mitgenommen haben. Was ganz wichtig ist: Dieser Songwettbewerb hat [[36]] nichts mit Kommerz und Vermarktung zu tun, wie man es sonst aus dem Fernsehen [[37]].\n\nEs geht nur [[38]], Spaß zu haben und zu singen! Schon allein die romantische Burg ist eine Reise wert, auch [[39]] ihr nur den anderen Sängern zuhören wollt. Lasst [[40]] was von euch hören!\n\nBis dann, liebe Grüße aus Saarbrücken\nAstrid",
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Songwettbewerb auf der Burg Tanneck\nvom 5. bis 7. September\n\nDer Songwettbewerb findet statt für\n– Sologesang\n– Sologesang mit Instrument\n– Gruppengesang (2–5 Teilnehmer)\n\nProfessionelle Musiker dürfen nicht teilnehmen.\nInformationen zur Anmeldung und zum Ort unter:\nwww.burg-tanneck.de\n\nHallo Benny, hallo Verena,\n\ndiese kurze Notiz habe ich gestern im Internet gefunden und "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "MUSSTE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " gleich an euch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "BEIDE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " denken. Es waren doch wunderbare Abende, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "DIE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " wir im letzten Urlaub in Griechenland verbracht haben. Eure Lieder und Bennys tolles Gitarrenspiel sind mir in guter Erinnerung geblieben. Wie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " es, hättet ihr nicht mal Lust, bei so einem Songwettbewerb mitzumachen?\n\nIch kenne die Burg Tanneck "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "type": "text",
+                          "value": " seit meiner Kindheit, als mich meine musikbegeisterten Eltern zu den Festivals mitgenommen haben. Was ganz wichtig ist: Dieser Songwettbewerb hat "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "ÜBERHAUPT"
+                        },
+                        {
+                          "type": "text",
+                          "value": " nichts mit Kommerz und Vermarktung zu tun, wie man es sonst aus dem Fernsehen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "KENNT"
+                        },
+                        {
+                          "type": "text",
+                          "value": ".\n\nEs geht nur "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "DARUM"
+                        },
+                        {
+                          "type": "text",
+                          "value": ", Spaß zu haben und zu singen! Schon allein die romantische Burg ist eine Reise wert, auch "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "WENN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ihr nur den anderen Sängern zuhören wollt. Lasst "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "BALD"
+                        },
+                        {
+                          "type": "text",
+                          "value": " was von euch hören!\n\nBis dann, liebe Grüße aus Saarbrücken\nAstrid"
+                        }
+                      ],
+                      "wordBank": [
+                        {
+                          "id": "a",
+                          "text": "ALS"
+                        },
+                        {
+                          "id": "b",
+                          "text": "BALD"
+                        },
+                        {
+                          "id": "c",
+                          "text": "BEIDE"
+                        },
+                        {
+                          "id": "d",
+                          "text": "DARUM"
+                        },
+                        {
+                          "id": "e",
+                          "text": "DIE"
+                        },
+                        {
+                          "id": "f",
+                          "text": "DURFTE"
+                        },
+                        {
+                          "id": "g",
+                          "text": "ERST"
+                        },
+                        {
+                          "id": "h",
+                          "text": "HÄTTE"
+                        },
+                        {
+                          "id": "i",
+                          "text": "KENNT"
+                        },
+                        {
+                          "id": "j",
+                          "text": "MUSSTE"
+                        },
+                        {
+                          "id": "k",
+                          "text": "SCHON"
+                        },
+                        {
+                          "id": "l",
+                          "text": "WÄRE"
+                        },
+                        {
+                          "id": "m",
+                          "text": "WENN"
+                        },
+                        {
+                          "id": "n",
+                          "text": "WISST"
+                        },
+                        {
+                          "id": "o",
+                          "text": "ÜBERHAUPT"
+                        }
+                      ],
+                      "options": [
+                        "ALS",
+                        "BALD",
+                        "BEIDE",
+                        "DARUM",
+                        "DIE",
+                        "DURFTE",
+                        "ERST",
+                        "HÄTTE",
+                        "KENNT",
+                        "MUSSTE",
+                        "SCHON",
+                        "WÄRE",
+                        "WENN",
+                        "WISST",
+                        "ÜBERHAUPT"
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "answer": "MUSSTE"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "BEIDE"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DIE"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "ÜBERHAUPT"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "KENNT"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "DARUM"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "BALD"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "MUSSTE"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "BEIDE"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "DIE"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "WÄRE"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "ÜBERHAUPT"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "KENNT"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "DARUM"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "BALD"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "versionOrder": [
+            "default"
+          ],
+          "defaultVersion": "default",
+          "lesen": {
+            "partOrder": [
+              "teil-1",
+              "teil-2",
+              "teil-3",
+              "sprachbausteine-1",
+              "sprachbausteine-2"
+            ],
+            "parts": {
+              "teil-1": {
+                "meta": {
+                  "title": "Laura",
+                  "level": "B1",
+                  "partLabel": "Lesen Teil 1",
+                  "section": "lesen",
+                  "partNumber": 1,
+                  "sourceUrl": "",
+                  "sourceFile": "Laura yeni (2).pdf",
+                  "sourcePages": [
+                    1,
+                    2
+                  ],
+                  "extractedAt": "2026-10-09T15:57:45.685Z",
+                  "addedAt": "2026-10-09T15:57:45.685Z",
+                  "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                },
+                "content": {
+                  "instruction": "Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift. Sie können jede Überschrift nur einmal benutzen.",
+                  "texts": [
+                    {
+                      "id": 1,
+                      "text": "London. Der wohl teuerste Hamburger der Welt wird seit gestern in London verkauft. Der Hamburger besteht aus japanischem Kobe-Rindfleisch, weißen Trüffeln sowie iranischem Safran und kostet umgerechnet 120 Euro. Das übertrifft den bisherigen Weltrekordhalter in New York: Dort bot ein Bistro ein edles Fleischbrötchen für rund 80 Euro an. „The Burger“ ist nur in einer Londoner Filiale zu haben. Bereits am Morgen wurde ein Dutzend der Hamburger verkauft."
+                    },
+                    {
+                      "id": 2,
+                      "text": "Bielefeld. Die Benutzung eines Handys bei ausgeschaltetem Motor wird nicht mit einem Bußgeld bestraft. Das geht aus einem Urteil des Landgerichts Bielefeld hervor. Ein Autofahrer hatte an einer roten Ampel den Motor abgestellt und mit seinem Handy telefoniert, ohne die Freisprechanlage einzuschalten. Bevor die Ampel auf Grün schaltete, beendete er das Gespräch. Trotzdem wurde der Autofahrer von einem Polizisten angehalten und bekam eine Strafe von 40 Euro. Zu Unrecht, wie das Gericht jetzt urteilte."
+                    },
+                    {
+                      "id": 3,
+                      "text": "Wuppertal. Drei Jungen haben mit einem Physik-Test der besonderen Art den Bahnverkehr stark gestört. Die Schüler im Alter von zehn und elf Jahren hatten ihre Butterbrote und Getränkekartons auf die Gleise der S-Bahnstrecke Wuppertal-Essen gelegt. „Sie wollten beobachten, was passiert“, sagte die Polizei gestern in Düsseldorf. Der Bahnverkehr wurde gestoppt und das Trio von den Gleisen geholt. Die Polizei erklärte den Jungs, wie gefährlich ihre Aktion war. Mehrere Züge verspäteten sich."
+                    },
+                    {
+                      "id": 4,
+                      "text": "Paris. In Frankreich hat ein junger Mann bei Tempo 200 auf einer Autobahn am Steuer Filme auf DVD angeschaut. „Ich habe nicht gewusst, dass das verboten ist“, sagte der 21-jährige Pascal A. vor Gericht in Tours. Das Gericht nahm ihm nicht nur den Führerschein weg, sondern beschlagnahmte auch das Auto. Außerdem bekam er eine Geldstrafe von 150 Euro. Die Polizei hatte den Fahranfänger auf der Autobahn angehalten, nachdem er vorher mit über 200 Stundenkilometern viel zu schnell unterwegs gewesen war. Erlaubt war nur Tempo 110."
+                    },
+                    {
+                      "id": 5,
+                      "text": "Frankfurt. Die gebürtige Hamburgerin Tanja Bauer beliefert das „Main Äppel Haus Lohrberg“ schon lange mit ihren Marmeladen-Variationen. Jetzt möchte sie ihr Wissen und ihre Leidenschaft teilen: Am Dienstag weiht sie Interessierte in ihre Tricks ein. Der Kurs dauert von 18 Uhr bis 20 Uhr und findet im „Main Äppel Haus“ in Frankfurt statt. Die Teilnahme kostet 15 Euro pro Person. Anmeldung ist erforderlich unter (06 109) 22 59 13."
+                    }
+                  ],
+                  "headlines": [
+                    {
+                      "id": "A",
+                      "text": "Ampel auf Rot: Motor abstellen"
+                    },
+                    {
+                      "id": "B",
+                      "text": "Autofahrer telefoniert bei mehr als 180 km/h"
+                    },
+                    {
+                      "id": "C",
+                      "text": "Bahn mit Butterbroten angehalten"
+                    },
+                    {
+                      "id": "D",
+                      "text": "Frankfurter lieben Hamburger mit Marmelade"
+                    },
+                    {
+                      "id": "E",
+                      "text": "Gefährlicher Physik-Test: Marmelade auf den Gleisen"
+                    },
+                    {
+                      "id": "F",
+                      "text": "Handys an der Ampel in bestimmten Fällen erlaubt"
+                    },
+                    {
+                      "id": "G",
+                      "text": "Kurs: Marmeladen selbst kochen"
+                    },
+                    {
+                      "id": "H",
+                      "text": "Luxus-Hamburger in Englands Hauptstadt"
+                    },
+                    {
+                      "id": "I",
+                      "text": "Niemand will den teuersten Hamburger der Welt"
+                    },
+                    {
+                      "id": "J",
+                      "text": "Strafe für Filmeschauen beim Autofahren"
+                    }
+                  ],
+                  "answers": [
+                    {
+                      "textId": 1,
+                      "headlineId": "H"
+                    },
+                    {
+                      "textId": 2,
+                      "headlineId": "F"
+                    },
+                    {
+                      "textId": 3,
+                      "headlineId": "B"
+                    },
+                    {
+                      "textId": 4,
+                      "headlineId": "J"
+                    },
+                    {
+                      "textId": 5,
+                      "headlineId": "G"
+                    }
+                  ]
+                }
+              },
+              "teil-2": {
+                "meta": {
+                  "title": "Laura",
+                  "level": "B1",
+                  "partLabel": "Lesen Teil 2",
+                  "section": "lesen",
+                  "partNumber": 2,
+                  "sourceUrl": "",
+                  "sourceFile": "Laura yeni (2).pdf",
+                  "sourcePages": [
+                    3,
+                    4
+                  ],
+                  "extractedAt": "2026-10-09T15:57:45.685Z",
+                  "addedAt": "2026-10-09T15:57:45.685Z",
+                  "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                },
+                "content": {
+                  "instruction": "Lesen Sie den Text und die Aufgaben 6–10. Welche Lösung (a, b oder c) ist jeweils richtig?",
+                  "passage": {
+                    "title": "Weltreise? Lieber ein Praktikum in Kuala Lumpur!",
+                    "text": "Umfrage unter Abiturienten: Welche Pläne gibt es für die Zeit nach der Schule? Jura-Studium sehr beliebt\n\n„Nachdem ich das Abitur nun bestanden habe, fühle ich mich befreit. Jetzt gehe ich einen Monat nach San Francisco, um Freunde zu besuchen. Danach wartet ein Praktikum bei der Lufthansa in Kuala Lumpur auf mich, weil ich Luftverkehrsmanagement studieren möchte.“ Das sagt die 19-jährige Aynur Üstüner, die gerade erst ihr Abitur gemacht hat.\n\nNicht nur für Aynur, sondern auch für 85 weitere Schüler der Heinrich-Mann-Schule (HMS) und der Rudolf-Steiner-Schule (RSS) fängt nun das Berufs- oder Universitätsleben an. Alle können sehr stolz auf sich sein: Zweimal gab es sogar die Bestnote 1,0. Insgesamt lag der Durchschnitt bei 2,5 und war damit etwas besser als im Vorjahr. Durchgefallen ist keiner, nur ein Teilnehmer hat das Abitur abgebrochen. Für alle Grund genug, um den Erfolg richtig zu feiern.\n\nWährend die Steiner-Schüler eine ganz ruhige Feier machten, drehten die Abiturienten der Heinrich-Mann-Schule im Bürgerhaus so richtig auf und präsentierten dem Publikum eine filmreife, fantastische Show. Bilder von den beiden Partys zeigen wir ab heute in unserer Bilder-Galerie im Internet.\n\nNun haben also alle ihre Zeugnisse und endlich einmal richtig ausgeschlafen. Kein Wunder: In den letzten Wochen haben die Abiturienten nächtelang gelernt und gleichzeitig Abschied gefeiert – das war sehr anstrengend. Aber jetzt müssen wichtige Entscheidungen getroffen werden: Eine Ausbildung machen? Studieren? Oder vielleicht doch lieber eine Weltreise unternehmen? Wir haben außer Aynur Üstüner noch vier weitere Abiturienten nach ihren Plänen gefragt. Hier sind ihre Antworten:\n\nChristopher Hallgarten (20, RSS): „Ich bin froh, dass das Abitur vorbei ist. Nach einem kurzen Urlaub werde ich erstmal zwei Praktika in Krankenhäusern machen. Danach möchte ich Medizin studieren. Am liebsten in Bayreuth, da soll es schön gemütlich sein.“\n\nInka Schröder (18, RSS): „Jetzt werde ich erstmal die freien Wochen bis zum Studium genießen. Wahrscheinlich wird es Jura werden. Natürlich will ich später auch einige Zeit im Ausland studieren. Eine Pause nach dem Abitur brauche ich nicht unbedingt, schließlich freue ich mich auf mein Studium.“\n\nFabian Sänger (20, HMS): „Ich mache zunächst ein Freiwilliges Soziales Jahr. Auf diese Zeit freue ich mich schon sehr. Danach will ich unbedingt Sport studieren, weiß aber noch nicht, welche Uni mich nehmen wird. Ich lasse mich einfach überraschen, wohin die Reise geht.“\n\nAlexander Michels (19, HMS): „Ich habe mich für das Fach Jura entschieden und werde dafür nach München ziehen. Zuerst brauche ich aber ein paar Wochen Urlaub, um mich von dem Abi-Stress zu erholen. Die Schule werde ich nicht vermissen!“",
+                    "paragraphs": [
+                      "Umfrage unter Abiturienten: Welche Pläne gibt es für die Zeit nach der Schule? Jura-Studium sehr beliebt",
+                      "„Nachdem ich das Abitur nun bestanden habe, fühle ich mich befreit. Jetzt gehe ich einen Monat nach San Francisco, um Freunde zu besuchen. Danach wartet ein Praktikum bei der Lufthansa in Kuala Lumpur auf mich, weil ich Luftverkehrsmanagement studieren möchte.“ Das sagt die 19-jährige Aynur Üstüner, die gerade erst ihr Abitur gemacht hat.",
+                      "Nicht nur für Aynur, sondern auch für 85 weitere Schüler der Heinrich-Mann-Schule (HMS) und der Rudolf-Steiner-Schule (RSS) fängt nun das Berufs- oder Universitätsleben an. Alle können sehr stolz auf sich sein: Zweimal gab es sogar die Bestnote 1,0. Insgesamt lag der Durchschnitt bei 2,5 und war damit etwas besser als im Vorjahr. Durchgefallen ist keiner, nur ein Teilnehmer hat das Abitur abgebrochen. Für alle Grund genug, um den Erfolg richtig zu feiern.",
+                      "Während die Steiner-Schüler eine ganz ruhige Feier machten, drehten die Abiturienten der Heinrich-Mann-Schule im Bürgerhaus so richtig auf und präsentierten dem Publikum eine filmreife, fantastische Show. Bilder von den beiden Partys zeigen wir ab heute in unserer Bilder-Galerie im Internet.",
+                      "Nun haben also alle ihre Zeugnisse und endlich einmal richtig ausgeschlafen. Kein Wunder: In den letzten Wochen haben die Abiturienten nächtelang gelernt und gleichzeitig Abschied gefeiert – das war sehr anstrengend. Aber jetzt müssen wichtige Entscheidungen getroffen werden: Eine Ausbildung machen? Studieren? Oder vielleicht doch lieber eine Weltreise unternehmen? Wir haben außer Aynur Üstüner noch vier weitere Abiturienten nach ihren Plänen gefragt. Hier sind ihre Antworten:",
+                      "Christopher Hallgarten (20, RSS): „Ich bin froh, dass das Abitur vorbei ist. Nach einem kurzen Urlaub werde ich erstmal zwei Praktika in Krankenhäusern machen. Danach möchte ich Medizin studieren. Am liebsten in Bayreuth, da soll es schön gemütlich sein.“",
+                      "Inka Schröder (18, RSS): „Jetzt werde ich erstmal die freien Wochen bis zum Studium genießen. Wahrscheinlich wird es Jura werden. Natürlich will ich später auch einige Zeit im Ausland studieren. Eine Pause nach dem Abitur brauche ich nicht unbedingt, schließlich freue ich mich auf mein Studium.“",
+                      "Fabian Sänger (20, HMS): „Ich mache zunächst ein Freiwilliges Soziales Jahr. Auf diese Zeit freue ich mich schon sehr. Danach will ich unbedingt Sport studieren, weiß aber noch nicht, welche Uni mich nehmen wird. Ich lasse mich einfach überraschen, wohin die Reise geht.“",
+                      "Alexander Michels (19, HMS): „Ich habe mich für das Fach Jura entschieden und werde dafür nach München ziehen. Zuerst brauche ich aber ein paar Wochen Urlaub, um mich von dem Abi-Stress zu erholen. Die Schule werde ich nicht vermissen!“"
+                    ]
+                  },
+                  "questions": [
+                    {
+                      "id": 6,
+                      "prompt": "An den beiden Schulen",
+                      "options": [
+                        {
+                          "id": "a",
+                          "text": "haben alle teilnehmenden Schüler das Abitur bestanden."
+                        },
+                        {
+                          "id": "b",
+                          "text": "haben zwei Schüler die Note 2,5 erreicht."
+                        },
+                        {
+                          "id": "c",
+                          "text": "sind die Durchschnittsnoten gleich geblieben."
+                        }
+                      ],
+                      "answerId": "a",
+                      "answerText": "haben alle teilnehmenden Schüler das Abitur bestanden."
+                    },
+                    {
+                      "id": 7,
+                      "prompt": "Die Abiparty der Heinrich-Mann-Schule war fantastisch, weil",
+                      "options": [
+                        {
+                          "id": "a",
+                          "text": "die Abiturienten einen Film über die Party gemacht haben."
+                        },
+                        {
+                          "id": "b",
+                          "text": "die ganze Party im Internet gezeigt wurde."
+                        },
+                        {
+                          "id": "c",
+                          "text": "es eine tolle Show gab."
+                        }
+                      ],
+                      "answerId": "c",
+                      "answerText": "es eine tolle Show gab."
+                    },
+                    {
+                      "id": 8,
+                      "prompt": "In den letzten Wochen haben die Schülerinnen und Schüler",
+                      "options": [
+                        {
+                          "id": "a",
+                          "text": "immer nur nachts für das Abitur gelernt."
+                        },
+                        {
+                          "id": "b",
+                          "text": "lieber gefeiert als gelernt."
+                        },
+                        {
+                          "id": "c",
+                          "text": "viel zu wenig geschlafen."
+                        }
+                      ],
+                      "answerId": "c",
+                      "answerText": "viel zu wenig geschlafen."
+                    },
+                    {
+                      "id": 9,
+                      "prompt": "Inka und Alexander",
+                      "options": [
+                        {
+                          "id": "a",
+                          "text": "finden es schade, dass die Schulzeit vorbei ist."
+                        },
+                        {
+                          "id": "b",
+                          "text": "haben vor, Jura zu studieren."
+                        },
+                        {
+                          "id": "c",
+                          "text": "machen erst einmal zusammen Urlaub im Ausland."
+                        }
+                      ],
+                      "answerId": "b",
+                      "answerText": "haben vor, Jura zu studieren."
+                    },
+                    {
+                      "id": 10,
+                      "prompt": "Einer der vier Abiturienten",
+                      "options": [
+                        {
+                          "id": "a",
+                          "text": "möchte in Bayreuth studieren, weil die Stadt so schön groß ist."
+                        },
+                        {
+                          "id": "b",
+                          "text": "weiß noch nicht genau, wo er studieren wird."
+                        },
+                        {
+                          "id": "c",
+                          "text": "will nach dem Freiwilligen Sozialen Jahr zwei Praktika machen."
+                        }
+                      ],
+                      "answerId": "b",
+                      "answerText": "weiß noch nicht genau, wo er studieren wird."
+                    }
+                  ]
+                }
+              },
+              "teil-3": {
+                "meta": {
+                  "title": "Laura",
+                  "level": "B1",
+                  "partLabel": "Lesen Teil 3",
+                  "section": "lesen",
+                  "partNumber": 3,
+                  "sourceUrl": "",
+                  "sourceFile": "Laura yeni (2).pdf",
+                  "sourcePages": [
+                    5,
+                    6
+                  ],
+                  "extractedAt": "2026-10-09T15:57:45.685Z",
+                  "addedAt": "2026-10-09T15:57:45.685Z",
+                  "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                },
+                "content": {
+                  "instruction": "Lesen Sie die Situationen 11–20 und die Anzeigen a–l. Finden Sie für jede Situation die passende Anzeige. Sie können jede Anzeige nur einmal benutzen. Wenn Sie zu einer Situation keine Anzeige finden, markieren Sie ein x.",
+                  "situations": [
+                    {
+                      "id": 11,
+                      "text": "Sie suchen zwei Stühle für Ihren Garten, möchten aber insgesamt nicht mehr als 15 € bezahlen."
+                    },
+                    {
+                      "id": 12,
+                      "text": "Sie müssen Ihren guten Teppich reinigen lassen und suchen eine Firma mit langjähriger Erfahrung."
+                    },
+                    {
+                      "id": 13,
+                      "text": "Sie haben Geburtstag und möchten mit Ihren Gästen etwas Besonderes machen: Abends in den Zoo gehen."
+                    },
+                    {
+                      "id": 14,
+                      "text": "Sie sind gerade umgezogen und möchten sich eine neue Waschmaschine kaufen."
+                    },
+                    {
+                      "id": 15,
+                      "text": "Die Tochter Ihrer Nachbarin will später einmal Tierärztin werden und sucht einen Job für die Sommerferien. Geben Sie ihr einen Tipp."
+                    },
+                    {
+                      "id": 16,
+                      "text": "Kindergeburtstag! Ihr kleiner Sohn wird fünf. Sie möchten ihn und seine Freunde ins Kino einladen."
+                    },
+                    {
+                      "id": 17,
+                      "text": "Ein guter Freund hat ein Aquarium. Schenken Sie ihm etwas für sein Hobby."
+                    },
+                    {
+                      "id": 18,
+                      "text": "Sie bekommen mitten in der Nacht starke Kopfschmerzen und brauchen schnell Tabletten."
+                    },
+                    {
+                      "id": 19,
+                      "text": "Ihre Kinder möchten gerne ein Haustier. Sie haben nichts dagegen, es soll aber ein Tier aus dem Tierheim sein."
+                    },
+                    {
+                      "id": 20,
+                      "text": "Sie richten Ihr Schlafzimmer neu ein und suchen einen Kleiderschrank aus Skandinavien."
+                    }
+                  ],
+                  "ads": [
+                    {
+                      "id": "A",
+                      "text": "Neueröffnung · LADIC Teppichreinigung\n\nWir waschen Ihre Teppiche! Unsere Teppichwäsche ist das Beste, was Sie für Ihre wertvollen Teppiche tun können.\n\n– Teppich-Wäsche\n– Orientteppich-Handwäsche\n– Teppichreparaturen\n– KOSTENFREIE ABHOLUNG\n\nFrankfurt (06 9) 56 09 08 10\nwww.ladic-teppich.com"
+                    },
+                    {
+                      "id": "B",
+                      "text": "SUCHE\n\nWohnung oder Haus mit Balkon/Garten, WG-tauglich mit tierlieben Menschen. Du hast Platz? Dann hole mich aus dem Heim.\n\nTierschutzverein Langen / Egelsbach e.V.\nDieburger Str. 56 a, 63225 Langen\nFon: 06 10 3/92 95 32 · Fax: 06 10 3/45 92 62\nDeutscher Tierschutzbund e. V."
+                    },
+                    {
+                      "id": "C",
+                      "text": "NOTDIENSTE\n\nAPOTHEKEN\nGoethe-Apotheke, Neu-Isenburg, Bahnhofstr. 173, Tel: 0600 2/77 12 01.\nLöwen-Apotheke, Langen, Bahnstr. 31, Tel.: 06 11 39 09 81.\n\nÄRZTE\nÄrztlicher Notdienst: zu erfahren über den Anrufbeantworter des Hausarztes.\nTierärztlicher Notdienst: Dr. Thomas Würz, Neu-Isenburg, Tel.: 06 00 2/31 85 5."
+                    },
+                    {
+                      "id": "D",
+                      "text": "FLOHMARKT AKTUELL\n\nEckcouch, 6-Sitzer, braun/beige, Hocker, Couchtisch, 25,00 €, Tel. 06 18 2-31 50.\n\nKoffer Stratic m. Rollen (alte Form), 65×47×13 cm, (erweiterbar), 15,00 €, Tel. 07 05 4-88 46 2.\n\nGartenstühle blau, 2 Stück mit hoher Lehne, klappbar zus. für nur 13 €, Tel. 06 08 3/29 01 33.\n\nRucksäcke von 5–15,00 € zu verkaufen, Tel.-Nr. 06 68 1/50 05 7.\n\nKinderhüpfpferd „Rody“ rot 10,– €, Tel. 06 17 1/94 44 0.\n\nSideboard Eiche hell H 74, B 138 und T 42 mit 3 Türen und 4 Schubl. für 25 €, Tel. 06 07 4/13 98.\n\nWaschmaschine, 2 Jahre alt, wie neu, 150 EUR für Selbstabholer, Tel.: [Nummer im Scan nicht eindeutig lesbar; siehe Original]."
+                    },
+                    {
+                      "id": "E",
+                      "text": "PROFI-ZOO-WERNER\n\nExotische Fische, gesunde Japan-Kois, Aquarien-Zubehör!\nAquarien-Möbel\nSüß- und Meerwasserfische\nTerraristik\n\nDorfelder Str. 50 – Tel. 06 03 1 – 28 4 20\n61169 Friedberg-Dorheim\nwww.profi-zoo-werner.de"
+                    },
+                    {
+                      "id": "F",
+                      "text": "Der Zoo sucht Pferdefreunde\n\nFrankfurt. Der Zoo sucht für den Sommer tierliebe und pferdekundige Personen, die täglich zwei Stunden lang das Ponyreiten für Kinder betreuen.\n\nWeitere Informationen – auch zum Honorar – hat Erwin May, Telefon: 47 46 81 28."
+                    },
+                    {
+                      "id": "G",
+                      "text": "Alte Küche?\n\nWir modernisieren preiswert an einem Tag!\n\nSieht man Ihrer Küche die Jahre an, aber zum Wegwerfen ist sie zu schade? PORTE hat die Lösung: Alte Küchen wieder neu und modern mit neuen Fronten nach Maß!\nFordern Sie unseren Gratiskatalog an.\n\nPORTE-Ausstellungs-Center\nAssar-Gabrielsson-Straße\n63128 Dietzenbach-Steinberg\nTel. 06 07 4 – 30 67 27\nwww.porte-kuechen.de\nPORTE – Europas Renovierer Nr. 1"
+                    },
+                    {
+                      "id": "H",
+                      "text": "CINEMAXX Offenbach\n\nDer Filmpalast in der Berliner Straße 210\nAktuelles Programm\n\nKartenreservierung: 01 80 5-24 63 62 99 (0,14 EUR/Min., 0,50 EUR Aufschlag/Ticket), kostenlose Onlinereservierung: www.cinemaxx.de\n\nBank Job ab 12: 17.50, 20.20, Fr./Sa. auch 23.00 Uhr\nDie Insel der Abenteuer ab 6: 15.10, 17.40, So. auch 12.30 Uhr\nThe Happening ab 16: 17.30, 20.00, Fr./Sa. auch 22.40 Uhr\nIndiana Jones ab 12: 15.00, 17.10 (außer Mo.), 20.00 (außer Mi.), Fr./Sa. auch 23.00\nPenelope ab 6: So. 12.40\nKirschblüten ab 12: Nur montags 17 Uhr\nVerliebt in die Braut ab 12: Sa./So. 15.30"
+                    },
+                    {
+                      "id": "I",
+                      "text": "Führung · Konzert · Oper · Schauspiel\n\nFührung\nZoo Ffm: 19.30 Uhr, Nächtliche Expeditionen mit Lagerfeuer, Tel.: 069/22 34 77 12.\n\nKonzert\nInnenstadt Idstein: Jazzfestival, 62 Bands, 10 Bühnen, www.idstein-jazzfestival.de\nSpritzenhaus, Ffm: 21 Uhr, „The Time Bandits“.\n\nOper\nAlte Oper, Ffm: 20 Uhr, „Tanguera“, Tel.: 069/21 00 600.\nOper, Ffm: 19.30 Uhr, „Fidelio“, Tel.: 069/31 3-48 099.\n\nSchauspiel\nDie Komödie, Ffm: 20 Uhr, „Bitte nicht stören“, Ron Clark, Sam Bobrick, Tel.: 069/39 55 80.\nFritz-Remond-Theater im Zoo: 20 Uhr, „Der Kontrabass“, Patrick Süskind, Tel.: 069/54 62 66.\nVolkstheater, Ffm: 20 Uhr, „Volpone oder Der Fuchs“, Ben Jonson, Tel.: 069/39 96 09."
+                    },
+                    {
+                      "id": "J",
+                      "text": "POWALLA\n\nIhr freundliches Fachgeschäft für finnische und schwedische Möbel\n\nFrankfurt, Gr. Friedberger Str. 13–17\nTel. 069 39 93 73\n\nImport aus Skandinavien\nMöbel nach Maß, eigene Werkstatt\ngut – schnell – preiswert"
+                    },
+                    {
+                      "id": "K",
+                      "text": "Wer will mich haben?\n\nElvis (1) hat bereits die Schattenseiten des Lebens kennen lernen müssen. Sein Besitzer hat den freundlichen Hund ausgesetzt. Der Beagle ist ein unkomplizierter und idealer Freund einer Familie mit größeren Kindern.\n\nTelefon 464999 (von privat)"
+                    },
+                    {
+                      "id": "L",
+                      "text": "50 Jahre Erfahrung · BIO Handwäsche\n\nTeppichreinigung\nUnser Dauerangebot:\n• Kontrollieren\n• Waschen\n• Spülen\n• Trocknen: nur 7 € pro m²\n\nKostenloser Abhol- und Lieferservice im Umkreis von 100 km.\nTeppichreparaturen aller Art!\n\nPAULOWITSCH Dietzenbach\nTel.: 06 0 74 – 44 12 47"
+                    }
+                  ],
+                  "answers": [
+                    {
+                      "situationId": 11,
+                      "adId": "D"
+                    },
+                    {
+                      "situationId": 12,
+                      "adId": "L"
+                    },
+                    {
+                      "situationId": 13,
+                      "adId": "I"
+                    },
+                    {
+                      "situationId": 14,
+                      "adId": "X"
+                    },
+                    {
+                      "situationId": 15,
+                      "adId": "F"
+                    },
+                    {
+                      "situationId": 16,
+                      "adId": "X"
+                    },
+                    {
+                      "situationId": 17,
+                      "adId": "E"
+                    },
+                    {
+                      "situationId": 18,
+                      "adId": "C"
+                    },
+                    {
+                      "situationId": 19,
+                      "adId": "B"
+                    },
+                    {
+                      "situationId": 20,
+                      "adId": "J"
+                    }
+                  ]
+                }
+              },
+              "sprachbausteine-1": {
+                "meta": {
+                  "title": "Laura",
+                  "level": "B1",
+                  "partLabel": "Sprachbausteine Teil 1",
+                  "section": "sprachbausteine",
+                  "partNumber": 1,
+                  "sourceUrl": "",
+                  "sourceFile": "Laura yeni (2).pdf",
+                  "sourcePages": [
+                    7
+                  ],
+                  "extractedAt": "2026-10-09T15:57:45.685Z",
+                  "addedAt": "2026-10-09T15:57:45.685Z",
+                  "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                },
+                "content": {
+                  "title": "Hallo Nikolas — Los Mutantes",
+                  "instruction": "Lesen Sie den Text und schließen Sie die Lücken 21–30. Welche Lösung (a, b oder c) ist jeweils richtig?",
+                  "text": "Hallo Nikolas,\n\nin knapp einer Woche ist es so weit: Unsere spanische Theatergruppe „Los Mutantes“ geht auf große Tour [[21]] Deutschland und Spanien mit dem Stück „Niebla“ (Nebel).\nWir planen, mindestens 30 Vorstellungen zu geben und das mit so [[22]] bunt gemischten Gruppe aus zehn (!!) Ländern. Am 7. April beginnen wir unsere Theaterreise an der Uni von Alicante/Spanien. Du kannst [[23]] denken, dass ich als Nichtmuttersprachlerin sehr [[24]] bin, dort vor spanischem Publikum zu spielen, [[25]] ich ja fließend und fast ohne Akzent Spanisch spreche.\n[[26]] Herbst steht vielleicht auch meine alte „Wahlheimatstadt“ Barcelona auf dem Programm, wie gerne [[27]] ich euch alle wiedersehen! Ohne eure Hilfe hätte ich die Sprache niemals so gut lernen [[28]]. Ich denke oft an unsere multikulturelle Wohngemeinschaft: das gemeinsame Kochen, die tollen Feste … Ein bisschen [[29]] habe ich jetzt in der Theatergruppe [[30]].\n\nLiebe Grüße auch an deine Mitbewohner\nschickt dir\nSarah",
+                  "segments": [
+                    {
+                      "type": "text",
+                      "value": "Hallo Nikolas,\n\nin knapp einer Woche ist es so weit: Unsere spanische Theatergruppe „Los Mutantes“ geht auf große Tour "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 21,
+                      "answer": "durch"
+                    },
+                    {
+                      "type": "text",
+                      "value": " Deutschland und Spanien mit dem Stück „Niebla“ (Nebel).\nWir planen, mindestens 30 Vorstellungen zu geben und das mit so "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 22,
+                      "answer": "einer"
+                    },
+                    {
+                      "type": "text",
+                      "value": " bunt gemischten Gruppe aus zehn (!!) Ländern. Am 7. April beginnen wir unsere Theaterreise an der Uni von Alicante/Spanien. Du kannst "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 23,
+                      "answer": "dir"
+                    },
+                    {
+                      "type": "text",
+                      "value": " denken, dass ich als Nichtmuttersprachlerin sehr "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 24,
+                      "answer": "aufgeregt"
+                    },
+                    {
+                      "type": "text",
+                      "value": " bin, dort vor spanischem Publikum zu spielen, "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 25,
+                      "answer": "obwohl"
+                    },
+                    {
+                      "type": "text",
+                      "value": " ich ja fließend und fast ohne Akzent Spanisch spreche.\n"
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 26,
+                      "answer": "Im"
+                    },
+                    {
+                      "type": "text",
+                      "value": " Herbst steht vielleicht auch meine alte „Wahlheimatstadt“ Barcelona auf dem Programm, wie gerne "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 27,
+                      "answer": "würde"
+                    },
+                    {
+                      "type": "text",
+                      "value": " ich euch alle wiedersehen! Ohne eure Hilfe hätte ich die Sprache niemals so gut lernen "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 28,
+                      "answer": "können"
+                    },
+                    {
+                      "type": "text",
+                      "value": ". Ich denke oft an unsere multikulturelle Wohngemeinschaft: das gemeinsame Kochen, die tollen Feste … Ein bisschen "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 29,
+                      "answer": "davon"
+                    },
+                    {
+                      "type": "text",
+                      "value": " habe ich jetzt in der Theatergruppe "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 30,
+                      "answer": "wiedergefunden"
+                    },
+                    {
+                      "type": "text",
+                      "value": ".\n\nLiebe Grüße auch an deine Mitbewohner\nschickt dir\nSarah"
+                    }
+                  ],
+                  "blanks": [
+                    {
+                      "id": 21,
+                      "options": [
+                        "aus",
+                        "durch",
+                        "von"
+                      ]
+                    },
+                    {
+                      "id": 22,
+                      "options": [
+                        "eine",
+                        "einen",
+                        "einer"
+                      ]
+                    },
+                    {
+                      "id": 23,
+                      "options": [
+                        "dich",
+                        "dir",
+                        "sich"
+                      ]
+                    },
+                    {
+                      "id": 24,
+                      "options": [
+                        "aufgeregt",
+                        "aufregend",
+                        "aufzuregen"
+                      ]
+                    },
+                    {
+                      "id": 25,
+                      "options": [
+                        "obwohl",
+                        "weil",
+                        "zwar"
+                      ]
+                    },
+                    {
+                      "id": 26,
+                      "options": [
+                        "Im",
+                        "In",
+                        "Während"
+                      ]
+                    },
+                    {
+                      "id": 27,
+                      "options": [
+                        "hätte",
+                        "würde",
+                        "wurde"
+                      ]
+                    },
+                    {
+                      "id": 28,
+                      "options": [
+                        "können",
+                        "müssen",
+                        "sollen"
+                      ]
+                    },
+                    {
+                      "id": 29,
+                      "options": [
+                        "damit",
+                        "davon",
+                        "dazu"
+                      ]
+                    },
+                    {
+                      "id": 30,
+                      "options": [
+                        "wiederfinden",
+                        "wiedergefunden",
+                        "wiederzufinden"
+                      ]
+                    }
+                  ],
+                  "answers": [
+                    {
+                      "id": 21,
+                      "answer": "durch"
+                    },
+                    {
+                      "id": 22,
+                      "answer": "einer"
+                    },
+                    {
+                      "id": 23,
+                      "answer": "dir"
+                    },
+                    {
+                      "id": 24,
+                      "answer": "aufgeregt"
+                    },
+                    {
+                      "id": 25,
+                      "answer": "obwohl"
+                    },
+                    {
+                      "id": 26,
+                      "answer": "Im"
+                    },
+                    {
+                      "id": 27,
+                      "answer": "würde"
+                    },
+                    {
+                      "id": 28,
+                      "answer": "können"
+                    },
+                    {
+                      "id": 29,
+                      "answer": "davon"
+                    },
+                    {
+                      "id": 30,
+                      "answer": "wiedergefunden"
+                    }
+                  ]
+                }
+              },
+              "sprachbausteine-2": {
+                "meta": {
+                  "title": "Laura",
+                  "level": "B1",
+                  "partLabel": "Sprachbausteine Teil 2",
+                  "section": "sprachbausteine",
+                  "partNumber": 2,
+                  "sourceUrl": "",
+                  "sourceFile": "Laura yeni (2).pdf",
+                  "sourcePages": [
+                    8
+                  ],
+                  "extractedAt": "2026-10-09T15:57:45.685Z",
+                  "addedAt": "2026-10-09T15:57:45.685Z",
+                  "answerSource": "Laura yeni (2).pdf, Seite 16 (Korrekturen), mit den Aufgabentexten abgeglichen"
+                },
+                "content": {
+                  "title": "Hallo Benny, hallo Verena — Burg Tanneck",
+                  "instruction": "Lesen Sie den Text und schließen Sie die Lücken 31–40. Benutzen Sie die Wörter a–o. Jedes Wort passt nur einmal.",
+                  "text": "Songwettbewerb auf der Burg Tanneck\nvom 5. bis 7. September\n\nDer Songwettbewerb findet statt für\n– Sologesang\n– Sologesang mit Instrument\n– Gruppengesang (2–5 Teilnehmer)\n\nProfessionelle Musiker dürfen nicht teilnehmen.\nInformationen zur Anmeldung und zum Ort unter:\nwww.burg-tanneck.de\n\nHallo Benny, hallo Verena,\n\ndiese kurze Notiz habe ich gestern im Internet gefunden und [[31]] gleich an euch [[32]] denken. Es waren doch wunderbare Abende, [[33]] wir im letzten Urlaub in Griechenland verbracht haben. Eure Lieder und Bennys tolles Gitarrenspiel sind mir in guter Erinnerung geblieben. Wie [[34]] es, hättet ihr nicht mal Lust, bei so einem Songwettbewerb mitzumachen?\n\nIch kenne die Burg Tanneck [[35]] seit meiner Kindheit, als mich meine musikbegeisterten Eltern zu den Festivals mitgenommen haben. Was ganz wichtig ist: Dieser Songwettbewerb hat [[36]] nichts mit Kommerz und Vermarktung zu tun, wie man es sonst aus dem Fernsehen [[37]].\n\nEs geht nur [[38]], Spaß zu haben und zu singen! Schon allein die romantische Burg ist eine Reise wert, auch [[39]] ihr nur den anderen Sängern zuhören wollt. Lasst [[40]] was von euch hören!\n\nBis dann, liebe Grüße aus Saarbrücken\nAstrid",
+                  "segments": [
+                    {
+                      "type": "text",
+                      "value": "Songwettbewerb auf der Burg Tanneck\nvom 5. bis 7. September\n\nDer Songwettbewerb findet statt für\n– Sologesang\n– Sologesang mit Instrument\n– Gruppengesang (2–5 Teilnehmer)\n\nProfessionelle Musiker dürfen nicht teilnehmen.\nInformationen zur Anmeldung und zum Ort unter:\nwww.burg-tanneck.de\n\nHallo Benny, hallo Verena,\n\ndiese kurze Notiz habe ich gestern im Internet gefunden und "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 31,
+                      "answer": "MUSSTE"
+                    },
+                    {
+                      "type": "text",
+                      "value": " gleich an euch "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 32,
+                      "answer": "BEIDE"
+                    },
+                    {
+                      "type": "text",
+                      "value": " denken. Es waren doch wunderbare Abende, "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 33,
+                      "answer": "DIE"
+                    },
+                    {
+                      "type": "text",
+                      "value": " wir im letzten Urlaub in Griechenland verbracht haben. Eure Lieder und Bennys tolles Gitarrenspiel sind mir in guter Erinnerung geblieben. Wie "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 34,
+                      "answer": "WÄRE"
+                    },
+                    {
+                      "type": "text",
+                      "value": " es, hättet ihr nicht mal Lust, bei so einem Songwettbewerb mitzumachen?\n\nIch kenne die Burg Tanneck "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 35,
+                      "answer": "SCHON"
+                    },
+                    {
+                      "type": "text",
+                      "value": " seit meiner Kindheit, als mich meine musikbegeisterten Eltern zu den Festivals mitgenommen haben. Was ganz wichtig ist: Dieser Songwettbewerb hat "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 36,
+                      "answer": "ÜBERHAUPT"
+                    },
+                    {
+                      "type": "text",
+                      "value": " nichts mit Kommerz und Vermarktung zu tun, wie man es sonst aus dem Fernsehen "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 37,
+                      "answer": "KENNT"
+                    },
+                    {
+                      "type": "text",
+                      "value": ".\n\nEs geht nur "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 38,
+                      "answer": "DARUM"
+                    },
+                    {
+                      "type": "text",
+                      "value": ", Spaß zu haben und zu singen! Schon allein die romantische Burg ist eine Reise wert, auch "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 39,
+                      "answer": "WENN"
+                    },
+                    {
+                      "type": "text",
+                      "value": " ihr nur den anderen Sängern zuhören wollt. Lasst "
+                    },
+                    {
+                      "type": "luecke",
+                      "id": 40,
+                      "answer": "BALD"
+                    },
+                    {
+                      "type": "text",
+                      "value": " was von euch hören!\n\nBis dann, liebe Grüße aus Saarbrücken\nAstrid"
+                    }
+                  ],
+                  "wordBank": [
+                    {
+                      "id": "a",
+                      "text": "ALS"
+                    },
+                    {
+                      "id": "b",
+                      "text": "BALD"
+                    },
+                    {
+                      "id": "c",
+                      "text": "BEIDE"
+                    },
+                    {
+                      "id": "d",
+                      "text": "DARUM"
+                    },
+                    {
+                      "id": "e",
+                      "text": "DIE"
+                    },
+                    {
+                      "id": "f",
+                      "text": "DURFTE"
+                    },
+                    {
+                      "id": "g",
+                      "text": "ERST"
+                    },
+                    {
+                      "id": "h",
+                      "text": "HÄTTE"
+                    },
+                    {
+                      "id": "i",
+                      "text": "KENNT"
+                    },
+                    {
+                      "id": "j",
+                      "text": "MUSSTE"
+                    },
+                    {
+                      "id": "k",
+                      "text": "SCHON"
+                    },
+                    {
+                      "id": "l",
+                      "text": "WÄRE"
+                    },
+                    {
+                      "id": "m",
+                      "text": "WENN"
+                    },
+                    {
+                      "id": "n",
+                      "text": "WISST"
+                    },
+                    {
+                      "id": "o",
+                      "text": "ÜBERHAUPT"
+                    }
+                  ],
+                  "options": [
+                    "ALS",
+                    "BALD",
+                    "BEIDE",
+                    "DARUM",
+                    "DIE",
+                    "DURFTE",
+                    "ERST",
+                    "HÄTTE",
+                    "KENNT",
+                    "MUSSTE",
+                    "SCHON",
+                    "WÄRE",
+                    "WENN",
+                    "WISST",
+                    "ÜBERHAUPT"
+                  ],
+                  "blanks": [
+                    {
+                      "id": 31,
+                      "answer": "MUSSTE"
+                    },
+                    {
+                      "id": 32,
+                      "answer": "BEIDE"
+                    },
+                    {
+                      "id": 33,
+                      "answer": "DIE"
+                    },
+                    {
+                      "id": 34,
+                      "answer": "WÄRE"
+                    },
+                    {
+                      "id": 35,
+                      "answer": "SCHON"
+                    },
+                    {
+                      "id": 36,
+                      "answer": "ÜBERHAUPT"
+                    },
+                    {
+                      "id": 37,
+                      "answer": "KENNT"
+                    },
+                    {
+                      "id": 38,
+                      "answer": "DARUM"
+                    },
+                    {
+                      "id": 39,
+                      "answer": "WENN"
+                    },
+                    {
+                      "id": 40,
+                      "answer": "BALD"
+                    }
+                  ],
+                  "answers": [
+                    {
+                      "id": 31,
+                      "answer": "MUSSTE"
+                    },
+                    {
+                      "id": 32,
+                      "answer": "BEIDE"
+                    },
+                    {
+                      "id": 33,
+                      "answer": "DIE"
+                    },
+                    {
+                      "id": 34,
+                      "answer": "WÄRE"
+                    },
+                    {
+                      "id": 35,
+                      "answer": "SCHON"
+                    },
+                    {
+                      "id": 36,
+                      "answer": "ÜBERHAUPT"
+                    },
+                    {
+                      "id": 37,
+                      "answer": "KENNT"
+                    },
+                    {
+                      "id": 38,
+                      "answer": "DARUM"
+                    },
+                    {
+                      "id": 39,
+                      "answer": "WENN"
+                    },
+                    {
+                      "id": 40,
+                      "answer": "BALD"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "counts": {
+            "parts": 5,
+            "versions": 1
+          }
         }
       },
       "themeOrder": [
@@ -147678,6 +149567,7 @@
         "jan",
         "jennifer",
         "karla",
+        "laura",
         "miroslav",
         "moritz",
         "nadja-claudia",
@@ -147694,9 +149584,9 @@
         "mara-alt"
       ],
       "counts": {
-        "themes": 27,
-        "versions": 30,
-        "parts": 146
+        "themes": 26,
+        "versions": 35,
+        "parts": 150
       },
       "themeAliases": {
         "andreas-1": {
