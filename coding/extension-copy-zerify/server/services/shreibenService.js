@@ -138,6 +138,8 @@ function markdownFromLegacyIstructions(task, index) {
 function normalizeTaskShape(rawTask, fallback = {}, index = 0) {
   const source = rawTask && typeof rawTask === "object" ? rawTask : {};
   const current = fallback && typeof fallback === "object" ? fallback : {};
+  const addedAt = current.addedAt ?? source.addedAt;
+  const additionMetadata = addedAt ? { addedAt } : {};
 
   const hasNewShape = ["istructions", "instructions", "content", "tasks"].some((key) => {
     return Object.prototype.hasOwnProperty.call(source, key)
@@ -176,7 +178,8 @@ function normalizeTaskShape(rawTask, fallback = {}, index = 0) {
       title,
       istructions,
       content,
-      tasks
+      tasks,
+      ...additionMetadata
     };
   }
 
@@ -194,7 +197,8 @@ function normalizeTaskShape(rawTask, fallback = {}, index = 0) {
     title,
     istructions,
     content,
-    tasks
+    tasks,
+    ...additionMetadata
   };
 }
 

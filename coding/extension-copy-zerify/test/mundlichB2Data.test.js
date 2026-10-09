@@ -21,8 +21,8 @@ test("Mündlich Teil 2 uses the title-and-text schema for B1 and B2", async () =
   assert.match(presentation.prompts[0], /Buch/i);
   assert.match(presentation.prompts[1], /Film/i);
   assert.match(presentation.sourceUrl, /^https:\/\/shop\.telc\.net\//);
-  assert.equal(b2.parts["teil-2"].topics.length, 38);
-  assert.equal(b2.parts["teil-3"].topics.length, 38);
+  assert.equal(b2.parts["teil-2"].topics.length, 53);
+  assert.equal(b2.parts["teil-3"].topics.length, 47);
 
   for (const topic of b1.parts["teil-2"].topics) {
     assert.deepEqual(Object.keys(topic), ["title", "text"]);
@@ -31,7 +31,9 @@ test("Mündlich Teil 2 uses the title-and-text schema for B1 and B2", async () =
   }
 
   for (const topic of b2.parts["teil-2"].topics) {
-    assert.deepEqual(Object.keys(topic), ["title", "text"]);
+    const { addedAt, ...content } = topic;
+    assert.deepEqual(Object.keys(content), ["title", "text"]);
+    if (addedAt !== undefined) assert.ok(Number.isFinite(Date.parse(addedAt)));
     assert.ok(topic.title.trim());
     assert.ok(topic.text.length >= 180);
     assert.match(topic.text, /^Zeitschriftentext:\n/);
@@ -51,7 +53,7 @@ test("Mündlich Teil 2 uses the title-and-text schema for B1 and B2", async () =
   assert.equal(context.level, "b2");
   assert.equal(context.levelAvailable, true);
   assert.equal(context.partKey, "teil-2");
-  assert.equal(context.part.topics.length, 38);
+  assert.equal(context.part.topics.length, 53);
   assert.equal(context.parts.find((part) => part.key === "teil-2").visible, true);
   assert.equal(context.parts.find((part) => part.key === "teil-3").visible, true);
 });

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { BrainCircuit, ChevronDown, Eye, Highlighter, Plus, RefreshCw, Save, Sparkles, Trash2 } from "lucide-react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
@@ -151,7 +151,7 @@ function HighlightPicker({ sources = [], value = [], onChange }) {
       <div className="keyword-picker__top">
         <div>
           <span className="field__label">Markierte Textbelege</span>
-          <span className="field__hint">Wählen Sie unten ein Wort oder eine Textstelle aus und markieren Sie diese als Beleg.</span>
+          <span className="field__hint">Markieren Sie zwei bis drei Wörter oder einen sehr kurzen Ausdruck, der Text und richtige Antwort verbindet.</span>
         </div>
         <button className={`button button--small ${selection ? "button--keyword" : "button--subtle"}`} type="button" disabled={!selection} onMouseDown={(event) => event.preventDefault()} onClick={toggleSelection}>
           <Highlighter size={15} /> {exactMatch ? "Markierung entfernen" : "Auswahl markieren"}
@@ -174,22 +174,56 @@ function HighlightPicker({ sources = [], value = [], onChange }) {
   );
 }
 
-function useAnswerAnalysis(partKey, content, model) {
+function useAnswerAnalysis(partKey, content, model, onChange) {
   const [activeTarget, setActiveTarget] = useState(null);
   const [reviews, setReviews] = useState({});
+  const [actionError, setActionError] = useState(null);
+  const latest = useRef({ content, model, onChange });
+  const lifecycle = useRef(0);
+  latest.current = { content, model, onChange };
+  const signature = (value) => JSON.stringify(value, (key, item) => ["reason", "highlights"].includes(key) ? undefined : item);
   const mutation = useMutation({
-    mutationFn: (targetId) => apiRequest("/lesen/analyze-answer", { method: "POST", body: { partKey, targetId, content, model } })
+    mutationFn: (body) => apiRequest("/lesen/analyze-answer", { method: "POST", body })
   });
-  useEffect(() => setReviews({}), [model, partKey]);
-  const analyze = (targetId, onSuccess) => {
+  const keywordMutation = useMutation({
+    mutationFn: (body) => apiRequest("/lesen/highlight-answer", { method: "POST", body })
+  });
+  useEffect(() => {
+    setReviews({});
+    return () => { lifecycle.current += 1; };
+  }, [model, partKey]);
+  const run = (targetId, keywords) => {
+    if (mutation.isPending || keywordMutation.isPending) return;
     const key = String(targetId);
+    const original = signature(content);
+    const generation = lifecycle.current;
     setActiveTarget(key);
-    mutation.mutate(targetId, { onSuccess: (result) => { setReviews((current) => ({ ...current, [key]: result })); onSuccess(result); } });
+    setActionError(null);
+    mutation.reset();
+    keywordMutation.reset();
+    const action = keywords ? keywordMutation : mutation;
+    action.mutate({ partKey, targetId, content, model }, { onSuccess: (result) => {
+      if (generation !== lifecycle.current) return;
+      if (model !== latest.current.model || original !== signature(latest.current.content)) {
+        setActionError(new Error("Die Aufgabe wurde während der KI-Anfrage geändert. Bitte erneut versuchen."));
+        return;
+      }
+      // Merge only this tool's fields into the current draft; preserve manual edits.
+      const field = keywords ? "highlights" : "reason";
+      const current = latest.current.content;
+      const collection = partKey === "teil-2" ? "questions" : "answers";
+      const idKey = partKey === "teil-1" ? "textId" : partKey === "teil-3" ? "situationId" : "id";
+      latest.current.onChange({ ...current, [collection]: (current[collection] || []).map((item) => sameId(item[idKey], targetId) ? { ...item, [field]: result[field], ...(keywords ? { keywords: [] } : {}) } : item) });
+      if (!keywords) setReviews((previous) => ({ ...previous, [key]: result }));
+    } });
   };
   return {
-    analyze,
+    analyze: (targetId) => run(targetId, false),
+    highlight: (targetId) => run(targetId, true),
+    busy: mutation.isPending || keywordMutation.isPending,
     isAnalyzing: (targetId) => mutation.isPending && activeTarget === String(targetId),
-    errorFor: (targetId) => activeTarget === String(targetId) ? mutation.error : null,
+    isHighlighting: (targetId) => keywordMutation.isPending && activeTarget === String(targetId),
+    errorFor: (targetId) => activeTarget === String(targetId) ? actionError || keywordMutation.error || mutation.error : null,
     reviewFor: (targetId) => reviews[String(targetId)] || null,
     clearReview: (targetId) => setReviews((current) => { const next = { ...current }; delete next[String(targetId)]; return next; })
   };
@@ -222,15 +256,20 @@ function CorrectionCheckResults({ result }) {
   );
 }
 
-function AnswerInsight({ title, subtitle, sources, reason, highlights, aiReview, onReason, onHighlights, onAnalyze, analyzing, analysisError, mapping }) {
+function AnswerInsight({ title, subtitle, sources, reason, highlights, aiReview, onReason, onHighlights, onAnalyze, onHighlight, analyzing, highlighting, busy, analysisError, mapping }) {
   return (
     <article className="insight-card">
       <div className="insight-card__header">
         <span className="insight-icon"><Sparkles size={17} /></span>
         <div className="insight-card__heading"><h3>{title}</h3>{subtitle && <p>{subtitle}</p>}</div>
-        <button className="button button--ai button--small" type="button" onClick={onAnalyze} disabled={analyzing}>
-          <Sparkles className={analyzing ? "spin" : ""} size={15} /> {analyzing ? "KI analysiert…" : "Mit KI analysieren"}
-        </button>
+        <div className="insight-card__actions">
+          <button className="button button--ai button--small" type="button" onClick={onAnalyze} disabled={busy} title="Nur die Begründung erstellen. Markierungen bleiben erhalten.">
+            <Sparkles className={analyzing ? "spin" : ""} size={15} /> {analyzing ? "KI analysiert…" : "Mit KI analysieren"}
+          </button>
+          <button className="button button--keyword button--small" type="button" onClick={onHighlight} disabled={busy} title="Kurze Schlüsselwörter in Text und Lösung markieren. Die Begründung bleibt erhalten.">
+            <Highlighter className={highlighting ? "spin" : ""} size={15} /> {highlighting ? "Wörter werden markiert…" : "Schlüsselwörter markieren"}
+          </button>
+        </div>
       </div>
       {analysisError && <div className="ai-review-error">{analysisError.message}</div>}
       {aiReview && (
@@ -271,7 +310,7 @@ function TeilOneEditor({ content, onChange, aiModel }) {
   const texts = content.texts || [];
   const headlines = content.headlines || [];
   const answers = content.answers || [];
-  const ai = useAnswerAnalysis("teil-1", content, aiModel);
+  const ai = useAnswerAnalysis("teil-1", content, aiModel, onChange);
   const updateAnswer = (index, patch) => set("answers", answers.map((answer, answerIndex) => answerIndex === index ? { ...answer, ...patch } : answer));
 
   return (
@@ -284,7 +323,7 @@ function TeilOneEditor({ content, onChange, aiModel }) {
           {answers.map((answer, index) => {
             const text = texts.find((item) => sameId(item.id, answer.textId));
             const headline = headlines.find((item) => sameId(item.id, answer.headlineId));
-            return <AnswerInsight key={`${answer.textId}-${index}`} title={`Text ${answer.textId || index + 1}`} subtitle={headline?.text || "Passende Überschrift auswählen"} sources={[{ key: "text", label: `Text ${answer.textId}`, text: text?.text || "" }, { key: "headline", label: `Überschrift ${answer.headlineId}`, text: headline?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.textId)} onReason={(reason) => { ai.clearReview(answer.textId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.textId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.textId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.textId)} analysisError={ai.errorFor(answer.textId)} mapping={<><Field label="Text"><select value={answer.textId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { textId: event.target.value, highlights: [] }); }}><option value="">Text auswählen</option>{texts.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 55)}</option>)}</select></Field><Field label="Richtige Überschrift"><select value={answer.headlineId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { headlineId: event.target.value, highlights: [] }); }}><option value="">Überschrift auswählen</option>{headlines.map((item) => <option key={item.id} value={item.id}>{item.id} — {item.text}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
+            return <AnswerInsight key={`${answer.textId}-${index}`} title={`Text ${answer.textId || index + 1}`} subtitle={headline?.text || "Passende Überschrift auswählen"} sources={[{ key: "text", label: `Text ${answer.textId}`, text: text?.text || "" }, { key: "headline", label: `Überschrift ${answer.headlineId}`, text: headline?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.textId)} onReason={(reason) => { ai.clearReview(answer.textId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.textId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.textId)} onHighlight={() => ai.highlight(answer.textId)} analyzing={ai.isAnalyzing(answer.textId)} highlighting={ai.isHighlighting(answer.textId)} busy={ai.busy} analysisError={ai.errorFor(answer.textId)} mapping={<><Field label="Text"><select value={answer.textId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { textId: event.target.value, highlights: [] }); }}><option value="">Text auswählen</option>{texts.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 55)}</option>)}</select></Field><Field label="Richtige Überschrift"><select value={answer.headlineId ?? ""} onChange={(event) => { ai.clearReview(answer.textId); updateAnswer(index, { headlineId: event.target.value, highlights: [] }); }}><option value="">Überschrift auswählen</option>{headlines.map((item) => <option key={item.id} value={item.id}>{item.id} — {item.text}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
           })}
         </div>
       </Section>
@@ -301,7 +340,7 @@ function TeilTwoEditor({ content, onChange, aiModel }) {
   const set = (key, value) => onChange({ ...content, [key]: value });
   const passage = content.passage || { title: "", paragraphs: [], translated: [] };
   const questions = content.questions || [];
-  const ai = useAnswerAnalysis("teil-2", content, aiModel);
+  const ai = useAnswerAnalysis("teil-2", content, aiModel, onChange);
   const passageSources = [
     { key: "passage-title", label: "Texttitel", text: passage.title || "" },
     ...(passage.paragraphs || []).map((text, index) => ({ key: `passage:${index}`, label: `Absatz ${index + 1}`, text }))
@@ -322,7 +361,7 @@ function TeilTwoEditor({ content, onChange, aiModel }) {
               <article className="question-editor" key={`${question.id}-${index}`}>
                 <div className="question-editor__top"><span>Frage {question.id || index + 1}</span><RemoveButton label="Frage entfernen" onClick={() => set("questions", questions.filter((_, questionIndex) => questionIndex !== index))} /></div>
                 <div className="form-grid"><Field label="ID" className="field--short"><input value={question.id ?? ""} onChange={(event) => updateQuestion(index, { id: event.target.value })} /></Field><Field label="Frage" className="field--wide"><input value={question.prompt || ""} onChange={(event) => updateQuestion(index, { prompt: event.target.value })} /></Field>{options.map((option, optionIndex) => <Field label={`Option ${option.id.toUpperCase()}`} key={option.id}><input value={option.text || ""} onChange={(event) => updateOption(optionIndex, event.target.value)} /></Field>)}<Field label="Richtige Antwort"><select value={question.answerId || "a"} onChange={(event) => updateQuestion(index, { answerId: event.target.value })}>{options.map((option) => <option value={option.id} key={option.id}>{option.id.toUpperCase()}</option>)}</select></Field></div>
-                <AnswerInsight title="Lernrückmeldung" sources={[...passageSources, { key: "question", label: `Frage ${question.id}`, text: question.prompt || "" }, ...options.map((option) => ({ key: `option:${option.id}`, label: `Option ${option.id.toUpperCase()}`, text: option.text || "" }))]} reason={question.reason} highlights={question.highlights} aiReview={ai.reviewFor(question.id)} onReason={(reason) => { ai.clearReview(question.id); updateQuestion(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(question.id); updateQuestion(index, { highlights }); }} onAnalyze={() => ai.analyze(question.id, (result) => updateQuestion(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(question.id)} analysisError={ai.errorFor(question.id)} />
+                <AnswerInsight title="Lernrückmeldung" sources={[...passageSources, { key: "question", label: `Frage ${question.id}`, text: question.prompt || "" }, ...options.map((option) => ({ key: `option:${option.id}`, label: `Option ${option.id.toUpperCase()}`, text: option.text || "" }))]} reason={question.reason} highlights={question.highlights} aiReview={ai.reviewFor(question.id)} onReason={(reason) => { ai.clearReview(question.id); updateQuestion(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(question.id); updateQuestion(index, { highlights }); }} onAnalyze={() => ai.analyze(question.id)} onHighlight={() => ai.highlight(question.id)} analyzing={ai.isAnalyzing(question.id)} highlighting={ai.isHighlighting(question.id)} busy={ai.busy} analysisError={ai.errorFor(question.id)} />
               </article>
             );
           })}
@@ -338,7 +377,7 @@ function TeilThreeEditor({ content, onChange, aiModel }) {
   const situations = content.situations || [];
   const ads = content.ads || [];
   const answers = content.answers || [];
-  const ai = useAnswerAnalysis("teil-3", content, aiModel);
+  const ai = useAnswerAnalysis("teil-3", content, aiModel, onChange);
   const updateAnswer = (index, patch) => set("answers", answers.map((answer, answerIndex) => answerIndex === index ? { ...answer, ...patch } : answer));
   return (
     <>
@@ -349,7 +388,7 @@ function TeilThreeEditor({ content, onChange, aiModel }) {
           {answers.map((answer, index) => {
             const situation = situations.find((item) => sameId(item.id, answer.situationId));
             const ad = ads.find((item) => sameId(item.id, answer.adId));
-            return <AnswerInsight key={`${answer.situationId}-${index}`} title={`Situation ${answer.situationId || index + 1}`} subtitle={ad ? `Passt zu Anzeige ${ad.id}` : "Passende Anzeige auswählen"} sources={[{ key: "situation", label: `Situation ${answer.situationId}`, text: situation?.text || "" }, { key: "ad", label: `Anzeige ${answer.adId}`, text: ad?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.situationId)} onReason={(reason) => { ai.clearReview(answer.situationId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.situationId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.situationId, (result) => updateAnswer(index, { reason: result.reason, highlights: result.highlights }))} analyzing={ai.isAnalyzing(answer.situationId)} analysisError={ai.errorFor(answer.situationId)} mapping={<><Field label="Situation"><select value={answer.situationId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { situationId: event.target.value, highlights: [] }); }}><option value="">Situation auswählen</option>{situations.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><Field label="Richtige Anzeige"><select value={answer.adId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { adId: event.target.value, highlights: [] }); }}><option value="">Anzeige auswählen</option>{ads.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
+            return <AnswerInsight key={`${answer.situationId}-${index}`} title={`Situation ${answer.situationId || index + 1}`} subtitle={ad ? `Passt zu Anzeige ${ad.id}` : "Passende Anzeige auswählen"} sources={[{ key: "situation", label: `Situation ${answer.situationId}`, text: situation?.text || "" }, { key: "ad", label: `Anzeige ${answer.adId}`, text: ad?.text || "" }]} reason={answer.reason} highlights={answer.highlights} aiReview={ai.reviewFor(answer.situationId)} onReason={(reason) => { ai.clearReview(answer.situationId); updateAnswer(index, { reason }); }} onHighlights={(highlights) => { ai.clearReview(answer.situationId); updateAnswer(index, { highlights }); }} onAnalyze={() => ai.analyze(answer.situationId)} onHighlight={() => ai.highlight(answer.situationId)} analyzing={ai.isAnalyzing(answer.situationId)} highlighting={ai.isHighlighting(answer.situationId)} busy={ai.busy} analysisError={ai.errorFor(answer.situationId)} mapping={<><Field label="Situation"><select value={answer.situationId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { situationId: event.target.value, highlights: [] }); }}><option value="">Situation auswählen</option>{situations.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><Field label="Richtige Anzeige"><select value={answer.adId ?? ""} onChange={(event) => { ai.clearReview(answer.situationId); updateAnswer(index, { adId: event.target.value, highlights: [] }); }}><option value="">Anzeige auswählen</option>{ads.map((item) => <option key={item.id} value={item.id}>{item.id} — {String(item.text || "").slice(0, 60)}</option>)}</select></Field><RemoveButton label="Lösung entfernen" onClick={() => set("answers", answers.filter((_, answerIndex) => answerIndex !== index))} /></>} />;
           })}
         </div>
       </Section>

@@ -722,3 +722,18 @@ body { background: var(--canvas); }
   .part-manager__row > div { width: 100%; }
   .part-manager__row .button { flex: 1; }
 }
+
+/* Separate justification and keyword tools without widening the answer cards. */
+.insight-card__header { flex-wrap: wrap; }
+.insight-card__heading { flex: 1; }
+.insight-card__actions { display: flex; flex-basis: 100%; flex-wrap: wrap; gap: 8px; }
+.insight-card__actions .button { flex: 1 1 auto; margin: 0; white-space: normal; }
+@media (max-width: 620px) {
+  .insight-card__actions .button { width: auto; }
+  .editor-sections { grid-template-columns: minmax(0, 1fr); }
+  .editor-sections > * { min-width: 0; }
+  .editor-sections .panel__header { flex-wrap: wrap; }
+  .insight-list { grid-template-columns: minmax(0, 1fr); }
+  .insight-card { min-width: 0; }
+  .mapping-grid { grid-template-columns: minmax(0, 1fr) 36px; }
+}

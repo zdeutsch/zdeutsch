@@ -1,7 +1,11 @@
 export const fallbackAiModels = [
   { id: "gpt-6-astra", label: "GPT-6 Astra", description: "Höchste Genauigkeit für schwierige und mehrdeutige Prüfungsfragen.", recommended: true },
+  { id: "gpt-6.1-sol", label: "GPT-6.1 Sol", description: "Aktuelles Sol-Modell für präzise Begründungen und schnelle Prüfungen." },
+  { id: "gpt-6-luna", label: "GPT-6 Luna", description: "Schnelles, kostengünstiges Modell für klare Aufgaben." },
+  { id: "gpt-6-sol", label: "GPT-6 Sol", description: "Vorheriges Sol-Modell für anspruchsvolle Aufgaben." },
   { id: "gpt-5.6-terra", label: "GPT-5.6 Terra", description: "Ausgewogene Genauigkeit und Geschwindigkeit." },
   { id: "gpt-5.6-sol", label: "GPT-5.6 Sol", description: "Zuverlässige Prüfung mit kompakter Begründung." },
+  { id: "gpt-5.6-luna", label: "GPT-5.6 Luna", description: "Schnelle Alternative für einfache Prüfungen." },
   { id: "gpt-5.5", label: "GPT-5.5", description: "Bewährte Alternative für einfachere Prüfungen." }
 ];
 

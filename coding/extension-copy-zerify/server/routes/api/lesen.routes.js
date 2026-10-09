@@ -20,7 +20,7 @@ const {
   setPartVisibility,
   deletePart
 } = require("../../services/lesenService");
-const { analyzeLesenAnswer } = require("../../services/lesenAiService");
+const { analyzeLesenAnswer, highlightLesenAnswer } = require("../../services/lesenAiService");
 const {
   getContributionAiConfig,
   checkLesenContributionAnswers
@@ -48,6 +48,14 @@ router.get(
   "/ai-config",
   asyncHandler(async (req, res) => {
     res.json({ ok: true, data: getContributionAiConfig() });
+  })
+);
+
+router.post(
+  "/highlight-answer",
+  asyncHandler(async (req, res) => {
+    const data = await highlightLesenAnswer(req.body);
+    res.json({ ok: true, data });
   })
 );
 

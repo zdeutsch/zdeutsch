@@ -10,6 +10,24 @@ const AVAILABLE_MODELS = Object.freeze([
     recommended: true
   }),
   Object.freeze({
+    id: "gpt-6.1-sol",
+    label: "GPT-6.1 Sol",
+    description: "Aktuelles Sol-Modell für präzise Begründungen und schnelle Prüfungen.",
+    recommended: false
+  }),
+  Object.freeze({
+    id: "gpt-6-luna",
+    label: "GPT-6 Luna",
+    description: "Schnelles, kostengünstiges Modell für klare Aufgaben.",
+    recommended: false
+  }),
+  Object.freeze({
+    id: "gpt-6-sol",
+    label: "GPT-6 Sol",
+    description: "Vorheriges Sol-Modell für anspruchsvolle Aufgaben.",
+    recommended: false
+  }),
+  Object.freeze({
     id: "gpt-5.6-terra",
     label: "GPT-5.6 Terra",
     description: "Ausgewogene Genauigkeit und Geschwindigkeit.",
@@ -19,6 +37,12 @@ const AVAILABLE_MODELS = Object.freeze([
     id: "gpt-5.6-sol",
     label: "GPT-5.6 Sol",
     description: "Zuverlässige Prüfung mit kompakter Begründung.",
+    recommended: false
+  }),
+  Object.freeze({
+    id: "gpt-5.6-luna",
+    label: "GPT-5.6 Luna",
+    description: "Schnelle Alternative für einfache Prüfungen.",
     recommended: false
   }),
   Object.freeze({
