@@ -136346,7 +136346,7 @@
                         {
                           "type": "luecke",
                           "id": 21,
-                          "answer": ""
+                          "answer": "erzählt"
                         },
                         {
                           "type": "text",
@@ -136355,7 +136355,7 @@
                         {
                           "type": "luecke",
                           "id": 22,
-                          "answer": ""
+                          "answer": "dieses"
                         },
                         {
                           "type": "text",
@@ -136364,7 +136364,7 @@
                         {
                           "type": "luecke",
                           "id": 23,
-                          "answer": ""
+                          "answer": "aber"
                         },
                         {
                           "type": "text",
@@ -136373,7 +136373,7 @@
                         {
                           "type": "luecke",
                           "id": 24,
-                          "answer": ""
+                          "answer": "Bei"
                         },
                         {
                           "type": "text",
@@ -136382,7 +136382,7 @@
                         {
                           "type": "luecke",
                           "id": 25,
-                          "answer": ""
+                          "answer": "wenn"
                         },
                         {
                           "type": "text",
@@ -136391,7 +136391,7 @@
                         {
                           "type": "luecke",
                           "id": 26,
-                          "answer": ""
+                          "answer": "mich"
                         },
                         {
                           "type": "text",
@@ -136400,7 +136400,7 @@
                         {
                           "type": "luecke",
                           "id": 27,
-                          "answer": ""
+                          "answer": "mit"
                         },
                         {
                           "type": "text",
@@ -136409,7 +136409,7 @@
                         {
                           "type": "luecke",
                           "id": 28,
-                          "answer": ""
+                          "answer": "zwischen"
                         },
                         {
                           "type": "text",
@@ -136418,7 +136418,7 @@
                         {
                           "type": "luecke",
                           "id": 29,
-                          "answer": ""
+                          "answer": "müssen"
                         },
                         {
                           "type": "text",
@@ -136427,7 +136427,7 @@
                         {
                           "type": "luecke",
                           "id": 30,
-                          "answer": ""
+                          "answer": "alle"
                         },
                         {
                           "type": "text",
@@ -136515,47 +136515,127 @@
                             "allen",
                             "alles"
                           ]
+                        },
+                        {
+                          "id": 21,
+                          "options": [
+                            "erzähle",
+                            "erzählen",
+                            "erzählt"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "options": [
+                            "diese",
+                            "diesen",
+                            "dieses"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "options": [
+                            "aber",
+                            "obwohl",
+                            "sondern"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "options": [
+                            "Bei",
+                            "Für",
+                            "Zu"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "options": [
+                            "damit",
+                            "weil",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "options": [
+                            "dich",
+                            "mich",
+                            "sich"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "options": [
+                            "an",
+                            "bei",
+                            "mit"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "options": [
+                            "neben",
+                            "unter",
+                            "zwischen"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "options": [
+                            "brauchen",
+                            "haben",
+                            "müssen"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "options": [
+                            "alle",
+                            "allen",
+                            "alles"
+                          ]
                         }
                       ],
                       "answers": [
                         {
-                          "id": "Lücke 21",
+                          "id": 21,
                           "answer": "erzählt"
                         },
                         {
-                          "id": "Lücke 22",
+                          "id": 22,
                           "answer": "dieses"
                         },
                         {
-                          "id": "Lücke 23",
+                          "id": 23,
                           "answer": "aber"
                         },
                         {
-                          "id": "Lücke 24",
+                          "id": 24,
                           "answer": "Bei"
                         },
                         {
-                          "id": "Lücke 25",
+                          "id": 25,
                           "answer": "wenn"
                         },
                         {
-                          "id": "Lücke 26",
+                          "id": 26,
                           "answer": "mich"
                         },
                         {
-                          "id": "Lücke 27",
+                          "id": 27,
                           "answer": "mit"
                         },
                         {
-                          "id": "Lücke 28",
+                          "id": 28,
                           "answer": "zwischen"
                         },
                         {
-                          "id": "Lücke 29",
+                          "id": 29,
                           "answer": "müssen"
                         },
                         {
-                          "id": "Lücke 30",
+                          "id": 30,
                           "answer": "alle"
                         }
                       ]
