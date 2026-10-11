@@ -38,7 +38,7 @@ test("original exercises never read or write imported storage; corrupt or unavai
 });
 
 test("native records expose only their real parts, with original defaults and review state preserved", () => {
-  const exercises = C.mergedExercises({ "lesen.json": db });
+  const exercises = C.mergedExercises({ "lesen.json": db }, { levels: ["b2"] });
   assert.equal(exercises.length, 6);
   for (const item of exercises) {
     const theme = db.levels.b2.themes[item.target.themeKey], version = theme.versions[item.target.versionKey];

@@ -11,7 +11,7 @@ const { validateExercise, validateNamesEntry } = require("../server/services/exe
 const standalone = require("../site/database/exercise-additions.b2.json");
 const names = require("../site/database/exercise-names.b2.json");
 const databases = Object.fromEntries(C.FILES.map(file => [file, require(`../site/database/${file}`)]));
-const additions = { exercises: [...C.mergedExercises(databases, { includeHidden: true }), ...standalone.exercises] };
+const additions = { exercises: [...C.mergedExercises(databases, { includeHidden: true, levels: ["b2"] }), ...standalone.exercises] };
 
 test("31 additions contain exactly the reviewed missing sets and distinct grammar variants", () => {
   assert.equal(additions.exercises.length, 31);

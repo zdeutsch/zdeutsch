@@ -1,0 +1,75 @@
+{
+  "id": "267",
+  "title": "DIE PERFEKTE BEWERBUNG",
+  "type": "cloze",
+  "clozeText": "Viele Jugendliche wissen nicht genau, wie eine gute Bewerbung aussehen soll. Dabei ist es gar nicht so schwer, [[1]] man einige wichtige Regeln beachtet.\n\nZunächst sollte das Bewerbungsschreiben nicht zu lang sein. Es reicht völlig aus, wenn Sie sich [[2]] eine Seite beschränken. Wichtig ist auch, dass Sie klar und verständlich formulieren.\n\nInformieren Sie sich vorher genau über das Unternehmen, [[3]] Sie sich bewerben möchten. So können Sie Ihr Interesse besser begründen. Schreiben Sie auch, [[4]] Sie sich gerade für diese Stelle interessieren.\n\nAchten Sie darauf, dass Ihre Unterlagen vollständig sind. [[5]] dem Anschreiben gehören auch ein Lebenslauf und relevante Zeugnisse dazu.\n\nBevor Sie die Bewerbung abschicken, sollten Sie alles noch einmal genau [[6]]. Rechtschreibfehler machen keinen guten Eindruck.\n\nWenn Sie diese Tipps beachten, [[7]] Sie gute Chancen auf eine Einladung zum Vorstellungsgespräch.\n\nWir wünschen Ihnen viel Erfolg [[8]] Ihrer Bewerbung!\n\n[[9]] Sie weitere Informationen benötigen, besuchen Sie unsere Website oder rufen Sie uns an. Wir helfen Ihnen [[10]] weiter.",
+  "dragOptions": [
+    "AN",
+    "AUF",
+    "BEI",
+    "BEVOR",
+    "DAMIT",
+    "DENN",
+    "DURCH",
+    "FÜR",
+    "GENAU",
+    "LESEN",
+    "WENN",
+    "WARUM",
+    "WERDEN",
+    "ZU",
+    "ZUERST"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "1",
+      "correctAnswer": "WENN"
+    },
+    {
+      "id": 2,
+      "text": "2",
+      "correctAnswer": "AUF"
+    },
+    {
+      "id": 3,
+      "text": "3",
+      "correctAnswer": "BEI"
+    },
+    {
+      "id": 4,
+      "text": "4",
+      "correctAnswer": "WARUM"
+    },
+    {
+      "id": 5,
+      "text": "5",
+      "correctAnswer": "ZU"
+    },
+    {
+      "id": 6,
+      "text": "6",
+      "correctAnswer": "LESEN"
+    },
+    {
+      "id": 7,
+      "text": "7",
+      "correctAnswer": "WERDEN"
+    },
+    {
+      "id": 8,
+      "text": "8",
+      "correctAnswer": "BEI"
+    },
+    {
+      "id": 9,
+      "text": "9",
+      "correctAnswer": "WENN"
+    },
+    {
+      "id": 10,
+      "text": "10",
+      "correctAnswer": "GERNE"
+    }
+  ]
+}

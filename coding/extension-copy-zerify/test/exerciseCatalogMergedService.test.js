@@ -28,7 +28,7 @@ function isolatedService() {
   vm.runInNewContext(fs.readFileSync(filename, "utf8"), { module, process, require(id) {
     if (id === "node:fs/promises") return localFs;
     if (id === "../repositories/jsonRepository") return repo;
-    if (id === "../repositories/exerciseSidecarRepository") return { read: async kind => ({ data: kind === "additions" ? { exercises: [] } : { entries: [] }, revision: "sidecar" }), mutate: async () => { throw new Error("Merged content must not be written to a sidecar"); } };
+    if (id === "../repositories/exerciseSidecarRepository") return { forLevel: () => ({ read: async kind => ({ data: kind === "additions" ? { exercises: [] } : { entries: [] }, revision: "sidecar" }), mutate: async () => { throw new Error("Merged content must not be written to a sidecar"); } }) };
     return localRequire(id);
   } }, { filename });
   const read = () => structuredClone(stored);
@@ -78,4 +78,26 @@ test("changing a merged exercise body removes its previous answer approval", asy
   assert.equal(record.legacyImport.review.answerStatus, "unverified");
   assert.equal(record.legacyImport.review.note, "");
   assert.equal(record.statements[0].sourceQuestionId, hearing.payload.statements[0].sourceQuestionId);
+});
+
+test("B1 manager edits its native word-bank version and keeps B2 isolated", async () => {
+  const { service, read, writes } = isolatedService();
+  const listed = await service.list("b1");
+  assert.equal(listed.additions.length, 2);
+  assert.ok(listed.additions.every(item => item.level === "b1"));
+  const item = listed.additions[0], before = read();
+  await assert.rejects(service.updateExercise(item.id, { revision: listed.additionsRevision, patch: { review: { answerStatus: "verified", note: "Reviewed" } } }, "b1"), /available words once each/);
+  assert.deepEqual(read(), before);
+  const payload = structuredClone(item.payload);
+  payload.answers = payload.answers.map((answer, index) => ({ ...answer, answer: payload.options[index] }));
+  await service.updateExercise(item.id, { revision: listed.additionsRevision, patch: { payload, review: { answerStatus: "verified", note: "Reviewed fixture correction" } } }, "b1");
+  const after = read();
+  assert.deepEqual(after.lesen.levels.b2, before.lesen.levels.b2);
+  assert.deepEqual(after.horen, before.horen); assert.deepEqual(after.shreiben, before.shreiben);
+  const record = C.resolveTarget({ "lesen.json": after.lesen }, item.target).record;
+  assert.equal(C.hasAnswerKey({ module: "lesen", payload: record }), true);
+  assert.equal(record.blanks[0].answer, payload.answers[0].answer);
+  assert.equal(record.segments.find(segment => segment.type === "luecke").answer, payload.answers[0].answer);
+  assert.equal((await service.list()).additions.length, 31);
+  assert.deepEqual(writes, ["lesen"]);
 });

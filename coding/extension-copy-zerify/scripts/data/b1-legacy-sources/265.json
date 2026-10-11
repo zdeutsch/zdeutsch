@@ -1,0 +1,75 @@
+{
+  "id": "265",
+  "title": "WIR SIND FÜR SIE DA!",
+  "type": "cloze",
+  "clozeText": "Andreas – Giselastraße 6\nD- 12205 Berlin\n\nLiebe Frau Fröhlich,\n\nwir freuen uns sehr, dass Sie sich für unsere Sprachkurse interessieren. Gerne beantworten wir Ihre Fragen.\n\nUnsere Deutschkurse beginnen [[1]] im Jahr – jeweils im Januar, April und September. Ein Kurs dauert 12 Wochen. Der Unterricht findet [[2]] pro Woche statt, und [[3]] zwar montags, mittwochs und freitags von 18 bis 20 Uhr.\n\nDie Kursgebühr beträgt 320 Euro. Darin sind alle Lehrmaterialien [[4]] enthalten. Wenn Sie sich bis zum 15. Dezember anmelden, erhalten Sie [[5]] einen Rabatt von 10 Prozent.\n\nAm Ende des Kurses legen Sie eine Prüfung ab. Wenn Sie die Prüfung bestehen, bekommen Sie ein Zertifikat, [[6]] Ihre Deutschkenntnisse bestätigt.\n\nHaben Sie noch Fragen? Dann rufen Sie uns bitte an oder schreiben Sie uns eine E-Mail. Wir helfen Ihnen [[7]] weiter.\n\nUnsere Adresse finden Sie [[8]] auf unserer Website. Dort können Sie sich auch direkt [[9]].\n\nWir freuen uns [[10]] Ihre Anmeldung.\n\nMit freundlichen Grüßen\n\nIhr Sprachinstitut Berlin",
+  "dragOptions": [
+    "ALLES",
+    "AN",
+    "AUCH",
+    "DREI",
+    "GERNE",
+    "MEHRMALS",
+    "SCHON",
+    "SO",
+    "UM",
+    "WAS",
+    "WELCHES",
+    "WIEDER",
+    "ZWEIMAL",
+    "ANMELDEN",
+    "AUF"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "1",
+      "correctAnswer": "DREI"
+    },
+    {
+      "id": 2,
+      "text": "2",
+      "correctAnswer": "DREI"
+    },
+    {
+      "id": 3,
+      "text": "3",
+      "correctAnswer": "SO"
+    },
+    {
+      "id": 4,
+      "text": "4",
+      "correctAnswer": "AUCH"
+    },
+    {
+      "id": 5,
+      "text": "5",
+      "correctAnswer": "SCHON"
+    },
+    {
+      "id": 6,
+      "text": "6",
+      "correctAnswer": "WELCHES"
+    },
+    {
+      "id": 7,
+      "text": "7",
+      "correctAnswer": "GERNE"
+    },
+    {
+      "id": 8,
+      "text": "8",
+      "correctAnswer": "AUCH"
+    },
+    {
+      "id": 9,
+      "text": "9",
+      "correctAnswer": "ANMELDEN"
+    },
+    {
+      "id": 10,
+      "text": "10",
+      "correctAnswer": "AUF"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # B2 imported exercises and alternative names
 
+The shared catalogue also supports B1 following its separate integration. `baseEntries`, `mergedExercises` and `combinedNames` enumerate both levels by default; pass `{ levels: ["b2"] }` to restrict a caller to B2. The manager API accepts a `level` query parameter and retains B2 as its default. B2 native data and sidecars were preserved during the B1 merge. See `docs/b1-legacy-integration.md` for the B1 destinations and word-bank handling.
+
 The 31 previously standalone additions are now stored in the existing module databases. Their original texts, question identities, names and provenance are preserved. No original exercise or correction was replaced.
 
 - `site/database/lesen.json`: two new partial Themen (**Liebe Karin**, `telc-b2-g1-24`, and **Liebe Sandra – Helgoland**, `telc-b2-g1-37`), containing only Sprachbausteine Teil 1. Four distinct letters are partial versions of their related Themen: **Liebe Lara → Keine Zeit** (`keine-zeit/telc-b2-g1-19`), **Frau Goronsksa → Benzin** (`benzin/telc-b2-g1-23`), **Liebe Clara → Licht** (`licht/telc-b2-g1-28`), and **Jens → Jens (alt)** (`jens-alt/telc-b2-g1-33`). Existing versions and their defaults remain unchanged; missing parts are not copied or fabricated.

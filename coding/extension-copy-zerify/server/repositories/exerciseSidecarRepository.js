@@ -3,10 +3,11 @@ const path = require("node:path");
 const { randomUUID, createHash } = require("node:crypto");
 const { DATABASE_DIR } = require("../config/constants");
 const AppError = require("../utils/appError");
-const files = Object.freeze({ additions: "exercise-additions.b2.json", names: "exercise-names.b2.json" });
 const revision = raw => createHash("sha256").update(raw).digest("hex");
 
-function createSidecarRepository(directory = DATABASE_DIR) {
+function createSidecarRepository(directory = DATABASE_DIR, level = "b2") {
+  if (!["b1", "b2"].includes(level)) throw new AppError("Unsupported catalogue level", 400);
+  const files = Object.freeze({ additions: `exercise-additions.${level}.json`, names: `exercise-names.${level}.json` });
   const queues = new Map();
   function file(key) {
     if (!Object.hasOwn(files, key)) throw new AppError("Unknown additional-content file", 400);
@@ -35,4 +36,9 @@ function createSidecarRepository(directory = DATABASE_DIR) {
   }
   return { read, mutate };
 }
-module.exports = { ...createSidecarRepository(), createSidecarRepository };
+const repositories = new Map();
+function forLevel(level = "b2") {
+  if (!repositories.has(level)) repositories.set(level, createSidecarRepository(DATABASE_DIR, level));
+  return repositories.get(level);
+}
+module.exports = { ...forLevel(), createSidecarRepository, forLevel };
