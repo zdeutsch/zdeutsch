@@ -151,19 +151,19 @@ function renderExerciseLibrary(query) {
   const singleView = exerciseView === "exercises";
   themeGrid.hidden = singleView;
   document.getElementById("theme-library-heading").hidden = singleView;
-  if (!C || state.level !== "b2" || (!query && !singleView)) { section.hidden = true; return 0; }
+  if (!C || !["b1", "b2"].includes(state.level) || (!query && !singleView)) { section.hidden = true; return 0; }
   section.hidden = false;
   document.getElementById("exercise-library-title").textContent = singleView
     ? (exerciseLibraryTabs.querySelector('[aria-selected="true"]')?.textContent || "Einzelübungen")
     : "Passende Teile und Einzelübungen";
-  const named = singleView && !query ? exerciseNames.filter(e => e.module === state.section && e.target.kind !== "theme") : C.searchNames(exerciseNames, { query, level: state.level, module: state.section });
+  const named = singleView && !query ? exerciseNames.filter(e => e.target.level === state.level && e.module === state.section && e.target.kind !== "theme") : C.searchNames(exerciseNames, { query, level: state.level, module: state.section });
   const added = C.searchAdditions(exerciseData.additions, { query, level: state.level, module: state.section });
   const groups = new Map();
   named.forEach(entry => {
     if (entry.target.kind === "theme") return;
     if (exercisePartKey && singleView && entry.target.partKey !== exercisePartKey) return;
     if (!singleView && entry.record.legacyImport && entry.module === "lesen") {
-      const theme = state.db?.levels?.b2?.themes?.[entry.target.themeKey];
+      const theme = state.db?.levels?.[state.level]?.themes?.[entry.target.themeKey];
       const versions = getVersionKeys(theme);
       if (versions.length === 1 && Object.keys(theme.versions[versions[0]].lesen.parts).length === 1 && matchesSearchQuery(query, ...getThemeSearchValues(entry.target.themeKey, theme))) return;
     }
@@ -223,7 +223,7 @@ function renderExerciseLibrary(query) {
 
 function configureExerciseTabs() {
   if (!exerciseLibraryTabs) return;
-  const supportsExercises = state.level === "b2";
+  const supportsExercises = ["b1", "b2"].includes(state.level);
   exerciseLibraryTabs.hidden = !supportsExercises;
   if (!supportsExercises) {
     exerciseView = "themes";
@@ -768,7 +768,7 @@ function clearThemeSearch() {
 
 function getSearchPlaceholder() {
   const levelLabel = (state.level || "").toUpperCase();
-  if (state.level === "b2" && exerciseView === "exercises") {
+  if (["b1", "b2"].includes(state.level) && exerciseView === "exercises") {
     const label = window.ZDeutschExercises.partLabel({ module: state.section, file: state.section === "mundlich" ? "mundlich.json" : undefined, partKey: exercisePartKey });
     return `${levelLabel} ${label === "Thema" ? "Übungen" : label} durchsuchen...`;
   }
@@ -3988,7 +3988,7 @@ function renderThemeCards() {
     const themeLabel = (themeEntry.title || themeKey).replace(/\s*\(nur\s+[^)]+\)\s*$/i, "").trim();
     const importedParts = Object.values(versionEntry?.lesen?.parts || {});
     const imported = importedParts.length === 1 && importedParts[0].content?.legacyImport
-      ? window.ZDeutschExercises.mergedExercise({ record: importedParts[0].content, target: { file: "lesen.json", level: "b2", kind: "part", themeKey, versionKey: defaultVersion, partKey: versionEntry.lesen.partOrder[0] }, module: "lesen", contextTitle: themeLabel, versionLabel: versionEntry.label }) : null;
+      ? window.ZDeutschExercises.mergedExercise({ record: importedParts[0].content, target: { file: "lesen.json", level: levelKey, kind: "part", themeKey, versionKey: defaultVersion, partKey: versionEntry.lesen.partOrder[0] }, module: "lesen", contextTitle: themeLabel, versionLabel: versionEntry.label }) : null;
     const importedProgress = imported ? getAdditionalExerciseInfo(imported) : null;
     const downloadBtn = createEl(
       "button",
@@ -4509,7 +4509,7 @@ async function init() {
   );
 
   if (window.ZDeutschExercises) {
-    const [extra, codes, speaking] = await Promise.all([window.ZDeutschExercises.load(), loadNamedDatabase("horen-codes.json"), loadNamedDatabase("mundlich.json")]);
+    const [extra, codes, speaking] = await Promise.all([window.ZDeutschExercises.loadAll(), loadNamedDatabase("horen-codes.json"), loadNamedDatabase("mundlich.json")]);
     exerciseData = extra;
     exerciseNames = window.ZDeutschExercises.combinedNames({ "lesen.json": state.db, "shreiben.json": state.shreibenDb, "horen-audio.json": state.horenAudioDb, "horen-codes.json": codes, "mundlich.json": speaking }, extra.names);
   }

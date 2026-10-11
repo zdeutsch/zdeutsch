@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "exercises": [],
+  "migrated": [
+    {
+      "id": "legacy:telc:b1:265",
+      "title": "WIR SIND FÜR SIE DA!",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "vera",
+        "versionKey": "telc-b1-265",
+        "partKey": "sprachbausteine-2"
+      }
+    },
+    {
+      "id": "legacy:telc:b1:267",
+      "title": "DIE PERFEKTE BEWERBUNG",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "thomas-anna",
+        "versionKey": "telc-b1-267",
+        "partKey": "sprachbausteine-2"
+      }
+    }
+  ]
+}

@@ -1124,7 +1124,7 @@ function renderResults() {
   const order = getLesenPartOrder(lesenEntry);
   if (order.some(partKey => !ZDeutschLesenImports.canScore(lesenEntry.parts[partKey].content))) {
     resultTitle.textContent = "Übung abgeschlossen";
-    resultSubtitle.textContent = "Für diese Übung fehlen Lösungen. Es wird kein Prüfungsergebnis berechnet.";
+    resultSubtitle.textContent = "Die Lösungen dieser Übung sind unvollständig oder nicht verwendbar. Es wird kein Prüfungsergebnis berechnet.";
     resultSummary.replaceChildren();
     resultBreakdown.replaceChildren();
     order.forEach(partKey => {
@@ -2758,7 +2758,7 @@ function renderCurrentPart() {
   }
 
   if (!ZDeutschLesenImports.canScore(partData.content)) {
-    leftPanel.append(createEl("p", "exercise-note", "Für diese Übung fehlen Lösungen. Es wird kein Prüfungsergebnis berechnet."));
+    leftPanel.append(createEl("p", "exercise-note", "Die Lösungen dieser Übung sind unvollständig oder nicht verwendbar. Es wird kein Prüfungsergebnis berechnet."));
   }
   const importedNames = partData.content?.legacyImport?.names || [];
   const otherNames = [...new Set(importedNames)].filter(name => name !== partData.content.title);
@@ -2771,7 +2771,7 @@ function renderCurrentPart() {
   const order = getLesenPartOrder(lesenEntry);
   const index = order.indexOf(state.part);
   const atLastPart = index === order.length - 1;
-  const named = scopedExerciseNames.find(entry => entry.target.themeKey === state.theme && entry.target.versionKey === getActiveVersionKey() && entry.target.partKey === state.part);
+  const named = scopedExerciseNames.find(entry => entry.target.level === state.level && entry.target.themeKey === state.theme && entry.target.versionKey === getActiveVersionKey() && entry.target.partKey === state.part);
   if (named) {
     const label = createEl("h2", "exercise-name-subtitle", named.subtitle);
     const details = createEl("details", "exercise-name-details");
@@ -3050,7 +3050,7 @@ async function init() {
     return;
   }
   if (window.ZDeutschExercises) {
-    const extra = await window.ZDeutschExercises.load();
+    const extra = await window.ZDeutschExercises.loadAll();
     scopedExerciseNames = window.ZDeutschExercises.bindNames({ "lesen.json": state.db }, extra.names);
   }
 

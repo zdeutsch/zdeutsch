@@ -99655,10 +99655,347 @@
                   "parts": 5
                 }
               }
+            },
+            "telc-b1-265": {
+              "key": "telc-b1-265",
+              "label": "WIR SIND FÜR SIE DA! · alte Fassung",
+              "title": "WIR SIND FÜR SIE DA!",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-2"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "WIR SIND FÜR SIE DA!",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "https://telc.site/quiz/265"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie den Text und ergänzen Sie die Lücken. Jedes Wort kann nur einmal verwendet werden.",
+                      "text": "Andreas – Giselastraße 6\nD- 12205 Berlin\n\nLiebe Frau Fröhlich,\n\nwir freuen uns sehr, dass Sie sich für unsere Sprachkurse interessieren. Gerne beantworten wir Ihre Fragen.\n\nUnsere Deutschkurse beginnen [[31]] im Jahr – jeweils im Januar, April und September. Ein Kurs dauert 12 Wochen. Der Unterricht findet [[32]] pro Woche statt, und [[33]] zwar montags, mittwochs und freitags von 18 bis 20 Uhr.\n\nDie Kursgebühr beträgt 320 Euro. Darin sind alle Lehrmaterialien [[34]] enthalten. Wenn Sie sich bis zum 15. Dezember anmelden, erhalten Sie [[35]] einen Rabatt von 10 Prozent.\n\nAm Ende des Kurses legen Sie eine Prüfung ab. Wenn Sie die Prüfung bestehen, bekommen Sie ein Zertifikat, [[36]] Ihre Deutschkenntnisse bestätigt.\n\nHaben Sie noch Fragen? Dann rufen Sie uns bitte an oder schreiben Sie uns eine E-Mail. Wir helfen Ihnen [[37]] weiter.\n\nUnsere Adresse finden Sie [[38]] auf unserer Website. Dort können Sie sich auch direkt [[39]].\n\nWir freuen uns [[40]] Ihre Anmeldung.\n\nMit freundlichen Grüßen\n\nIhr Sprachinstitut Berlin",
+                      "options": [
+                        "ALLES",
+                        "AN",
+                        "AUCH",
+                        "DREI",
+                        "GERNE",
+                        "MEHRMALS",
+                        "SCHON",
+                        "SO",
+                        "UM",
+                        "WAS",
+                        "WELCHES",
+                        "WIEDER",
+                        "ZWEIMAL",
+                        "ANMELDEN",
+                        "AUF"
+                      ],
+                      "wordBank": [
+                        {
+                          "id": "a",
+                          "text": "ALLES"
+                        },
+                        {
+                          "id": "b",
+                          "text": "AN"
+                        },
+                        {
+                          "id": "c",
+                          "text": "AUCH"
+                        },
+                        {
+                          "id": "d",
+                          "text": "DREI"
+                        },
+                        {
+                          "id": "e",
+                          "text": "GERNE"
+                        },
+                        {
+                          "id": "f",
+                          "text": "MEHRMALS"
+                        },
+                        {
+                          "id": "g",
+                          "text": "SCHON"
+                        },
+                        {
+                          "id": "h",
+                          "text": "SO"
+                        },
+                        {
+                          "id": "i",
+                          "text": "UM"
+                        },
+                        {
+                          "id": "j",
+                          "text": "WAS"
+                        },
+                        {
+                          "id": "k",
+                          "text": "WELCHES"
+                        },
+                        {
+                          "id": "l",
+                          "text": "WIEDER"
+                        },
+                        {
+                          "id": "m",
+                          "text": "ZWEIMAL"
+                        },
+                        {
+                          "id": "n",
+                          "text": "ANMELDEN"
+                        },
+                        {
+                          "id": "o",
+                          "text": "AUF"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "sourceQuestionId": 1,
+                          "answer": "DREI"
+                        },
+                        {
+                          "id": 32,
+                          "sourceQuestionId": 2,
+                          "answer": "DREI"
+                        },
+                        {
+                          "id": 33,
+                          "sourceQuestionId": 3,
+                          "answer": "SO"
+                        },
+                        {
+                          "id": 34,
+                          "sourceQuestionId": 4,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "id": 35,
+                          "sourceQuestionId": 5,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "id": 36,
+                          "sourceQuestionId": 6,
+                          "answer": "WELCHES"
+                        },
+                        {
+                          "id": 37,
+                          "sourceQuestionId": 7,
+                          "answer": "GERNE"
+                        },
+                        {
+                          "id": 38,
+                          "sourceQuestionId": 8,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "id": 39,
+                          "sourceQuestionId": 9,
+                          "answer": "ANMELDEN"
+                        },
+                        {
+                          "id": 40,
+                          "sourceQuestionId": 10,
+                          "answer": "AUF"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "DREI"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "DREI"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "SO"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "WELCHES"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "GERNE"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "ANMELDEN"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "AUF"
+                        }
+                      ],
+                      "title": "WIR SIND FÜR SIE DA!",
+                      "legacyImport": {
+                        "id": "legacy:telc:b1:265",
+                        "names": [
+                          "WIR SIND FÜR SIE DA!",
+                          "VERA"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b1-20261011",
+                          "source": "telc.site",
+                          "sourceLevel": "b1",
+                          "quizId": "265",
+                          "url": "https://telc.site/quiz/265",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "5d4bf5125535bb179a1562e9eb0ebd634ecfca2e9a2c3607deaac90b1171a79e",
+                          "audioUrls": [],
+                          "sourceIssues": [
+                            "The source reuses DREI and AUCH for multiple gaps, although each bank word can only be used once."
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": "The source reuses DREI and AUCH for multiple gaps, although each bank word can only be used once."
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b1/themes/vera/versions/default/lesen/parts/sprachbausteine-2"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Andreas – Giselastraße 6\nD- 12205 Berlin\n\nLiebe Frau Fröhlich,\n\nwir freuen uns sehr, dass Sie sich für unsere Sprachkurse interessieren. Gerne beantworten wir Ihre Fragen.\n\nUnsere Deutschkurse beginnen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "DREI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " im Jahr – jeweils im Januar, April und September. Ein Kurs dauert 12 Wochen. Der Unterricht findet "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "DREI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " pro Woche statt, und "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "SO"
+                        },
+                        {
+                          "type": "text",
+                          "value": " zwar montags, mittwochs und freitags von 18 bis 20 Uhr.\n\nDie Kursgebühr beträgt 320 Euro. Darin sind alle Lehrmaterialien "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "type": "text",
+                          "value": " enthalten. Wenn Sie sich bis zum 15. Dezember anmelden, erhalten Sie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "SCHON"
+                        },
+                        {
+                          "type": "text",
+                          "value": " einen Rabatt von 10 Prozent.\n\nAm Ende des Kurses legen Sie eine Prüfung ab. Wenn Sie die Prüfung bestehen, bekommen Sie ein Zertifikat, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "WELCHES"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Ihre Deutschkenntnisse bestätigt.\n\nHaben Sie noch Fragen? Dann rufen Sie uns bitte an oder schreiben Sie uns eine E-Mail. Wir helfen Ihnen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "GERNE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " weiter.\n\nUnsere Adresse finden Sie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "AUCH"
+                        },
+                        {
+                          "type": "text",
+                          "value": " auf unserer Website. Dort können Sie sich auch direkt "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "ANMELDEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": ".\n\nWir freuen uns "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "AUF"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Ihre Anmeldung.\n\nMit freundlichen Grüßen\n\nIhr Sprachinstitut Berlin"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "telc-b1-265"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -133722,10 +134059,348 @@
                   "parts": 5
                 }
               }
+            },
+            "telc-b1-267": {
+              "key": "telc-b1-267",
+              "label": "DIE PERFEKTE BEWERBUNG · alte Fassung",
+              "title": "DIE PERFEKTE BEWERBUNG",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-2"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-2": {
+                    "meta": {
+                      "title": "DIE PERFEKTE BEWERBUNG",
+                      "level": "B1",
+                      "partLabel": "Sprachbausteine Teil 2",
+                      "section": "sprachbausteine",
+                      "partNumber": 2,
+                      "sourceUrl": "https://telc.site/quiz/267"
+                    },
+                    "content": {
+                      "instruction": "Lesen Sie den Text und ergänzen Sie die Lücken. Jedes Wort kann nur einmal verwendet werden.",
+                      "text": "Viele Jugendliche wissen nicht genau, wie eine gute Bewerbung aussehen soll. Dabei ist es gar nicht so schwer, [[31]] man einige wichtige Regeln beachtet.\n\nZunächst sollte das Bewerbungsschreiben nicht zu lang sein. Es reicht völlig aus, wenn Sie sich [[32]] eine Seite beschränken. Wichtig ist auch, dass Sie klar und verständlich formulieren.\n\nInformieren Sie sich vorher genau über das Unternehmen, [[33]] Sie sich bewerben möchten. So können Sie Ihr Interesse besser begründen. Schreiben Sie auch, [[34]] Sie sich gerade für diese Stelle interessieren.\n\nAchten Sie darauf, dass Ihre Unterlagen vollständig sind. [[35]] dem Anschreiben gehören auch ein Lebenslauf und relevante Zeugnisse dazu.\n\nBevor Sie die Bewerbung abschicken, sollten Sie alles noch einmal genau [[36]]. Rechtschreibfehler machen keinen guten Eindruck.\n\nWenn Sie diese Tipps beachten, [[37]] Sie gute Chancen auf eine Einladung zum Vorstellungsgespräch.\n\nWir wünschen Ihnen viel Erfolg [[38]] Ihrer Bewerbung!\n\n[[39]] Sie weitere Informationen benötigen, besuchen Sie unsere Website oder rufen Sie uns an. Wir helfen Ihnen [[40]] weiter.",
+                      "options": [
+                        "AN",
+                        "AUF",
+                        "BEI",
+                        "BEVOR",
+                        "DAMIT",
+                        "DENN",
+                        "DURCH",
+                        "FÜR",
+                        "GENAU",
+                        "LESEN",
+                        "WENN",
+                        "WARUM",
+                        "WERDEN",
+                        "ZU",
+                        "ZUERST"
+                      ],
+                      "wordBank": [
+                        {
+                          "id": "a",
+                          "text": "AN"
+                        },
+                        {
+                          "id": "b",
+                          "text": "AUF"
+                        },
+                        {
+                          "id": "c",
+                          "text": "BEI"
+                        },
+                        {
+                          "id": "d",
+                          "text": "BEVOR"
+                        },
+                        {
+                          "id": "e",
+                          "text": "DAMIT"
+                        },
+                        {
+                          "id": "f",
+                          "text": "DENN"
+                        },
+                        {
+                          "id": "g",
+                          "text": "DURCH"
+                        },
+                        {
+                          "id": "h",
+                          "text": "FÜR"
+                        },
+                        {
+                          "id": "i",
+                          "text": "GENAU"
+                        },
+                        {
+                          "id": "j",
+                          "text": "LESEN"
+                        },
+                        {
+                          "id": "k",
+                          "text": "WENN"
+                        },
+                        {
+                          "id": "l",
+                          "text": "WARUM"
+                        },
+                        {
+                          "id": "m",
+                          "text": "WERDEN"
+                        },
+                        {
+                          "id": "n",
+                          "text": "ZU"
+                        },
+                        {
+                          "id": "o",
+                          "text": "ZUERST"
+                        }
+                      ],
+                      "blanks": [
+                        {
+                          "id": 31,
+                          "sourceQuestionId": 1,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 32,
+                          "sourceQuestionId": 2,
+                          "answer": "AUF"
+                        },
+                        {
+                          "id": 33,
+                          "sourceQuestionId": 3,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 34,
+                          "sourceQuestionId": 4,
+                          "answer": "WARUM"
+                        },
+                        {
+                          "id": 35,
+                          "sourceQuestionId": 5,
+                          "answer": "ZU"
+                        },
+                        {
+                          "id": 36,
+                          "sourceQuestionId": 6,
+                          "answer": "LESEN"
+                        },
+                        {
+                          "id": 37,
+                          "sourceQuestionId": 7,
+                          "answer": "WERDEN"
+                        },
+                        {
+                          "id": 38,
+                          "sourceQuestionId": 8,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 39,
+                          "sourceQuestionId": 9,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 40,
+                          "sourceQuestionId": 10,
+                          "answer": "GERNE"
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 31,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 32,
+                          "answer": "AUF"
+                        },
+                        {
+                          "id": 33,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 34,
+                          "answer": "WARUM"
+                        },
+                        {
+                          "id": 35,
+                          "answer": "ZU"
+                        },
+                        {
+                          "id": 36,
+                          "answer": "LESEN"
+                        },
+                        {
+                          "id": 37,
+                          "answer": "WERDEN"
+                        },
+                        {
+                          "id": 38,
+                          "answer": "BEI"
+                        },
+                        {
+                          "id": 39,
+                          "answer": "WENN"
+                        },
+                        {
+                          "id": 40,
+                          "answer": "GERNE"
+                        }
+                      ],
+                      "title": "DIE PERFEKTE BEWERBUNG",
+                      "legacyImport": {
+                        "id": "legacy:telc:b1:267",
+                        "names": [
+                          "DIE PERFEKTE BEWERBUNG",
+                          "THOMAS/ANNA JENNIFER"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b1-20261011",
+                          "source": "telc.site",
+                          "sourceLevel": "b1",
+                          "quizId": "267",
+                          "url": "https://telc.site/quiz/267",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "7d604f2db6e97f6483392b413059c9f81c14492d005808dcbb0f417e20e1c0d2",
+                          "audioUrls": [],
+                          "sourceIssues": [
+                            "The source answer GERNE is absent from its word bank.",
+                            "The source reuses WENN and BEI for multiple gaps."
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": "The source answer GERNE is absent from its word bank. The source reuses WENN and BEI for multiple gaps."
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b1/themes/thomas-anna/versions/default/lesen/parts/sprachbausteine-2"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Viele Jugendliche wissen nicht genau, wie eine gute Bewerbung aussehen soll. Dabei ist es gar nicht so schwer, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 31,
+                          "answer": "WENN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " man einige wichtige Regeln beachtet.\n\nZunächst sollte das Bewerbungsschreiben nicht zu lang sein. Es reicht völlig aus, wenn Sie sich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 32,
+                          "answer": "AUF"
+                        },
+                        {
+                          "type": "text",
+                          "value": " eine Seite beschränken. Wichtig ist auch, dass Sie klar und verständlich formulieren.\n\nInformieren Sie sich vorher genau über das Unternehmen, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 33,
+                          "answer": "BEI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie sich bewerben möchten. So können Sie Ihr Interesse besser begründen. Schreiben Sie auch, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 34,
+                          "answer": "WARUM"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie sich gerade für diese Stelle interessieren.\n\nAchten Sie darauf, dass Ihre Unterlagen vollständig sind. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 35,
+                          "answer": "ZU"
+                        },
+                        {
+                          "type": "text",
+                          "value": " dem Anschreiben gehören auch ein Lebenslauf und relevante Zeugnisse dazu.\n\nBevor Sie die Bewerbung abschicken, sollten Sie alles noch einmal genau "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 36,
+                          "answer": "LESEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Rechtschreibfehler machen keinen guten Eindruck.\n\nWenn Sie diese Tipps beachten, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 37,
+                          "answer": "WERDEN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie gute Chancen auf eine Einladung zum Vorstellungsgespräch.\n\nWir wünschen Ihnen viel Erfolg "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 38,
+                          "answer": "BEI"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Ihrer Bewerbung!\n\n"
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 39,
+                          "answer": "WENN"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie weitere Informationen benötigen, besuchen Sie unsere Website oder rufen Sie uns an. Wir helfen Ihnen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 40,
+                          "answer": "GERNE"
+                        },
+                        {
+                          "type": "text",
+                          "value": " weiter."
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "telc-b1-267"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -151443,8 +152118,8 @@
       ],
       "counts": {
         "themes": 26,
-        "versions": 35,
-        "parts": 150
+        "versions": 37,
+        "parts": 152
       },
       "themeAliases": {
         "andreas-1": {

@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-10-11-navigation-v37";
+const SW_VERSION = "2026-10-11-b1-integration-v38";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -13,6 +13,8 @@ const APP_SHELL = [
   "./exercise-catalog.js",
   "./exercise-practice.js",
   "./exercise-additions.css",
+  "./database/exercise-additions.b1.json",
+  "./database/exercise-names.b1.json",
   "./database/exercise-additions.b2.json",
   "./database/exercise-names.b2.json",
   "./premium-banner.js",

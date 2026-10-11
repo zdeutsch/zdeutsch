@@ -25,7 +25,7 @@
     return "base:" + [target.file, target.level, target.kind, target.themeKey, target.versionKey, target.partKey, target.topicId, target.index].filter(value => value !== undefined && value !== null && value !== "").map(encodeURIComponent).join(":");
   }
   function resolveTarget(databases, target) {
-    if (!target || !FILES.includes(target.file) || target.level !== "b2") return null;
+    if (!target || !FILES.includes(target.file) || !["b1", "b2"].includes(target.level)) return null;
     if ([target.themeKey, target.versionKey, target.partKey, target.topicId].some(key => ["__proto__", "constructor", "prototype"].includes(key))) return null;
     const level = databases[target.file]?.levels?.[target.level];
     if (!level) return null;
@@ -81,6 +81,12 @@
     if (item?.module !== "lesen" || !Array.isArray(payload?.blanks) || !payload.blanks.length || !Array.isArray(payload?.answers)) return false;
     const answers = new Map(payload.answers.map(answer => [String(answer.id), answer.answer]));
     if (answers.size !== payload.answers.length || new Set(payload.blanks.map(blank => String(blank.id))).size !== payload.blanks.length) return false;
+    const wordKey = value => String(value || "").normalize("NFC").replace(/\s+/g, " ").trim();
+    const bank = (payload.wordBank?.length ? payload.wordBank : payload.options || []).map(word => wordKey(typeof word === "string" ? word : word.text));
+    if (bank.length) {
+      const keys = payload.blanks.map(blank => wordKey(answers.get(String(blank.id))));
+      return keys.every(key => key && bank.includes(key)) && new Set(keys).size === keys.length;
+    }
     return payload.blanks.every(blank => {
       const answer = answers.get(String(blank.id));
       return typeof answer === "string" && Boolean(answer.trim()) && Array.isArray(blank.options) && blank.options.includes(answer);
@@ -92,16 +98,18 @@
     let payload;
     if (entry.module === "horen") payload = { instruction: record.instruction || "Entscheiden Sie bei jeder Aussage: richtig oder falsch.", statements: record.statements };
     else if (entry.module === "shreiben") payload = { istructions: record.istructions, content: record.content, tasks: record.tasks, minimumWords: record.minimumWords || 150 };
-    else payload = { instruction: record.instruction, text: record.text, blanks: record.blanks, answers: record.answers };
-    return { ...origin, title: record.title, level: "b2", module: entry.module, partKey: entry.target.partKey || "teil-1", payload, ...(record.audio ? { audio: record.audio } : {}), target: entry.target, contextTitle: entry.contextTitle, versionLabel: entry.versionLabel };
+    else payload = { instruction: record.instruction, text: record.text, blanks: record.blanks, answers: record.answers,
+      ...(record.wordBank ? { wordBank: record.wordBank } : {}), ...(record.options ? { options: record.options } : {}) };
+    return { ...origin, title: record.title, level: entry.target.level, module: entry.module, partKey: entry.target.partKey || "teil-1", payload, ...(record.audio ? { audio: record.audio } : {}), target: entry.target, contextTitle: entry.contextTitle, versionLabel: entry.versionLabel };
   }
   function applyMergedExercise(record, item) {
     const { payload, title, audio, target, contextTitle, versionLabel, level, module, partKey, ...origin } = item;
     Object.assign(record, payload, { title, legacyImport: origin });
     if (audio) record.audio = audio; else delete record.audio;
     // The normal grammar editor also understands the derived text segments.
-    if (module === "lesen") {
+    if (module === "lesen" && typeof payload.text === "string") {
       const answers = new Map(payload.answers.map(answer => [String(answer.id), answer.answer]));
+      record.blanks = record.blanks.map(blank => Object.hasOwn(blank, "answer") ? { ...blank, answer: answers.get(String(blank.id)) } : blank);
       record.segments = [];
       let cursor = 0;
       for (const match of payload.text.matchAll(/\[\[\s*(\d+)\s*\]\]/g)) {
@@ -148,7 +156,7 @@
       return [{ ...entry, ...resolved, module: section(entry.target), label: partLabel(entry.target), url: targetUrl(entry.target) }];
     });
   }
-  function baseEntries(databases, { includeHidden = false } = {}) {
+  function baseEntries(databases, { includeHidden = false, levels = ["b1", "b2"] } = {}) {
     const entries = [];
     const push = target => {
       const resolved = resolveTarget(databases, target); if (!resolved) return;
@@ -159,36 +167,38 @@
       const importedNames = (record.legacyImport?.names || []).map(label => ({ label, source: "telc.site", scope: "exercise" }));
       entries.push({ id: targetId(target), target, subtitle: title, names: [...importedNames, ...(!importedNames.some(name => name.label === title) ? [{ label: title, source: "zdeutsch", scope: target.kind === "theme" ? "theme" : "exercise" }] : [])], contentFingerprint: fingerprint(identityContent(target, record)), ...resolved, module: section(target), label: partLabel(target), url: targetUrl(target) });
     };
-    const reading = databases["lesen.json"]?.levels?.b2;
-    for (const [themeKey, theme] of Object.entries(reading?.themes || {})) {
-      if (!includeHidden && Array.isArray(reading.themeOrder) && !reading.themeOrder.includes(themeKey)) continue;
-      push({ file: "lesen.json", level: "b2", kind: "theme", themeKey });
-      for (const [versionKey, version] of Object.entries(theme.versions || {})) for (const partKey of Object.keys(version.lesen?.parts || {})) {
-        if (!includeHidden && Array.isArray(version.lesen.partOrder) && !version.lesen.partOrder.includes(partKey)) continue;
-        push({ file: "lesen.json", level: "b2", kind: "part", themeKey, versionKey, partKey });
-      }
-    }
-    for (const file of ["horen-codes.json", "horen-audio.json"]) {
-      const level = databases[file]?.levels?.b2;
-      for (const [themeKey, theme] of Object.entries(level?.themes || {})) {
-        if (!includeHidden && Array.isArray(level.themeOrder) && !level.themeOrder.includes(themeKey)) continue;
-        for (const [partKey, part] of Object.entries(theme["hören"]?.parts || {})) {
-          if (!includeHidden && Array.isArray(theme["hören"].partOrder) && !theme["hören"].partOrder.includes(partKey)) continue;
-          for (const topic of part.content?.topics || []) push({ file, level: "b2", kind: "topic", themeKey, partKey, topicId: topic.id });
+    for (const levelKey of levels.filter(key => ["b1", "b2"].includes(key))) {
+      const reading = databases["lesen.json"]?.levels?.[levelKey];
+      for (const [themeKey, theme] of Object.entries(reading?.themes || {})) {
+        if (!includeHidden && Array.isArray(reading.themeOrder) && !reading.themeOrder.includes(themeKey)) continue;
+        push({ file: "lesen.json", level: levelKey, kind: "theme", themeKey });
+        for (const [versionKey, version] of Object.entries(theme.versions || {})) for (const partKey of Object.keys(version.lesen?.parts || {})) {
+          if (!includeHidden && Array.isArray(version.lesen.partOrder) && !version.lesen.partOrder.includes(partKey)) continue;
+          push({ file: "lesen.json", level: levelKey, kind: "part", themeKey, versionKey, partKey });
         }
       }
-    }
-    (databases["shreiben.json"]?.levels?.b2?.tasks || []).forEach((_, index) => push({ file: "shreiben.json", level: "b2", kind: "task", index }));
-    const oral = databases["mundlich.json"]?.levels?.b2;
-    for (const partKey of ["teil-2", "teil-3"]) {
-      if (!includeHidden && Array.isArray(oral?.partOrder) && !oral.partOrder.includes(partKey)) continue;
-      (oral?.parts?.[partKey]?.topics || []).forEach((_, index) => push({ file: "mundlich.json", level: "b2", kind: "speaking", partKey, index }));
+      for (const file of ["horen-codes.json", "horen-audio.json"]) {
+        const level = databases[file]?.levels?.[levelKey];
+        for (const [themeKey, theme] of Object.entries(level?.themes || {})) {
+          if (!includeHidden && Array.isArray(level.themeOrder) && !level.themeOrder.includes(themeKey)) continue;
+          for (const [partKey, part] of Object.entries(theme["hören"]?.parts || {})) {
+            if (!includeHidden && Array.isArray(theme["hören"].partOrder) && !theme["hören"].partOrder.includes(partKey)) continue;
+            for (const topic of part.content?.topics || []) push({ file, level: levelKey, kind: "topic", themeKey, partKey, topicId: topic.id });
+          }
+        }
+      }
+      (databases["shreiben.json"]?.levels?.[levelKey]?.tasks || []).forEach((_, index) => push({ file: "shreiben.json", level: levelKey, kind: "task", index }));
+      const oral = databases["mundlich.json"]?.levels?.[levelKey];
+      for (const partKey of ["teil-2", "teil-3"]) {
+        if (!includeHidden && Array.isArray(oral?.partOrder) && !oral.partOrder.includes(partKey)) continue;
+        (oral?.parts?.[partKey]?.topics || []).forEach((_, index) => push({ file: "mundlich.json", level: levelKey, kind: "speaking", partKey, index }));
+      }
     }
     return entries;
   }
-  function combinedNames(databases, index) {
+  function combinedNames(databases, index, options) {
     const bound = new Map(bindNames(databases, index).map(entry => [entry.id, entry]));
-    return baseEntries(databases).map(base => {
+    return baseEntries(databases, options).map(base => {
       const extra = bound.get(base.id); if (!extra) return base;
       return { ...base, ...extra, names: [...extra.names, ...base.names.filter(name => !extra.names.some(other => other.label === name.label))] };
     });
@@ -205,9 +215,10 @@
   function searchAdditions(document, { query = "", level = "b2", module } = {}) {
     return (Array.isArray(document?.exercises) ? document.exercises : []).filter(item => item && item.enabled !== false && item.level === level && (!module || item.module === module) && matches(query, [item.title, partLabel(item), ...(Array.isArray(item.names) ? item.names : [])]));
   }
-  let pending;
-  async function load() {
-    if (!pending) pending = (async () => {
+  const pending = new Map();
+  async function load(level = "b2") {
+    if (!["b1", "b2"].includes(level)) throw new Error("Unsupported catalogue level");
+    if (!pending.has(level)) pending.set(level, (async () => {
       const get = async name => {
         const url = `database/${name}`;
         let data;
@@ -220,12 +231,16 @@
         if (data?.schemaVersion !== 1 || !Array.isArray(name.startsWith("exercise-additions") ? data.exercises : data.entries)) throw new Error(`Invalid catalogue: ${name}`);
         return data;
       };
-      const results = await Promise.allSettled([get("exercise-additions.b2.json"), get("exercise-names.b2.json")]);
+      const results = await Promise.allSettled([get(`exercise-additions.${level}.json`), get(`exercise-names.${level}.json`)]);
       const errors = results.flatMap(result => result.status === "rejected" ? [String(result.reason)] : []);
       if (errors.length) console.warn("Additional exercise catalogue unavailable", ...errors);
       return { additions: results[0].status === "fulfilled" ? results[0].value : { exercises: [] }, names: results[1].status === "fulfilled" ? results[1].value : { entries: [] }, errors };
-    })();
-    return pending;
+    })());
+    return pending.get(level);
   }
-  return Object.freeze({ FILES, LABELS, normalize, fingerprint, targetId, resolveTarget, identityContent, partLabel, section, targetUrl, bindNames, baseEntries, combinedNames, searchNames, searchAdditions, load, mergedExercise, mergedExercises, applyMergedExercise, loadMergedExercises, hasAnswerKey });
+  async function loadAll() {
+    const documents = await Promise.all([load("b1"), load("b2")]);
+    return { additions: { exercises: documents.flatMap(document => document.additions.exercises) }, names: { entries: documents.flatMap(document => document.names.entries) }, errors: documents.flatMap(document => document.errors) };
+  }
+  return Object.freeze({ FILES, LABELS, normalize, fingerprint, targetId, resolveTarget, identityContent, partLabel, section, targetUrl, bindNames, baseEntries, combinedNames, searchNames, searchAdditions, load, loadAll, mergedExercise, mergedExercises, applyMergedExercise, loadMergedExercises, hasAnswerKey });
 });

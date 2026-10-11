@@ -70,7 +70,7 @@
   }
   function render() {
     const context = item.target?.file === "lesen.json" ? `Im Thema „${item.contextTitle}“ · ${item.versionLabel}` : item.target ? item.contextTitle : "Einzelübung";
-    root.replaceChildren(UI.el("h1", "", item.title), UI.el("p", "exercise-context", `B2 · ${C.partLabel(item)} · ${context}`));
+    root.replaceChildren(UI.el("h1", "", item.title), UI.el("p", "exercise-context", `${item.level.toUpperCase()} · ${C.partLabel(item)} · ${context}`));
     const knownNames = names(); if (knownNames) root.append(knownNames);
     if (!canCheck() && item.module !== "shreiben") root.append(UI.el("p", "exercise-note", "Für diese Übung fehlen Lösungen. Es wird kein Prüfungsergebnis berechnet."));
     const instruction = UI.instruction(item.payload.instruction || item.payload.istructions); if (instruction) root.append(instruction);
@@ -96,7 +96,7 @@
     if (window.lucide) window.lucide.createIcons();
   }
   try {
-    const { additions, errors } = await C.load();
+    const { additions, errors } = await C.loadAll();
     const merged = await C.loadMergedExercises();
     item = merged.find(exercise => exercise.id === id && exercise.enabled !== false) || additions.exercises.find(exercise => exercise.id === id && exercise.enabled !== false);
     if (!item) { notice(errors.length ? "Die zusätzlichen Übungen konnten nicht geladen werden. Bitte versuchen Sie es erneut." : "Diese Einzelübung wurde nicht gefunden."); return; }
@@ -105,10 +105,11 @@
       return;
     }
     try { const parsed = JSON.parse(localStorage.getItem(storageKey()) || "null"); if (parsed && typeof parsed.responses === "object" && parsed.responses) saved = { responses: parsed.responses, draft: typeof parsed.draft === "string" ? parsed.draft : "" }; } catch (_) {}
+    document.getElementById("level-pill").textContent = item.level.toUpperCase();
     document.title = `${item.title} | ZDeutsch`;
     document.getElementById("exercise-title").textContent = item.title;
     document.getElementById("exercise-title").parentElement.append(UI.newBadge());
-    document.getElementById("exercise-back").href = `index.html?level=b2&collection=exercises&section=${item.module}&part=${encodeURIComponent(item.partKey)}`;
+    document.getElementById("exercise-back").href = `index.html?level=${item.level}&collection=exercises&section=${item.module}&part=${encodeURIComponent(item.partKey)}`;
     document.getElementById("exercise-settings").hidden = true;
     document.getElementById("part-cards-wrap").hidden = true;
     render();

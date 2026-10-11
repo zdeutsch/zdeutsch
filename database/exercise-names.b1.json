@@ -1,0 +1,5319 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "base:lesen.json:b1:part:petra:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "PETRA/JENNIFER",
+      "contentFingerprint": "ec1ce226",
+      "names": [
+        {
+          "label": "PETRA/JENNIFER",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "204",
+          "auditReference": "204",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jennifer:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jennifer",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "PETRA/JENNIFER",
+      "contentFingerprint": "82fda38d",
+      "names": [
+        {
+          "label": "PETRA/JENNIFER",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "204",
+          "auditReference": "204",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:eva:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "eva",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "EVA/IRIS",
+      "contentFingerprint": "a1ed1c42",
+      "names": [
+        {
+          "label": "EVA/IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "206",
+          "auditReference": "206",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:iris:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "EVA/IRIS",
+      "contentFingerprint": "6e8cd035",
+      "names": [
+        {
+          "label": "EVA/IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "206",
+          "auditReference": "206",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sophie:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Sophie/Andreas2",
+      "contentFingerprint": "97847f45",
+      "names": [
+        {
+          "label": "SOPHIE/ANDREAS2",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Sophie/Andreas2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "215",
+          "auditReference": "215",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nadja-claudia:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Nadja/Claudia",
+      "contentFingerprint": "63262636",
+      "names": [
+        {
+          "label": "NADJA/CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Nadja/Claudia",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "219",
+          "auditReference": "219",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-2:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Nadja/Claudia",
+      "contentFingerprint": "63262636",
+      "names": [
+        {
+          "label": "NADJA/CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Nadja/Claudia",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "219",
+          "auditReference": "219",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nicole:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nicole",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Nicole",
+      "contentFingerprint": "6b5b203a",
+      "names": [
+        {
+          "label": "NICOLE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Nicole",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "221",
+          "auditReference": "221",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-1:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-1",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Andreas",
+      "contentFingerprint": "f395f656",
+      "names": [
+        {
+          "label": "ANDREAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Andreas",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "223",
+          "auditReference": "223",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-1:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-1",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Annika1",
+      "contentFingerprint": "70a961d1",
+      "names": [
+        {
+          "label": "ANNIKA1",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Annika1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "226",
+          "auditReference": "226",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sonja:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sonja",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Annika2/Sonja",
+      "contentFingerprint": "c23eaa44",
+      "names": [
+        {
+          "label": "ANNIKA2/SONJA CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Annika2/Sonja",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "227",
+          "auditReference": "227",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:corina:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "corina",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Annika2/Sonja",
+      "contentFingerprint": "4d55ecf1",
+      "names": [
+        {
+          "label": "ANNIKA2/SONJA CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Annika2/Sonja",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "227",
+          "auditReference": "227",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-2:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-2",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Annika2/Sonja",
+      "contentFingerprint": "c23eaa44",
+      "names": [
+        {
+          "label": "ANNIKA2/SONJA CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Annika2/Sonja",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "227",
+          "auditReference": "227",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Carolina",
+      "contentFingerprint": "b7075463",
+      "names": [
+        {
+          "label": "CAROLINA/ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Carolina",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "228",
+          "auditReference": "228",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:version-1:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "version-1",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Carolina",
+      "contentFingerprint": "97fea928",
+      "names": [
+        {
+          "label": "CAROLINA/ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Carolina",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "228",
+          "auditReference": "228",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:vera:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "vera",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Vera",
+      "contentFingerprint": "e57d75ad",
+      "names": [
+        {
+          "label": "VERA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Vera",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "JAN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Jan",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "230",
+          "auditReference": "230",
+          "sourceLevel": "b1"
+        },
+        {
+          "quizId": "235",
+          "auditReference": "235",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jan:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jan",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Vera",
+      "contentFingerprint": "3568e8bc",
+      "names": [
+        {
+          "label": "VERA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Vera",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "JAN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Jan",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "230",
+          "auditReference": "230",
+          "sourceLevel": "b1"
+        },
+        {
+          "quizId": "235",
+          "auditReference": "235",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:thomas-anna:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "thomas-anna",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Thomas",
+      "contentFingerprint": "57e4cb2f",
+      "names": [
+        {
+          "label": "THOMAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Thomas",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "232",
+          "auditReference": "232",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:paul:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "paul",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Tamara/Jakob",
+      "contentFingerprint": "bf0fcc04",
+      "names": [
+        {
+          "label": "TAMARA/JAKOB PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Tamara/Jakob",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "234",
+          "auditReference": "234",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:tamara-jakob:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "tamara-jakob",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Tamara/Jakob",
+      "contentFingerprint": "bf0fcc04",
+      "names": [
+        {
+          "label": "TAMARA/JAKOB PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Tamara/Jakob",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "234",
+          "auditReference": "234",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:viktor:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "viktor",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Viktor",
+      "contentFingerprint": "043bc828",
+      "names": [
+        {
+          "label": "VIKTOR",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Viktor",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "237",
+          "auditReference": "237",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alex-und-cora:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alex-und-cora",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Alex und Cora",
+      "contentFingerprint": "e1832d4a",
+      "names": [
+        {
+          "label": "ALEX & CORA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Alex und Cora",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "240",
+          "auditReference": "240",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:rita:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "rita",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Rita",
+      "contentFingerprint": "e0767f35",
+      "names": [
+        {
+          "label": "RITA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Rita",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "242",
+          "auditReference": "242",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:miroslav:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Miroslav",
+      "contentFingerprint": "2b0efe46",
+      "names": [
+        {
+          "label": "MIROSLAV",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Miroslav",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "244",
+          "auditReference": "244",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:mara-alt:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "mara-alt",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Miroslav",
+      "contentFingerprint": "2b0efe46",
+      "names": [
+        {
+          "label": "MIROSLAV",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Miroslav",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "244",
+          "auditReference": "244",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:karla:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "karla",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Karla",
+      "contentFingerprint": "8688f7fc",
+      "names": [
+        {
+          "label": "KARLA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Karla",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "246",
+          "auditReference": "246",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:moritz:default:teil-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "teil-1"
+      },
+      "subtitle": "Moritz",
+      "contentFingerprint": "9972959b",
+      "names": [
+        {
+          "label": "MORITZ",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Moritz",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "247",
+          "auditReference": "247",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:petra:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Leipzigerin geht in den USA auf Sendung",
+      "contentFingerprint": "3bf5aa05",
+      "names": [
+        {
+          "label": "Petra & ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Leipzigerin geht in den USA auf Sendung",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "205",
+          "auditReference": "205",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alicia:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alicia",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Leipzigerin geht in den USA auf Sendung",
+      "contentFingerprint": "3bf5aa05",
+      "names": [
+        {
+          "label": "Petra & ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Leipzigerin geht in den USA auf Sendung",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "205",
+          "auditReference": "205",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:eva:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "eva",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Geheimnisse des Schlafes",
+      "contentFingerprint": "1fb337ea",
+      "names": [
+        {
+          "label": "EVA1",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Geheimnisse des Schlafes",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "207",
+          "auditReference": "207",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:iris:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Informationsverhaltungen sind wichtige Grundlagen für die Berufswahl",
+      "contentFingerprint": "75d404e7",
+      "names": [
+        {
+          "label": "IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Informationsverhaltungen sind wichtige Grundlagen für die Berufswahl",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "208",
+          "auditReference": "208",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sophie:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Die Sendung mit der Maus",
+      "contentFingerprint": "7fb4da6a",
+      "names": [
+        {
+          "label": "SOPHIE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Die Sendung mit der Maus",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "216",
+          "auditReference": "216",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nadja-claudia:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Verheiratet mit Handy und Computer",
+      "contentFingerprint": "c62aa70f",
+      "names": [
+        {
+          "label": "NADJA & CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Verheiratet mit Handy und Computer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "220",
+          "auditReference": "220",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nicole:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nicole",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Computerkurse sind schon für Kinder spannend",
+      "contentFingerprint": "3be907d5",
+      "names": [
+        {
+          "label": "NICOLE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Computerkurse sind schon für Kinder spannend",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "222",
+          "auditReference": "222",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-1:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-1",
+        "partKey": "teil-2"
+      },
+      "subtitle": "LEBEN",
+      "contentFingerprint": "3692859b",
+      "names": [
+        {
+          "label": "ANDREAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "LEBEN",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "224",
+          "auditReference": "224",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:corina:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "corina",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Philipp Reis – der wahre Erfinder des Telefons?",
+      "contentFingerprint": "d8ab584f",
+      "names": [
+        {
+          "label": "ANDREAS2 & CORINA ANNIKA(1&2)",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Philipp Reis – der wahre Erfinder des Telefons?",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "225",
+          "auditReference": "225",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-2:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Philipp Reis – der wahre Erfinder des Telefons?",
+      "contentFingerprint": "d8ab584f",
+      "names": [
+        {
+          "label": "ANDREAS2 & CORINA ANNIKA(1&2)",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Philipp Reis – der wahre Erfinder des Telefons?",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "225",
+          "auditReference": "225",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-1:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-1",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Philipp Reis – der wahre Erfinder des Telefons?",
+      "contentFingerprint": "d8ab584f",
+      "names": [
+        {
+          "label": "ANDREAS2 & CORINA ANNIKA(1&2)",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Philipp Reis – der wahre Erfinder des Telefons?",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "225",
+          "auditReference": "225",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-2:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-2",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Philipp Reis – der wahre Erfinder des Telefons?",
+      "contentFingerprint": "d8ab584f",
+      "names": [
+        {
+          "label": "ANDREAS2 & CORINA ANNIKA(1&2)",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Philipp Reis – der wahre Erfinder des Telefons?",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "225",
+          "auditReference": "225",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Computerprobleme – ein Kinderspiel",
+      "contentFingerprint": "93c42be9",
+      "names": [
+        {
+          "label": "CAROLINA/VERA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Computerprobleme – ein Kinderspiel",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "229",
+          "auditReference": "229",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:vera:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "vera",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Computerprobleme – ein Kinderspiel",
+      "contentFingerprint": "93c42be9",
+      "names": [
+        {
+          "label": "CAROLINA/VERA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Computerprobleme – ein Kinderspiel",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "229",
+          "auditReference": "229",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:paul:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "paul",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Die neue Sir-Karl-Popper-Schule",
+      "contentFingerprint": "984b1036",
+      "names": [
+        {
+          "label": "JENNIFER & TAMARA JAKOB/PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Die neue Sir-Karl-Popper-Schule",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "231",
+          "auditReference": "231",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:tamara-jakob:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "tamara-jakob",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Die neue Sir-Karl-Popper-Schule",
+      "contentFingerprint": "984b1036",
+      "names": [
+        {
+          "label": "JENNIFER & TAMARA JAKOB/PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Die neue Sir-Karl-Popper-Schule",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "231",
+          "auditReference": "231",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jennifer:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jennifer",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Die neue Sir-Karl-Popper-Schule",
+      "contentFingerprint": "984b1036",
+      "names": [
+        {
+          "label": "JENNIFER & TAMARA JAKOB/PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Die neue Sir-Karl-Popper-Schule",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "231",
+          "auditReference": "231",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:thomas-anna:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "thomas-anna",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Du oder Sie – das ist hier die Frage",
+      "contentFingerprint": "3530751d",
+      "names": [
+        {
+          "label": "THOMAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Du oder Sie – das ist hier die Frage",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "233",
+          "auditReference": "233",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jan:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jan",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Beruf am Flughafen: Kinderbetreuerin",
+      "contentFingerprint": "67235d0f",
+      "names": [
+        {
+          "label": "JAN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Beruf am Flughafen: Kinderbetreuerin",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "236",
+          "auditReference": "236",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:viktor:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "viktor",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Neue Berufe",
+      "contentFingerprint": "3523ee6d",
+      "names": [
+        {
+          "label": "VIKTOR",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Neue Berufe",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "238",
+          "auditReference": "238",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sonja:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sonja",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Die Angst vor Buchstaben abbauen",
+      "contentFingerprint": "1bdd7136",
+      "names": [
+        {
+          "label": "SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Die Angst vor Buchstaben abbauen",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "239",
+          "auditReference": "239",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alex-und-cora:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alex-und-cora",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Haustiere in Deutschland",
+      "contentFingerprint": "55c92e26",
+      "names": [
+        {
+          "label": "ALEX & CORA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Haustiere in Deutschland",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "241",
+          "auditReference": "241",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:rita:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "rita",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Abenteuer Weltumrundung",
+      "contentFingerprint": "4e46c052",
+      "names": [
+        {
+          "label": "RITA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Abenteuer Weltumrundung",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "243",
+          "auditReference": "243",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:miroslav:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Mehr Platz und Schutz für Bienen",
+      "contentFingerprint": "d515cb78",
+      "names": [
+        {
+          "label": "MIROSLAV & KARLA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Mehr Platz und Schutz für Bienen",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "245",
+          "auditReference": "245",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:miroslav:version-2:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "version-2",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Mehr Platz und Schutz für Bienen",
+      "contentFingerprint": "509bc2dd",
+      "names": [
+        {
+          "label": "MIROSLAV & KARLA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Mehr Platz und Schutz für Bienen",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "245",
+          "auditReference": "245",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:karla:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "karla",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Mehr Platz und Schutz für Bienen",
+      "contentFingerprint": "d515cb78",
+      "names": [
+        {
+          "label": "MIROSLAV & KARLA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Mehr Platz und Schutz für Bienen",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "245",
+          "auditReference": "245",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:moritz:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Ein Leben auf Sumatra",
+      "contentFingerprint": "d94bb466",
+      "names": [
+        {
+          "label": "MORITZ",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Ein Leben auf Sumatra",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "248",
+          "auditReference": "248",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:karla:version-1:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "karla",
+        "versionKey": "version-1",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Das Projekt Sonnenhalde",
+      "contentFingerprint": "535ae543",
+      "names": [
+        {
+          "label": "MARA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Das Projekt Sonnenhalde",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "249",
+          "auditReference": "249",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:mara-alt:default:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "mara-alt",
+        "versionKey": "default",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Das Projekt Sonnenhalde",
+      "contentFingerprint": "5cc73563",
+      "names": [
+        {
+          "label": "MARA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Das Projekt Sonnenhalde",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "249",
+          "auditReference": "249",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:mara-alt:version-1:teil-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "mara-alt",
+        "versionKey": "version-1",
+        "partKey": "teil-2"
+      },
+      "subtitle": "Das Projekt Sonnenhalde",
+      "contentFingerprint": "f61a6d9b",
+      "names": [
+        {
+          "label": "MARA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Das Projekt Sonnenhalde",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "249",
+          "auditReference": "249",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:petra:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "Petra",
+      "contentFingerprint": "8f28a424",
+      "names": [
+        {
+          "label": "Petra",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "201",
+          "auditReference": "201",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alicia:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alicia",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "Petra",
+      "contentFingerprint": "8f28a424",
+      "names": [
+        {
+          "label": "Petra",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "201",
+          "auditReference": "201",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:eva:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "eva",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "EVA1",
+      "contentFingerprint": "f0b8ce93",
+      "names": [
+        {
+          "label": "EVA1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "203",
+          "auditReference": "203",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:iris:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "IRIS",
+      "contentFingerprint": "fd192baa",
+      "names": [
+        {
+          "label": "IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "202",
+          "auditReference": "202",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sophie:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "SOPHIE",
+      "contentFingerprint": "75ae33cd",
+      "names": [
+        {
+          "label": "SOPHIE",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "217",
+          "auditReference": "217",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jan:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jan",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "NADJA & CLAUDIA",
+      "contentFingerprint": "d5e860e4",
+      "names": [
+        {
+          "label": "NADJA & CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "218",
+          "auditReference": "218",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nadja-claudia:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "NADJA & CLAUDIA",
+      "contentFingerprint": "d5e860e4",
+      "names": [
+        {
+          "label": "NADJA & CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "218",
+          "auditReference": "218",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:moritz:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "NADJA & CLAUDIA",
+      "contentFingerprint": "d5e860e4",
+      "names": [
+        {
+          "label": "NADJA & CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "218",
+          "auditReference": "218",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-1:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-1",
+        "partKey": "teil-3"
+      },
+      "subtitle": "ANDREAS1",
+      "contentFingerprint": "f91cba14",
+      "names": [
+        {
+          "label": "ANDREAS1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "286",
+          "auditReference": "286",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-1:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-1",
+        "partKey": "teil-3"
+      },
+      "subtitle": "ANDREAS1",
+      "contentFingerprint": "f91cba14",
+      "names": [
+        {
+          "label": "ANDREAS1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "286",
+          "auditReference": "286",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-2:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-2",
+        "partKey": "teil-3"
+      },
+      "subtitle": "ANDREAS1",
+      "contentFingerprint": "f91cba14",
+      "names": [
+        {
+          "label": "ANDREAS1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "286",
+          "auditReference": "286",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-2:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "teil-3"
+      },
+      "subtitle": "ANDREAS2",
+      "contentFingerprint": "5818297a",
+      "names": [
+        {
+          "label": "ANDREAS2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "287",
+          "auditReference": "287",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:default:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "teil-3"
+      },
+      "subtitle": "CAROLINA",
+      "contentFingerprint": "2983d495",
+      "names": [
+        {
+          "label": "CAROLINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "288",
+          "auditReference": "288",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:version-2:teil-3",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "version-2",
+        "partKey": "teil-3"
+      },
+      "subtitle": "CAROLINA",
+      "contentFingerprint": "fe152513",
+      "names": [
+        {
+          "label": "CAROLINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "288",
+          "auditReference": "288",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nadja-claudia:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Meyerhofer",
+      "contentFingerprint": "20f4009d",
+      "names": [
+        {
+          "label": "PETRA/NADJA2 CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Meyerhofer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "209",
+          "auditReference": "209",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:petra:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Meyerhofer",
+      "contentFingerprint": "20f4009d",
+      "names": [
+        {
+          "label": "PETRA/NADJA2 CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Meyerhofer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "209",
+          "auditReference": "209",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:eva:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "eva",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Meyerhofer",
+      "contentFingerprint": "5f8ea112",
+      "names": [
+        {
+          "label": "EVA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Meyerhofer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "211",
+          "auditReference": "211",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:iris:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Maria",
+      "contentFingerprint": "06e9803a",
+      "names": [
+        {
+          "label": "IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Maria",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "213",
+          "auditReference": "213",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sophie:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Vollzwinkler",
+      "contentFingerprint": "5f25341f",
+      "names": [
+        {
+          "label": "SOPHIE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Vollzwinkler",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "250",
+          "auditReference": "250",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nicole:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nicole",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Vollzwinkler",
+      "contentFingerprint": "53b92801",
+      "names": [
+        {
+          "label": "NICOLE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Vollzwinkler",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "251",
+          "auditReference": "251",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-1:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-1",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Jelena",
+      "contentFingerprint": "58f5cfd7",
+      "names": [
+        {
+          "label": "ANDREAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Jelena",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "254",
+          "auditReference": "254",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sonja:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sonja",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Dominique",
+      "contentFingerprint": "adc7909e",
+      "names": [
+        {
+          "label": "ANDREAS2/VIKTOR SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Dominique",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "257",
+          "auditReference": "257",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:viktor:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "viktor",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Dominique",
+      "contentFingerprint": "adc7909e",
+      "names": [
+        {
+          "label": "ANDREAS2/VIKTOR SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Dominique",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "257",
+          "auditReference": "257",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-2:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Dominique",
+      "contentFingerprint": "adc7909e",
+      "names": [
+        {
+          "label": "ANDREAS2/VIKTOR SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Dominique",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "257",
+          "auditReference": "257",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-1:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-1",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Frau Grenzacker",
+      "contentFingerprint": "bb04d51b",
+      "names": [
+        {
+          "label": "ANNIKA1",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Frau Grenzacker",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "259",
+          "auditReference": "259",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jan:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jan",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Schröder",
+      "contentFingerprint": "54f537aa",
+      "names": [
+        {
+          "label": "ANNIKA2/JAN CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Schröder",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "261",
+          "auditReference": "261",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:corina:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "corina",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Schröder",
+      "contentFingerprint": "9204c32f",
+      "names": [
+        {
+          "label": "ANNIKA2/JAN CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Schröder",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "261",
+          "auditReference": "261",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-2:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Schröder",
+      "contentFingerprint": "64809e43",
+      "names": [
+        {
+          "label": "ANNIKA2/JAN CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Schröder",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "261",
+          "auditReference": "261",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Catherine",
+      "contentFingerprint": "52db38a2",
+      "names": [
+        {
+          "label": "CAROLINA/RITA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Catherine",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "262",
+          "auditReference": "262",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alicia:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alicia",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Catherine",
+      "contentFingerprint": "52db38a2",
+      "names": [
+        {
+          "label": "CAROLINA/RITA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Catherine",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "262",
+          "auditReference": "262",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:vera:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "vera",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Beatrice",
+      "contentFingerprint": "2f619708",
+      "names": [
+        {
+          "label": "VERA/PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Beatrice",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "264",
+          "auditReference": "264",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:paul:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "paul",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Beatrice",
+      "contentFingerprint": "8f4a225e",
+      "names": [
+        {
+          "label": "VERA/PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Beatrice",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "264",
+          "auditReference": "264",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:thomas-anna:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "thomas-anna",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Samir",
+      "contentFingerprint": "f5bfdf3a",
+      "names": [
+        {
+          "label": "THOMAS/ANNA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Samir",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "266",
+          "auditReference": "266",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jennifer:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jennifer",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Olivia",
+      "contentFingerprint": "f0d60288",
+      "names": [
+        {
+          "label": "JENNIFER",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Olivia",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "268",
+          "auditReference": "268",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:tamara-jakob:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "tamara-jakob",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Herr Schmidt",
+      "contentFingerprint": "6a365203",
+      "names": [
+        {
+          "label": "TAMARA/JAKOB",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Schmidt",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "269",
+          "auditReference": "269",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alex-und-cora:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alex-und-cora",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Hallo Isabelle",
+      "contentFingerprint": "985056ed",
+      "names": [
+        {
+          "label": "ALEX & CORA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hallo Isabelle",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "273",
+          "auditReference": "273",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:miroslav:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Globetrotter-Redaktionsteam",
+      "contentFingerprint": "c32fc307",
+      "names": [
+        {
+          "label": "MIROSLAV",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Globetrotter-Redaktionsteam",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "278",
+          "auditReference": "278",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:karla:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "karla",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Hallo Kathrin",
+      "contentFingerprint": "c4e3da2c",
+      "names": [
+        {
+          "label": "KARLA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hallo Kathrin",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "280",
+          "auditReference": "280",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:moritz:default:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Lisa",
+      "contentFingerprint": "8ad23bb5",
+      "names": [
+        {
+          "label": "MORITZ",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Lisa",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "282",
+          "auditReference": "282",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:version-3:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "version-3",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Catherine",
+      "contentFingerprint": "e2a157e4",
+      "names": [
+        {
+          "label": "ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Catherine",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "283",
+          "auditReference": "283",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alicia:version-1:sprachbausteine-1",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alicia",
+        "versionKey": "version-1",
+        "partKey": "sprachbausteine-1"
+      },
+      "subtitle": "Liebe Catherine",
+      "contentFingerprint": "4b0c16a7",
+      "names": [
+        {
+          "label": "ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Liebe Catherine",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "283",
+          "auditReference": "283",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:petra:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Herr Blanco Ruiz (PETRA)",
+      "contentFingerprint": "db988f29",
+      "names": [
+        {
+          "label": "PETRA/ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Blanco Ruiz (PETRA)",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "210",
+          "auditReference": "210",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alicia:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alicia",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Herr Blanco Ruiz (PETRA)",
+      "contentFingerprint": "92549ef6",
+      "names": [
+        {
+          "label": "PETRA/ALICIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Blanco Ruiz (PETRA)",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "210",
+          "auditReference": "210",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:eva:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "eva",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Herr Maier",
+      "contentFingerprint": "ea22d0ea",
+      "names": [
+        {
+          "label": "EVA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Maier",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "212",
+          "auditReference": "212",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:iris:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Versicherung",
+      "contentFingerprint": "03d01953",
+      "names": [
+        {
+          "label": "IRIS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Versicherung",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "214",
+          "auditReference": "214",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sophie:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Zusendung der Informationsmaterialien",
+      "contentFingerprint": "25124608",
+      "names": [
+        {
+          "label": "SOPHIE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Zusendung der Informationsmaterialien",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "253",
+          "auditReference": "253",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nicole:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nicole",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Beschwerde",
+      "contentFingerprint": "14368d9e",
+      "names": [
+        {
+          "label": "NICOLE",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Beschwerde",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "252",
+          "auditReference": "252",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:paul:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "paul",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Angebot",
+      "contentFingerprint": "892b0a5f",
+      "names": [
+        {
+          "label": "NADJA/CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Angebot",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "KROATIEN",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "255",
+          "auditReference": "255",
+          "sourceLevel": "b1"
+        },
+        {
+          "quizId": "276",
+          "auditReference": "276",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:nadja-claudia:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Angebot",
+      "contentFingerprint": "892b0a5f",
+      "names": [
+        {
+          "label": "NADJA/CLAUDIA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Angebot",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "PAUL",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "KROATIEN",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "255",
+          "auditReference": "255",
+          "sourceLevel": "b1"
+        },
+        {
+          "quizId": "276",
+          "auditReference": "276",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-1:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-1",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Herr Gauberger",
+      "contentFingerprint": "d441d1bd",
+      "names": [
+        {
+          "label": "ANDREAS",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Herr Gauberger",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "256",
+          "auditReference": "256",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:jan:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "jan",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Frau Bauer",
+      "contentFingerprint": "aeb74263",
+      "names": [
+        {
+          "label": "ANDREAS2/JAN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Frau Bauer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "258",
+          "auditReference": "258",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:andreas:version-2:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Frau Bauer",
+      "contentFingerprint": "43d3a0d7",
+      "names": [
+        {
+          "label": "ANDREAS2/JAN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Frau Bauer",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "258",
+          "auditReference": "258",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-1:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-1",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Sahara-Länder",
+      "contentFingerprint": "d7fa6e8f",
+      "names": [
+        {
+          "label": "ANNIKA1&2",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Sahara-Länder",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "260",
+          "auditReference": "260",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:annika:version-2:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "annika",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Sahara-Länder",
+      "contentFingerprint": "d7fa6e8f",
+      "names": [
+        {
+          "label": "ANNIKA1&2",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Sahara-Länder",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "260",
+          "auditReference": "260",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:caroline:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "QUANTUM-SYSTEM",
+      "contentFingerprint": "78a9e170",
+      "names": [
+        {
+          "label": "CAROLINA/CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "QUANTUM-SYSTEM",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "263",
+          "auditReference": "263",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:corina:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "corina",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "QUANTUM-SYSTEM",
+      "contentFingerprint": "78a9e170",
+      "names": [
+        {
+          "label": "CAROLINA/CORINA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "QUANTUM-SYSTEM",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "263",
+          "auditReference": "263",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:sonja:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sonja",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "FRAU BORNER",
+      "contentFingerprint": "e0dafbbf",
+      "names": [
+        {
+          "label": "TAMARA/JAKOB SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "FRAU BORNER",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "270",
+          "auditReference": "270",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:tamara-jakob:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "tamara-jakob",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "FRAU BORNER",
+      "contentFingerprint": "e0dafbbf",
+      "names": [
+        {
+          "label": "TAMARA/JAKOB SONJA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "FRAU BORNER",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "270",
+          "auditReference": "270",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:viktor:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "viktor",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "FRAU CAMPE",
+      "contentFingerprint": "27617c19",
+      "names": [
+        {
+          "label": "VIKTOR",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "FRAU CAMPE",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "272",
+          "auditReference": "272",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:alex-und-cora:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "alex-und-cora",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "INSERAT",
+      "contentFingerprint": "e25194e9",
+      "names": [
+        {
+          "label": "ALEX & CORA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "INSERAT",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "274",
+          "auditReference": "274",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:rita:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "rita",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "FRANKFURTER RUNDSCHAU",
+      "contentFingerprint": "fd98bb33",
+      "names": [
+        {
+          "label": "RITA",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "FRANKFURTER RUNDSCHAU",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "277",
+          "auditReference": "277",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:miroslav:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Vogelsbergmagazin",
+      "contentFingerprint": "1893df99",
+      "names": [
+        {
+          "label": "MIROSLAV",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Vogelsbergmagazin",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "279",
+          "auditReference": "279",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:karla:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "karla",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Emilia",
+      "contentFingerprint": "99abe88b",
+      "names": [
+        {
+          "label": "KARLA/MORITZ",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Emilia",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "281",
+          "auditReference": "281",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:lesen.json:b1:part:moritz:default:sprachbausteine-2",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "subtitle": "Emilia",
+      "contentFingerprint": "9a3f266d",
+      "names": [
+        {
+          "label": "KARLA/MORITZ",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Emilia",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "281",
+          "auditReference": "281",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-1",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-1"
+      },
+      "subtitle": "Arbeitsplatz für ihren Vater",
+      "contentFingerprint": "30a05aa4",
+      "names": [
+        {
+          "label": "Arbeitsplatz für ihren Vater",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q1-5",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-2",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-2"
+      },
+      "subtitle": "Einkaufe im Internet",
+      "contentFingerprint": "fc80a034",
+      "names": [
+        {
+          "label": "Einkaufe im Internet",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q6-10",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-3",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-3"
+      },
+      "subtitle": "Computer",
+      "contentFingerprint": "976ffbbc",
+      "names": [
+        {
+          "label": "Computer",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q11-15",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-4",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-4"
+      },
+      "subtitle": "Einzelkind",
+      "contentFingerprint": "05985975",
+      "names": [
+        {
+          "label": "Einzelkind",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q16-20",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:caroline-und-nora:teil-1:b1-audio-caroline-und-nora-teil-1",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "caroline-und-nora",
+        "partKey": "teil-1",
+        "topicId": "b1-audio-caroline-und-nora-teil-1"
+      },
+      "subtitle": "Einzelkind",
+      "contentFingerprint": "b6665eb3",
+      "names": [
+        {
+          "label": "Einzelkind",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q16-20",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:nadia:teil-1:b1-audio-nadia-teil-1",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "nadia",
+        "partKey": "teil-1",
+        "topicId": "b1-audio-nadia-teil-1"
+      },
+      "subtitle": "Einzelkind",
+      "contentFingerprint": "b6665eb3",
+      "names": [
+        {
+          "label": "Einzelkind",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q16-20",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-5",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-5"
+      },
+      "subtitle": "Sport als für Kultur",
+      "contentFingerprint": "5f7ed316",
+      "names": [
+        {
+          "label": "Sport als für Kultur",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q21-25",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-6",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-6"
+      },
+      "subtitle": "Bus zur Arbeit",
+      "contentFingerprint": "a90837cd",
+      "names": [
+        {
+          "label": "Bus zur Arbeit",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q26-30",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-7",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-7"
+      },
+      "subtitle": "Arbeit zu fahren",
+      "contentFingerprint": "1433485d",
+      "names": [
+        {
+          "label": "Arbeit zu fahren",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q31-35",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-8",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-8"
+      },
+      "subtitle": "In der Schule",
+      "contentFingerprint": "e4532fcd",
+      "names": [
+        {
+          "label": "In der Schule",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q36-40",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-9",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-9"
+      },
+      "subtitle": "Bus zur Arbeit 2",
+      "contentFingerprint": "065ec304",
+      "names": [
+        {
+          "label": "Bus zur Arbeit 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q41-45",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-10",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-10"
+      },
+      "subtitle": "Urlaub",
+      "contentFingerprint": "81971063",
+      "names": [
+        {
+          "label": "Urlaub",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q46-50",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-11",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-11"
+      },
+      "subtitle": "Fremdsprache",
+      "contentFingerprint": "4611de06",
+      "names": [
+        {
+          "label": "Fremdsprache",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q51-55",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:jan:teil-1:b1-audio-jan-teil-1",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "jan",
+        "partKey": "teil-1",
+        "topicId": "b1-audio-jan-teil-1"
+      },
+      "subtitle": "Fremdsprache",
+      "contentFingerprint": "6a135520",
+      "names": [
+        {
+          "label": "Fremdsprache",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q51-55",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:moritz:teil-1:b1-audio-moritz-teil-1",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "moritz",
+        "partKey": "teil-1",
+        "topicId": "b1-audio-moritz-teil-1"
+      },
+      "subtitle": "Fremdsprache",
+      "contentFingerprint": "6a135520",
+      "names": [
+        {
+          "label": "Fremdsprache",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q51-55",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-12",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-12"
+      },
+      "subtitle": "Handys",
+      "contentFingerprint": "26d31185",
+      "names": [
+        {
+          "label": "Handys",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q56-60",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-13",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-13"
+      },
+      "subtitle": "Radfahrad",
+      "contentFingerprint": "bc20118c",
+      "names": [
+        {
+          "label": "Radfahrad",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q61-65",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:b1-teil-1-quiz-14",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "b1-teil-1-quiz-14"
+      },
+      "subtitle": "Miroslav",
+      "contentFingerprint": "dddcce59",
+      "names": [
+        {
+          "label": "Miroslav",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q66-70",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-1:topic-1788979138170-21j8",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-1",
+        "topicId": "topic-1788979138170-21j8"
+      },
+      "subtitle": "Miroslav",
+      "contentFingerprint": "dddcce59",
+      "names": [
+        {
+          "label": "Miroslav",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 1",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "271",
+          "auditReference": "271#q66-70",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-1",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-1"
+      },
+      "subtitle": "VEREIN",
+      "contentFingerprint": "afeadf7b",
+      "names": [
+        {
+          "label": "VEREIN",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q1-10",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-2",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-2"
+      },
+      "subtitle": "Reisebüro",
+      "contentFingerprint": "5d6bcb82",
+      "names": [
+        {
+          "label": "Reisebüro",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q11-20",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-3",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-3"
+      },
+      "subtitle": "Buch schreiben",
+      "contentFingerprint": "e7f06f3f",
+      "names": [
+        {
+          "label": "Buch schreiben",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q21-30",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-4",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-4"
+      },
+      "subtitle": "Klassenfahrt",
+      "contentFingerprint": "360ec2be",
+      "names": [
+        {
+          "label": "Klassenfahrt",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q31-40",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-5",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-5"
+      },
+      "subtitle": "Frau Reiter - Lokführerin",
+      "contentFingerprint": "8aa16968",
+      "names": [
+        {
+          "label": "Frau Reiter - Lokführerin",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q41-50",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-6",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-6"
+      },
+      "subtitle": "Deutschkurs",
+      "contentFingerprint": "a3281c50",
+      "names": [
+        {
+          "label": "Deutschkurs",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q51-60",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-7",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-7"
+      },
+      "subtitle": "Spielpark",
+      "contentFingerprint": "be384f0f",
+      "names": [
+        {
+          "label": "Spielpark",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q61-70",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-8",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-8"
+      },
+      "subtitle": "TAXIFAHRER",
+      "contentFingerprint": "58a20207",
+      "names": [
+        {
+          "label": "TAXIFAHRER",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q71-80",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-9",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-9"
+      },
+      "subtitle": "Praktikanten",
+      "contentFingerprint": "b4f2bc8e",
+      "names": [
+        {
+          "label": "Praktikanten",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q81-90",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-10",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-10"
+      },
+      "subtitle": "Die Spitex",
+      "contentFingerprint": "c520d43f",
+      "names": [
+        {
+          "label": "Die Spitex",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q91-100",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-11",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-11"
+      },
+      "subtitle": "Filmbühne",
+      "contentFingerprint": "742ee33b",
+      "names": [
+        {
+          "label": "Filmbühne",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q101-110",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:b1-teil-2-quiz-12",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "b1-teil-2-quiz-12"
+      },
+      "subtitle": "Frau Wenger",
+      "contentFingerprint": "5de0d3d0",
+      "names": [
+        {
+          "label": "Frau Wenger",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q111-120",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-2:topic-1788983294781-1y4w",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-2",
+        "topicId": "topic-1788983294781-1y4w"
+      },
+      "subtitle": "Frau Wallner",
+      "contentFingerprint": "60ab756a",
+      "names": [
+        {
+          "label": "Frau Wallner",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q121-130",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:caroline-und-nora:teil-2:b1-audio-caroline-und-nora-teil-2",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "caroline-und-nora",
+        "partKey": "teil-2",
+        "topicId": "b1-audio-caroline-und-nora-teil-2"
+      },
+      "subtitle": "Frau Wallner",
+      "contentFingerprint": "60ab756a",
+      "names": [
+        {
+          "label": "Frau Wallner",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 2",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "285",
+          "auditReference": "285#q121-130",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-1",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-1"
+      },
+      "subtitle": "Georg und Claudia",
+      "contentFingerprint": "4f3923ab",
+      "names": [
+        {
+          "label": "Georg und Claudia",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q1-5",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-audio.json:b1:topic:alicia-und-petra:teil-3:b1-audio-alicia-und-petra-teil-3",
+      "target": {
+        "file": "horen-audio.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "alicia-und-petra",
+        "partKey": "teil-3",
+        "topicId": "b1-audio-alicia-und-petra-teil-3"
+      },
+      "subtitle": "Georg und Claudia",
+      "contentFingerprint": "63be996b",
+      "names": [
+        {
+          "label": "Georg und Claudia",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q1-5",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-2",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-2"
+      },
+      "subtitle": "Ingolstadt",
+      "contentFingerprint": "284d6922",
+      "names": [
+        {
+          "label": "Ingolstadt",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q6-10",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-3",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-3"
+      },
+      "subtitle": "Der Fahrer",
+      "contentFingerprint": "cdf9870b",
+      "names": [
+        {
+          "label": "Der Fahrer",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q11-15",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-4",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-4"
+      },
+      "subtitle": "Innenstadt",
+      "contentFingerprint": "c9550c72",
+      "names": [
+        {
+          "label": "Innenstadt",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q16-20",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-5",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-5"
+      },
+      "subtitle": "Prag",
+      "contentFingerprint": "c59424df",
+      "names": [
+        {
+          "label": "Prag",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q21-25",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-6",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-6"
+      },
+      "subtitle": "Hauptbahnhof",
+      "contentFingerprint": "bfc83646",
+      "names": [
+        {
+          "label": "Hauptbahnhof",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q26-30",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-7",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-7"
+      },
+      "subtitle": "Griechenland",
+      "contentFingerprint": "9d0b2a43",
+      "names": [
+        {
+          "label": "Griechenland",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q31-35",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-8",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-8"
+      },
+      "subtitle": "Norddeutschland",
+      "contentFingerprint": "782a6d1c",
+      "names": [
+        {
+          "label": "Norddeutschland",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q36-40",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-9",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-9"
+      },
+      "subtitle": "Füssen",
+      "contentFingerprint": "fcfa6318",
+      "names": [
+        {
+          "label": "Füssen",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q41-45",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-10",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-10"
+      },
+      "subtitle": "Mannheim",
+      "contentFingerprint": "04fdaccc",
+      "names": [
+        {
+          "label": "Mannheim",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q46-50",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-11",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-11"
+      },
+      "subtitle": "Buchabteilung",
+      "contentFingerprint": "a5c425cd",
+      "names": [
+        {
+          "label": "Buchabteilung",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q51-55",
+          "sourceLevel": "b1"
+        }
+      ]
+    },
+    {
+      "id": "base:horen-codes.json:b1:topic:horen-b1:teil-3:b1-teil-3-quiz-12",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b1",
+        "kind": "topic",
+        "themeKey": "horen-b1",
+        "partKey": "teil-3",
+        "topicId": "b1-teil-3-quiz-12"
+      },
+      "subtitle": "Meissner",
+      "contentFingerprint": "90a28440",
+      "names": [
+        {
+          "label": "Meissner",
+          "source": "telc.site",
+          "scope": "exercise"
+        },
+        {
+          "label": "Hören Teil 3",
+          "source": "telc.site",
+          "scope": "exercise"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "quizId": "275",
+          "auditReference": "275#q56-60",
+          "sourceLevel": "b1"
+        }
+      ]
+    }
+  ]
+}
