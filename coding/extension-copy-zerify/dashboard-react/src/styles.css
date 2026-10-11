@@ -140,6 +140,14 @@ a { color: inherit; }
 .search-box input { width: 100%; height: 34px; padding: 0; border: 0; outline: 0; color: #263349; background: transparent; font-size: 13px; }
 .toolbar > .count-badge { margin-left: auto; }
 .library-layout { display: grid; grid-template-columns: minmax(0, 1fr) 330px; align-items: start; gap: 18px; }
+.exercise-admin-layout { display:grid; grid-template-columns:300px minmax(0,1fr); align-items:start; gap:20px; }
+.exercise-admin-list { display:grid; gap:8px; max-height:65vh; overflow:auto; margin-top:16px; }
+.exercise-admin-list button { display:flex; flex-direction:column; align-items:flex-start; text-align:left; }
+.exercise-admin-list button[aria-pressed="true"] { background:#fff4c1; }
+.exercise-admin-list small { color:var(--muted,#61727b); }
+.exercise-admin-tabs { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+.exercise-admin-tabs select { max-width:100%; min-height:42px; }
+@media(max-width:900px) { .exercise-admin-layout { grid-template-columns:minmax(0,1fr); } .exercise-admin-list { max-height:240px; } }
 .theme-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .theme-card { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: border-color .16s, box-shadow .16s; }
 .theme-card:hover, .theme-card--selected { border-color: #aabbe4; box-shadow: 0 9px 24px rgba(29,53,106,.08); }

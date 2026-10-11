@@ -9,6 +9,7 @@ import { SprechenPage } from "./pages/SprechenPage";
 import { BeitraegePage } from "./pages/BeitraegePage";
 import { EinstellungenPage } from "./pages/EinstellungenPage";
 import { SharingPage } from "./pages/SharingPage";
+import { ErgaenzungenPage } from "./pages/ErgaenzungenPage";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/dashboard/sprechen" element={<SprechenPage />} />
         <Route path="/dashboard/beitraege" element={<BeitraegePage />} />
         <Route path="/dashboard/sharing" element={<SharingPage />} />
+        <Route path="/dashboard/ergaenzungen" element={<ErgaenzungenPage />} />
         <Route path="/dashboard/einstellungen" element={<EinstellungenPage />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Route>

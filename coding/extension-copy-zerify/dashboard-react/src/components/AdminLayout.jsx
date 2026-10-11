@@ -27,6 +27,7 @@ const navigation = [
   { label: "Hören", description: "Themen und Aussagen", to: "/dashboard/hoeren", icon: Headphones },
   { label: "Schreiben", description: "Aufgaben und Texte", to: "/dashboard/schreiben", icon: FilePenLine },
   { label: "Sprechen", description: "Mündliche Prüfung", to: "/dashboard/sprechen", icon: MessagesSquare },
+  { label: "Ergänzungen", description: "Einzelübungen und Namen", to: "/dashboard/ergaenzungen", icon: BookOpenText },
   { label: "Beiträge", description: "Korrekturen prüfen", to: "/dashboard/beitraege", icon: ClipboardCheck },
   { label: "Freigaben", description: "Empfehlungen auswerten", to: "/dashboard/sharing", icon: Share2 }
 ];
@@ -37,6 +38,7 @@ const dashboardSections = Object.freeze({
   hoeren: "/dashboard/hoeren",
   schreiben: "/dashboard/schreiben",
   sprechen: "/dashboard/sprechen",
+  ergaenzungen: "/dashboard/ergaenzungen",
   beitraege: "/dashboard/beitraege",
   freigaben: "/dashboard/sharing",
   einstellungen: "/dashboard/einstellungen"

@@ -139,7 +139,7 @@ function normalizeTaskShape(rawTask, fallback = {}, index = 0) {
   const source = rawTask && typeof rawTask === "object" ? rawTask : {};
   const current = fallback && typeof fallback === "object" ? fallback : {};
   const addedAt = current.addedAt ?? source.addedAt;
-  const additionMetadata = addedAt ? { addedAt } : {};
+  const additionMetadata = { ...(addedAt ? { addedAt } : {}), ...(current.legacyImport || source.legacyImport ? { legacyImport: current.legacyImport || source.legacyImport, minimumWords: current.minimumWords || source.minimumWords || 150 } : {}) };
 
   const hasNewShape = ["istructions", "instructions", "content", "tasks"].some((key) => {
     return Object.prototype.hasOwnProperty.call(source, key)

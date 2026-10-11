@@ -219,6 +219,7 @@ function normalizeStatements(statements, topicId) {
     const item = statement && typeof statement === "object" ? statement : {};
     const number = Number.isFinite(item.number) ? Number(item.number) : index + 1;
     return {
+      ...item,
       id: String(item.id || `${topicId}-s${index + 1}`),
       number,
       text: String(item.text || "").trim(),
@@ -377,6 +378,10 @@ async function updateTopic(payload) {
 
   if (!nextTopic.title) {
     throw new AppError("title is required", 400);
+  }
+
+  if (current.legacyImport && JSON.stringify(nextTopic.statements) !== JSON.stringify(current.statements)) {
+    nextTopic.legacyImport = { ...current.legacyImport, review: { answerStatus: "unverified", note: "" } };
   }
 
   part.content.topics[index] = nextTopic;

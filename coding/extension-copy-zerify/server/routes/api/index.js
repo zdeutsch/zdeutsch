@@ -25,5 +25,6 @@ router.use("/shreiben", shreibenRoutes);
 router.use("/sprechen", sprechenRoutes);
 router.use("/share", shareRoutes);
 router.use("/repository", repositoryRoutes);
+router.use("/exercise-catalog", require("./exerciseCatalog.routes"));
 
 module.exports = router;

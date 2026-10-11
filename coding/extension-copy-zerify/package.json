@@ -7,6 +7,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite --host 127.0.0.1",
+    "dev:site": "vite --config vite.site.config.mjs",
     "start": "node server.js",
     "start:build": "npm run build && node server.js",
     "import:c1": "python3 scripts/import_c1_hs.py --source-dir '/Users/mac/Downloads/C1 Hochschule'",

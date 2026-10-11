@@ -78,7 +78,8 @@ app.get([
   "/dashboard/sprechen",
   "/dashboard/beitraege",
   "/dashboard/sharing",
-  "/dashboard/einstellungen"
+  "/dashboard/einstellungen",
+  "/dashboard/ergaenzungen"
 ], (req, res) => {
   res.set("Cache-Control", "no-cache");
   res.sendFile(path.join(DASHBOARD_DIST_DIR, "index.html"));

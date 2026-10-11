@@ -663,6 +663,8 @@ async function updatePart(payload) {
       version.lesen.parts = {};
     }
 
+    const imported = version.lesen.parts[partKey]?.content?.legacyImport;
+    if (imported) normalizedContent.legacyImport = { ...imported, review: { answerStatus: "unverified", note: "" } };
     version.lesen.parts[partKey] = {
       ...(version.lesen.parts[partKey] || {}),
       meta: payload.meta,

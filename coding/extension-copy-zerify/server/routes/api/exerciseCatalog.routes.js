@@ -1,0 +1,9 @@
+const express = require("express");
+const asyncHandler = require("../../middleware/asyncHandler");
+const service = require("../../services/exerciseCatalogService");
+const router = express.Router();
+router.get("/", asyncHandler(async (req, res) => res.json({ ok: true, data: await service.list() })));
+router.get("/targets", asyncHandler(async (req, res) => res.json({ ok: true, data: await service.targets() })));
+router.put("/additions/:id", asyncHandler(async (req, res) => res.json({ ok: true, data: await service.updateExercise(req.params.id, req.body) })));
+router.put("/names/:id", asyncHandler(async (req, res) => res.json({ ok: true, data: await service.saveNames(req.params.id, req.body) })));
+module.exports = router;
