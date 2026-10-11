@@ -30,6 +30,7 @@ const {
 } = globalThis.ZDeutschSprachbausteine;
 
 const themeTitle = document.getElementById("theme-title");
+let scopedExerciseNames = [];
 const levelPill = document.getElementById("level-pill");
 const brandLogo = document.getElementById("brand-logo");
 const headerTitle = document.getElementById("header-title");
@@ -518,7 +519,8 @@ function ensurePartState(partKey) {
   const versionKey = getActiveVersionKey();
   const key = [state.level, state.theme, versionKey, partKey].join("|");
   if (!Object.prototype.hasOwnProperty.call(state.responses, key)) {
-    state.responses[key] = {};
+    const content = getActiveLesen(getThemeEntry())?.parts?.[partKey]?.content;
+    state.responses[key] = ZDeutschLesenImports.readResponses(content, window.localStorage);
   }
   if (!Object.prototype.hasOwnProperty.call(state.submitted, key)) {
     state.submitted[key] = false;
@@ -532,6 +534,15 @@ function ensurePartState(partKey) {
     submitted: state.submitted[key],
     active: state.active[key]
   };
+}
+
+function persistImportedResponses(partKey) {
+  const content = getActiveLesen(getThemeEntry())?.parts?.[partKey]?.content;
+  if (!content?.legacyImport) return;
+  const { responses } = ensurePartState(partKey);
+  const saved = ZDeutschLesenImports.saveResponses(content, responses, window.localStorage);
+  const notice = rightPanel.querySelector("[data-save-status]");
+  if (notice) notice.textContent = saved ? "Gespeichert" : "Antworten konnten nicht gespeichert werden.";
 }
 
 function setView(view) {
@@ -615,16 +626,18 @@ function getLesenPartOrder(lesenEntry) {
   const ordered = (configuredOrder.length ? configuredOrder : DEFAULT_PART_ORDER)
     .filter((partKey) => Boolean(parts[partKey]));
   const extras = Object.keys(parts).filter((partKey) => !ordered.includes(partKey));
-  return [...ordered, ...extras];
+  return [...ordered, ...extras].filter(partKey => parts[partKey].content?.legacyImport?.enabled !== false);
 }
 
-function setHeader(meta) {
+function setHeader(meta, isNew = false) {
   if (themeTitle) {
     themeTitle.textContent = meta?.title || "Theme";
   }
   if (levelPill) {
     levelPill.textContent = (meta?.level || state.level || "").toUpperCase();
   }
+  headerTitle?.querySelector(".practice-new-badge")?.remove();
+  if (isNew) headerTitle?.append(PracticeUI.newBadge());
 }
 
 function renderProgress(order) {
@@ -679,20 +692,7 @@ function renderPartCards() {
     const counts = getAnsweredCounts(partKey, partData);
     const isComplete = counts.total > 0 && counts.answered === counts.total;
     const isActive = partKey === state.part;
-    const card = createEl(
-      "button",
-      classNames(
-        "flex items-center justify-center gap-2 rounded-xl border px-2 py-2.5 h-10 min-w-[110px] text-[9px] font-display uppercase tracking-[0.2em] transition-colors",
-        isActive
-          ? "border-azure/60 bg-azure/10 text-azure ring-2 ring-azure/30"
-          : "border-stone-300 bg-white/80 text-slate hover:border-stone-300"
-      ),
-      partData.meta?.partLabel || PART_LABELS[partKey] || partKey
-    );
-    card.type = "button";
-    if (isComplete) {
-      card.append(makeCheckBadge());
-    }
+    const card = PracticeUI.tab({ label: partData.meta?.partLabel || PART_LABELS[partKey] || partKey, active: isActive, complete: isComplete });
     card.addEventListener("click", () => {
       if (state.view !== "exam") {
         setView("exam");
@@ -717,15 +717,7 @@ function renderMessage(text) {
 }
 
 function renderInstruction(text) {
-  if (!text) {
-    return null;
-  }
-  const card = createEl("div", "rounded-2xl border border-stone-200 bg-stone-50 p-4 mb-6");
-  card.append(
-    createEl("div", "font-display text-xs uppercase tracking-[0.2em] text-slate", "Aufgabe"),
-    createEl("p", "mt-2 text-sm text-ink", text)
-  );
-  return card;
+  return PracticeUI.instruction(text);
 }
 
 function makePill(label, variant) {
@@ -1056,6 +1048,7 @@ function countAnsweredSprach(content, responses) {
 }
 
 function computePartScore(partKey, partData) {
+  if (!ZDeutschLesenImports.canScore(partData.content)) return null;
   const { responses } = ensurePartState(partKey);
   const scoreConfig = getScoreConfig();
   const pointsPerQuestion = Number(scoreConfig.parts?.[partKey]?.pointsPerQuestion || 0);
@@ -1129,6 +1122,17 @@ function renderResults() {
   const scoreConfig = getScoreConfig();
   const lesenEntry = getActiveLesen(themeEntry);
   const order = getLesenPartOrder(lesenEntry);
+  if (order.some(partKey => !ZDeutschLesenImports.canScore(lesenEntry.parts[partKey].content))) {
+    resultTitle.textContent = "Übung abgeschlossen";
+    resultSubtitle.textContent = "Für diese Übung fehlen Lösungen. Es wird kein Prüfungsergebnis berechnet.";
+    resultSummary.replaceChildren();
+    resultBreakdown.replaceChildren();
+    order.forEach(partKey => {
+      const counts = getAnsweredCounts(partKey, lesenEntry.parts[partKey]);
+      resultBreakdown.append(createEl("p", "text-sm font-display text-slate", `${PART_LABELS[partKey]} · ${counts.answered}/${counts.total} beantwortet`));
+    });
+    return;
+  }
   const scores = order
     .map((partKey) => {
       const partData = lesenEntry?.parts?.[partKey];
@@ -1196,49 +1200,34 @@ function renderResults() {
 
 function renderActionBar(partKey) {
   const { key, submitted } = ensurePartState(partKey);
-  const wrapper = createEl("div", "exam-action-bar sticky bottom-0 left-0 right-0 pt-4");
-  const bar = createEl("div", "exam-action-bar-inner flex items-center justify-between gap-2");
   const themeEntry = getThemeEntry();
   const lesenEntry = getActiveLesen(themeEntry);
   const partData = lesenEntry?.parts?.[partKey];
-  const button = createEl(
-    "button",
-    classNames(
-      submitted
-        ? "flex-1 rounded-xl px-4 py-2 text-sm font-display"
-        : "w-full rounded-xl px-4 py-2 text-sm font-display",
-      submitted
-        ? "border border-stone-300 bg-stone-50 text-slate"
-        : "bg-azure text-white shadow-lg ring-2 ring-azure/20"
-    ),
-    submitted ? "Neu versuchen" : "Antworten prüfen"
-  );
-
-  button.type = "button";
-  button.addEventListener("click", () => {
+  const hasKey = ZDeutschLesenImports.canScore(partData?.content);
+  const score = submitted && partData ? computePartScore(partKey, partData) : null;
+  const scoreText = score && Number.isFinite(score.total) && score.total > 0
+    ? `Teil score: ${score.correct}/${score.total} | Points: ${formatPoints(score.earnedPoints)} / ${formatPoints(score.maxPoints)}` : "";
+  const wrapper = PracticeUI.reviewBar({ submitted, scoreText, attributes: hasKey ? {} : { disabled: true }, actionLabel: hasKey ? undefined : "Lösungen fehlen", onAction: () => {
+    if (!hasKey) {
+      return;
+    }
     if (submitted) {
       state.responses[key] = {};
       state.submitted[key] = false;
+      persistImportedResponses(partKey);
     } else {
       state.submitted[key] = true;
     }
     renderCurrentPart();
-  });
-
-  if (submitted && partData) {
-    const score = computePartScore(partKey, partData);
-    if (score && Number.isFinite(score.total) && score.total > 0) {
-      const scoreLine = createEl(
-        "div",
-        "mb-2 rounded-xl border border-azure/30 bg-azure/10 px-3 py-2 text-xs font-display text-azure",
-        `Teil score: ${score.correct}/${score.total} | Points: ${formatPoints(score.earnedPoints)} / ${formatPoints(score.maxPoints)}`
-      );
-      wrapper.append(scoreLine);
-    }
+  } });
+  const bar = wrapper.querySelector(".exam-action-bar-inner");
+  if (partData?.content?.legacyImport) {
+    const saved = createEl("p", "text-xs font-display text-slate");
+    saved.dataset.saveStatus = "";
+    saved.setAttribute("role", "status");
+    wrapper.append(saved);
   }
-
-  bar.append(button);
-  if (submitted) {
+  if (submitted && hasKey) {
     const reportButton = createEl(
       "button",
       "flex-1 rounded-xl border border-rose/50 bg-rose/15 px-4 py-2 text-sm font-display text-rose shadow-sm",
@@ -1258,7 +1247,6 @@ function renderActionBar(partKey) {
     bar.append(reportButton);
     scheduleReportGroupsPrefetch(partKey);
   }
-  wrapper.append(bar);
   return wrapper;
 }
 
@@ -2130,7 +2118,7 @@ function renderLesenTeil1(content) {
 
     card.append(createEl("div", "h-8 w-8 rounded-xl border border-stone-200 bg-stone-50 flex items-center justify-center text-sm font-display text-slate", item.id));
 
-    card.append(createHighlightedText("p", "mt-3 text-sm text-ink", item.text, submitted ? answer : null, "text"));
+    card.append(PracticeUI.reading({ node: createHighlightedText("p", "mt-3 text-ink", item.text, submitted ? answer : null, "text") }));
 
     const cardWrap = createEl("div", "rounded-2xl");
     cardWrap.append(card);
@@ -2147,12 +2135,7 @@ function renderLesenTeil1(content) {
   });
   leftPanel.append(list);
 
-  const header = createEl("div", "space-y-1");
-  header.append(
-    createEl("h2", "font-display text-lg", "Überschriften"),
-    createEl("p", "text-xs uppercase tracking-[0.2em] text-slate font-display", `Für Text ${active.textId || ""}`)
-  );
-  rightPanel.append(header);
+  rightPanel.append(PracticeUI.heading("Überschriften", `Für Text ${active.textId || ""}`));
 
   const usedHeadlines = new Map();
   Object.entries(responses).forEach(([textId, headlineId]) => {
@@ -2184,23 +2167,11 @@ function renderLesenTeil1(content) {
     const isUsedByOther = !submitted && usedBy && usedBy !== active.textId;
     const isChoiceActive = normalize(active.headlineId) === normalize(headline.id);
 
-    const option = createEl(
-      "button",
-      classNames(
-        "w-full rounded-xl border px-3 py-3 text-left text-sm font-display flex items-center gap-3 transition-colors",
-        isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-        isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-        isSelected ? "border-azure/60 bg-azure/10 text-azure" :
-        isUsedByOther ? "border-stone-200 bg-stone-50 text-slate opacity-50 cursor-not-allowed" :
-        "border-stone-300 bg-white text-ink hover:border-stone-300"
-      )
-    );
-    option.type = "button";
+    const option = PracticeUI.option({ label: headline.id, selected: isSelected, used: Boolean(isUsedByOther), result: isCorrect ? "correct" : isWrong ? "incorrect" : "",
+      children: [createHighlightedText("span", "practice-option-text", headline.text, submitted ? activeAnswer : null, "headline")] });
     option.draggable = false;
     option.style.userSelect = "text";
     option.style.webkitUserSelect = "text";
-    option.append(createEl("span", "h-6 w-6 rounded-lg border border-black/10 bg-white flex items-center justify-center text-xs", headline.id));
-    option.append(createHighlightedText("span", "text-sm", headline.text, submitted ? activeAnswer : null, "headline"));
     if (isChoiceActive) {
       option.classList.add("ring-2", "ring-azure/30");
     }
@@ -2254,7 +2225,7 @@ function renderLesenTeil2(content) {
   const translatedParagraphs = Array.isArray(content.passage?.translated) ? content.passage.translated : [];
   (content.passage?.paragraphs || []).forEach((para, index) => {
     const block = createEl("div", "mt-4");
-    block.append(createHighlightedText("p", "text-sm text-ink leading-relaxed", para, passageInsight, `passage:${index}`));
+    block.append(PracticeUI.reading({ node: createHighlightedText("p", "text-ink", para, passageInsight, `passage:${index}`) }));
     const translationToggle = createTranslationToggle(translatedParagraphs[index]);
     if (translationToggle) {
       block.append(translationToggle);
@@ -2262,18 +2233,11 @@ function renderLesenTeil2(content) {
     leftPanel.append(block);
   });
 
-  const header = createEl("div", "space-y-1");
-  header.append(
-    createEl("h2", "font-display text-lg", "Aufgaben"),
-    createEl("p", "text-xs uppercase tracking-[0.2em] text-slate font-display", "Wählen Sie die richtige Lösung")
-  );
-  rightPanel.append(header);
+  rightPanel.append(PracticeUI.heading("Aufgaben", "Wählen Sie die richtige Lösung"));
 
   questions.forEach((question) => {
-    const block = createEl("div", "mt-4 rounded-2xl border border-stone-300 bg-stone-50 p-4");
-    const qHeader = createEl("div", "flex items-start gap-2 text-sm font-display");
-    qHeader.append(createEl("span", "text-azure", `${question.id}.`), createHighlightedText("span", "text-ink", question.prompt, submitted ? question : null, "question"));
-    block.append(qHeader);
+    const block = PracticeUI.question({ number: question.id, prompt: question.prompt });
+    block.firstChild.lastChild.replaceWith(createHighlightedText("span", "text-ink", question.prompt, submitted ? question : null, "question"));
 
     const list = createEl("div", "mt-3 space-y-2");
     (question.options || []).forEach((option) => {
@@ -2282,19 +2246,8 @@ function renderLesenTeil2(content) {
       const isCorrect = submitted && option.id === question.answerId;
       const isWrong = submitted && isSelected && option.id !== question.answerId;
 
-      const item = createEl(
-        "button",
-        classNames(
-          "w-full rounded-xl border px-3 py-2 text-left text-sm font-display flex items-center gap-2 transition-colors",
-          isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-          isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-          isSelected ? "border-azure/60 bg-azure/10 text-azure" :
-          "border-stone-300 bg-white text-ink hover:border-stone-300"
-        )
-      );
-      item.type = "button";
-      item.append(createEl("span", "text-xs", `${option.id.toUpperCase()})`));
-      item.append(createHighlightedText("span", "text-sm", option.text, submitted ? question : null, `option:${String(option.id).toLowerCase()}`));
+      const item = PracticeUI.option({ label: option.id.toUpperCase(), selected: isSelected, result: isCorrect ? "correct" : isWrong ? "incorrect" : "",
+        children: [createHighlightedText("span", "practice-option-text", option.text, submitted ? question : null, `option:${String(option.id).toLowerCase()}`)] });
       item.addEventListener("click", () => {
         responses[question.id] = option.id;
         renderCurrentPart();
@@ -2332,7 +2285,7 @@ function renderLesenTeil3(content) {
     }
   });
 
-  leftPanel.append(createEl("h2", "font-display text-lg", "Anzeigen"));
+  leftPanel.append(PracticeUI.heading("Anzeigen"));
   const adsGrid = createEl("div", "mt-4 grid grid-cols-1 md:grid-cols-2 gap-3");
   (content.ads || []).forEach((ad) => {
     const selected = responses[active.situationId];
@@ -2364,7 +2317,7 @@ function renderLesenTeil3(content) {
     item.type = "button";
     item.draggable = true;
     item.append(createEl("div", "h-7 w-7 rounded-lg border border-stone-300 bg-white flex items-center justify-center text-xs font-display text-slate", ad.id));
-    item.append(createHighlightedText("p", "mt-2 text-sm whitespace-pre-wrap", ad.text, adInsight, "ad"));
+    item.append(PracticeUI.reading({ node: createHighlightedText("p", "mt-2 whitespace-pre-wrap", ad.text, adInsight, "ad") }));
     if (isChoiceActive) {
       item.classList.add("ring-2", "ring-azure/30");
     }
@@ -2405,7 +2358,7 @@ function renderLesenTeil3(content) {
   });
   leftPanel.append(adsGrid);
 
-  rightPanel.append(createEl("h2", "font-display text-lg", "Situationen"));
+  rightPanel.append(PracticeUI.heading("Situationen"));
   const list = createEl("div", "mt-4 space-y-3");
 
   situations.forEach((item) => {
@@ -2477,7 +2430,7 @@ function renderLesenTeil3(content) {
 
     card.append(createEl("p", "text-xs uppercase tracking-[0.2em] text-slate font-display", `Situation ${item.id}`));
 
-    card.append(createHighlightedText("p", "mt-2 text-sm whitespace-pre-wrap", item.text, submitted ? answer : null, "situation"));
+    card.append(PracticeUI.reading({ node: createHighlightedText("p", "mt-2 whitespace-pre-wrap", item.text, submitted ? answer : null, "situation") }));
 
     const cardWrap = createEl("div", "space-y-2");
     cardWrap.append(card);
@@ -2498,6 +2451,7 @@ function renderLesenTeil3(content) {
 function renderSprachbausteine1(content) {
   const partKey = "sprachbausteine-1";
   const { responses, submitted, active } = ensurePartState(partKey);
+  const hasKey = ZDeutschLesenImports.canScore(content);
   leftPanel.innerHTML = "";
   rightPanel.innerHTML = "";
 
@@ -2517,7 +2471,7 @@ function renderSprachbausteine1(content) {
     active.blankId = blankIds[0];
   }
 
-  const textBlock = createEl("p", "mt-6 text-sm leading-relaxed whitespace-pre-wrap");
+  const textBlock = PracticeUI.reading({ tag: "p", className: "mt-6 whitespace-pre-wrap" });
   const renderedOccurrences = new Map();
 
   templateTokens.forEach((token) => {
@@ -2539,23 +2493,11 @@ function renderSprachbausteine1(content) {
     const displayedSelected = selected
       ? sprachAnswerForOccurrence(selected, occurrenceIndex, occurrenceCount)
       : `(${blankId})`;
-    const isCorrect = submitted && selected && sameSprachAnswer(selected, correct);
-    const isWrong = submitted && selected && !sameSprachAnswer(selected, correct);
+    const isCorrect = hasKey && submitted && selected && sameSprachAnswer(selected, correct);
+    const isWrong = hasKey && submitted && selected && !sameSprachAnswer(selected, correct);
     const isActive = blankId === String(active.blankId);
 
-    const blank = createEl(
-      "button",
-      classNames(
-        "mx-1 inline-flex min-w-[52px] items-center justify-center rounded-xl border px-2 py-1 text-xs font-display",
-        isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-        isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-        selected ? "border-azure/60 bg-azure/10 text-azure" :
-        "border-stone-300 bg-stone-50 text-slate",
-        isActive ? "ring-2 ring-azure/20" : ""
-      ),
-      displayedSelected
-    );
-    blank.type = "button";
+    const blank = PracticeUI.gap({ text: displayedSelected, selected: Boolean(selected), active: isActive, result: isCorrect ? "correct" : isWrong ? "incorrect" : "", attributes: { "aria-label": `Lücke ${blankId}` } });
     blank.addEventListener("click", () => {
       active.blankId = blankId;
       renderCurrentPart();
@@ -2568,12 +2510,7 @@ function renderSprachbausteine1(content) {
     leftPanel.append(textTranslationToggle);
   }
 
-  const header = createEl("div", "space-y-1");
-  header.append(
-    createEl("h2", "font-display text-lg", "Antworten"),
-    createEl("p", "text-xs uppercase tracking-[0.2em] text-slate font-display", "Wählen Sie für jede Lücke die passende Option")
-  );
-  rightPanel.append(header);
+  rightPanel.append(PracticeUI.heading("Antworten", "Wählen Sie für jede Lücke die passende Option"));
 
   const list = createEl("div", "mt-4 space-y-4");
   blankOrder.forEach((id) => {
@@ -2598,25 +2535,15 @@ function renderSprachbausteine1(content) {
     const options = createEl("div", "mt-2 space-y-2");
     (blank.options || []).forEach((optionText) => {
       const isSelected = sameSprachAnswer(optionText, selected);
-      const isCorrect = submitted && sameSprachAnswer(optionText, correct);
-      const isWrong = submitted && isSelected && !sameSprachAnswer(optionText, correct);
+      const isCorrect = hasKey && submitted && sameSprachAnswer(optionText, correct);
+      const isWrong = hasKey && submitted && isSelected && !sameSprachAnswer(optionText, correct);
 
-      const option = createEl(
-        "button",
-        classNames(
-          "w-full rounded-xl border px-3 py-2 text-left text-sm transition-colors",
-          isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-          isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-          isSelected ? "border-azure/60 bg-azure/10 text-azure" :
-          "border-stone-300 bg-white text-ink hover:border-stone-300"
-        ),
-        optionText
-      );
-      option.type = "button";
+      const option = PracticeUI.option({ text: optionText, selected: isSelected, result: isCorrect ? "correct" : isWrong ? "incorrect" : "" });
       option.addEventListener("click", () => {
         active.blankId = blankId;
         responses[blankId] = optionText;
         renderCurrentPart();
+        persistImportedResponses(partKey);
       });
       options.append(option);
     });
@@ -2654,7 +2581,7 @@ function renderSprachbausteine2(content) {
       usedWords.set(canonicalSprachAnswer(selected), String(blankId));
     }
   });
-  const textBlock = createEl("p", "mt-6 text-sm leading-relaxed whitespace-pre-wrap");
+  const textBlock = PracticeUI.reading({ tag: "p", className: "mt-6 whitespace-pre-wrap" });
   const renderedOccurrences = new Map();
 
   templateTokens.forEach((token) => {
@@ -2680,19 +2607,7 @@ function renderSprachbausteine2(content) {
     const isWrong = submitted && selected && !sameSprachAnswer(selected, correct);
     const isActive = blankId === String(active.blankId);
 
-    const blank = createEl(
-      "button",
-      classNames(
-        "mx-1 inline-flex min-w-[52px] items-center justify-center rounded-xl border px-2 py-1 text-xs font-display",
-        isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-        isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-        selected ? "border-azure/60 bg-azure/10 text-azure" :
-        "border-stone-300 bg-stone-50 text-slate",
-        isActive ? "ring-2 ring-azure/20" : ""
-      ),
-      displayedSelected
-    );
-    blank.type = "button";
+    const blank = PracticeUI.gap({ text: displayedSelected, selected: Boolean(selected), active: isActive, result: isCorrect ? "correct" : isWrong ? "incorrect" : "", attributes: { "aria-label": `Lücke ${blankId}` } });
     blank.addEventListener("click", () => {
       if (active.wordText) {
         const usedBy = usedWords.get(canonicalSprachAnswer(active.wordText));
@@ -2739,16 +2654,7 @@ function renderSprachbausteine2(content) {
     leftPanel.append(textTranslationToggle);
   }
 
-  const header = createEl("div", "space-y-1");
-  header.append(
-    createEl("h2", "font-display text-lg", "Wörter"),
-    createEl(
-      "p",
-      "text-xs uppercase tracking-[0.2em] text-slate font-display",
-      "Wählen Sie ein Wort"
-    )
-  );
-  rightPanel.append(header);
+  rightPanel.append(PracticeUI.heading("Wörter", "Wählen Sie ein Wort"));
 
   const optionSource = Array.isArray(content.options) ? content.options : [];
   const uniqueOptions = Array.from(new Set(optionSource.map((text) => canonicalSprachAnswer(text))))
@@ -2782,19 +2688,7 @@ function renderSprachbausteine2(content) {
       const isUsedByOther = !submitted && usedBy && usedBy !== active.blankId;
       const isChoiceActive = sameSprachAnswer(active.wordText, wordText);
 
-      const card = createEl(
-        "button",
-        classNames(
-          "rounded-xl border px-3 py-2 text-xs font-display transition-colors",
-          isCorrect ? "border-mint/60 bg-mint/20 text-mint" :
-          isWrong ? "border-rose/50 bg-rose/15 text-rose" :
-          isSelected ? "border-azure/60 bg-azure/10 text-azure" :
-          isUsedByOther ? "border-stone-200 bg-stone-50 text-slate opacity-50 cursor-not-allowed" :
-          "border-stone-300 bg-white text-ink hover:border-stone-300"
-        ),
-        wordText
-      );
-      card.type = "button";
+      const card = PracticeUI.option({ text: wordText, selected: isSelected, used: Boolean(isUsedByOther), result: isCorrect ? "correct" : isWrong ? "incorrect" : "" });
       card.draggable = true;
       if (isChoiceActive) {
         card.classList.add("ring-2", "ring-azure/30");
@@ -2843,7 +2737,12 @@ function renderCurrentPart() {
     return;
   }
 
-  setHeader(partData.meta);
+  if (partData.content?.legacyImport?.enabled === false) {
+    renderMessage("Diese Übung ist derzeit nicht verfügbar.");
+    return;
+  }
+
+  setHeader(partData.meta, Boolean(partData.content?.legacyImport));
   renderProgress(getLesenPartOrder(lesenEntry));
 
   if (state.part === "teil-1") {
@@ -2858,9 +2757,27 @@ function renderCurrentPart() {
     renderSprachbausteine2(partData.content);
   }
 
+  if (!ZDeutschLesenImports.canScore(partData.content)) {
+    leftPanel.append(createEl("p", "exercise-note", "Für diese Übung fehlen Lösungen. Es wird kein Prüfungsergebnis berechnet."));
+  }
+  const importedNames = partData.content?.legacyImport?.names || [];
+  const otherNames = [...new Set(importedNames)].filter(name => name !== partData.content.title);
+  if (otherNames.length) {
+    const details = createEl("details", "exercise-name-details");
+    details.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", otherNames.join(" · ")));
+    leftPanel.prepend(details);
+  }
+
   const order = getLesenPartOrder(lesenEntry);
   const index = order.indexOf(state.part);
   const atLastPart = index === order.length - 1;
+  const named = scopedExerciseNames.find(entry => entry.target.themeKey === state.theme && entry.target.versionKey === getActiveVersionKey() && entry.target.partKey === state.part);
+  if (named) {
+    const label = createEl("h2", "exercise-name-subtitle", named.subtitle);
+    const details = createEl("details", "exercise-name-details");
+    details.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", named.names.map(name => name.label).join(" · ")));
+    leftPanel.prepend(label, details);
+  }
   prevBtn.disabled = index <= 0;
   nextBtn.disabled = index === -1;
   nextBtn.textContent = atLastPart ? "Ergebnis" : "Weiter";
@@ -2879,6 +2796,7 @@ function resetCurrentTheme() {
   order.forEach((partKey) => {
     const { key } = ensurePartState(partKey);
     state.responses[key] = {};
+    persistImportedResponses(partKey);
     state.submitted[key] = false;
     state.active[key] = {};
   });
@@ -2978,6 +2896,7 @@ if (versionSwitchSelect) {
     const params = new URLSearchParams(window.location.search);
     params.set("theme", state.theme);
     params.set("version", nextVersionKey);
+    params.set("part", state.part);
     window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
     setView("exam");
     startExamTimer();
@@ -3130,6 +3049,10 @@ async function init() {
     renderMessage("database/lesen.json not found. Run scripts/build_database.py");
     return;
   }
+  if (window.ZDeutschExercises) {
+    const extra = await window.ZDeutschExercises.load();
+    scopedExerciseNames = window.ZDeutschExercises.bindNames({ "lesen.json": state.db }, extra.names);
+  }
 
   const params = new URLSearchParams(window.location.search);
   const levelKey = params.get("level");
@@ -3152,7 +3075,7 @@ async function init() {
 
   const lesenEntry = getActiveLesen(themeEntry);
   const order = getLesenPartOrder(lesenEntry);
-  state.part = order[0] || null;
+  state.part = order.includes(params.get("part")) ? params.get("part") : order[0] || null;
 
   setView("exam");
   renderVersionSwitcher();

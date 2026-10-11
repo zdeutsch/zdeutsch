@@ -114,8 +114,9 @@
     };
   </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="theme.css?v=20261006-premium-banner-1">
-    <link rel="stylesheet" href="ui-refresh.css?v=20260913-1">
+    <link rel="stylesheet" href="theme.css?v=20261011-navigation-1">
+    <link rel="stylesheet" href="ui-refresh.css?v=20261011-navigation-1">
+    <link rel="stylesheet" href="practice-components.css?v=20261011-navigation-1">
   </head>
 
 <body class="theme-body font-body min-h-screen home-page">
@@ -178,9 +179,6 @@
                 alt="ZDeutsch Premium: شرح الكلمات، ألعاب المفردات، التدريب والتصحيح. اختر اشتراكك."
                 decoding="async">
             </a>
-            <button id="zdeutsch-premium-motion" class="zd-premium-motion" type="button" hidden>
-              إيقاف الحركة
-            </button>
           </aside>
 
           <!-- <section class="home-control-card home-community-card-gold mt-5" dir="rtl">
@@ -219,6 +217,9 @@
                   <span>Zurück</span>
                 </button>
                 <nav id="home-stage-path" class="home-stage-path" aria-label="Aktuelle Auswahl" aria-live="polite"></nav>
+                <button id="home-context-toggle" class="home-context-toggle" type="button" aria-label="Niveau und Modul ändern" aria-controls="home-context-switcher" aria-expanded="false" hidden>
+                  Ändern <span aria-hidden="true">⌄</span>
+                </button>
               </div>
               <div id="home-context-switcher" class="home-context-switcher hidden" aria-label="Auswahl schnell ändern">
                 <div class="home-context-group">
@@ -253,7 +254,7 @@
             <section id="home-theme-stage" class="hidden space-y-6">
               <div class="home-control-card home-search-card">
                 <div class="flex flex-wrap items-center justify-between gap-2">
-                  <label for="theme-search" class="text-xs uppercase tracking-[0.2em] text-slate font-display">Thema finden</label>
+                  <label id="theme-search-label" for="theme-search" class="text-xs uppercase tracking-[0.2em] text-slate font-display">Thema finden</label>
                   <div id="theme-search-scope"
                     class="home-search-scope font-display uppercase tracking-[0.18em] text-slate"></div>
                 </div>
@@ -266,26 +267,22 @@
                 </div>
               </div>
               <div class="home-themes-block">
-                <div class="flex flex-wrap items-center justify-between gap-3">
+                <div id="exercise-library-tabs" class="exercise-library-tabs" role="tablist" aria-label="Themen und Prüfungsteile" hidden></div>
+                <div id="theme-library-heading" class="flex flex-wrap items-center justify-between gap-3">
                   <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Themen</div>
                   <button id="download-all-themes-btn" type="button"
                     class="hidden rounded-full border border-azure/40 bg-azure/10 px-4 py-2 text-[10px] font-display uppercase tracking-[0.18em] text-azure shadow-sm transition hover:-translate-y-0.5 hover:border-azure/60">
                     Alle Lesen-Themen laden
                   </button>
                 </div>
-                <div id="theme-grid" class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3"></div>
+                <div id="theme-grid" class="mt-4 practice-theme-grid"></div>
+                <section id="exercise-library-section" class="exercise-library-section" hidden>
+                  <h3 id="exercise-library-title">Einzelübungen</h3>
+                  <div id="exercise-grid" class="practice-theme-grid"></div>
+                </section>
               </div>
             </section>
 
-            <section id="home-version-stage" class="home-control-card home-stage-card home-version-stage hidden" tabindex="-1">
-              <div class="home-stage-intro">
-                <div class="home-step-label font-display">Schritt 4 · Version</div>
-                <p id="home-version-context" class="home-version-context font-display"></p>
-                <h3 id="home-version-title" class="home-stage-heading">Welche Version möchtest du üben?</h3>
-                <p class="home-stage-copy">Jede Version ist eine eigene Prüfung. Wähle eine aus, um direkt mit der Übung zu beginnen.</p>
-              </div>
-              <div id="version-list" class="home-version-grid" aria-live="polite"></div>
-            </section>
           </div>
 
           <div id="community-promo-target" class="home-community-slot"></div>
@@ -296,11 +293,26 @@
     </section>
   </div>
 
+  <dialog id="theme-version-dialog" class="theme-version-dialog" aria-labelledby="home-version-title" aria-describedby="theme-version-description">
+    <div class="theme-version-dialog-header">
+      <div>
+        <p id="home-version-context" class="theme-version-eyebrow"></p>
+        <h2 id="home-version-title">Version wählen</h2>
+      </div>
+      <button id="theme-version-close" class="theme-version-close" type="button" aria-label="Versionsauswahl schließen">×</button>
+    </div>
+    <p id="theme-version-description">Welche Version möchtest du üben?</p>
+    <div id="version-list" class="theme-version-list"></div>
+  </dialog>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
-  <script src="shared.js?v=20260913-navigation-v23"></script>
-  <script src="premium-banner.js?v=20261006-1"></script>
-  <script src="main.js?v=20260926-horen-audio-v25"></script>
+  <script src="shared.js?v=20261011-navigation-1"></script>
+  <script src="practice-components.js?v=20261011-navigation-1"></script>
+  <link rel="stylesheet" href="exercise-additions.css?v=20261011-navigation-1">
+  <script src="exercise-catalog.js?v=20261011-navigation-1"></script>
+  <script src="premium-banner.js?v=20261011-navigation-1"></script>
+  <script src="main.js?v=20261011-navigation-1"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-09-27-horen-audio-v28";
+const SW_VERSION = "2026-10-11-navigation-v37";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
@@ -9,6 +9,15 @@ const APP_SHELL = [
   "./horen.html",
   "./shreiben.html",
   "./mundlich.html",
+  "./einzeluebung.html",
+  "./exercise-catalog.js",
+  "./exercise-practice.js",
+  "./exercise-additions.css",
+  "./database/exercise-additions.b2.json",
+  "./database/exercise-names.b2.json",
+  "./premium-banner.js",
+  "./practice-components.js",
+  "./practice-components.css",
   "./theme.css",
   "./ui-refresh.css",
   "./horen.css",
@@ -17,6 +26,7 @@ const APP_SHELL = [
   "./main.js",
   "./correction.js",
   "./lesen.js",
+  "./lesen-import-state.js",
   "./horen.js",
   "./shreiben.js",
   "./mundlich.js",

@@ -110,7 +110,7 @@ const WHATSAPP_CONTENT = {
 const DEFAULT_BOTTOM_BANNER_INTERVAL_HOURS = 3;
 const LEGACY_PROMO_PATH_PREFIX = "assets/ads/banners/";
 const PUBLIC_PROMO_PATH_PREFIX = "assets/highlights/slots/";
-const SITE_DATA_VERSION = "2026-09-13-navigation-v23";
+const SITE_DATA_VERSION = "2026-10-11-navigation-v37";
 const SERVICE_WORKER_URL = `./sw.js?v=${encodeURIComponent(SITE_DATA_VERSION)}`;
 
 const SHARED_SCRIPT_BASE_URL = (() => {
@@ -759,10 +759,11 @@ function getVersionKeys(themeEntry) {
   if (!themeEntry) {
     return [];
   }
-  if (themeEntry.versionOrder?.length) {
-    return themeEntry.versionOrder;
-  }
-  return Object.keys(themeEntry.versions || {});
+  const keys = themeEntry.versionOrder?.length ? themeEntry.versionOrder : Object.keys(themeEntry.versions || {});
+  return keys.filter(key => {
+    const parts = Object.values(themeEntry.versions?.[key]?.lesen?.parts || {});
+    return !parts.length || parts.some(part => part.content?.legacyImport?.enabled !== false);
+  });
 }
 
 function makeLesenProgressEntryKey(levelKey, themeKey, versionKey) {
@@ -1327,7 +1328,12 @@ function setupCommunityWidgets() {
 
 async function initSharedSiteFeatures() {
   setupCommunityWidgets();
-  if ("serviceWorker" in navigator) {
+  const localPreview = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
+  if ("serviceWorker" in navigator && localPreview) {
+    // A local preview must not install an offline cache or reload mid-exercise.
+    navigator.serviceWorker.getRegistration().then(registration => registration?.unregister()).catch(() => {});
+  }
+  if ("serviceWorker" in navigator && !localPreview) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.addEventListener("controllerchange", () => {
         const reloadKey = `zdeutsch.swReloaded.${SITE_DATA_VERSION}`;

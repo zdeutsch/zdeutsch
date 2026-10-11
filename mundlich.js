@@ -604,6 +604,11 @@ async function loadDatabase() {
       state.selectedTopics[partKey] = getTopicKey(firstTopic);
     }
   });
+  const rawIndex = params.get("topicIndex");
+  if (rawIndex !== null && /^\d+$/.test(rawIndex)) {
+    const selected = level.parts[state.partKey]?.topics?.[Number(rawIndex)];
+    if (selected) state.selectedTopics[state.partKey] = getTopicKey(selected);
+  }
   resetTimer();
   bindEvents();
   render();

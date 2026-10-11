@@ -513,6 +513,7 @@ function normalizeTask(task, index) {
 
   return {
     id,
+    legacyImport: source.legacyImport,
     title: explicitTitle || extractTaskTitle({ istructions }, index),
     istructions,
     content,
@@ -524,7 +525,7 @@ function normalizeTaskList(value) {
   if (!Array.isArray(value)) {
     return [];
   }
-  return value.map((task, index) => normalizeTask(task, index));
+  return value.map((task, index) => normalizeTask(task, index)).filter(task => task.legacyImport?.enabled !== false);
 }
 
 function getPart(partKey) {
@@ -949,6 +950,14 @@ function renderMarkdownBlock(markdown) {
 }
 
 function renderTask(task) {
+  if (task.legacyImport) {
+    const card = PracticeUI.panel({ label: task.title });
+    card.append(PracticeUI.heading(task.title));
+    const link = createEl("a", "practice-button", "Üben →");
+    link.href = `einzeluebung.html?exercise=${encodeURIComponent(task.legacyImport.id)}`;
+    card.append(link);
+    return card;
+  }
   const card = createEl("article", "rounded-[1.6rem] border border-stone-300 bg-white p-3 sm:p-5 shadow-sm space-y-4 sm:space-y-5");
   const titleRow = createEl("div", "flex flex-wrap items-center justify-between gap-3");
   titleRow.append(
@@ -980,10 +989,7 @@ function renderTask(task) {
   writingHeader.append(fullscreenBtn);
   writingBlock.append(writingHeader);
 
-  const textarea = document.createElement("textarea");
-  textarea.className = "shreiben-editor w-full flex-1 min-h-[56svh] sm:min-h-[420px] lg:min-h-0 rounded-[1.35rem] border border-stone-300 bg-white px-3 py-3 sm:px-4 text-sm leading-7 text-ink focus:outline-none focus:border-azure/50 focus:ring-2 focus:ring-azure/20";
-  textarea.placeholder = "Schreiben Sie hier Ihre Beschwerde...";
-  textarea.value = getDraft(task.id);
+  const textarea = PracticeUI.editor({ value: getDraft(task.id), className: "shreiben-editor flex-1 min-h-[56svh] sm:min-h-[420px] lg:min-h-0", attributes: { placeholder: "Schreiben Sie hier Ihre Beschwerde...", "aria-label": "Schreibentwurf" } });
   textarea.style.fontSize = `${state.editorFontSize}px`;
 
   const infoRow = createEl("div", "flex flex-wrap items-center justify-between gap-2");
@@ -1098,6 +1104,11 @@ function renderActivePart() {
     contentContainer.append(
       createEl("div", "rounded-2xl border border-rose/30 bg-rose/10 p-4 text-sm text-rose", "Die ausgewählte Schreiben-Aufgabe wurde nicht gefunden.")
     );
+    return false;
+  }
+
+  if (taskId && tasksToRender[0].legacyImport) {
+    window.location.replace(`einzeluebung.html?exercise=${encodeURIComponent(tasksToRender[0].legacyImport.id)}`);
     return false;
   }
 

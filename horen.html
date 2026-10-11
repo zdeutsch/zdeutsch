@@ -112,9 +112,10 @@
       };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="theme.css?v=20260426-19">
-    <link rel="stylesheet" href="ui-refresh.css?v=20260715-2">
+    <link rel="stylesheet" href="theme.css?v=20261011-navigation-1">
+    <link rel="stylesheet" href="ui-refresh.css?v=20261011-navigation-1">
     <link rel="stylesheet" href="horen.css?v=20260905-1">
+    <link rel="stylesheet" href="practice-components.css?v=20261011-navigation-1">
   </head>
   <body class="theme-body font-body min-h-screen">
     <div class="fixed inset-0">
@@ -123,43 +124,7 @@
       <div class="absolute inset-0 grid-overlay"></div>
     </div>
 
-    <header class="fixed top-0 left-0 right-0 border-b border-black/10 bg-white/90 backdrop-blur-md shadow-sm z-40">
-      <div class="w-full px-6 py-3 flex flex-col gap-2">
-        <div class="flex items-center justify-between gap-4">
-          <div id="header-left" class="flex items-center gap-3 shrink-0">
-            <button id="return-btn" type="button" aria-label="Zur Themenbibliothek" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm">
-              <i data-lucide="arrow-left" class="h-4 w-4" aria-hidden="true"></i>
-            </button>
-            <span id="return-label" class="text-xs font-display uppercase tracking-[0.2em] text-slate">Bibliothek</span>
-            <div id="header-divider" class="h-6 w-px bg-black/10"></div>
-            <div id="header-title">
-              <div class="flex items-center gap-2">
-                <h1 id="theme-title" class="font-display text-base">Hören Codes</h1>
-                <span id="level-pill" class="rounded-full border border-azure/40 bg-azure/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-azure font-display">B1</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div id="timer-display" class="hidden items-center gap-2 rounded-full border border-azure/40 bg-azure/10 px-3 py-1 text-[10px] font-display uppercase tracking-[0.2em] text-azure">
-              <span id="timer-value">90:00</span>
-            </div>
-            <button 
-              id="hide-aussage-shortcut" 
-              class="hidden items-center gap-2 rounded-full border border-azure/40 bg-white px-3 py-2 text-[10px] font-display uppercase tracking-[0.2em] text-azure shadow-sm hover:bg-azure/5 transition-colors"
-              type="button"
-            >
-              <i data-lucide="eye-off" class="h-4 w-4" aria-hidden="true"></i>
-              <span class="whitespace-nowrap text-[9px]">Aussagen</span>
-            </button>
-            <button id="settings-btn" type="button" aria-label="Höreinstellungen öffnen" aria-controls="settings-panel" aria-expanded="false" class="h-9 w-9 rounded-xl border border-black/10 bg-white/80 text-slate flex items-center justify-center shadow-sm hover:bg-white transition-colors">
-              <i data-lucide="settings" class="h-4 w-4" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-        <div class="flex items-center gap-3 overflow-x-auto md:overflow-visible pb-2 md:pb-0 justify-center md:justify-center w-full">
-          <div id="part-cards" class="hidden flex items-center justify-center gap-2 flex-wrap shrink-0 py-1 max-w-full"></div>
-        </div>
-      </div>
+    <div data-practice-header='{"backId":"return-btn","title":"Hören Codes","hearing":true}'>
       <div id="settings-panel" role="dialog" aria-label="Höreinstellungen" class="fixed right-6 top-24 w-64 rounded-2xl border border-stone-300 bg-white/95 shadow-panel p-4 hidden z-40">
         <div class="text-xs uppercase tracking-[0.2em] text-slate font-display">Einstellungen</div>
         <div class="mt-4">
@@ -182,26 +147,9 @@
           <p class="text-[10px] text-slate leading-snug">Versteckt die Aussagen und zeigt stattdessen ein geschlossenes Auge.</p>
         </div>
       </div>
-    </header>
+    </div>
 
     <main class="relative z-10 max-w-6xl mx-auto px-4 pt-44 md:pt-40 pb-32 sm:px-6">
-      <div id="horen-source-panel" class="mb-6 rounded-2xl border border-amber/40 bg-white/90 px-4 py-3 shadow-sm">
-        <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p id="horen-source-kicker" class="text-[10px] font-display uppercase tracking-[0.25em] text-slate">Source PDF</p>
-            <p id="horen-source-copy" class="text-sm text-ink">Hörverstehen korrigierte Telc B2 (Sätze + Codes)</p>
-          </div>
-          <a
-            id="horen-source-link"
-            href="assets/horen-b2-source.pdf"
-            download="Hoerverstehen-korrigierte-Telc-B2-Saetze-Codes.pdf"
-            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-amber bg-amber px-4 py-2 text-[10px] font-display uppercase tracking-[0.22em] text-white shadow-sm transition-colors hover:border-[#92400e] hover:bg-[#92400e]"
-          >
-            <i data-lucide="download" class="h-4 w-4" aria-hidden="true"></i>
-            <span>Download Source</span>
-          </a>
-        </div>
-      </div>
 
       <div class="horen-callout mb-10">
         <p class="text-sm leading-relaxed">
@@ -238,7 +186,10 @@
     </footer>
 
     <script src="https://unpkg.com/lucide@0.471.0/dist/umd/lucide.min.js"></script>
-    <script src="shared.js?v=20260727-b1-2"></script>
-    <script src="horen.js?v=20260927-audio-library-3"></script>
+    <script src="shared.js?v=20261011-navigation-1"></script>
+    <script src="practice-components.js?v=20261011-navigation-1"></script>
+    <link rel="stylesheet" href="exercise-additions.css?v=20261011-navigation-1">
+    <script src="exercise-catalog.js?v=20261011-navigation-1"></script>
+    <script src="horen.js?v=20261011-navigation-1"></script>
   </body>
 </html>

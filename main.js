@@ -1,3 +1,6 @@
+// Re-enable when the C1 Hochschule collection is complete.
+const C1_HOCHSCHULE_VISIBLE = false;
+
 const themeTitle = document.getElementById("theme-title");
 const levelPill = document.getElementById("level-pill");
 const levelList = document.getElementById("level-list");
@@ -20,10 +23,16 @@ const homeStagePath = document.getElementById("home-stage-path");
 const homeLevelStage = document.getElementById("home-level-stage");
 const homeSectionStage = document.getElementById("home-section-stage");
 const homeThemeStage = document.getElementById("home-theme-stage");
-const homeVersionStage = document.getElementById("home-version-stage");
+const themeVersionDialog = document.getElementById("theme-version-dialog");
+const themeVersionClose = document.getElementById("theme-version-close");
+let versionDialogTrigger = null;
+let versionDialogScrollY = 0;
 const homeHero = document.getElementById("home-hero");
 const homeSectionStageCopy = document.getElementById("home-section-stage-copy");
 const homeContextSwitcher = document.getElementById("home-context-switcher");
+const homeContextToggle = document.getElementById("home-context-toggle");
+const compactHomeNavigation = window.matchMedia("(max-width: 740px)");
+let homeContextExpanded = false;
 const homeQuickLevelList = document.getElementById("home-quick-level-list");
 const homeQuickSectionList = document.getElementById("home-quick-section-list");
 const homeVersionContext = document.getElementById("home-version-context");
@@ -43,6 +52,255 @@ const state = {
   homeStage: "level",
   pendingScrollY: null
 };
+const exerciseLibraryTabs = document.getElementById("exercise-library-tabs");
+let exerciseData = { additions: { exercises: [] }, names: { entries: [] }, errors: [] };
+let exerciseNames = [];
+let exerciseView = new URLSearchParams(window.location.search).get("collection") === "exercises" ? "exercises" : "themes";
+let exercisePartKey = new URLSearchParams(window.location.search).get("part") || "";
+
+function isGenericExerciseName(name) {
+  return /^(lesen|hören|horen|sprechen|sprachbausteine)?\s*(teil\s*\d+)?$/i.test(String(name || "").trim())
+    || /^(aufgabe[n]?|thema)$/i.test(String(name || "").trim());
+}
+
+function getExerciseDisplayTitle(entry) {
+  const currentWritingTitle = entry.module === "shreiben" ? String(entry.record.title || "").replace(/^\d+\s*[.)]\s*/, "") : "";
+  const candidates = [currentWritingTitle, entry.subtitle, ...(entry.names || []).map(name => name.label)];
+  return candidates.find(name => name && !isGenericExerciseName(name))
+    || entry.contextTitle.replace(/\s*\(nur\s+[^)]+\)\s*/gi, "").trim()
+    || entry.label;
+}
+
+function getExerciseLocation(entry) {
+  if (entry.module === "shreiben") return "Schreibaufgabe";
+  if (entry.module === "mundlich") return "Sprechübung";
+  const parts = [`Im Thema „${entry.contextTitle}“`];
+  if (entry.target.file === "lesen.json" && entry.target.versionKey) {
+    const theme = state.db?.levels?.[state.level]?.themes?.[entry.target.themeKey];
+    const versions = getVersionKeys(theme);
+    if (versions.length > 1) parts.push(formatVersionLabel(entry.versionLabel, versions.indexOf(entry.target.versionKey)));
+  }
+  return parts.join(" · ");
+}
+
+function readExerciseLibraryState(key) {
+  try { return JSON.parse(localStorage.getItem(key) || "null") || {}; } catch (_) { return {}; }
+}
+
+function getExistingExerciseInfo(entry) {
+  const record = entry.record;
+  const imported = window.ZDeutschExercises.mergedExercise(entry);
+  if (imported) return getAdditionalExerciseInfo(imported);
+  if (entry.module === "shreiben") {
+    const words = getShreibenWordCount(state.level, `task-${entry.target.index + 1}`);
+    return { status: words ? `${words} Wörter gespeichert` : "Noch kein Entwurf", meta: ["Mindestens 150 Wörter"], progress: null };
+  }
+  if (entry.module === "mundlich") {
+    const progress = readExerciseLibraryState(`zdeutsch.mundlich.${state.level}.progress.v1`);
+    const done = progress.done?.[entry.target.partKey]?.includes(String(record.id || record.title || ""));
+    return { status: done ? "Geübt" : "Noch nicht geübt", meta: [entry.target.partKey === "teil-2" ? "Diskussion" : "Gemeinsam planen"], progress: null };
+  }
+  if (entry.module === "horen") return { status: `${record.statements?.length || 0} Aussagen`, meta: [record.audio?.src ? "Mit Audio" : "Ohne Audio"], progress: null };
+  const count = entry.target.partKey === "teil-1" ? record.texts?.length
+    : entry.target.partKey === "teil-2" ? record.questions?.length
+    : entry.target.partKey === "teil-3" ? record.situations?.length : record.blanks?.length || record.answers?.length;
+  return { status: count ? `${count} Aufgaben` : "Thema", meta: [], progress: null };
+}
+
+function getAdditionalExerciseInfo(item) {
+  const saved = readExerciseLibraryState(`zdeutsch.exercise-additions.v1:${item.id}`);
+  if (item.module === "shreiben") {
+    const words = countWords(saved.draft);
+    return { isNew: true, status: words ? `${words} Wörter gespeichert` : "Noch kein Entwurf", meta: [`Mindestens ${item.payload.minimumWords || 150} Wörter`], progress: null };
+  }
+  const questions = item.module === "horen" ? item.payload.statements : item.payload.blanks;
+  const answered = questions.filter(question => {
+    const value = saved.responses?.[question.id];
+    return value !== undefined && value !== null && value !== "";
+  }).length;
+  return {
+    isNew: true,
+    status: answered ? `${answered}/${questions.length} beantwortet` : `${questions.length} ${item.module === "horen" ? "Aussagen" : "Aufgaben"}`,
+    meta: item.module === "horen" ? [item.audio?.status === "verified" ? "Mit Audio" : "Ohne Audio"] : [],
+    progress: answered ? answered / questions.length * 100 : null
+  };
+}
+
+function decorateExerciseCard(card, location) {
+  card.classList.add("exercise-library-card");
+  card.querySelector(".theme-card-header").after(createEl("p", "exercise-card-context", location));
+  card.querySelectorAll(".theme-meta-pill").forEach(pill => {
+    if (pill.textContent === "Lösungen ungeprüft") pill.classList.add("exercise-review-pending");
+  });
+}
+
+function getThemeSearchValues(themeKey, theme) {
+  const versionValues = getVersionKeys(theme).flatMap(versionKey => {
+    const version = theme?.versions?.[versionKey] || {};
+    const importedNames = Object.values(version.lesen?.parts || {}).flatMap(part => part.content?.legacyImport ? [part.content.title, ...(part.content.legacyImport.names || [])] : []);
+    return [versionKey, version.label, version.title, ...importedNames];
+  });
+  const themeNames = exerciseNames.filter(entry => entry.target.level === state.level && entry.target.kind === "theme" && entry.target.themeKey === themeKey).flatMap(entry => entry.names.map(name => name.label));
+  return [themeKey, theme?.title, ...versionValues, ...themeNames];
+}
+
+function renderExerciseLibrary(query) {
+  const C = window.ZDeutschExercises;
+  const section = document.getElementById("exercise-library-section"), grid = document.getElementById("exercise-grid");
+  grid.replaceChildren();
+  const singleView = exerciseView === "exercises";
+  themeGrid.hidden = singleView;
+  document.getElementById("theme-library-heading").hidden = singleView;
+  if (!C || state.level !== "b2" || (!query && !singleView)) { section.hidden = true; return 0; }
+  section.hidden = false;
+  document.getElementById("exercise-library-title").textContent = singleView
+    ? (exerciseLibraryTabs.querySelector('[aria-selected="true"]')?.textContent || "Einzelübungen")
+    : "Passende Teile und Einzelübungen";
+  const named = singleView && !query ? exerciseNames.filter(e => e.module === state.section && e.target.kind !== "theme") : C.searchNames(exerciseNames, { query, level: state.level, module: state.section });
+  const added = C.searchAdditions(exerciseData.additions, { query, level: state.level, module: state.section });
+  const groups = new Map();
+  named.forEach(entry => {
+    if (entry.target.kind === "theme") return;
+    if (exercisePartKey && singleView && entry.target.partKey !== exercisePartKey) return;
+    if (!singleView && entry.record.legacyImport && entry.module === "lesen") {
+      const theme = state.db?.levels?.b2?.themes?.[entry.target.themeKey];
+      const versions = getVersionKeys(theme);
+      if (versions.length === 1 && Object.keys(theme.versions[versions[0]].lesen.parts).length === 1 && matchesSearchQuery(query, ...getThemeSearchValues(entry.target.themeKey, theme))) return;
+    }
+    const key = `${entry.module}|${entry.target.partKey}|${entry.contentFingerprint}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(entry);
+  });
+  for (const entries of groups.values()) {
+    const first = entries.find(entry => entry.record.audio?.src) || entries[0];
+    const title = getExerciseDisplayTitle(first);
+    const labels = [...new Set(entries.flatMap(e => e.names.map(n => n.label)))].filter(label => !isGenericExerciseName(label) && window.ZDeutschExercises.normalize(label) !== window.ZDeutschExercises.normalize(title));
+    const card = PracticeUI.themeCard({ title, subtitle: first.label, ...getExistingExerciseInfo(first), scoreText: null, compact: true,
+      action: first.target.kind === "theme" ? "Thema öffnen →" : "Üben →", onOpen: () => { saveHomeState(); if (first.target.kind === "theme") handleThemeSelection(first.target.themeKey, state.db.levels[state.level].themes[first.target.themeKey]); else window.location.href = first.url; } });
+    decorateExerciseCard(card, getExerciseLocation(first));
+    card.dataset.exerciseTarget = first.id;
+    if (first.record.legacyImport) card.dataset.importedExercise = first.record.legacyImport.id;
+    if (labels.length) {
+      const names = createEl("details", "exercise-name-details");
+      names.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", labels.join(" · ")));
+      card.append(names);
+    }
+    if (entries.length > 1) {
+      const locations = createEl("details", "exercise-name-details"); locations.append(createEl("summary", "", `Weitere Fundstellen (${entries.length - 1})`));
+      const links = createEl("div", "exercise-card-links");
+      entries.filter(entry => entry.id !== first.id).forEach(entry => {
+        const label = getExerciseLocation(entry) + (entry.module === "horen" ? ` · ${entry.record.audio?.src ? "Mit Audio" : "Ohne Audio"}` : "");
+        const link = createEl("a", "", label); link.href = entry.url; links.append(link);
+      });
+      locations.append(links); card.append(locations);
+    }
+    card.append(card.querySelector(".theme-card-footer"));
+    grid.append(card);
+  }
+  const filteredAdditions = added.filter(item => !exercisePartKey || !singleView || item.partKey === exercisePartKey);
+  filteredAdditions.forEach(item => {
+    const card = PracticeUI.themeCard({ title: item.title, subtitle: C.partLabel(item), ...getAdditionalExerciseInfo(item), scoreText: null, compact: true, action: "Üben →",
+      onOpen: () => { saveHomeState(); window.location.href = `einzeluebung.html?exercise=${encodeURIComponent(item.id)}`; } });
+    decorateExerciseCard(card, "Einzelübung");
+    const otherNames = [...new Set(item.names || [])].filter(name => C.normalize(name) !== C.normalize(item.title));
+    if (otherNames.length) {
+      const names = createEl("details", "exercise-name-details");
+      names.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", otherNames.join(" · ")));
+      card.append(names);
+    }
+    const info = createEl("details", "exercise-name-details exercise-source-details");
+    info.append(createEl("summary", "", "Aufgabeninfo"), createEl("p", "", "Einzelübung aus dem alten Bestand."));
+    const source = createEl("a", "", "Originalaufgabe"); source.href = `https://telc.site/quiz/${encodeURIComponent(item.provenance.quizId)}`; source.target = "_blank"; source.rel = "noopener";
+    info.append(source); card.append(info);
+    card.append(card.querySelector(".theme-card-footer"));
+    card.dataset.additionalExercise = item.id; grid.append(card);
+  });
+  const count = groups.size + filteredAdditions.length;
+  if (!count && !singleView) { section.hidden = true; return 0; }
+  if (!count) grid.append(createEl("p", "exercise-context", exerciseData.errors.length ? "Die zusätzlichen Übungen konnten nicht geladen werden. Die aktuellen Themen bleiben verfügbar." : "Keine passende Einzelübung gefunden."));
+  return count;
+}
+
+function configureExerciseTabs() {
+  if (!exerciseLibraryTabs) return;
+  const supportsExercises = state.level === "b2";
+  exerciseLibraryTabs.hidden = !supportsExercises;
+  if (!supportsExercises) {
+    exerciseView = "themes";
+    exercisePartKey = "";
+    themeGrid.removeAttribute("role");
+    themeGrid.removeAttribute("aria-labelledby");
+    return;
+  }
+  const keys = state.section === "lesen"
+    ? ["teil-1", "teil-2", "teil-3", "sprachbausteine-1", "sprachbausteine-2"]
+    : state.section === "horen" ? ["teil-1", "teil-2", "teil-3"]
+    : state.section === "mundlich" ? ["teil-2", "teil-3"] : [""];
+  if (exerciseView === "themes") exercisePartKey = "";
+  else if (!keys.includes(exercisePartKey)) exercisePartKey = keys[0];
+  if (exerciseLibraryTabs.dataset.section !== state.section) {
+    exerciseLibraryTabs.replaceChildren();
+    const tabs = [{ view: "themes", part: "", label: "Themen" }, ...keys.map(part => ({
+      view: "exercises", part,
+      label: part.startsWith("sprachbausteine-") ? `Sprachbausteine ${part.slice(-1)}` : part ? `Teil ${part.slice(-1)}` : "Einzelübungen"
+    }))];
+    tabs.forEach(({ view, part, label }) => {
+      const button = createEl("button", "practice-tab exercise-library-tab", label);
+      button.type = "button";
+      button.id = `exercise-library-tab-${view === "themes" ? "themes" : part || "exercises"}`;
+      button.dataset.view = view;
+      button.dataset.part = part;
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-controls", view === "themes" ? "theme-grid" : "exercise-library-section");
+      exerciseLibraryTabs.append(button);
+    });
+    exerciseLibraryTabs.dataset.section = state.section;
+  }
+  exerciseLibraryTabs.querySelectorAll('[role="tab"]').forEach(button => {
+    const selected = button.dataset.view === exerciseView && button.dataset.part === exercisePartKey;
+    button.setAttribute("aria-selected", String(selected));
+    button.tabIndex = selected ? 0 : -1;
+    if (selected) {
+      const panel = document.getElementById(button.getAttribute("aria-controls"));
+      panel.setAttribute("role", "tabpanel");
+      panel.setAttribute("aria-labelledby", button.id);
+    }
+  });
+}
+
+function selectExerciseTab(button) {
+  exerciseView = button.dataset.view;
+  exercisePartKey = button.dataset.part;
+  const params = new URLSearchParams(window.location.search);
+  if (exerciseView === "exercises") {
+    params.set("collection", "exercises");
+    if (exercisePartKey) params.set("part", exercisePartKey); else params.delete("part");
+  } else {
+    params.delete("collection");
+    params.delete("part");
+  }
+  window.history.replaceState(null, "", `${location.pathname}?${params}${location.hash}`);
+  renderThemeCards();
+  updateSearchInputContext();
+  renderHomeStagePath();
+  saveHomeState();
+}
+
+exerciseLibraryTabs?.addEventListener("click", event => {
+  const button = event.target.closest('[role="tab"]');
+  if (button) selectExerciseTab(button);
+});
+exerciseLibraryTabs?.addEventListener("keydown", event => {
+  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+  const tabs = [...exerciseLibraryTabs.querySelectorAll('[role="tab"]')];
+  const index = tabs.indexOf(event.target);
+  if (index < 0) return;
+  event.preventDefault();
+  const next = event.key === "Home" ? 0 : event.key === "End" ? tabs.length - 1
+    : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+  selectExerciseTab(tabs[next]);
+  tabs[next].focus();
+});
 
 const CREATOR_SECTION_ID = "home-creator-section";
 const CREATOR_PROFILE = Object.freeze({
@@ -58,7 +316,7 @@ const SECTION_KEYS = ["lesen", "horen", "shreiben", "mundlich"];
 const SECTION_LABELS = {
   lesen: "LESEN",
   horen: "HÖREN",
-  shreiben: "SHREIBEN",
+  shreiben: "SCHREIBEN",
   mundlich: "MÜNDLICH"
 };
 const homeLoaderState = {
@@ -70,7 +328,6 @@ const SUGGEST_THEME_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfbWVEy
 const HOME_STAGE_LEVEL = "level";
 const HOME_STAGE_SECTION = "section";
 const HOME_STAGE_THEMES = "themes";
-const HOME_STAGE_VERSIONS = "versions";
 const HOME_STATE_STORAGE_KEY = "zdeutsch.home-state.v3";
 const HOME_RESTORE_QUERY_KEY = "restoreHome";
 
@@ -235,11 +492,11 @@ function syncSectionHash(section, options = {}) {
 
 function sanitizeHomeStage(value) {
   const stage = String(value || "").trim().toLowerCase();
+  if (stage === "versions") return HOME_STAGE_THEMES;
   if (
     stage === HOME_STAGE_LEVEL
     || stage === HOME_STAGE_SECTION
     || stage === HOME_STAGE_THEMES
-    || stage === HOME_STAGE_VERSIONS
   ) {
     return stage;
   }
@@ -255,6 +512,8 @@ function buildHomeStateSnapshot(options = {}) {
     section: state.section || "lesen",
     theme: state.theme || "",
     search: state.search || "",
+    collection: exerciseView,
+    exercisePart: exercisePartKey,
     homeStage: sanitizeHomeStage(state.homeStage),
     scrollY
   };
@@ -283,6 +542,8 @@ function loadSavedHomeState() {
       section: String(parsed.section || "lesen").trim().toLowerCase(),
       theme: String(parsed.theme || "").trim(),
       search: String(parsed.search || ""),
+      collection: parsed.collection === "exercises" ? "exercises" : "themes",
+      exercisePart: String(parsed.exercisePart || ""),
       homeStage: sanitizeHomeStage(parsed.homeStage),
       scrollY: Number.isFinite(parsed.scrollY) ? parsed.scrollY : null
     };
@@ -397,8 +658,6 @@ function updateHeader() {
       themeTitle.textContent = "Niveau wählen";
     } else if (state.homeStage === HOME_STAGE_SECTION) {
       themeTitle.textContent = "Modul wählen";
-    } else if (state.homeStage === HOME_STAGE_VERSIONS) {
-      themeTitle.textContent = "Version wählen";
     } else {
       themeTitle.textContent = "Thema wählen";
     }
@@ -509,6 +768,10 @@ function clearThemeSearch() {
 
 function getSearchPlaceholder() {
   const levelLabel = (state.level || "").toUpperCase();
+  if (state.level === "b2" && exerciseView === "exercises") {
+    const label = window.ZDeutschExercises.partLabel({ module: state.section, file: state.section === "mundlich" ? "mundlich.json" : undefined, partKey: exercisePartKey });
+    return `${levelLabel} ${label === "Thema" ? "Übungen" : label} durchsuchen...`;
+  }
   if (state.section === "shreiben") {
     return `${levelLabel} Schreiben-Aufgaben durchsuchen...`;
   }
@@ -533,6 +796,10 @@ function updateSearchInputContext() {
     themeSearchInput.setAttribute("aria-label", placeholder);
     themeSearchInput.value = state.search || "";
   }
+  const label = document.getElementById("theme-search-label");
+  if (label) label.textContent = state.section === "shreiben" ? "Schreibaufgabe finden"
+    : state.section === "mundlich" ? "Sprechthema finden"
+    : exerciseView === "exercises" ? "Übung finden" : "Thema finden";
 }
 
 function navigateToHomeStage(stage) {
@@ -583,19 +850,12 @@ function renderHomeStagePath() {
       current: false
     });
   }
-  if (state.homeStage === HOME_STAGE_THEMES || state.homeStage === HOME_STAGE_VERSIONS) {
+  if (state.homeStage === HOME_STAGE_THEMES) {
     items.push({
-      label: "Themen",
+      label: state.homeStage === HOME_STAGE_THEMES && exerciseView === "exercises"
+        ? (exerciseLibraryTabs?.querySelector('[aria-selected="true"]')?.textContent || "Übungen") : "Themen",
       target: HOME_STAGE_THEMES,
       current: state.homeStage === HOME_STAGE_THEMES
-    });
-  }
-  if (state.homeStage === HOME_STAGE_VERSIONS && state.theme) {
-    const themeEntry = state.db?.levels?.[state.level]?.themes?.[state.theme];
-    items.push({
-      label: themeEntry?.title || state.theme,
-      target: HOME_STAGE_VERSIONS,
-      current: true
     });
   }
 
@@ -605,11 +865,7 @@ function renderHomeStagePath() {
     }
     homeStagePath.append(makeHomePathButton(item.label, item.target, item.current));
   });
-  if (state.homeStage === HOME_STAGE_VERSIONS) {
-    window.requestAnimationFrame(() => {
-      homeStagePath.scrollLeft = homeStagePath.scrollWidth;
-    });
-  }
+
 }
 
 function makeContextButton(label, active, onClick) {
@@ -621,7 +877,11 @@ function makeContextButton(label, active, onClick) {
   button.type = "button";
   button.setAttribute("aria-pressed", active ? "true" : "false");
   if (!active) {
-    button.addEventListener("click", onClick);
+    button.addEventListener("click", () => {
+      if (compactHomeNavigation.matches) homeContextExpanded = false;
+      onClick();
+      if (compactHomeNavigation.matches) homeContextToggle?.focus({ preventScroll: true });
+    });
   }
   return button;
 }
@@ -630,8 +890,9 @@ function renderQuickNavigation() {
   if (!homeContextSwitcher || !homeQuickLevelList || !homeQuickSectionList) {
     return;
   }
-  const visible = state.homeStage === HOME_STAGE_THEMES || state.homeStage === HOME_STAGE_VERSIONS;
+  const visible = state.homeStage === HOME_STAGE_THEMES;
   homeContextSwitcher.classList.toggle("hidden", !visible);
+  updateHomeContextUi();
   homeQuickLevelList.innerHTML = "";
   homeQuickSectionList.innerHTML = "";
   if (!visible) {
@@ -656,6 +917,12 @@ function renderQuickNavigation() {
     }));
   });
 
+  if (C1_HOCHSCHULE_VISIBLE) {
+    homeQuickLevelList.append(makeContextButton("C1 Hochschule", false, () => {
+      window.location.href = "c1-hochschule.html";
+    }));
+  }
+
   getAvailableSections(state.level).forEach((sectionKey) => {
     homeQuickSectionList.append(makeContextButton(
       getSectionLabel(sectionKey),
@@ -674,6 +941,25 @@ function renderQuickNavigation() {
   });
 }
 
+function updateHomeContextUi() {
+  const visible = state.homeStage === HOME_STAGE_THEMES;
+  if (homeStageBar) homeStageBar.dataset.stage = state.homeStage;
+  if (homeContextSwitcher) homeContextSwitcher.hidden = compactHomeNavigation.matches && !homeContextExpanded;
+  if (homeContextToggle) {
+    homeContextToggle.hidden = !visible || !compactHomeNavigation.matches;
+    homeContextToggle.setAttribute("aria-expanded", String(homeContextExpanded));
+  }
+}
+
+homeContextToggle?.addEventListener("click", () => {
+  homeContextExpanded = !homeContextExpanded;
+  updateHomeContextUi();
+});
+compactHomeNavigation.addEventListener("change", () => {
+  homeContextExpanded = false;
+  updateHomeContextUi();
+});
+
 function updateHomeStageUi() {
   if (homeLevelStage) {
     homeLevelStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_LEVEL);
@@ -683,9 +969,6 @@ function updateHomeStageUi() {
   }
   if (homeThemeStage) {
     homeThemeStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_THEMES);
-  }
-  if (homeVersionStage) {
-    homeVersionStage.classList.toggle("hidden", state.homeStage !== HOME_STAGE_VERSIONS);
   }
   if (homeHero) {
     homeHero.classList.toggle("hidden", state.homeStage !== HOME_STAGE_LEVEL);
@@ -715,7 +998,10 @@ function updateSearchResultCount(count, query = state.search) {
     themeSearchCount.textContent = `${safeCount} ${safeCount === 1 ? "Treffer" : "Treffer"}`;
     return;
   }
-  themeSearchCount.textContent = `${safeCount} ${safeCount === 1 ? "Thema" : "Themen"}`;
+  const label = exerciseView === "exercises"
+    ? (safeCount === 1 ? "Übung" : "Übungen")
+    : (safeCount === 1 ? "Thema" : "Themen");
+  themeSearchCount.textContent = `${safeCount} ${label}`;
 }
 
 function matchesSearchQuery(query, ...values) {
@@ -746,6 +1032,16 @@ function makeMetaPill(label) {
 function formatPartCountLabel(value) {
   const count = Number.isFinite(Number(value)) ? Math.max(0, Math.round(Number(value))) : 0;
   return count === 1 ? "1 Teil" : `${count} Teile`;
+}
+
+function getThemePartLabels(versionEntry, partCount) {
+  const parts = versionEntry?.lesen?.partOrder || [];
+  const expected = ["teil-1", "teil-2", "teil-3", "sprachbausteine-1", "sprachbausteine-2"];
+  if (expected.every(key => parts.includes(key))) return ["Alle 5 Teile"];
+  if (!parts.length) return [formatPartCountLabel(partCount)];
+  const reading = [1, 2, 3].filter(number => parts.includes(`teil-${number}`));
+  const grammar = [1, 2].filter(number => parts.includes(`sprachbausteine-${number}`));
+  return [reading.length ? `Lesen ${reading.join(", ")}` : "", grammar.length ? `Sprachbausteine ${grammar.join(", ")}` : ""].filter(Boolean);
 }
 
 function formatVersionLabel(value, index) {
@@ -780,7 +1076,7 @@ function getThemeStatus(progressSummary) {
     : MAIN_DEFAULT_CONFIG.scoreConfig.passPercent;
   if (!progressSummary) {
     return {
-      label: "Neu",
+      label: "Nicht begonnen",
       className: "theme-card-status-new"
     };
   }
@@ -903,7 +1199,7 @@ function getOrderedThemeKeys(levelEntry) {
   const available = Object.keys(levelEntry?.themes || {});
   const ordered = configured.filter((themeKey) => Boolean(levelEntry?.themes?.[themeKey]));
   const extras = available.filter((themeKey) => !ordered.includes(themeKey));
-  return [...ordered, ...extras];
+  return [...ordered, ...extras].filter(key => !levelEntry.themes[key].versions || getVersionKeys(levelEntry.themes[key]).length);
 }
 
 function getOrderedThemesForLevel(levelKey) {
@@ -984,9 +1280,10 @@ function getShreibenTasks(levelKey) {
         title,
         prompt: String(task?.content || "").trim(),
         partKey: "teil-1",
-        partLabel: "Schreiben"
+        partLabel: "Schreiben",
+        legacyImport: task.legacyImport
       };
-    });
+    }).filter(task => task.legacyImport?.enabled !== false);
   }
 
   const order = levelEntry.partOrder || Object.keys(levelEntry.parts || {});
@@ -3345,7 +3642,8 @@ async function shareThemePage(themeKey, themeEntry) {
 
 function selectThemeVersion(themeKey, versionKey) {
   state.theme = themeKey;
-  saveHomeState({ scrollY: 0 });
+  state.homeStage = HOME_STAGE_THEMES;
+  saveHomeState({ scrollY: themeVersionDialog?.open ? versionDialogScrollY : window.scrollY });
   window.location.href = buildLesenUrl(themeKey, versionKey);
 }
 
@@ -3354,9 +3652,6 @@ function renderVersionCards() {
     return;
   }
   versionList.innerHTML = "";
-  if (state.homeStage !== HOME_STAGE_VERSIONS) {
-    return;
-  }
 
   const themeEntry = state.db?.levels?.[state.level]?.themes?.[state.theme];
   if (!themeEntry) {
@@ -3371,7 +3666,7 @@ function renderVersionCards() {
     homeVersionContext.textContent = `${(state.level || "").toUpperCase()} · ${getSectionLabel(state.section)} · ${themeLabel}`;
   }
   if (homeVersionTitle) {
-    homeVersionTitle.textContent = `${themeLabel}: Version wählen`;
+    homeVersionTitle.textContent = themeLabel;
   }
 
   const versionKeys = getVersionKeys(themeEntry);
@@ -3383,63 +3678,84 @@ function renderVersionCards() {
   versionKeys.forEach((versionKey, index) => {
     const versionEntry = themeEntry.versions?.[versionKey] || {};
     const label = formatVersionLabel(versionEntry.label || versionEntry.title, index);
-    const isDefault = versionKey === themeEntry.defaultVersion;
     const lesenEntry = versionEntry.lesen || themeEntry.lesen;
-    const partCount = lesenEntry?.partOrder?.length
-      || lesenEntry?.counts?.parts
-      || themeEntry.counts?.parts
-      || 0;
-    const progressSummary = getThemeProgressSummary(state.level, state.theme, [versionKey]);
-    const status = getThemeStatus(progressSummary);
-    const lastPercent = clampPercent(progressSummary?.lastPercent || 0);
-    const button = createEl(
-      "button",
-      classNames("home-version-card", isDefault ? "home-version-card-default" : "")
-    );
+    const parts = getThemePartLabels(versionEntry, Object.keys(lesenEntry?.parts || {}).length).join(" · ");
+    const progress = getThemeProgressSummary(state.level, state.theme, [versionKey]);
+    const button = createEl("button", "theme-version-option");
     button.type = "button";
     button.setAttribute("aria-label", `${themeLabel}, ${label} öffnen`);
-
-    const top = createEl("span", "home-version-card-top");
-    const number = createEl("span", "home-version-number", String(index + 1).padStart(2, "0"));
-    const badges = createEl("span", "home-version-badges");
-    if (isDefault) {
-      badges.append(createEl("span", "home-version-badge home-version-badge-default", "Empfohlen"));
-    }
-    badges.append(createEl("span", classNames("home-version-badge", status.className), status.label));
-    top.append(number, badges);
-
-    const copy = createEl("span", "home-version-card-copy");
-    copy.append(createEl("span", "home-version-label", label));
-    if (versionEntry.title && normalize(versionEntry.title) !== normalize(label)) {
-      copy.append(createEl("span", "home-version-description", versionEntry.title));
-    }
-
-    const footer = createEl("span", "home-version-card-footer");
-    const meta = createEl("span", "home-version-meta");
-    meta.append(
-      createEl("span", "theme-meta-pill", formatPartCountLabel(partCount)),
-      createEl("span", "theme-meta-pill", progressSummary ? `Letztes Ergebnis ${lastPercent}%` : "Noch kein Versuch")
-    );
-    footer.append(meta, createEl("span", "home-version-open", progressSummary ? "Fortsetzen →" : "Starten →"));
-
-    button.append(top, copy, footer);
-    button.addEventListener("click", () => {
-      selectThemeVersion(state.theme, versionKey);
-    });
+    const copy = createEl("span", "theme-version-option-copy");
+    copy.append(createEl("span", "theme-version-option-title", label), createEl("span", "theme-version-option-parts", parts));
+    if (progress) copy.append(createEl("span", "theme-version-option-progress", `Letztes Ergebnis: ${clampPercent(progress.lastPercent)}%`));
+    const badges = createEl("span", "theme-version-option-badges");
+    if (Object.values(lesenEntry?.parts || {}).some(part => part.content?.legacyImport && part.content.legacyImport.enabled !== false)) badges.append(PracticeUI.newBadge());
+    if (versionKey === themeEntry.defaultVersion && label !== "Standard") badges.append(createEl("span", "theme-version-default", "Standard"));
+    const arrow = createEl("span", "theme-version-option-arrow", "→");
+    arrow.setAttribute("aria-hidden", "true");
+    badges.append(arrow);
+    button.append(copy, badges);
+    button.addEventListener("click", () => selectThemeVersion(state.theme, versionKey));
     versionList.append(button);
   });
 }
 
+function closeVersionDialog() {
+  if (themeVersionDialog?.open) themeVersionDialog.close();
+}
+
+themeVersionClose?.addEventListener("click", closeVersionDialog);
+themeVersionDialog?.addEventListener("close", () => {
+  document.body.classList.remove("version-dialog-open");
+  if (versionDialogTrigger?.isConnected) versionDialogTrigger.focus({ preventScroll: true });
+  window.scrollTo({ top: versionDialogScrollY, left: 0, behavior: "auto" });
+  versionDialogTrigger = null;
+});
+themeVersionDialog?.addEventListener("click", event => {
+  if (event.target !== themeVersionDialog) return;
+  const bounds = themeVersionDialog.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeVersionDialog();
+});
+themeVersionDialog?.addEventListener("keydown", event => {
+  if (event.key !== "Tab") return;
+  const buttons = [...themeVersionDialog.querySelectorAll("button:not([disabled])")];
+  const first = buttons[0], last = buttons[buttons.length - 1];
+  if (!first) return;
+  if (event.shiftKey && (event.target === first || event.target === themeVersionDialog)) {
+    event.preventDefault(); last.focus();
+  } else if (!event.shiftKey && (event.target === last || event.target === themeVersionDialog)) {
+    event.preventDefault(); first.focus();
+  }
+});
+document.addEventListener("click", event => {
+  document.querySelectorAll(".theme-card-menu[open]").forEach(menu => {
+    if (!menu.contains(event.target)) menu.open = false;
+  });
+});
+document.addEventListener("keydown", event => {
+  if (event.key !== "Escape" || themeVersionDialog?.open) return;
+  document.querySelectorAll(".theme-card-menu[open]").forEach(menu => {
+    menu.open = false;
+    menu.querySelector("summary")?.focus({ preventScroll: true });
+  });
+});
+
 function handleThemeSelection(themeKey, themeEntry) {
-  if (!themeKey || !themeEntry) {
+  if (!themeKey || !themeEntry) return;
+  const versions = getVersionKeys(themeEntry);
+  if (!versions.length) return;
+  if (versions.length === 1) {
+    selectThemeVersion(themeKey, versions[0]);
     return;
   }
   state.theme = themeKey;
-  state.homeStage = HOME_STAGE_VERSIONS;
-  saveHomeState({ scrollY: 0 });
-  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  renderHome();
-  homeVersionStage?.focus({ preventScroll: true });
+  state.homeStage = HOME_STAGE_THEMES;
+  versionDialogScrollY = window.scrollY;
+  saveHomeState();
+  versionDialogTrigger = document.activeElement;
+  renderVersionCards();
+  themeVersionDialog.showModal();
+  document.body.classList.add("version-dialog-open");
+  versionList.querySelector("button")?.focus({ preventScroll: true });
 }
 
 function renderLevelButtons() {
@@ -3466,6 +3782,18 @@ function renderLevelButtons() {
     });
     levelList.append(button);
   });
+  if (C1_HOCHSCHULE_VISIBLE) {
+    const c1Button = renderStageChoiceButton({
+      label: "C1 Hochschule",
+      description: "Lesen, Sprachbausteine, Hören, Schreiben und Sprechen",
+      eyebrow: "TELC · Hochschulzugang",
+      active: false,
+      variant: "level"
+    });
+    c1Button.type = "button";
+    c1Button.addEventListener("click", () => { window.location.href = "c1-hochschule.html"; });
+    levelList.append(c1Button);
+  }
 }
 
 function renderSectionButtons() {
@@ -3529,6 +3857,11 @@ function renderThemeCards() {
   }
   const levelKey = state.level || "b1";
   const query = normalize(state.search);
+  configureExerciseTabs();
+  updateSearchInputContext();
+  renderHomeStagePath();
+  const additionalCount = renderExerciseLibrary(query);
+  if (exerciseView === "exercises") { updateSearchResultCount(additionalCount, query); refreshIcons(); return; }
   updateSearchResultCount(0, query);
   if (state.section === "horen") {
     const partConfig = getPartConfig(levelKey, "horen");
@@ -3554,7 +3887,7 @@ function renderThemeCards() {
         ...topicTitles
       );
     });
-    const resultCount = (codesMatch ? 1 : 0) + audioThemeKeys.length;
+    const resultCount = (codesMatch ? 1 : 0) + audioThemeKeys.length + additionalCount;
     updateSearchResultCount(resultCount, query);
     if (codesMatch) {
       themeGrid.append(buildHorenCard(levelKey, partConfig));
@@ -3581,14 +3914,14 @@ function renderThemeCards() {
     const tasks = getShreibenTasks(levelKey).filter((task) => {
       return matchesSearchQuery(query, task?.title, task?.prompt, task?.partLabel);
     });
-    updateSearchResultCount(partConfig ? tasks.length : 0, query);
+    updateSearchResultCount((partConfig ? tasks.length : 0) + additionalCount, query);
     if (partConfig && tasks.length) {
       tasks.forEach((task) => {
         themeGrid.append(buildShreibenCard(levelKey, task));
       });
-    } else if (query) {
+    } else if (query && !additionalCount) {
       renderThemeEmptyState(`No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`);
-    } else {
+    } else if (!additionalCount) {
       themeGrid.append(
         createEl(
           "div",
@@ -3608,12 +3941,12 @@ function renderThemeCards() {
       partConfig?.module,
       "Vorstellen Diskussion Planung Sprechen"
     );
-    updateSearchResultCount(hasMatch ? 1 : 0, query);
+    updateSearchResultCount((hasMatch ? 1 : 0) + additionalCount, query);
     if (hasMatch) {
       themeGrid.append(buildMundlichCard(levelKey, partConfig));
-    } else if (query) {
+    } else if (query && !additionalCount) {
       renderThemeEmptyState(`No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`);
-    } else {
+    } else if (!additionalCount) {
       themeGrid.append(
         createEl(
           "div",
@@ -3630,15 +3963,10 @@ function renderThemeCards() {
   if (query) {
     themes = themes.filter((themeKey) => {
       const entry = levelEntry.themes?.[themeKey];
-      const title = entry?.title || themeKey;
-      const versionValues = getVersionKeys(entry).flatMap((versionKey) => {
-        const versionEntry = entry?.versions?.[versionKey] || {};
-        return [versionKey, versionEntry.label, versionEntry.title];
-      });
-      return matchesSearchQuery(query, themeKey, title, ...versionValues);
+      return matchesSearchQuery(query, ...getThemeSearchValues(themeKey, entry));
     });
   }
-  updateSearchResultCount(themes.length, query);
+  updateSearchResultCount(themes.length + additionalCount, query);
   if (state.theme && !themes.includes(state.theme)) {
     state.theme = null;
   }
@@ -3649,7 +3977,7 @@ function renderThemeCards() {
       return;
     }
     const versionKeys = getVersionKeys(themeEntry);
-    const defaultVersion = themeEntry.defaultVersion || versionKeys[0];
+    const defaultVersion = versionKeys.includes(themeEntry.defaultVersion) ? themeEntry.defaultVersion : versionKeys[0];
     const versionEntry = themeEntry.versions?.[defaultVersion];
     const partCount = versionEntry?.lesen?.partOrder?.length
       || versionEntry?.lesen?.counts?.parts
@@ -3657,17 +3985,11 @@ function renderThemeCards() {
       || themeEntry.lesen?.counts?.parts
       || themeEntry.counts?.parts
       || 0;
-    const card = createEl("article", "theme-card");
-    const themeLabel = themeEntry.title || themeKey;
-    const header = createEl("div", "theme-card-header");
-    const titleWrap = createEl("button", "theme-card-title-wrap theme-card-open");
-    titleWrap.type = "button";
-    titleWrap.setAttribute("aria-label", `Versionen für ${themeLabel} anzeigen`);
-    titleWrap.append(
-      createEl("span", "theme-card-title", themeLabel),
-      createEl("span", "theme-card-subtitle", `Leseprüfung ${String(themeIndex + 1).padStart(2, "0")}`)
-    );
-    const actions = createEl("div", "theme-card-actions");
+    const themeLabel = (themeEntry.title || themeKey).replace(/\s*\(nur\s+[^)]+\)\s*$/i, "").trim();
+    const importedParts = Object.values(versionEntry?.lesen?.parts || {});
+    const imported = importedParts.length === 1 && importedParts[0].content?.legacyImport
+      ? window.ZDeutschExercises.mergedExercise({ record: importedParts[0].content, target: { file: "lesen.json", level: "b2", kind: "part", themeKey, versionKey: defaultVersion, partKey: versionEntry.lesen.partOrder[0] }, module: "lesen", contextTitle: themeLabel, versionLabel: versionEntry.label }) : null;
+    const importedProgress = imported ? getAdditionalExerciseInfo(imported) : null;
     const downloadBtn = createEl(
       "button",
       "theme-card-download"
@@ -3692,52 +4014,17 @@ function renderThemeCards() {
       event.stopPropagation();
       await shareThemePage(themeKey, themeEntry);
     });
-    actions.append(downloadBtn, shareBtn);
-    header.append(titleWrap, actions);
 
     const progressSummary = getThemeProgressSummary(levelKey, themeKey, versionKeys);
     const status = getThemeStatus(progressSummary);
     const lastPercent = clampPercent(progressSummary?.lastPercent || 0);
 
-    const summaryRow = createEl("div", "theme-card-summary");
-    const statusBadge = createEl("span", classNames("theme-card-status", status.className), status.label);
-    const scoreBox = createEl("div", "theme-card-score");
-    scoreBox.append(
-      createEl("span", "theme-card-score-label", "Letztes Ergebnis"),
-      createEl("span", "theme-card-score-value", `${lastPercent}%`)
-    );
-    summaryRow.append(statusBadge, scoreBox);
-
-    const progressBar = createEl("div", "theme-card-progress-track");
-    const progressFill = createEl("div", "theme-card-progress-fill");
-    progressFill.style.width = `${lastPercent}%`;
-    progressBar.append(progressFill);
-
-    const meta = createEl("div", "theme-card-meta");
-    meta.append(makeMetaPill(formatPartCountLabel(partCount)));
-    meta.append(makeMetaPill(versionKeys.length === 1 ? "1 Version" : `${versionKeys.length} Versionen`));
-    if (progressSummary) {
-      meta.append(makeMetaPill(formatPassedExamsLabel(progressSummary.passedExams)));
-      if (progressSummary.versionCount > 1) {
-        meta.append(makeMetaPill(`Bestandene Versionen: ${progressSummary.passedVersions}/${progressSummary.versionCount}`));
-      }
-    } else {
-      meta.append(makeMetaPill("Noch kein Versuch"));
-    }
-
-    const openTheme = () => handleThemeSelection(themeKey, themeEntry);
-    const footer = createEl("div", "theme-card-footer");
-    const openButton = createEl(
-      "button",
-      "theme-card-cta",
-      versionKeys.length === 1 ? "Version ansehen →" : `${versionKeys.length} Versionen →`
-    );
-    openButton.type = "button";
-    openButton.setAttribute("aria-label", `Versionen für ${themeLabel} anzeigen`);
-    titleWrap.addEventListener("click", openTheme);
-    openButton.addEventListener("click", openTheme);
-    footer.append(meta, openButton);
-    card.append(header, summaryRow, progressBar, footer);
+    const card = PracticeUI.themeCard({ title: themeLabel, subtitle: getThemePartLabels(versionEntry, partCount).join(" · "), compact: true, isNew: Boolean(imported),
+      status: progressSummary ? status.label : importedProgress?.progress ? importedProgress.status : null,
+      statusClass: status.className, progress: progressSummary ? lastPercent : importedProgress?.progress ?? null,
+      scoreText: progressSummary ? `${lastPercent}%` : null,
+      meta: versionKeys.length > 1 ? [`${versionKeys.length} Versionen`] : [], actions: [downloadBtn, shareBtn],
+      action: versionKeys.length > 1 ? "Version wählen →" : progressSummary || importedProgress?.progress ? "Fortsetzen →" : "Öffnen →", onOpen: () => handleThemeSelection(themeKey, themeEntry) });
     themeGrid.append(card);
   });
 
@@ -3747,7 +4034,7 @@ function renderThemeCards() {
     themeGrid.append(buildSuggestThemeCard());
   }
 
-  if (!themes.length) {
+  if (!themes.length && !additionalCount) {
     if (!suggestCardMatches) {
       renderThemeEmptyState(query
         ? `No ${getSectionLabel(state.section)} results found in ${(state.level || "").toUpperCase()}.`
@@ -3846,7 +4133,7 @@ function buildMundlichCard(levelKey, partConfig) {
 
 function buildShreibenCard(levelKey, task) {
   const title = task?.title || "Schreiben";
-  const wordCount = getShreibenWordCount(levelKey, task?.id, task?.partKey);
+  const wordCount = task.legacyImport ? countWords(readExerciseLibraryState(`zdeutsch.exercise-additions.v1:${task.legacyImport.id}`).draft) : getShreibenWordCount(levelKey, task?.id, task?.partKey);
   const progressTarget = 150;
   const progressPercent = Math.max(0, Math.min(100, Math.round((wordCount / progressTarget) * 100)));
   const statusLabel = wordCount > 0 ? "In progress" : "Not started";
@@ -3867,6 +4154,7 @@ function buildShreibenCard(levelKey, task) {
     levelKey.toUpperCase()
   );
   const actions = createEl("div", "theme-card-actions");
+  if (task.legacyImport) actions.append(PracticeUI.newBadge());
   actions.append(levelBadge);
   topRow.append(titleWrap, actions);
 
@@ -3895,52 +4183,25 @@ function shouldShowSuggestThemeCard(levelKey) {
 }
 
 function buildSuggestThemeCard() {
-  const card = createEl("a", "theme-card");
+  const card = createEl("a", "theme-card theme-card-compact");
   card.href = SUGGEST_THEME_FORM_URL;
   card.target = "_blank";
   card.rel = "noopener noreferrer";
-
-  const topRow = createEl("div", "theme-card-header");
-  const titleWrap = createEl("div", "theme-card-title-wrap");
-  titleWrap.append(
-    createEl("div", "theme-card-title", "اقتراح موضوع جديد"),
-    createEl("div", "theme-card-subtitle", "Suggest new thema")
-  );
-
-  const actions = createEl("div", "theme-card-actions");
-  actions.append(createEl("span", "theme-card-level", "FORM"));
-  topRow.append(titleWrap, actions);
-
-  const summaryRow = createEl("div", "theme-card-summary");
-  const statusBadge = createEl("span", "theme-card-status theme-card-status-progress", "Google Form");
-  const scoreBox = createEl("div", "theme-card-score");
-  scoreBox.append(
-    createEl("span", "theme-card-score-label", "Open"),
-    createEl("span", "theme-card-score-value", "↗")
-  );
-  summaryRow.append(statusBadge, scoreBox);
-
+  const header = createEl("div", "theme-card-header");
+  const title = createEl("div", "theme-card-title-wrap");
+  title.append(createEl("div", "theme-card-title", "اقتراح موضوع جديد"), createEl("div", "theme-card-subtitle", "Thema vorschlagen"));
+  header.append(title);
+  const footer = createEl("div", "theme-card-footer");
   const meta = createEl("div", "theme-card-meta");
-  meta.append(
-    makeMetaPill("B1"),
-    makeMetaPill("B2"),
-    makeMetaPill("Lesen")
-  );
-
-  card.append(topRow, summaryRow, meta);
+  meta.append(makeMetaPill("Google Form"));
+  footer.append(meta, createEl("span", "theme-card-cta", "Öffnen ↗"));
+  card.append(header, footer);
   return card;
 }
 
 function renderHome() {
   if (!state.level && state.homeStage !== HOME_STAGE_LEVEL) {
     state.homeStage = HOME_STAGE_LEVEL;
-  }
-  if (state.homeStage === HOME_STAGE_VERSIONS) {
-    const selectedTheme = state.db?.levels?.[state.level]?.themes?.[state.theme];
-    if (!selectedTheme || state.section !== "lesen") {
-      state.theme = null;
-      state.homeStage = HOME_STAGE_THEMES;
-    }
   }
   updateHomeStageUi();
   renderLevelButtons();
@@ -3952,7 +4213,6 @@ function renderHome() {
   } else {
     updateDownloadAllThemesButton(0);
   }
-  renderVersionCards();
   updateHeader();
   updateInstallPromptUi();
   restoreHomeScrollIfNeeded();
@@ -4036,7 +4296,7 @@ function resolveInitialHomeState() {
   const saved = loadSavedHomeState();
   const params = new URLSearchParams(window.location.search);
   const fromUrlLevel = String(params.get("level") || "").trim().toLowerCase();
-  const fromHashSection = getSectionFromHash();
+  const fromHashSection = getSectionFromHash() || (SECTION_KEYS.includes(params.get("section")) ? params.get("section") : null);
   const shouldRestoreSaved = params.get(HOME_RESTORE_QUERY_KEY) === "1";
 
   if (shouldRestoreSaved && saved) {
@@ -4045,16 +4305,13 @@ function resolveInitialHomeState() {
       ? saved.section
       : (SECTION_KEYS.includes(fromHashSection) ? fromHashSection : "lesen");
     const hasLevel = Boolean(level);
-    const themeExists = Boolean(state.db?.levels?.[level]?.themes?.[saved.theme]);
     const homeStage = hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL;
     return {
       level: hasLevel ? level : null,
       section,
-      theme: homeStage === HOME_STAGE_VERSIONS && section === "lesen" && themeExists ? saved.theme : null,
+      theme: null,
       search: saved.search || "",
-      homeStage: homeStage === HOME_STAGE_VERSIONS && (!themeExists || section !== "lesen")
-        ? HOME_STAGE_THEMES
-        : homeStage,
+      homeStage,
       scrollY: saved.scrollY
     };
   }
@@ -4076,16 +4333,13 @@ function resolveInitialHomeState() {
     const level = saved.level ? resolveInitialLevel(saved.level) : null;
     const hasLevel = Boolean(level);
     const section = SECTION_KEYS.includes(saved.section) ? saved.section : "lesen";
-    const themeExists = Boolean(state.db?.levels?.[level]?.themes?.[saved.theme]);
     const homeStage = hasLevel ? sanitizeHomeStage(saved.homeStage) : HOME_STAGE_LEVEL;
     return {
       level: hasLevel ? level : null,
       section,
-      theme: homeStage === HOME_STAGE_VERSIONS && section === "lesen" && themeExists ? saved.theme : null,
+      theme: null,
       search: saved.search || "",
-      homeStage: homeStage === HOME_STAGE_VERSIONS && (!themeExists || section !== "lesen")
-        ? HOME_STAGE_THEMES
-        : homeStage,
+      homeStage,
       scrollY: saved.scrollY
     };
   }
@@ -4110,9 +4364,7 @@ if (themeSearchInput) {
 
 if (homeStageBack) {
   homeStageBack.addEventListener("click", () => {
-    if (state.homeStage === HOME_STAGE_VERSIONS) {
-      state.homeStage = HOME_STAGE_THEMES;
-    } else if (state.homeStage === HOME_STAGE_THEMES) {
+    if (state.homeStage === HOME_STAGE_THEMES) {
       state.homeStage = HOME_STAGE_SECTION;
     } else if (state.homeStage === HOME_STAGE_SECTION) {
       state.homeStage = HOME_STAGE_LEVEL;
@@ -4256,6 +4508,12 @@ async function init() {
     () => loadParts()
   );
 
+  if (window.ZDeutschExercises) {
+    const [extra, codes, speaking] = await Promise.all([window.ZDeutschExercises.load(), loadNamedDatabase("horen-codes.json"), loadNamedDatabase("mundlich.json")]);
+    exerciseData = extra;
+    exerciseNames = window.ZDeutschExercises.combinedNames({ "lesen.json": state.db, "shreiben.json": state.shreibenDb, "horen-audio.json": state.horenAudioDb, "horen-codes.json": codes, "mundlich.json": speaking }, extra.names);
+  }
+
   if (!state.db) {
     themeGrid.innerHTML = "";
     themeGrid.append(
@@ -4274,6 +4532,10 @@ async function init() {
   }
 
   const initialHomeState = resolveInitialHomeState();
+  if (new URLSearchParams(location.search).get(HOME_RESTORE_QUERY_KEY) === "1") {
+    const saved = loadSavedHomeState();
+    if (saved) { exerciseView = saved.collection; exercisePartKey = saved.exercisePart; }
+  }
   state.level = initialHomeState.level;
   state.section = initialHomeState.section;
   state.theme = initialHomeState.theme;

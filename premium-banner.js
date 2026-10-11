@@ -1,25 +1,21 @@
 (() => {
   const image = document.getElementById("zdeutsch-premium-creative");
-  const motionButton = document.getElementById("zdeutsch-premium-motion");
 
-  if (!(image instanceof HTMLImageElement) || !(motionButton instanceof HTMLButtonElement)) return;
+  if (!(image instanceof HTMLImageElement)) return;
 
   const basePath = "assets/campaigns/zdeutsch-premium-animated-20261006/";
   const mobileQuery = window.matchMedia("(max-width: 699px)");
   const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let motionEnabled = !reducedMotionQuery.matches;
 
   const render = () => {
     const layout = mobileQuery.matches ? "mobile" : "desktop";
-    const filename = motionEnabled
+    const filename = !reducedMotionQuery.matches
       ? `zdeutsch-premium-teaser-${layout}-ar.webp`
       : `poster-${layout}.jpg`;
 
     image.src = `${basePath}${filename}`;
     image.width = layout === "mobile" ? 360 : 900;
     image.height = layout === "mobile" ? 480 : 300;
-    motionButton.textContent = motionEnabled ? "إيقاف الحركة" : "تشغيل الحركة";
-    motionButton.setAttribute("aria-label", motionEnabled ? "إيقاف حركة الإعلان" : "تشغيل حركة الإعلان");
   };
 
   const listen = (query, handler) => {
@@ -30,15 +26,7 @@
     }
   };
 
-  motionButton.hidden = false;
-  motionButton.addEventListener("click", () => {
-    motionEnabled = !motionEnabled;
-    render();
-  });
   listen(mobileQuery, render);
-  listen(reducedMotionQuery, () => {
-    motionEnabled = !reducedMotionQuery.matches;
-    render();
-  });
+  listen(reducedMotionQuery, render);
   render();
 })();

@@ -7465,6 +7465,878 @@
                           "correct": false
                         }
                       ]
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q311-320",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q311",
+                          "number": 46,
+                          "sourceQuestionId": 311,
+                          "text": "Der Hauptpreis des Gewinnspiels ist ein rund vierwöchiger Urlaub in Spanien.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q312",
+                          "number": 47,
+                          "sourceQuestionId": 312,
+                          "text": "Sie können in der Sendung auch schöne Bildbände über verschiedene Länder gewinnen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q313",
+                          "number": 48,
+                          "sourceQuestionId": 313,
+                          "text": "Thomas Schilp vertritt einen großen Wohnmobilhändler.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q314",
+                          "number": 49,
+                          "sourceQuestionId": 314,
+                          "text": "Für das Wohnmobil Camper 500F benötigt man einen Zusatzführerschein.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q315",
+                          "number": 50,
+                          "sourceQuestionId": 315,
+                          "text": "Wohnmobile für Reisen in Europa sollte man erst am Urlaubsort mieten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q316",
+                          "number": 51,
+                          "sourceQuestionId": 316,
+                          "text": "Reisende mit Wohnmobilen schätzen ihre Unabhängigkeit.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q317",
+                          "number": 52,
+                          "sourceQuestionId": 317,
+                          "text": "Auf Luxus muss man im Wohnwagen auch heute nicht verzichten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q318",
+                          "number": 53,
+                          "sourceQuestionId": 318,
+                          "text": "Wer den Urlaub mit dem Wohnmobil erst einmal ausprobieren will, sollte ein gebrauchtes Fahrzeug kaufen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q319",
+                          "number": 54,
+                          "sourceQuestionId": 319,
+                          "text": "Deutsche zahlen für ein Wohnmobil durchschnittlich 200.000 Euro.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q311-320:q320",
+                          "number": 55,
+                          "sourceQuestionId": 320,
+                          "text": "Der Mietpreis für ein Wohnmobil hängt von der Jahreszeit ab.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Wohnmobile",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q311-320",
+                        "names": [
+                          "Wohnmobile"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            311,
+                            312,
+                            313,
+                            314,
+                            315,
+                            316,
+                            317,
+                            318,
+                            319,
+                            320
+                          ],
+                          "sourceFingerprint": "b5a88c8f56364e8a85b8d738ff85db760c14e27c400f509207219db9b28017bc",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q331-340",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q331",
+                          "number": 46,
+                          "sourceQuestionId": 331,
+                          "text": "Fast 11500 Kinder leben nicht bei ihren leiblichen Eltern.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q332",
+                          "number": 47,
+                          "sourceQuestionId": 332,
+                          "text": "Früher wurden Fälle von Gewalt in der Familie oft nicht bekannt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q333",
+                          "number": 48,
+                          "sourceQuestionId": 333,
+                          "text": "Kinder werden nicht sofort von ihren Familien getrennt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q334",
+                          "number": 49,
+                          "sourceQuestionId": 334,
+                          "text": "Materielle Unterstützung wie Elektrogeräte kann keine Hilfe sein.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q335",
+                          "number": 50,
+                          "sourceQuestionId": 335,
+                          "text": "Die Nachmittagsbetreuung für die ältesten Kinder ist kostenlos.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q336",
+                          "number": 51,
+                          "sourceQuestionId": 336,
+                          "text": "In Skandinavien gibt es eine bessere Familienvorsorge.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q337",
+                          "number": 52,
+                          "sourceQuestionId": 337,
+                          "text": "Früher lernte man Erziehung an Modellsituationen in der Großfamilie.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q338",
+                          "number": 53,
+                          "sourceQuestionId": 338,
+                          "text": "Der Kontakt zwischen Kindern und leiblichen Eltern wird möglichst erhalten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q339",
+                          "number": 54,
+                          "sourceQuestionId": 339,
+                          "text": "Es gibt spezielle WGs für Jugendliche, die nicht bei ihren Eltern leben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q331-340:q340",
+                          "number": 55,
+                          "sourceQuestionId": 340,
+                          "text": "Herr Blaschitz bittet die Hörer um Unterstützung.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Straßenkinder (block 2)",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q331-340",
+                        "names": [
+                          "Straßenkinder (block 2)"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            331,
+                            332,
+                            333,
+                            334,
+                            335,
+                            336,
+                            337,
+                            338,
+                            339,
+                            340
+                          ],
+                          "sourceFingerprint": "bb6030a433a2789cb5f8d23d32fe4e51eefee25ad6ebcdb61bbcfddb6ecfa0e9",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q341-350",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q341",
+                          "number": 46,
+                          "sourceQuestionId": 341,
+                          "text": "Am 24. April ist der Fashion Revolution Day.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q342",
+                          "number": 47,
+                          "sourceQuestionId": 342,
+                          "text": "Der Anlass für den Fashion Revolution Day ist der Einsturz des Fabrikgebäudes in Bangladesch.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q343",
+                          "number": 48,
+                          "sourceQuestionId": 343,
+                          "text": "Nur wenige Menschen wurden beim Einsturz schwer verletzt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q344",
+                          "number": 49,
+                          "sourceQuestionId": 344,
+                          "text": "An diesem Tag wird nur schwarze Kleidung getragen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q345",
+                          "number": 50,
+                          "sourceQuestionId": 345,
+                          "text": "Eine Näherin verdient dort ca. 20 Cent.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q346",
+                          "number": 51,
+                          "sourceQuestionId": 346,
+                          "text": "Die Clean Clothes Kampagne fordert bereits seit Jahren einen existenzsichernden Lohn.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q347",
+                          "number": 52,
+                          "sourceQuestionId": 347,
+                          "text": "Faire Mode ist im Geschäft teurer, weil größere Serien produziert werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q348",
+                          "number": 53,
+                          "sourceQuestionId": 348,
+                          "text": "Eine andere Attraktion ist das Filmscreening des Films Traceable.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q349",
+                          "number": 54,
+                          "sourceQuestionId": 349,
+                          "text": "Nach dem Film ist die Veranstaltung zu Ende.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q341-350:q350",
+                          "number": 55,
+                          "sourceQuestionId": 350,
+                          "text": "Weitere Informationen können auf der Webseite traceable.org abgerufen werden.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Revolution Day",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q341-350",
+                        "names": [
+                          "Revolution Day"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            341,
+                            342,
+                            343,
+                            344,
+                            345,
+                            346,
+                            347,
+                            348,
+                            349,
+                            350
+                          ],
+                          "sourceFingerprint": "9a4ed90a3a616be7b8b32b1a2c1202ad2c8f0df4ea1300b70ec076b73cff7dcb",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q351-360",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q351",
+                          "number": 46,
+                          "sourceQuestionId": 351,
+                          "text": "Das ist ein Interview mit dem Restaurant \\Bicycle\\.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q352",
+                          "number": 47,
+                          "sourceQuestionId": 352,
+                          "text": "Gert Kronheimer ist der alleinige Gründer von Bicycle.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q353",
+                          "number": 48,
+                          "sourceQuestionId": 353,
+                          "text": "Bicycle bietet Arbeitsplätze für junge Leute, die schon länger arbeitslos sind.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q354",
+                          "number": 49,
+                          "sourceQuestionId": 354,
+                          "text": "Bicycle gibt es schon seit 1926.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q355",
+                          "number": 50,
+                          "sourceQuestionId": 355,
+                          "text": "Anlass für die Gründung von Bicycle war die steigende Arbeitslosigkeit Anfang der 80er Jahre.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q356",
+                          "number": 51,
+                          "sourceQuestionId": 356,
+                          "text": "Gert Kronheimer findet, dass das Fahrrad für junge Leute interessant ist.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q357",
+                          "number": 52,
+                          "sourceQuestionId": 357,
+                          "text": "Das Fahrrad ist heute leider sehr unpopulär geworden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q358",
+                          "number": 53,
+                          "sourceQuestionId": 358,
+                          "text": "Bei Bicycle kann man nur Vollzeit arbeiten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q359",
+                          "number": 54,
+                          "sourceQuestionId": 359,
+                          "text": "Bei Bicycle werden im Jahr ungefähr 10000 Fahrräder repariert.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q351-360:q360",
+                          "number": 55,
+                          "sourceQuestionId": 360,
+                          "text": "Sibylle Hartung ist nur eine Assistentin und keine Expertin für technische Fragen.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Bicycle",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q351-360",
+                        "names": [
+                          "Bicycle"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            351,
+                            352,
+                            353,
+                            354,
+                            355,
+                            356,
+                            357,
+                            358,
+                            359,
+                            360
+                          ],
+                          "sourceFingerprint": "06022b9c2356318f6a11d871bca764046fc11a12a9bfb41fdcbfe90a6349c41c",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q361-370",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q361",
+                          "number": 46,
+                          "sourceQuestionId": 361,
+                          "text": "Die Radiosendung stellt wöchentlich Leute aus ganz Deutschland vor.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q362",
+                          "number": 47,
+                          "sourceQuestionId": 362,
+                          "text": "Eva Küpper läuft im Training wenigstens einmal pro Woche auch über die Marathondistanz.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q363",
+                          "number": 48,
+                          "sourceQuestionId": 363,
+                          "text": "Ihren Job als Bankangestellte würde Eva Küpper gerne kündigen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q364",
+                          "number": 49,
+                          "sourceQuestionId": 364,
+                          "text": "Nach der Ausbildung hat Eva Küpper ihren Lebensstil radikal verändert.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q365",
+                          "number": 50,
+                          "sourceQuestionId": 365,
+                          "text": "Eva Küpper kommt ursprünglich aus München.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q366",
+                          "number": 51,
+                          "sourceQuestionId": 366,
+                          "text": "Eva Küpper gefallen Dauerläufe in der Stadt genauso gut wie in den Bergen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q367",
+                          "number": 52,
+                          "sourceQuestionId": 367,
+                          "text": "Während eines Ultramarathons wechselt Eva Küpper die Laufschuhe dreimal.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q368",
+                          "number": 53,
+                          "sourceQuestionId": 368,
+                          "text": "Die spezielle Uhr ist für Eva Küpper nicht nur im Training, sondern auch im Wettkampf wichtig.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q369",
+                          "number": 54,
+                          "sourceQuestionId": 369,
+                          "text": "Solange der Körper gesund ist, will Eva Küpper weiterhin Ultramarathons laufen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q361-370:q370",
+                          "number": 55,
+                          "sourceQuestionId": 370,
+                          "text": "Nach dem Berlin Marathon kann Eva Küpper dem Lauf-Club offiziell beitreten.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Radiosendung",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q361-370",
+                        "names": [
+                          "Radiosendung"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            361,
+                            362,
+                            363,
+                            364,
+                            365,
+                            366,
+                            367,
+                            368,
+                            369,
+                            370
+                          ],
+                          "sourceFingerprint": "30287f771c3b55047fd4bc3610f2c48a16e270085706cd0fde8cb40dd0d4a9e2",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q371-380",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q371",
+                          "number": 46,
+                          "sourceQuestionId": 371,
+                          "text": "Weniger als zehn Prozent der Fehltage am Arbeitsplatz sind auf psychische Erkrankungen zurückzuführen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q372",
+                          "number": 47,
+                          "sourceQuestionId": 372,
+                          "text": "Betroffene Arbeitnehmer sprechen relativ offen über ihre psychischen Probleme.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q373",
+                          "number": 48,
+                          "sourceQuestionId": 373,
+                          "text": "Auch Arbeitslosigkeit ist ein Risikofaktor für psychische Probleme.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q374",
+                          "number": 49,
+                          "sourceQuestionId": 374,
+                          "text": "Schlechte Stimmung am Arbeitsplatz ist die Hauptursache für psychische Erkrankungen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q375",
+                          "number": 50,
+                          "sourceQuestionId": 375,
+                          "text": "Menschen, die zu wenig zu tun haben, versuchen, das nicht zu zeigen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q376",
+                          "number": 51,
+                          "sourceQuestionId": 376,
+                          "text": "Menschen, die am Arbeitsplatz wenig zu tun haben, sind besonders zufrieden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q377",
+                          "number": 52,
+                          "sourceQuestionId": 377,
+                          "text": "Internet und Smartphone können einen Einfluss auf die Psyche haben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q378",
+                          "number": 53,
+                          "sourceQuestionId": 378,
+                          "text": "Wem seine Arbeit Spaß macht, der kann eher mehr leisten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q379",
+                          "number": 54,
+                          "sourceQuestionId": 379,
+                          "text": "Bei Managern ist das Risiko für psychische Erkrankungen unter allen Berufsgruppen am höchsten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q371-380:q380",
+                          "number": 55,
+                          "sourceQuestionId": 380,
+                          "text": "Für die psychische Gesundheit ist es besser, arbeitslos zu sein, als eine nur durchschnittlich interessante Arbeit zu finden.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "psychische",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q371-380",
+                        "names": [
+                          "psychische"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            371,
+                            372,
+                            373,
+                            374,
+                            375,
+                            376,
+                            377,
+                            378,
+                            379,
+                            380
+                          ],
+                          "sourceFingerprint": "65ae21f664a5e4c734a4837b2ad9185a87f7ea653caccd9e740dc5ea718c3a0c",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q381-390",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q381",
+                          "number": 46,
+                          "sourceQuestionId": 381,
+                          "text": "Herr Kemper arbeitet aus Dankbarkeit für die Hilfe, die er früher bekommen hat, ehrenamtlich.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q382",
+                          "number": 47,
+                          "sourceQuestionId": 382,
+                          "text": "Der Tierschutz hat für Herrn Kemper oberste Priorität.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q383",
+                          "number": 48,
+                          "sourceQuestionId": 383,
+                          "text": "Herr Kemper hat zuerst handwerkliche Arbeiten im Tierheim gemacht.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q384",
+                          "number": 49,
+                          "sourceQuestionId": 384,
+                          "text": "Herr Kemper hat es abgelehnt, Reinigungsarbeiten zu übernehmen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q385",
+                          "number": 50,
+                          "sourceQuestionId": 385,
+                          "text": "Alle Helferinnen und Helfer arbeiten mehrmals in der Woche im Tierheim.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q386",
+                          "number": 51,
+                          "sourceQuestionId": 386,
+                          "text": "Greta hat angefangen, ehrenamtlich zu arbeiten, weil sie zu Hause Langeweile hatte.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q387",
+                          "number": 52,
+                          "sourceQuestionId": 387,
+                          "text": "Herr Kemper hat einer jungen Frau geholfen, ihren beruflichen Weg zu finden.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q388",
+                          "number": 53,
+                          "sourceQuestionId": 388,
+                          "text": "Herr Kemper findet. dass sich jeder Mensch ehrenamtlich engagieren sollte.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q389",
+                          "number": 54,
+                          "sourceQuestionId": 389,
+                          "text": "Herr Kemper hat auch Verständnis für Menschen, die sich nicht ehrenamtlich engagieren.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q381-390:q390",
+                          "number": 55,
+                          "sourceQuestionId": 390,
+                          "text": "Herr Kemper wohnt in einem Haus, in dem Tierhaltung verboten ist.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Herr Kemper",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q381-390",
+                        "names": [
+                          "Herr Kemper"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            381,
+                            382,
+                            383,
+                            384,
+                            385,
+                            386,
+                            387,
+                            388,
+                            389,
+                            390
+                          ],
+                          "sourceFingerprint": "ee93115f5c7610fe552d226c47dd894ad9ddba1f5db00a030eb7201b1dbb07be",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_2:q401-410",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q401",
+                          "number": 46,
+                          "sourceQuestionId": 401,
+                          "text": "Nach seinem Studium hat Thomas Hirschbaum zuerst im IT-Bereich gearbeitet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q402",
+                          "number": 47,
+                          "sourceQuestionId": 402,
+                          "text": "Er hat den Managementbereich in seiner Firma gegründet.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q403",
+                          "number": 48,
+                          "sourceQuestionId": 403,
+                          "text": "Es hat ihm gefallen, Verantwortung für sein 50-köpfiges Team zu haben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q404",
+                          "number": 49,
+                          "sourceQuestionId": 404,
+                          "text": "Seine Eltern haben erwartet, dass er einmal mehr Geld verdient als sie.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q405",
+                          "number": 50,
+                          "sourceQuestionId": 405,
+                          "text": "Seit seinem Start ins Berufsleben hatte er keine Freizeit mehr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q406",
+                          "number": 51,
+                          "sourceQuestionId": 406,
+                          "text": "Er hat sich oft nicht gut gefühlt, wenn er an seine Familie dachte.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q407",
+                          "number": 52,
+                          "sourceQuestionId": 407,
+                          "text": "Nach seinem 40. Geburtstag hatte er den Wunsch, mal einen Monat Urlaub zu machen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q408",
+                          "number": 53,
+                          "sourceQuestionId": 408,
+                          "text": "Sein Chef war sofort mit dem Vorschlag einverstanden, die Arbeit anders zu organisieren.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q409",
+                          "number": 54,
+                          "sourceQuestionId": 409,
+                          "text": "Wie sein Kollege arbeitet Thomas Hirschbaum jetzt halbtags.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_2:q401-410:q410",
+                          "number": 55,
+                          "sourceQuestionId": 410,
+                          "text": "Trotzdem steht die Arbeit für ihn an oberster Stelle.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Thomas",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_2:q401-410",
+                        "names": [
+                          "Thomas"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_2",
+                          "url": "https://telc.site/quiz/b2_l_2",
+                          "questionIds": [
+                            401,
+                            402,
+                            403,
+                            404,
+                            405,
+                            406,
+                            407,
+                            408,
+                            409,
+                            410
+                          ],
+                          "sourceFingerprint": "270cbf82f1046d0de23515169f808e4b948c65d27575ffb288d784d70f7ffa66",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
                     }
                   ]
                 },
@@ -8549,6 +9421,1128 @@
                           "correct": true
                         }
                       ]
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q31-35",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q31-35:q31",
+                          "number": 56,
+                          "sourceQuestionId": 31,
+                          "text": "Die Messe zum Thema Ehrenamts findet in der Stadthalle statt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q31-35:q32",
+                          "number": 57,
+                          "sourceQuestionId": 32,
+                          "text": "Der Film über die Arktis läuft im Programmkino.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q31-35:q33",
+                          "number": 58,
+                          "sourceQuestionId": 33,
+                          "text": "Auf der A8 zwischen Stuttgart und München gibt es 12 km Stau.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q31-35:q34",
+                          "number": 59,
+                          "sourceQuestionId": 34,
+                          "text": "Wenn Sie Fragen zu Ihrer Rechnung haben, müssen Sie die 2 wählen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q31-35:q35",
+                          "number": 60,
+                          "sourceQuestionId": 35,
+                          "text": "Der Zug nach Berlin hat 20 Minuten Verspätung.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Ehrenamts",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q31-35",
+                        "names": [
+                          "Ehrenamts"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            31,
+                            32,
+                            33,
+                            34,
+                            35
+                          ],
+                          "sourceFingerprint": "3044bbbb54cec4202236e03b442fe019b3dbbb1c7bc6e03b65cc8698dc1f0972",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q36-40",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q36-40:q36",
+                          "number": 56,
+                          "sourceQuestionId": 36,
+                          "text": "Wegen einer Demonstration ist die Innenstadt für den Autoverkehr gesperrt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q36-40:q37",
+                          "number": 57,
+                          "sourceQuestionId": 37,
+                          "text": "Der Vortrag über gesunde Ernährung wurde auf nächste Woche verschoben.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q36-40:q38",
+                          "number": 58,
+                          "sourceQuestionId": 38,
+                          "text": "Auf der A1 gibt es wegen einer Baustelle Behinderungen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q36-40:q39",
+                          "number": 59,
+                          "sourceQuestionId": 39,
+                          "text": "Die Kundennummer finden Sie oben rechts auf dem Brief.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q36-40:q40",
+                          "number": 60,
+                          "sourceQuestionId": 40,
+                          "text": "Der Flug nach London startet von Gate B12.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Demonstration",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q36-40",
+                        "names": [
+                          "Demonstration"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            36,
+                            37,
+                            38,
+                            39,
+                            40
+                          ],
+                          "sourceFingerprint": "b783330b9417993c0194e243eadfeead143556c45231dd26b5bfb4e88768e619",
+                          "audioUrls": [
+                            "/audio/demonstration.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q41-45",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q41-45:q41",
+                          "number": 56,
+                          "sourceQuestionId": 41,
+                          "text": "Am Wochenanfang bleibt es in ganz Deutschland sonnig.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q41-45:q42",
+                          "number": 57,
+                          "sourceQuestionId": 42,
+                          "text": "Die Stadtrundfahrt beginnt am Marktplatz.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q41-45:q43",
+                          "number": 58,
+                          "sourceQuestionId": 43,
+                          "text": "Wegen eines Unfalls ist die B10 gesperrt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q41-45:q44",
+                          "number": 59,
+                          "sourceQuestionId": 44,
+                          "text": "Wenn Sie einen Termin vereinbaren wollen, drücken Sie die 3.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q41-45:q45",
+                          "number": 60,
+                          "sourceQuestionId": 45,
+                          "text": "Der Bus zum Flughafen fährt alle 30 Minuten.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Wochenanfang",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q41-45",
+                        "names": [
+                          "Wochenanfang"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            41,
+                            42,
+                            43,
+                            44,
+                            45
+                          ],
+                          "sourceFingerprint": "35122309089edf3e27d413c843e5519f1def948f1c61f93e19834d582eeb83d4",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q46-50",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q46-50:q46",
+                          "number": 56,
+                          "sourceQuestionId": 46,
+                          "text": "Im August findet das Weinfest auf dem Schlossplatz statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q46-50:q47",
+                          "number": 57,
+                          "sourceQuestionId": 47,
+                          "text": "Die Ausstellung moderner Kunst ist montags geschlossen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q46-50:q48",
+                          "number": 58,
+                          "sourceQuestionId": 48,
+                          "text": "Auf der A5 gibt es stockenden Verkehr wegen Überlastung.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q46-50:q49",
+                          "number": 59,
+                          "sourceQuestionId": 49,
+                          "text": "Ihre Nachricht wurde erfolgreich gespeichert.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q46-50:q50",
+                          "number": 60,
+                          "sourceQuestionId": 50,
+                          "text": "Der Intercity nach Hamburg fährt heute von Gleis 5.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Im August",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q46-50",
+                        "names": [
+                          "Im August"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            46,
+                            47,
+                            48,
+                            49,
+                            50
+                          ],
+                          "sourceFingerprint": "fcc564dff5f08314d3dbf5043fea9748ae6c0f6b9f02c785e5e29ff679343180",
+                          "audioUrls": [
+                            "/audio/imaugust.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q51-55",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q51-55:q51",
+                          "number": 56,
+                          "sourceQuestionId": 51,
+                          "text": "Das Fundbüro hat am Samstagnachmittag geöffnet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q51-55:q52",
+                          "number": 57,
+                          "sourceQuestionId": 52,
+                          "text": "Die Theaterkasse befindet sich im Erdgeschoss.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q51-55:q53",
+                          "number": 58,
+                          "sourceQuestionId": 53,
+                          "text": "Wegen Glatteisgefahr wird um vorsichtige Fahrweise gebeten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q51-55:q54",
+                          "number": 59,
+                          "sourceQuestionId": 54,
+                          "text": "Bitte hinterlassen Sie Ihren Namen nach dem Signalton.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q51-55:q55",
+                          "number": 60,
+                          "sourceQuestionId": 55,
+                          "text": "Der Flug aus Paris landet mit 15 Minuten Verspätung.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Fundbüro",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q51-55",
+                        "names": [
+                          "Fundbüro"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            51,
+                            52,
+                            53,
+                            54,
+                            55
+                          ],
+                          "sourceFingerprint": "13153aa0fbd9c66b7626fd9ae90aa759f8935614889920e07fa12fc6ae5e8b2f",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q56-60",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q56-60:q56",
+                          "number": 56,
+                          "sourceQuestionId": 56,
+                          "text": "Wegen Bauarbeiten ist der Nordausgang des Bahnhofs gesperrt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q56-60:q57",
+                          "number": 57,
+                          "sourceQuestionId": 57,
+                          "text": "Das Konzert der Philharmoniker ist bereits ausverkauft.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q56-60:q58",
+                          "number": 58,
+                          "sourceQuestionId": 58,
+                          "text": "Auf der A7 gibt es Gefahr durch Gegenstände auf der Fahrbahn.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q56-60:q59",
+                          "number": 59,
+                          "sourceQuestionId": 59,
+                          "text": "Für technische Hilfe wählen Sie bitte die 4.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q56-60:q60",
+                          "number": 60,
+                          "sourceQuestionId": 60,
+                          "text": "Der Eurocity nach Prag hat heute keine Speisewagen.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Ausgang",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q56-60",
+                        "names": [
+                          "Ausgang"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            56,
+                            57,
+                            58,
+                            59,
+                            60
+                          ],
+                          "sourceFingerprint": "bbc0d7c4700046951473e7839b9c74d52d69c0dbe318f392fb330e41df557cf4",
+                          "audioUrls": [
+                            "/audio/ausgang.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q61-65",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q61-65:q61",
+                          "number": 56,
+                          "sourceQuestionId": 61,
+                          "text": "Die Aktion zum Blutspenden findet im Rotkreuz-Zentrum statt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q61-65:q62",
+                          "number": 57,
+                          "sourceQuestionId": 62,
+                          "text": "Die Stadtführung für Kinder ist kostenlos.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q61-65:q63",
+                          "number": 58,
+                          "sourceQuestionId": 63,
+                          "text": "Auf der A9 gibt es 5 km Stau wegen eines defekten Fahrzeugs.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q61-65:q64",
+                          "number": 59,
+                          "sourceQuestionId": 64,
+                          "text": "Sie rufen außerhalb unserer Geschäftszeiten an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q61-65:q65",
+                          "number": 60,
+                          "sourceQuestionId": 65,
+                          "text": "Der Flug nach Rom wird über Gate C05 geboardet.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Blutspenden",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q61-65",
+                        "names": [
+                          "Blutspenden"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            61,
+                            62,
+                            63,
+                            64,
+                            65
+                          ],
+                          "sourceFingerprint": "fd75b37dfd2273a749e2b6ad08ce8bf42f49996bc21615402565dab9c50062d4",
+                          "audioUrls": [
+                            "/audio/blutspenden.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q66-70",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q66-70:q66",
+                          "number": 56,
+                          "sourceQuestionId": 66,
+                          "text": "Das Reitturnier am Wochenende wurde wegen Regens abgesagt.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q66-70:q67",
+                          "number": 57,
+                          "sourceQuestionId": 67,
+                          "text": "Die Lesung in der Bibliothek beginnt um 19 Uhr.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q66-70:q68",
+                          "number": 58,
+                          "sourceQuestionId": 68,
+                          "text": "Wegen Nebels ist auf der A6 mit Sichtbehinderungen zu rechnen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q66-70:q69",
+                          "number": 59,
+                          "sourceQuestionId": 69,
+                          "text": "Wenn Sie mit einem Mitarbeiter sprechen wollen, bleiben Sie bitte am Apparat.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q66-70:q70",
+                          "number": 60,
+                          "sourceQuestionId": 70,
+                          "text": "Der Regionalexpress nach Ulm fällt heute aus.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Reitturnier",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q66-70",
+                        "names": [
+                          "Reitturnier"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            66,
+                            67,
+                            68,
+                            69,
+                            70
+                          ],
+                          "sourceFingerprint": "fecd48fe12ed626bb1ee8a16cfd03402a14f0ef0104fba8868abda7411957522",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q71-75",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q71-75:q71",
+                          "number": 56,
+                          "sourceQuestionId": 71,
+                          "text": "Der Markt für Delikatessen findet in der Fußgängerzone statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q71-75:q72",
+                          "number": 57,
+                          "sourceQuestionId": 72,
+                          "text": "Die Führung durch das Schloss dauert ca. 90 Minuten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q71-75:q73",
+                          "number": 58,
+                          "sourceQuestionId": 73,
+                          "text": "Auf der A4 gibt es Gefahr durch Tiere auf der Fahrbahn.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q71-75:q74",
+                          "number": 59,
+                          "sourceQuestionId": 74,
+                          "text": "Ihre Bestellung wurde entgegengenommen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q71-75:q75",
+                          "number": 60,
+                          "sourceQuestionId": 75,
+                          "text": "Der Flug nach Wien hat 30 Minuten Verspätung.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Delikatessen",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q71-75",
+                        "names": [
+                          "Delikatessen"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            71,
+                            72,
+                            73,
+                            74,
+                            75
+                          ],
+                          "sourceFingerprint": "4fd1ef075552e6111117b5e176d9ef2eeff6f5ee5e10a714862799abdb76d559",
+                          "audioUrls": [
+                            "/audio/delikatessen.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q76-80",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q76-80:q76",
+                          "number": 56,
+                          "sourceQuestionId": 76,
+                          "text": "Für ein Konzert morgen Abend gibt es noch Restkarten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q76-80:q77",
+                          "number": 57,
+                          "sourceQuestionId": 77,
+                          "text": "Das Museum für Technik hat neue Öffnungszeiten.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q76-80:q78",
+                          "number": 58,
+                          "sourceQuestionId": 78,
+                          "text": "Wegen starker Winde ist auf den Brücken Vorsicht geboten.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q76-80:q79",
+                          "number": 59,
+                          "sourceQuestionId": 79,
+                          "text": "Wenn Sie Infomaterial bestellen wollen, drücken Sie die 5.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q76-80:q80",
+                          "number": 60,
+                          "sourceQuestionId": 80,
+                          "text": "Der Zug aus München kommt heute auf Gleis 11 an.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Für ein Konzert morgen",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q76-80",
+                        "names": [
+                          "Für ein Konzert morgen"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            76,
+                            77,
+                            78,
+                            79,
+                            80
+                          ],
+                          "sourceFingerprint": "c438449a436f7eae72c4e1ea34e5847c77090c7677de70d00032473d40f6eebc",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q81-85",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q81-85:q81",
+                          "number": 56,
+                          "sourceQuestionId": 81,
+                          "text": "In Raum C23 findet heute eine Infoveranstaltung statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q81-85:q82",
+                          "number": 57,
+                          "sourceQuestionId": 82,
+                          "text": "Die Stadtgalerie zeigt Werke junger Künstler.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q81-85:q83",
+                          "number": 58,
+                          "sourceQuestionId": 83,
+                          "text": "Auf der A2 gibt es 8 km Stau wegen Überlastung.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q81-85:q84",
+                          "number": 59,
+                          "sourceQuestionId": 84,
+                          "text": "Bitte geben Sie Ihre Geheimzahl über die Tastatur ein.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q81-85:q85",
+                          "number": 60,
+                          "sourceQuestionId": 85,
+                          "text": "Der Flug nach Madrid wird aufgerufen.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "In Raum C23",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q81-85",
+                        "names": [
+                          "In Raum C23"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            81,
+                            82,
+                            83,
+                            84,
+                            85
+                          ],
+                          "sourceFingerprint": "2f4f5714749050b4654f2dd3647007622545ae8dbc82fd7d87cf270cc2e0f608",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q86-90",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q86-90:q86",
+                          "number": 56,
+                          "sourceQuestionId": 86,
+                          "text": "Die Buchhandlung bietet heute Abend eine Lesung an.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q86-90:q87",
+                          "number": 57,
+                          "sourceQuestionId": 87,
+                          "text": "Der Flohmarkt findet nur bei schönem Wetter statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q86-90:q88",
+                          "number": 58,
+                          "sourceQuestionId": 88,
+                          "text": "Wegen eines Unfalls ist die A81 gesperrt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q86-90:q89",
+                          "number": 59,
+                          "sourceQuestionId": 89,
+                          "text": "Wenn Sie ein Rezept vorbestellen wollen, wählen Sie die 1.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q86-90:q90",
+                          "number": 60,
+                          "sourceQuestionId": 90,
+                          "text": "Der Zug nach Zürich fährt von Gleis 3 ab.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Buchhandlung",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q86-90",
+                        "names": [
+                          "Buchhandlung"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            86,
+                            87,
+                            88,
+                            89,
+                            90
+                          ],
+                          "sourceFingerprint": "3ebda78064e48f53304520fc9243bb84d81df9798d98b4a561801cf0f842bba2",
+                          "audioUrls": [
+                            "/audio/buchhandlung.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q91-95",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q91-95:q91",
+                          "number": 56,
+                          "sourceQuestionId": 91,
+                          "text": "Die Trainingsausfahrten des Radsportclubs finden täglich statt.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q91-95:q92",
+                          "number": 57,
+                          "sourceQuestionId": 92,
+                          "text": "Das Schwimmbad ist wegen Reinigungsarbeiten geschlossen.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q91-95:q93",
+                          "number": 58,
+                          "sourceQuestionId": 93,
+                          "text": "Auf der A3 gibt es stockenden Verkehr wegen einer Baustelle.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q91-95:q94",
+                          "number": 59,
+                          "sourceQuestionId": 94,
+                          "text": "Wenn Sie einen Rückruf wünschen, drücken Sie die 0.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q91-95:q95",
+                          "number": 60,
+                          "sourceQuestionId": 95,
+                          "text": "Der Flug nach Paris ist annulliert.",
+                          "correct": false
+                        }
+                      ],
+                      "title": "Trainingsausfahrten",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q91-95",
+                        "names": [
+                          "Trainingsausfahrten"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            91,
+                            92,
+                            93,
+                            94,
+                            95
+                          ],
+                          "sourceFingerprint": "5cf0adc6106999bef0d8456fcbda360cb96169e9b7e1ae214bf64836a572877c",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q96-100",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q96-100:q96",
+                          "number": 56,
+                          "sourceQuestionId": 96,
+                          "text": "Für Geschäftsreisende gibt es spezielle Tarife.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q96-100:q97",
+                          "number": 57,
+                          "sourceQuestionId": 97,
+                          "text": "Die Opernkarten müssen bis 18 Uhr abgeholt werden.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q96-100:q98",
+                          "number": 58,
+                          "sourceQuestionId": 98,
+                          "text": "Auf der A45 gibt es Gefahr durch Öl auf der Fahrbahn.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q96-100:q99",
+                          "number": 59,
+                          "sourceQuestionId": 99,
+                          "text": "Bitte sprechen Sie nach dem Signalton.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q96-100:q100",
+                          "number": 60,
+                          "sourceQuestionId": 100,
+                          "text": "Der Flug nach Berlin landet an Gate A02.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Geschäftsreisende",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q96-100",
+                        "names": [
+                          "Geschäftsreisende"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            96,
+                            97,
+                            98,
+                            99,
+                            100
+                          ],
+                          "sourceFingerprint": "215312f2c18de4ced086d9c47db50a59c4ae5e74baaee806c8536be246326bbc",
+                          "audioUrls": [
+                            "/audio/geschaftsreisende.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q101-105",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q101-105:q101",
+                          "number": 56,
+                          "sourceQuestionId": 101,
+                          "text": "Das Geschäft hat heute bis 22 Uhr geöffnet.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q101-105:q102",
+                          "number": 57,
+                          "sourceQuestionId": 102,
+                          "text": "Die Vorlesung fällt heute wegen Krankheit aus.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q101-105:q103",
+                          "number": 58,
+                          "sourceQuestionId": 103,
+                          "text": "Auf der A1 gibt es 3 km Stau wegen eines Unfalls.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q101-105:q104",
+                          "number": 59,
+                          "sourceQuestionId": 104,
+                          "text": "Wenn Sie eine Nachricht hinterlassen wollen, drücken Sie die 1.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q101-105:q105",
+                          "number": 60,
+                          "sourceQuestionId": 105,
+                          "text": "Der Flug nach München hat 10 Minuten Verspätung.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Das Geschäft",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q101-105",
+                        "names": [
+                          "Das Geschäft"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            101,
+                            102,
+                            103,
+                            104,
+                            105
+                          ],
+                          "sourceFingerprint": "ed685062b157ec13e1d408cc1457bcdef53f335ef869028c4515ebe355c8fad3",
+                          "audioUrls": [
+                            "/audio/dasgeschaft.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
+                    },
+                    {
+                      "id": "legacy:telc:b2_l_3:q106-110",
+                      "instruction": "Entscheiden Sie bei jeder Aussage: richtig oder falsch.",
+                      "statements": [
+                        {
+                          "id": "legacy:telc:b2_l_3:q106-110:q106",
+                          "number": 56,
+                          "sourceQuestionId": 106,
+                          "text": "Die Fahrkarte gilt auch für den Nahverkehr.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q106-110:q107",
+                          "number": 57,
+                          "sourceQuestionId": 107,
+                          "text": "Die Bibliothek ist während der Ferien geschlossen.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q106-110:q108",
+                          "number": 58,
+                          "sourceQuestionId": 108,
+                          "text": "Auf der A5 gibt es Gefahr durch Gegenstände auf der Fahrbahn.",
+                          "correct": true
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q106-110:q109",
+                          "number": 59,
+                          "sourceQuestionId": 109,
+                          "text": "Wenn Sie einen Termin absagen wollen, wählen Sie die 2.",
+                          "correct": false
+                        },
+                        {
+                          "id": "legacy:telc:b2_l_3:q106-110:q110",
+                          "number": 60,
+                          "sourceQuestionId": 110,
+                          "text": "Der Flug nach London wird aufgerufen.",
+                          "correct": true
+                        }
+                      ],
+                      "title": "Fahrkarte",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_l_3:q106-110",
+                        "names": [
+                          "Fahrkarte"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_l_3",
+                          "url": "https://telc.site/quiz/b2_l_3",
+                          "questionIds": [
+                            106,
+                            107,
+                            108,
+                            109,
+                            110
+                          ],
+                          "sourceFingerprint": "57b7c853192c44004446149f5fa7a421e7317663c1825652f554a98bc0f30900",
+                          "audioUrls": [
+                            "/audio/fahrkarte.m4a"
+                          ]
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      }
                     }
                   ]
                 },

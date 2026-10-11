@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "exercises": [],
+  "migrated": [
+    {
+      "id": "legacy:telc:b2_g1_24",
+      "title": "Liebe Karin",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "telc-b2-g1-24",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_g1_37",
+      "title": "Liebe Sandra – Helgoland",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "telc-b2-g1-37",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q311-320",
+      "title": "Wohnmobile",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q311-320"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q331-340",
+      "title": "Straßenkinder (block 2)",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q331-340"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q341-350",
+      "title": "Revolution Day",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q341-350"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q351-360",
+      "title": "Bicycle",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q351-360"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q361-370",
+      "title": "Radiosendung",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q361-370"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q371-380",
+      "title": "psychische",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q371-380"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q381-390",
+      "title": "Herr Kemper",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q381-390"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_2:q401-410",
+      "title": "Thomas",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-2",
+        "topicId": "legacy:telc:b2_l_2:q401-410"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q31-35",
+      "title": "Ehrenamts",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q31-35"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q36-40",
+      "title": "Demonstration",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q36-40"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q41-45",
+      "title": "Wochenanfang",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q41-45"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q46-50",
+      "title": "Im August",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q46-50"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q51-55",
+      "title": "Fundbüro",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q51-55"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q56-60",
+      "title": "Ausgang",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q56-60"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q61-65",
+      "title": "Blutspenden",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q61-65"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q66-70",
+      "title": "Reitturnier",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q66-70"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q71-75",
+      "title": "Delikatessen",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q71-75"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q76-80",
+      "title": "Für ein Konzert morgen",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q76-80"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q81-85",
+      "title": "In Raum C23",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q81-85"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q86-90",
+      "title": "Buchhandlung",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q86-90"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q91-95",
+      "title": "Trainingsausfahrten",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q91-95"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q96-100",
+      "title": "Geschäftsreisende",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q96-100"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q101-105",
+      "title": "Das Geschäft",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q101-105"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_l_3:q106-110",
+      "title": "Fahrkarte",
+      "target": {
+        "file": "horen-codes.json",
+        "level": "b2",
+        "kind": "topic",
+        "themeKey": "horen-b2",
+        "partKey": "teil-3",
+        "topicId": "legacy:telc:b2_l_3:q106-110"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_w_30",
+      "title": "Unsere Nachbarschaft vernetzt sich",
+      "target": {
+        "file": "shreiben.json",
+        "level": "b2",
+        "kind": "task",
+        "index": 29
+      }
+    },
+    {
+      "id": "legacy:telc:b2_g1_19",
+      "title": "Liebe Lara",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "keine-zeit",
+        "versionKey": "telc-b2-g1-19",
+        "partKey": "sprachbausteine-1"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_g1_23",
+      "title": "Frau Goronsksa",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "benzin",
+        "versionKey": "telc-b2-g1-23",
+        "partKey": "sprachbausteine-1"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_g1_28",
+      "title": "Liebe Clara",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "licht",
+        "versionKey": "telc-b2-g1-28",
+        "partKey": "sprachbausteine-1"
+      }
+    },
+    {
+      "id": "legacy:telc:b2_g1_33",
+      "title": "Jens",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "jens-alt",
+        "versionKey": "telc-b2-g1-33",
+        "partKey": "sprachbausteine-1"
+      }
+    }
+  ]
+}

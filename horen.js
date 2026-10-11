@@ -17,12 +17,8 @@ const hideAussageShortcutBtn = document.getElementById("hide-aussage-shortcut");
 const progressDisplay = document.getElementById("horen-progress");
 const searchBarContainer = document.getElementById("search-bar-container");
 const searchInput = document.getElementById("horen-topic-search");
-const sourceKicker = document.getElementById("horen-source-kicker");
-const sourceCopy = document.getElementById("horen-source-copy");
-const sourceLink = document.getElementById("horen-source-link");
-const sourcePanel = document.getElementById("horen-source-panel");
 const HIDE_AUSSAGE_KEY = "horenHideAussage";
-const HOREN_SOURCE_PDF_PATH = "assets/horen-b2-source.pdf";
+let scopedHorenNames = [];
 
 const PART_ORDER = ["teil-1", "teil-2", "teil-3"];
 const PART_LABELS = {
@@ -149,7 +145,7 @@ function getTopicsForPart(partKey) {
   if (!part) {
     return [];
   }
-  return part.content?.topics || [];
+  return (part.content?.topics || []).filter(topic => topic.legacyImport?.enabled !== false);
 }
 
 function getFilteredTopics(topics, searchQuery) {
@@ -162,7 +158,8 @@ function getFilteredTopics(topics, searchQuery) {
     const tag = (topic.tag || "").toLowerCase();
     const matchesTitle = title.includes(query);
     const matchesTag = tag.includes(query);
-    return matchesTitle || matchesTag;
+    const names = scopedHorenNames.filter(entry => entry.target.topicId === topic.id).flatMap(entry => entry.names.map(name => name.label));
+    return matchesTitle || matchesTag || (window.ZDeutschExercises && window.ZDeutschExercises.normalize(names.join(" ")).includes(window.ZDeutschExercises.normalize(query)));
   });
 }
 
@@ -179,17 +176,7 @@ function renderPartList() {
   }
   partList.classList.remove("hidden");
   order.forEach((partKey) => {
-    const button = createEl(
-      "button",
-      classNames(
-        "flex items-center justify-center gap-2 rounded-full border px-4 py-2 text-[10px] font-display uppercase tracking-[0.2em] transition-colors",
-        partKey === state.partKey
-          ? "border-azure/60 bg-azure/10 text-azure ring-2 ring-azure/20"
-          : "border-stone-300 bg-white text-slate shadow-sm hover:border-stone-300"
-      ),
-      PART_LABELS[partKey] || partKey
-    );
-    button.type = "button";
+    const button = PracticeUI.tab({ label: PART_LABELS[partKey] || partKey, active: partKey === state.partKey });
     button.addEventListener("click", () => {
       if (state.partKey === partKey) {
         return;
@@ -300,21 +287,7 @@ function buildTopicSubtitle(topic, fallbackLabel) {
     .trim()
     .replace(/[,\s]+$/, "")
     || fallback;
-  const pageMatch = rawTag.match(/pdf\s*page\s*(\d+)/i);
-  if (!pageMatch) {
-    return createEl("div", "text-xs uppercase tracking-[0.2em] text-slate", subtitle);
-  }
-  const pageNumber = Number.parseInt(pageMatch[1], 10);
-  const link = createEl(
-    "a",
-    "text-xs uppercase tracking-[0.2em] text-azure underline decoration-azure/40 underline-offset-4 hover:text-amber transition-colors cursor-pointer",
-    subtitle
-  );
-  link.href = `${HOREN_SOURCE_PDF_PATH}#page=${pageNumber}`;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.title = `Open source PDF (page ${pageNumber})`;
-  return link;
+  return createEl("div", "text-xs uppercase tracking-[0.2em] text-slate", subtitle.replace(/pdf\s*page\s*\d+/gi, "").replace(/[,\s]+$/, "") || fallback);
 }
 
 function renderTopicAudio(topic) {
@@ -323,21 +296,7 @@ function renderTopicAudio(topic) {
     return null;
   }
 
-  const wrapper = createEl("div", "horen-audio");
-  const label = createEl("div", "horen-audio__label");
-  label.append(
-    makeLucideIcon("headphones", "h-4 w-4"),
-    createEl("span", null, "Audio zum Thema")
-  );
-  const player = document.createElement("audio");
-  player.className = "horen-audio__player";
-  player.controls = true;
-  player.preload = "metadata";
-  player.src = source;
-  player.setAttribute("aria-label", `Audio: ${topic?.title || "Hören-Thema"}`);
-  player.append(createEl("span", null, "Ihr Browser unterstützt die Audiowiedergabe nicht."));
-  wrapper.append(label, player);
-  return wrapper;
+  return PracticeUI.audio({ source, title: `Audio: ${topic?.title || "Hören-Thema"}` });
 }
 
 function makeLucideIcon(name, className) {
@@ -422,8 +381,19 @@ function renderActivePart() {
     }
     const displayIndex = topicOrder.indexOf(originalIndex);
     const wrapper = createEl("article", "horen-topic");
+    wrapper.dataset.topicId = topic.id || "";
     if (state.checkOneByOne && displayIndex !== state.activeTopicIndex) {
       wrapper.classList.add("hidden");
+    }
+    if (topic.legacyImport) {
+      const heading = createEl("h3", "", topic.title);
+      heading.append(" ", PracticeUI.newBadge());
+      wrapper.append(heading);
+      const link = createEl("a", "practice-button", "Üben →");
+      link.href = `einzeluebung.html?exercise=${encodeURIComponent(topic.legacyImport.id)}`;
+      wrapper.append(link);
+      contentContainer.append(wrapper);
+      return;
     }
     const header = createEl("div", "flex items-center justify-between gap-3");
     const titleDiv = createEl("div");
@@ -449,6 +419,12 @@ function renderActivePart() {
     });
     header.append(titleDiv, topicAussageBtn);
     wrapper.append(header);
+    const named = scopedHorenNames.find(entry => entry.target.themeKey === state.themeKey && entry.target.partKey === state.partKey && entry.target.topicId === topic.id);
+    if (named) {
+      const details = createEl("details", "exercise-name-details");
+      details.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", named.names.map(name => name.label).join(" · ")));
+      wrapper.append(details);
+    }
     const topicAudio = renderTopicAudio(topic);
     if (topicAudio) {
       wrapper.append(topicAudio);
@@ -482,16 +458,11 @@ function renderActivePart() {
       wrapper.append(renderTopicFeedback(feedback));
     }
     const topicComplete = isTopicComplete(topic, responses);
-    const topicControls = createEl("div", "topic-controls flex items-center mt-3 gap-2 justify-start");
+    const topicControls = createEl("div", "topic-controls flex flex-wrap items-center mt-3 gap-2 justify-start");
     const completeMsg = !topicComplete
       ? createEl("p", "topic-complete-message text-[10px] uppercase tracking-[0.2em] text-slate font-display", "Bitte alle Aussagen beantworten.")
       : null;
-    const checkTopicBtn = createEl(
-      "button",
-      "topic-check-btn",
-      "Antworten prüfen"
-    );
-    checkTopicBtn.type = "button";
+    const checkTopicBtn = PracticeUI.button("Antworten prüfen", { variant: "primary", className: "topic-check-btn" });
     checkTopicBtn.disabled = !topicComplete;
     checkTopicBtn.addEventListener("click", () => {
       if (!isTopicComplete(topic, responses)) {
@@ -519,6 +490,7 @@ function renderActivePart() {
 }
 
 function isTopicComplete(topic, responses) {
+  if (topic?.legacyImport) return true; // Imported exercises retain their own saved responses and review flow.
   if (!topic || !responses) {
     return false;
   }
@@ -551,7 +523,7 @@ function countAnsweredStatements(topics, responses) {
 }
 
 function buildTopicFeedback(partKey, topic, index = 0) {
-  if (!topic) {
+  if (!topic || topic.legacyImport) {
     return null;
   }
   const { responses } = ensurePartState(partKey);
@@ -753,21 +725,6 @@ function applyHeaderInfo() {
   document.title = isAudio
     ? `ZDeutsch | Hören mit Audio · ${theme?.title || "B1"}`
     : `ZDeutsch | Hören Codes (${state.levelKey?.toUpperCase() || "B1"})`;
-  if (sourcePanel) {
-    sourcePanel.classList.toggle("hidden", isAudio);
-  }
-  const isB1 = state.levelKey === "b1";
-  if (sourceKicker) {
-    sourceKicker.textContent = isB1 ? "B1 Quellenhinweis" : "Source PDF";
-  }
-  if (sourceCopy) {
-    sourceCopy.textContent = isB1
-      ? "Die Referenz enthält Aussagen, aber keine Audiodateien. Unsichere Zusatzantworten wurden deshalb nicht importiert."
-      : "Hörverstehen korrigierte Telc B2 (Sätze + Codes)";
-  }
-  if (sourceLink) {
-    sourceLink.classList.toggle("hidden", isB1);
-  }
 }
 
 function handleCheckClick() {
@@ -799,7 +756,7 @@ function handleCheckClick() {
   state.topicFeedbacks = feedbacks;
   state.checkedAll = true;
   state.lastSummary = {
-    total: topics.length,
+    total: rows.length,
     correctCount,
     rows
   };
@@ -908,6 +865,10 @@ async function init() {
   state.sourceType = params.get("source") === "audio" ? "audio" : "codes";
   const dataFile = state.sourceType === "audio" ? "database/horen-audio.json" : "database/horen-codes.json";
   state.data = await loadFreshJson(dataFile);
+  if (window.ZDeutschExercises) {
+    const extra = await window.ZDeutschExercises.load();
+    scopedHorenNames = window.ZDeutschExercises.bindNames({ [dataFile.replace("database/", "")]: state.data }, extra.names);
+  }
   const requestedLevel = params.get("level");
   const availableLevels = Object.keys(state.data.levels || {});
   if (availableLevels.includes(requestedLevel)) {
@@ -922,7 +883,22 @@ async function init() {
   const requestedPart = params.get("part");
   const visibleParts = getThemeEntry()?.hören?.partOrder || PART_ORDER;
   state.partKey = visibleParts.includes(requestedPart) ? requestedPart : (visibleParts[0] || null);
+  const requestedTopic = params.get("topic");
+  const topics = getTopicsForPart(state.partKey);
+  const topicIndex = topics.findIndex(topic => topic.id === requestedTopic);
+  if (topicIndex >= 0 && topics[topicIndex].legacyImport) {
+    window.location.replace(`einzeluebung.html?exercise=${encodeURIComponent(topics[topicIndex].legacyImport.id)}`);
+    return;
+  }
+  if (topicIndex >= 0 && state.checkOneByOne) {
+    state.topicOrder[state.partKey] = topics.map((_, index) => index);
+    state.activeTopicIndex = topicIndex;
+  }
   notch();
+  if (topicIndex >= 0 && !state.checkOneByOne) {
+    const topicNode = [...contentContainer.querySelectorAll("[data-topic-id]")].find(node => node.dataset.topicId === requestedTopic);
+    topicNode?.scrollIntoView({ block: "center" });
+  }
 }
 
 init();

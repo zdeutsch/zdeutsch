@@ -551,38 +551,15 @@ a {
 }
 
 /* Lesen: clearer controls, calmer panels and WCAG-sized targets. */
-.lesen-page .lesen-header,
 .lesen-page #footer {
   border-color: rgba(23, 33, 29, 0.1) !important;
   background: rgba(251, 248, 241, 0.94) !important;
   box-shadow: 0 8px 24px rgba(52, 43, 25, 0.07) !important;
 }
 
-.lesen-page .lesen-header {
-  height: 4.5rem !important;
-}
 
-.lesen-page .lesen-header > div {
-  max-width: 1600px;
-  margin: 0 auto;
-}
 
-.lesen-page #back-btn,
-.lesen-page #settings-btn {
-  width: 2.75rem !important;
-  height: 2.75rem !important;
-  flex: 0 0 2.75rem;
-  border-color: rgba(84, 72, 45, 0.18) !important;
-  background: #fff !important;
-  color: var(--ux-ink) !important;
-  cursor: pointer;
-}
 
-.lesen-page #part-cards button {
-  min-height: 2.75rem;
-  border-radius: 0.9rem;
-  cursor: pointer;
-}
 
 .lesen-page #exam-view {
   padding-top: 5.75rem !important;
@@ -594,22 +571,6 @@ a {
   gap: 1rem !important;
 }
 
-.lesen-page .exam-panel {
-  border-color: rgba(84, 72, 45, 0.2) !important;
-  border-radius: 1.4rem !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  box-shadow: 0 16px 38px rgba(52, 43, 25, 0.09) !important;
-}
-
-.lesen-page #left-panel p,
-.lesen-page #right-panel p {
-  color: #202924;
-}
-
-.lesen-page #left-panel p {
-  text-align: start !important;
-  text-justify: auto !important;
-}
 
 .lesen-page .community-floating-btn {
   display: none;
@@ -779,15 +740,7 @@ a {
     --lesen-mobile-header-height: 7.45rem;
   }
 
-  .lesen-page .lesen-header {
-    height: auto !important;
-    min-height: var(--lesen-mobile-header-height);
-  }
 
-  .lesen-page .lesen-header > div {
-    padding: 0.6rem 0.75rem 0.75rem !important;
-    row-gap: 0.55rem !important;
-  }
 
   .lesen-page #exam-view {
     padding-top: calc(var(--lesen-mobile-header-height) + 0.75rem) !important;
@@ -800,24 +753,7 @@ a {
     height: calc(100vh - var(--lesen-mobile-header-height) - 6.2rem) !important;
   }
 
-  .lesen-page .exam-panel {
-    padding: 0.85rem !important;
-    border-radius: 1.25rem !important;
-  }
 
-  .lesen-page #left-panel p,
-  .lesen-page #right-panel p {
-    text-align: start !important;
-    text-justify: auto !important;
-    line-height: 1.62;
-    hyphens: auto;
-  }
-
-  .lesen-page #part-cards button {
-    min-width: 7.65rem;
-    min-height: 2.75rem;
-    padding: 0.65rem 0.8rem;
-  }
 
   .lesen-page .aside-toggle-btn {
     top: calc(var(--lesen-mobile-header-height) - 0.8rem);

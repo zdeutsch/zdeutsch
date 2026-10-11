@@ -181,6 +181,34 @@
           "istructions": "# 29. DIGIBIKE\n\nSie interessieren sich für das Fahrrad. Schreiben Sie eine E-Mail und bitten Sie um mehr Informationen.",
           "content": "## DIGIBIKE – DAS SMARTE HIGHTECH-FAHRRAD\n\nProgrammierbare Kühlschränke, Smartphones mit künstlicher Intelligenz - aber Fahrradfahren wie im letzten Jahrhundert? Nicht mit dem Digibike!\n\nDas Hightech-Fahrrad für den Alltagseinsatz hat einen Bordcomputer mit 2,4-Zoll-Display, der Sie mit nützlichen Informationen versorgt: Er zeigt Fahrdaten, Navigationshinweise, Wetterinformationen, Ihre Fitnessdaten und Smartphone-Nachrichten an.\n\n**Mit dem Digibike wird das Radfahren smarter, bequemer und sicherer!**\n\nAb Oktober lieferbar! Mehr Informationen und Preisanfrage unter:\n\nE-Mail: info@digibike.de\n\nTelefon: 0800 769239002\n\nDigibike Deutschland GmbH\n\nSattelstraße 52\n\n70327 Stuttgart",
           "tasks": "A) Behandeln Sie drei der folgenden Punkte.\n\nB) Oder behandeln Sie zwei der folgenden Punkte und einen weiteren Aspekt Ihrer Wahl.\n\n- Beschreiben Sie, für welche Touren Sie dieses Fahrrad nutzen würden.\n- Machen Sie Verbesserungsvorschläge.\n- Berichten Sie von Ihren Erfahrungen mit dem Kundendienst.\n- Beschreiben Sie Ihre Erfahrungen mit längeren Fahrradtouren."
+        },
+        {
+          "istructions": "Schreiben Sie eine Beschwerde. Schreiben Sie mindestens 150 Wörter.",
+          "content": "Unsere Nachbarschaft vernetzt sich:\nSchon 656 Nachbarn machen mit!\n\n Schenken, leihen, reparieren oder Dienste wie Baby- oder Hundesitting anbieten, Schreibarbeiten erledigen, Nachhilfe, Blumen gießen oder einfach nur mal Zucker ausleihen …\n\n www.nachbarschaft.net ist ein Netzwerk zum Aufbau und zur Pflege einer guten Nachbarschaft. Mitglied kann man nur im eigenen oder angrenzenden Viertel werden. Inzwischen sind wir eine bundesweite Plattform.\n\n Seid dabei! Macht mit! Sucht eure Stadt und euer Viertel! Werdet aktiv! Erkundigt euch! Wir freuen uns auf euch!\n\n info@nachbarschaft.net\n\n www.nachbarschaft.net",
+          "tasks": "Sie haben sich bei dem Netzwerk angemeldet, weil Sie neue Kontakte knüpfen und aktiv werden wollten. Leider haben Sie sehr schlechte Erfahrungen gemacht. Schreiben Sie eine Beschwerde an die Betreiber der Website.\n\nBehandeln Sie entweder:\n\na) drei der folgenden Punkte.\n\noder\n\nb) zwei der folgenden Punkte und einen weiteren Aspekt Ihrer Wahl.\n\n- Erklären Sie, warum Sie sich bei dem Netzwerk angemeldet haben.\n\n- Beschreiben Sie, welche Angebote oder Dienste Sie selbst anbieten wollten.\n\n- Legen Sie dar, welche Probleme Sie mit der Plattform oder den anderen Mitgliedern hatten.\n\n- Machen Sie den Betreibern Verbesserungsvorschläge.\n\n Vergessen Sie nicht: Absender, Anschrift, Datum, Betreffzeile, Anrede und Schlussformel. Schreiben Sie mindestens 150 Wörter.",
+          "minimumWords": 150,
+          "title": "Unsere Nachbarschaft vernetzt sich",
+          "legacyImport": {
+            "id": "legacy:telc:b2_w_30",
+            "names": [
+              "Unsere Nachbarschaft vernetzt sich"
+            ],
+            "enabled": true,
+            "provenance": {
+              "batchId": "telc-b2-20261010",
+              "source": "telc.site",
+              "quizId": "b2_w_30",
+              "url": "https://telc.site/quiz/b2_w_30",
+              "questionIds": [],
+              "sourceFingerprint": "3609537b9f87a6fb072824e0bef632ba313e7091c95b3b8f67043f4f7e0783af",
+              "audioUrls": []
+            },
+            "review": {
+              "answerStatus": "unverified",
+              "note": ""
+            },
+            "relatedCurrentLocation": null
+          }
         }
       ]
     },

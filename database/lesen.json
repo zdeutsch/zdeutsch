@@ -24032,10 +24032,303 @@
                   "parts": 5
                 }
               }
+            },
+            "telc-b2-g1-19": {
+              "key": "telc-b2-g1-19",
+              "label": "Liebe Lara · alte Fassung",
+              "title": "Liebe Lara",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Liebe Lara",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_19"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Liebe Lara,\n\nbitte verzeih mir, dass ich erst jetzt auf [[21]] Brief antworte. Ich hatte in den letzten Wochen praktisch keine freie Minute und kam einfach nicht dazu, dir zu schreiben. Jetzt aber tue ich es, [[22]] du wirklich tolle Neuigkeiten mitzuteilen hast. Schon immer hast du von großen Abenteuern und Reisen in ferne Länder geträumt, und nun hast du deinen Traum wahr gemacht und eine Stelle als Reiseleiterin in Costa Rica gefunden. Ich gratuliere dir von ganzem Herzen!\nIch erinnere mich noch gut daran, [[23]] du mir von deinen Plänen erzählt hast. Damals warst du dir noch unsicher, ob du den Mut [[24]] würdest, alles hier zurückzulassen und in ein völlig fremdes Land zu ziehen. Aber ich habe nie daran [[25]], dass du es schaffen wirst. Du warst schon immer zielstrebig und hast dich von Hindernissen nicht aufhalten lassen.\nWie gefällt es dir denn dort? Sicherlich ist es sehr aufregend, jeden Tag neue Orte zu entdecken und mit so vielen verschiedenen Menschen [[26]] tun zu haben. Costa Rica soll ja ein wunderschönes Land mit einer unglaublichen Natur sein. Hast du schon Zeit gefunden, ein bisschen mehr von der Umgebung zu sehen, oder bist du voll und ganz [[27]] deine Arbeit beansprucht? Ich bin sehr gespannt auf deine Berichte und hoffe, dass du bald wieder die Zeit findest, mir zu schreiben. Vielleicht kannst du mir ja auch ein paar Fotos schicken? Ich würde mich [[28]] freuen, ein wenig an deinem neuen Leben teilzuhaben.\nBei mir hat sich in der Zwischenzeit nicht viel [[29]]. Ich arbeite nach wie vor in der Werbeagentur und verbringe meine Freizeit meistens mit Sport oder Treffen mit Freunden. Es ist alles beim Alten, [[30]] ich mir manchmal auch ein wenig mehr Abwechslung wünschen würde.\n\nLass bald wieder von dir hören!\n\nAlles Liebe\nDeine Sophie",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "dein",
+                            "deinen",
+                            "deinem"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "da",
+                            "obwohl",
+                            "trotzdem"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "als",
+                            "wann",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "aufbringen",
+                            "anbringen",
+                            "beibringen"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "gezweifelt",
+                            "geglaubt",
+                            "gedacht"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "am",
+                            "im",
+                            "zu"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "durch",
+                            "von",
+                            "mit"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "riesig",
+                            "sehr",
+                            "völlig"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "getan",
+                            "geändert",
+                            "gewandelt"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "da",
+                            "obwohl",
+                            "trotzdem"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "deinen"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "da"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "als"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "aufbringen"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "gezweifelt"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "zu"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "durch"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "riesig"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "geändert"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "obwohl"
+                        }
+                      ],
+                      "title": "Liebe Lara",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_19",
+                        "names": [
+                          "Liebe Lara"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_19",
+                          "url": "https://telc.site/quiz/b2_g1_19",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "574eea91536fd7cc91c42757acad0287a18b1ca4e771348c86a5d066c1716ef1",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b2/themes/keine-zeit/versions/default/lesen/parts/sprachbausteine-1"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Liebe Lara,\n\nbitte verzeih mir, dass ich erst jetzt auf "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "deinen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Brief antworte. Ich hatte in den letzten Wochen praktisch keine freie Minute und kam einfach nicht dazu, dir zu schreiben. Jetzt aber tue ich es, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "da"
+                        },
+                        {
+                          "type": "text",
+                          "value": " du wirklich tolle Neuigkeiten mitzuteilen hast. Schon immer hast du von großen Abenteuern und Reisen in ferne Länder geträumt, und nun hast du deinen Traum wahr gemacht und eine Stelle als Reiseleiterin in Costa Rica gefunden. Ich gratuliere dir von ganzem Herzen!\nIch erinnere mich noch gut daran, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "als"
+                        },
+                        {
+                          "type": "text",
+                          "value": " du mir von deinen Plänen erzählt hast. Damals warst du dir noch unsicher, ob du den Mut "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "aufbringen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " würdest, alles hier zurückzulassen und in ein völlig fremdes Land zu ziehen. Aber ich habe nie daran "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "gezweifelt"
+                        },
+                        {
+                          "type": "text",
+                          "value": ", dass du es schaffen wirst. Du warst schon immer zielstrebig und hast dich von Hindernissen nicht aufhalten lassen.\nWie gefällt es dir denn dort? Sicherlich ist es sehr aufregend, jeden Tag neue Orte zu entdecken und mit so vielen verschiedenen Menschen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "zu"
+                        },
+                        {
+                          "type": "text",
+                          "value": " tun zu haben. Costa Rica soll ja ein wunderschönes Land mit einer unglaublichen Natur sein. Hast du schon Zeit gefunden, ein bisschen mehr von der Umgebung zu sehen, oder bist du voll und ganz "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "durch"
+                        },
+                        {
+                          "type": "text",
+                          "value": " deine Arbeit beansprucht? Ich bin sehr gespannt auf deine Berichte und hoffe, dass du bald wieder die Zeit findest, mir zu schreiben. Vielleicht kannst du mir ja auch ein paar Fotos schicken? Ich würde mich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "riesig"
+                        },
+                        {
+                          "type": "text",
+                          "value": " freuen, ein wenig an deinem neuen Leben teilzuhaben.\nBei mir hat sich in der Zwischenzeit nicht viel "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "geändert"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Ich arbeite nach wie vor in der Werbeagentur und verbringe meine Freizeit meistens mit Sport oder Treffen mit Freunden. Es ist alles beim Alten, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "obwohl"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich mir manchmal auch ein wenig mehr Abwechslung wünschen würde.\n\nLass bald wieder von dir hören!\n\nAlles Liebe\nDeine Sophie"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "telc-b2-g1-19"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -32881,10 +33174,303 @@
                   "parts": 5
                 }
               }
+            },
+            "telc-b2-g1-23": {
+              "key": "telc-b2-g1-23",
+              "label": "Frau Goronsksa · alte Fassung",
+              "title": "Frau Goronsksa",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Frau Goronsksa",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_23"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Sehr geehrte Frau Goronsksa,\n\nvielen Dank für Ihre Anfrage vom 12. September bezüglich unserer Sprachurlaube in Deutschland und Österreich. Unsere Organisation unterhält insgesamt zehn Schulen, acht [[21]] in Deutschland und zwei in Österreich, an [[22]] Sie ausnahmslos sowohl Ihr Deutsch verbessern als auch an einem umfangreichen Kultur- und Freizeitprogramm teilnehmen können. In Österreich befinden sich unsere Schulen in Wien und Salzburg. Da Sie sich besonders für die Kurse in Wien interessieren, haben wir Ihnen Informationsmaterial zu dieser Schule [[23]]. Den Sommerkursen ist dort [[24]] eine Broschüre über Freizeitaktivitäten in Wien und der näheren Umgebung beigefügt.\nWas die Unterkunft betrifft, haben Sie die Wahl zwischen einem Platz im Studentenwohnheim oder in einer Gastfamilie. [[25]] Sie sich für das Wohnen in einer Gastfamilie entscheiden, können wir Ihnen versichern, dass alle unsere Gastfamilien sorgfältig [[26]] worden sind. Die meisten Familien wohnen in der Nähe einer U-Bahn-Station, so dass Sie die Schule in der Regel [[27]] 20 Minuten erreichen können.\nGerne reservieren wir Ihnen einen Platz für den Kurs im kommenden August. [[28]] wir Ihnen den Platz garantieren können, bitten wir Sie, das beigefügte Anmeldeformular [[29]] zum 31. März an uns zurückzusenden. [[30]] weiteren Fragen können Sie sich jederzeit telefonisch oder per E-Mail an uns wenden.\n\nMit freundlichen Grüßen\nInternationaler Sprachclub",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "davon",
+                            "denen",
+                            "deren"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "das",
+                            "denen",
+                            "die"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "beigefügt",
+                            "eingereicht",
+                            "zugestellt"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "auch",
+                            "ebenso",
+                            "zudem"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "Falls",
+                            "Obwohl",
+                            "Wann"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "ausgewählt",
+                            "gewählt",
+                            "wählt"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "bis",
+                            "innerhalb",
+                            "von"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "Damit",
+                            "Dass",
+                            "Um"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "bis",
+                            "erst",
+                            "spätestens"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "Bei",
+                            "Für",
+                            "Mit"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "davon"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "denen"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "beigefügt"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "ebenso"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "Falls"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "ausgewählt"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "innerhalb"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "Damit"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "spätestens"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "Bei"
+                        }
+                      ],
+                      "title": "Frau Goronsksa",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_23",
+                        "names": [
+                          "Frau Goronsksa"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_23",
+                          "url": "https://telc.site/quiz/b2_g1_23",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "6c81de85f72a8fffa866850fdbb98126a84994af199a51d0047af7b54f0e7e97",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b2/themes/benzin/versions/default/lesen/parts/sprachbausteine-1"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Sehr geehrte Frau Goronsksa,\n\nvielen Dank für Ihre Anfrage vom 12. September bezüglich unserer Sprachurlaube in Deutschland und Österreich. Unsere Organisation unterhält insgesamt zehn Schulen, acht "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "davon"
+                        },
+                        {
+                          "type": "text",
+                          "value": " in Deutschland und zwei in Österreich, an "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "denen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie ausnahmslos sowohl Ihr Deutsch verbessern als auch an einem umfangreichen Kultur- und Freizeitprogramm teilnehmen können. In Österreich befinden sich unsere Schulen in Wien und Salzburg. Da Sie sich besonders für die Kurse in Wien interessieren, haben wir Ihnen Informationsmaterial zu dieser Schule "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "beigefügt"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Den Sommerkursen ist dort "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "ebenso"
+                        },
+                        {
+                          "type": "text",
+                          "value": " eine Broschüre über Freizeitaktivitäten in Wien und der näheren Umgebung beigefügt.\nWas die Unterkunft betrifft, haben Sie die Wahl zwischen einem Platz im Studentenwohnheim oder in einer Gastfamilie. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "Falls"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Sie sich für das Wohnen in einer Gastfamilie entscheiden, können wir Ihnen versichern, dass alle unsere Gastfamilien sorgfältig "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "ausgewählt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " worden sind. Die meisten Familien wohnen in der Nähe einer U-Bahn-Station, so dass Sie die Schule in der Regel "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "innerhalb"
+                        },
+                        {
+                          "type": "text",
+                          "value": " 20 Minuten erreichen können.\nGerne reservieren wir Ihnen einen Platz für den Kurs im kommenden August. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "Damit"
+                        },
+                        {
+                          "type": "text",
+                          "value": " wir Ihnen den Platz garantieren können, bitten wir Sie, das beigefügte Anmeldeformular "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "spätestens"
+                        },
+                        {
+                          "type": "text",
+                          "value": " zum 31. März an uns zurückzusenden. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "Bei"
+                        },
+                        {
+                          "type": "text",
+                          "value": " weiteren Fragen können Sie sich jederzeit telefonisch oder per E-Mail an uns wenden.\n\nMit freundlichen Grüßen\nInternationaler Sprachclub"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "telc-b2-g1-23"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -46048,10 +46634,303 @@
                   }
                 }
               }
+            },
+            "telc-b2-g1-33": {
+              "key": "telc-b2-g1-33",
+              "label": "Jens · alte Fassung",
+              "title": "Jens",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Jens",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_33"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Hi Jens,\n\ndanke für Deine Mail, schön von Dir zu hören! Ich freu mich, dass es Dir so gut geht. In einer fremden Stadt ganz neu anzufangen ist ja doch nicht so ohne ...\nDieses Mal will ich Dich nicht wieder so ewig auf meine Antwort warten [[21]] und schreibe entgegen meinen sonstigen Gewohnheiten gleich zurück.\nNicht zuletzt, [[22]] ich gern noch etwas mehr über Deine Mitbewohner erfahren möchte. Wie verstehen sie [[23]] untereinander? Werden denn wirklich alle Pflichten im Haushalt so perfekt [[24]] , wie Du schreibst?\nWas mich betrifft, so habe ich mich in der neuen Firma [[25]] gut eingelebt. Ich muss mich zwar erst noch an die etwas strengen Hierarchien gewöhnen, [[26]] die Kollegen sind nett und die Aufgaben sehr interessant.\n[[27]] mein Deutsch betrifft, so habe ich das Gefühl, dass es jeden Tag ein bisschen besser wird. Vor kurzem habe ich mich sogar [[28]] , eine deutsche Zeitung zu lesen. Ich habe zwar noch nicht alles verstanden, aber ich bleibe [[29]] !\nSo, jetzt muss ich aber Schluss machen, morgen früh muss ich zeitig raus. Melde Dich doch bald wieder, ich [[30]] auf Deine nächste Nachricht!\n\nAlles Liebe\nDein Marc",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "lassen",
+                            "müssen",
+                            "sollen"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "als",
+                            "da",
+                            "wann"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "euch",
+                            "sie",
+                            "sich"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "eingeteilt",
+                            "verteilt",
+                            "zugeteilt"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "bereits",
+                            "fast",
+                            "schon"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "aber",
+                            "oder",
+                            "sondern"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "Das",
+                            "Was",
+                            "Wie"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "getan",
+                            "getraut",
+                            "gewagt"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "bei",
+                            "dabei",
+                            "drann"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "freue mich",
+                            "hoffe",
+                            "warte"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "lassen"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "da"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "sich"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "verteilt"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "schon"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "aber"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "Was"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "getraut"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "drann"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "warte"
+                        }
+                      ],
+                      "title": "Jens",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_33",
+                        "names": [
+                          "Jens"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_33",
+                          "url": "https://telc.site/quiz/b2_g1_33",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "ea4f424843ac2d30a0591595987496b795f254e08f8a59344567ba6d8b2b099e",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b2/themes/jens-alt/versions/default/lesen/parts/sprachbausteine-1"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Hi Jens,\n\ndanke für Deine Mail, schön von Dir zu hören! Ich freu mich, dass es Dir so gut geht. In einer fremden Stadt ganz neu anzufangen ist ja doch nicht so ohne ...\nDieses Mal will ich Dich nicht wieder so ewig auf meine Antwort warten "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "lassen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " und schreibe entgegen meinen sonstigen Gewohnheiten gleich zurück.\nNicht zuletzt, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "da"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich gern noch etwas mehr über Deine Mitbewohner erfahren möchte. Wie verstehen sie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "sich"
+                        },
+                        {
+                          "type": "text",
+                          "value": " untereinander? Werden denn wirklich alle Pflichten im Haushalt so perfekt "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "verteilt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " , wie Du schreibst?\nWas mich betrifft, so habe ich mich in der neuen Firma "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "schon"
+                        },
+                        {
+                          "type": "text",
+                          "value": " gut eingelebt. Ich muss mich zwar erst noch an die etwas strengen Hierarchien gewöhnen, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "aber"
+                        },
+                        {
+                          "type": "text",
+                          "value": " die Kollegen sind nett und die Aufgaben sehr interessant.\n"
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "Was"
+                        },
+                        {
+                          "type": "text",
+                          "value": " mein Deutsch betrifft, so habe ich das Gefühl, dass es jeden Tag ein bisschen besser wird. Vor kurzem habe ich mich sogar "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "getraut"
+                        },
+                        {
+                          "type": "text",
+                          "value": " , eine deutsche Zeitung zu lesen. Ich habe zwar noch nicht alles verstanden, aber ich bleibe "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "drann"
+                        },
+                        {
+                          "type": "text",
+                          "value": " !\nSo, jetzt muss ich aber Schluss machen, morgen früh muss ich zeitig raus. Melde Dich doch bald wieder, ich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "warte"
+                        },
+                        {
+                          "type": "text",
+                          "value": " auf Deine nächste Nachricht!\n\nAlles Liebe\nDein Marc"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
-            "default"
+            "default",
+            "telc-b2-g1-33"
           ]
         },
         "erfolg-alt": {
@@ -59489,11 +60368,304 @@
                   "parts": 5
                 }
               }
+            },
+            "telc-b2-g1-28": {
+              "key": "telc-b2-g1-28",
+              "label": "Liebe Clara · alte Fassung",
+              "title": "Liebe Clara",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Liebe Clara",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_28"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Hallo Clara,\n\naus Lyon sende ich dir herzliche Grüße! Ich sitze gerade in einem gemütlichen, aber ziemlich vollen Bistro in der Altstadt und genieße meinen Urlaub. Nun ist es ja schon einige Monate her, dass wir zuletzt [[21]] gehört haben. Ich hoffe, es geht dir gut!\nZurzeit mache ich eine Rundreise [[22]] Frankreich. Lyon ist wirklich eine tolle Stadt. Ich habe schon einige Sehenswürdigkeiten besichtigt, zum Beispiel das antike römische Theater. Beeindruckend fand ich auch die so genannten „Traboules“. Das sind versteckte Gänge zwischen den Häusern, die früher von Seidenhändlern [[23]] wurden, um ihre Waren schnell und vor Regen geschützt zu transportieren. Du kannst dir gar nicht [[24]], wie viele es davon gibt.\nAuch das Essen hier ist einfach köstlich. Heute Abend möchte ich in ein typisches Restaurant gehen, um die berühmten Spezialitäten der Region zu probieren. Aber ich muss aufpassen, [[25]] ich nicht zu viel esse, sonst passe ich bald in keine meiner Hosen mehr!\nEigentlich wollte ich mich schon viel früher melden, aber ich hatte in den letzten Wochen so viel um die Ohren. Zuerst musste ich noch ein wichtiges Projekt bei der Arbeit abschließen, und dann kam auch noch der ganze Stress mit der Reisevorbereitung [[26]] .\n[[27]] es in Lyon sehr schön ist, freue ich mich auch schon wieder auf zuhause. Ich habe mir vorgenommen, nach meiner Rückkehr wieder öfter Sport zu treiben. In letzter Zeit habe ich mich leider viel zu [[28]] bewegt. Hast du vielleicht Lust, dass wir demnächst mal wieder zusammen joggen gehen? Das [[29]] uns beiden bestimmt gut tun.\nIch werde jetzt erst mal mein Glas Wein austrinken und dann noch ein wenig durch die Gassen schlendern. Ich melde mich wieder bei dir, [[30]] ich zurück bin.\n\nBis bald und alles Liebe\nDeine Sophie",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "voneinander",
+                            "miteinander",
+                            "zueinander"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "durch",
+                            "über",
+                            "von"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "benutzt",
+                            "genutzt",
+                            "verbraucht"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "verstellen",
+                            "vorstellen",
+                            "zustellen"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "dass",
+                            "ob",
+                            "wenn"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "dazu",
+                            "mit",
+                            "vor"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "Obwohl",
+                            "Seit",
+                            "Weil"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "gering",
+                            "klein",
+                            "wenig"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "würde",
+                            "werde",
+                            "sollte"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "sobald",
+                            "solange",
+                            "sooft"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "voneinander"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "durch"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "benutzt"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "vorstellen"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "dass"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "dazu"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "Obwohl"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "wenig"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "würde"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "sobald"
+                        }
+                      ],
+                      "title": "Liebe Clara",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_28",
+                        "names": [
+                          "Liebe Clara"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_28",
+                          "url": "https://telc.site/quiz/b2_g1_28",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "d8246e3994f790633a3143ce62db2ffcf7364cc032d8de4189b36c1f6c2b97ca",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": "lesen.json#/levels/b2/themes/licht/versions/version-1/lesen/parts/sprachbausteine-1"
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Hallo Clara,\n\naus Lyon sende ich dir herzliche Grüße! Ich sitze gerade in einem gemütlichen, aber ziemlich vollen Bistro in der Altstadt und genieße meinen Urlaub. Nun ist es ja schon einige Monate her, dass wir zuletzt "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "voneinander"
+                        },
+                        {
+                          "type": "text",
+                          "value": " gehört haben. Ich hoffe, es geht dir gut!\nZurzeit mache ich eine Rundreise "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "durch"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Frankreich. Lyon ist wirklich eine tolle Stadt. Ich habe schon einige Sehenswürdigkeiten besichtigt, zum Beispiel das antike römische Theater. Beeindruckend fand ich auch die so genannten „Traboules“. Das sind versteckte Gänge zwischen den Häusern, die früher von Seidenhändlern "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "benutzt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " wurden, um ihre Waren schnell und vor Regen geschützt zu transportieren. Du kannst dir gar nicht "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "vorstellen"
+                        },
+                        {
+                          "type": "text",
+                          "value": ", wie viele es davon gibt.\nAuch das Essen hier ist einfach köstlich. Heute Abend möchte ich in ein typisches Restaurant gehen, um die berühmten Spezialitäten der Region zu probieren. Aber ich muss aufpassen, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "dass"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich nicht zu viel esse, sonst passe ich bald in keine meiner Hosen mehr!\nEigentlich wollte ich mich schon viel früher melden, aber ich hatte in den letzten Wochen so viel um die Ohren. Zuerst musste ich noch ein wichtiges Projekt bei der Arbeit abschließen, und dann kam auch noch der ganze Stress mit der Reisevorbereitung "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "dazu"
+                        },
+                        {
+                          "type": "text",
+                          "value": " .\n"
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "Obwohl"
+                        },
+                        {
+                          "type": "text",
+                          "value": " es in Lyon sehr schön ist, freue ich mich auch schon wieder auf zuhause. Ich habe mir vorgenommen, nach meiner Rückkehr wieder öfter Sport zu treiben. In letzter Zeit habe ich mich leider viel zu "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "wenig"
+                        },
+                        {
+                          "type": "text",
+                          "value": " bewegt. Hast du vielleicht Lust, dass wir demnächst mal wieder zusammen joggen gehen? Das "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "würde"
+                        },
+                        {
+                          "type": "text",
+                          "value": " uns beiden bestimmt gut tun.\nIch werde jetzt erst mal mein Glas Wein austrinken und dann noch ein wenig durch die Gassen schlendern. Ich melde mich wieder bei dir, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "sobald"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ich zurück bin.\n\nBis bald und alles Liebe\nDeine Sophie"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "versionOrder": [
             "default",
-            "version-1"
+            "version-1",
+            "telc-b2-g1-28"
           ],
           "defaultVersion": "default",
           "lesen": {
@@ -89166,6 +90338,610 @@
             "parts": 5,
             "versions": 1
           }
+        },
+        "telc-b2-g1-24": {
+          "id": "telc-b2-g1-24",
+          "title": "Liebe Karin",
+          "defaultVersion": "default",
+          "versionOrder": [
+            "default"
+          ],
+          "versions": {
+            "default": {
+              "key": "default",
+              "label": "Default",
+              "title": "Liebe Karin",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Liebe Karin",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_24"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Liebe Karin,\n\ndas ist ja eine tolle Überraschung! Gestern habe ich deine Postkarte aus Thailand erhalten. Es freut mich riesig, [[21]] du deinen Traum endlich wahr gemacht hast und nun für drei Monate durch Asien reist. Ich kann mir gut vorstellen, wie [[22]] du dich auf diese Zeit gefreut hast.\nDu schreibst, dass du in Bangkok angekommen bist und die Hitze dort im Moment kaum [[23]] ist. Das kann ich mir denken! Aber ich bin sicher, dass du dich schnell daran gewöhnen wirst. Bangkok ist eine so faszinierende Stadt mit so vielen Gegensätzen – auf der einen Seite die modernen Hochhäuser und Einkaufszentren, auf der [[24]] die prachtvollen Tempel und die Garküchen am Straßenrand.\nWie gefällt dir denn das thailändische Essen? Sicherlich ist es ganz anders als das, [[25]] wir hier in Deutschland kennen. Ich erinnere mich noch gut daran, wie wir letztes Jahr zusammen beim Thailänder um die Ecke waren und du meintest, dass du das Original unbedingt mal vor Ort [[26]] möchtest. Nun hast du die Gelegenheit dazu!\nWas hast du als Nächstes geplant? Wirst du weiter in den Norden reisen oder zieht es dich eher an die Strände im Süden? Ich bin schon sehr [[27]] auf deine weiteren Berichte und natürlich auf die vielen Fotos, die du bestimmt machst.\nBei mir gibt es momentan nicht viel Neues. Die Arbeit nimmt mich wie immer ziemlich in [[28]] , aber am Wochenende versuche ich, so viel Zeit wie möglich im Freien zu verbringen, um ein wenig abzuschalten. Ich hoffe, dass wir uns nach deiner Rückkehr bald treffen und du mir alles ganz [[29]] erzählst.\nGenieße deine Zeit in vollen Zügen und pass gut [[30]] dich auf!\n\nAlles Liebe\nDeine Julia",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "dass",
+                            "ob",
+                            "weil"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "sehr",
+                            "viel",
+                            "wenig"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "erträglich",
+                            "unerträglich",
+                            "verträglich"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "anderen",
+                            "anderen",
+                            "andere"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "das",
+                            "was",
+                            "wie"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "proben",
+                            "probieren",
+                            "überprüfen"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "gespannt",
+                            "neugierig",
+                            "wissbegierig"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "Anspruch",
+                            "Betracht",
+                            "Frage"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "ausführlich",
+                            "genau",
+                            "richtig"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "auf",
+                            "für",
+                            "um"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "dass"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "sehr"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "erträglich"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "anderen"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "was"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "probieren"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "gespannt"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "Anspruch"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "ausführlich"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "auf"
+                        }
+                      ],
+                      "title": "Liebe Karin",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_24",
+                        "names": [
+                          "Liebe Karin"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_24",
+                          "url": "https://telc.site/quiz/b2_g1_24",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "2c7844b7ea7b8ac8324d7da83c6a5918a6893240bc99172eeee5ec05a98dc6bd",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Liebe Karin,\n\ndas ist ja eine tolle Überraschung! Gestern habe ich deine Postkarte aus Thailand erhalten. Es freut mich riesig, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "dass"
+                        },
+                        {
+                          "type": "text",
+                          "value": " du deinen Traum endlich wahr gemacht hast und nun für drei Monate durch Asien reist. Ich kann mir gut vorstellen, wie "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "sehr"
+                        },
+                        {
+                          "type": "text",
+                          "value": " du dich auf diese Zeit gefreut hast.\nDu schreibst, dass du in Bangkok angekommen bist und die Hitze dort im Moment kaum "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "erträglich"
+                        },
+                        {
+                          "type": "text",
+                          "value": " ist. Das kann ich mir denken! Aber ich bin sicher, dass du dich schnell daran gewöhnen wirst. Bangkok ist eine so faszinierende Stadt mit so vielen Gegensätzen – auf der einen Seite die modernen Hochhäuser und Einkaufszentren, auf der "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "anderen"
+                        },
+                        {
+                          "type": "text",
+                          "value": " die prachtvollen Tempel und die Garküchen am Straßenrand.\nWie gefällt dir denn das thailändische Essen? Sicherlich ist es ganz anders als das, "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "was"
+                        },
+                        {
+                          "type": "text",
+                          "value": " wir hier in Deutschland kennen. Ich erinnere mich noch gut daran, wie wir letztes Jahr zusammen beim Thailänder um die Ecke waren und du meintest, dass du das Original unbedingt mal vor Ort "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "probieren"
+                        },
+                        {
+                          "type": "text",
+                          "value": " möchtest. Nun hast du die Gelegenheit dazu!\nWas hast du als Nächstes geplant? Wirst du weiter in den Norden reisen oder zieht es dich eher an die Strände im Süden? Ich bin schon sehr "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "gespannt"
+                        },
+                        {
+                          "type": "text",
+                          "value": " auf deine weiteren Berichte und natürlich auf die vielen Fotos, die du bestimmt machst.\nBei mir gibt es momentan nicht viel Neues. Die Arbeit nimmt mich wie immer ziemlich in "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "Anspruch"
+                        },
+                        {
+                          "type": "text",
+                          "value": " , aber am Wochenende versuche ich, so viel Zeit wie möglich im Freien zu verbringen, um ein wenig abzuschalten. Ich hoffe, dass wir uns nach deiner Rückkehr bald treffen und du mir alles ganz "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "ausführlich"
+                        },
+                        {
+                          "type": "text",
+                          "value": " erzählst.\nGenieße deine Zeit in vollen Zügen und pass gut "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "auf"
+                        },
+                        {
+                          "type": "text",
+                          "value": " dich auf!\n\nAlles Liebe\nDeine Julia"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "telc-b2-g1-37": {
+          "id": "telc-b2-g1-37",
+          "title": "Liebe Sandra – Helgoland",
+          "defaultVersion": "default",
+          "versionOrder": [
+            "default"
+          ],
+          "versions": {
+            "default": {
+              "key": "default",
+              "label": "Default",
+              "title": "Liebe Sandra – Helgoland",
+              "lesen": {
+                "partOrder": [
+                  "sprachbausteine-1"
+                ],
+                "counts": {
+                  "parts": 1
+                },
+                "parts": {
+                  "sprachbausteine-1": {
+                    "meta": {
+                      "title": "Liebe Sandra – Helgoland",
+                      "level": "B2",
+                      "partLabel": "Sprachbausteine Teil 1",
+                      "section": "sprachbausteine",
+                      "partNumber": 1,
+                      "sourceUrl": "https://telc.site/quiz/b2_g1_37"
+                    },
+                    "content": {
+                      "instruction": "Wählen Sie für jede Lücke die passende Lösung.",
+                      "text": "Liebe Sandra,\n\naus Helgoland sende ich dir herzlich Grüße! Vielleicht überrascht es [[21]], dass ich Urlaub auf einer Nordseeinsel mache. Sonst zieht es mich ja immer in den Süden. Ehrlich gesagt, noch vor Kurzem hätte ich auch nicht gedacht, dass ein Urlaub ganz ohne Partyleben das Richtige für mich sein [[22]]. Aber ich hatte in den letzten Monaten auf der Arbeit viel Stress und wünsche mir im Moment vor allem Ruhe – wenn man sich [[23]] der Hektik des Alltags erholen möchte, ist Helgoland jedenfalls genau der richtige Ort. Man kann an den Strand gehen, baden oder einfach mal gar nichts unternehmen.\n\nDas Klima ist mild und nicht zu heiß, was ich [[24]] sehr angenehm empfinde. Es gibt weder Fabriken noch Autoverkehr und somit auch keine Luftverschmutzung. Helgoland besteht eigentlich [[25]] zwei Inseln: einer Felseninsel und einer kleineren Sandinsel, die per Fähre zu erreichen [[26]]. Man kann dort Seehunde und Kegelrobben beobachten. Ich glaube, es gibt kaum einen anderen Ort auf der Welt, wo man wild [[27]] Tiere so gut aus der Nähe beobachten kann.\n\nViele Touristen bleiben übrigens nur [[28]] Stunden auf der Insel. [[29]] die Tagesausflüger wieder abgefahren sind, kehrt Stille ein. Nachts kann man hier wirklich gut schlafen, weil man nur ein bisschen Wellenrauschen hört.\n\nWas gibt es bei dir denn Neues? Du hast ja mal gesagt, dass du gern umziehen [[30]] – wie sieht es aus? Hast du schon mit der Wohnungssuche begonnen? Ich freue mich, bald wieder von dir zu hören!\n\nViele Grüße\nDorothée",
+                      "blanks": [
+                        {
+                          "id": 21,
+                          "sourceQuestionId": 1,
+                          "options": [
+                            "dich",
+                            "dir",
+                            "sich"
+                          ]
+                        },
+                        {
+                          "id": 22,
+                          "sourceQuestionId": 2,
+                          "options": [
+                            "könnte",
+                            "möchte",
+                            "müsste"
+                          ]
+                        },
+                        {
+                          "id": 23,
+                          "sourceQuestionId": 3,
+                          "options": [
+                            "mit",
+                            "von",
+                            "vor"
+                          ]
+                        },
+                        {
+                          "id": 24,
+                          "sourceQuestionId": 4,
+                          "options": [
+                            "als",
+                            "für",
+                            "wie"
+                          ]
+                        },
+                        {
+                          "id": 25,
+                          "sourceQuestionId": 5,
+                          "options": [
+                            "aus",
+                            "in",
+                            "zu"
+                          ]
+                        },
+                        {
+                          "id": 26,
+                          "sourceQuestionId": 6,
+                          "options": [
+                            "hat",
+                            "ist",
+                            "wird"
+                          ]
+                        },
+                        {
+                          "id": 27,
+                          "sourceQuestionId": 7,
+                          "options": [
+                            "lebende",
+                            "lebenden",
+                            "lebender"
+                          ]
+                        },
+                        {
+                          "id": 28,
+                          "sourceQuestionId": 8,
+                          "options": [
+                            "wenige",
+                            "wenigen",
+                            "weniger"
+                          ]
+                        },
+                        {
+                          "id": 29,
+                          "sourceQuestionId": 9,
+                          "options": [
+                            "Sobald",
+                            "Sofern",
+                            "Somit"
+                          ]
+                        },
+                        {
+                          "id": 30,
+                          "sourceQuestionId": 10,
+                          "options": [
+                            "dürftest",
+                            "könntest",
+                            "würdest"
+                          ]
+                        }
+                      ],
+                      "answers": [
+                        {
+                          "id": 21,
+                          "answer": "dich"
+                        },
+                        {
+                          "id": 22,
+                          "answer": "könnte"
+                        },
+                        {
+                          "id": 23,
+                          "answer": "von"
+                        },
+                        {
+                          "id": 24,
+                          "answer": "als"
+                        },
+                        {
+                          "id": 25,
+                          "answer": "aus"
+                        },
+                        {
+                          "id": 26,
+                          "answer": "ist"
+                        },
+                        {
+                          "id": 27,
+                          "answer": "lebende"
+                        },
+                        {
+                          "id": 28,
+                          "answer": "wenige"
+                        },
+                        {
+                          "id": 29,
+                          "answer": "Sobald"
+                        },
+                        {
+                          "id": 30,
+                          "answer": "würdest"
+                        }
+                      ],
+                      "title": "Liebe Sandra – Helgoland",
+                      "legacyImport": {
+                        "id": "legacy:telc:b2_g1_37",
+                        "names": [
+                          "Liebe Sandra – Helgoland"
+                        ],
+                        "enabled": true,
+                        "provenance": {
+                          "batchId": "telc-b2-20261010",
+                          "source": "telc.site",
+                          "quizId": "b2_g1_37",
+                          "url": "https://telc.site/quiz/b2_g1_37",
+                          "questionIds": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                          ],
+                          "sourceFingerprint": "8e606f19afa4ccb39fb445d7a814a49ae0d8aceb34774ff3452b8cf2f5cdac01",
+                          "audioUrls": []
+                        },
+                        "review": {
+                          "answerStatus": "unverified",
+                          "note": ""
+                        },
+                        "relatedCurrentLocation": null
+                      },
+                      "segments": [
+                        {
+                          "type": "text",
+                          "value": "Liebe Sandra,\n\naus Helgoland sende ich dir herzlich Grüße! Vielleicht überrascht es "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 21,
+                          "answer": "dich"
+                        },
+                        {
+                          "type": "text",
+                          "value": ", dass ich Urlaub auf einer Nordseeinsel mache. Sonst zieht es mich ja immer in den Süden. Ehrlich gesagt, noch vor Kurzem hätte ich auch nicht gedacht, dass ein Urlaub ganz ohne Partyleben das Richtige für mich sein "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 22,
+                          "answer": "könnte"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Aber ich hatte in den letzten Monaten auf der Arbeit viel Stress und wünsche mir im Moment vor allem Ruhe – wenn man sich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 23,
+                          "answer": "von"
+                        },
+                        {
+                          "type": "text",
+                          "value": " der Hektik des Alltags erholen möchte, ist Helgoland jedenfalls genau der richtige Ort. Man kann an den Strand gehen, baden oder einfach mal gar nichts unternehmen.\n\nDas Klima ist mild und nicht zu heiß, was ich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 24,
+                          "answer": "als"
+                        },
+                        {
+                          "type": "text",
+                          "value": " sehr angenehm empfinde. Es gibt weder Fabriken noch Autoverkehr und somit auch keine Luftverschmutzung. Helgoland besteht eigentlich "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 25,
+                          "answer": "aus"
+                        },
+                        {
+                          "type": "text",
+                          "value": " zwei Inseln: einer Felseninsel und einer kleineren Sandinsel, die per Fähre zu erreichen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 26,
+                          "answer": "ist"
+                        },
+                        {
+                          "type": "text",
+                          "value": ". Man kann dort Seehunde und Kegelrobben beobachten. Ich glaube, es gibt kaum einen anderen Ort auf der Welt, wo man wild "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 27,
+                          "answer": "lebende"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Tiere so gut aus der Nähe beobachten kann.\n\nViele Touristen bleiben übrigens nur "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 28,
+                          "answer": "wenige"
+                        },
+                        {
+                          "type": "text",
+                          "value": " Stunden auf der Insel. "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 29,
+                          "answer": "Sobald"
+                        },
+                        {
+                          "type": "text",
+                          "value": " die Tagesausflüger wieder abgefahren sind, kehrt Stille ein. Nachts kann man hier wirklich gut schlafen, weil man nur ein bisschen Wellenrauschen hört.\n\nWas gibt es bei dir denn Neues? Du hast ja mal gesagt, dass du gern umziehen "
+                        },
+                        {
+                          "type": "luecke",
+                          "id": 30,
+                          "answer": "würdest"
+                        },
+                        {
+                          "type": "text",
+                          "value": " – wie sieht es aus? Hast du schon mit der Wohnungssuche begonnen? Ich freue mich, bald wieder von dir zu hören!\n\nViele Grüße\nDorothée"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       },
       "themeOrder": [
@@ -89219,7 +90995,9 @@
         "erfolg-alt",
         "massgeschneidert-alt",
         "teleshopping-alt",
-        "naco"
+        "naco",
+        "telc-b2-g1-24",
+        "telc-b2-g1-37"
       ],
       "counts": {
         "themes": 62,
