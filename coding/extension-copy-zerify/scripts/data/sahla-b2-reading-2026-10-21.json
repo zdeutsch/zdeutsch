@@ -1,0 +1,3122 @@
+{
+  "schemaVersion": 1,
+  "batchId": "sahla-b2-reading-2026-10-21",
+  "archiveSha256": "81156b034b51fa25c1a778af8337a899bdb2985e278c903361ff24381d92a85c",
+  "exportedAt": "2026-10-21T08:10:07.733Z",
+  "items": [
+    {
+      "collection": "lesen.B2.teil1",
+      "pointer": "/collections/7/records/61",
+      "themeKey": "sahla-b2-wohnen",
+      "partKey": "teil-1",
+      "source": {
+        "_id": "6a403c9f1379c5b5ba94c7f5",
+        "titel": "Wohnen / الإقامة",
+        "photo": "wohnen.jpg",
+        "Überschriften": [
+          {
+            "id": "a",
+            "text": "Experte sagt Wohnungsnot in Städten voraus",
+            "isUpdated": false,
+            "tr": "خبير يتوقع أزمة سكن في المدن",
+            "Keywords": []
+          },
+          {
+            "id": "b",
+            "text": "Selbstbestimmtes Leben im Alter für viele zu teuer",
+            "isUpdated": false,
+            "tr": "الحياة المستقلة في الشيخوخة مكلفة للكثيرين",
+            "Keywords": [
+              "Selbstbestimmtes Leben",
+              "im Alter",
+              "zu teuer"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Wie man zusätzlichen Wohnraum nutzen kann",
+            "isUpdated": false,
+            "tr": "كيفية الاستفادة من المساحات السكنية الإضافية",
+            "Keywords": []
+          },
+          {
+            "id": "d",
+            "text": "Hausbesitz schränkt in der Mobilität ein",
+            "isUpdated": false,
+            "tr": "امتلاك منزل يحد من القدرة على التنقل",
+            "Keywords": []
+          },
+          {
+            "id": "e",
+            "text": "Wohnentwürfe so divers wie die Menschen",
+            "isUpdated": false,
+            "tr": "تصاميم السكن متنوعة بقدر تنوع الناس",
+            "Keywords": [
+              "Wohnentwürfe",
+              "divers"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "Ansprüche an Wohnflache altersabhängig",
+            "isUpdated": false,
+            "tr": "متطلبات المساحة السكنية تعتمد على العمر",
+            "Keywords": [
+              "Wohnflache",
+              "altersabhängig"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Neuer Trend konnte fur Steigerung der Einwohnerzahl sorgen",
+            "isUpdated": false,
+            "tr": "اتجاه جديد قد يساهم في زيادة عدد السكان",
+            "Keywords": [
+              "Neuer Trend",
+              "Steigerung der Einwohnerzahl"
+            ]
+          },
+          {
+            "id": "h",
+            "text": "Für leistbares Wohnen werden lange Wartezeiten akzeptiert",
+            "isUpdated": false,
+            "tr": "الانتظار الطويل مقبول للحصول على سكن ميسر",
+            "Keywords": []
+          },
+          {
+            "id": "i",
+            "text": "Landleben gibt neue Energie",
+            "isUpdated": false,
+            "tr": "الحياة الريفية تمنح طاقة جديدة",
+            "Keywords": []
+          },
+          {
+            "id": "j",
+            "text": "Wohnbedürfnisse der Jugend bisher vernachlässigt",
+            "isUpdated": false,
+            "tr": "احتياجات السكن لدى الشباب لم تحظ بالاهتمام الكافي حتى الآن",
+            "Keywords": [
+              "Wohnbedürfnisse",
+              "Jugend",
+              "vernachlässigt"
+            ]
+          }
+        ],
+        "Texte": [
+          {
+            "id": 1,
+            "text": "Wer im Altes nicht mehr alleine ein eigenständiges und selbstbest führen möchte, begibt sich in Osterm metas Leben professionetien die Suche nach einer entsprechenden ung. Konventionell geführte Einrichtung und-residenzen haben alle haben allerdings dengiten Nachteil dass die dort evitenden Regeln Sie und Bewohner einschränken und diesen außerdem geboten werden, od Beschagu geboten werden. Für viele Altere beziehungsweise deren unmittelbare Angehörige ist zudem finanzielle Leistbarkeit ein ausschlaggebendes Thema denn die durchschnittliche Pension erlaubt allzu hohen Ausgaben. Eine günstigere Alternative bietet nun ein neues, aus einer Kooperation.",
+            "antwort": "b",
+            "fazit": "الناس لي كيكبرو فالسن مكيبقاوش قادرين يعيشو بوحدهم، وكيقلبو على مؤسسات. ولكن هاد المؤسسات كتقيد الحرية وغالية بزاف، حيت التقاعد مكيكفيش باش يخلصوها. داكشي علاش كيقلبو على بدائل رخص.",
+            "Keywords": [
+              "Altere",
+              "finanzielle Leistbarkeit",
+              "durchschnittliche Pension"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 2,
+            "text": "Als junger Mensch in Wien auf Wohnungssuche zu sein, ist allenfalls eine große Herausforderung Wer ein Studium an der Universität oder Fachhochschule aufnimmt oder gerade einen Ausbildungsplatz in der Hauptstadt Österreich erhalten hat, dem fehlen allzu oft die finanziellen Mittel, um ein halbwegsder annehmbares Quartern zu finden. Die antargichen Kosten, die bereits vor dem Einzug in die neue Wohnung fällig sind, können durch die geforderte Kaution von meist drei Bruttomonatsmieten sowie die Vermittlungsgebühren für Maklerbüros enorm hoch werden. Um eine günstige Gemeindewohnung beantragen zu können, muss man bereits mehrere Jahre in Wien hauptgemeldet sein, und auch dann ist Geduld ungebracht. Bei einer Anmeldung sind zudem gleich alle Suchkriterien festzulegen, also etwa Wunschbezirk und Quadratmeteranzahl. Für jene, die gerade die ersten selbstständigen Schritte tun, lässt sich allerdings die Zukunft kaum so genau vorausplanen, Gemeindewohnungen sind daher meist keine Option. Die Stadt Wien will nun in den kommenden Jahren zunehmend Wohnprojekte mit flexiblen Vertragsbedingungen und kurzen Kündigungsfristen fördern und sich damit stärker an der Situation junger Leute orientieren.",
+            "antwort": "j",
+            "fazit": "صعيب على الشباب والطلبة يلقاو سكن ففيينا حيت غالي، وكاين مصاريف ديال الضمانة والسمسار. سكن البلدية كيطلب تسنى بزاف، داكشي علاش المدينة غتبدا مشاريع بسكن مرن كيتناسب مع الوضعية ديال الشباب.",
+            "Keywords": [
+              "junger Mensch",
+              "Wohnungssuche",
+              "finanziellen Mittel",
+              "Situation junger Leute"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 3,
+            "text": "Wohnen wie immer? Laut Ansicht des renommierten Zukunftsforschers Adrian Gregorius wird sich in Innerhalb der nächsten paar Jahrzehnte ein Wandel in unseren Wohnkultur vollziehen, der durch die Bevölkerungszunahme in den Städten bedingt wird. Die Konzentration eines großen Anteils der Bevölkerung im Stadtgebiet sieht Gregorius - im deutlich wahrnehmbaren Gegensatz zum ungebremsten Landschaftsverbrauch in den umliegenden Regionen jedoch keineswegs grundsätzlich als Problem. Vielmehr sei das Leben in der Stadt, wenn es richtig geplant und umgesetzt werde, sowohl ressourcen-als auch energieschonend. Des Weiteren entfalle der klimaschädliche und stressige Berufsverkehr und eine private Autonutzung werde weitgehend überflüssig, da die gesamte städtische Infrastruktur vor Ort zur Verfügung stehe. Nicht nur die Dichte, sondern auch die veränderten Gesellschaftsstrukturen werden es daher erforderlich machen, das Konzept des Wohnens in privaten und flexibel gemeinschaftlich nutzbaren Räumen adäquat anzupassen sowie Naturflächen im Nahbereich neu zu gestalten. Einheitslösungen könne es dabei nicht geben, so der Zukunftsforscher. Unterschiedliche Lebens-, Bau- und Wohnformen müssten Vielfalt der Stadtbewohner Rechnung tragen.",
+            "antwort": "e",
+            "fazit": "خبير كيتوقع تغيير فثقافة السكن حيت المدن غتعمر. العيش فالمدينة مزيان للبيئة حيت كينقص طرونسبور وتلوث. خاص مساحات مشتركة ومتنوعة حيت الناس مختلفين ومكاينش حل واحد كيصلح لكلشي.",
+            "Keywords": [
+              "Wohnkultur",
+              "Gesellschaftsstrukturen",
+              "Einheitslösungen könne es dabei nicht geben",
+              "Vielfalt"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 4,
+            "text": "Dass sich die Menschen einmal danach sehnen würden, möglichst wenig Wohnfläche zur Verfügung zu haben, hätte wohl niemand vermutet. Eine neue, von den Vereinigten Staaten ausgehende Bewegung zielt nun darauf ab, sich von überflüssigen Materialien Dingen zu trennen und nur mehr das zu behalten, was auf einer Fläche von 15 bis 20 Quadratmetern Platz findet. Die sogenannten Tiny Houses, also kleinen Häuser, erfreuen sich auch in Österreich immer größerer Beliebtheit, da ihre Anschaffungskosten gering sind und sie bei Bedarf auch per LKW an einen anderen Standort gebracht werden können. Dadurch ist man als Besitzer eines solchen Eigenheims sehr flexibel, was die Wahl des Wohnorts anbelangt. Es bedarf nur eines kleinen Stellplatzes der für eine bestimmte Zeit gemietet oder gepachtet wird. Besonders vonseiten ländlicher Gemeinden, die stark vom Abzug Einheimischer betroffen sind, besteht großes Interesse daran, dass auf diese Art Personen in entlegeneren Ortschaften wieder ansässig werden. Deswegen wurden mancherorts oftmals auf Initiative der Bürgermeister - bereits Vermittlungsbörsen für Interessierte eingerichtet.",
+            "antwort": "g",
+            "fazit": "كاين تريند جديد ديال 'الديور الصغار' (Tiny Houses) لي فيهم 15-20 متر مربع. رخاص وتقدر تنقلهم فكاميو. هادشي خلى قرى فالعروبية لي خواو من السكان تستغل هاد التريند باش تجيب سكان جداد للمناطق ديالهم.",
+            "Keywords": [
+              "wenig Wohnfläche",
+              "Tiny Houses",
+              "ländlicher Gemeinden",
+              "wieder ansässig werden"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 5,
+            "text": "Wer hat insgeheim nicht jenen Tag herbeigesehnt, an dem die Kinder endlich selbstständig werden, eigenes Geld verdienen, das gemeinsame Zuhause verlassen und man das eigene Leben wieder in die Hand nehmen kann? Für viele Eltern ist jedoch das Fehlen des Nachwuchses in den heimischen vier Wänden letztendlich ein richtiger Schlag, der das Ende eines Lebensabschnitts signalisiert, in welchem man als Versorger gebraucht wurde. Zu alledem gesellt sich der Umstand, dass man sich des eigenen Älterwerdens zunehmend bewusst wird. Tatsächlich kommt nun also eine schwierige, oftmals zu Depressionen führende Phase der Umorientierung auf die Eltern zu. Um das Gefühl von Einsamkeit und Leere zu überwinden, entschließt sich so manches Paar zu dem durchaus radikalen Schritt, das nun für zwei ältere Personen viel zu große Heim zu veräußern und sich etwas Kleineres und Günstigeres zu suchen, das besser zu den neuen Gegebenheiten passt, anstatt die vorhandenen, nun freistehenden Räumlichkeiten im Familienheim umzugestalten oder für einen eventuellen Besuch der Kinder.",
+            "antwort": "f",
+            "fazit": "الوالدين كيفرحو ملي ولادهم كيستاقلو، ولكن ملي كيخويو الدار كيحسو بالفراغ والاكتئاب. باش يتجاوزو هادشي، بزاف كيقرو يبيعو دار العائلة الكبيرة لي ولات خاوية ويشريو وحدة صغيرة ورخيصة لي كتناسب العمر والاحتياجات ديالهم دابا.",
+            "Keywords": [
+              "Kinder endlich selbstständig",
+              "eigenen Älterwerdens",
+              "viel zu große Heim zu veräußern",
+              "Kleineres und Günstigeres zu suchen"
+            ],
+            "isUpdated": false
+          }
+        ],
+        "id": 42,
+        "availableFor": "user",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil1",
+      "pointer": "/collections/7/records/62",
+      "themeKey": "sahla-b2-lebensmodelle",
+      "partKey": "teil-1",
+      "source": {
+        "_id": "6a53bf895ba214d1df537e45",
+        "titel": "Lebensmodelle",
+        "photo": "lebensmodelle.jpg",
+        "Überschriften": [
+          {
+            "id": "a",
+            "text": "Alt und Jung vereint.",
+            "isUpdated": false,
+            "tr": "اتحاد الكبار والصغار.",
+            "Keywords": [
+              "Alt und Jung vereint"
+            ]
+          },
+          {
+            "id": "b",
+            "text": "Wenn die Eltern Hilfe brauchen.",
+            "isUpdated": false,
+            "tr": "عندما يحتاج الوالدان إلى المساعدة.",
+            "Keywords": [
+              "Eltern Hilfe brauchen"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Patchwork: Reiz und Risiko.",
+            "isUpdated": false,
+            "tr": "العائلات المختلطة: الجاذبية والمخاطر.",
+            "Keywords": [
+              "Patchwork"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "Weniger ist mehr.",
+            "isUpdated": false,
+            "tr": "الأقل هو الأكثر.",
+            "Keywords": [
+              "Weniger ist mehr"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "Karrieretipps für junge Mütter.",
+            "isUpdated": false,
+            "tr": "نصائح مهنية للأمهات الشابات.",
+            "Keywords": []
+          },
+          {
+            "id": "f",
+            "text": "Die Suche nach dem idealen Wohnort.",
+            "isUpdated": false,
+            "tr": "البحث عن مكان السكن المثالي.",
+            "Keywords": [
+              "idealen Wohnort"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Gefahren der sozialen Medien für Kinder.",
+            "isUpdated": false,
+            "tr": "مخاطر وسائل التواصل الاجتماعي على الأطفال.",
+            "Keywords": []
+          },
+          {
+            "id": "h",
+            "text": "Sportvereine als Treffpunkt für Singles.",
+            "isUpdated": false,
+            "tr": "الأندية الرياضية كمكان لقاء للعزاب.",
+            "Keywords": []
+          },
+          {
+            "id": "i",
+            "text": "Finanzielle Planung für den Ruhestand.",
+            "isUpdated": false,
+            "tr": "التخطيط المالي للتقاعد.",
+            "Keywords": []
+          },
+          {
+            "id": "j",
+            "text": "Die Rückkehr in den Beruf nach der Elternzeit.",
+            "isUpdated": false,
+            "tr": "العودة إلى العمل بعد إجازة الوالدين.",
+            "Keywords": []
+          }
+        ],
+        "Texte": [
+          {
+            "id": 1,
+            "text": "Viele Menschen in der Mitte ihres Lebens stehen vor einer doppelten Belastung. Einerseits fordern die eigenen Kinder noch viel Aufmerksamkeit, andererseits werden die eigenen Eltern langsam gebrechlich. Wenn der Vater plötzlich nicht mehr alleine einkaufen kann oder die Mutter stürzt, müssen oft die Kinder die Organisation übernehmen. Das kostet nicht nur Zeit, sondern auch viel emotionale Kraft. Experten raten hier dazu, frühzeitig über professionelle Pflegedienste nachzudenken, um die eigene Familie zu entlasten und die Beziehung zu den Eltern nicht durch Überforderung zu belasten.",
+            "antwort": "b",
+            "fazit": "بزاف د الناس فمنتصف العمر كيعيشو ضغط مضاعف: مقابلين ولادهم الصغار وفنفس الوقت والديهم للي كبار وعياو. ملي الأب ما كيبقاش يقدر يتقد أولا الأم كطيح، خاص ولادهم يتكلفو بكلشي. هادشي كياخد الوقت والجهد النفسي، داكشي علاش الخبراء كينصحو يشوفو خدمات رعاية احترافية باش يخففو على راسهم.",
+            "Keywords": [
+              "doppelten Belastung",
+              "Pflegedienste",
+              "Eltern"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 2,
+            "text": "Immer mehr Paare entscheiden sich heute für einen bewussten Verzicht auf Überfluss. Anstatt das Wochenende im Einkaufszentrum zu verbringen, entrümpeln sie gemeinsam die Wohnung oder verbringen Zeit in der Natur. Der Grundgedanke: Wer weniger besitzt, muss weniger aufräumen, reparieren und finanzieren. Das spart Zeit und Geld, was wiederum direkt der Familie zugutekommt. Besonders für Eltern mit kleinen Kindern kann diese Lebensweise helfen, den Alltagsstress deutlich zu reduzieren und den Fokus auf das Wesentliche zu legen – das Miteinander.",
+            "antwort": "d",
+            "fazit": "بزاف د الكوبلات دابا كيتخليو على كترت القش والمشتريات الزايدة. بلاصة ما يدوزو الويكاند فالروينة د الشوبينغ، كيجمعو دارهم وكيخرجو للطبيعة. الفكرة هي أنك يلا ملكتي أقل، غترون أقل وتخسر قل، وهادشي كينقص الستريس على العائلات لي عندهم دراري صغار.",
+            "Keywords": [
+              "Verzicht auf Überfluss",
+              "Alltagsstress deutlich zu reduzieren",
+              "Weniger besitzt"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 3,
+            "text": "Wenn zwei Menschen mit Kindern aus früheren Beziehungen eine neue Gemeinschaft bilden, ist das oft ein mutiger Schritt. Was in der Theorie schön klingt, erfordert in der Praxis viel Geduld und diplomatisches Geschick. Die Kinder müssen sich an neue Geschwister und neue Regeln gewöhnen, während die Erwachsenen versuchen, allen Bedürfnissen gerecht zu werden. Oft gibt es Konflikte um die Erziehung oder den Kontakt zu den Ex-Partnern. Psychologen betonen, dass es Zeit braucht, bis aus zwei Gruppen eine echte Einheit wird.",
+            "antwort": "c",
+            "fazit": "ملي جوج ناس مطلقين وعندهم ولاد من علاقات قديمة كيتجمعو باش يديرو عائلة جديدة (باتشورك)، هادي خطوة شجاعة ولكن صعيبة فالتطبيق. الدراري خاصهم يولفو خوت جداد وقواعد جداد، وكتوقع مشاكل على قبل التربية أولا التواصل مع الشريك القديم. هادشي كيطلب وقت باش تولي عائلة وحدة.",
+            "Keywords": [
+              "Kindern aus früheren Beziehungen",
+              "neue Gemeinschaft",
+              "Konflikte"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 4,
+            "text": "Früher war es ganz normal, dass mehrere Generationen in einem Haus lebten. Heute feiert dieses Konzept als „Mehrgenerationenhaus“ ein Comeback. Hier wohnen nicht zwangsläufig Verwandte zusammen, sondern oft auch fremde ältere Menschen und junge Familien. Die Senioren helfen bei der Kinderbetreuung oder geben Nachhilfe, während die Jüngeren schwere Einkäufe erledigen oder bei technischen Problemen helfen. Dieses Modell bietet eine solution gegen die Einsamkeit im Alter und hilft jungen Eltern, den Alltag ohne teure Babysitter zu bewältigen.",
+            "antwort": "a",
+            "fazit": "شحال هادي كان عادي يعيشو بزاف د الأجيال فدار واحدة، ودابا هاد الفكرة رجعات تحت سمية 'دار الأجيال المشتركة'. ماشي بالضرورة يكونو عائلة، كيقدرو يسكنو ناس كبار وعائلات شباب مع بعضياتهم. الكبار كيعاونو فالدراري والصغار كيقضيو ليهم الغراض بحال التقدية والمشاكل التقنية، وهادشي كيحارب العزلة عند الكبار وكيخفف على الوالدين.",
+            "Keywords": [
+              "Mehrgenerationenhaus",
+              "Senioren",
+              "Kinderbetreuung"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 5,
+            "text": "Die Frage, wo die Kinder aufwachsen sollen, sorgt bei vielen Paaren für Diskussionen. In der Metropole sind die Wege kurz, die kulturellen Angebote groß und die Schulen vielfältig. Doch die Mieten sind hoch und es ist oft laut. Draußen im Grünen hingegen gibt es viel Platz und Sicherheit, aber man ist auf das Auto angewiesen und verbringt viel Zeit mit Pendeln zur Arbeit. Letztlich ist es eine Abwägung zwischen Lebensqualität im Freien und der praktischen Infrastruktur der Großstadt, die jede Familie individuell treffen muss.",
+            "antwort": "f",
+            "fazit": "البلاصة فين غيكبرو الدراري كتدير ديما نقاش بين الكوبلات. فالمدينة الكبيرة كلشي قريب وكاينين مدارس بزاف ولكن الكرا غالي والصداع. وفالعروبية أو الطبيعة كاين التيساع والأمان، ولكن خاصك ضروري الطوموبيل وضياع الوقت فالطريق للخدمة. فالتالي كل عائلة خاصها تختار بين الطبيعة أولا ليفراستريكتور ديال المدينة.",
+            "Keywords": [
+              "wo die Kinder aufwachsen sollen",
+              "Metropole",
+              "im Grünen"
+            ],
+            "isUpdated": false
+          }
+        ],
+        "id": 43,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil1",
+      "pointer": "/collections/7/records/64",
+      "themeKey": "sahla-b2-gesundheit-symptomen",
+      "partKey": "teil-1",
+      "source": {
+        "_id": "6a96e6cfab4e500a2d1290db",
+        "titel": "Gesundheit / Symptomen",
+        "photo": "gesundheit.jpg",
+        "Überschriften": [
+          {
+            "id": "a",
+            "text": "Wetterbeschwerden: So gehen Sie mit Symptomen um",
+            "isUpdated": false,
+            "tr": "ألم الطقس: كيفاش تعامل مع الأعراض",
+            "Keywords": [
+              "Wetterbeschwerden",
+              "Symptomen"
+            ]
+          },
+          {
+            "id": "b",
+            "text": "Schlaflos? Wann Sie sich besser ärztlichen Rat holen sollten",
+            "isUpdated": false,
+            "tr": "ما كيجيكش النعاس؟ وقتاش خاصك تمشي تشوف الطبيب",
+            "Keywords": [
+              "Schlaflos",
+              "ärztlichen Rat"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Mögliche Gesundheitsrisiken durch Mikroplastik im Körper",
+            "isUpdated": false,
+            "tr": "المخاطر الصحية المحتملة ديال الميكروبلاستيك فالجسم",
+            "Keywords": [
+              "Gesundheitsrisiken",
+              "Mikroplastik"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "Mehr Schlaf, weniger Kilos",
+            "isUpdated": false,
+            "tr": "نعاس كتر، كيلوات أقل",
+            "Keywords": [
+              "Mehr Schlaf",
+              "weniger Kilos"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "Wie viel Schlaf ist gesund?",
+            "isUpdated": false,
+            "tr": "شحال ديال النعاس صحي؟",
+            "Keywords": [
+              "gesund"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "Powernap, joggen oder frische Luft? Was wirklich wach macht",
+            "isUpdated": false,
+            "tr": "قيلولة، جري، ولا هوا نقي؟ شنو لي كيفيقك بصح",
+            "Keywords": [
+              "Powernap",
+              "wach macht"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Naschen statt schlafen? Warum wir spätabends oft snacken",
+            "isUpdated": false,
+            "tr": "السقاطة بلاصة النعاس؟ علاش كناكلو بزاف بالليل",
+            "Keywords": [
+              "Naschen",
+              "spätabends"
+            ]
+          },
+          {
+            "id": "h",
+            "text": "Ursachen und Strategien gegen Tagesmüdigkeit",
+            "isUpdated": false,
+            "tr": "أسباب واستراتيجيات ضد العيا ديال النهار",
+            "Keywords": [
+              "Tagesmüdigkeit"
+            ]
+          },
+          {
+            "id": "i",
+            "text": "Wenn das Wetter den Körper stresst",
+            "isUpdated": false,
+            "tr": "ملي الجو كيعي الجسم",
+            "Keywords": [
+              "Wetter",
+              "Körper stresst"
+            ]
+          },
+          {
+            "id": "j",
+            "text": "Mikroplastik: Die unsichtbare Gefahr im Alltag",
+            "isUpdated": false,
+            "tr": "الميكروبلاستيك: الخطر الخفي فالحياة اليومية",
+            "Keywords": [
+              "Mikroplastik",
+              "unsichtbare Gefahr"
+            ]
+          }
+        ],
+        "Texte": [
+          {
+            "id": 1,
+            "text": "Viele Menschen kennen das: Um die Mittagszeit kommt plötzlich die große Müdigkeit und es fällt schwer, sich auf die Arbeit zu konzentrieren. Zum Glück hat die Schlafmedizinerin Charlotte Bruckner ein paar einfache Tipps, die helfen, wieder fitter zu werden: 1. Stehen Sie auf, gehen Sie ein paar Schritte oder machen Sie Gymnastik. Noch besser ist ein kurzer Spaziergang an der frischen Luft. 2. Eine kalte Dusche am Morgen und ein paar Spritzer Wasser ins Gesicht regen den Kreislauf an. 3. Lüften Sie regelmäßig, am besten stoßlüften. Der kühlere Luftstrom wirkt erfrischend. 4. Kaffee kann helfen; die Wirkung spüren wir nach 15 bis 30 Minuten. 5. Die effektivste Methode ist ein kurzes Nickerchen. Schlafen Sie nicht länger als 30 Minuten.",
+            "antwort": "f",
+            "fazit": "بزاف د الناس كيجيهم العيا فوقت الغدا. واحد الطبيبة عطات نصائح باش تفيق، بحال تتمشى شوية، تاخد دوش بارد، تهوي البيت، تشرب قهوة، ولا أحسن حاجة دير قيلولة خفيفة ما تفوتش 30 دقيقة.",
+            "Keywords": [
+              "Mittagszeit",
+              "Müdigkeit",
+              "Nickerchen"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 2,
+            "text": "Fühlen Sie sich morgens oft wie gerädert und greifen zu Süßem oder Fettigem? Damit sind Sie nicht allein. Zahlreiche Studien zeigen, dass Schlafmangel mit Heißhunger und Übergewicht zusammenhängt. Eine Untersuchung mit rund 70 Studierenden ergab: Wer vier bis fünf Stunden pro Nacht schläft, entwickelt deutlich mehr Appetit - vor allem auf Ungesundes. Schlafmangel beeinflusst die Hungerhormone Ghrelin und Leptin. Eine Studie aus den USA zeigte, dass Menschen, die ihre Schlafdauer verlängerten, weniger Kalorien zu sich nahmen und Gewicht verloren.",
+            "antwort": "d",
+            "fazit": "قلة النعاس كتخليك تفيق عيان وكتشهى الماكلة الحلوة والدهنية. الدراسات بينات بلي النعاس القليل كيزيد فالهرمونات ديال الجوع وكيعطيك الشهية للماكلة الخايبة، واللي كينعس مزيان كينقص الوزن.",
+            "Keywords": [
+              "Schlafmangel",
+              "Heißhunger",
+              "Übergewicht"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 3,
+            "text": "Wenn die Temperaturen plötzlich stark schwanken, merken viele Menschen, dass sich ihr Körper nur schwer anpasst. Tatsächlich muss unser Organismus ständig daran arbeiten, die Körpertemperatur bei etwa 37 Grad zu halten. Gesunde Menschen spüren diese Anpassung oft gar nicht. Bei Wetterempfindlichen können Müdigkeit, Kopfschmerzen, Reizbarkeit oder Kreislaufprobleme auftreten. Besonders Menschen mit Rheuma oder Herz-Kreislauf-Problemen reagieren. Auch das Frühjahr ist belastend: Die Tage werden heller, die Melatoninproduktion sinkt und der Körper muss das Gleichgewicht zwischen Melatonin und Serotonin neu einstellen.",
+            "antwort": "i",
+            "fazit": "ملي الحرارة كتبدل بالزربة، الجسم كيلقى صعوبة باش يتأقلم. الناس لي حساسين للجو كيجيهم العيا، الحريق د الراس، والأعصاب. وحتى الربيع كيكون صعيب حيت الجسم خاصو يوازن بين الميلاتونين والسيروتونين.",
+            "Keywords": [
+              "Temperaturen",
+              "Wetterempfindlichen",
+              "Gleichgewicht"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 4,
+            "text": "Mikroplastik ist mittlerweile allgegenwärtig. Es befindet sich in Lebensmitteln, im Trinkwasser und sogar in der Luft. Forschende warnen vor möglichen gesundheitlichen Risiken. In einer neuen Studie wurden bei fast 800 Personen im Alter zwischen 20 und 80 Jahren verschiedene Proben untersucht und in unterschiedlichen Organen Mikroplastik gefunden. Besonders alarmierend war, dass ältere Menschen mit einem hohen Anteil an Mikroplastik häufiger an Erkrankungen von Leber oder Nieren litten. Die Wissenschaft beurteilt einen starken Anstieg als sehr bedenklich und empfiehlt verschiedene Maßnahmen, um die Aufnahme zu reduzieren: Wasser aus Glasflaschen trinken, Leitungswasser nutzen und Lebensmittel nicht in Plastikbehältern erhitzen.",
+            "antwort": "c",
+            "fazit": "الميكروبلاستيك ولى فكل بلاصة: فالماكلة، الما، وحتى فالهوا. دراسات جديدة لقاتو فأعضاء ديال بزاف د الناس، والناس الكبار لي عندهم نسبة طالعة كيمرضو بالكبدة والكلاوي. الخبراء كينصحو نشربو الما فقرع الدجاج ومانسخنوش الماكلة فالبلاستيك.",
+            "Keywords": [
+              "Mikroplastik",
+              "gesundheitlichen Risiken",
+              "Glasflaschen"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 5,
+            "text": "Sie liegen nachts lange wach und wälzen sich im Bett hin und her? Wenn das häufiger vorkommt, sollten Sie genauer hinsehen. Schlafstörungen sind weit verbreitet und können auf gesundheitliche Probleme hinweisen. Typische Warnzeichen sind, dass Sie sehr lange zum Einschlafen brauchen, nachts häufig aufwachen oder früh wach werden und nicht wieder einschlafen. Nächtliche Insomnie kann sich schnell auf den Alltag auswirken und zu Tagesmüdigkeit, Konzentrationsschwäche und Gereiztheit führen. Wenn die Schlafprobleme mindestens drei Nächte pro Woche und länger als drei Monate auftreten, spricht man von chronischer Insomnie. Häufige Auslöser sind psychische Erkrankungen, Angststörungen oder Suchterkrankungen. Im Gegensatz zu kurzfristigem schlechten Schlaf sollte anhaltende Insomnie ärztlich abgeklärt werden.",
+            "antwort": "b",
+            "fazit": "يلا كنتي كتبقى فايق بالليل ومكيجيكش النعاس بزاف د المرات، خاصك ترد البال. قلة النعاس المزمنة كتدير العيا فالدراسة والخدمة. الأسباب تقدر تكون نفسية، وهادشي خاصو استشارة ديال الطبيب.",
+            "Keywords": [
+              "Schlafstörungen",
+              "chronischer Insomnie",
+              "ärztlich abgeklärt"
+            ],
+            "isUpdated": false
+          }
+        ],
+        "id": 44,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil1",
+      "pointer": "/collections/7/records/65",
+      "themeKey": "sahla-b2-das-alte-leben",
+      "partKey": "teil-1",
+      "source": {
+        "_id": "6a96eb83ab4e500a2d1290e4",
+        "titel": "Das alte Leben",
+        "photo": "lebenstrends.jpg",
+        "Überschriften": [
+          {
+            "id": "a",
+            "text": "Das alte Leben hinter sich lassen - Ein Erfahrungsbericht.",
+            "isUpdated": false,
+            "tr": "تخلي حياتك القديمة موراك - تجربة شخصية.",
+            "Keywords": [
+              "alte Leben hinter sich lassen",
+              "Erfahrungsbericht"
+            ]
+          },
+          {
+            "id": "b",
+            "text": "Familienurlaub ohne Stress - so kann es funktionieren!",
+            "isUpdated": false,
+            "tr": "عطلة عائلية بلا ستريس - هكا تقدر تصدق!",
+            "Keywords": [
+              "Familienurlaub",
+              "ohne Stress"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Gefährlicher Trend: Ein jugendliches Aussehen um jeden Preis.",
+            "isUpdated": false,
+            "tr": "موضة خطيرة: تبان صغير بأي ثمن.",
+            "Keywords": [
+              "Gefährlicher Trend",
+              "jugendliches Aussehen"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "Gesichtspflege für zu Hause - So schützen Sie Ihre Haut richtig!",
+            "isUpdated": false,
+            "tr": "العناية بالوجه فالدار - هكا تحمي بشرتك مزيان!",
+            "Keywords": [
+              "Gesichtspflege",
+              "Haut"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "Gesünder leben dank alternativer Heilmethode.",
+            "isUpdated": false,
+            "tr": "تعيش بصحة حسن بفضل طرق العلاج البديلة.",
+            "Keywords": [
+              "Gesünder leben",
+              "alternativer Heilmethode"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "Immer mehr Minderjährige greifen zu Kosmetik.",
+            "isUpdated": false,
+            "tr": "بزاف د القاصرين ولاو كيستعملو الماكياج.",
+            "Keywords": [
+              "Minderjährige",
+              "Kosmetik"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Monotonie hat Einfluss auf unser Zeitgefühl.",
+            "isUpdated": false,
+            "tr": "الروتين والملل كيأثر على كيفاش كنحسو بالوقت.",
+            "Keywords": [
+              "Monotonie",
+              "Zeitgefühl"
+            ]
+          },
+          {
+            "id": "h",
+            "text": "Neues Programm zum Abnehmen verspricht langfristige Erfolge.",
+            "isUpdated": false,
+            "tr": "برنامج جديد ديال الريجيم كيوعد بنتائج كطول.",
+            "Keywords": [
+              "Abnehmen"
+            ]
+          },
+          {
+            "id": "i",
+            "text": "Nützliche Expertentipps gegen die tägliche Langeweile.",
+            "isUpdated": false,
+            "tr": "نصائح مفيدة ديال الخبراء ضد الملل اليومي.",
+            "Keywords": [
+              "tägliche Langeweile"
+            ]
+          },
+          {
+            "id": "j",
+            "text": "Zu viele Minderjährige nehmen sich schlechte Vorbilder.",
+            "isUpdated": false,
+            "tr": "بزاف د القاصرين كياخدو قدوة خايبة.",
+            "Keywords": [
+              "schlechte Vorbilder"
+            ]
+          }
+        ],
+        "Texte": [
+          {
+            "id": 1,
+            "text": "Make-up, Lidschatten, Lippenstift und mehr: Schon seit einigen Jahren warnt die Weltgesundheitsorganisation WHO vor den Risiken solcher Artikel für Kinder und Jugendliche. Viele Inhaltsstoffe sind für die empfindliche Kinderhaut ungeeignet und können Allergien oder gesundheitliche Schäden verursachen. Dennoch greifen immer mehr Kinder und Teenager zu kosmetischen Produkten. Die Medizinerin Anja Kaukholz sieht vor allem soziale Medien als Ursache. Influencer vermitteln, ein natürliches Aussehen reiche nicht aus. Eltern sollten Interesse nicht verbieten, aber erklären, dass der Wert eines Kindes nicht vom Aussehen abhängt, und geeignete natürliche Produkte auswählen.",
+            "antwort": "f",
+            "fazit": "منظمة الصحة العالمية كتحذر من استعمال الدراري الصغار والمراهقين للماكياج، حيت فيه مواد كتدير حساسية ومشاكل صحية للبشرة ديالهم. وخا هكاك، بزاف كيبقاو يستعملوه بسباب السوشيال ميديا والمؤثرين. الوالدين خاصهم يوعيو ولادهم بلي قيمتهم ماشي فشكلهم.",
+            "Keywords": [
+              "Kinder und Jugendliche",
+              "kosmetischen Produkten",
+              "Teenager"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 2,
+            "text": "Essen macht gesund! Dies verspricht die ayurvedische Ernährungslehre, die sich besonders bei jungen Erwachsenen wachsender Beliebtheit erfreut. Das Erfolgsrezept: keine strenge Diät, sondern Aktivierung der körpereigenen Selbstheilungskräfte. Die Ärztin Aparna Kumar erstellt anhand von Gesundheitszustand, Alter und individuellen Bedürfnissen ganzheitliche Ernährungspläne. Hochwertige Lebensmittel, passende Mengen, Gewürze und Kräuter spielen eine zentrale Rolle. Die Ernährungsform soll auch bei Depressionen, chronischen Problemen oder Migräne helfen.",
+            "antwort": "e",
+            "fazit": "التغذية الأيورفيدية ولات مشهورة بزاف عند الشباب. هاد الطريقة ماشي ريجيم قاصح، ولكن كتحفز الجسم باش يداوي راسو براسو. كيعتمدو على ماكلة نقية، العطرية، والأعشاب، وهادشي كيعاون حتى فالاكتئاب والأمراض المزمنة بحال الشقيقة.",
+            "Keywords": [
+              "ayurvedische Ernährungslehre",
+              "Selbstheilungskräfte",
+              "gesund"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 3,
+            "text": "Können Sie sich erinnern, als sich sechs Wochen Sommerferien wie eine Ewigkeit anfühlten? Im Erwachsenenalter fragen wir uns oft, wie schnell ein Jahr vergangen ist. Die Biologin Dr. Juliane Simmermann erklärt dies mit Alltagsroutinen: Wiederholte Handlungen lassen wenig Neues geschehen und die Tage gefühlt schneller vorbeigehen. Routinen geben zwar Stabilität und Sicherheit, doch wer den Eindruck hat, sein Leben rase, sollte sie gelegentlich unterbrechen: einen anderen Weg zur Arbeit nehmen oder vor dem Schlafengehen spazieren gehen.",
+            "antwort": "g",
+            "fazit": "ملي كنا صغار كان كيبان لينا الصيف طويل، ولكن دابا كيكبر الواحد كيطير الوقت. السبب هو الروتين، حيت ملي كنبقاو نعاودو نفس الحاجة، الأيام كتدوز بالزربة. باش نهرسو هادشي، خاصنا نبدلو شوية من العادات ديالنا بحال نبدلو طريق الخدمة.",
+            "Keywords": [
+              "Alltagsroutinen",
+              "schnell ein Jahr vergangen",
+              "Zeitgefühl"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 4,
+            "text": "Arno Schneider hat geschafft, wovon viele träumen. Der 47-Jährige lebt mit seiner Frau Katharina und den Kindern Max und Tim auf Bali. Vor vier Jahren wanderte die Familie aus und bereut keinen Tag. Sie hat weniger Geld, aber einen besseren Alltag und entspannt bei Stress am Meer. Auslöser war die wachsende Unzufriedenheit mit Arnos früherem Beruf als Bäcker. Heute betreibt das Ehepaar auf Bali ein Café mit selbst gebackenem Kuchen.",
+            "antwort": "a",
+            "fazit": "أرنو حقق الحلم ديال بزاف د الناس، هاجر هو وعائلتو لبالي هادي ربع سنين. واخا عندهم فلوس قل، ولكن عايشين مرتاحين بلا ستريس قدام البحر. السبب كان هو أنه ماكانش عاجبو خدمتو القديمة كخباز، ودابا حالين قهوة فبالي.",
+            "Keywords": [
+              "wanderte die Familie aus",
+              "früherem Beruf",
+              "Bali"
+            ],
+            "isUpdated": false
+          },
+          {
+            "id": 5,
+            "text": "Der Wunsch, jünger auszusehen, nimmt immer bizarrere Züge an. Bei privaten Treffen werden kosmetische Behandlungen bis hin zu Botox angeboten. Das Nervengift soll Falten reduzieren, kann bei falscher Anwendung jedoch irreparable Schäden und allergische Reaktionen verursachen. Häufig fehlen den Behandelnden medizinische Kenntnisse. Der Dermatologe Dr. Ulrich Brechschleid warnt: Für Schönheit sollte man nie die eigene Gesundheit aufs Spiel setzen.",
+            "antwort": "c",
+            "fazit": "الرغبة باش الواحد يبان صغير ولات كتاخد طرق غريبة. دابا ولاو كيديرو حقن البوتوكس فلقاءات خاصة. هاد المادة كتحيد التجاعيد ولكن يلا تدارت بطريقة غالطة كتدير أضرار خايبة، خصوصا أن اللي كيديروها ماعندهمش خبرة طبية. الطبيب كيحذر بلي ماخاصش نغامرو بصحتنا على قبل الجمال.",
+            "Keywords": [
+              "jünger auszusehen",
+              "kosmetische Behandlungen",
+              "Botox"
+            ],
+            "isUpdated": false
+          }
+        ],
+        "id": 45,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil2",
+      "pointer": "/collections/8/records/38",
+      "themeKey": "sahla-b2-kreuzfahrttourismus",
+      "partKey": "teil-2",
+      "source": {
+        "_id": "6a96eeb8ab4e500a2d1290e7",
+        "titel": "Kreuzfahrttourismus / Auswirkungen von Massentourismus",
+        "photo": "",
+        "text": [
+          {
+            "para": "Kreuzfahrtschiffe sind längst nicht mehr nur Schiffe, die Reisende von einem Hafen zum nächsten bringen. Sie sind mittlerweile schwimmende Hotelanlagen und bieten Touristinnen und Touristen ein Rundum-sorglos-Paket. Ein Tag auf dem Schiff bedeutet deswegen schon lange nicht mehr Langeweile, sondern ermöglicht Erholung und Spaß. Zumeist verfügen Kreuzfahrtschiffe über große Poolanlagen und ganze Wellnessbereiche. Außerdem findet man dort mehrere Restaurants, Theater sowie Bars und Diskotheken. Auch die Bordkabinen stehen hinsichtlich Ausstattung und Komfort einem klassischen Hotel an Land in nichts nach.\n",
+            "tr": "السفن السياحية (الكروزيير) مبقاتش من شحال هادي غير سفن كتوصل المسافرين من مرسى لمرسى. ولات دابا بحال أوطيلات عايمة وكتعطي للسياح باقة ديال الراحة الشاملة. نهار فالسفينة مبقاش كيعني الملل، ولكن كيعطي فرصة للراحة والنشاط. الأغلبية ديال هاد السفن فيها بيسينات كبار وبلايص ديال السبا (Wellness). ومن غير هادشي كتلقى فيها بزاف ديال الريسطورات، مسارح، بارات وديسكوتيكات. وحتى البيوت ديال السفينة (الكبينات) من ناحية التجهيز والراحة مكينش فرق بينها وبين أوطيل كلاسيكي فالأرض.",
+            "_id": "6b1fce0f9a07ac164720bc41"
+          },
+          {
+            "para": "Trotz dieser Vorzüge ist der wichtigste Grund für die steigende Beliebtheit das Entdecken vieler Orte in kurzer Zeit. Ohne Stress durch Staus auf Autobahnen oder lange Warteschlangen an Flughäfen ist es möglich, mehrere Orte oder sogar mehrere Länder in wenigen Tagen oder Wochen zu bereisen. Dies spricht abenteuerlustige junge Leute und Familien mit Kindern an. Auch für körperlich eingeschränkte Menschen, für die Auto- oder Flugreisen aufgrund des Alters oder einer Erkrankung beschwerlich sein können, sind Kreuzfahrten geeignet. Sie ziehen sogar den größten Nutzen daraus, da diese Art des Reisens für sie oftmals die einzige Möglichkeit darstellt, überhaupt Fernreisen zu unternehmen.\n",
+            "tr": "بالرغم من هاد المزايا، السبب الرئيسي لزيادة الشعبية ديالها هو اكتشاف بزاف ديال البلايص فواحد الوقت قصير. بلا ستريس ديال الزحام فلوطوروت ولا الصفوف الطويلة فالمطارات، ممكن تسافر لبزاف ديال البلايص أو حتى بزاف ديال البلدان فبضعة أيام ولا أسابيع. هادشي كيعجب الشباب لي كيبغيو المغامرة والعائلات لي عندهم دراري صغار. وحتى بالنسبة للناس لي عندهم إعاقات جسدية، لي السفر بالطوموبيل ولا الطيارة كيجيهم صعيب بسبب السن ولا المرض، هاد الرحلات كتكون مناسبة ليهم. هما كاع لي كينتفعو منها كثر، حيت هاد النوع ديال السفر غالبا كيكون هو الطريقة الوحيدة لي بقات ليهم باش يقدرو يسافرو لشي بلاصة بعيدة.",
+            "_id": "6b1fce0f9a07ac164720bc42"
+          },
+          {
+            "para": "Auswirkungen von Massentourismus\nDer Tourismus ist für viele Städte und Länder Fluch und Segen zugleich. Während er in touristisch geprägten Regionen einen zentralen Wirtschaftszweig ausmacht, indem Arbeitsplätze geschaffen werden und lokale Unternehmen profitieren, werden die Stimmen immer lauter, die auf negative Auswirkungen aufmerksam machen. Dazu zählt der sogenannte Massentourismus. Besuchen viele Menschen gleichzeitig dasselbe Reiseziel, stehen diese Hotspots vor ökologischen und sozialen Herausforderungen.\n",
+            "tr": "تأثيرات السياحة الجماعية\nالسياحة بالنسبة لبزاف ديال المدن والبلدان هي نقمة ونعمة فنفس الوقت. وخا هي كتشكل قطاع اقتصادي أساسي فالمناطق السياحية، حيت كتخلق فرص شغل والشركات المحلية كتستافد، الأصوات لي كتنبه للتأثيرات السلبية غادية وكتكثر. ومن بين هادشي السياحة الجماعية. ملي كيزورو بزاف ديال الناس نفس الوجهة فوقت واحد، هاد البلايص السياحية كتواجه تحديات بيئية واجتماعية.",
+            "_id": "6b1fce0f9a07ac164720bc43"
+          },
+          {
+            "para": "Begünstigt wird der Massentourismus vor allem durch Pauschalreisen und Kreuzfahrten, die das Reisen komfortabel und massentauglich machen. Letzteres stellt besonders für kleine Küstenorte, bei denen fast täglich Schiffe anlegen, ein enormes Problem dar. In norwegischen Kleinstädten wie Geiranger, Flåm oder Hellesylt übersteigt die Zahl der Kreuzfahrtpassagiere die Einwohnerzahl um ein Vielfaches. Auch größere Städte wie Venedig oder Amsterdam stehen dem Massentourismus kritisch gegenüber.\n",
+            "tr": "السياحة الجماعية كتشجعها خصوصا الرحلات الشاملة (Pauschalreisen) والرحلات البحرية، لي كترد السفر مريح ومناسب للأعداد الكبيرة ديال الناس. هادشي اللخر كيشكل مشكل كبير خصوصا بالنسبة للمدن الساحلية الصغيرة، لي كترسى فيها السفن تقريبا كل نهار. فالمدن الصغيرة ديال النرويج بحال جيرانجر، فلام أو هيليسيلت، عدد الركاب ديال السفن السياحية كيفوت عدد السكان الأصليين بزاف د المرات. وحتى المدن الكبيرة بحال البندقية (فينيزيا) ولا أمستردام ولات كتشوف هاد السياحة الجماعية بنظرة نقدية.",
+            "_id": "6b1fce0f9a07ac164720bc44"
+          },
+          {
+            "para": "Problematisch ist vor allem die Umweltverschmutzung, die sowohl durch die Schiffe selbst als auch durch die Touristinnen und Touristen verursacht wird. Der CO2-Ausstoß eines Kreuzfahrtschiffes pro Tag kann so hoch sein wie der von rund 80.000 Autos, und ein Reisender produziert am Tag fast doppelt so viel Müll wie eine einheimische Person. Wegen der hohen Besucherzahlen erleidet die Bausubstanz historischer Straßen und Plätze erhebliche Schäden. Bewohnerinnen und Bewohner klagen über Lärm, überfüllte Innenstädte und Straßen. Sie fühlen sich aus ihren Städten verdrängt, weil freier Wohnraum lieber für Ferienwohnungen genutzt wird oder zuvor frei zugängliche Plätze nur noch gegen Eintritt betreten werden dürfen. Viele lokale Geschäfte werden durch Souvenirshops oder überteuerte Cafés ersetzt. Die Bevölkerung fordert deshalb mehr Schutzmaßnahmen, damit Tourismus wieder für alle als Segen angesehen werden kann.\n",
+            "tr": "المشكل الكبير هو التلوث البيئي، لي كيسببو هاد السفن براسهم وحتى السياح. انبعاثات ثاني أكسيد الكربون ديال سفينة سياحية وحدة فالنهار يقدر يوصل لداكشي لي كتخرجو تقريبا 80 ألف طوموبيل، والمسافر الواحد كينتج زبل (نفايات) فالنهار الدوبل ديال داكشي لي كينتجو مواطن محلي. بسبب هاد الأعداد الكبيرة ديال الزوار، البنية ديال الشوارع والساحات التاريخية كتعرض لأضرار كبيرة. السكان كيتشكاو من الصداع، والزحام فوسط المدينة والشوارع. كيحسو براسهم بحال إلى تدفعو برا مدنهم، حيت الديور الخاوية ولات كتتكرى للسياح، والبلايص لي كانت شحال هادي فابور ولى الدخول ليها بالفلوس. بزاف ديال الحوانت المحلية تبدلات بحوانت ديال السوفونير ولا قهاوي غالية بزاف. داكشي علاش السكان كيطالبو بإجراءات حماية كثر، باش ترجع السياحة نعمة للجميع.",
+            "_id": "6b1fce0f9a07ac164720bc45"
+          }
+        ],
+        "fragen": [
+          {
+            "id": 6,
+            "text": "Kreuzfahrten werden immer beliebter wegen",
+            "options": [
+              {
+                "id": "a",
+                "text": "der vielfältigen und komfortablen Angebote an Bord.",
+                "tr": "العروض المتنوعة والمريحة على متن السفينة."
+              },
+              {
+                "id": "b",
+                "text": "des abwechslungsreichen und kompakten Reiseprogramms.",
+                "tr": "برنامج السفر المتنوع والمكثف."
+              },
+              {
+                "id": "c",
+                "text": "des zunehmend stressigen Auto- und Flugverkehrs.",
+                "tr": "حركة السيارات والطيران اللي ولات كتجيب الستريس."
+              }
+            ],
+            "antwort": "b",
+            "begründung": "النص كيقول بلي \"السبب الرئيسي لزيادة الشعبية ديالها هو اكتشاف بزاف ديال البلايص فواحد الوقت قصير\" (das Entdecken vieler Orte in kurzer Zeit). هادشي كيتوافق مع برنامج سفر متنوع ومكثف.",
+            "tr": "الرحلات البحرية ولات كتعجب الناس كثر بسبب"
+          },
+          {
+            "id": 7,
+            "text": "Von Kreuzfahrten profitieren am meisten",
+            "options": [
+              {
+                "id": "a",
+                "text": "Familien mit Kindern.",
+                "tr": "العائلات اللي عندهم دراري صغار."
+              },
+              {
+                "id": "b",
+                "text": "Jugendliche mit Entdeckerdrang.",
+                "tr": "الشباب اللي عندهم رغبة فالاكتشاف."
+              },
+              {
+                "id": "c",
+                "text": "Menschen mit Beeinträchtigungen.",
+                "tr": "الناس اللي عندهم إعاقات."
+              }
+            ],
+            "antwort": "c",
+            "begründung": "النص كيوضح بلي الناس اللي عندهم إعاقات جسدية هما اللي كينتفعو كثر (\"Sie ziehen sogar den größten Nutzen daraus\")، حيت هادي غالبا طريقتهم الوحيدة باش يسافرو لمسافات بعيدة.",
+            "tr": "اللي كيستافدو كثر من الرحلات البحرية هما"
+          },
+          {
+            "id": 8,
+            "text": "In kleineren Küstenstädten gibt es fast täglich mehr",
+            "options": [
+              {
+                "id": "a",
+                "text": "Kreuzfahrtschiffe als Einheimische.",
+                "tr": "سفن سياحية كثر من السكان الأصليين."
+              },
+              {
+                "id": "b",
+                "text": "Schwierigkeiten durch Kreuzfahrtschiffe.",
+                "tr": "صعوبات ومشاكل بسبب السفن السياحية."
+              },
+              {
+                "id": "c",
+                "text": "Touristen als Einheimische.",
+                "tr": "سياح كثر من السكان الأصليين."
+              }
+            ],
+            "antwort": "c",
+            "begründung": "النص كيقول بلي فالمدن الساحلية الصغيرة، عدد الركاب ديال السفن السياحية (يعني السياح) كيفوت عدد السكان الأصليين بزاف د المرات (\"übersteigt die Zahl der Kreuzfahrtpassagiere die Einwohnerzahl um ein Vielfaches\").",
+            "tr": "فالمدن الساحلية الصغيرة كيكون تقريبا كل نهار كاينين"
+          },
+          {
+            "id": 9,
+            "text": "Kreuzfahrtschiffe werden kritisiert, weil sie",
+            "options": [
+              {
+                "id": "a",
+                "text": "das Ansehen einer Stadt gefährden.",
+                "tr": "كيشكلو خطر على سمعة المدينة."
+              },
+              {
+                "id": "b",
+                "text": "die Luft verschmutzen.",
+                "tr": "كيلوثو الجو."
+              },
+              {
+                "id": "c",
+                "text": "zu viel Müll produzieren.",
+                "tr": "كينتجو بزاف ديال الزبل (النفايات)."
+              }
+            ],
+            "antwort": "b",
+            "begründung": "النص كيقول بلي انبعاثات الكاربون (CO2) ديال سفينة وحدة كيوصل لداكشي لي كتخرجو 80 ألف طوموبيل، يعني السفن براسها كتلوث الجو. الزبل (الخيار c) كينتجوه السياح كثر من السفن.",
+            "tr": "السفن السياحية كتعرض للانتقاد حيت هي"
+          },
+          {
+            "id": 10,
+            "text": "Viele Einheimische sind unzufrieden, weil",
+            "options": [
+              {
+                "id": "a",
+                "text": "die Infrastruktur überlastet ist.",
+                "tr": "البنية التحتية ولات عليها ضغط كبير."
+              },
+              {
+                "id": "b",
+                "text": "die Mietpreise steigen.",
+                "tr": "أسعار الكرا كترتفع."
+              },
+              {
+                "id": "c",
+                "text": "es zu wenig Polizeischutz gibt.",
+                "tr": "مكيناش حماية ديال البوليس كافية."
+              }
+            ],
+            "antwort": "a",
+            "begründung": "النص كيقول بلي السكان كيتشكاو من الصداع، الشوارع ووسط المدينة اللي عامرين بزاف (überfüllte Innenstädte und Straßen)، وهادشي كيعني بلي البنية التحتية مبقاتش قادرة تستحمل (überlastet).",
+            "tr": "بزاف ديال السكان الأصليين ممراضينش حيت"
+          }
+        ],
+        "fazit": [],
+        "id": 27,
+        "availableFor": "pro",
+        "niveau": "B2",
+        "note": "",
+        "taadilat": []
+      }
+    },
+    {
+      "collection": "lesen.B2.teil2",
+      "pointer": "/collections/8/records/39",
+      "themeKey": "sahla-b2-lebenslanges-lernen",
+      "partKey": "teil-2",
+      "source": {
+        "_id": "6a96ef38ab4e500a2d1290ea",
+        "titel": "Lebenslanges Lernen",
+        "photo": "",
+        "text": [
+          {
+            "para": "In einer Welt, die sich ständig verändert, ist Lernen längst nicht nur auf Schulzeit oder Studium beschränkt. Es begleitet uns ein Leben lang. Lebenslanges Lernen umfasst alle Lebensphasen und fördert berufliches Weiterkommen sowie persönliches Wohlbefinden.\n",
+            "isTitel": false,
+            "tr": "فواحد العالم لي ديما كيتبدل، التعلم مبقاش مقتصر غير على وقت المدرسة ولا القراية فالجامعة. هو غادي معانا طول حياتنا. التعلم مدى الحياة كيشمل كاع مراحل الحياة وكيعاون فالتطور المهني والراحة الشخصية.",
+            "isUpdated": false,
+            "_id": "6c2fce0f9a07ac164720bc46"
+          },
+          {
+            "para": "Der Psychologe Dr. Franz Schmidt erklärt, Lernen finde überall statt: beim Lesen eines Buches, auf Reisen oder beim Ausprobieren eines Hobbys. Neue Fähigkeiten und Fremdsprachen eröffneten Perspektiven und hielten geistig flexibel. Wer sich regelmäßig mit neuen Themen beschäftigt, entdeckt neue Möglichkeiten.\n",
+            "isTitel": false,
+            "tr": "الطبيب النفسي د. فرانز شميدت كيشرح بلي التعلم كيكون فاي بلاصة: ملي كتقرا كتاب، فالسفر ولا ملي كتجرب شي هواية. المهارات الجديدة واللغات الأجنبية كيفتحو أفاق وكيخليو العقل مرن. لي كيشغل راسو ديما بمواضيع جديدة كيكتاشف فرص جديدة.",
+            "isUpdated": false,
+            "_id": "6c2fce0f9a07ac164720bc47"
+          },
+          {
+            "para": "Neue Fähigkeiten tragen zu einem erfüllteren Leben bei. Musik, Sport, Malen oder Fotografieren fordern das Gehirn und können Stress abbauen. Auch der soziale Aspekt ist wichtig: Sprachkurse, Workshops und ehrenamtliche Tätigkeiten schaffen Kontakte. Für ältere Menschen kann Lernen Einsamkeit verhindern.\n",
+            "isTitel": false,
+            "tr": "المهارات الجديدة كتعاون باش تعيش حياة عامرة. الموسيقى، الرياضة، الرسم ولا التصوير كيخدمو الدماغ وكيقدرو ينقصو الستريس. الجانب الاجتماعي حتى هو مهم: حصص اللغات، الورشات والأعمال التطوعية كيخلقو علاقات. بالنسبة للناس الكبار، التعلم يقدر يحميهم من الوحدة.",
+            "isUpdated": false,
+            "_id": "6c2fce0f9a07ac164720bc48"
+          },
+          {
+            "para": "Studien belegen, dass lebenslanges Lernen das Gehirn jung hält. Neuroplastizität ermöglicht Veränderungen bis ins hohe Alter. Anspruchsvolle Tätigkeiten wie Schach oder Sprachen können das Demenzrisiko verringern. Sogenannte Super-Ager bleiben neugierig, stellen sich Herausforderungen und sind offen für Veränderungen.\n",
+            "isTitel": false,
+            "tr": "الدراسات كتبين بلي التعلم مدى الحياة كيخلي الدماغ شباب. المرونة العصبية (Neuroplastizität) كتسمح بالتغييرات حتى لسن متقدم. الأنشطة لي كتحتاج تفكير بحال الشطرنج ولا اللغات كتقدر تنقص من خطر الخرف. هادوك لي كيتسماو \"Super-Ager\" كيبقاو فيهم الفضول، كيتحدوا ريوسهم ومنفاتحين على التغييرات.",
+            "isUpdated": false,
+            "_id": "6c2fce0f9a07ac164720bc49"
+          },
+          {
+            "para": "Dank moderner Technologie ist Weiterbildung leicht zugänglich. Online-Kurse, Podcasts und Lern-Apps bieten zahlreiche Möglichkeiten, den eigenen Lernweg unabhängig vom Alter zu gestalten. Lernen ist eine Reise, die niemals endet.\n",
+            "isTitel": false,
+            "tr": "بفضل التكنولوجيا الحديثة، التكوين المستمر ولى ساهل توصل ليه. الكورسات فالأنترنيت، البودكاست وتطبيقات التعلم كيعطيو بزاف ديال الفرص باش الواحد ينظم طريق التعلم ديالو بوحدو وبلا ما يهم العمر. التعلم هو واحد الرحلة لي عمرها ما كتسالي.",
+            "isUpdated": false,
+            "_id": "6c2fce0f9a07ac164720bc4a"
+          }
+        ],
+        "fragen": [
+          {
+            "id": 6,
+            "text": "Lebenslanges Lernen",
+            "tr": "التعلم مدى الحياة",
+            "options": [
+              {
+                "id": "a",
+                "text": "erfordert eine berufliche sowie persönliche Weiterentwicklung.",
+                "tr": "كيتطلب تطور مهني وشخصي.",
+                "isUpdated": false
+              },
+              {
+                "id": "b",
+                "text": "ist ein geplanter Prozess während des gesamten Lebens.",
+                "tr": "هو عملية مخطط ليها طول الحياة.",
+                "isUpdated": false
+              },
+              {
+                "id": "c",
+                "text": "ist nicht mit der schulischen Bildung gleichzusetzen.",
+                "tr": "ما يمكنش نعتبروه بحالو بحال التعليم المدرسي.",
+                "isUpdated": false
+              }
+            ],
+            "antwort": "c",
+            "begründung": "النص كيقول بلي التعلم مبقاش مقتصر غير على المدرسة ولا الجامعة (\"ist Lernen längst nicht nur auf Schulzeit oder Studium beschränkt\")، وهادشي كيعني بلي ما خاصناش نربطوه ولا نقارنوه حصرياً بالتعليم المدرسي.",
+            "isUpdated": false
+          },
+          {
+            "id": 7,
+            "text": "Dr. Franz Schmidt betont, dass Lernen",
+            "tr": "د. فرانز شميدت كيأكد بلي التعلم",
+            "options": [
+              {
+                "id": "a",
+                "text": "in vielen alltäglichen Situationen geschieht.",
+                "tr": "كيطرى فبزاف ديال المواقف اليومية.",
+                "isUpdated": false
+              },
+              {
+                "id": "b",
+                "text": "von Fremdsprachen für alle zwingend erforderlich ist.",
+                "tr": "ديال اللغات الأجنبية ضروري بزاف للكل.",
+                "isUpdated": false
+              },
+              {
+                "id": "c",
+                "text": "vor allem der beruflichen Entwicklung dient.",
+                "tr": "كيصلح بالأساس للتطور المهني.",
+                "isUpdated": false
+              }
+            ],
+            "antwort": "a",
+            "begründung": "النص كيقول بلي التعلم كيكون فاي بلاصة (\"Lernen finde überall statt\") وعطى أمثلة بحال قراية كتاب، السفر، ولا تجربة هواية، وهادشي كيمثل مواقف يومية عادية.",
+            "isUpdated": false
+          },
+          {
+            "id": 8,
+            "text": "Der soziale Aspekt des Lernens",
+            "tr": "الجانب الاجتماعي ديال التعلم",
+            "options": [
+              {
+                "id": "a",
+                "text": "ermöglicht es, neue Kontakte zu knüpfen.",
+                "tr": "كيمكنك باش دير علاقات جديدة.",
+                "isUpdated": false
+              },
+              {
+                "id": "b",
+                "text": "fördert das Gefühl der Einsamkeit.",
+                "tr": "كيزيد من الإحساس بالوحدة.",
+                "isUpdated": false
+              },
+              {
+                "id": "c",
+                "text": "setzt kreative Fähigkeiten voraus.",
+                "tr": "كيتطلب مهارات إبداعية.",
+                "isUpdated": false
+              }
+            ],
+            "antwort": "a",
+            "begründung": "النص كيقول بلي الكورسات ديال اللغات، الورشات والأعمال التطوعية كيخلقو علاقات (\"schaffen Kontakte\")، وهادشي كيعني بناء علاقات وتواصل جديد.",
+            "isUpdated": false
+          },
+          {
+            "id": 9,
+            "text": "Die „Super-Ager“",
+            "tr": "الـ \"Super-Ager\"",
+            "options": [
+              {
+                "id": "a",
+                "text": "bevorzugen Routine und Stabilität.",
+                "tr": "كيفضلو الروتين والاستقرار.",
+                "isUpdated": false
+              },
+              {
+                "id": "b",
+                "text": "fühlen sich den Studien zufolge viel jünger.",
+                "tr": "كيحسو براسهم صغار بزاف على حساب الدراسات.",
+                "isUpdated": false
+              },
+              {
+                "id": "c",
+                "text": "sind Neuem gegenüber aufgeschlossen.",
+                "tr": "منفاتحين على الحوايج الجداد.",
+                "isUpdated": false
+              }
+            ],
+            "antwort": "c",
+            "begründung": "النص كيقول بلي الـ \"Super-Ager\" كيبقاو فيهم الفضول، كيتحدوا ريوسهم ومنفاتحين على التغييرات (\"sind offen für Veränderungen\").",
+            "isUpdated": false
+          },
+          {
+            "id": 10,
+            "text": "Die Digitalisierung",
+            "tr": "الرقمنة (التكنولوجيا)",
+            "options": [
+              {
+                "id": "a",
+                "text": "gibt den Menschen vor, welche Themen sie lernen sollen.",
+                "tr": "كتفرض على الناس شنو المواضيع لي خصهم يتعلمو.",
+                "isUpdated": false
+              },
+              {
+                "id": "b",
+                "text": "macht es allen möglich, das Lernen selbst zu organisieren.",
+                "tr": "كتخلي كلشي قادر ينظم التعلم ديالو لراسو.",
+                "isUpdated": false
+              },
+              {
+                "id": "c",
+                "text": "sorgt dafür, dass Lernen ausschließlich online stattfindet.",
+                "tr": "كتخلي التعلم يكون غير فالأنترنيت حصرياً.",
+                "isUpdated": false
+              }
+            ],
+            "antwort": "b",
+            "begründung": "النص كيقول بلي التكنولوجيا (الكورسات فالأنترنيت، التطبيقات...) كيعطيو فرص باش الواحد يقاد مسار التعلم ديالو لراسو وبطريقتو الخاصة (\"den eigenen Lernweg unabhängig vom Alter zu gestalten\").",
+            "isUpdated": false
+          }
+        ],
+        "fazit": [],
+        "id": 28,
+        "availableFor": "pro",
+        "niveau": "B2",
+        "note": "",
+        "taadilat": [],
+        "secendTitel": ""
+      }
+    },
+    {
+      "collection": "lesen.B2.teil3",
+      "pointer": "/collections/9/records/36",
+      "themeKey": "sahla-b2-geschaeftsreisen",
+      "partKey": "teil-3",
+      "source": {
+        "_id": "6a05b16fed1fa4e514ff26bb",
+        "titel": "Geschäftsreisen - رحلات العمل",
+        "situationen": [
+          {
+            "id": 11,
+            "text": "Ein Bekannter möchte auf seinen Geschäftsreisen mit seinem Auto immer schnell vorankommen.",
+            "Keywords": [
+              "Geschäftsreisen",
+              "mit seinem Auto",
+              "schnell vorankommen"
+            ],
+            "tr": "أحد المعارف يرغب في التقدم بسرعة خلال رحلاته التجارية بسيارته.",
+            "antwort": "e"
+          },
+          {
+            "id": 12,
+            "text": "Eine bekannte Familie sucht eine leistungsstarke Krankenversicherung.",
+            "Keywords": [
+              "Familie",
+              "leistungsstarke Krankenversicherung"
+            ],
+            "tr": "عائلة معروفة تبحث عن تأمين صحي قوي.",
+            "antwort": "d"
+          },
+          {
+            "id": 13,
+            "text": "Ein Bekannter sucht eine private Rentenversicherung, die ihm etwas auszahlt, wenn er 50 ist.",
+            "Keywords": [
+              "private Rentenversicherung",
+              "auszahlt, wenn er 50 ist"
+            ],
+            "tr": "أحد المعارف يبحث عن تأمين تقاعد خاص يصرف له مبلغاً عند بلوغه الخمسين.",
+            "antwort": "h"
+          },
+          {
+            "id": 14,
+            "text": "Eine Bekannte möchte sich über Urlaubsangebote informieren, hat aber keine Zeit, in ein Reisebüro zu gehen.",
+            "Keywords": [
+              "Urlaubsangebote",
+              "keine Zeit, in ein Reisebüro zu gehen"
+            ],
+            "tr": "إحدى المعارف ترغب في الحصول على معلومات عن عروض العطلات، لكنها لا تملك الوقت للذهاب إلى مكتب سفريات.",
+            "antwort": "c"
+          },
+          {
+            "id": 15,
+            "text": "Ihre Eltern möchten eine Kreuzfahrt im Mittelmeer unternehmen.",
+            "Keywords": [
+              "Kreuzfahrt",
+              "im Mittelmeer"
+            ],
+            "tr": "والداك يرغبان في القيام برحلة بحرية في البحر الأبيض المتوسط.",
+            "antwort": "b"
+          },
+          {
+            "id": 16,
+            "text": "Ein Bekannter sucht für seine Cousine einen Sportverein, in dem junge Talente gefördert werden.",
+            "Keywords": [
+              "Sportverein",
+              "junge Talente gefördert"
+            ],
+            "tr": "أحد المعارف يبحث عن نادٍ رياضي لابنة عمه حيث يتم دعم المواهب الشابة.",
+            "antwort": "x"
+          },
+          {
+            "id": 17,
+            "text": "Ein Bekannter interessiert sich für Geschichte sowie Kultur und möchte Urlaub in einer deutschen Weinregion machen.",
+            "Keywords": [
+              "Geschichte sowie Kultur",
+              "Urlaub",
+              "deutschen Weinregion"
+            ],
+            "tr": "أحد المعارف يهتم بالتاريخ والثقافة ويرغب في قضاء إجازة في منطقة نبيذ ألمانية.",
+            "antwort": "i"
+          },
+          {
+            "id": 18,
+            "text": "Sie suchen ein Auto mit Platz für bis zu 5 Personen, aber einem möglichst geringen Benzinverbrauch.",
+            "Keywords": [
+              "Auto",
+              "Platz für bis zu 5 Personen",
+              "geringen Benzinverbrauch"
+            ],
+            "tr": "تبحثون عن سيارة تتسع لخمسة أشخاص كحد أقصى وتستهلك أقل كمية ممكنة من الوقود.",
+            "antwort": "k"
+          },
+          {
+            "id": 19,
+            "text": "Sie möchten vor einer Auslandsreise eine Auslandskrankenversicherung für die ganze Familie abschließen.",
+            "Keywords": [
+              "Auslandskrankenversicherung",
+              "für die ganze Familie"
+            ],
+            "tr": "ترغبون في الحصول على تأمين صحي دولي للعائلة بأكملها قبل السفر إلى الخارج.",
+            "antwort": "x"
+          },
+          {
+            "id": 20,
+            "text": "Eine bekannte Familie möchte einen Urlaub machen, der auch für ihre 3- und 5-jährigen Kinder interessant ist.",
+            "Keywords": [
+              "Urlaub machen",
+              "für ihre 3- und 5-jährigen Kinder interessant"
+            ],
+            "tr": "عائلة معروفة ترغب في القيام بعطلة تكون ممتعة أيضاً لأطفالهم الذين تتراوح أعمارهم بين 3 و5 سنوات.",
+            "antwort": "f"
+          }
+        ],
+        "anzeigen": [
+          {
+            "id": "a",
+            "text": "Sicherheit heißt, Risiken zu vermeiden.\nWir setzen noch einen Schritt davor an: Risiken sollten gar nicht erst entstehen. Dafür arbeiten wir in unserem Allianz-Zentrum für Technik. Und wenn doch etwas passiert: Ein Anruf genügt und wir helfen schnell und unbürokratisch, rund um die Uhr. Denn in der Allianz AutoPlus-Versicherung ist der Schutzbrief gleich mit drin. Und der Auslandsschadenschutz hilft Ihnen in vielen Ländern Europas zusätzlich, wenn Sie unverschuldet in einen Verkehrsunfall verwickelt werden.\nNähere Informationen erhalten Sie im Internet unter www.allianz.de und bei einem Allianz-Fachmann in Ihrer Nähe.",
+            "fazit": "تأمين سيارات من أليانز مع حماية في الخارج من حوادث المرور، لا يتطابق مع أي من المواقف المذكورة.",
+            "Keywords": []
+          },
+          {
+            "id": "b",
+            "text": "Ein Fest für die Sinne!\nBleiben Sie sich in den besten Jahren Ihres Lebens mit einer traumhaften Reise. Luxus ist, was man daraus macht! Und bei uns heißt das: eine Schiffsreise der absoluten Extraklasse – so traumhaft, wie man es sich immer gewünscht hat. Bereisen Sie damit die ganze Welt oder einen kleinen Teil von ihr – wählen Sie Ihr Lieblingsziel aus unserer vielfältigen Angebot. Natürlich inklusive Spitzengastronomie, Kino, Theater und Wellnessbereich – und das auf Flüssen sowie Meeren. Ganz locker und selbstverständlich ohne Kleiderzwang.\nwww.a-rosa.de",
+            "fazit": "إعلان عن رحلات بحرية فاخرة عبر الأنهار والبحار (Schiffsreise)، مناسب جداً للوالدين اللذين يرغبان في القيام برحلة بحرية في البحر الأبيض المتوسط.",
+            "Keywords": [
+              "Schiffsreise der absoluten Extraklasse",
+              "auf Flüssen sowie Meeren"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Trigana bietet die komplette Reisewelt auf einen Klick!\nVon der Pauschalreise oder attraktiven Last-Minute-Angeboten bis hin zu Flügen, Hotels und Mietwagen: einfach online vergleichen, nach Belieben kombinieren und direkt buchen. Bequem von zu Hause aus – rund um die Uhr. Natürlich erfahren Sie bei Trigana auch alles Wissenswerte zu Ihrem Urlaubsziel: das Wetter, die schönsten Sehenswürdigkeiten, beste Restaurants und vieles mehr.\nReisen Sie nicht auf gut Glück, sondern mit Trigana.\nInfos: www.trigana.de",
+            "fazit": "موقع إلكتروني يتيح مقارنة وحجز العطلات والرحلات عبر الإنترنت من المنزل (Bequem von zu Hause aus)، مثالي لشخص يريد معلومات عن السفر ولكن ليس لديه وقت للذهاب إلى مكتب السياحة.",
+            "Keywords": [
+              "auf einen Klick",
+              "online vergleichen",
+              "Bequem von zu Hause aus"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "EINFACH GUT STATT NUR GÜNSTIG.\nWas passiert, wenn sich Ihr Kind beim Spielen verletzt und zum Arzt muss, vielleicht sogar ins Krankenhaus? Selbstverständlich nicht die Krankenkasse die Kosten. Aber Sie möchten mehr – eine optimale Versorgung nicht nur für sich selbst, sondern die ganze Familie. Dann wählen Sie die Fürther Allgemeine als Ihre neue Krankenversicherung. Die Fürther Allgemeine mit dem Rundum-sorglos-Paket für die ganze Familie. Bleiben Sie bei Ihrem Kind, wenn es ins Krankenhaus muss – wir stehen Ihnen auch 24 Stunden am Tag unterstützend zur Seite – das und vieles mehr leistet die Fürther Allgemeine. Bei uns erhalten Sie nicht den günstigsten Tarif, sondern die beste Versorgung.\nwww.fuerther-allgemeine.org",
+            "fazit": "تأمين صحي عائلي شامل يركز على تقديم أفضل رعاية طبية بدلاً من أرخص سعر، وهو يتطابق تماماً مع عائلة تبحث عن تأمين صحي قوي وفعال.",
+            "Keywords": [
+              "Krankenversicherung",
+              "optimale Versorgung",
+              "Rundum-sorglos-Paket für die ganze Familie"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "Leb wohl, Stau. Leb wohl, erfolglose Hotelsuche.\nLeb wohl, schlechter Restaurant-Tipp.\nDenn dank der aktiven Unterstützung von Assist müssen Sie als Fahrer viele unerfreuliche Seiten der Mobilität nicht mehr erleben. Assist informiert über aktuelle Verkehrssituation, gibt Stauwarnungen und empfiehlt Alternativrouten. Mit dem Mobilfunknetz ermittelt das System sogar Ihren Standort und leistet automatisch Hilfe. Gewünschte Informationen wie z. B. 3 Multirouten-Vergleiche mit aktueller Stauwarnung oder Branchenbuchs werden Ihnen per Datenübertragung direkt in Ihr Navigationssystem gesendet. Sie sehen: Als Fahrer auf das Wesentliche konzentrieren – mit Assist – jetzt bei Ihrem Autohändler.",
+            "fazit": "نظام ملاحة ذكي للسيارات يقدم معلومات عن حالة المرور، تنبيهات الازدحام، ويقترح مسارات بديلة. مثالي لشخص يريد الوصول بسرعة دائماً في رحلات العمل بالسيارة.",
+            "Keywords": [
+              "Stauwarnungen",
+              "Alternativrouten",
+              "Navigationssystem"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "SCHIFFSREISE ... mal anders!\nEntdecken Sie mit der ganzen Familie Deutschland neu. Auf unserem modernen Ausflugsschiff „Pippi Langstrumpf“ gibt es kleine wie große Tanzeinlagen, Restaurants, in denen man Anzug tragen muss – nein, das müssen Sie sich nicht vorstellen! Sie schippern ganz locker auf einem Schiff, ein Entdeckermuseum, in dem die Kleinen alles selbst machen können und Flüsse in Deutschland entdecken, während Sie sich eine echte Piratenrestaurant, in dem die kleinen Seeräuber kochen können. Da wird es nie langweilig! Und während sich unsere erfahrenen Betreuer um Ihre kleinen kümmern, können die Eltern ganz entspannt die Landschaft bewundern – oder doch mal einen Tee trinken. Nehmen Sie über Ihre Reisen mit der „Pippi Langstrumpf“ in Ihrem Reisebüro!",
+            "fazit": "رحلة نهرية مخصصة للعائلات وتتضمن نشاطات ترفيهية للأطفال الصغار (مثل متحف استكشافي ومطعم قراصنة) مع وجود مشرفين، مناسبة لعائلة لديها أطفال في سن 3 و5 سنوات.",
+            "Keywords": [
+              "Ausflugsschiff",
+              "die Kleinen alles selbst machen können",
+              "Betreuer um Ihre kleinen kümmern"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Bundeswertpapiere helfen in den Sattel.\nOb große Dressurhoffnung, Tennistalent oder begabter Kicker: Damit Ihr Nachwuchs später auf dem Siegertreppchen landet, sollten Sie ihre familiären Förderung früh genug mit Bundeswertpapieren auf Trab bringen. Bundeswertpapiere mit Laufzeiten von ein bis zehn Jahren – jetzt umsteigen auf Bundeswertpapiere mit jährlicher Zinszahlung und absoluter Sicherheit abgesichert ist. Bundeswertpapiere erhalten Sie bei Kreditinstituten und allen Landeszentralbanken.\nwww.bwonline.de",
+            "fazit": "إعلان عن سندات حكومية لتأمين وتوفير المال لمستقبل الأطفال. لا يتطابق مع الموقف 16 الذي يبحث عن نادٍ رياضي فعلي وليس دعماً مالياً.",
+            "Keywords": []
+          },
+          {
+            "id": "h",
+            "text": "Statistisch gesehen arbeitet ein Mensch 35,7 Jahre seines Lebens. Für uns ist Ihr Leben schon ein Startwerk. Es ist einzigartig. Daher bieten wir Ihnen eine Altersvorsorge, die sich persönlich auf Ihr Leben abstimmt ist. Gehen Sie an den Ruhestand wie Sie es wollen. Bauen Sie jederzeit Vermögen nach Ihren Vorstellungen auf. Sprechen Sie mit unseren kompetenten Partnern und entscheiden Sie selbst, wie lange Sie arbeiten wollen. Wir begleiten Sie. Wir sichern Sie. Ein Leben lang.\nwww.AXIS.de",
+            "fazit": "خطة تأمين للتقاعد (Altersvorsorge) مرنة وشخصية تتيح للشخص تحديد متى يريد التقاعد والتوقف عن العمل. هذا يتطابق مع شخص يريد تأميناً يدفع له عندما يبلغ الخمسين.",
+            "Keywords": [
+              "Altersvorsorge",
+              "Gehen Sie an den Ruhestand wie Sie es wollen",
+              "entscheiden Sie selbst, wie lange Sie arbeiten wollen"
+            ]
+          },
+          {
+            "id": "i",
+            "text": "Für alle, die in Kellern nicht nur Discos suchen. Tauchen Sie dann doch einfach mal zur Historie von Speyer im Keller des Speyrer Doms. Oder besuchen Sie einer der zahlreichen Weinkeller, um ein gutes Glas zu trinken. Die Pfalz.\nwww.suedlicheweinstrasse.de",
+            "fazit": "دعوة سياحية لزيارة منطقة \"بفالتس\" (Pfalz) لاكتشاف التاريخ (Historie) وزيارة أقبية النبيذ (Weinkeller)، وهو مثالي لمن يهتم بالتاريخ والثقافة ويريد قضاء عطلة في منطقة نبيذ ألمانية.",
+            "Keywords": [
+              "Historie",
+              "Weinkeller",
+              "Die Pfalz"
+            ]
+          },
+          {
+            "id": "j",
+            "text": "Nicht genug Platz?\nDie Welt mitgestalten. Neue Möbel kaufen, Material für den Umbau in der Wohnung transportieren – das können die meisten Heimwerker und Familien mit dem richtigen Fahrzeug fahren, nämlich jetzt mit dem Vaneo. Mit bis zu 3.000 Litern Laderaum, zwei Schiebetüren und zahlreichen Sicherheitsmerkmalen ausgestattet. Und natürlich mit Platz für Sie und eine ganze Familie.\nEntdecken Sie Ihren Vaneo.\nwww.autohaus-miltner.de",
+            "fazit": "إعلان لسيارة (Vaneo) توفر مساحة تخزين ضخمة للعائلات. لا تتطابق بشكل تام مع الموقف 18 لأنه لم يتم ذكر استهلاك الوقود المنخفض هنا.",
+            "Keywords": []
+          },
+          {
+            "id": "k",
+            "text": "Was immer Sie von einem kompakten Automobil erwarten – der Jazz übertrifft Ihre Vorstellungen.\nAngefangen bei seinem neuen 1.4 i-DSI-Motor, der auch äußerst niedrigen Kraftstoffverbrauch aufweist. Deshalb könnte der Tank besonders flach ausfallen – das bedeutet: weniger Gewicht, wo man ihn wohl am wenigsten erwartet: unter dem Fahrersitz. So gewinnen Sie enorm viel Platz spart. Und das ist der Grund, warum Ihnen der neue Jazz den größten und flexibelsten Innenraum seiner Klasse bietet – nicht nur für Sie selbst, sondern für die ganze Familie.\nMehr Informationen dürfen Sie unter www.jazz.de erwarten.",
+            "fazit": "سيارة مدمجة توفر مساحة واسعة تناسب العائلة بكاملها، وتتميز باستهلاك منخفض جداً للوقود (niedrigen Kraftstoffverbrauch)، وهذا يطابق المطلوب تماماً.",
+            "Keywords": [
+              "niedrigen Kraftstoffverbrauch",
+              "viel Platz spart",
+              "für die ganze Familie"
+            ]
+          },
+          {
+            "id": "l",
+            "text": "„Die WK weiß, wie Vater Staat meine Rente fördert.“\nUnd das ist auch gut so, denn die Rentenreform lässt mehr Fragen offen, als sie beantwortet. Mit der Förder-Invest-Rente der WK können Sie das Beste aus dieser Reform machen. Wir sagen Ihnen, wie Sie heute Ihre gesetzliche Rente ergänzen, damit Sie nach Ihrem Arbeitsleben mit Mitte sechzig eine optimale Rente erhalten. Jahr für Jahr erhalten Sie außerdem Zulagen von Vater Staat. Viele Arbeitnehmer in der gesetzlichen Rentenversicherung können die staatliche Förderung in Anspruch nehmen – und sie sollten es, damit private Vorsorge nicht nur auf dem Papier Zukunft hat.\nwww.wk.de",
+            "fazit": "تأمين تقاعدي للاستفادة من دعم الدولة والتقاعد في منتصف الستينيات. لا يطابق أي موقف متبقٍ.",
+            "Keywords": []
+          }
+        ],
+        "id": 30,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil3",
+      "pointer": "/collections/9/records/41",
+      "themeKey": "sahla-b2-geschenk-fuer-ihren-zehnjaehrigen",
+      "partKey": "teil-3",
+      "source": {
+        "_id": "692ca2310c22fb3ffec05192",
+        "titel": "Geschenk für Ihren zehnjährigen",
+        "situationen": [
+          {
+            "id": 11,
+            "text": "Sie suchen ein Geschenk für Ihren zehnjährigen lesebegeisterten Neffen.",
+            "Keywords": [
+              "Geschenk",
+              "zehnjährigen",
+              "lesebegeisterten",
+              "Neffen"
+            ],
+            "tr": "تبحث عن هدية لابن أخيك البالغ من العمر عشر سنوات والمحب للقراءة.",
+            "antwort": "b"
+          },
+          {
+            "id": 12,
+            "text": "Sie möchten etwas über die Geschichte des Altertums erfahren.",
+            "Keywords": [
+              "Geschichte",
+              "Altertums",
+              "erfahren"
+            ],
+            "tr": "ترغب في معرفة شيء عن تاريخ العصور القديمة.",
+            "antwort": "f"
+          },
+          {
+            "id": 13,
+            "text": "Ihre Freundin wünscht sich einen festlichen Start ins neue Jahr.",
+            "Keywords": [
+              "Freundin",
+              "festlichen Start",
+              "neue Jahr"
+            ],
+            "tr": "صديقتك ترغب في بداية احتفالية للعام الجديد.",
+            "antwort": "d"
+          },
+          {
+            "id": 14,
+            "text": "Sie möchten sich über berühmte Seefahrer und Entdecker informieren.",
+            "Keywords": [
+              "berühmte Seefahrer",
+              "Entdecker",
+              "informieren"
+            ],
+            "tr": "ترغب في الحصول على معلومات حول البحارة والمستكشفين المشهورين.",
+            "antwort": "x"
+          },
+          {
+            "id": 15,
+            "text": "Ihr bewegungsfreudiger Bekannter braucht einen Nebenjob.",
+            "Keywords": [
+              "bewegungsfreudiger",
+              "Bekannter",
+              "Nebenjob"
+            ],
+            "tr": "أحد معارفك الذي يحب الحركة يحتاج إلى وظيفة بدوام جزئي.",
+            "antwort": "l"
+          },
+          {
+            "id": 16,
+            "text": "Sie suchen nach Outdoor-Aktivitäten für heiße Sommertage.",
+            "Keywords": [
+              "Outdoor-Aktivitäten",
+              "heiße Sommertage"
+            ],
+            "tr": "تبحث عن أنشطة في الهواء الطلق لأيام الصيف الحارة.",
+            "antwort": "x"
+          },
+          {
+            "id": 17,
+            "text": "Ihre Chefin sammelt Ideen für eine maßgeschneiderte Unternehmung mit dem Team.",
+            "Keywords": [
+              "Chefin",
+              "Ideen",
+              "maßgeschneiderte Unternehmung",
+              "Team"
+            ],
+            "tr": "مديرتك تجمع أفكارًا لنشاط مخصص مع الفريق.",
+            "antwort": "j"
+          },
+          {
+            "id": 18,
+            "text": "Ihre Bekannte möchte Gebäude berühmter Architekten sehen.",
+            "Keywords": [
+              "Bekannte",
+              "Gebäude",
+              "berühmter Architekten",
+              "sehen"
+            ],
+            "tr": "صديقتك ترغب في رؤية مباني لمهندسين معماريين مشهورين.",
+            "antwort": "i"
+          },
+          {
+            "id": 19,
+            "text": "Sie möchten den Hafen aus einer neuen Perspektive erleben.",
+            "Keywords": [
+              "Hafen",
+              "neuen Perspektive",
+              "erleben"
+            ],
+            "tr": "ترغب في تجربة الميناء من منظور جديد.",
+            "antwort": "x"
+          },
+          {
+            "id": 20,
+            "text": "Ihr Freund möchte gern alte Schiffe besichtigen.",
+            "Keywords": [
+              "Freund",
+              "alte Schiffe",
+              "besichtigen"
+            ],
+            "tr": "صديقك يرغب في رؤية سفن قديمة.",
+            "antwort": "h"
+          }
+        ],
+        "anzeigen": [
+          {
+            "id": "a",
+            "text": "Moderne Architektur - ein umstrittener Baustil. Vortrag über die Bauhaus-Bewegung, funktionale Materialien und bekannte Beispiele wie Bauhaus und Villa Savoye. Mo., 15.11., 19 Uhr, Kunsthalle. Eintritt frei.",
+            "fazit": "إعلان عن محاضرة حول الهندسة المعمارية الحديثة، وبالتحديد حركة الباوهاوس، المواد العملية وأمثلة مشهورة بحال فيلا سافوي. الدخول مجاني.",
+            "Keywords": [
+              "Moderne Architektur",
+              "Baustil",
+              "Vortrag",
+              "Bauhaus-Bewegung"
+            ]
+          },
+          {
+            "id": "b",
+            "text": "Entdeckungsreise durch die Hamburger Stadtgeschichte. Kinderlesung mit Hamburger Sagen und Legenden, Störtebeker, Hexen, Riesen, Teufeln und Prinzessinnen.",
+            "fazit": "قراءة للأطفال حول تاريخ مدينة هامبورغ، أساطيرها وقصصها الخيالية بحال الساحرات والأميرات.",
+            "Keywords": [
+              "Entdeckungsreise",
+              "Hamburger Stadtgeschichte",
+              "Kinderlesung",
+              "Sagen und Legenden"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Vom Arbeiten und Leben auf Frachtschiffen. Kapitän Johannes Eisen berichtet über Bordalltag, Hafen, See und Besatzung. 13. Februar, 16 Uhr, Traditionsschiff im Frachthafen. Eintritt 8 Euro.",
+            "fazit": "قبطان كيعاود على الحياة والعمل في سفن الشحن، الحياة اليومية على متن السفينة، والميناء. الفعالية في سفينة تقليدية.",
+            "Keywords": [
+              "Frachtschiffen",
+              "Kapitän",
+              "Bordalltag",
+              "Traditionsschiff"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "800. Stadtgeburtstag. Jahresprogramm vom Neujahrskonzert über ein Stadtfest bis zur großen Silvester-Lasershow in der historischen Altstadt.",
+            "fazit": "احتفال بالذكرى 800 لتأسيس المدينة. برنامج سنوي كيبدا بحفل رأس السنة، مهرجان المدينة وكيسالي بعرض ليزر كبير في ليلة رأس السنة في المدينة القديمة.",
+            "Keywords": [
+              "Stadtgeburtstag",
+              "Jahresprogramm",
+              "Neujahrskonzert",
+              "Silvester-Lasershow"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "Deutsches Museum sucht Mitarbeiter/in. Teilzeitstelle im Ausstellungsdienst für den Kinderbereich; Aufsicht, Wartung und Mitarbeit an pädagogischen Programmen.",
+            "fazit": "المتحف الألماني كيقلب على موظف/ة بدوام جزئي في قسم الأطفال، للمراقبة، الصيانة والمشاركة في البرامج التعليمية.",
+            "Keywords": [
+              "Deutsches Museum",
+              "Mitarbeiter/in",
+              "Teilzeitstelle",
+              "Kinderbereich"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "Sonderausstellung „Antike Welten“. Kulturgeschichte der Griechen, Etrusker und Römer; antike Kunst, Porträts und die „Zeit der Helden“. Di.-So. 9-18 Uhr.",
+            "fazit": "معرض خاص حول \"العوالم القديمة\"، كيتناول التاريخ الثقافي لليونانيين، الإتروسكان والرومان، الفن القديم وزمن الأبطال.",
+            "Keywords": [
+              "Sonderausstellung",
+              "Antike Welten",
+              "Kulturgeschichte",
+              "Griechen",
+              "Römer"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Winterliche Hafenrundfahrt. Einstündige Rundfahrt durch den Hamburger Hafen mit Geschichten und Heißgetränk. Tickets online oder vor Ort.",
+            "fazit": "جولة شتوية لمدة ساعة في ميناء هامبورغ مع قصص ومشروب ساخن. التذاكر متاحة عبر الإنترنت أو في عين المكان.",
+            "Keywords": [
+              "Winterliche Hafenrundfahrt",
+              "Rundfahrt",
+              "Hamburger Hafen",
+              "Heißgetränk"
+            ]
+          },
+          {
+            "id": "h",
+            "text": "Winterattraktionen im Museumshafen. Historische und moderne Schiffe, darunter alte Segelschiffe; Einblick in die maritime Vergangenheit.",
+            "fazit": "معالم جذب شتوية في ميناء المتحف. كيتعرضوا سفن تاريخية وحديثة، منها سفن شراعية قديمة، باش تاخد نظرة على الماضي البحري.",
+            "Keywords": [
+              "Winterattraktionen",
+              "Museumshafen",
+              "Historische und moderne Schiffe",
+              "alte Segelschiffe"
+            ]
+          },
+          {
+            "id": "i",
+            "text": "Architektur-Ikonen in Düsseldorf. Führung vom historischen Stahlhof über den Medienhafen bis zum modernen Kö-Bogen.",
+            "fazit": "جولة سياحية لاكتشاف أيقونات الهندسة المعمارية في دوسلدورف، من الأماكن التاريخية حتى الحديثة.",
+            "Keywords": [
+              "Architektur-Ikonen",
+              "Führung",
+              "historischen",
+              "modernen"
+            ]
+          },
+          {
+            "id": "j",
+            "text": "Gästeführerin in Rostock. Individuelle Stadt- und Fahrradtouren, Betriebs- und Studienausflüge; Führungen auch auf Englisch.",
+            "fazit": "مرشدة سياحية في روستوك كتقدم جولات فردية في المدينة وعلى الدراجات، بالإضافة إلى رحلات الشركات والدراسة، حتى باللغة الإنجليزية.",
+            "Keywords": [
+              "Gästeführerin",
+              "Individuelle",
+              "Fahrradtouren",
+              "Betriebsausflüge"
+            ]
+          },
+          {
+            "id": "k",
+            "text": "Messe Schiff und Boot. Wassersportmesse mit Tauchen, Surfen, Stand-up-Paddling, Kanufahren, Workshops und Mitmachaktionen.",
+            "fazit": "معرض للسفن والقوارب والرياضات المائية بحال الغوص، ركوب الأمواج، التجديف، مع ورشات عمل وأنشطة تفاعلية.",
+            "Keywords": [
+              "Messe Schiff und Boot",
+              "Wassersportmesse",
+              "Tauchen",
+              "Surfen"
+            ]
+          },
+          {
+            "id": "l",
+            "text": "Stadtführer/in in Hamburg werden. Nebenjob für kommunikative, zuverlässige Menschen mit Fremdsprachenkenntnissen. Stundenlohn 15 Euro.",
+            "fazit": "فرصة عمل كمرشد/ة سياحي/ة في هامبورغ. عمل بدوام جزئي للناس اللي كيتواصلو مزيان وعندهم لغات أجنبية. الأجر 15 يورو للساعة.",
+            "Keywords": [
+              "Stadtführer/in",
+              "werden",
+              "Nebenjob",
+              "Fremdsprachenkenntnissen"
+            ]
+          }
+        ],
+        "id": 31,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.teil3",
+      "pointer": "/collections/9/records/42",
+      "themeKey": "sahla-b2-ein-austauschjahr",
+      "partKey": "teil-3",
+      "source": {
+        "_id": "692ca2310c22fb3ffec05193",
+        "titel": "ein Austauschjahr",
+        "situationen": [
+          {
+            "id": 11,
+            "text": "Ihre Tochter interessiert sich für ein Austauschjahr an einer Schule im Ausland.",
+            "Keywords": [
+              "Tochter",
+              "Austauschjahr",
+              "Schule im Ausland"
+            ],
+            "tr": "ابنتك مهتمة بقضاء سنة دراسية للتبادل في مدرسة بالخارج.",
+            "antwort": "x"
+          },
+          {
+            "id": 12,
+            "text": "Ihr Sohn überlegt, nach der Schule eine Ausbildung zum Schreiner zu machen.",
+            "Keywords": [
+              "Sohn",
+              "Ausbildung",
+              "Schreiner"
+            ],
+            "tr": "ابنك يفكر في القيام بتدريب مهني كنجار بعد المدرسة.",
+            "antwort": "g"
+          },
+          {
+            "id": 13,
+            "text": "Ihre Dachwohnung ist im Winter sehr kalt und Sie wollen Energie sparen.",
+            "Keywords": [
+              "Dachwohnung",
+              "Winter sehr kalt",
+              "Energie sparen"
+            ],
+            "tr": "شقتك في الطابق العلوي باردة جدًا في الشتاء وترغب في توفير الطاقة.",
+            "antwort": "j"
+          },
+          {
+            "id": 14,
+            "text": "Sie möchten fertige Mahlzeiten bekommen und nicht selbst kochen.",
+            "Keywords": [
+              "fertige Mahlzeiten",
+              "nicht selbst kochen"
+            ],
+            "tr": "ترغب في الحصول على وجبات جاهزة ولا ترغب في الطبخ بنفسك.",
+            "antwort": "k"
+          },
+          {
+            "id": 15,
+            "text": "Ihre Freundin möchte ihre Küche modernisieren und sucht professionelle Hilfe.",
+            "Keywords": [
+              "Küche modernisieren",
+              "professionelle Hilfe"
+            ],
+            "tr": "صديقتك ترغب في تحديث مطبخها وتبحث عن مساعدة احترافية.",
+            "antwort": "x"
+          },
+          {
+            "id": 16,
+            "text": "Sie möchten regelmäßig frisches Obst und Gemüse nach Hause zugestellt bekommen.",
+            "Keywords": [
+              "regelmäßig",
+              "frisches Obst und Gemüse",
+              "nach Hause zugestellt"
+            ],
+            "tr": "ترغب في الحصول على فواكه وخضروات طازجة توصل إلى منزلك بانتظام.",
+            "antwort": "l"
+          },
+          {
+            "id": 17,
+            "text": "Sie möchten einen Sprachkurs besuchen, um im Job voranzukommen.",
+            "Keywords": [
+              "Sprachkurs",
+              "Job voranzukommen"
+            ],
+            "tr": "ترغب في حضور دورة لغة للتقدم في عملك.",
+            "antwort": "f"
+          },
+          {
+            "id": 18,
+            "text": "Sie haben keine Zeit zum Putzen und brauchen eine regelmäßige Reinigungshilfe.",
+            "Keywords": [
+              "keine Zeit zum Putzen",
+              "regelmäßige Reinigungshilfe"
+            ],
+            "tr": "ليس لديك وقت للتنظيف وتحتاج إلى مساعدة منتظمة في التنظيف.",
+            "antwort": "d"
+          },
+          {
+            "id": 19,
+            "text": "Ihr Bekannter benötigt kurzfristig Unterstützung bei einem Umzug.",
+            "Keywords": [
+              "kurzfristig Unterstützung",
+              "Umzug"
+            ],
+            "tr": "يحتاج أحد معارفك إلى دعم عاجل في الانتقال (الرحيل).",
+            "antwort": "e"
+          },
+          {
+            "id": 20,
+            "text": "Sie suchen für Ihr Grundschulkind eine sinnvolle Betreuung am Nachmittag.",
+            "Keywords": [
+              "Grundschulkind",
+              "Betreuung",
+              "am Nachmittag"
+            ],
+            "tr": "تبحث عن رعاية مفيدة لطفلك في المدرسة الابتدائية في فترة ما بعد الظهر.",
+            "antwort": "i"
+          }
+        ],
+        "anzeigen": [
+          {
+            "id": "a",
+            "text": "Gestalten statt nur einrichten. Unser erfahrenes Team plant mit Ihnen ein maßgeschneidertes Konzept für Ihre Räume - von modernen Bodenbelägen über hochwertige Türen bis hin zu innovativen Lichtlösungen. Wir kümmern uns um Malerarbeiten, Badmodernisierung, Elektroinstallationen und maßgefertigte Einbauten. Alles aus einer Hand: Planung in 3D, fachgerechte Demontage, zuverlässige Lieferung und präzise Montage. Ob kleine Veränderungen oder Komplettumbau - wir bieten transparente Angebote, verbindliche Zeitpläne und fünf Jahre Garantie.",
+            "fazit": "فريق خبير كيقدّم تصاميم مخصصة للغرف، من الأرضيات للإضاءة. كيتكلفو بكلشي: صباغة، تجديد الحمامات، وتركيب الكهرباء. الخدمة كاملة من جهة وحدة مع ضمانة 5 سنين.",
+            "Keywords": [
+              "Gestalten",
+              "maßgeschneidertes Konzept",
+              "Badmodernisierung",
+              "Elektroinstallationen"
+            ]
+          },
+          {
+            "id": "b",
+            "text": "Dachwohnung und Raumklima. Einfach wohler fühlen: Unsere kompakten Geräte mit Abluftschlauch benötigen nur eine Steckdose und sorgen zuverlässig für ein angenehmes Raumklima. Gerade in Dachwohnungen oder Büros unter dem Dach, wo sich die Luft schnell staut, bringen sie spürbare Erleichterung - dauerhaft frische Umgebung und angenehm kühle Luft. Wenn es Richtung Winter kühler wird, können die Geräte zusätzlich als Heizung genutzt werden. Persönliche Beratung täglich 10-18 Uhr.",
+            "fazit": "أجهزة مدمجة باش تحس بالراحة فدارك، كتحسن الجو خصوصا فالشقق اللي فالعلية. كتعطي برودة فالصيف وممكن تستعمل كتدفئة فالشتاء.",
+            "Keywords": [
+              "Dachwohnung",
+              "Raumklima",
+              "kompakten Geräte",
+              "kühle Luft",
+              "Heizung"
+            ]
+          },
+          {
+            "id": "c",
+            "text": "KochBoxPlus - Zutaten frei Haus. Frisch kochen ohne Einkaufsstress? Mit KochBoxPlus bekommen Sie wöchentlich eine Box voller Zutaten samt Rezepten bequem nach Hause geliefert. Alle Lebensmittel sind sorgfältig ausgewählt, praktisch portioniert und direkt für die Zubereitung geeignet. Die Auswahl reicht von internationaler Küche bis zu regionalen Klassikern. Die Boxen sind flexibel kündbar und eignen sich sowohl für Singles als auch für Familien.",
+            "fazit": "صندوق كيوصلك للدار كل سيمانة فيه مكونات طازجة ووصفات للطبخ باش طيب بلا ما تبرزط راسك مع التقضية. مناسب للعزاب والعائلات.",
+            "Keywords": [
+              "KochBoxPlus",
+              "Zutaten frei Haus",
+              "Box",
+              "Rezepten"
+            ]
+          },
+          {
+            "id": "d",
+            "text": "Mehr Zeit für die schönen Dinge im Leben. Sie möchten Ihre freie Zeit nicht mit Hausarbeit verbringen? Unsere Haushaltshilfen kommen zu Ihnen und sorgen für ein gepflegtes Ambiente. Ob Küche, Bad oder Wohnbereich: Unsere Fachkräfte arbeiten sorgfältig, vertrauensvoll und unter Einhaltung aktueller Hygienestandards. Sie entscheiden selbst, wie oft und zu welchen Zeiten unsere Mitarbeiter eingesetzt werden. Auf Wunsch übernehmen wir auch zusätzliche Aufgaben wie Bügeln oder Einkaufen.",
+            "fazit": "خدمة للمساعدة في أشغال الدار باش توفر وقتك. عمال محترفين كينظفو المطبخ، الحمام وغرفة المعيشة. تقدر تختار الوقت والمهام الإضافية بحال التحديد والتقضية.",
+            "Keywords": [
+              "Haushaltshilfen",
+              "gepflegtes Ambiente",
+              "Fachkräfte",
+              "Bügeln oder Einkaufen"
+            ]
+          },
+          {
+            "id": "e",
+            "text": "SoloDrive - Kleintransporter für Ihren Umzug. Unsere Kleintransporter sind die ideale Lösung für alle, die flexibel bleiben möchten: günstige Tagespreise inklusive 200 Freikilometer, praktische Zurrschienen für sicheren Transport und optional Sackkarre, Decken und Verpackungsmaterial. Besonders bei innerstädtischen oder kurzfristig geplanten Umzügen sind die wendigen Fahrzeuge bestens geeignet. Führerschein Klasse B.",
+            "fazit": "كراء شاحنات صغيرة للرحيل بأثمنة يومية مناسبة، كتشمل 200 كيلومتر فابور. مثالية للرحيل داخل المدينة أو اللي متخطط ليه في وقت قصير.",
+            "Keywords": [
+              "Kleintransporter",
+              "Umzug",
+              "günstige Tagespreise",
+              "innerstädtischen"
+            ]
+          },
+          {
+            "id": "f",
+            "text": "Dialog - Ihr Partner für Kommunikation. Sie möchten sich auf ein Studium oder einen Auslandsaufenthalt vorbereiten oder einfach besser in der Fremdsprache kommunizieren? Bei Dialog finden Sie intensive Kurse in vielen Fremdsprachen. Kleine Gruppen, flexible Zeiten und praxisnahe Inhalte sorgen für schnellen Lernerfolg. Individuell bieten wir zudem Trainings für berufliche Zwecke an - vor Ort oder online.",
+            "fazit": "مدرسة ديال اللغات كتقدم كورسات مكثفة في مجموعات صغيرة وأوقات مرنة. عندهم حتى تدريب مخصص للأغراض المهنية، حضوريا أو عبر الإنترنت.",
+            "Keywords": [
+              "Dialog",
+              "Kommunikation",
+              "Fremdsprache",
+              "intensive Kurse",
+              "Trainings für berufliche Zwecke"
+            ]
+          },
+          {
+            "id": "g",
+            "text": "Zukunft praktisch erleben. Du stehst kurz vor dem Schulabschluss und interessierst dich für eine Lehre? Unser Berufsinformationszentrum bietet spannende Workshops in Holz-, Metall-, Bau- und Elektrotechnik. Hier kannst du eigene Aufgaben ausprobieren, moderne Werkzeuge kennenlernen und Einblicke in verschiedene Tätigkeitsfelder bekommen. Du triffst Auszubildende, kannst Fragen stellen und Kontakte zu Betrieben knüpfen. Außerdem erfährst du alles über Karrierewege, Verdienstmöglichkeiten und Chancen für Weiterbildungen.",
+            "fazit": "مركز توجيه مهني كيقدم ورشات عمل للشباب اللي باغين يديرو تدريب مهني (Lehre) في مجالات بحال الخشب، المعدن، البناء والكهرباء.",
+            "Keywords": [
+              "Schulabschluss",
+              "Lehre",
+              "Berufsinformationszentrum",
+              "Workshops",
+              "Holz-, Metall-, Bau- und Elektrotechnik"
+            ]
+          },
+          {
+            "id": "h",
+            "text": "Schüleraustausch Horizonte. Einblick in eine andere Kultur, neue Kontakte und erste Sprachpraxis im Zielsprachenland - das alles bietet unser Schüleraustausch-Programm. Jugendliche können ihre Sommerpause nutzen und bis zum Beginn des neuen Schuljahres bei sorgfältig ausgewählten Gastfamilien wohnen. Sie besuchen gemeinsam mit Gleichaltrigen ein Sprach- und Freizeitprogramm. Zur Auswahl stehen Ziele in Europa, den USA und Kanada.",
+            "fazit": "برنامج تبادل طلابي للشباب باش يستغلو العطلة الصيفية ويعيشو مع عائلات مضيفة ويتعلمو لغة جديدة في بلدان بحال أوروبا، أمريكا وكندا.",
+            "Keywords": [
+              "Schüleraustausch",
+              "Sprachpraxis",
+              "Sommerpause",
+              "Gastfamilien"
+            ]
+          },
+          {
+            "id": "i",
+            "text": "Hort Sonnenblume. Kinder verbringen die Zeit nach dem Unterricht in einer angenehmen Atmosphäre. Nach einer gesunden Mahlzeit widmen sie sich in kleinen Gruppen ihren Hausaufgaben, unterstützt von pädagogischen Fachkräften. Anschließend gibt es kreative Projekte, Sport und Spiele, gemeinsames Kochen oder Zeit zum Lesen und Entspannen. Flexible Abholzeiten, Geschwisterrabatt und Ermäßigung mit Bildungsgutschein sind möglich.",
+            "fazit": "رعاية للأطفال بعد المدرسة في جو زوين. كيعاونوهم في التمارين المدرسية وكينظمو مشاريع إبداعية، رياضة وطبخ جماعي. أوقات مرنة.",
+            "Keywords": [
+              "Hort",
+              "Zeit nach dem Unterricht",
+              "Hausaufgaben",
+              "pädagogischen Fachkräften"
+            ]
+          },
+          {
+            "id": "j",
+            "text": "EnergieWohl - Wohlfühlen in jeder Jahreszeit. Nie mehr frieren in den eigenen vier Wänden: Unsere modernen Systeme spenden angenehme Wärme, selbst wenn draußen tiefe Kälte herrscht. Dank innovativer Technik wird die vorhandene Energie optimal genutzt, sodass Sie Heizkosten deutlich senken können. Besonders für Wohnungen, die in der kalten Jahreszeit schnell auskühlen, bieten wir maßgeschneiderte Lösungen. Die Geräte arbeiten leise, nachhaltig und zuverlässig.",
+            "fazit": "أنظمة تدفئة حديثة كتعطيك دفء مريح وكتقلل من تكاليف التدفئة بشكل كبير. حلول مخصصة للشقق اللي كتبرد بالزربة في الشتاء.",
+            "Keywords": [
+              "EnergieWohl",
+              "Wärme",
+              "Energie optimal genutzt",
+              "Heizkosten deutlich senken"
+            ]
+          },
+          {
+            "id": "k",
+            "text": "TäglichFrisch - Entlastung für Ihren Alltag. Sie möchten weniger Zeit am Herd verbringen, aber trotzdem abwechslungsreich essen? Täglich stehen fertig zubereitete Mahlzeiten zur Verfügung. Von leichten Suppen über knackige Salate bis zu herzhaften Hauptgerichten - die Auswahl wird wöchentlich neu zusammengestellt. Alles kommt frisch aus der Küche und wird in nachhaltigen Verpackungen überbracht.",
+            "fazit": "خدمة كتوصل وجبات جاهزة يومياً (شربات، سلطات، وأطباق رئيسية). كلشي طازج وكيوصل في علب صديقة للبيئة.",
+            "Keywords": [
+              "TäglichFrisch",
+              "fertig zubereitete Mahlzeiten",
+              "Suppen",
+              "Salate",
+              "Hauptgerichten"
+            ]
+          },
+          {
+            "id": "l",
+            "text": "HausErnte - Qualität zum Mitnehmen. Bei HausErnte dreht sich alles um frisches Obst und Gemüse direkt von den Feldern unserer Region. An unseren Ständen können Sie spontan einkaufen oder feste Körbe vorbestellen, die wöchentlich bereitstehen. So erhalten Sie eine konstante Auswahl an gesunden Produkten. Besonders beliebt sind saisonale Spezialitäten wie Beeren, Spargel oder Kürbis. Auf Wunsch ist eine regelmäßige Lieferung frei Haus möglich.",
+            "fazit": "فواكه وخضروات طازجة من المزارع المحلية. تقدر تتقدى مباشرة أو تطلب سلة أسبوعية توصلك للدار بانتظام.",
+            "Keywords": [
+              "HausErnte",
+              "frisches Obst und Gemüse",
+              "Körbe vorbestellen",
+              "regelmäßige Lieferung frei Haus"
+            ]
+          }
+        ],
+        "id": 32,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2"
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil1",
+      "pointer": "/collections/10/records/42",
+      "themeKey": "sahla-b2-liebe-anna-neu",
+      "partKey": "sprachbausteine-1",
+      "source": {
+        "_id": "6a209495221ffb4fa79ba950",
+        "titel": "Liebe Anna, (الجديد)",
+        "photo": "",
+        "text": "Liebe Anna,\n\ndanke für deinen lieben Brief, (21) ich letzte Woche erhalten habe. Ich freue mich sehr, dass es dir gut geht und dass du einen schönen Urlaub in Verona verbracht (22). Bestimmt wirst du jetzt öfter nach Italien reisen, wo doch dein Enkel dort die Frau fürs Leben gefunden hat und schon im September heiraten wird.\n\nDu hast (23) gefragt, was ich davon halte, wenn du in deinem Alter noch Italienisch lernst. Sicherlich sind wir beide nicht mehr die Allerjüngsten, (24) zum Sprachenlernen sind wir bestimmt (25) jung genug. Was sind schon sechzig Jahre?\n\nSieh mal: Als Chefsekretärin in deiner Firma sprichst du fließend Englisch und Französisch, du hast mit fünfzig noch gelernt, wie man einen Computer (26). Und heute bist du eine Computerspezialistin! Willst du, dass der „Computer“ in deinem Kopf einrostet, bloß weil du Angst hast, mit sechzig noch etwas Neues (27)?\n\nNein, zu alt ist man nie! Lernen hält geistig fit und du kannst obendrein deine neuen Kenntnisse ganz praktisch (28). Du hast doch immer von deinen Reiseplänen erzählt: Florenz, Rom, Neapel! Und die Freundin deines Enkels ist doch Italienerin.\n\n(29) du mich fragst, dann geh in den nächsten Italienischkurs und lerne diese Sprache. Und kümmere dich nicht um dein (oder besser gesagt unser) Alter. Denn auch ich habe angefangen, eine Sprache zu lernen: Seit zwei Wochen besuche ich zweimal pro Woche einen Russischkurs an der Volkshochschule. Das macht einen Riesenspaß.\n\nJetzt muss ich aber aufhören, ich muss (30) gleich in den Kurs. Bis bald – und viele Grüße an deinen Enkel und seine Verlobte.\n\nDeine\nKarin",
+        "fragen": [
+          {
+            "id": 21,
+            "options": [
+              {
+                "id": "a",
+                "text": "das"
+              },
+              {
+                "id": "b",
+                "text": "den"
+              },
+              {
+                "id": "c",
+                "text": "der"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "كلمة Brief مذكر (der). فهاد الجملة جات مفعول به (Akkusativ) فجملة الوصل (Relativsatz) \"الرسالة التي توصلت بها\"، داكشي علاش كنستعملو den."
+          },
+          {
+            "id": 22,
+            "options": [
+              {
+                "id": "a",
+                "text": "bist"
+              },
+              {
+                "id": "b",
+                "text": "hast"
+              },
+              {
+                "id": "c",
+                "text": "warst"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "الفعل verbringen (يقضي) كيتصرف فـ الماضي (Perfekt) مع الفعل المساعد haben. داكشي علاش كنقولو Urlaub verbracht hast."
+          },
+          {
+            "id": 23,
+            "options": [
+              {
+                "id": "a",
+                "text": "mich"
+              },
+              {
+                "id": "b",
+                "text": "mir"
+              },
+              {
+                "id": "c",
+                "text": "sich"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "الفعل fragen كياخد ديما المفعول به فـ Akkusativ. \"سألتني\" كترجم لـ Du hast mich gefragt."
+          },
+          {
+            "id": 24,
+            "options": [
+              {
+                "id": "a",
+                "text": "doch"
+              },
+              {
+                "id": "b",
+                "text": "obwohl"
+              },
+              {
+                "id": "c",
+                "text": "sondern"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "doch هنا كتعني \"ولكن\" أو \"بالرغم من ذلك\". كتربط بين فكرتين متناقضتين: حنا ماشي صغار بزاف، ولكن لتعلم اللغات باقين صغار."
+          },
+          {
+            "id": 25,
+            "options": [
+              {
+                "id": "a",
+                "text": "erst"
+              },
+              {
+                "id": "b",
+                "text": "noch"
+              },
+              {
+                "id": "c",
+                "text": "schon"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "noch كتعني \"ما زال\". المعنى ديال الجملة هو \"ما زلنا صغاراً بما يكفي\" (noch jung genug)."
+          },
+          {
+            "id": 26,
+            "options": [
+              {
+                "id": "a",
+                "text": "bearbeitet"
+              },
+              {
+                "id": "b",
+                "text": "bedient"
+              },
+              {
+                "id": "c",
+                "text": "bewirkt"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "الفعل bedienen كيعني \"يشغل\" أو \"يستخدم\" لشي آلة أو جهاز. العبارة einen Computer bedienen كتعني استخدام أو تشغيل الحاسوب."
+          },
+          {
+            "id": 27,
+            "options": [
+              {
+                "id": "a",
+                "text": "lernen"
+              },
+              {
+                "id": "b",
+                "text": "lernen müssen"
+              },
+              {
+                "id": "c",
+                "text": "zu lernen"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "التعبير Angst haben (الخوف من) كيتبعو دائماً zu + Infinitiv. داكشي علاش كنستعملو zu lernen."
+          },
+          {
+            "id": 28,
+            "options": [
+              {
+                "id": "a",
+                "text": "einsetzen"
+              },
+              {
+                "id": "b",
+                "text": "fortsetzen"
+              },
+              {
+                "id": "c",
+                "text": "übersetzen"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "الفعل einsetzen كيعني \"يستخدم\" أو \"يوظف\". praktisch einsetzen كتعني \"يطبقها بشكل عملي\"."
+          },
+          {
+            "id": 29,
+            "options": [
+              {
+                "id": "a",
+                "text": "Ob"
+              },
+              {
+                "id": "b",
+                "text": "Wann"
+              },
+              {
+                "id": "c",
+                "text": "Wenn"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "Wenn كتعني \"إذا\". العبارة Wenn du mich fragst كتعني \"إذا سألتني\" أو \"في رأيي\"."
+          },
+          {
+            "id": 30,
+            "options": [
+              {
+                "id": "a",
+                "text": "also"
+              },
+              {
+                "id": "b",
+                "text": "kaum"
+              },
+              {
+                "id": "c",
+                "text": "nämlich"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "nämlich كتعطي تفسير أو سبب لشي حاجة تقالت قبل. هنا كتشرح علاش خاصها تحبس الكتابة: \"لأنني خاصني نمشي للدرس فوراً\"."
+          }
+        ],
+        "id": 32,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "عزيزتي آنا،\n\nشكراً على رسالتك اللطيفة (21) التي تلقيتها الأسبوع الماضي. أنا سعيدة جداً لأنك بخير ولأنك قضيت (22) عطلة جميلة في فيرونا. بالتأكيد ستسافرين الآن إلى إيطاليا بشكل متكرر، خاصة وأن حفيدك قد وجد شريكة حياته هناك وسيتزوج بالفعل في سبتمبر.\n\nلقد سألتني (23) عن رأيي في تعلمك اللغة الإيطالية في سنك هذا. بالتأكيد لم نعد نحن الاثنتين في ريعان الشباب، (24) ولكن لتعلم اللغات نحن بالتأكيد (25) لا نزال صغيرات بما فيه الكفاية. فماذا تعني ستون عاماً؟\n\nانظري: بصفتك سكرتيرة تنفيذية في شركتك، تتحدثين الإنجليزية والفرنسية بطلاقة، وتعلمت في سن الخمسين كيف يتم (26) تشغيل الحاسوب. واليوم أنت خبيرة حواسيب! هل تريدين أن يصدأ 'الحاسوب' في رأسك لمجرد أنك خائفة من (27) تعلم شيء جديد في سن الستين؟\n\nلا، لا يكبر المرء أبداً! التعلم يحافظ على اللياقة الذهنية وعلاوة على ذلك يمكنك (28) تطبيق معرفتك الجديدة بشكل عملي. لطالما تحدثت عن خطط سفرك: فلورنسا، روما، نابولي! وصديقة حفيدك إيطالية.\n\n(29) إذا سألتني، فاذهبي إلى أقرب دورة لغة إيطالية وتعلمي هذه اللغة. ولا تهتمي بعمرك (أو بالأحرى عمرنا). لأنني أنا أيضاً بدأت أتعلم لغة: منذ أسبوعين أحضر دورة لغة روسية في مدرسة تعليم الكبار مرتين في الأسبوع. هذا ممتع جداً.\n\nلكن الآن يجب أن أتوقف، (30) لأنني يجب أن أذهب إلى الدورة التدريبية فوراً. إلى اللقاء قريباً - مع خالص تحياتي لحفيدك وخطيبته.\n\nصديقتك\nكارين"
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil1",
+      "pointer": "/collections/10/records/46",
+      "themeKey": "sahla-b2-hey-jan",
+      "partKey": "sprachbausteine-1",
+      "source": {
+        "_id": "6a96fa88ab4e500a2d1290f1",
+        "titel": "Hey Jan",
+        "text": "Hey Jan,\n\nwie geht’s dir? Ich hoffe, du hast dich nach dem Studium gut zurechtgefunden! __(1)__ zu glauben, dass unsere gemeinsame Zeit in Bonn schon __(2)__ ist. München ist echt eine coole Stadt, aber der Anfang war nicht einfach. Am Ende konnte ich eine kurzfristig frei __(3)__ Wohnung im Westend ergattern.\n\nMein neuer Job bei der IT-Firma läuft gut, auch __(4)__ es manchmal sehr anstrengend ist. Aktuell arbeite ich __(5)__ einer Softwarelösung für die Automobilbranche. Manchmal muss ich Überstunden machen, aber das gehört wohl __(6)__. Dafür habe ich ein super Team, mit __(7)__ die Arbeit Spaß macht.\n\nFast jedes Wochenende bin ich draußen unterwegs, __(8)__ auf einer Bergtour __(8)__ einem Klettersteig. Ich bin sicher, es __(9)__ dir gefallen! Lass uns bald telefonieren, __(10)__ ein Wochenende festzulegen.\n\nBeste Grüße aus München\nFelix",
+        "fragen": [
+          {
+            "id": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "Fast"
+              },
+              {
+                "id": "b",
+                "text": "Kaum"
+              },
+              {
+                "id": "c",
+                "text": "Knapp"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "العبارة الثابتة 'Kaum zu glauben' كتعني 'صعب تصدق' أو 'يا له من أمر لا يصدق'. 'Kaum' هي الكلمة الصحيحة فهاد السياق."
+          },
+          {
+            "id": 2,
+            "options": [
+              {
+                "id": "a",
+                "text": "vorab"
+              },
+              {
+                "id": "b",
+                "text": "voran"
+              },
+              {
+                "id": "c",
+                "text": "vorbei"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الكلمة 'vorbei' كتعني 'سالا' أو 'انتهى'. 'vorbei ist' كتعني 'الوقت لي دوزناه مجموعين سالا'."
+          },
+          {
+            "id": 3,
+            "options": [
+              {
+                "id": "a",
+                "text": "geworden"
+              },
+              {
+                "id": "b",
+                "text": "gewordene"
+              },
+              {
+                "id": "c",
+                "text": "gewordenen"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "هنا عندنا اسم مؤنث 'Wohnung' فـ Akkusativ (مفعول به)، وعبارة 'frei geworden' ولات صفة 'frei gewordene' (التي أصبحت فارغة). مع 'eine' كنزيدو النهاية 'e' للصفة، إذن 'gewordene'."
+          },
+          {
+            "id": 4,
+            "options": [
+              {
+                "id": "a",
+                "text": "falls"
+              },
+              {
+                "id": "b",
+                "text": "wann"
+              },
+              {
+                "id": "c",
+                "text": "wenn"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الرابط 'auch wenn' كيعني 'حتى و إن' أو 'رغم أن'. هادي عبارة ثابتة كنستعملوها باش نعبرو على التناقض (Konzessivsatz)."
+          },
+          {
+            "id": 5,
+            "options": [
+              {
+                "id": "a",
+                "text": "an"
+              },
+              {
+                "id": "b",
+                "text": "auf"
+              },
+              {
+                "id": "c",
+                "text": "zu"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "الفعل 'arbeiten' ملي كيعني 'يخدم على شي مشروع أو حاجة' كياخد حرف الجر 'an' + Dativ. 'an einer Softwarelösung'."
+          },
+          {
+            "id": 6,
+            "options": [
+              {
+                "id": "a",
+                "text": "dabei"
+              },
+              {
+                "id": "b",
+                "text": "daran"
+              },
+              {
+                "id": "c",
+                "text": "dazu"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "العبارة 'das gehört dazu' كتعني 'هادشي جزء من الخدمة' أو 'هادشي داخل فالحساب'. 'dazu' كترجع على العمل الإضافي."
+          },
+          {
+            "id": 7,
+            "options": [
+              {
+                "id": "a",
+                "text": "dem"
+              },
+              {
+                "id": "b",
+                "text": "denen"
+              },
+              {
+                "id": "c",
+                "text": "den"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "كلمة 'Team' محايدة (das Team). حرف الجر 'mit' كياخد Dativ، إذن 'das' كترجع 'dem'. الجملة الموصولة (Relativsatz) كتبدا بـ 'mit dem'."
+          },
+          {
+            "id": 8,
+            "options": [
+              {
+                "id": "a",
+                "text": "entweder ... oder"
+              },
+              {
+                "id": "b",
+                "text": "weder ... noch"
+              },
+              {
+                "id": "c",
+                "text": "zwar ... aber"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "التركيبة المزدوجة (Doppelkonnektor) لي كتعبر على التخيير هي 'entweder ... oder' (إما ... أو). إما كيمشي للجبل أو كيمشي يتسلق."
+          },
+          {
+            "id": 9,
+            "options": [
+              {
+                "id": "a",
+                "text": "will"
+              },
+              {
+                "id": "b",
+                "text": "wurde"
+              },
+              {
+                "id": "c",
+                "text": "würde"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "هنا عندنا افتراض (Irrealis) حيت هو متأكد بلي غادي يعجبو الحال كون كان معاه. كنستعملو Konjunktiv II، والفعل 'gefallen' كياخد 'würde'."
+          },
+          {
+            "id": 10,
+            "options": [
+              {
+                "id": "a",
+                "text": "damit"
+              },
+              {
+                "id": "b",
+                "text": "für"
+              },
+              {
+                "id": "c",
+                "text": "um"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الجملة كتبين الهدف أو الغاية 'باش نحددو...'. القاعدة هي 'um ... zu + Infinitiv'. إذن الجواب الصحيح هو 'um'."
+          }
+        ],
+        "id": 34,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "مرحباً يان، كيف حالك؟ آمل أنك قد تأقلمت جيداً بعد الدراسة! __(1)__ يُصدق أن وقتنا معاً في بون قد __(2)__ بالفعل. ميونخ مدينة رائعة حقاً، لكن البداية لم تكن سهلة. في النهاية تمكنت من الحصول على شقة أصبحت شاغرة __(3)__ في وقت قصير في ويست إند. وظيفتي الجديدة في شركة تكنولوجيا المعلومات تسير بشكل جيد، حتى __(4)__ كان الأمر مرهقاً جداً في بعض الأحيان. أعمل حالياً __(5)__ حل برمجي لقطاع السيارات. أحياناً أضطر للعمل ساعات إضافية، لكن هذا ربما __(6)__ من طبيعة العمل. في المقابل، لدي فريق رائع، العمل معـ __(7)__ ممتع. في كل عطلة نهاية أسبوع تقريباً أكون بالخارج، __(8)__ في جولة جبلية __(8)__ في مسار تسلق. أنا متأكد من أنه __(9)__ سيعجبك! دعنا نتحدث هاتفياً قريباً، __(10)__ تحديد عطلة نهاية أسبوع. أطيب التحيات من ميونخ، فيليكس."
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil1",
+      "pointer": "/collections/10/records/47",
+      "themeKey": "sahla-b2-hallo-jakob",
+      "partKey": "sprachbausteine-1",
+      "source": {
+        "_id": "6a96fb1dab4e500a2d1290f3",
+        "titel": "Hallo Jakob",
+        "text": "Hallo Jakob,\n\nEndlich melde ich mich __(1)__ bei dir – es tut mir leid, dass es so lange gedauert hat! Ich bin jetzt seit zwei Monaten in Deutschland und es ist richtig viel passiert. In dieser Zeit habe ich im Krankenhaus eine Stelle __(2)__ Krankenpfleger bekommen. Die Arbeit gefällt mir gut. Unser Team ist international, und ich arbeite mit Leuten aus ganz __(3)__ Ländern zusammen, zum Beispiel aus Vietnam und von den Philippinen. Mit ein paar von ihnen habe ich mich schon nach der Arbeit und am Wochenende getroffen, sie kennen __(4)__ in Hamburg gut aus und haben mir ein paar schöne Orte in der Stadt gezeigt.\n\nEine kleine Wohnung habe ich auch bereits gefunden, sie ist sogar in der Nähe des Krankenhauses. Die Miete ist __(5)__ ein bisschen teuer, aber ehrlich gesagt bin ich froh, dass ich überhaupt etwas gefunden habe. Wie du siehst, läuft es also ganz gut. Das Einzige, __(6)__ mir manchmal fehlt, ist die spanische Sprache. Ich habe bisher nur sehr wenige Leute getroffen, __(7)__ Spanisch sprechen. __(8)__ auch in meiner Freizeit. Das ist einerseits anstrengend, aber andererseits merke ich, dass mein Deutsch jeden Tag besser wird.\n\nIch __(9)__ es übrigens schön, wenn wir uns mal wieder sehen würden. Hast du Lust, mich mal in Hamburg zu besuchen? __(10)__ das nicht geht, könnte ich an Ostern auch zu dir nach Salzburg kommen.\n\nViele Grüße, Antonio",
+        "fragen": [
+          {
+            "id": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "halt"
+              },
+              {
+                "id": "b",
+                "text": "ja"
+              },
+              {
+                "id": "c",
+                "text": "mal"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "العبارة 'sich mal melden' كتعني 'يتاصل مرة مرة' أو 'يسول فيك'. هنا 'mal' كتستعمل باش تخفف الجملة (Modalpartikel) وتعطيها طابع ودي."
+          },
+          {
+            "id": 2,
+            "options": [
+              {
+                "id": "a",
+                "text": "als"
+              },
+              {
+                "id": "b",
+                "text": "für"
+              },
+              {
+                "id": "c",
+                "text": "von"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "ملي كنهضرو على مهنة أو منصب كنستعملو حرف 'als' (كـ). 'eine Stelle als Krankenpfleger' كتعني 'منصب كممرض'."
+          },
+          {
+            "id": 3,
+            "options": [
+              {
+                "id": "a",
+                "text": "verschiedenen"
+              },
+              {
+                "id": "b",
+                "text": "viele"
+              },
+              {
+                "id": "c",
+                "text": "Vielerlei"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "عندنا حرف الجر 'aus' لي كياخد Dativ. كلمة 'Ländern' جمع (Plural)، إذن الصفة خاصها تاخد النهاية 'en'. 'verschiedenen' (مختلفة) هي الصحيحة."
+          },
+          {
+            "id": 4,
+            "options": [
+              {
+                "id": "a",
+                "text": "mich"
+              },
+              {
+                "id": "b",
+                "text": "mir"
+              },
+              {
+                "id": "c",
+                "text": "sich"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الفعل هو 'sich auskennen' (كيعرف البلاصة مزيان). بما أن الفاعل هو 'sie' (هم)، الضمير الإنعكاسي (Reflexivpronomen) هو 'sich'."
+          },
+          {
+            "id": 5,
+            "options": [
+              {
+                "id": "a",
+                "text": "aber"
+              },
+              {
+                "id": "b",
+                "text": "sehr"
+              },
+              {
+                "id": "c",
+                "text": "zwar"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "عندنا تركيبة 'zwar ..., aber ...' لي كتعني 'واخا ... ولكن ...'. الكرا غالي شوية واخا هكاك هو فرحان حيت لقى سكن."
+          },
+          {
+            "id": 6,
+            "options": [
+              {
+                "id": "a",
+                "text": "dass"
+              },
+              {
+                "id": "b",
+                "text": "die"
+              },
+              {
+                "id": "c",
+                "text": "was"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الكلمات بحال 'das Einzige, das Beste, alles, etwas' كيتبعهم ديما الضمير الموصول 'was' ماشي 'das'."
+          },
+          {
+            "id": 7,
+            "options": [
+              {
+                "id": "a",
+                "text": "die"
+              },
+              {
+                "id": "b",
+                "text": "sie"
+              },
+              {
+                "id": "c",
+                "text": "welche"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "الجملة الموصولة (Relativsatz) كترجع على 'Leute' (الناس) لي هي جمع فـ Nominativ. إذن الضمير الموصول المناسب هو 'die'."
+          },
+          {
+            "id": 8,
+            "options": [
+              {
+                "id": "a",
+                "text": "aber"
+              },
+              {
+                "id": "b",
+                "text": "als"
+              },
+              {
+                "id": "c",
+                "text": "sondern"
+              }
+            ],
+            "antwort": "a",
+            "begründung": "المعنى هنا هو 'ولكن حتى فوقت الفراغ ديالي' (ماكنتلاقاش ناس كيهضرو الصبليونية). 'aber' هي الرابط لي كتناسب هاد التناقض."
+          },
+          {
+            "id": 9,
+            "options": [
+              {
+                "id": "a",
+                "text": "fand"
+              },
+              {
+                "id": "b",
+                "text": "fände"
+              },
+              {
+                "id": "c",
+                "text": "finde"
+              }
+            ],
+            "antwort": "b",
+            "begründung": "عندنا جملة شرطية غير حقيقية (Irrealer Konditionalsatz) بدليل 'würden' فالجملة الجاية. إذن خاصنا نستعملو Konjunktiv II ديال الفعل 'finden' لي هو 'fände'."
+          },
+          {
+            "id": 10,
+            "options": [
+              {
+                "id": "a",
+                "text": "Als"
+              },
+              {
+                "id": "b",
+                "text": "Da"
+              },
+              {
+                "id": "c",
+                "text": "Wenn"
+              }
+            ],
+            "antwort": "c",
+            "begründung": "الجملة شرطية (Konditionalsatz) كتعني 'إيلا ماكانش هادشي ممكن...'. الرابط الصحيح للشرط فهاد الحالة هو 'Wenn' (إذا)."
+          }
+        ],
+        "id": 35,
+        "availableFor": "pro",
+        "note": "تم تصحيح بعض الأخطاء المطبعية الموجودة في النص الأصلي للصورة (مثل ترقيم الفراغات 21 و 22 و 24) لتتناسب بشكل منطقي مع الخيارات المعروضة وقواعد اللغة الألمانية.",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "مرحباً ياكوب، أخيراً أتواصل معك - أنا آسف لأن الأمر استغرق كل هذا الوقت! أنا الآن في ألمانيا منذ شهرين وقد حدث الكثير بالفعل. خلال هذا الوقت حصلت على وظيفة كممرض في المستشفى. العمل يعجبني كثيراً. فريقنا دولي، وأنا أعمل مع أشخاص من بلدان مختلفة تماماً، على سبيل المثال من فيتنام والفلبين. لقد التقيت ببعضهم بالفعل بعد العمل وفي عطلات نهاية الأسبوع، وهم يعرفون طريقهم جيداً في هامبورغ وأروني بعض الأماكن الجميلة في المدينة. لقد وجدت بالفعل شقة صغيرة، وهي قريبة حتى من المستشفى. الإيجار غالي الثمن بعض الشيء، لكن بصراحة أنا سعيد لأنني وجدت شيئاً على الإطلاق. كما ترى، الأمور تسير بشكل جيد إذن. الشيء الوحيد الذي أفتقده أحياناً هو اللغة الإسبانية. لقد التقيت بعدد قليل جداً من الأشخاص الذين يتحدثون الإسبانية حتى الآن. ولكن حتى في وقت فراغي. هذا مرهق من ناحية، ولكن من ناحية أخرى ألاحظ أن لغتي الألمانية تتحسن يوماً بعد يوم. بالمناسبة، سأكون سعيداً إذا رأينا بعضنا البعض مرة أخرى. هل لديك رغبة في زيارتي في هامبورغ؟ إذا لم يكن ذلك ممكناً، يمكنني أيضاً القدوم إليك في سالزبورغ في عيد الفصح. تحياتي الكثيرة، أنطونيو"
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/41",
+      "themeKey": "sahla-b2-die-katzen",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "69e2cbcdfceb5a669e4a11eb",
+        "titel": "Die Katzen - القطط",
+        "photo": "",
+        "text": "Sitz, Platz, Pfötchen geben: Nur die wenigsten Katzen befolgen Kommandos. Dabei sind sie durchaus in der ......(1)......., ihren Namen aus anderen Wörtern herauszuhören, berichtet ein japanisches Forschungsteam im Fachblatt \"Scientific Reports\". Nach eigenen ......(2)....... haben sie den ersten experimentellen Nachweis geliefert, dass Katzen Laute von Menschen verstehen können. Erst als ihnen ihr eigener Name vorgespielt wurde, zeigten die meisten Versuchstiere eine Reaktion. Sie bewegten beispielsweise ihre Ohren oder drehten den Kopf. Der Effekt war auch zu beobachten, wenn nicht der Katzenbesitzer selbst zu seinem Tier sprach, ......(3)....... eine fremde Person. Lebten mehrere Katzen in einem Haushalt, konnten einige Katzen ihren Namen von ......(4)....... ihrer Artgenossen unterscheiden. Die Forscher hatten das ......(5)....... von 78 Katzen untersucht. ......(6)....... spielten sie den Tieren vier japanische Wörter vom Band vor, die ähnlich klangen wie der Name der Katze. Dabei nahm die Aufmerksamkeit der Katzen immer ......(7)....... ab. Doch wenn die Tiere ihren Namen und einzelne Gesten verstehen, warum ist es ......(8)....... schwierig, ihnen Tricks beizubringen? Laut Turner sei dies durchaus möglich, allerdings verlören die meisten Halter schnell die Geduld. Biologe Dennis Turner hält die japanische Studie für 'seriös durchgeführt'. Die Ergebnisse aus Japan seien sicher auch auf deutsche Katzen übertragbar, so Turner. \"Ich er ist er von dem Ergebnis allerdings nicht. \"Katzen sind sehr intelligente und lernfähige Tiere- ......(9)....... sie bereit sind mitzumachen\", sagt Turner, der nicht an der Studie beteiligt war. Aus vorherigen Untersuchungen ist ......(10)......., dass es Katzen verstehen, wenn Menschen mit dem Finger den Weg zum Fressnapf zeigen. Zudem ändern zumindest einige Katzen ihr Verhalten, je nachdem, ob ihr Herrchen grimmig oder fröhlich schaute.",
+        "options": [
+          {
+            "id": "a",
+            "text": "ANGABEN",
+            "antwort": 2,
+            "begründung": "\"nach eigenen Angaben\" كتعني \"حسب تصريحاتهم الخاصة\" أو \"حسب ما قالو\".",
+            "_id": "68b5f3cf3d177c49c97971fa"
+          },
+          {
+            "id": "b",
+            "text": "BEKANNT",
+            "antwort": 10,
+            "begründung": "\"es ist bekannt\" كتعني \"من المعروف\". من المعروف من خلال دراسات سابقة.",
+            "_id": "68b5f3cf3d177c49c97971fb"
+          },
+          {
+            "id": "c",
+            "text": "BLOß",
+            "antwort": 8,
+            "begründung": "كتعني \"يا ترى\" أو \"علاش زعما\". كتستعمل فالأسئلة باش تبين الاستغراب. \"warum ist es bloß schwierig...\".",
+            "_id": "68b5f3cf3d177c49c97971fc"
+          },
+          {
+            "id": "d",
+            "text": "DA",
+            "antwort": 0,
+            "begründung": "PASST NICHT",
+            "_id": "68b5f3cf3d177c49c97971fd"
+          },
+          {
+            "id": "e",
+            "text": "DAGEGEN",
+            "antwort": 0,
+            "begründung": "PASST NICHT",
+            "_id": "68b5f3cf3d177c49c97971fe"
+          },
+          {
+            "id": "f",
+            "text": "DENEN",
+            "antwort": 4,
+            "begründung": "ضمير إشارة (Demonstrativpronomen) فـ Dativ Plural، كيعود على \"الأسماء\" (Namen) ديال القطط الأخرى.",
+            "_id": "68b5f3cf3d177c49c97971ff"
+          },
+          {
+            "id": "g",
+            "text": "LAGE",
+            "antwort": 1,
+            "begründung": "\"in der Lage sein\" عبارة كتعني \"قادر على\". هنا كتعني القطط قادرة تميز سميتها.",
+            "_id": "68b5f3cf3d177c49c9797200"
+          },
+          {
+            "id": "h",
+            "text": "OBWOHL",
+            "antwort": 0,
+            "begründung": "PASST NICHT",
+            "_id": "68b5f3cf3d177c49c9797201"
+          },
+          {
+            "id": "i",
+            "text": "SOFERN",
+            "antwort": 9,
+            "begründung": "كتعني \"بشرط أن\" أو \"إذا كان\". القطط ذكية، بشرط تكون مستعدة تشارك.",
+            "_id": "68b5f3cf3d177c49c9797202"
+          },
+          {
+            "id": "j",
+            "text": "SONDERN",
+            "antwort": 3,
+            "begründung": "كتعني \"بل\". كتجي دائما بعد النفي (nicht) باش تعطي البديل. \"ماشي مول القطة اللي هدر، بل شخص غريب\".",
+            "_id": "68b5f3cf3d177c49c9797203"
+          },
+          {
+            "id": "k",
+            "text": "VERHALTEN",
+            "antwort": 5,
+            "begründung": "كتعني \"سلوك\". الباحثين درسوا السلوك ديال 78 قطة.",
+            "_id": "68b5f3cf3d177c49c9797204"
+          },
+          {
+            "id": "l",
+            "text": "WEIL",
+            "antwort": 0,
+            "begründung": "PASST NICHT",
+            "_id": "68b5f3cf3d177c49c9797205"
+          },
+          {
+            "id": "m",
+            "text": "WEITER",
+            "antwort": 7,
+            "begründung": "\"immer weiter\" كتعني \"باستمرار\". الاهتمام ديال القطط بقى كينقص باستمرار.",
+            "_id": "68b5f3cf3d177c49c9797206"
+          },
+          {
+            "id": "n",
+            "text": "ZIEL",
+            "antwort": 0,
+            "begründung": "PASST NICHT",
+            "_id": "68b5f3cf3d177c49c9797207"
+          },
+          {
+            "id": "o",
+            "text": "ZUNÄCHSTE",
+            "antwort": 6,
+            "begründung": "(من zunächst) كتعني \"في البداية\" أو \"أولا\". فالبداية سمعوهم الكلمات.",
+            "_id": "68b5f3cf3d177c49c9797208"
+          }
+        ],
+        "id": 30,
+        "availableFor": "pro",
+        "niveau": "B2",
+        "__v": 1,
+        "taadilat": [],
+        "tr": "اجلس، مكانك، أعطِ الكف: القليل من القطط تطيع الأوامر. ومع ذلك، فإنها بلا شك قادرة على (1) تمييز اسمها من بين كلمات أخرى، كما أفاد فريق بحثي ياباني في مجلة \"التقارير العلمية\". وفقًا لتجاربهم الخاصة (2)، قدموا أول دليل تجريبي على أن القطط يمكنها فهم أصوات البشر. فقط عندما تم تشغيل اسمها الخاص لها، أظهرت معظم الحيوانات الخاضعة للتجربة رد فعل. على سبيل المثال، حركت آذانها أو أدارت رأسها. كان التأثير ملحوظًا أيضًا عندما لم يكن مالك القطة هو المتحدث، بل (3) شخص غريب. إذا كانت تعيش عدة قطط في منزل واحد، فقد تمكنت بعض القطط من تمييز اسمها من (4) أسماء زملائها. قام الباحثون بفحص (5) 78 قطة. (6) قاموا بتشغيل أربعة كلمات يابانية للحيوانات من الشريط، والتي كانت تشبه اسم القطة. ومع ذلك، انخفض انتباه القطط دائمًا (7). ولكن إذا كانت الحيوانات تفهم اسمها وإيماءات معينة، فلماذا (8) من الصعب تعليمها الحيل؟ وفقًا لتيرنر، فإن هذا ممكن بالتأكيد، لكن معظم المالكين يفقدون صبرهم بسرعة. يعتبر عالم الأحياء دينيس تيرنر الدراسة اليابانية \"موثوقة التنفيذ\". ويعتقد تيرنر أن النتائج من اليابان يمكن تطبيقها بالتأكيد على القطط الألمانية أيضًا. \"لكنه ليس مستغربًا من النتيجة. \"القطط حيوانات ذكية وقابلة للتعلم للغاية- (9) إذا كانت مستعدة للمشاركة\"، يقول تيرنر، الذي لم يشارك في الدراسة. من التحقيقات السابقة (10)، من المعروف أن القطط تفهم عندما يشير البشر بالإصبع إلى الطريق إلى وعاء الطعام. بالإضافة إلى ذلك، تغير بعض القطط على الأقل سلوكها، اعتمادًا على ما إذا كان صاحبها يبدو غاضبًا أو سعيدًا."
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/43",
+      "themeKey": "sahla-b2-die-rueckkehr-des-nachtzugs",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "69fdf2b52231aa3e8d774b7d",
+        "titel": "Die Rückkehr des Nachtzugs",
+        "text": "Warum die Klimadebatte Schlafwagen wieder in __(1)__ bringt.\n\nDer Zug heißt \"Nightjet\", aber __(2)__ so schnell wie mit dem Flugzeug ist es nicht. Eine Bahnreise von Wien nach Brüssel verursacht nur einen Bruchteil des CO2-Ausstoßes eines Fluges. Bis Dezember soll als 28. Nachtzug-Linie eine von Wien und München nach Amsterdam hinzukommen. \"Wenn wir mehr Schlafwagen hätten, könnten wir das Angebot rasch deutlich __(3)__\", sagt Bernhard Rieder von der ÖBB. Fünf Jahre dauert es vom Beschluss für einen neuen Zug bis zur Inbetriebnahme, auch weil Aufträge europaweit ausgeschrieben werden müssen. Man könne sie aber inzwischen kostendeckend betreiben. Pro Schlafwagen sei ein \"Night Steward\" an Bord. __(4)__ seien in der Regel acht Mitarbeiter in einem Nachtzug unterwegs, tagsüber seien es nur zwei - plus die Lokführer. Die Bahn betont, es gebe auch Züge, die in der Nacht fahren, aber mit Sitzplätzen. Wer das mal gemacht hat, kommt gerädert am Zielort an. Am 15. Dezember hat die Bahn in Kooperation mit den ÖBB auf den Strecken Zürich-Berlin und Zürich-Hamburg eine __(5)__ Intercity-Nachtverbindung gestartet.\n\n\"Daher investieren wir in den kommenden Jahren rund zwölf Milliarden Euro in unsere Fahrzeugflotte, die allein im Fernverkehr auf insgesamt 600 Züge anwachsen wird.\" Dazu sollen auch rund tausend zusätzliche Mitarbeiter __(6)__ werden. \"Wenn die Deutsche Bahn nicht will, ist das bedauernswert.\" Er sehe aber kein Hindernis, warum nicht __(7)__ dieses Angebot bei Nachtzügen übernehmen sollten - ihnen dürften nur keine Steine in den Weg gelegt werden. Sie betonen, mit einem Nachtzug gebe es die Chance die vielen Flugreisen, die im Rahmen der Ratspräsidentschaft zwischen Berlin und Brüssel anfallen werden, __(8)__ ein klimafreundliches Mobilitätsangebot zu reduzieren. Bisher müssten viele das Flugzeug nutzen, weil sie mit den aktuellen Zugverbindungen für Reisen zwischen Berlin und Brüssel nur tagsüber reisen können, damit sechs bis acht Stunden Zeit verlieren und in der Regel einen Tag vorher anreisen müssen. Am liebsten würden sie es sehen, wenn so dieser neue Nachtzug in den blau-gelben Europafarben __(9)__ wäre. Und der Nachtzug weckt bei vielen Menschen auch die Sehnsucht nach ungewöhnlichen Fernreisen. Der Nachtzug der Deutschen Bahn wurde __(10)__ damals hoher Verluste 2016 eingestellt.",
+        "options": [
+          {
+            "id": "a",
+            "text": "ALS",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (كـ / عندما) ما مناسباش لأي فراغ فالسياق ديال هاد النص."
+          },
+          {
+            "id": "b",
+            "text": "NEUE",
+            "antwort": 5,
+            "begründung": "صفة 'neue' (جديد) كتوصف 'Intercity-Nachtverbindung' (خط ليلي). جات فموقع نصب (Akkusativ) حيت مسبوقة بـ 'eine'."
+          },
+          {
+            "id": "c",
+            "text": "FORM",
+            "antwort": 0,
+            "begründung": "كلمة 'Form' (شكل) ما عندها حتى معنى منطقي فالفراغات ديال النص."
+          },
+          {
+            "id": "d",
+            "text": "MODE",
+            "antwort": 1,
+            "begründung": "العبارة 'etwas in Mode bringen' كتعني 'يرجع شي حاجة للموضة' أو 'يخليها ترجع للواجهة'. السياق كيهضر على رجوع عربات النوم للموضة بسبب نقاش المناخ."
+          },
+          {
+            "id": "e",
+            "text": "EINSTEHEN",
+            "antwort": 0,
+            "begründung": "الفعل 'einstehen' كيعني 'يتحمل المسؤولية' أو 'يضمن'، وما مناسبش لأي فراغ هنا."
+          },
+          {
+            "id": "f",
+            "text": "AUSWEITEN",
+            "antwort": 3,
+            "begründung": "العبارة 'das Angebot ausweiten' كتعني 'يوسع العرض' أو 'يكبر العرض'. كيقولو بلي يقدرو يوسعو العرض كون كانو عندهم عربات نوم أكثر."
+          },
+          {
+            "id": "g",
+            "text": "WEGEN",
+            "antwort": 10,
+            "begründung": "حرف الجر 'wegen' كيعني 'بسبب'. هنا كيوضحو بلي تم توقيف قطار الليل 'بسبب' الخسائر الكبيرة فداك الوقت (wegen damals hoher Verluste)."
+          },
+          {
+            "id": "h",
+            "text": "GANZ",
+            "antwort": 2,
+            "begründung": "العبارة 'nicht ganz so schnell' كتعني 'ماشي بنفس السرعة تماما'. الكاتب كيقارن سرعة القطار مع سرعة الطائرة."
+          },
+          {
+            "id": "i",
+            "text": "INSGESAMT",
+            "antwort": 4,
+            "begründung": "'Insgesamt' كتعني 'إجمالاً' أو 'في المجموع'. الجملة كتقول 'إجمالاً كيكونو عادة 8 ديال الموظفين فتران الليل'."
+          },
+          {
+            "id": "j",
+            "text": "GESTALTET",
+            "antwort": 9,
+            "begründung": "'gestaltet' كتعني 'مُصمم' أو 'مُزين'. الجملة كتهضر على تمني أن يكون القطار 'مُزيناً' بألوان أوروبا الزرقاء والصفراء."
+          },
+          {
+            "id": "k",
+            "text": "KONKURRENTEN",
+            "antwort": 7,
+            "begründung": "كتعني 'المنافسين'. المعنى هنا: علاش المنافسين ما يشدوش هاد العرض ديال قطارات الليل، بشرط ما يحطوش ليهم العراقيل."
+          },
+          {
+            "id": "l",
+            "text": "DURCH",
+            "antwort": 8,
+            "begründung": "حرف الجر 'durch' كيعني 'من خلال' أو 'بواسطة'. تقليل الرحلات الجوية كيتم 'من خلال' توفير عرض تنقل صديق للبيئة."
+          },
+          {
+            "id": "m",
+            "text": "EIN",
+            "antwort": 0,
+            "begründung": "أداة النكرة 'ein' ما مناسباش لأي فراغ فالمواقع المتبقية فالنص."
+          },
+          {
+            "id": "n",
+            "text": "EINGESTELLT",
+            "antwort": 6,
+            "begründung": "من الفعل 'einstellen' اللي كيعني فهاد السياق 'يوظف' (Mitarbeiter eingestellt werden = يتم توظيف عمال إضافيين)."
+          },
+          {
+            "id": "o",
+            "text": "KUNDEN",
+            "antwort": 0,
+            "begründung": "كلمة 'Kunden' (الزبناء) ما مناسباش للمعنى فالخيارات المتاحة."
+          }
+        ],
+        "id": 32,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "لماذا تعيد مناقشة المناخ عربات النوم إلى __(1)__؟ \n\nيُسمى القطار \"نايت جت\"، لكن __(2)__ ليس بسرعة الطائرة. تسبب رحلة القطار من فيينا إلى بروكسل جزءًا بسيطًا من انبعاثات ثاني أكسيد الكربون مقارنة برحلة الطيران. بحلول ديسمبر، من المتوقع أن تضاف خدمة قطار ليلي جديدة كخط الـ 28 بين فيينا وميونيخ إلى أمستردام. \"إذا كان لدينا المزيد من عربات النوم، يمكننا بسرعة زيادة العرض بشكل كبير __(3)__\"، يقول برنارد ريدر من ÖBB. يستغرق الأمر خمس سنوات من اتخاذ القرار بشأن قطار جديد حتى يبدأ العمل، أيضًا لأن الطلبات يجب أن تُطرح في جميع أنحاء أوروبا. ومع ذلك، يمكن تشغيلها الآن بتكلفة تغطيها. لكل عربة نوم يوجد مضيف ليلي \"نايت ستيوارد\" على متنها. __(4)__ عادة ما يكون هناك ثمانية موظفين في قطار ليلي، بينما يكون هناك اثنان فقط أثناء النهار - بالإضافة إلى سائقي القطار. تؤكد الشركة أن هناك أيضًا قطارات تسير في الليل ولكن بمقاعد. من جرب ذلك في السابق، يصل مرهقًا إلى وجهته. في 15 ديسمبر، قامت الشركة بالتعاون مع ÖBB بإطلاق خدمة ليلية بين المدن على خطوط زيورخ-برلين وزيورخ-هامبورغ. \n\n\"لذلك، نستثمر في السنوات القادمة حوالي اثني عشر مليار يورو في أسطول مركباتنا، الذي سيصل وحده في النقل البعيد إلى 600 قطار.\" وسيتم أيضًا توظيف حوالي ألف موظف إضافي __(6)__. \"إذا لم ترد السكك الحديدية الألمانية، فذلك مؤسف.\" لكنه لا يرى أي عائق أمام عدم __(7)__ تبني هذا العرض في القطارات الليلية - بشرط عدم وضع عقبات في طريقهم. يؤكدون أنه مع قطار ليلي يوجد فرصة لتقليل العديد من الرحلات الجوية التي ستتم في إطار رئاسة المجلس بين برلين وبروكسل باستخدام عرض تنقل صديق للبيئة. حتى الآن، يجب على الكثيرين استخدام الطائرة لأنه مع اتصالات القطار الحالية للسفر بين برلين وبروكسل يمكنهم السفر فقط خلال النهار، مما يفقدهم ست إلى ثماني ساعات وعادة ما يتعين عليهم الوصول قبل يوم واحد. يفضلون رؤيته إذا كان هذا القطار الليلي الجديد سيكون في ألوان أوروبا الزرقاء والصفراء __(9)__. كما أن القطار الليلي يثير لدى الكثير من الناس الشوق إلى رحلات بعيدة غير عادية. تم إيقاف القطار الليلي للسكك الحديدية الألمانية __(10)__ بسبب الخسائر الكبيرة في عام 2016."
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/48",
+      "themeKey": "sahla-b2-die-reise-im-schlafwagen",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "6a209684221ffb4fa79ba953",
+        "titel": "Die Reise im Schlafwagen .",
+        "photo": "WhatsApp Image 2026-06-02 at 09.59.34.jpeg",
+        "text": "Lange sah es so aus, als würde er ganz verschwinden: Die Rede ist vom Nachtzug. In den letzten Jahrzehnten wurde er immer mehr von Billigfliegen verdrängt und viele Angebote wurden ......(1)...... . Noch in den 1990er Jahren fuhren allerdings Nachtzüge von Deutschland aus direkt bis nach Venedig, Stockholm oder Warschau. Heute sind die Österreichischen Bundesbahnen der größte Nachtzuganbieter in Europa. Und das Geschäft läuft: Das Angebot gewinne kontinuierlich neue ......(2)...... , erklärt Sprecher Olaf Heise\n\nDie Zahl der Flugreisen steigt zwar weiter an, aber aus ......(3)...... des Umweltschutzes rücken andere Transportmittel wieder stärker in den Fokus. Kommt der Nachtzug also wieder in ......(4)...... ? Und könnten komfortable Schlafwagen tatsächlich dem Flugzeug als Reisemittel ......(5)...... machen?\n\nStefan Wiese, der als passionierter Bahnfahrer ein Blog für Zugreisende betreibt, ist skeptisch: ,, In den engen Schlafabteilen ist es manchmal ......(6)...... schön ungemütlich und stickig.\" ......(7)...... schrecke die lange Reisezeit viele ab. Mit dem Flugzeug schaffe man es in 90 Minuten von München nach Rom, mit der Bahn brauche man 13 Stunden\n\nDennoch: Es muss nicht immer das Flugzeug sein. ......(8)...... umweltschonendes Transportmittel ist der Nachtzug aktueller denn je. Zumal er auch einige romantische Vorstellungen weckt: Vor den Zugfenstern ziehen malerische Landschaften vorbei, ......(9)...... man von dem sanften Rattern des Zuges in den Schlaf gewiegt wird.\n\nSicher ist jedenfalls: Wer schon bedauert hatte, dass mit dem Verschwinden des Nachtzugs ein Stück Reisekultur verlorengehen könnte, war etwas ......(10)...... . Als sanfte Alternative zum Fliegen hat er durchaus eine Zukunft.",
+        "options": [
+          {
+            "id": "a",
+            "text": "WÄHREND",
+            "antwort": 9,
+            "begründung": "während كتعني 'بينما'. كتربط بين جوج أحداث كيوقعو فنفس الوقت (المناظر كدوز، بينما الواحد كينعس)."
+          },
+          {
+            "id": "b",
+            "text": "VOREILIG",
+            "antwort": 10,
+            "begründung": "voreilig كتعني 'متسرع'. 'war etwas voreilig' كتعني كان شوية متسرع فالحكم ديالو بلي قطار الليل غادي يختفي."
+          },
+          {
+            "id": "c",
+            "text": "MODE",
+            "antwort": 4,
+            "begründung": "in Mode kommen هي عبارة ثابتة كتعني 'يصبح على الموضة' أو 'يرجع للواجهة'."
+          },
+          {
+            "id": "d",
+            "text": "KUNDEN",
+            "antwort": 2,
+            "begründung": "Kunden كتعني 'زبناء'. neue Kunden gewinnen = كسب زبناء جدد."
+          },
+          {
+            "id": "e",
+            "text": "KONKURRENZ",
+            "antwort": 5,
+            "begründung": "jemandem Konkurrenz machen كتعني 'ينافس شخصاً أو شيئاً ما'. واش يقدر قطار الليل ينافس الطيارة؟"
+          },
+          {
+            "id": "f",
+            "text": "GRÜNDEN",
+            "antwort": 3,
+            "begründung": "aus Gründen كتعني 'لأسباب'. aus Gründen des Umweltschutzes = لأسباب تتعلق بحماية البيئة."
+          },
+          {
+            "id": "g",
+            "text": "GESAMT",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "h",
+            "text": "GENAU",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "i",
+            "text": "GANZ",
+            "antwort": 6,
+            "begründung": "ganz schön هي عبارة كتعني 'جداً' أو 'بزاف'. 'ganz schön ungemütlich' = غير مريح بزاف."
+          },
+          {
+            "id": "j",
+            "text": "FORM",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "k",
+            "text": "EINGESTELLT",
+            "antwort": 1,
+            "begründung": "ein Angebot einstellen كتعني 'يلغي العرض' أو 'يوقفه'. هنا جات فالمبني للمجهول (Passiv): wurden eingestellt = تم إلغاؤها."
+          },
+          {
+            "id": "l",
+            "text": "EINGESETZT",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "m",
+            "text": "EIN",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "n",
+            "text": "AUSSERDEM",
+            "antwort": 7,
+            "begründung": "Außerdem كتعني 'بالإضافة إلى ذلك'. كتزيد فكرة جديدة كتدعم الفكرة لي قبل منها (بالإضافة لهادشي، مدة السفر الطويلة كتنفر الناس)."
+          },
+          {
+            "id": "o",
+            "text": "ALS",
+            "antwort": 8,
+            "begründung": "Als كتعني 'كـ' (كمكانة أو صفة). 'Als umweltschonendes Transportmittel' = كوسيلة نقل صديقة للبيئة."
+          }
+        ],
+        "id": 33,
+        "availableFor": "pro",
+        "niveau": "B2",
+        "__v": 1,
+        "taadilat": [],
+        "tr": "رحلة في عربة النوم\nلفترة طويلة بدا الأمر وكأنه سيختفي تمامًا: الحديث هنا عن قطار الليل. في العقود الأخيرة، تم إزاحته بشكل متزايد من قبل الرحلات الجوية الرخيصة وتم ......(1)...... العديد من العروض. ومع ذلك، في التسعينيات، كانت قطارات الليل تنطلق من ألمانيا مباشرة إلى البندقية أو ستوكهولم أو وارسو. اليوم، تعتبر السكك الحديدية الفيدرالية النمساوية أكبر مزود لقطارات الليل في أوروبا. والعمل مزدهر: يوضح المتحدث أولاف هايسه أن العرض يكتسب باستمرار ......(2)...... جدد.\n\nعلى الرغم من أن عدد الرحلات الجوية مستمر في الارتفاع، إلا أنه لـ ......(3)...... تتعلق بحماية البيئة، تعود وسائل النقل الأخرى بقوة إلى الواجهة. هل سيعود قطار الليل إذن إلى ......(4)......؟ وهل يمكن لعربات النوم المريحة أن تخلق فعلاً ......(5)...... للطائرة كوسيلة سفر؟\n\nشتيفان فيزه، الذي يدير مدونة للمسافرين بالقطار بصفته راكب قطار شغوف، متشكك: \"في مقصورات النوم الضيقة، يكون الأمر أحيانًا غير مريح وخانق ......(6)......\". ......(7)......، فإن وقت السفر الطويل ينفر الكثيرين. بالطائرة، يمكنك الوصول من ميونيخ إلى روما في 90 دقيقة، بينما بالقطار تحتاج إلى 13 ساعة.\n\nومع ذلك: ليس بالضرورة أن تكون الطائرة دائمًا. ......(8)...... وسيلة نقل صديقة للبيئة، أصبح قطار الليل أكثر أهمية من أي وقت مضى. خاصة وأنه يثير بعض التصورات الرومانسية: تمر المناظر الطبيعية الخلابة أمام نوافذ القطار، ......(9)...... يغفو المرء على صوت خشخشة القطار اللطيفة.\n\nالشيء المؤكد على أي حال: من كان قد تأسف بالفعل على أن جزءًا من ثقافة السفر قد يضيع باختفاء قطار الليل، كان ......(10)...... بعض الشيء. كبديل لطيف للطيران، فإنه يمتلك بالتأكيد مستقبلاً.",
+        "note": ""
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/49",
+      "themeKey": "sahla-b2-garten-in-der-stadt",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "6a37b8381d633b699c15a4fe",
+        "titel": "Garten in der Stadt",
+        "text": "unter Jungen Großestadt bewohner gibt es einen neuen Trand: sie wünschen sich einegen Garten Daher lassen sie sich auf lange War leisten für kleingarten parzellen __(1)__ auf Dächern vor gärten ,Mauer und grüne Grün streifen werden Blümen __(2)__ und WGs nutzen ihre süd balkons nicht mehr,um alt glas,sondern um pflanzentöpfe abzustellen in den deutschen Städten wird also gerabenig pflanzt ,gegossen und geerntet .die __(3)__ von grünen städten liegen auf der Hand je mehr pflanzen es in einer stadt gibt ,desto __(4)__ ist die Lebensquellität .pflnzen filtern veruneinigen aus der Luft ,nehmen kohlenstoff dioxid auf den gegebenen sauerstoff ab .Bäume sind natürliche schützwälle __(5)__ wind und Lärm ,park sind belibte Treffpunkte .und zu guter letzt machen pflanzen eine Stadt ,die ansonsten aus ziegeln ,Beton und Aspalt besteht auch viel schöner ,\nDas ligt daran ,dass die auch einen pasychologischen Effekt auf uns Menschen haben .wo __(6)__ grünt und blüht ,da fühlen wir uns __(7)__ wohl\n.__(8)__ haben viel Städte entdeckt , dass __(9)__ städchen auch schnell zu sozialen trefpunkten werden__(10)__",
+        "options": [
+          {
+            "id": "a",
+            "text": "SETZEN",
+            "antwort": 1,
+            "begründung": "العبارة 'sich auf Wartelisten setzen' كتعني 'يسجل نفسه في قوائم الانتظار'. هنا الناس كيسجلو ريوسهم باش يحصلو على قطع أراضي صغيرة.",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "GEZÜCHTET",
+            "antwort": 2,
+            "begründung": "الفعل 'züchten' كيعني 'يربي' أو 'يزرع يعتني بـ'. 'Blumen werden gezüchtet' كتعني 'تتم زراعة/تربية الزهور'.",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "VORTEILE",
+            "antwort": 3,
+            "begründung": "الكلمة كتعني 'مزايا' أو 'فوائد'. العبارة 'die Vorteile liegen auf der Hand' كتعني 'المزايا واضحة وملموسة'.",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "VOR",
+            "antwort": 5,
+            "begründung": "حرف الجر 'vor' كيجي مع كلمة 'Schutz' (حماية). 'Schutzwälle vor Wind und Lärm' كتعني 'حواجز حماية من الرياح والضوضاء'.",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "ES",
+            "antwort": 6,
+            "begründung": "الضمير 'es' كيتستعمل كفاعل محايد لحالة الطقس أو البيئة. 'wo es grünt' كتعني 'حيثما يخضر المكان'.",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "EINFACH",
+            "antwort": 7,
+            "begründung": "كلمة 'einfach' هنا كتستعمل للتأكيد، 'wir fühlen uns einfach wohl' كتعني 'نشعر ببساطة بالراحة'.",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "MITLERWEILE",
+            "antwort": 8,
+            "begründung": "كلمة 'Mittlerweile' كتعني 'في غضون ذلك' أو 'حالياً'. كتستعمل باش تبين تطور أو تغير طرا مع مرور الوقت.",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "SOLCHE",
+            "antwort": 9,
+            "begründung": "كلمة 'solche' كتعني 'مثل هذه'. كتشير للأماكن الخضراء أو الحدائق لي تهضرو عليها فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "DADURCH",
+            "antwort": 10,
+            "begründung": "كلمة 'dadurch' كتعني 'وبالتالي' أو 'من خلال ذلك'. كتبين النتيجة ديال انتشار هاد الحدائق، لي كتردها أماكن تجمع اجتماعية.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "VON",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (من) ما مناسباش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "klein",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (صغير) ما مناسباش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "KEIN",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (أداة نفي) ما مناسباش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "HÖHER",
+            "antwort": 4,
+            "begründung": "تركيبة 'je... desto...' (كلما... كلما...). 'je mehr Pflanzen... desto höher ist die Lebensqualität' (كلما زادت النباتات... كلما ارتفعت/زادت جودة الحياة).",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "ERZOGEN",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (مُربّى للأشخاص) ما مناسباش لأننا كنهضرو على النباتات.",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "bezüchtet",
+            "antwort": 0,
+            "begründung": "هاد الكلمة خطأ إملائياً وماعندهاش معنى مناسب، الكلمة الصحيحة هي 'gezüchtet'.",
+            "isUpdated": false
+          }
+        ],
+        "id": 34,
+        "availableFor": "pro",
+        "note": "يوجد نقص في تسريب فقط في اخر التكملة ابتدا من الفراغ 39 حتى 40، وتمت كتابة النص كما هو موضح في الصورة مع أخطائه الإملائية للحفاظ على المطابقة.",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "حدائق في المدينة\n\nبين سكان المدن الكبرى الشباب، هناك اتجاه جديد: إنهم يتمنون حديقة خاصة بهم. لذلك يضعون أنفسهم في قوائم انتظار طويلة للحصول على قطع أراضي صغيرة (1). على الأسطح، في الحدائق الأمامية، على الجدران وفي المساحات الخضراء تُزرع الزهور (2)، ولم تعد السكنات المشتركة تستخدم شرفاتها الجنوبية لتخزين الزجاج القديم، بل لوضع أواني النباتات. في المدن الألمانية، يتم إذاً الزراعة والري والحصاد. مزايا (3) المدن الخضراء واضحة: كلما زادت النباتات في مدينة ما، زادت (4) جودة الحياة. تقوم النباتات بتصفية الملوثات من الهواء، وتمتص ثاني أكسيد الكربون وتعطي الأكسجين. الأشجار هي حواجز حماية طبيعية (5) ضد الرياح والضوضاء، والمتنزهات هي أماكن تجمع شهيرة. وأخيرًا وليس آخرًا، تجعل النباتات المدينة، التي تتكون خلاف ذلك من الطوب والخرسانة والأسفلت، أكثر جمالًا بكثير.\n\nويرجع ذلك أيضًا إلى أن لها تأثيرًا نفسيًا علينا نحن البشر. حيثما (6) تخضر وتزهر، نشعر (7) بالراحة ببساطة.\n\n(8) في غضون ذلك، اكتشفت العديد من المدن أن (9) مثل هذه المدن الصغيرة تصبح أيضًا (10) بسرعة أماكن تجمع اجتماعية.",
+        "isUpdated": false
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/51",
+      "themeKey": "sahla-b2-hobby-und-charakter",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "6a96fe2fab4e500a2d1290fb",
+        "titel": "Über den Zusammenhang zwischen Hobby und Charakter",
+        "text": "Jeder Mensch ist anders. Wir alle haben individuelle Charakterzüge, Werte und Interessen. Das schlägt sich auch bei der Wahl unserer Hobbys nieder. __(31)__ wollen wir unsere Freizeit mit Aktivitäten verbringen, die uns glücklich machen. In der Psychologie geht man von fünf zentralen Charaktereigenschaften aus. __(32)__ jener Eigenschaften verändern sich die Präferenzen für Hobbys. So liegt es zum Beispiel __(33)__, dass offene Personen Neues entdecken. Zu gewissenhaften Menschen __(34)__ am besten Hobbys, die ihre strukturierte Seite __(35)__ lassen. Für extrovertierte Personen eignen sich __(36)__ Aktivitäten wie Konzerte oder Feste. Verträgliche Menschen sind gern __(37)__ engagiert. Zu neurotischen Menschen passen beruhigende Hobbys, die sich ohne Gesellschaft __(38)__ lassen. Obwohl diese Theorie plausibel erscheint, ist sie __(39)__ kaum wissenschaftlich untersucht. Jeder Mensch sollte seinen Hobbys nachgehen - __(40)__ von seinen Charaktermerkmalen.",
+        "options": [
+          {
+            "id": "a",
+            "text": "ALLEINE",
+            "antwort": 0,
+            "begründung": "تعني 'بمفردي' ولم يتناسب سياقها مع أي من الفراغات المتبقية."
+          },
+          {
+            "id": "b",
+            "text": "AUSLEBEN",
+            "antwort": 35,
+            "begründung": "الفعل 'ausleben' يعني 'يمارس بحرية'. الجملة 'ihre strukturierte Seite ausleben lassen' تعني 'السماح لجانبهم المنظم بالظهور'."
+          },
+          {
+            "id": "c",
+            "text": "AUSPROBIEREN",
+            "antwort": 0,
+            "begründung": "تعني 'يجرب'. النص استخدم الفعل 'entdecken' للأشياء الجديدة، لذا لا يوجد فراغ مناسب لهذه الكلمة."
+          },
+          {
+            "id": "d",
+            "text": "AUSÜBEN",
+            "antwort": 38,
+            "begründung": "الفعل 'Hobbys ausüben' يعني 'ممارسة الهوايات'. تركيبة صحيحة ومناسبة للسياق."
+          },
+          {
+            "id": "e",
+            "text": "BISLANG",
+            "antwort": 39,
+            "begründung": "'bislang' تعني 'حتى الآن'. الجملة تشير إلى أن النظرية لم تُدرس علمياً 'حتى الآن'."
+          },
+          {
+            "id": "f",
+            "text": "EHRENAMTLICH",
+            "antwort": 37,
+            "begründung": "المصطلح 'ehrenamtlich engagiert' يعني 'المشاركة في العمل التطوعي'."
+          },
+          {
+            "id": "g",
+            "text": "ENTSPRECHEND",
+            "antwort": 32,
+            "begründung": "'entsprechend' تعني 'وفقاً لـ' أو 'بناءً على'. هنا المعنى 'بناءً على تلك الصفات'."
+          },
+          {
+            "id": "h",
+            "text": "GEHÖREN",
+            "antwort": 0,
+            "begründung": "الفعل 'ينتمي'، لا يتناسب مع التركيبات النحوية أو السياق في هذا النص."
+          },
+          {
+            "id": "i",
+            "text": "NAHE",
+            "antwort": 33,
+            "begründung": "التعبير 'es liegt nahe' يعني 'من البديهي' أو 'من المنطقي'."
+          },
+          {
+            "id": "j",
+            "text": "PASSEN",
+            "antwort": 34,
+            "begründung": "الفعل 'passen zu' يعني 'يناسب'. هنا الهوايات 'تناسب' الأشخاص المنظمين."
+          },
+          {
+            "id": "k",
+            "text": "SCHLIESSLICH",
+            "antwort": 31,
+            "begründung": "تُستخدم 'schließlich' لتقديم استنتاج أو سبب رئيسي، بمعنى 'في النهاية' أو 'ختاماً'."
+          },
+          {
+            "id": "l",
+            "text": "SOZIAL",
+            "antwort": 36,
+            "begründung": "تعني 'اجتماعي'. الحفلات الموسيقية والمهرجانات تعتبر أنشطة اجتماعية ('soziale Aktivitäten')."
+          },
+          {
+            "id": "m",
+            "text": "TROTZDEM",
+            "antwort": 0,
+            "begründung": "تعني 'رغم ذلك'، ولا يوجد تناقض في الجمل يتطلب استخدامها كأداة ربط هنا."
+          },
+          {
+            "id": "n",
+            "text": "UNABHÄNGIG",
+            "antwort": 40,
+            "begründung": "العبارة 'unabhängig von' تعني 'بغض النظر عن' أو 'بشكل مستقل عن'."
+          },
+          {
+            "id": "o",
+            "text": "ZUGRUNDE",
+            "antwort": 0,
+            "begründung": "تُستخدم عادة في تعبير 'zugrunde liegen'، لكن النص لم يتطلب هذا التعبير."
+          }
+        ],
+        "id": 35,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "كل إنسان مختلف. لدينا جميعًا سمات شخصية وقيم واهتمامات فردية. وهذا ينعكس أيضًا في اختيارنا لهواياتنا. في النهاية (31)، نريد أن نقضي وقت فراغنا في أنشطة تجعلنا سعداء. في علم النفس، يُفترض وجود خمس سمات شخصية مركزية. بناءً على (32) تلك الصفات تتغير التفضيلات للهوايات. على سبيل المثال، من المنطقي (33) أن يكتشف الأشخاص المنفتحون أشياء جديدة. بالنسبة للأشخاص ذوي الضمير الحي، تناسبهم (34) أفضل الهوايات التي تتيح لهم ممارسة (35) جانبهم المنظم. بالنسبة للأشخاص المنفتحين، تناسبهم الأنشطة الاجتماعية (36) مثل الحفلات الموسيقية أو المهرجانات. الأشخاص المتوافقون يحبون المشاركة التطوعية (37). الهوايات المهدئة التي يمكن ممارستها (38) بدون رفقة تناسب الأشخاص العصابيين. على الرغم من أن هذه النظرية تبدو معقولة، إلا أنها لم تخضع لدراسة علمية حتى الآن (39). يجب على كل شخص متابعة هواياته - بغض النظر (40) عن سمات شخصيته."
+      }
+    },
+    {
+      "collection": "lesen.B2.spteil2",
+      "pointer": "/collections/11/records/52",
+      "themeKey": "sahla-b2-sprachwandel",
+      "partKey": "sprachbausteine-2",
+      "source": {
+        "_id": "6a96fe2fab4e500a2d1290fc",
+        "titel": "Sprachwandel",
+        "text": "Deutsche Sprache, schwere Sprache! Warum heißt es zum Beispiel das Mädchen, wenn Mädchen doch immer weiblich sind? Wieso hat man Angst vor Spinnen und nicht wegen Spinnen? Die Erklärung ist simpel und frustrierend: __(31)__! Im Laufe der Zeit haben sich durch unseren Sprachgebrauch sprachliche Phänomene etabliert, die heutzutage als willkürlich und unlogisch empfunden werden können. Sprachhistoriker Rüdiger Müllerlein sagt __(32)__: „In Deutschland gibt es keine Institution, die regelt, was falsch und was richtig ist. Da sich unsere Sprache in einem stetigen Wandel befindet, müssen alle Grammatikbücher, die auf dem Markt sind, deshalb regelmäßig erneuert werden.“\nVor allem für Deutschlernende stellt dies eine große Herausforderung dar. Woher __(33)__ man denn, was richtig und was falsch ist, wenn sich das ständig ändert? Darauf antwortet der Sprachhistoriker: „Derzeit orientiert man sich an der Sprache, die im Rundfunk und im Fernsehen gesprochen wird.“ Für Deutschlernende, die noch __(34)__ Zeit zu Zeit im Regelschungel herumirren, gibt es aber laut Rüdiger Müllerlein Grund zur Hoffnung: „Da die sozialen Medien das klassische Fernsehen nach und nach verdrängen, passt sich unsere Sprache auch in den anderen Bereichen immer mehr an dieses sogenannte Social-Media-Deutsch __(35)__.“ Die Meinungen über diese Entwicklungen gehen auseinander. So __(36)__ Kritiker beispielsweise ein verbindliches Regelwerk, in dem Rechtschreibung, Aussprache und Grammatik geregelt sind. Sie sehen diese Veränderungen nämlich als Zeichen des Sprachverfalls. Die Verbindung, die man __(37)__ der eigenen Kultur hat, könne verloren gehen, wenn viele deutsche Begriffe von englischen Ausdrücken verdrängt werden würden. Rüdiger Müllerlein __(38)__ von diesem Anliegen wenig: „Im Zeitalter der Globalisierung ergibt es keinen Sinn, eine Sprache konservieren zu wollen. Es gibt zum Beispiel immer wieder neue technische Begriffe, die in den Sprachgebrauch aufgenommen werden müssen, da mitunter die notwendige deutsche __(39)__ Verfügung stehen.“\nSprache ist also ein Spiegel der Gesellschaft und Sprachwandel somit ein natürlicher Prozess, der sich durch ein Regelwerk nicht aufhalten __(40)__.",
+        "options": [
+          {
+            "id": "a",
+            "text": "AN",
+            "antwort": 35,
+            "begründung": "الفعل 'sich anpassen' (يتكيف) يأتي دائمًا مع حرف الجر 'an'."
+          },
+          {
+            "id": "b",
+            "text": "AUF",
+            "antwort": 0,
+            "begründung": "حرف جر لم يتناسب مع أي من التراكيب النحوية في هذا النص."
+          },
+          {
+            "id": "c",
+            "text": "DAZU",
+            "antwort": 32,
+            "begründung": "التركيبة 'sagt dazu' تعني 'يقول عن ذلك' أو 'يضيف حول هذا الموضوع'."
+          },
+          {
+            "id": "d",
+            "text": "FORDERN",
+            "antwort": 36,
+            "begründung": "الفعل 'fordern' يعني 'يطالب'. النقاد يطالبون ('fordern Kritiker') بقواعد ملزمة."
+          },
+          {
+            "id": "e",
+            "text": "FÖRDERN",
+            "antwort": 0,
+            "begründung": "تعني 'يدعم' أو 'يعزز'. السياق يتحدث عن مطالبات النقاد (fordern) وليس دعمهم."
+          },
+          {
+            "id": "f",
+            "text": "GLEICHZEITIG",
+            "antwort": 0,
+            "begründung": "تعني 'في نفس الوقت'، لكن الكلمة 'zugleich' أدت المعنى المطلوب بشكل أدق في الفراغ 31."
+          },
+          {
+            "id": "g",
+            "text": "HÄLT",
+            "antwort": 38,
+            "begründung": "التعبير 'wenig halten von' يعني 'لا يعتقد كثيراً بـ' أو 'لا يعيره اهتماماً كبيراً'."
+          },
+          {
+            "id": "h",
+            "text": "KANN",
+            "antwort": 0,
+            "begründung": "فعل مساعد 'يستطيع'، لكن الفراغ 40 تطلب 'lässt' لتكوين تركيبة المبني للمجهول 'sich aufhalten lässt'."
+          },
+          {
+            "id": "i",
+            "text": "KENNT",
+            "antwort": 0,
+            "begründung": "تعني 'يعرف' (معرفة بالأشخاص أو الأشياء)، بينما الفراغ 33 يحتاج 'weiß' لأن المقصود هو العلم بالمعلومات (wissen)."
+          },
+          {
+            "id": "j",
+            "text": "LÄSST",
+            "antwort": 40,
+            "begründung": "التركيبة 'sich lassen + Infinitiv' تعبر عن الإمكانية. 'sich nicht aufhalten lässt' تعني 'لا يمكن إيقافه'."
+          },
+          {
+            "id": "k",
+            "text": "VON",
+            "antwort": 34,
+            "begründung": "التعبير الثابت 'von Zeit zu Zeit' يعني 'من وقت لآخر'."
+          },
+          {
+            "id": "l",
+            "text": "WEISS",
+            "antwort": 33,
+            "begründung": "تصريف الفعل 'wissen' في الحاضر مع الضمير 'man'. 'Woher weiß man' تعني 'من أين يعلم المرء'."
+          },
+          {
+            "id": "m",
+            "text": "ZU",
+            "antwort": 37,
+            "begründung": "كلمة 'Verbindung' (ارتباط/علاقة) تأتي مع حرف الجر 'zu'."
+          },
+          {
+            "id": "n",
+            "text": "ZUGLEICH",
+            "antwort": 31,
+            "begründung": "تعني 'في نفس الوقت'. الجملة 'simpel und frustrierend zugleich' تعني 'بسيط ومحبط في آن واحد'."
+          },
+          {
+            "id": "o",
+            "text": "ZUR",
+            "antwort": 39,
+            "begründung": "التعبير الثابت 'zur Verfügung stehen' يعني 'متاح' أو 'تحت التصرف'."
+          }
+        ],
+        "id": 36,
+        "availableFor": "pro",
+        "note": "",
+        "taadilat": [],
+        "niveau": "B2",
+        "tr": "تغير اللغة\nلغة ألمانية، لغة صعبة! لماذا تُسمى الفتاة محايدًا (das Mädchen) بينما الفتيات دائماً إناث؟ ولماذا نخاف (vor) العناكب وليس (wegen) العناكب؟ التفسير بسيط ومحبط في نفس الوقت (31)! بمرور الوقت، وبسبب استخدامنا للغة، ترسخت ظواهر لغوية يمكن أن تُعتبر اليوم عشوائية وغير منطقية. يقول مؤرخ اللغة روديجر مولرلين عن ذلك (32): 'لا توجد في ألمانيا مؤسسة تنظم ما هو خاطئ وما هو صحيح. نظراً لأن لغتنا في تغير مستمر، يجب بالتالي تحديث جميع كتب القواعد الموجودة في السوق بانتظام.'\nيشكل هذا تحديًا كبيرًا بشكل خاص لمتعلمي اللغة الألمانية. من أين يعلم (33) المرء ما هو صحيح وما هو خاطئ إذا كان ذلك يتغير باستمرار؟ يجيب مؤرخ اللغة على ذلك: 'في الوقت الحالي، يتم التوجيه بناءً على اللغة المنطوقة في الراديو والتلفزيون.' بالنسبة لمتعلمي اللغة الألمانية الذين لا يزالون يتخبطون في غابة القواعد من (34) وقت لآخر، هناك سبب للأمل وفقًا لروديجر مولرلين: 'نظراً لأن وسائل التواصل الاجتماعي تحل تدريجياً محل التلفزيون الكلاسيكي، فإن لغتنا تتكيف أكثر فأكثر في مجالات أخرى مع ما يسمى بلغة وسائل التواصل الاجتماعي هذه (35).' تختلف الآراء حول هذه التطورات. على سبيل المثال، يطالب (36) النقاد بمجموعة قواعد ملزمة تنظم الإملاء والنطق والقواعد. فهم يرون هذه التغييرات كعلامة على تدهور اللغة. قد يُفقد الارتباط الذي يمتلكه المرء بـ (37) ثقافته الخاصة إذا تم استبدال العديد من المصطلحات الألمانية بتعبيرات إنجليزية. روديجر مولرلين لا يعتقد (38) كثيراً بهذا القلق: 'في عصر العولمة، لا معنى للرغبة في الحفاظ على لغة. على سبيل المثال، هناك دائماً مصطلحات تقنية جديدة يجب إدراجها في استخدام اللغة، حيث لا تتوفر (39) غالباً المصطلحات الألمانية الضرورية.'\nوبالتالي، فاللغة هي مرآة للمجتمع، وتغير اللغة هو عملية طبيعية لا يمكن (40) إيقافها من خلال مجموعة من القواعد."
+      }
+    }
+  ]
+}

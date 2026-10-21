@@ -1,5 +1,7 @@
 # B2 imported exercises and alternative names
 
+This document describes the earlier telc.site batch. The 18 subsequent Sahla reading additions use native `sourceImport` metadata and the same reading UI; see [Sahla B2 reading import](sahla-b2-reading-import.md) for their destinations, provenance and incomplete-text handling.
+
 The shared catalogue also supports B1 following its separate integration. `baseEntries`, `mergedExercises` and `combinedNames` enumerate both levels by default; pass `{ levels: ["b2"] }` to restrict a caller to B2. The manager API accepts a `level` query parameter and retains B2 as its default. B2 native data and sidecars were preserved during the B1 merge. See `docs/b1-legacy-integration.md` for the B1 destinations and word-bank handling.
 
 The 31 previously standalone additions are now stored in the existing module databases. Their original texts, question identities, names and provenance are preserved. No original exercise or correction was replaced.
