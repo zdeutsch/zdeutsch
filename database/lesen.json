@@ -93569,7 +93569,7 @@
         },
         "sahla-b2-liebe-anna-neu": {
           "id": "sahla-b2-liebe-anna-neu",
-          "title": "Liebe Anna, (الجديد)",
+          "title": "Liebe Anna",
           "defaultVersion": "default",
           "versionOrder": [
             "default"
@@ -93578,7 +93578,7 @@
             "default": {
               "key": "default",
               "label": "Default",
-              "title": "Liebe Anna, (الجديد)",
+              "title": "Liebe Anna",
               "lesen": {
                 "partOrder": [
                   "sprachbausteine-1"
@@ -93589,7 +93589,7 @@
                 "parts": {
                   "sprachbausteine-1": {
                     "meta": {
-                      "title": "Liebe Anna, (الجديد)",
+                      "title": "Liebe Anna",
                       "level": "B2",
                       "partLabel": "Sprachbausteine Teil 1",
                       "section": "sprachbausteine",
@@ -94937,7 +94937,7 @@
         },
         "sahla-b2-die-katzen": {
           "id": "sahla-b2-die-katzen",
-          "title": "Die Katzen - القطط",
+          "title": "Die Katzen",
           "defaultVersion": "default",
           "versionOrder": [
             "default"
@@ -94946,7 +94946,7 @@
             "default": {
               "key": "default",
               "label": "Default",
-              "title": "Die Katzen - القطط",
+              "title": "Die Katzen",
               "lesen": {
                 "partOrder": [
                   "sprachbausteine-2"
@@ -94957,7 +94957,7 @@
                 "parts": {
                   "sprachbausteine-2": {
                     "meta": {
-                      "title": "Die Katzen - القطط",
+                      "title": "Die Katzen",
                       "level": "B2",
                       "partLabel": "Sprachbausteine Teil 2",
                       "section": "sprachbausteine",
