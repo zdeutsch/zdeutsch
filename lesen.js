@@ -1207,7 +1207,8 @@ function renderActionBar(partKey) {
   const score = submitted && partData ? computePartScore(partKey, partData) : null;
   const scoreText = score && Number.isFinite(score.total) && score.total > 0
     ? `Teil score: ${score.correct}/${score.total} | Points: ${formatPoints(score.earnedPoints)} / ${formatPoints(score.maxPoints)}` : "";
-  const wrapper = PracticeUI.reviewBar({ submitted, scoreText, attributes: hasKey ? {} : { disabled: true }, actionLabel: hasKey ? undefined : "Lösungen fehlen", onAction: () => {
+  const wrapper = PracticeUI.reviewBar({ submitted, scoreText, attributes: hasKey ? {} : { disabled: true }, actionLabel: hasKey ? undefined
+    : partData?.content?.sourceImport?.review?.contentStatus === "incomplete" ? "Nur zum Üben" : "Lösungen fehlen", onAction: () => {
     if (!hasKey) {
       return;
     }
@@ -2742,7 +2743,7 @@ function renderCurrentPart() {
     return;
   }
 
-  setHeader(partData.meta, Boolean(partData.content?.legacyImport));
+  setHeader(partData.meta, Boolean(partData.content?.legacyImport || partData.content?.sourceImport));
   renderProgress(getLesenPartOrder(lesenEntry));
 
   if (state.part === "teil-1") {
@@ -2758,9 +2759,11 @@ function renderCurrentPart() {
   }
 
   if (!ZDeutschLesenImports.canScore(partData.content)) {
-    leftPanel.append(createEl("p", "exercise-note", "Die Lösungen dieser Übung sind unvollständig oder nicht verwendbar. Es wird kein Prüfungsergebnis berechnet."));
+    leftPanel.append(createEl("p", "exercise-note", partData.content?.sourceImport?.review?.contentStatus === "incomplete"
+      ? "Der Ausgangstext ist unvollständig. Diese Übung ist nur zum Üben verfügbar; es wird kein Prüfungsergebnis berechnet."
+      : "Die Lösungen dieser Übung sind unvollständig oder nicht verwendbar. Es wird kein Prüfungsergebnis berechnet."));
   }
-  const importedNames = partData.content?.legacyImport?.names || [];
+  const importedNames = (partData.content?.legacyImport || partData.content?.sourceImport)?.names || [];
   const otherNames = [...new Set(importedNames)].filter(name => name !== partData.content.title);
   if (otherNames.length) {
     const details = createEl("details", "exercise-name-details");

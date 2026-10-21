@@ -29,7 +29,8 @@
   }
   function canScore(content) {
     // Native corrections are authoritative. Imported keys fill exercises absent from the original database.
-    return !content?.legacyImport || catalog.hasAnswerKey({ module: "lesen", payload: content });
+    if (content?.sourceImport?.review?.contentStatus === "incomplete") return false;
+    return !(content?.legacyImport || content?.sourceImport) || catalog.hasAnswerKey({ module: "lesen", payload: content });
   }
   return Object.freeze({ storageKey, readResponses, saveResponses, canScore });
 });

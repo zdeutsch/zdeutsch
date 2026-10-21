@@ -78,6 +78,19 @@
   function hasAnswerKey(item) {
     const payload = item?.payload;
     if (item?.module === "horen") return Array.isArray(payload?.statements) && payload.statements.length > 0 && payload.statements.every(statement => typeof statement.correct === "boolean");
+    if (item?.module === "lesen" && Array.isArray(payload?.texts)) {
+      return payload.texts.length > 0 && payload.answers?.length === payload.texts.length
+        && payload.texts.every(text => payload.answers.filter(a => a.textId === text.id).length === 1
+          && payload.headlines?.some(h => h.id === payload.answers.find(a => a.textId === text.id).headlineId));
+    }
+    if (item?.module === "lesen" && Array.isArray(payload?.questions)) {
+      return payload.questions.length > 0 && payload.questions.every(q => q.options?.some(o => o.id === q.answerId));
+    }
+    if (item?.module === "lesen" && Array.isArray(payload?.situations)) {
+      return payload.situations.length > 0 && payload.answers?.length === payload.situations.length
+        && payload.situations.every(s => payload.answers.filter(a => a.situationId === s.id).length === 1
+          && payload.ads?.some(ad => ad.id === payload.answers.find(a => a.situationId === s.id).adId));
+    }
     if (item?.module !== "lesen" || !Array.isArray(payload?.blanks) || !payload.blanks.length || !Array.isArray(payload?.answers)) return false;
     const answers = new Map(payload.answers.map(answer => [String(answer.id), answer.answer]));
     if (answers.size !== payload.answers.length || new Set(payload.blanks.map(blank => String(blank.id))).size !== payload.blanks.length) return false;
@@ -164,7 +177,8 @@
       if (!includeHidden && record.legacyImport?.enabled === false) return;
       const candidate = target.file === "lesen.json" ? (target.kind === "theme" ? resolved.contextTitle : target.partKey === "teil-2" ? record.passage?.title : record.title) : record.title;
       const title = candidate && !["Aufgaben", "Aufgabe"].includes(candidate) ? candidate : partLabel(target);
-      const importedNames = (record.legacyImport?.names || []).map(label => ({ label, source: "telc.site", scope: "exercise" }));
+      const origin = record.legacyImport || record.sourceImport;
+      const importedNames = (origin?.names || []).map(label => ({ label, source: origin?.provenance?.source || "telc.site", scope: "exercise" }));
       entries.push({ id: targetId(target), target, subtitle: title, names: [...importedNames, ...(!importedNames.some(name => name.label === title) ? [{ label: title, source: "zdeutsch", scope: target.kind === "theme" ? "theme" : "exercise" }] : [])], contentFingerprint: fingerprint(identityContent(target, record)), ...resolved, module: section(target), label: partLabel(target), url: targetUrl(target) });
     };
     for (const levelKey of levels.filter(key => ["b1", "b2"].includes(key))) {

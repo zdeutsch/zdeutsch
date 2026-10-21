@@ -104,7 +104,7 @@ function getExistingExerciseInfo(entry) {
   const count = entry.target.partKey === "teil-1" ? record.texts?.length
     : entry.target.partKey === "teil-2" ? record.questions?.length
     : entry.target.partKey === "teil-3" ? record.situations?.length : record.blanks?.length || record.answers?.length;
-  return { status: count ? `${count} Aufgaben` : "Thema", meta: [], progress: null };
+  return { isNew: Boolean(record.sourceImport), status: count ? `${count} Aufgaben` : "Thema", meta: [], progress: null };
 }
 
 function getAdditionalExerciseInfo(item) {
@@ -137,7 +137,10 @@ function decorateExerciseCard(card, location) {
 function getThemeSearchValues(themeKey, theme) {
   const versionValues = getVersionKeys(theme).flatMap(versionKey => {
     const version = theme?.versions?.[versionKey] || {};
-    const importedNames = Object.values(version.lesen?.parts || {}).flatMap(part => part.content?.legacyImport ? [part.content.title, ...(part.content.legacyImport.names || [])] : []);
+    const importedNames = Object.values(version.lesen?.parts || {}).flatMap(part => {
+      const origin = part.content?.legacyImport || part.content?.sourceImport;
+      return origin ? [part.content.title, ...(origin.names || [])] : [];
+    });
     return [versionKey, version.label, version.title, ...importedNames];
   });
   const themeNames = exerciseNames.filter(entry => entry.target.level === state.level && entry.target.kind === "theme" && entry.target.themeKey === themeKey).flatMap(entry => entry.names.map(name => name.label));
@@ -162,7 +165,7 @@ function renderExerciseLibrary(query) {
   named.forEach(entry => {
     if (entry.target.kind === "theme") return;
     if (exercisePartKey && singleView && entry.target.partKey !== exercisePartKey) return;
-    if (!singleView && entry.record.legacyImport && entry.module === "lesen") {
+    if (!singleView && (entry.record.legacyImport || entry.record.sourceImport) && entry.module === "lesen") {
       const theme = state.db?.levels?.[state.level]?.themes?.[entry.target.themeKey];
       const versions = getVersionKeys(theme);
       if (versions.length === 1 && Object.keys(theme.versions[versions[0]].lesen.parts).length === 1 && matchesSearchQuery(query, ...getThemeSearchValues(entry.target.themeKey, theme))) return;
@@ -179,7 +182,8 @@ function renderExerciseLibrary(query) {
       action: first.target.kind === "theme" ? "Thema öffnen →" : "Üben →", onOpen: () => { saveHomeState(); if (first.target.kind === "theme") handleThemeSelection(first.target.themeKey, state.db.levels[state.level].themes[first.target.themeKey]); else window.location.href = first.url; } });
     decorateExerciseCard(card, getExerciseLocation(first));
     card.dataset.exerciseTarget = first.id;
-    if (first.record.legacyImport) card.dataset.importedExercise = first.record.legacyImport.id;
+    const origin = first.record.legacyImport || first.record.sourceImport;
+    if (origin) card.dataset.importedExercise = origin.id;
     if (labels.length) {
       const names = createEl("details", "exercise-name-details");
       names.append(createEl("summary", "", "Auch bekannt als"), createEl("p", "", labels.join(" · ")));
@@ -3688,7 +3692,10 @@ function renderVersionCards() {
     copy.append(createEl("span", "theme-version-option-title", label), createEl("span", "theme-version-option-parts", parts));
     if (progress) copy.append(createEl("span", "theme-version-option-progress", `Letztes Ergebnis: ${clampPercent(progress.lastPercent)}%`));
     const badges = createEl("span", "theme-version-option-badges");
-    if (Object.values(lesenEntry?.parts || {}).some(part => part.content?.legacyImport && part.content.legacyImport.enabled !== false)) badges.append(PracticeUI.newBadge());
+    if (Object.values(lesenEntry?.parts || {}).some(part => {
+      const origin = part.content?.legacyImport || part.content?.sourceImport;
+      return origin && origin.enabled !== false;
+    })) badges.append(PracticeUI.newBadge());
     if (versionKey === themeEntry.defaultVersion && label !== "Standard") badges.append(createEl("span", "theme-version-default", "Standard"));
     const arrow = createEl("span", "theme-version-option-arrow", "→");
     arrow.setAttribute("aria-hidden", "true");
@@ -4019,7 +4026,7 @@ function renderThemeCards() {
     const status = getThemeStatus(progressSummary);
     const lastPercent = clampPercent(progressSummary?.lastPercent || 0);
 
-    const card = PracticeUI.themeCard({ title: themeLabel, subtitle: getThemePartLabels(versionEntry, partCount).join(" · "), compact: true, isNew: Boolean(imported),
+    const card = PracticeUI.themeCard({ title: themeLabel, subtitle: getThemePartLabels(versionEntry, partCount).join(" · "), compact: true, isNew: Boolean(imported) || importedParts.some(part => part.content?.sourceImport),
       status: progressSummary ? status.label : importedProgress?.progress ? importedProgress.status : null,
       statusClass: status.className, progress: progressSummary ? lastPercent : importedProgress?.progress ?? null,
       scoreText: progressSummary ? `${lastPercent}%` : null,

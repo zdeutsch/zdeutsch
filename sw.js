@@ -1,4 +1,4 @@
-const SW_VERSION = "2026-10-11-b1-integration-v38";
+const SW_VERSION = "2026-10-21-sahla-b2-v39";
 const STATIC_CACHE = `zdeutsch-static-${SW_VERSION}`;
 const RUNTIME_CACHE = `zdeutsch-runtime-${SW_VERSION}`;
 const APP_SHELL = [
