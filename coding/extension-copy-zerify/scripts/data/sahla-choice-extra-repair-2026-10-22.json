@@ -1,0 +1,874 @@
+{
+  "items": [
+    {
+      "mode": "replace-unrelated-bank",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "andreas",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-2"
+      },
+      "expectedTextSha256": "92c37f0c3a3f0cd5fd35e44ea5a13645be81f4760bac82068cafc97151dea91c",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "INTERESSIERT"
+        },
+        {
+          "id": 32,
+          "answer": "ÖFTER"
+        },
+        {
+          "id": 33,
+          "answer": "NUR"
+        },
+        {
+          "id": 34,
+          "answer": "VOR"
+        },
+        {
+          "id": 35,
+          "answer": "ARBEITEN"
+        },
+        {
+          "id": 36,
+          "answer": "UNBEKANNT"
+        },
+        {
+          "id": 37,
+          "answer": "MÖGLICH"
+        },
+        {
+          "id": 38,
+          "answer": "ERZÄHLT"
+        },
+        {
+          "id": 39,
+          "answer": "WÜRDE"
+        },
+        {
+          "id": 40,
+          "answer": "FALLS"
+        }
+      ],
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b881b13b9deebdf53037f6",
+        "pointer": "/collections/5/records/7",
+        "title": "Jan",
+        "text": "Sehr geehrte Frau Bauer,\n\nich habe Ihre Anzeige in der Neuen Presse gelesen und bin an dem Filmprojekt sehr .....(1)..... ich war schon .....(2)..... für einige Wochen im Ausland. Vor allem im Sommer habe ich während meines Studiums viele Sprachkurse besucht. Länger als ein halbes Jahr habe ich .....(3)..... einmal im Ausland gelebt, und zwar .....(4)..... zwei Jahren. Mein Chef machte mir damals das Angebot, acht Monate im Tochterunternehmen der Firma in Portugal zu .....(5)....., was ich dann auch getan habe.\n\nAm Anfang war es sehr schwer, weil ich niemanden kannte und alles sehr neu und .....(6)..... für mich war. Eigentlich wollte ich so schnell wie .....(7)..... wieder zurück. Aber dann habe ich nette Kollegen kennen gelernt, die mir auch über die Kultur und das Leben in Portugal .....(8)..... haben.\n\nIch glaube, dass meine Erfahrungen für viele andere Menschen, die auch im Ausland leben wollen, sehr interessant sein könnten, und ich .....(9)..... gerne auch vor der Kamera darüber erzählen. .....(10)..... Sie noch weitere Fragen an mich haben, können Sie mich gerne anrufen, meine Telefonnummer ist 07612/64788980.\n\nIch würde mich freuen, bald von Ihnen zu hören.\n\nMit freundlichen Grüßen\n\nKAROLINE POINTNER",
+        "options": [
+          {
+            "id": "a",
+            "text": "als",
+            "antwort": 0,
+            "begründung": "كتستعمل فاش كنهضرو على شي حاجة فاش وقعات مرة وحدة فالماضي، ما صالحاش هنا."
+          },
+          {
+            "id": "b",
+            "text": "anfangen",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "c",
+            "text": "arbeiten",
+            "antwort": 5,
+            "begründung": "الفعل 'arbeiten' جا فالاخر ديال الجملة مع 'zu'. المعنى هو 'تخدم' فواحد الشركة فرعية."
+          },
+          {
+            "id": "d",
+            "text": "erzählt",
+            "antwort": 8,
+            "begründung": "هنا استعملنا 'erzählt' فصيغة Partizip II حيت كاين الفعل المساعد 'haben'. المعنى هو 'عاودو ليها' على الثقافة."
+          },
+          {
+            "id": "e",
+            "text": "falls",
+            "antwort": 10,
+            "begründung": "'falls' أداة شرط كتعني 'إيلا'. إيلا كانو عندك أسئلة خرين، عيطي ليا."
+          },
+          {
+            "id": "f",
+            "text": "Informiert",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "g",
+            "text": "interessiert",
+            "antwort": 1,
+            "begründung": "هنا استعملنا 'interessiert' حيت كاين الفعل المساعد 'bin' و حرف الجر 'an'. المعنى هو 'أنا مهتمة بزاف' بهاد المشروع."
+          },
+          {
+            "id": "h",
+            "text": "möchten",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "i",
+            "text": "möglich",
+            "antwort": 7,
+            "begründung": "عبارة ثابتة 'so schnell wie möglich' كتعني 'فأسرع وقت ممكن'."
+          },
+          {
+            "id": "j",
+            "text": "nur",
+            "antwort": 3,
+            "begründung": "'nur' كتعني 'فقط'. كتقول بلي عاشت فالبرا غير 'مرة وحدة' (nur einmal) كتر من نص عام."
+          },
+          {
+            "id": "k",
+            "text": "öfter",
+            "antwort": 2,
+            "begründung": "'öfter' كتعني 'بزاف د المرات'. هنا كتقول بلي ديجا كانت فالبرا بزاف د المرات لشي أسابيع."
+          },
+          {
+            "id": "l",
+            "text": "unbekannt",
+            "antwort": 6,
+            "begründung": "'unbekannt' كتعني 'غير معروف'. الحاجة كانت جديدة وغير معروفة ليها فالبداية."
+          },
+          {
+            "id": "m",
+            "text": "vor",
+            "antwort": 4,
+            "begründung": "هادي قاعدة ديال الزمان: 'vor + Dativ' كتعني 'هادي سنتين' (قبل سنتين). كنستعملو 'vor' فاش كنهضرو على حاجة وقعات وسالات."
+          },
+          {
+            "id": "n",
+            "text": "würde",
+            "antwort": 9,
+            "begründung": "صيغة 'Konjunktiv II' كتعبر على الرغبة بطريقة مؤدبة: 'كنت غنبغي نعاود' (würde gerne erzählen)."
+          },
+          {
+            "id": "o",
+            "text": "Zwischen",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          }
+        ]
+      },
+      "beforeOptions": [
+        "BEQUEM",
+        "GEEIGNET",
+        "HÄTTE",
+        "IHNEN",
+        "JEDEN",
+        "KÖNNTE",
+        "MEHR",
+        "NICHTS",
+        "OHNE",
+        "SCHON",
+        "SIE",
+        "TÄGLICH",
+        "WIE HOCH",
+        "WIE VIEL",
+        "ZWAR"
+      ],
+      "beforeWordBank": [
+        {
+          "id": "",
+          "text": "BEQUEM"
+        },
+        {
+          "id": "",
+          "text": "GEEIGNET"
+        },
+        {
+          "id": "",
+          "text": "HÄTTE"
+        },
+        {
+          "id": "",
+          "text": "IHNEN"
+        },
+        {
+          "id": "",
+          "text": "JEDEN"
+        },
+        {
+          "id": "",
+          "text": "KÖNNTE"
+        },
+        {
+          "id": "",
+          "text": "MEHR"
+        },
+        {
+          "id": "",
+          "text": "NICHTS"
+        },
+        {
+          "id": "",
+          "text": "OHNE"
+        },
+        {
+          "id": "",
+          "text": "SCHON"
+        },
+        {
+          "id": "",
+          "text": "SIE"
+        },
+        {
+          "id": "",
+          "text": "TÄGLICH"
+        },
+        {
+          "id": "",
+          "text": "WIE HOCH"
+        },
+        {
+          "id": "",
+          "text": "WIE VIEL"
+        },
+        {
+          "id": "",
+          "text": "ZWAR"
+        }
+      ],
+      "afterOptions": [
+        "ALS",
+        "ANFANGEN",
+        "ARBEITEN",
+        "ERZÄHLT",
+        "FALLS",
+        "INFORMIERT",
+        "INTERESSIERT",
+        "MÖCHTEN",
+        "MÖGLICH",
+        "NUR",
+        "ÖFTER",
+        "UNBEKANNT",
+        "VOR",
+        "WÜRDE",
+        "ZWISCHEN"
+      ]
+    },
+    {
+      "mode": "match-answer-casing",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "caroline",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "expectedTextSha256": "2369f9971e534e9a3d4530b769fab24100fdd98cea95448cbb5063c5213b34ae",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "EINMAL"
+        },
+        {
+          "id": 32,
+          "answer": "NUR"
+        },
+        {
+          "id": 33,
+          "answer": "KÖNNEN"
+        },
+        {
+          "id": 34,
+          "answer": "WENN"
+        },
+        {
+          "id": 35,
+          "answer": "STATT"
+        },
+        {
+          "id": 36,
+          "answer": "GANZ"
+        },
+        {
+          "id": 37,
+          "answer": "BEI"
+        },
+        {
+          "id": 38,
+          "answer": "GARANTIEREN"
+        },
+        {
+          "id": 39,
+          "answer": "über"
+        },
+        {
+          "id": 40,
+          "answer": "MACHEN"
+        }
+      ],
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b8848d3b9deebdf530380b",
+        "pointer": "/collections/5/records/16",
+        "title": "Corina ",
+        "text": "Das Lotterie – Systemspiel\n\nOtto – Suhr- Allee 100. D- 10120 Berlin\n\nSehr geehrte Lottospieler,\nwer möchte nicht auch .....(1)..... bei sechs Richtigen im Lotto dabei sein? Vertrauen Sie beim Lottospiel nicht .....(2)..... auf das Glück, denn Sie .....(3)..... Ihre Chancen selbst stark verbessern, .....(4)..... Sie mit unserem Lotterie-System spielen – und das für nur 5 Euro in der Woche! .....(5)..... allein zu spielen, spielen Sie mit uns in einer starken Spielergemeinschaft. Dadurch erhöhen sich .....(6)..... automatisch Ihre Chancen! Und was Sie gewinnen können? .....(7)..... unserem Quantum-System spielen Sie mit einer chance auf einen Gewinn von 1 Million Euro! Alle Gewinne erhalten Sie umgehend und ungekürzt zu 100% – das .....(8)..... wir Ihnen!\n\nDavon habe ich mich selbst überzeugt! Spielen Sie mit uns das Quantum-System: .....(9)..... 700 Quantum-Systemspielgruppen haben zusammen schon über sieben Millionen Euro gewonnen.\nHerzliche Grüße\nIhre SABINE MEIER-PÜTZ\n\nPS: Als besondere Gewinnchance erhalten Sie heute das Vier-Richtige-Gratisspiel. .....(10)..... Sie hier unbedingt mit und gewinnen Sie! Ich drücke Ihnen die Daumen……",
+        "options": [
+          {
+            "id": "a",
+            "text": "bei",
+            "antwort": 7,
+            "begründung": "حرف الجر 'bei' كيجي هنا بمعنى 'مع' أو 'عند'. يعني 'مع النظام ديالنا' كتلعب على مـليون يورو.",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "bereits",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "einmal",
+            "antwort": 1,
+            "begründung": "هنا 'einmal' كتجي بمعنى 'ولو لمرة واحدة'. الجملة كتقول: شكون لي مابغاش يكون حاضر ولو مرة وحدة فاش يربحو الأرقام الستة؟",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "eure",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "ganz",
+            "antwort": 6,
+            "begründung": "هنا 'ganz' كتستعمل باش تأكد على الصفة (Adverb). المعنى هو أن الفرص كيتزادو بشكل تلقائي 'تماما'.",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "garantieren",
+            "antwort": 8,
+            "begründung": "فعل كيعني 'نضمن'. الشركة كتقول للمشتركين: 'هادشي كنضمنوه ليكم'.",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "gestern",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "können",
+            "antwort": 3,
+            "begründung": "فعل ناقص (Modalverb) كيعني 'القدرة'. هنا المعنى أنك 'تقدر' تحسن فرصك لراسك.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "machen",
+            "antwort": 10,
+            "begründung": "هذا فعل مركب 'mitmachen' (يشارك). فاش جا فصيغة الأمر (Imperativ) فرقناه: 'Machen Sie ... mit'.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "nur",
+            "antwort": 2,
+            "begründung": "كنستعملو 'nur' باش نعنيو 'فقط'. المعنى هو: 'ما تعتمدش فقط على الزهر'.",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "statt",
+            "antwort": 5,
+            "begründung": "'statt' كتعني 'عوض' أو 'بلاصت ما'. ديما كيجي معاها Infinitiv + zu (statt ... zu spielen).",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "TECHNISCH",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "über",
+            "antwort": 9,
+            "begründung": "الجملة: Über 700 Quantum-Systemspielgruppen haben...\n\nالسبب: \"أكثر من (Über) 700 مجموعة لعب...\"",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "unser",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "wenn",
+            "antwort": 4,
+            "begründung": "'wenn' هي أداة شرط كتعني 'إيلا'. إيلا لعبتي بالنظام ديالنا، الفرص ديالك غادي يتحسنو.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "beforeOptions": [
+        "BEI",
+        "BEREITS",
+        "EINMAL",
+        "EURE",
+        "GANZ",
+        "GARANTIEREN",
+        "GESTERN",
+        "KÖNNEN",
+        "MACHEN",
+        "NUR",
+        "STATT",
+        "TECHNISCH",
+        "ÜBER",
+        "UNSER",
+        "WENN"
+      ],
+      "beforeWordBank": [
+        {
+          "id": "",
+          "text": "BEI"
+        },
+        {
+          "id": "",
+          "text": "BEREITS"
+        },
+        {
+          "id": "",
+          "text": "EINMAL"
+        },
+        {
+          "id": "",
+          "text": "EURE"
+        },
+        {
+          "id": "",
+          "text": "GANZ"
+        },
+        {
+          "id": "",
+          "text": "GARANTIEREN"
+        },
+        {
+          "id": "",
+          "text": "GESTERN"
+        },
+        {
+          "id": "",
+          "text": "KÖNNEN"
+        },
+        {
+          "id": "",
+          "text": "MACHEN"
+        },
+        {
+          "id": "",
+          "text": "NUR"
+        },
+        {
+          "id": "",
+          "text": "STATT"
+        },
+        {
+          "id": "",
+          "text": "TECHNISCH"
+        },
+        {
+          "id": "",
+          "text": "ÜBER"
+        },
+        {
+          "id": "",
+          "text": "UNSER"
+        },
+        {
+          "id": "",
+          "text": "WENN"
+        }
+      ],
+      "afterOptions": [
+        "BEI",
+        "BEREITS",
+        "EINMAL",
+        "EURE",
+        "GANZ",
+        "GARANTIEREN",
+        "GESTERN",
+        "KÖNNEN",
+        "MACHEN",
+        "NUR",
+        "STATT",
+        "TECHNISCH",
+        "über",
+        "UNSER",
+        "WENN"
+      ]
+    },
+    {
+      "mode": "match-answer-casing",
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "iris",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "expectedTextSha256": "bf89545a78131feecbc0e91a5244867e6dd4c5d1393ec5b4588634f6a4239f2b",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "DASS"
+        },
+        {
+          "id": 32,
+          "answer": "ihre"
+        },
+        {
+          "id": 33,
+          "answer": "WERDEN"
+        },
+        {
+          "id": 34,
+          "answer": "FRAGEN"
+        },
+        {
+          "id": 35,
+          "answer": "informiert"
+        },
+        {
+          "id": 36,
+          "answer": "HILFT"
+        },
+        {
+          "id": 37,
+          "answer": "FÜR"
+        },
+        {
+          "id": 38,
+          "answer": "dort"
+        },
+        {
+          "id": 39,
+          "answer": "richtige"
+        },
+        {
+          "id": 40,
+          "answer": "IHNEN"
+        }
+      ],
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b881633b9deebdf53037f4",
+        "pointer": "/collections/5/records/6",
+        "title": "Iris",
+        "text": "Frankfurter Allianz\nBahnstr. 99\nMax Kuhne\nTel.: 069-951670\n\nFrankfurt, den …….\nNeuer Berater für Ihre VersicherungenSehr geehrter Herr Frankel,\n\nwir möchten Sie darüber informieren, .....(1)..... Ihre Versicherungen künftig von Herrn Max Kuhne bearbeitet werden. Ihm wurden .....(2)..... Unterlagen übergeben.\nAlle Kundendaten .....(3)..... selbstverständlich streng vertraulich behandelt. Wenn Sie also .....(4)..... zu Ihren Versicherungen haben, wenden Sie sich in Zukunft bitte an Herrn Kuhne. Er berät und .....(5)..... Sie gern. Auch im Schadensfall .....(6)..... er Ihnen schnell und zuverlässig weiter. Im Übrigen möchten wir uns .....(7)..... einen Fehler in unserer letzten Beitragsrechnung entschuldigen. Leider ist .....(8)..... die Adresse von Herrn Kuhne nicht korrekt.\nSeine .....(9)..... Anschrift und Telefonnummer finden Sie auf diesem Brief oben rechts.\nWir danken .....(10)..... für Ihr Vertrauen.\n\nMit freundlichen Grüßen\nIhre Frankfurter Allianz",
+        "options": [
+          {
+            "id": "a",
+            "text": "ANTWORTEN",
+            "antwort": 0,
+            "begründung": "ما صالحاش لغوياً فهاد السياق، حيت هادي رسالة إخبارية ماشي جواب على سؤال."
+          },
+          {
+            "id": "b",
+            "text": "AUF",
+            "antwort": 0,
+            "begründung": "حرف جر ما كيركبش مع الأفعال الموجودة فهاد الفراغات."
+          },
+          {
+            "id": "c",
+            "text": "DASS",
+            "antwort": 1,
+            "begründung": "أداة ربط كتعني 'أن'. كنستعملوها باش نربطو جملة تابعة مورا أفعال بحال 'informieren' (نخبرك بأن...)."
+          },
+          {
+            "id": "d",
+            "text": "DORT",
+            "antwort": 8,
+            "begründung": "ظرف مكان كيعني 'تما'. كترجع على الفاتورة لي دكرنا قبل، يعني تما فين كاين الخطأ فالعنوان."
+          },
+          {
+            "id": "e",
+            "text": "FRAGEN",
+            "antwort": 4,
+            "begründung": "اسم كيعني 'أسئلة'. السياق هو 'إيلا عندك أسئلة بخصوص التأمين ديالك'."
+          },
+          {
+            "id": "f",
+            "text": "FÜR",
+            "antwort": 7,
+            "begründung": "هنا عبارة ثابتة 'sich entschuldigen für' (الاعتذار على شي حاجة). اعتذرنا 'على' الخطأ."
+          },
+          {
+            "id": "g",
+            "text": "HABEN",
+            "antwort": 0,
+            "begründung": "فعل 'يملك' ما كيركبش كخيار صحيح فهاد الفراغات بناءً على القواعد."
+          },
+          {
+            "id": "h",
+            "text": "HILFT",
+            "antwort": 6,
+            "begründung": "هذا فعل 'helfen' مصرف. كيكمل العبارة 'weiterhelfen' لي كتعني 'يساعد' فشي مشكل."
+          },
+          {
+            "id": "i",
+            "text": "IHNEN",
+            "antwort": 10,
+            "begründung": "ضمير للمخاطب الرسمي (Dativ). فعل 'danken' ديما كياخد الداتيف، كنقولو 'Danken Ihnen'."
+          },
+          {
+            "id": "j",
+            "text": "IHRE",
+            "antwort": 2,
+            "begründung": "أداة ملكية للمخاطب الرسمي (Sie). هنا كنهضرو على 'الوثائق ديالك' (Ihre Unterlagen)."
+          },
+          {
+            "id": "k",
+            "text": "INFORMIERT",
+            "antwort": 5,
+            "begründung": "فعل كيعني 'يُعلم' أو 'يعطي معلومات'. كيمشي موازاة مع فعل 'berät' (ينصح)."
+          },
+          {
+            "id": "l",
+            "text": "OB",
+            "antwort": 0,
+            "begründung": "أداة ربط كتعني 'واش' وكتستعمل فالسؤال غير المباشر، ماشي فجملة إخبارية بحال هادي."
+          },
+          {
+            "id": "m",
+            "text": "RICHTIGE",
+            "antwort": 9,
+            "begründung": "صفة كتعني 'الصحيحة'. كتوصف العنوان (Anschrift) بلي راه هو العنوان الصحيح."
+          },
+          {
+            "id": "n",
+            "text": "WERDEN",
+            "antwort": 3,
+            "begründung": "فعل مساعد كنستعملوه فالمبني للمجهول (Passive). المعنى هو البيانات 'غادي تعالج' بسرية."
+          },
+          {
+            "id": "o",
+            "text": "ZU",
+            "antwort": 0,
+            "begründung": "حرف جر ما كيركبش مع سياق الفراغات المطلوبة هنا."
+          }
+        ]
+      },
+      "beforeOptions": [
+        "ANTWORTEN",
+        "AUF",
+        "DASS",
+        "DORT",
+        "FRAGEN",
+        "FÜR",
+        "HABEN",
+        "HILFT",
+        "IHNEN",
+        "IHRE",
+        "INFORMIERT",
+        "OB",
+        "RICHTIGE",
+        "WERDEN",
+        "ZU"
+      ],
+      "beforeWordBank": [
+        {
+          "id": "",
+          "text": "ANTWORTEN"
+        },
+        {
+          "id": "",
+          "text": "AUF"
+        },
+        {
+          "id": "",
+          "text": "DASS"
+        },
+        {
+          "id": "",
+          "text": "DORT"
+        },
+        {
+          "id": "",
+          "text": "FRAGEN"
+        },
+        {
+          "id": "",
+          "text": "FÜR"
+        },
+        {
+          "id": "",
+          "text": "HABEN"
+        },
+        {
+          "id": "",
+          "text": "HILFT"
+        },
+        {
+          "id": "",
+          "text": "IHNEN"
+        },
+        {
+          "id": "",
+          "text": "IHRE"
+        },
+        {
+          "id": "",
+          "text": "INFORMIERT"
+        },
+        {
+          "id": "",
+          "text": "OB"
+        },
+        {
+          "id": "",
+          "text": "RICHTIGE"
+        },
+        {
+          "id": "",
+          "text": "WERDEN"
+        },
+        {
+          "id": "",
+          "text": "ZU"
+        }
+      ],
+      "afterOptions": [
+        "ANTWORTEN",
+        "AUF",
+        "DASS",
+        "dort",
+        "FRAGEN",
+        "FÜR",
+        "HABEN",
+        "HILFT",
+        "IHNEN",
+        "ihre",
+        "informiert",
+        "OB",
+        "richtige",
+        "WERDEN",
+        "ZU"
+      ]
+    },
+    {
+      "mode": "restore-duplicate-choice",
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "keine-zeit",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-1"
+      },
+      "expectedTextSha256": "beeb88420c3cd395f061c06751f57382282550bb07fb9518302f30dba6fa8456",
+      "expectedAnswers": [
+        {
+          "id": 21,
+          "answer": "deinen"
+        },
+        {
+          "id": 22,
+          "answer": "weil"
+        },
+        {
+          "id": 23,
+          "answer": "noch"
+        },
+        {
+          "id": 24,
+          "answer": "Für"
+        },
+        {
+          "id": 25,
+          "answer": "neuen"
+        },
+        {
+          "id": 26,
+          "answer": "ja"
+        },
+        {
+          "id": 27,
+          "answer": "Darauf"
+        },
+        {
+          "id": 28,
+          "answer": "wäre"
+        },
+        {
+          "id": 29,
+          "answer": "trotz"
+        },
+        {
+          "id": 30,
+          "answer": "können"
+        }
+      ],
+      "source": {
+        "collection": "lesen.B2.spteil1",
+        "recordId": "692e0f833402d7f8e3989c1a",
+        "pointer": "/collections/10/records/24",
+        "title": "Liebe Lara",
+        "text": "\"Liebe Lara,\n\nbitte verzeih mir, dass ich erst jetzt auf ..(1).. Brief antworte. Ich hatte in den letzten Wochen praktisch keine freie Minute und kam einfach nicht dazu, dir zu schreiben. Jetzt aber tue ich es, ..(2).. du wirklich tolle Neuigkeiten mitzuteilen hast.\n\nSchon immer hast du von großen Abenteuern und Reisen in die Ferne geträumt. Ich weiß ..(3).. gut, wie wir uns als Gymnasiasten fremde Länder ausgemalt haben. Nun verschlägt es dich und deine Familie also nach Dubai - und du sagst unserem Land für einige Zeit Adieu. Ich weiß, dass mit dieser Versetzung für dich ein Traum in Erfüllung geht. ..(4).. deinen Neubeginn wünschen Peter und ich dir alles Gute. Wir freuen uns auch sehr, dass ihr alle gesund und munter seid und hoffen, dass das so bleibt. Bei uns geht mehr oder weniger alles seinen gewohnten Gang. Robert gefällt es gut auf seiner ..(5).. Stelle. Er muss sich einfach noch einarbeiten. Lorenz ist jetzt 15. Du weißt ..(6).., was das heißt. Er hält sich für den Größten und macht uns viele Schwierigkeiten. Aber irgendwann geht auch das vorüber. Sandra ist jetzt auch schon in der dritten Klasse und bringt gute Noten nach Hause. ..(7).. sind wir natürlich stolz. Es ..(8).. schön, wenn wir uns vor deiner Abreise noch einmal treffen würden. Vielleicht findet ihr ..(9).. der Umzugsvorbereitungen noch Zeit. Wie wäre es mit einem gemeinsamen Sonntagsbrunch in unserem Garten? Bitte melde dich doch, damit wir etwas abmachen ..(10)..\n\nLiebe Grüße\ndeine\nVanessa\"",
+        "question": {
+          "id": 1,
+          "options": [
+            {
+              "id": "a",
+              "text": "dein ",
+              "_id": {
+                "$oid": "68bab66901c72dec19121da3"
+              }
+            },
+            {
+              "id": "b",
+              "text": "deine ",
+              "_id": {
+                "$oid": "68bab66901c72dec19121da4"
+              }
+            },
+            {
+              "id": "c",
+              "text": "deinen",
+              "_id": {
+                "$oid": "68bab66901c72dec19121da5"
+              }
+            }
+          ],
+          "antwort": "c",
+          "begründung": "deinen هي صيغة Akkusativ ديال dein للمذكر. كنحتاجو Akkusativ هنا حيت عندنا حرف الجر auf. \"عاد دابا جاوبت على رسالتك\".",
+          "_id": {
+            "$oid": "68bab66901c72dec19121da2"
+          }
+        }
+      },
+      "beforeOptions": [],
+      "beforeWordBank": [],
+      "blankId": 21,
+      "beforeBlank": {
+        "id": 21,
+        "options": [
+          "dein",
+          "dein",
+          "deinen"
+        ]
+      },
+      "afterOptions": [
+        "dein",
+        "deine",
+        "deinen"
+      ]
+    }
+  ]
+}

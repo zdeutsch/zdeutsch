@@ -1,0 +1,2873 @@
+{
+  "batchId": "sahla-sprach-choices-2026-10-22",
+  "archive": "/Users/mac/Desktop/coding/reading/output/exports/sahla-2026-10-21/sahla-all-content-2026-10-21.zip",
+  "archiveSha256": "81156b034b51fa25c1a778af8337a899bdb2985e278c903361ff24381d92a85c",
+  "items": [
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "rita",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b8800f3b9deebdf53037ea",
+        "pointer": "/collections/5/records/1",
+        "title": "Rita",
+        "text": "\nIhre Anzeige in der Frankfurter Rundschau\n\nSehr geehrte Frau Herrmann ,\n\nich habe Ihre Anzeige in der Frankfurter Rundschau vom 5. Oktober gelesen und interessiere mich sehr für die 3-Zimmer-Wohnung.\n\nZurzeit wohne ich noch in Krakau (Polen). Demnächst .....(1)..... ich aber aus beruflichen Gründen mit meinem Sohn (3 Jahre) .....(2)..... Frankfurt umziehen. Deshalb suche ich zum 1. November eine Wohnung, .....(3)..... möglichst zentral gelegen sein sollte. Ihre Wohnung .....(4)..... deshalb genau richtig für uns.\n\nIch hätte jedoch noch einige Fragen zu Ihrer Anzeige: Ist die Wohnung auch für Kleinkinder .....(5).....? Und gibt es in der näheren Umgebung einen Spielplatz, .....(6)..... mein Sohn spielen könnte? Außerdem würde ich .....(7)..... wissen, ob die Haltung von Haustieren in .....(8)..... Wohnung erlaubt ist. .....(9)..... es möglich ist, würden wir nämlich gerne unseren Hund mitbringen.\n\nIch danke Ihnen .....(10)..... jetzt für Ihre Antwort und grüße Sie freundlich.\n\nKASIA KLOC",
+        "options": [
+          {
+            "id": "a",
+            "text": "der",
+            "antwort": 8,
+            "begründung": "قاعدة الموقع. حرف الجر in كيهضر هنا على السكن (استقرار ف مكان). وبما أننا كنجاوبو على سؤال 'فين؟' (Wo?)، فراه خاصنا Dativ. داكشي علاش die Wohnung تحولات لـ der Wohnung",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "die",
+            "antwort": 3,
+            "begründung": "تماماً. هادي جملة صلة، والضمير die هنا كيلعب دور 'الرابط'. كيرجع على كلمة Wohnung (مؤنث) وهو اللي كيعوضها كفاعل (Nominativ) ف الجملة الثانية باش ما نكرروش الكلمة",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "Erst",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "geeignet",
+            "antwort": 5,
+            "begründung": "تعبير محفوظ. الصفة geeignet (مناسب) ديما كتمشي مع حرف الجر für. وهنا السؤال هو واش الدار 'صالحة لـ' أو 'مناسبة لـ' الأطفال الصغار",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "gerne",
+            "antwort": 7,
+            "begründung": "نكتة لغوية. الكلمة gerne فاش كنزيدوها مع شي فعل (بحال wissen)، كتحول المعنى لطلب مؤدب. 'Gerne wissen' كتعني 'بكل سرور بغيت نعرف' أو 'يشرفني نعرف",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "hätte",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "in",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "muss",
+            "antwort": 1,
+            "begründung": "بصح. فاش كنشوفو الفعل umziehen جا ف الآخر ديال الجملة (Infinitiv)، كنفهمو بلي خاصنا فعل ناقص (Modalverb) ف المركز الثاني. واختارينا muss حيت كاين التزام أو ضرورة مهنية هي اللي فرضات الرحيل.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "nach",
+            "antwort": 2,
+            "begründung": "قاعدة ذهبية. مع المدن (مثلاً Frankfurt) والبلدان اللي ما عندهاش أداة تعريف، ديما كنستعملو حرف الجر nach باش نعبروا على الاتجاه أو الذهاب لداك المكان",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "noch",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "schon",
+            "antwort": 10,
+            "begründung": "لمسة أخيرة. عبارة 'danke schon jetzt' هي وسيلة ذكية ومؤدبة ف المراسلات، كتعني 'شكراً مسبقاً' على الوقت والجواب اللي غدي تعطيني",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "wann",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "wäre",
+            "antwort": 4,
+            "begründung": "هادشي لي كاين. استعملنا wäre (صيغة Konjunktiv II) حيت كنهضرو على شي حاجة مثالية أو كنتمنوها تكون، يعني 'غادي تكون' الدار مناسبة لينا بزاف إيلا صدقات",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "wenn",
+            "antwort": 9,
+            "begründung": "صحيح. الرابط wenn كيعطينا 'الشرط'. المعنى هو: 'إيلا' (wenn) كان مسموح، راه حنا باغيين نجيبو الكلب ديالنا معانا للدار الجديدة",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "wo",
+            "antwort": 6,
+            "begründung": "بصح. فاش كنبغيو نوصفو 'مكان' (بحال Spielplatz)، كنستعملو wo كأداة صلة بمعنى 'فين'. الجملة كتقول: 'الملعب فين يقدر ولدي يلعب'.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "expectedTextSha256": "43ab41d3030bcc4021a3ec60cd72c2c168680104dc9839cdbe7e9cb640c2df83",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "MUSS"
+        },
+        {
+          "id": 32,
+          "answer": "NACH"
+        },
+        {
+          "id": 33,
+          "answer": "DIE"
+        },
+        {
+          "id": 34,
+          "answer": "WÄRE"
+        },
+        {
+          "id": 35,
+          "answer": "GEEIGNET"
+        },
+        {
+          "id": 36,
+          "answer": "WO"
+        },
+        {
+          "id": 37,
+          "answer": "GERNE"
+        },
+        {
+          "id": 38,
+          "answer": "DER"
+        },
+        {
+          "id": 39,
+          "answer": "WENN"
+        },
+        {
+          "id": 40,
+          "answer": "SCHON"
+        }
+      ],
+      "beforeOptions": [
+        "MUSS",
+        "NACH",
+        "DIE",
+        "WÄRE",
+        "GEEIGNET",
+        "WO",
+        "GERNE",
+        "DER",
+        "WENN",
+        "SCHON"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "vera",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b880753b9deebdf53037ee",
+        "pointer": "/collections/5/records/3",
+        "title": "Vera",
+        "text": "Chiffre 2063/9369\n\nSehr geehrter Unbekannter,\nmein Mann und ich haben Ihre Anzeige in den Mitteilungen des Deutschen Alpenvereins .....(1)...... Wir wohnen etwa 40 km außerhalb von Nürnberg und schreiben Ihnen, .....(2)..... wir Lust hätten, etwas in einer Gruppe zu machen.\nUnseren Sommerurlaub verbringen wir eigentlich regelmäßig in den Bergen. Und .....(3)..... es unser Terminkalender erlaubt, gehen wir auch noch am Wochenende wandern, .....(4)..... fahren wir in die Gegend vom Wilden Kaiser, wo wir inzwischen alle Wanderwege .....(5)...... Wir fahren zwar beide auch Ski, .....(6)..... der Winter den Bergen ist nicht so unbedingt unsere Sache.\nDagegen macht es .....(7)..... viel Spaß. Fahrrad zu fahren, hier in Leupoldstein haben wir tolle Radwege, die durch die Felder führen. Daher .....(8)..... wir uns auch auf gemeinsame Radtouren hier bei uns freuen.\nZum Schluss noch ein .....(9)..... Worte zu uns selbst. Wir sind 64 und 62. Jahre alt, lieben Musik und gehen ab und zu gern ins Theater.\nRufen Sie uns doch einfach .....(10)..... an: Tel.: 09243/7448.\nViele Grüße\nIlka und Heiner Grossmann",
+        "options": [
+          {
+            "id": "a",
+            "text": "aber",
+            "antwort": 6,
+            "begründung": "أداة ربط كتعني 'ولكن'. كتستعمل باش تبين التناقض: كيعرفو يديرو السكي، 'ولكن' الشتا فالجبل ماشي هي هوايتهم."
+          },
+          {
+            "id": "b",
+            "text": "Aussen",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "c",
+            "text": "einmal",
+            "antwort": 10,
+            "begründung": "'einmal' هنا كتجي غير للتشجيع (Partikel)، بحال يلا كتقول ليه 'غير عيط لينا شي مرة وصافي'."
+          },
+          {
+            "id": "d",
+            "text": "entdeckt",
+            "antwort": 1,
+            "begründung": "هنا استعملنا 'entdeckt' (لقينا/اكتشفنا) فصيغة Partizip II حيت الفعل المساعد هو 'haben'. المعنى هو 'لقينا الإعلان ديالك'."
+          },
+          {
+            "id": "e",
+            "text": "etwas",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "f",
+            "text": "hatten",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "g",
+            "text": "kennen",
+            "antwort": 5,
+            "begründung": "فعل 'kennen' كيعني 'يعرف' أو 'يكون مألوف مع'. هنا كيهضرو على أنهم كيعرفو كاع طرق المشي لي تما."
+          },
+          {
+            "id": "h",
+            "text": "lernen",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "i",
+            "text": "oft",
+            "antwort": 4,
+            "begründung": "'oft' كتعني 'غالبا'. كتوصف شحال من مرة كيمشيو لهاديك المنطقة (Wilden Kaiser)."
+          },
+          {
+            "id": "j",
+            "text": "paar",
+            "antwort": 9,
+            "begründung": "عبارة 'ein paar Worte' كتعني 'بضعة كلمات' أو 'واحد شوية د الهضرة' على راسنا."
+          },
+          {
+            "id": "k",
+            "text": "uns",
+            "antwort": 7,
+            "begründung": "هنا 'uns' هي الضمير فصيغة الداتيف (Dativ) لي كيجي مع عبارة 'macht Spaß'. المعنى هو 'كيعجبنا الحال'."
+          },
+          {
+            "id": "l",
+            "text": "wann",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "m",
+            "text": "weil",
+            "antwort": 2,
+            "begründung": "'weil' كتعني 'حيت' أو 'لأن'. كتربط جملة كتشرح السبب علاش كتبو ليه، والفعل كيجي فالاخر (hätten)."
+          },
+          {
+            "id": "n",
+            "text": "würden",
+            "antwort": 8,
+            "begründung": "هادي صيغة Konjunktiv II كتعبر على التمني أو شي حاجة فالمستقبل بطريقة مؤدبة: 'غادي نفرحو' (würden uns freuen)."
+          },
+          {
+            "id": "o",
+            "text": "wenn",
+            "antwort": 3,
+            "begründung": "هنا 'wenn' كتعني 'فاش' أو 'إيلا'. كتربط الوقت لي كيسمح فيه البرنامج ديالهم باش يمشيو يتمشاو."
+          }
+        ]
+      },
+      "expectedTextSha256": "e25da0ecf52b3556b0b59ab86044dd2bfdb4767b6cd741f7172c69ef150cb5ca",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "ENTDECKT"
+        },
+        {
+          "id": 32,
+          "answer": "WEIL"
+        },
+        {
+          "id": 33,
+          "answer": "WENN"
+        },
+        {
+          "id": 34,
+          "answer": "OFT"
+        },
+        {
+          "id": 35,
+          "answer": "KENNEN"
+        },
+        {
+          "id": 36,
+          "answer": "ABER"
+        },
+        {
+          "id": 37,
+          "answer": "UNS"
+        },
+        {
+          "id": 38,
+          "answer": "WÜRDEN"
+        },
+        {
+          "id": 39,
+          "answer": "PAAR"
+        },
+        {
+          "id": 40,
+          "answer": "EINMAL"
+        }
+      ],
+      "beforeOptions": [
+        "ENTDECKT",
+        "WEIL",
+        "WENN",
+        "OFT",
+        "KENNEN",
+        "ABER",
+        "UNS",
+        "WÜRDEN",
+        "PAAR",
+        "EINMAL"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "paul",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b881193b9deebdf53037f2",
+        "pointer": "/collections/5/records/5",
+        "title": "Paul",
+        "text": "Sehr geehrte Damen und Herren,\n\nich habe Ihre Anzeige gelesen und interessiere mich sehr für Ihr Angebot. Ich komme aus Kroatien und möchte .....(1)..... den nächsten Sommerferien mein Deutsch verbessern. Klagenfurt ist für mich der ideale Ort, .....(2)..... das nicht so weit weg von meiner Heimatstadt Zagreb ist. Da kann ich an den Wochenenden vielleicht auch .....(3)..... nach Hause fahren. Nun aber zu meiner Person: Ich bin 24 Jahre alt und habe in der Schule vier Jahre lang Deutsch gelernt. Ich kann zwar .....(4)..... ganz gut schreiben, .....(5)..... ich habe immer wieder Probleme beim freien Sprechen. Im Herbst möchte ich in Hamburg ein Studium beginnen, für das ich ebenfalls gute Deutschkenntnisse brauche. Am liebsten wäre mir ein vierwöchiger Deutschkurs, .....(6)..... nur vormittags stattfindet, .....(7)..... ich nachmittags etwas anderes machen kann. Ich hätte den ganzen August bis Mitte September Zeit. .....(8)..... Sie einen passenden Kurs für mich haben, schicken Sie mir bitte sobald .....(9)..... möglich nähere Informationen zu. Mich interessieren auch Ihre Freizeitprogramme, Spezialkurse, die Unterkunftsmöglichkeiten und natürlich die Preise. Bitte empfehlen Sie mir auch ein .....(10)..... gute Webseiten über Klagenfurt und den Wörthersee.\n\nVielen Dank im Voraus und freundliche Grüße\n\nIvica Palic",
+        "options": [
+          {
+            "id": "a",
+            "text": "aber",
+            "antwort": 5,
+            "begründung": "أداة ربط للتناقض. هو كيكتب مزيان 'ولكن' (aber) عندو مشكل فالهضرة."
+          },
+          {
+            "id": "b",
+            "text": "damit",
+            "antwort": 7,
+            "begründung": "أداة ربط كتعني 'باش' أو 'لأجل'. الغرض من Kurs لي كيكون غي فالصباح هو 'باش' يكدر يدير حوايج خرين فالعشية."
+          },
+          {
+            "id": "c",
+            "text": "der",
+            "antwort": 6,
+            "begründung": "هادي جملة صلة (Relativsatz). 'der' كترجع على 'Kurs' (مذكر) وهي الفاعل فجملة الصلة."
+          },
+          {
+            "id": "d",
+            "text": "in",
+            "antwort": 1,
+            "begründung": "حرف جر ديال الزمان، كنستعملوه مع العطلة: 'in den Ferien' (فالعطلة)."
+          },
+          {
+            "id": "e",
+            "text": "manchmal",
+            "antwort": 3,
+            "begründung": "ظرف زمان كيعني 'بعض الأطوار' أو 'مرة مرة'. هنا كيعني أنه يكدر يمشي لدارهم فZagreb مرة مرة."
+          },
+          {
+            "id": "f",
+            "text": "mit",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "g",
+            "text": "paar",
+            "antwort": 10,
+            "begründung": "عبارة 'ein paar' كتعني 'واحد الشوية' أو 'بضعة'. كيسول على بضعة مواقع زوينة."
+          },
+          {
+            "id": "h",
+            "text": "schon",
+            "antwort": 4,
+            "begründung": "هنا 'schon' كتستعمل باش تأكد على القدرة، يعني راه 'ديجا' كيكدر يكتب مزيان."
+          },
+          {
+            "id": "i",
+            "text": "sehr",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "j",
+            "text": "Trotz",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "k",
+            "text": "Wann",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "l",
+            "text": "weil",
+            "antwort": 2,
+            "begründung": "أداة ربط كتعطي السبب (لأن) وبما أن الفعل 'ist' جا فآخر الجملة، إذن 'weil' هي الاختيار الصحيح."
+          },
+          {
+            "id": "m",
+            "text": "wenn",
+            "antwort": 8,
+            "begründung": "أداة شرط كتعني 'إيلا'. إيلا كان عندكم شي كورس مناسب، صيفطو ليا المعلومات."
+          },
+          {
+            "id": "n",
+            "text": "wie",
+            "antwort": 9,
+            "begründung": "هادي عبارة ثابتة: 'sobald wie möglich' كتعني 'فأقرب وقت ممكن'."
+          },
+          {
+            "id": "o",
+            "text": "zu",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          }
+        ]
+      },
+      "expectedTextSha256": "2fabc7c6c1e8c1aad4dba39573f59a4d86636a97327ee5ef19ee44dacae277ef",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "IN"
+        },
+        {
+          "id": 32,
+          "answer": "WEIL"
+        },
+        {
+          "id": 33,
+          "answer": "MANCHMAL"
+        },
+        {
+          "id": 34,
+          "answer": "SCHON"
+        },
+        {
+          "id": 35,
+          "answer": "ABER"
+        },
+        {
+          "id": 36,
+          "answer": "DER"
+        },
+        {
+          "id": 37,
+          "answer": "DAMIT"
+        },
+        {
+          "id": 38,
+          "answer": "WENN"
+        },
+        {
+          "id": 39,
+          "answer": "WIE"
+        },
+        {
+          "id": 40,
+          "answer": "PAAR"
+        }
+      ],
+      "beforeOptions": [
+        "IN",
+        "WEIL",
+        "MANCHMAL",
+        "SCHON",
+        "ABER",
+        "DER",
+        "DAMIT",
+        "WENN",
+        "WIE",
+        "PAAR"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b881e53b9deebdf53037f8",
+        "pointer": "/collections/5/records/8",
+        "title": "Miroslav",
+        "text": "Sehr geehrte Damen und Herren,\n\nmit großem Interesse habe ich Ihre .....(1)..... in der Zeitschrift “Vogelsbergmagazin” gelesen.\nDa ich den Vogelsbergkreis sehr gut kenne, möchte ich mich .....(2)..... Wanderführer bewerben.\nAus Erfahrung weiß ich, .....(3)..... den Besuchern dort vor allem Wanderungen angeboten werden, die sich besonders .....(4)..... Familien mit Kindern eignen. Ich habe .....(5)..... an mehreren Spezialexkursionen in den Vogelsberg teilgenommen. Dabei habe ich viel .....(6)..... die einzigartige Pflanzen- und Tierwelt dieser Region gelernt.\n\nDa ich außerdem Student der .....(7)..... Biologie und Pädagogيك bin, glaube ich auch, für diesen Ferienjob besonders geeignet zu sein. Als künftiger Lehrer bin ich gern .....(8)..... Menschen zusammen und im vergangenen Jahr habe ich den Sommer mit einer Gruppe von Jugendlichen in den Bergen verbracht. Als Vorbereitung musste ich ein spannendes .....(9)..... für die jungen Gäste zusammenstellen.\n\nSollte meine Bewerbung Ihr Interesse wecken, bitte ich Sie, mir so bald wie möglich .....(10)..... zu geben, damit ich noch Zeit genug habe, mich gut auf die Führungen vorzubereiten.\n\nMit freundlichen Grüßen\n\nIngo Pluder",
+        "options": [
+          {
+            "id": "a",
+            "text": "als",
+            "antwort": 2,
+            "begründung": "عبارة 'bewerben als' هي قاعدة ثابتة كتعني 'دفع لشي خدمة بصفتو...'. هنا بصفتو مرشد (Wanderführer)."
+          },
+          {
+            "id": "b",
+            "text": "Anzeige",
+            "antwort": 1,
+            "begründung": "استعملنا 'Anzeige' حيت هو قرا الإعلان (Anzeige) فالمجلة."
+          },
+          {
+            "id": "c",
+            "text": "Bescheid",
+            "antwort": 10,
+            "begründung": "عبارة ثابتة 'Bescheid geben' كتعني 'تعطيني الخبار' أو 'تعلمني بالقرار ديالكم'."
+          },
+          {
+            "id": "d",
+            "text": "da",
+            "antwort": 0,
+            "begründung": "passt nich"
+          },
+          {
+            "id": "e",
+            "text": "dass",
+            "antwort": 3,
+            "begründung": "أداة ربط كتعني 'بأن'. كتربط الفعل 'weiß' (كنعرف) بالجملة لي كتشرح شنو كيعرف."
+          },
+          {
+            "id": "f",
+            "text": "deine",
+            "antwort": 0,
+            "begründung": "passt nich"
+          },
+          {
+            "id": "g",
+            "text": "Fächer",
+            "antwort": 7,
+            "begründung": "كلمة 'Fächer' كتعني 'مواد'. حيت هو كيقرا جوج مواد: البيولوجيا والبيداغوجيا."
+          },
+          {
+            "id": "h",
+            "text": "für",
+            "antwort": 4,
+            "begründung": "هنا قاعدة ديال الفعل المنعكس 'sich eignen für' كتعني 'مناسب لـ'. هنا الجولات مناسبة للعائلات."
+          },
+          {
+            "id": "i",
+            "text": "mit",
+            "antwort": 8,
+            "begründung": "حرف جر كيعني 'مع'. كيمشي مع 'zusammen' باش يعطي المعنى ديال 'مجموع مع الناس'."
+          },
+          {
+            "id": "j",
+            "text": "Programm",
+            "antwort": 9,
+            "begründung": "كلمة 'Programm' كتعني 'برنامج'. وجد برنامج مشوق وممتع للضيوف."
+          },
+          {
+            "id": "k",
+            "text": "schon",
+            "antwort": 5,
+            "begründung": "كلمة 'schon' كتعني 'ديجا'. كيبين أنه ديجا شارك فبزاف ديال الرحلات الاستكشافية."
+          },
+          {
+            "id": "l",
+            "text": "soll",
+            "antwort": 0,
+            "begründung": "passt nich"
+          },
+          {
+            "id": "m",
+            "text": "über",
+            "antwort": 6,
+            "begründung": "هنا 'viel lernen über' كتعني 'تعلم بزاف على'. هنا تعلم على النباتات والحيوانات."
+          },
+          {
+            "id": "n",
+            "text": "wie",
+            "antwort": 0,
+            "begründung": "passt nich"
+          },
+          {
+            "id": "o",
+            "text": "würde",
+            "antwort": 0,
+            "begründung": "passt nich"
+          }
+        ]
+      },
+      "expectedTextSha256": "2d19607cffb9086d4418fa355bd9bc53945f9fcdbcf58966cc03c9bdcbf82447",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "ANZEIGE"
+        },
+        {
+          "id": 32,
+          "answer": "ALS"
+        },
+        {
+          "id": 33,
+          "answer": "DASS"
+        },
+        {
+          "id": 34,
+          "answer": "FÜR"
+        },
+        {
+          "id": 35,
+          "answer": "SCHON"
+        },
+        {
+          "id": 36,
+          "answer": "ÜBER"
+        },
+        {
+          "id": 37,
+          "answer": "FÄCHER"
+        },
+        {
+          "id": 38,
+          "answer": "MIT"
+        },
+        {
+          "id": 39,
+          "answer": "PROGRAMM"
+        },
+        {
+          "id": 40,
+          "answer": "BESCHEID"
+        }
+      ],
+      "beforeOptions": [
+        "ANZEIGE",
+        "ALS",
+        "DASS",
+        "FÜR",
+        "SCHON",
+        "ÜBER",
+        "FÄCHER",
+        "MIT",
+        "PROGRAMM",
+        "BESCHEID"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "miroslav",
+        "versionKey": "version-2",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "6a6cd536e90b2b82ffea1434",
+        "pointer": "/collections/5/records/26",
+        "title": "Miroslav 2.",
+        "text": "Sehr geehrter Herr Schreiber,\n\nim „Tages-Anzeiger“ __(1)__ 29. Mai habe ich Ihre Reklame für Sommerdeutschkurse gesehen. Meine Tochter ist in der 2. Klasse Gymnasium hier in Lausanne. Sie wird nächstes Jahr __(2)__ Abschluss machen. Leider ist sie in Deutsch nicht sehr gut, __(3)__ interessiere ich mich sehr für Ihr Angebot. Zuerst __(4)__ ich gern einige Auskünfte über Ihre Deutschkurse: __(5)__ finden Ihre Kurse statt? (Meine Tochter hat vom 4. Juli - 23. August Ferien.) Wie lange dauert der Unterricht pro Tag? Wieviel kostet ein vierwöchiger Intensivkurs?\n\nIn Ihrem Inserat steht, __(6)__ der Kurs kreativ, kommunikativ und spielerisch ist. Ich frage mich, ob meine Tochter da überhaupt etwas lernen wird? Könnten Sie __(7)__ das bitte näher erklären? __(8)__ möchte ich noch wissen, ob Sie sich auch um die Zimmervermittlung kümmern. Wenn ja, könnten Sie mir mitteilen, wie hoch der Preis für ein Zimmer ist?\n\nFür eine schnelle Antwort auf meine Fragen __(9)__ ich Ihnen sehr dankbar, da der Sommer schon vor der Tür steht. Auch würde ich mich __(10)__ einen Prospekt Ihrer Schule sehr freuen.\n\nMit freundlichen Grüßen\n\nJeanne Martin",
+        "options": [
+          {
+            "id": "a",
+            "text": "außerdem",
+            "antwort": 8,
+            "begründung": "'Außerdem' كتعني 'بالإضافة إلى ذلك'. كنستعملوها باش نزيدو فكرة أو سؤال جديد للجملة.",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "dass",
+            "antwort": 6,
+            "begründung": "'dass' كتعني 'أن'. كنستعملوها باش نربطو الجملة الرئيسية مع الجملة الفرعية لي كتوضح المضمون ديال الإعلان.",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "denn",
+            "antwort": 0,
+            "begründung": "هاد الكلمة (لأن) ما مناسباش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "deshalb",
+            "antwort": 3,
+            "begründung": "'deshalb' كتعني 'لذلك'. كنستعملوها باش نبينو النتيجة ديال الجملة لي قبلها (البنت ضعيفة فالألمانية، لذلك الأم مهتمة بالعرض).",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "hätte",
+            "antwort": 4,
+            "begründung": "'hätte gern' هو تعبير مهذب كيعني 'أود أن' أو 'بغيت' (Konjunktiv II).",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "ihren",
+            "antwort": 2,
+            "begründung": "'ihren Abschluss' كتعني 'تخرجها' (ضمير الملكية للمؤنث فـ Akkusativ حيت كنهضرو على البنت).",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "mir",
+            "antwort": 7,
+            "begründung": "الفعل 'erklären' كياخد Dativ. 'mir das erklären' كتعني 'تشرح ليا هادشي'.",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "mit",
+            "antwort": 0,
+            "begründung": "حرف الجر 'mit' (مع/بـ) ما مناسبش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "müsste",
+            "antwort": 0,
+            "begründung": "هاد الفعل المساعد 'müsste' (يجب/كان يجب) ما مناسبش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "seinen",
+            "antwort": 0,
+            "begründung": "ضمير الملكية 'seinen' (خاصته) للمذكر، وحنا كنهضرو على البنت (sie).",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "über",
+            "antwort": 10,
+            "begründung": "الفعل 'sich freuen' ملي كيكون على شي حاجة غنتوصلو بيها، كيجي مع حرف الجر 'über'. 'sich über einen Prospekt freuen'.",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "vom",
+            "antwort": 1,
+            "begründung": "مع التواريخ بحال '29. Mai' كنستعملو 'vom' لي هي دمج ديال 'von dem'.",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "wäre",
+            "antwort": 9,
+            "begründung": "'wäre' كتعني 'سأكون'. 'wäre dankbar' هو تعبير مهذب فـ Konjunktiv II كيعني 'نكون ممتنة'.",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "wann",
+            "antwort": 5,
+            "begründung": "'Wann' كتعني 'متى'. هنا كتسول على الوقت لي غتبدا فيه الكورسات.",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "wenn",
+            "antwort": 0,
+            "begründung": "أداة الشرط 'wenn' (إذا/عندما) ما مناسباش لأي فراغ فالنص.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "expectedTextSha256": "1a8dc9ed5ca73cfaf42f5d956b71ad627d263fcf6ed1d68d12ba3c869e0af956",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "VOM"
+        },
+        {
+          "id": 32,
+          "answer": "IHREN"
+        },
+        {
+          "id": 33,
+          "answer": "DESHALB"
+        },
+        {
+          "id": 34,
+          "answer": "HÄTTE"
+        },
+        {
+          "id": 35,
+          "answer": "WANN"
+        },
+        {
+          "id": 36,
+          "answer": "DASS"
+        },
+        {
+          "id": 37,
+          "answer": "MIR"
+        },
+        {
+          "id": 38,
+          "answer": "AUßERDEM"
+        },
+        {
+          "id": 39,
+          "answer": "WÄRE"
+        },
+        {
+          "id": 40,
+          "answer": "ÜBER"
+        }
+      ],
+      "beforeOptions": [],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sonja",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b882943b9deebdf53037fe",
+        "pointer": "/collections/5/records/11",
+        "title": "Sonja",
+        "text": "Sehr geehrte Frau Borner,\n\nes gibt ganz viele Ratschläge, wie man sich ernähren soll, was man essen soll und was nicht. Die meisten Empfehlungen sind aber nicht für etwas, .....(1)..... gegen etwas, und zwar immer wieder gegen etwas anderes: gegen Fleisch zum Beispiel oder gegen Zucker, aber auch gegen Milch. So .....(2)..... man etwa, wer kein Fleisch isst, lebt nicht nur gesünder, sondern fühlt sich auch besser.\n\n.....(3)..... ich eine Zeitschrift durchsah, ist mir Ihre Anzeige aufgefallen, und nun habe ich folgende Fragen an Sie: Von .....(4)..... Nahrungsmitteln darf man eigentlich so viel essen, wie man will? Was .....(5)..... jeden Tag gegessen werden? Und wie ist das mit der Milch? Die einen sagen, Milch ist sehr gesund wegen der vielen .....(6)..... Nährstoffe. Andere meinen, wer viel Milch trinkt, kann Probleme mit dem Magen bekommen. Außerdem kann man .....(7)..... Milch auch Mineralwasser trinken. Was soll ich jetzt glauben?\n\nFür eine Antwort .....(8)..... meine Fragen danke ich Ihnen im Voraus. Könnten Sie mir auch noch eine Broschüre schicken? Das Thema Essen und Sport .....(9)..... mich besonders interessieren, .....(10)..... ich selber viel Sport treibe.\n\nMit freundlichen Grüßen\n\nSilvia Schönenberger",
+        "options": [
+          {
+            "id": "a",
+            "text": "als",
+            "antwort": 3,
+            "begründung": "هادي أداة ربط زمانية 'als' (فاش). كنستعملوها فاش كنهضرو على فعل وقع مرة وحدة فالماضي، بحال فاش كانت كتقلب فالمجلة."
+          },
+          {
+            "id": "b",
+            "text": "auf",
+            "antwort": 8,
+            "begründung": "هادي عبارة ثابتة (Nomen-Präposition-Verbindung): 'eine Antwort auf etwas' (جواب على شي حاجة)."
+          },
+          {
+            "id": "c",
+            "text": "deswegen",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "d",
+            "text": "möchte",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "e",
+            "text": "nennt",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "f",
+            "text": "sagt",
+            "antwort": 2,
+            "begründung": "عبارة 'so sagt man' كتعني 'هكا كيقولو الناس' أو 'هكا كيتقال'. فعل 'sagen' هنا مصرف فالمضارع مع 'man'."
+          },
+          {
+            "id": "g",
+            "text": "sollte",
+            "antwort": 5,
+            "begründung": "هذا فعل المودال 'sollen' مصرف فصيغة الماضي المستمر (Präteritum) أو التمني، المعنى هو 'شنو لي خاصو' يتكال كل نهار."
+          },
+          {
+            "id": "h",
+            "text": "sondern",
+            "antwort": 1,
+            "begründung": "كنستعملو 'sondern' فاش كتكون عندنا 'nicht ... sondern' (ماشي هادي، بل هادي). هنا النص كيقول النصيحة ماشي 'لي' (für) شي حاجة 'بل' (sondern) 'ضد' (gegen) شي حاجة."
+          },
+          {
+            "id": "i",
+            "text": "statt",
+            "antwort": 7,
+            "begründung": "كلمة 'statt' كتعني 'عوض' أو 'بلاصت'. هنا المعنى هو شرب الماء عوض (statt) الحليب."
+          },
+          {
+            "id": "j",
+            "text": "was",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "k",
+            "text": "weil",
+            "antwort": 10,
+            "begründung": "أداة ربط كتعطي السبب (لأن) وكتجيب الفعل 'treibe' فآخر الجملة. كتشرح علاش الموضوع كيهمها."
+          },
+          {
+            "id": "l",
+            "text": "welchen",
+            "antwort": 4,
+            "begründung": "حرف الجر 'von' كياخد ديما الداتيف (Dativ). وحيت 'Nahrungsmittel' اسم جمع، أداة الاستفهام 'welche' كتولي 'welchen' فالداتيف جمع."
+          },
+          {
+            "id": "m",
+            "text": "wichtigen",
+            "antwort": 6,
+            "begründung": "هادي صفة تابعة لاسم 'Nährstoffe'. حيت قبل منها كلمة 'vielen' وهي فالداتيف، الصفة خاص تسالي بـ 'en'."
+          },
+          {
+            "id": "n",
+            "text": "würde",
+            "antwort": 9,
+            "begründung": "هادي صيغة 'Konjunktiv II' كتعبر على الاهتمام بطريقة مؤدبة: 'غادي يكون كيهمني بزاف' (würde interessieren)."
+          },
+          {
+            "id": "o",
+            "text": "zum",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          }
+        ]
+      },
+      "expectedTextSha256": "c434623f96b95458d705e702d36c526e77e3ca18ae00701450b397d0c9356998",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "SONDERN"
+        },
+        {
+          "id": 32,
+          "answer": "SAGT"
+        },
+        {
+          "id": 33,
+          "answer": "ALS"
+        },
+        {
+          "id": 34,
+          "answer": "WELCHEN"
+        },
+        {
+          "id": 35,
+          "answer": "SOLLTE"
+        },
+        {
+          "id": 36,
+          "answer": "WICHTIGEN"
+        },
+        {
+          "id": 37,
+          "answer": "STATT"
+        },
+        {
+          "id": 38,
+          "answer": "AUF"
+        },
+        {
+          "id": 39,
+          "answer": "WÜRDE"
+        },
+        {
+          "id": 40,
+          "answer": "WEIL"
+        }
+      ],
+      "beforeOptions": [
+        "SONDERN",
+        "SAGT",
+        "ALS",
+        "WELCHEN",
+        "SOLLTE",
+        "WICHTIGEN",
+        "STATT",
+        "AUF",
+        "WÜRDE",
+        "WEIL"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nadja-claudia",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b882e83b9deebdf5303800",
+        "pointer": "/collections/5/records/12",
+        "title": "Nadja / Claudia",
+        "text": "Sehr geehrte Damen und Herren,\n\nich habe Ihre Anzeige gelesen und interessiere mich sehr für Ihr Angebot. Ich komme aus Kroatien und möchte .....(1)..... den nächsten Sommerferien mein Deutsch verbessern. Klagenfurt ist für mich der ideale Ort, .....(2)..... das nicht so weit weg von meiner Heimatstadt Zagreb ist. Da kann ich an den Wochenenden vielleicht auch .....(3)..... nach Hause fahren. Nun aber zu meiner Person: Ich bin 24 Jahre alt und habe in der Schule vier Jahre lang Deutsch gelernt. Ich kann zwar .....(4)..... ganz gut schreiben, .....(5)..... ich habe immer wieder Probleme beim freien Sprechen. Im Herbst möchte ich in Hamburg ein Studium beginnen, für das ich ebenfalls gute Deutschkenntnisse brauche. Am liebsten wäre mir ein vierwöchiger Deutschkurs, .....(6)..... nur vormittags stattfindet, .....(7)..... ich nachmittags etwas anderes machen kann. Ich hätte den ganzen August bis Mitte September Zeit. .....(8)..... Sie einen passenden Kurs für mich haben, schicken Sie mir bitte sobald .....(9)..... möglich nähere Informationen zu. Mich interessieren auch Ihre Freizeitprogramme, Spezialkurse, die Unterkunftsmöglichkeiten und natürlich die Preise. Bitte empfehlen Sie mir auch ein .....(10)..... gute Webseiten über Klagenfurt und den Wörthersee.\n\nVielen Dank im Voraus und freundliche Grüße\n\nIvica Palic",
+        "options": [
+          {
+            "id": "a",
+            "text": "aber",
+            "antwort": 5,
+            "begründung": "أداة ربط كتعني 'ولكن'. كتستعمل هنا للتناقض بين الكتابة والهضرة."
+          },
+          {
+            "id": "b",
+            "text": "damit",
+            "antwort": 7,
+            "begründung": "أداة ربط كتعني 'باش' أو 'لأجل'. كتشرح الغرض من الكورس الصباحي."
+          },
+          {
+            "id": "c",
+            "text": "der",
+            "antwort": 6,
+            "begründung": "هادي أداة وصل (Relativpronomen) كترجع على 'Deutschkurs' (مذكر)."
+          },
+          {
+            "id": "d",
+            "text": "in",
+            "antwort": 1,
+            "begründung": "حرف جر زماني كيستعمل مع العطلة: 'in den Ferien' (فالعطلة)."
+          },
+          {
+            "id": "e",
+            "text": "manchmal",
+            "antwort": 3,
+            "begründung": "كتعني 'مرة مرة' أو 'أحياناً'. كيوصف شحال من مرة كيرجع للدار."
+          },
+          {
+            "id": "f",
+            "text": "mit",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "g",
+            "text": "paar",
+            "antwort": 10,
+            "begründung": "عبارة 'ein paar' كتعني 'شوية' أو 'بضعة'. كيسول على بضعة مواقع زوينة."
+          },
+          {
+            "id": "h",
+            "text": "schon",
+            "antwort": 4,
+            "begründung": "هنا كتستعمل للتأكيد، يعني راه 'ديجا' كيعرف يكتب مزيان (schon ganz gut)."
+          },
+          {
+            "id": "i",
+            "text": "sehr",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "j",
+            "text": "trotz",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "k",
+            "text": "wann",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "l",
+            "text": "weil",
+            "antwort": 2,
+            "begründung": "أداة ربط كتعطي السبب (لأن) وبما أن الفعل 'ist' جا فآخر الجملة، إذن 'weil' هي الخيار الصحيح."
+          },
+          {
+            "id": "m",
+            "text": "wenn",
+            "antwort": 8,
+            "begründung": "أداة شرط كتعني 'إيلا'. 'إيلا كان عندكم كورس مناسب' (Wenn Sie einen passenden Kurs haben)."
+          },
+          {
+            "id": "n",
+            "text": "wie",
+            "antwort": 9,
+            "begründung": "هادي عبارة ثابتة: 'sobald wie möglich' كتعني 'فأقرب وقت ممكن'."
+          },
+          {
+            "id": "o",
+            "text": "zu",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          }
+        ]
+      },
+      "expectedTextSha256": "2fabc7c6c1e8c1aad4dba39573f59a4d86636a97327ee5ef19ee44dacae277ef",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "IN"
+        },
+        {
+          "id": 32,
+          "answer": "WEIL"
+        },
+        {
+          "id": 33,
+          "answer": "MANCHMAL"
+        },
+        {
+          "id": 34,
+          "answer": "SCHON"
+        },
+        {
+          "id": 35,
+          "answer": "ABER"
+        },
+        {
+          "id": 36,
+          "answer": "DER"
+        },
+        {
+          "id": 37,
+          "answer": "DAMIT"
+        },
+        {
+          "id": 38,
+          "answer": "WENN"
+        },
+        {
+          "id": 39,
+          "answer": "WIE"
+        },
+        {
+          "id": 40,
+          "answer": "PAAR"
+        }
+      ],
+      "beforeOptions": [
+        "IN",
+        "WEIL",
+        "MANCHMAL",
+        "SCHON",
+        "ABER",
+        "DER",
+        "DAMIT",
+        "WENN",
+        "WIE",
+        "PAAR"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "viktor",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b883973b9deebdf5303804",
+        "pointer": "/collections/5/records/14",
+        "title": "Viktor",
+        "text": "Sehr geehrte Frau Campe,\n\nmein Deutschlehrer hat mich .....(1)..... informiert, dass Sie in St. Andreasburg Intensivkurse in Deutsch anbieten.\n\nIch lerne .....(2)..... zwei Jahren Deutsch in Yverden, einer kleinen Stadt in der Westschweiz. Es gefällt mir hier, aber ich lebe in einer französischsprachigen Region und auch meine Arbeitskollegen .....(3)..... nur Französisch (oder Englisch) mit mir. So habe ich einfach zu .....(4)..... Gelegenheit, Deutsch zu sprechen. Deshalb interessiere ich mich .....(5)..... für Ihre Intensivkurse. Die Oberpfalz .....(6)..... ich schon seit langem einmal kennen lernen. Ich habe schon viel darüber gehört und gelesen, war aber selber noch nie dort.\n\nBevor ich mich für einen Sprachkurs in St. Andreasburg entscheide, .....(7)..... ich noch einige Fragen. Bieten Sie auch Sprachkurse an, in denen man international anerkannte Diplome erwerben kann? .....(8)..... Studenten nehmen an einem Kurs teil? Kann man abends auch noch individuell mit dem Computer weiterlernen? Muss man für die Exkursionen extra bezahlen oder sind die Kosten .....(9)..... schon im Kursgeld enthalten?\n\nFür Ihre Antwort .....(10)..... meine Fragen bedanke ich mich vielmals.\n\nMit freundlichen Grüßen\n\nNadia Grade",
+        "options": [
+          {
+            "id": "a",
+            "text": "auf",
+            "antwort": 10,
+            "begründung": "هادي عبارة ثابتة: 'eine Antwort auf etwas' (جواب على شي حاجة). حرف الجر 'auf' هو لي كيمشي مع 'Antwort'."
+          },
+          {
+            "id": "b",
+            "text": "dafür",
+            "antwort": 9,
+            "begründung": "هنا 'dafür' كترجع على الرحلات (Exkursionen). المعنى هو 'واش نخلص عليهم (على ود هادوك الرحلات) بوحدهم'."
+          },
+          {
+            "id": "c",
+            "text": "darüber",
+            "antwort": 1,
+            "begründung": "هنا استعملنا 'darüber' حيت كاين الفعل 'informieren'. القاعدة هي 'jemanden über etwas informieren' (تعلم شي حد بشي حاجة)."
+          },
+          {
+            "id": "d",
+            "text": "hätte",
+            "antwort": 7,
+            "begründung": "هادي صيغة 'Konjunktiv II' ديال فعل 'haben'. كتستعمل باش تطلب شي حاجة بطريقة مؤدبة: 'عندي (hätte) واحد بعض الأسئلة'."
+          },
+          {
+            "id": "e",
+            "text": "kann",
+            "antwort": 0,
+            "begründung": "هذا الخيار خاطئ لأن الجملة تبدأ بـ 'Bevor ich mich für einen Sprachkurs in St. Andreasburg entscheide,' مما يشير إلى أن الجملة تتحدث عن المستقبل أو عن رغبة، لذا الفعل المناسب هنا هو 'möchte' وليس 'kann'."
+          },
+          {
+            "id": "f",
+            "text": "können",
+            "antwort": 0,
+            "begründung": "الخيار 'können' خاطئ لأنه لا يتناسب مع سياق الجملة رقم (7) التي تحتاج إلى فعل يعبر عن وجود أو تواجد شيء، وليس فعل يعبّر عن القدرة."
+          },
+          {
+            "id": "g",
+            "text": "möchte",
+            "antwort": 6,
+            "begründung": "فعل ناقص كيعبر على الرغبة. كتقول 'بغيت' (möchte) نكتشف هاد المنطقة."
+          },
+          {
+            "id": "h",
+            "text": "sehr",
+            "antwort": 5,
+            "begründung": "هنا 'sehr' كتستعمل باش تأكد على درجة الاهتمام: 'مهتمة بزاف' (interessiere mich sehr)."
+          },
+          {
+            "id": "i",
+            "text": "seit",
+            "antwort": 2,
+            "begründung": "كنستعملو 'seit' (منذ) باش نهضرو على شي حاجة بدات ف الماضي ومازال مستمرة لحد الآن، وكتجي ديما مع الداتيف."
+          },
+          {
+            "id": "j",
+            "text": "sprechen",
+            "antwort": 3,
+            "begründung": "فعل 'يتكلم' مصرف فالمضارع مع 'meine Arbeitskollegen' (هما)، داكشي علاش خدا النهاية 'en'."
+          },
+          {
+            "id": "k",
+            "text": "vor",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "l",
+            "text": "wenig",
+            "antwort": 4,
+            "begründung": "كلمة 'wenig' كتعني 'قليل'. 'zu wenig' كتعني بلي الفرص ديالها باش تهضر بالألمانية قليلة بزاف."
+          },
+          {
+            "id": "m",
+            "text": "wie",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "n",
+            "text": "wie viele",
+            "antwort": 8,
+            "begründung": "أداة استفهام كتعني 'شحال د'. هنا كتسول على عدد الطلاب لي كيشاركو ف الكورس."
+          },
+          {
+            "id": "o",
+            "text": "wissen",
+            "antwort": 0,
+            "begründung": "posst nicht"
+          }
+        ]
+      },
+      "expectedTextSha256": "749160363a028e52d95e2d12933901e9d648c23b67c4ad36026ca8ca18ed53eb",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "DARÜBER"
+        },
+        {
+          "id": 32,
+          "answer": "SEIT"
+        },
+        {
+          "id": 33,
+          "answer": "SPRECHEN"
+        },
+        {
+          "id": 34,
+          "answer": "WENIG"
+        },
+        {
+          "id": 35,
+          "answer": "SEHR"
+        },
+        {
+          "id": 36,
+          "answer": "MÖCHTE"
+        },
+        {
+          "id": 37,
+          "answer": "HÄTTE"
+        },
+        {
+          "id": 38,
+          "answer": "WIE VIELE"
+        },
+        {
+          "id": 39,
+          "answer": "DAFÜR"
+        },
+        {
+          "id": 40,
+          "answer": "AUF"
+        }
+      ],
+      "beforeOptions": [
+        "DARÜBER",
+        "SEIT",
+        "SPRECHEN",
+        "WENIG",
+        "SEHR",
+        "MÖCHTE",
+        "HÄTTE",
+        "WIE VIELE",
+        "DAFÜR",
+        "AUF"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "moritz",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b883cc3b9deebdf5303806",
+        "pointer": "/collections/5/records/15",
+        "title": "Moritz",
+        "text": "Hallo Emilia,\n\ngestern hat mir mein Englischlehrer Informationen über ein Stipendium in den USA geschickt und ich .....(1)..... gleich an uns beide denken. Wir haben uns doch sowieso schon .....(2)..... einiger Zeit überlegt, nach dem Abitur im Ausland zu studieren. Vielleicht sollten wir diese Gelegenheit nutzen. Es gibt natürlich .....(3)..... Garantie, dass wir genommen werden, aber probieren können wir es, oder?\n\nIch fände es toll, ein .....(4)..... Jahre in einem neuen Umfeld zu verbringen. Eine andere Kultur zu erleben und .....(5)..... unsere Englischkenntnisse zu verbessern, das wäre doch genial! So ein Auslandsaufenthalt ist nicht nur abenteuerlich, .....(6)..... kann auch nützlich für die Zukunft sein.\n\nDas Beste an der Sache ist, wir .....(7)..... direkt auf dem Campus wohnen. Außerdem gibt es viele .....(8)..... Wahlveranstaltungen wie Chorsingen, Theater und sportliche Aktivitäten. Wenn du Lust hast, könnten wir uns treffen und die .....(9)..... zusammen durchsehen. Wie sieht es .....(10)..... Woche bei dir aus?\n\nLiebe Grüße\nMadeleine",
+        "options": [
+          {
+            "id": "a",
+            "text": "Durfte",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "b",
+            "text": "Einige",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "c",
+            "text": "gleichzeitig",
+            "antwort": 5,
+            "begründung": "كلمة كتعني 'ف نفس الوقت'. الهدف هو يعيشو ثقافة جديدة 'وفي نفس الوقت' يحسنو اللغة ديالهم."
+          },
+          {
+            "id": "d",
+            "text": "Ihre",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "e",
+            "text": "keine",
+            "antwort": 3,
+            "begründung": "أداة نفي للاسم المؤنث 'Garantie'. المعنى هو 'ما كاين حتى ضمانة' بلي غادي يقبلونا."
+          },
+          {
+            "id": "f",
+            "text": "musste",
+            "antwort": 1,
+            "begründung": "هنا استعملنا 'musste' ف الماضي البسيط (Präteritum) حيت كتهضر على فكرة طاحت ليها على البال فاش شافت معلومات المنحة: 'كان عليّ نفكر فينا بجوج'."
+          },
+          {
+            "id": "g",
+            "text": "nächste",
+            "antwort": 10,
+            "begründung": "صفة كتعني 'الجاية'. كيسولها على الوقت ديالها ف 'الأسبوع الجاي' (nächste Woche)."
+          },
+          {
+            "id": "h",
+            "text": "paar",
+            "antwort": 4,
+            "begründung": "عبارة 'ein paar' كتعني 'بضعة' أو 'واحد الشوية د'. هنا كتهضر على قضاء 'بضعة سنوات' ف الخارج."
+          },
+          {
+            "id": "i",
+            "text": "seit",
+            "antwort": 2,
+            "begründung": "حرف جر زماني كيعني 'منذ'. كنستعملوه فاش كنهضرو على شي حاجة بدات ف الماضي وباقي مستمرة (كيفكرو ف الموضوع هادي شحال)."
+          },
+          {
+            "id": "j",
+            "text": "sie",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "k",
+            "text": "sondern",
+            "antwort": 6,
+            "begründung": "هادي قاعدة 'nicht nur ... sondern auch'. كتقول بلي السفر ماشي 'غير' مغامرة 'بل حتى' مفيد للمستقبل."
+          },
+          {
+            "id": "l",
+            "text": "statt",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "m",
+            "text": "Unterlagen",
+            "antwort": 9,
+            "begründung": "اسم كيعني 'الوثائق' أو 'الأوراق'. بغاو يتلاقاو باش يشوفو الأوراق والوثائق ديال المنحة مجموعين."
+          },
+          {
+            "id": "n",
+            "text": "würden",
+            "antwort": 7,
+            "begründung": "فعل مساعد ف صيغة Konjunktiv II. كيعبر على شي حاجة زوينة كيتخايلوها: 'غادي نكونو ساكنين' ف الجامعة."
+          },
+          {
+            "id": "o",
+            "text": "zusätzliche",
+            "antwort": 8,
+            "begründung": "صفة كتعني 'إضافية'. كتوصف الأنشطة لي كاينة زيادة على الدروس الأساسية (Wahlveranstaltungen)."
+          }
+        ]
+      },
+      "expectedTextSha256": "a508d4e2aafeb3516f6d8592394fb179e481a40d4f18863756f702d9d47451b1",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "MUSSTE"
+        },
+        {
+          "id": 32,
+          "answer": "SEIT"
+        },
+        {
+          "id": 33,
+          "answer": "KEINE"
+        },
+        {
+          "id": 34,
+          "answer": "PAAR"
+        },
+        {
+          "id": 35,
+          "answer": "GLEICHZEITIG"
+        },
+        {
+          "id": 36,
+          "answer": "SONDERN"
+        },
+        {
+          "id": 37,
+          "answer": "WÜRDEN"
+        },
+        {
+          "id": 38,
+          "answer": "ZUSÄTZLICHE"
+        },
+        {
+          "id": 39,
+          "answer": "UNTERLAGEN"
+        },
+        {
+          "id": 40,
+          "answer": "NÄCHSTE"
+        }
+      ],
+      "beforeOptions": [
+        "MUSSTE",
+        "SEIT",
+        "KEINE",
+        "PAAR",
+        "GLEICHZEITIG",
+        "SONDERN",
+        "WÜRDEN",
+        "ZUSÄTZLICHE",
+        "UNTERLAGEN",
+        "NÄCHSTE"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "petra",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "6a8753452aaebbdb3ab02576",
+        "pointer": "/collections/5/records/27",
+        "title": "Petra",
+        "text": "Sehr geehrte Herr Blanco Ruiz,\n\nich schreibe Ihnen auf die Anzeige, die __(1)__ in der heutigen Bild – Zeitung aufgefallen ist. Da ich __(2)__ einige Monate beruflich nach Südamerika gehe, muss ich sehr schnell Spanisch lernen. Für einen richtigen Sprachkurs habe ich leider __(3)__ Zeit. Aber Ihre Methode interessiert mich, vor allem die Sprachübungen __(4)__ den CDs. Ich denke, damit könnte ich ganz __(5)__. Ich arbeite __(6)__ liebsten mit meinem PC. Sie schreiben, __(7)__ Ihr Programm besonders die alltägliche Kommunikation fördert. Wie lange wird es dauern, __(8)__ ich mich meinen Geschäftsfreunden richtig unterhalten kann? Und wie viele Stunden __(9)__ Woche sollte man mindestens üben? Können Sie mir eine Musterlektion schicken? Ich __(10)__ gerne ausprobieren, wie ihre Methode funktioniert.\n\nMit freundlichen Grüßen\n\nIhre KARIN ÜBERSCHÄR",
+        "options": [
+          {
+            "id": "a",
+            "text": "am",
+            "antwort": 6,
+            "begründung": "كنستعملو 'am' مع 'liebsten' باش تعطينا 'am liebsten' لي كتعني 'المفضل لدي'.",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "bis",
+            "antwort": 8,
+            "begründung": "'bis' كتعني 'حتى'. هنا كيسول شحال ديال الوقت غيخص 'حتى' يقدر يهضر مع أصدقاء العمل.",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "dass",
+            "antwort": 7,
+            "begründung": "'dass' كتعني 'أن'. كنستعملوها لربط الجمل، 'تكتبون أن برنامجكم...'.",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "für",
+            "antwort": 2,
+            "begründung": "حرف الجر 'für' كيعني هنا 'لمدة'. 'für einige Monate' كتعني 'لمدة بضعة أشهر'.",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "gute",
+            "antwort": 5,
+            "begründung": "صفة كتعني 'جيدة'. الجملة كتقصد 'أعتقد أنه يمكنني تحقيق نتائج جيدة'، رغم أن كلمة نتائج (Erfolge) متخفية فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "keine",
+            "antwort": 3,
+            "begründung": "أداة النفي 'keine' كنستعملوها لنفي الأسماء. 'keine Zeit' كتعني 'ليس لدي وقت'.",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "mich",
+            "antwort": 0,
+            "begründung": "ضمير المفعول به (Akkusativ) لـ 'ich'. ما مناسبش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "mir",
+            "antwort": 1,
+            "begründung": "الفعل 'auffallen' كياخد Dativ. 'die mir aufgefallen ist' كتعني 'الذي أثار انتباهي'.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "mit",
+            "antwort": 4,
+            "begründung": "حرف الجر 'mit' كيعني 'بـ' أو 'مع'. 'mit den CDs' كتعني 'باستخدام الأقراص المدمجة'.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "möchte",
+            "antwort": 10,
+            "begründung": "الفعل المساعد 'möchte' كيعني 'أود' أو 'بغيت'. 'Ich möchte gerne ausprobieren' = 'أود أن أجرب'.",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "ohne",
+            "antwort": 0,
+            "begründung": "حرف جر كيعني 'بدون'. ما مناسبش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "pro",
+            "antwort": 9,
+            "begründung": "'pro' كتعني 'في' أو 'لكل'. 'pro Woche' كتعني 'في الأسبوع'.",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "während",
+            "antwort": 0,
+            "begründung": "حرف جر كيعني 'أثناء' أو 'خلال'. ما مناسبش لأي فراغ فالنص.",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "wäre",
+            "antwort": 0,
+            "begründung": "فعل فالـ Konjunktiv II كيعني 'سأكون' أو 'كان ليكون'. ما مناسبش لأي فراغ.",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "würden",
+            "antwort": 0,
+            "begründung": "فعل مساعد كنستعملوه فالطلب المؤدب أو التمني. ما مناسبش لأي فراغ.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "expectedTextSha256": "2a20daf235bc4e406ddfc98678e26a4f8871558d3687741f48868e60ae5bb118",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "MIR"
+        },
+        {
+          "id": 32,
+          "answer": "FÜR"
+        },
+        {
+          "id": 33,
+          "answer": "KEINE"
+        },
+        {
+          "id": 34,
+          "answer": "MIT"
+        },
+        {
+          "id": 35,
+          "answer": "GUTE"
+        },
+        {
+          "id": 36,
+          "answer": "AM"
+        },
+        {
+          "id": 37,
+          "answer": "DASS"
+        },
+        {
+          "id": 38,
+          "answer": "BIS"
+        },
+        {
+          "id": 39,
+          "answer": "PRO"
+        },
+        {
+          "id": 40,
+          "answer": "MÖCHTE"
+        }
+      ],
+      "beforeOptions": [
+        "MIR",
+        "FÜR",
+        "KEINE",
+        "MIT",
+        "GUTE",
+        "AM",
+        "DASS",
+        "BIS",
+        "PRO",
+        "MÖCHTE"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "tamara-jakob",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b882943b9deebdf53037fe",
+        "pointer": "/collections/5/records/11",
+        "title": "Sonja",
+        "text": "Sehr geehrte Frau Borner,\n\nes gibt ganz viele Ratschläge, wie man sich ernähren soll, was man essen soll und was nicht. Die meisten Empfehlungen sind aber nicht für etwas, .....(1)..... gegen etwas, und zwar immer wieder gegen etwas anderes: gegen Fleisch zum Beispiel oder gegen Zucker, aber auch gegen Milch. So .....(2)..... man etwa, wer kein Fleisch isst, lebt nicht nur gesünder, sondern fühlt sich auch besser.\n\n.....(3)..... ich eine Zeitschrift durchsah, ist mir Ihre Anzeige aufgefallen, und nun habe ich folgende Fragen an Sie: Von .....(4)..... Nahrungsmitteln darf man eigentlich so viel essen, wie man will? Was .....(5)..... jeden Tag gegessen werden? Und wie ist das mit der Milch? Die einen sagen, Milch ist sehr gesund wegen der vielen .....(6)..... Nährstoffe. Andere meinen, wer viel Milch trinkt, kann Probleme mit dem Magen bekommen. Außerdem kann man .....(7)..... Milch auch Mineralwasser trinken. Was soll ich jetzt glauben?\n\nFür eine Antwort .....(8)..... meine Fragen danke ich Ihnen im Voraus. Könnten Sie mir auch noch eine Broschüre schicken? Das Thema Essen und Sport .....(9)..... mich besonders interessieren, .....(10)..... ich selber viel Sport treibe.\n\nMit freundlichen Grüßen\n\nSilvia Schönenberger",
+        "options": [
+          {
+            "id": "a",
+            "text": "als",
+            "antwort": 3,
+            "begründung": "هادي أداة ربط زمانية 'als' (فاش). كنستعملوها فاش كنهضرو على فعل وقع مرة وحدة فالماضي، بحال فاش كانت كتقلب فالمجلة."
+          },
+          {
+            "id": "b",
+            "text": "auf",
+            "antwort": 8,
+            "begründung": "هادي عبارة ثابتة (Nomen-Präposition-Verbindung): 'eine Antwort auf etwas' (جواب على شي حاجة)."
+          },
+          {
+            "id": "c",
+            "text": "deswegen",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "d",
+            "text": "möchte",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "e",
+            "text": "nennt",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "f",
+            "text": "sagt",
+            "antwort": 2,
+            "begründung": "عبارة 'so sagt man' كتعني 'هكا كيقولو الناس' أو 'هكا كيتقال'. فعل 'sagen' هنا مصرف فالمضارع مع 'man'."
+          },
+          {
+            "id": "g",
+            "text": "sollte",
+            "antwort": 5,
+            "begründung": "هذا فعل المودال 'sollen' مصرف فصيغة الماضي المستمر (Präteritum) أو التمني، المعنى هو 'شنو لي خاصو' يتكال كل نهار."
+          },
+          {
+            "id": "h",
+            "text": "sondern",
+            "antwort": 1,
+            "begründung": "كنستعملو 'sondern' فاش كتكون عندنا 'nicht ... sondern' (ماشي هادي، بل هادي). هنا النص كيقول النصيحة ماشي 'لي' (für) شي حاجة 'بل' (sondern) 'ضد' (gegen) شي حاجة."
+          },
+          {
+            "id": "i",
+            "text": "statt",
+            "antwort": 7,
+            "begründung": "كلمة 'statt' كتعني 'عوض' أو 'بلاصت'. هنا المعنى هو شرب الماء عوض (statt) الحليب."
+          },
+          {
+            "id": "j",
+            "text": "was",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "k",
+            "text": "weil",
+            "antwort": 10,
+            "begründung": "أداة ربط كتعطي السبب (لأن) وكتجيب الفعل 'treibe' فآخر الجملة. كتشرح علاش الموضوع كيهمها."
+          },
+          {
+            "id": "l",
+            "text": "welchen",
+            "antwort": 4,
+            "begründung": "حرف الجر 'von' كياخد ديما الداتيف (Dativ). وحيت 'Nahrungsmittel' اسم جمع، أداة الاستفهام 'welche' كتولي 'welchen' فالداتيف جمع."
+          },
+          {
+            "id": "m",
+            "text": "wichtigen",
+            "antwort": 6,
+            "begründung": "هادي صفة تابعة لاسم 'Nährstoffe'. حيت قبل منها كلمة 'vielen' وهي فالداتيف، الصفة خاص تسالي بـ 'en'."
+          },
+          {
+            "id": "n",
+            "text": "würde",
+            "antwort": 9,
+            "begründung": "هادي صيغة 'Konjunktiv II' كتعبر على الاهتمام بطريقة مؤدبة: 'غادي يكون كيهمني بزاف' (würde interessieren)."
+          },
+          {
+            "id": "o",
+            "text": "zum",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          }
+        ]
+      },
+      "expectedTextSha256": "c434623f96b95458d705e702d36c526e77e3ca18ae00701450b397d0c9356998",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "SONDERN"
+        },
+        {
+          "id": 32,
+          "answer": "SAGT"
+        },
+        {
+          "id": 33,
+          "answer": "ALS"
+        },
+        {
+          "id": 34,
+          "answer": "WELCHEN"
+        },
+        {
+          "id": 35,
+          "answer": "SOLLTE"
+        },
+        {
+          "id": 36,
+          "answer": "WICHTIGEN"
+        },
+        {
+          "id": 37,
+          "answer": "STATT"
+        },
+        {
+          "id": 38,
+          "answer": "AUF"
+        },
+        {
+          "id": 39,
+          "answer": "WÜRDE"
+        },
+        {
+          "id": 40,
+          "answer": "WEIL"
+        }
+      ],
+      "beforeOptions": [
+        "SONDERN",
+        "SAGT",
+        "ALS",
+        "WELCHEN",
+        "SOLLTE",
+        "WICHTIGEN",
+        "STATT",
+        "AUF",
+        "WÜRDE",
+        "WEIL"
+      ],
+      "beforeWordBank": [],
+      "variantNote": "The existing ZDeutsch passage and key are the Sonja variant. Restore its choices without switching to Sahla Tamara’s different gap positions and answers."
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "nicole",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b8855a3b9deebdf530380f",
+        "pointer": "/collections/5/records/18",
+        "title": "Nicole",
+        "text": "Sehr geehrte Damen und Herren,\n\nmit großem Interesse und auch mit Hoffnung habe ich Ihre Anzeige gelesen. Leider .....(1)..... ich Sie im Moment nicht anrufen, da das Telefon immer belegt ist. .....(2)..... schreibe ich Ihnen diese Mail. Mein Sohn Matthias macht .....(3)..... zwei Jahren sein Abitur, .....(4)..... seine Leistungen sind zurzeit nicht so gut. Ich mache .....(5)..... vor allem bei den Fächern Physik und Mathematik große Sorgen. Matthias ist nicht dumm, aber er ist etwas faul und denkt, er brauche .....(6)..... Fächer nicht. Fragen wollte ich nun, .....(7)..... es bei Ihnen auch individuelle Physik– und Mathematiknachhilfe gibt. Und .....(8)..... finden die Stunden statt? Am späten Nachmittag oder am frühen Abend? Mir wäre es jedenfalls sehr wichtig, dass Sie meinem Sohn helfen .....(9)...... Ab 19.30 Uhr bin ich telefonisch .....(10)..... der Nummer 0428-1734 zu erreichen.\n\nMit freundlichen Grüßen\n\nJOSEF MARTINELL",
+        "options": [
+          {
+            "id": "a",
+            "text": "aber",
+            "antwort": 4,
+            "begründung": "أداة ربط للتناقض. ولدو غادي يدوز الباك 'ولكن' (aber) النتائج ديالو دابا ما زويناش."
+          },
+          {
+            "id": "b",
+            "text": "darf",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "c",
+            "text": "dass",
+            "antwort": 0,
+            "begründung": "passt nicht - أداة ربط ما عندهاش معنى فهاد الجمل."
+          },
+          {
+            "id": "d",
+            "text": "deshalb",
+            "antwort": 2,
+            "begründung": "أداة ربط كتعني 'داكشي علاش'. حيت التيليفون مشغول، 'داكشي علاش' قرر يكتب إيميل."
+          },
+          {
+            "id": "e",
+            "text": "diese",
+            "antwort": 6,
+            "begründung": "اسم إشارة للجمع المؤنث (Fächer). المعنى هو أن الدري كيسحاب ليه 'هاد' المواد ما صالحين لوالو."
+          },
+          {
+            "id": "f",
+            "text": "in",
+            "antwort": 3,
+            "begründung": "حرف جر زماني كيستعمل هنا للمستقبل. المعنى هو 'من دابا عامين' (in zwei Jahren) غادي يدوز ولدو الباك."
+          },
+          {
+            "id": "g",
+            "text": "kann",
+            "antwort": 1,
+            "begründung": "فعل ناقص كيعبر على القدرة. هنا الأب كيقول 'ما كدرتش' (kann nicht) يعيط حيت التيليفون ديما مشغول."
+          },
+          {
+            "id": "h",
+            "text": "könnten",
+            "antwort": 9,
+            "begründung": "فعل المودال فصيغة Konjunktiv II للطلب المؤدب. المعنى هو 'باش تقدرو' تعاونو ولدي."
+          },
+          {
+            "id": "i",
+            "text": "mich",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "j",
+            "text": "mir",
+            "antwort": 5,
+            "begründung": "هنا استعملنا 'mir' حيت الفعل هو 'sich Sorgen machen' (كيتقلق). ومع 'ich' الضمير المنعكس كيكون هو 'mir'."
+          },
+          {
+            "id": "k",
+            "text": "ob",
+            "antwort": 7,
+            "begründung": "أداة ربط للسؤال غير المباشر بمعنى 'واش'. كيسول 'واش' كاين كورس خصوصي فردي."
+          },
+          {
+            "id": "l",
+            "text": "obwohl",
+            "antwort": 0,
+            "begründung": "passt nicht "
+          },
+          {
+            "id": "m",
+            "text": "unter",
+            "antwort": 10,
+            "begründung": "عبارة ثابتة 'unter einer Nummer erreichen' كتعني التواصل مع شي حد 'على هاد النمرة' ديال التيليفون."
+          },
+          {
+            "id": "n",
+            "text": "vor",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "o",
+            "text": "wann",
+            "antwort": 8,
+            "begründung": "أداة استفهام على الزمان. كيسول 'فوقاش' (wann) كيكونو هاد السوايع د الدعم."
+          }
+        ]
+      },
+      "expectedTextSha256": "086d13c3830335d26e1b2be1fd34abb35c221c7d0bb73ff3967fa50769bee267",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "KANN"
+        },
+        {
+          "id": 32,
+          "answer": "DESHALB"
+        },
+        {
+          "id": 33,
+          "answer": "IN"
+        },
+        {
+          "id": 34,
+          "answer": "ABER"
+        },
+        {
+          "id": 35,
+          "answer": "MIR"
+        },
+        {
+          "id": 36,
+          "answer": "DIESE"
+        },
+        {
+          "id": 37,
+          "answer": "OB"
+        },
+        {
+          "id": 38,
+          "answer": "WANN"
+        },
+        {
+          "id": 39,
+          "answer": "KÖNNTEN"
+        },
+        {
+          "id": 40,
+          "answer": "UNTER"
+        }
+      ],
+      "beforeOptions": [
+        "KANN",
+        "DESHALB",
+        "IN",
+        "ABER",
+        "MIR",
+        "DIESE",
+        "OB",
+        "WANN",
+        "KÖNNTEN",
+        "UNTER"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "thomas-anna",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b885e53b9deebdf5303813",
+        "pointer": "/collections/5/records/20",
+        "title": "Thomas / Anna",
+        "text": "Sehr geehrte Damen und Herren,\n\nunsere Organisation hat den .....(1)....., eine deutsch-französische Konferenz zu europäischen Entwicklungsprogrammen vorzubereiten.\n\nDiese Veranstaltung könnte in Breisach .....(2)....., und daher brauchen wir von Ihnen nähere .....(3)...... In Ihrer Anzeige .....(4)..... Sie die Sehenswürdigkeiten von Breisach und die verschiedenen touristischen Möglichkeiten. Deshalb erscheint uns Ihre Stadt als sehr .....(5)....., auch .....(6)..... ihrer Tradition als Brücke zu Europa.\n\n.....(7)..... haben wir folgende Bitte: Für diese Veranstaltung suchen wir ein gutes Hotel, möglichst .....(8)..... Ufer des Rheins, mit Konferenz- und Arbeitsräumen ausgestattet mit den notwendigen technischen Anlagen, Internetanschluss usw.. Können Sie uns dazu Vorschläge schicken? Der .....(9)..... wäre 15.–21. November.\n\nBitte geben Sie uns möglichst bald Bescheid. Für Prospekte und Informationen zu Preisen und Buchungsbedingungen .....(10)..... wir Ihnen dankbar.\n\nMit freundlichen Grüßen\nADRIAN SCHÖLLER\nEVD Trans GmbH",
+        "options": [
+          {
+            "id": "a",
+            "text": "ob",
+            "antwort": 0,
+            "begründung": "passt nicht - أداة ربط للسؤال غير المباشر، ما عندهاش محل هنا.",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "geeignet",
+            "antwort": 5,
+            "begründung": "صفة 'geeignet' كتعني 'مناسب'. المدينة كبان لينا 'مناسبة' بزاف لهاد الغرض.",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "stattfinden",
+            "antwort": 2,
+            "begründung": "الفعل 'stattfinden' كيعني 'يوقع' أو 'يتنظم'. كنهضرو على المكان فين غادي يتنظم المؤتمر.",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "nennen",
+            "antwort": 4,
+            "begründung": "فعل 'nennen' كيعني 'يذكر'. ف الإعلان ديالكم 'ذكرتو' المعالم السياحية ديال المدينة.",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "dass",
+            "antwort": 0,
+            "begründung": "passt nicht - أداة ربط كتعني 'أنّ' وما كتركبش مع سياق الجمل.",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "wegen",
+            "antwort": 6,
+            "begründung": "'wegen' حرف جر كيعني 'بسبب'. المدينة مناسبة 'بسبب' التاريخ والتقاليد ديالها.",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "Nun",
+            "antwort": 7,
+            "begründung": "'nun' كتعني 'دابا' أو 'والآن'. كتستعمل باش تنتقل لفقرة جديدة أو تطلب طلب جديد.",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "bei",
+            "antwort": 0,
+            "begründung": "passt nicht - حرف جر مكيناسبش القواعد ديال الفراغات لي كاينين.",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "Informationen",
+            "antwort": 3,
+            "begründung": "'Informationen' هما 'معلومات'. حيت بغاو ينظمو تما، كيحتاجو 'معلومات' كتر على البلاصة.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "Auftrag",
+            "antwort": 1,
+            "begründung": "'Auftrag' كتعني 'مهمة' أو 'تكليف'. هنا المؤسسة عندها 'مهمة' باش توجد للمؤتمر.",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "Termin",
+            "antwort": 9,
+            "begründung": "'Termin' كتعني 'الموعد' أو 'التاريخ'. التاريخ المحدد للمؤتمر هو ما بين 15 و 21 نونبر.",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "wären",
+            "antwort": 10,
+            "begründung": "فعل 'sein' ف صيغة Konjunktiv II. 'wären wir dankbar' كتعني 'غادي نكونو شاكرين ليكم' (أسلوب مؤدب).",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "bereits",
+            "antwort": 0,
+            "begründung": "passt nicht - 'ديجا' ما صالحاش لغوياً فهاد الفراغات.",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "seit",
+            "antwort": 0,
+            "begründung": "passt nicht - 'منذ' كتستعمل للمدة الزمنية وما صالحاش هنا.",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "am",
+            "antwort": 8,
+            "begründung": "حرف الجر 'am' كيتستعمل مع 'Ufer' (ضفة). 'am Ufer' يعني 'على ضفة' نهر الراين.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "expectedTextSha256": "77b0dc2d360357b87832cc7add1984372057ae98292222b04095f1f7f453bae4",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "AUFTRAG"
+        },
+        {
+          "id": 32,
+          "answer": "STATTFINDEN"
+        },
+        {
+          "id": 33,
+          "answer": "INFORMATIONEN"
+        },
+        {
+          "id": 34,
+          "answer": "NENNEN"
+        },
+        {
+          "id": 35,
+          "answer": "GEEIGNET"
+        },
+        {
+          "id": 36,
+          "answer": "WEGEN"
+        },
+        {
+          "id": 37,
+          "answer": "NUN"
+        },
+        {
+          "id": 38,
+          "answer": "AM"
+        },
+        {
+          "id": 39,
+          "answer": "TERMIN"
+        },
+        {
+          "id": 40,
+          "answer": "WÄREN"
+        }
+      ],
+      "beforeOptions": [
+        "AUFTRAG",
+        "STATTFINDEN",
+        "INFORMATIONEN",
+        "NENNEN",
+        "GEEIGNET",
+        "WEGEN",
+        "NUN",
+        "AM",
+        "TERMIN",
+        "WÄREN"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b1",
+        "kind": "part",
+        "themeKey": "sophie",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B1.spteil2",
+        "recordId": "69b8861e3b9deebdf5303815",
+        "pointer": "/collections/5/records/21",
+        "title": "Sophie",
+        "text": "Sehr geehrte Damen und Herren, \nvielen Dank für die .....(1)..... Zusendung der Informationsmaterialien. Ich interessiere mich sowohl für das Seminar Schutz gegen Computerviren als .....(2)..... für Einführung ins Internet.\nDazu habe ich noch .....(3)..... Fragen: Ist die Veranstaltung Einführung ins Internet auch wirklich für Anfänger gedacht? Da ich noch gar keine Erfahrung habe, möchte ich mich .....(4)..... jetzt auf das Seminar vorbereiten. .....(5)..... Sie mir die Schulungsunterlagen bereits vorher schicken?\nGibt es für die .....(6)..... Seminare noch genügend freie Plätze? Bis .....(7)..... muss ich mich spätestens anmelden?\nUnd nun noch eine Frage zur Bezahlung: Auslandsüberweisungen sind sehr teuer, daher .....(8)..... ich wissen, .....(9)..... man im Voraus bezahlen muss oder auch vor Ort bar bezahlen kann.\n.....(10)..... ich auch eine Kursbestätigung am Ende des Seminars erhalten?\n\nMit freundlichen Grüßen\nWILLY GATES",
+        "options": [
+          {
+            "id": "a",
+            "text": "auch",
+            "antwort": 2,
+            "begründung": "هادي قاعدة ثابنة: 'sowohl ... als auch' كتعني 'هذا وكذلك هذا' (بجوجهم).",
+            "isUpdated": false
+          },
+          {
+            "id": "b",
+            "text": "beiden",
+            "antwort": 6,
+            "begründung": "'beiden' كتعني 'بجوج'. كيرجع على 'جوج' ديال السيمينات لي ذكر ف أول الرسالة.",
+            "isUpdated": false
+          },
+          {
+            "id": "c",
+            "text": "Eine",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "d",
+            "text": "einige",
+            "antwort": 3,
+            "begründung": "'einige' كتعني 'بعض'. المستعمل هنا كيقول 'عندي عاود تاني بعض الأسئلة'.",
+            "isUpdated": false
+          },
+          {
+            "id": "e",
+            "text": "Könnten",
+            "antwort": 5,
+            "begründung": "هذا فعل 'können' ف صيغة Konjunktiv II. كيتستعمل باش تطلب شي حاجة بطريقة مؤدبة بزاف (واش كان بإمكانكم...).",
+            "isUpdated": false
+          },
+          {
+            "id": "f",
+            "text": "möchte",
+            "antwort": 8,
+            "begründung": "فعل ناقص كيعبر على الرغبة. 'daher möchte ich' كتعني 'داكشي علاش بغيت (نعرف)'.",
+            "isUpdated": false
+          },
+          {
+            "id": "g",
+            "text": "müssen",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "h",
+            "text": "ob",
+            "antwort": 9,
+            "begründung": "أداة ربط كتعني 'واش'. كتستعمل فاش كيكون عندنا سؤال غير مباشر (بغيت نعرف واش خاص نخلص...).",
+            "isUpdated": false
+          },
+          {
+            "id": "i",
+            "text": "schnelle",
+            "antwort": 1,
+            "begründung": "هنا 'schnelle' صفة كتوصف 'Zusendung' (الإرسال). استعملنا النهاية 'e' حيت الكلمة مؤنث وجات مورا أداة التعريف 'die' ف حالة Accusativ.",
+            "isUpdated": false
+          },
+          {
+            "id": "j",
+            "text": "schon",
+            "antwort": 4,
+            "begründung": "كلمة 'schon' هنا كتجي مع 'jetzt' باش تأكد على الاستعجال: 'بغيت نوجد راسي من دابا (schon jetzt)'.",
+            "isUpdated": false
+          },
+          {
+            "id": "k",
+            "text": "soll",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "l",
+            "text": "sondern",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "isUpdated": false
+          },
+          {
+            "id": "m",
+            "text": "vorne",
+            "antwort": 0,
+            "begründung": "passt nicht ",
+            "isUpdated": false
+          },
+          {
+            "id": "n",
+            "text": "wann",
+            "antwort": 7,
+            "begründung": "أداة استفهام زمانية. 'Bis wann' عبارة كتعني 'حتى لاين' أو 'شنو هو أخر أجل'.",
+            "isUpdated": false
+          },
+          {
+            "id": "o",
+            "text": "Werde",
+            "antwort": 10,
+            "begründung": "فعل مساعد 'werden' كيتستعمل هنا لتكوين صيغة المستقبل أو السؤال على شي حاجة غتوقع: 'واش غادي ناخد شهادة ف اللخر؟'.",
+            "isUpdated": false
+          }
+        ]
+      },
+      "expectedTextSha256": "ab3e3eca58aad1db6498e73ef3f609a6bc803b40d38b2eb0d470ca7ac244290c",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "SCHNELLE"
+        },
+        {
+          "id": 32,
+          "answer": "AUCH"
+        },
+        {
+          "id": 33,
+          "answer": "EINIGE"
+        },
+        {
+          "id": 34,
+          "answer": "SCHON"
+        },
+        {
+          "id": 35,
+          "answer": "KÖNNTEN"
+        },
+        {
+          "id": 36,
+          "answer": "BEIDEN"
+        },
+        {
+          "id": 37,
+          "answer": "WANN"
+        },
+        {
+          "id": 38,
+          "answer": "MÖCHTE"
+        },
+        {
+          "id": 39,
+          "answer": "OB"
+        },
+        {
+          "id": 40,
+          "answer": "WERDE"
+        }
+      ],
+      "beforeOptions": [
+        "SCHNELLE",
+        "AUCH",
+        "EINIGE",
+        "SCHON",
+        "KÖNNTEN",
+        "BEIDEN",
+        "WANN",
+        "MÖCHTE",
+        "OB",
+        "WERDE"
+      ],
+      "beforeWordBank": []
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "licht",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B2.spteil2",
+        "recordId": "692e1b1e3402d7f8e3989c2a",
+        "pointer": "/collections/11/records/10",
+        "title": "Sicherer Schulweg     طريق أمن للمدرسة",
+        "text": "\nKinder sind oft mit dem Straßenverkehr überfordert, **(1)** ist  es wichtig, dass sich Eltern und Bezugspersonen den besten Schulweg überlegen und mit ihren Kindern üben. **(2)** Immer ist der kürzeste Weg auch der ungefährlichste. Zum Üben sollte man sich Zeit nehmen und sich voll auf das Kind **(3)**. Eltern sollten im Verkehr immer auch an ihre Vorbildfunktion denken: Verkehrsregeln nicht nur erklären, sondern sich auch **(4)** daran halten. Wegen ihrer geringeren Körpergröße haben Kinder ein anderes Sichtfeld als Erwachsene. Dessen müssen sich die Erwachsenen bewusst sein. Manchmal ist es **(5)**, wenn die Großen sich von ihren Kindern erzählen lassen, was diese sehen Um das Kind langsam an den Schulweg zu gewöhnen, sollte es anfangs nur das letzte Stück allein gehen. Diese Strecke kann man dann Schritt **(6)** Schritt verlängern. Dasselbe gilt für den Nachhauseweg. Auch ist es sinnvoll, zu Schulbeginn nochmals kurz und klar die wichtigsten Regeln für das **(7)** im Straßenverkehr mit den Kindem zu wiederholen. Wenn der Schulweg kein Problem mehr darstellt, kann man noch mögliche **(8)** Situationen besprechen. Wie zum Beispiel „Was machst du, wenn der Gehweg gespert ist?“ oder Was tust du, wenn die Ampel ausgefallen ist? oder Was machst du, wenn auf der anderen Straßenseite jemand nach dir ruft oder jemand bei Rot über die Kreuzung rennt?\". So lernt das Kind, sich **(9)** im Straßenverkehr zu verhalten und selbstständig **(10)** zu finden. Und die Erwachsenen können sicher sein, dass ihr Kind zumindest auf die Standardsituationen vorbereitet ist.",
+        "options": [
+          {
+            "id": "a",
+            "text": "bemühen",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1a"
+            }
+          },
+          {
+            "id": "b",
+            "text": "für",
+            "antwort": 6,
+            "begründung": "Schritt für Schritt هي عبارة ثابتة كتعني \"خطوة بخطوة\"",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1b"
+            }
+          },
+          {
+            "id": "c",
+            "text": "deshalb",
+            "antwort": 1,
+            "begründung": "Deshalb كتعني \"لذلك\" أو \"داكشي علاش\". كتبين النتيجة ديال شي حاجة تقالت قبل. (الأطفال مرتبكون، لذلك من المهم...).",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1c"
+            }
+          },
+          {
+            "id": "d",
+            "text": "doch",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1d"
+            }
+          },
+          {
+            "id": "e",
+            "text": "hilfreich",
+            "antwort": 5,
+            "begründung": "Hilfreich هي صفة (adjective) كتعني \"مفيد\". \"أحيانا كيكون مفيد أن الكبار يخليو الصغار يشرحو ليهم شنو كيشوفو\".",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1e"
+            }
+          },
+          {
+            "id": "f",
+            "text": "konzentrieren",
+            "antwort": 3,
+            "begründung": "konzentrieren هو المصدر (Infinitiv) ديال الفعل sich konzentrieren auf (يركز على). خاصو يجي فآخر الجملة حيت تابع لـ sollte.",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b1f"
+            }
+          },
+          {
+            "id": "g",
+            "text": "kritische",
+            "antwort": 8,
+            "begründung": "Kritische هي صفة كتعني \"حرجة\" أو \"خطيرة\". هنا جات فالجمع و فالحالة ديال Akkusativ، داكشي علاش كتسالي بـ -e.",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b20"
+            }
+          },
+          {
+            "id": "h",
+            "text": "lösungen",
+            "antwort": 10,
+            "begründung": "Lösungen هو الجمع ديال Lösung و كيعني \"حلول\". هو المفعول به ديال الفعل finden (يجد). \"يجد حلولا بشكل مستقل\".",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b21"
+            }
+          },
+          {
+            "id": "i",
+            "text": "nicht",
+            "antwort": 2,
+            "begründung": "Nicht immer هي عبارة ثابتة كتعني \"ماشي ديما\". \"ماشي ديما الطريق القصيرة هي الآمنة\".",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b22"
+            }
+          },
+          {
+            "id": "j",
+            "text": "probleme",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b23"
+            }
+          },
+          {
+            "id": "k",
+            "text": "schon",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b24"
+            }
+          },
+          {
+            "id": "l",
+            "text": "selbst",
+            "antwort": 4,
+            "begründung": "selbst هنا كتعني \"بنفسهم\" أو \"براسهم\". كتستعمل للتأكيد على أن الآباء خاصهم يطبقو القواعد بنفسهم.",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b25"
+            }
+          },
+          {
+            "id": "m",
+            "text": "ststt",
+            "antwort": 0,
+            "begründung": "passt nicht",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b26"
+            }
+          },
+          {
+            "id": "n",
+            "text": "selbstbewusst",
+            "antwort": 9,
+            "begründung": "Selbstbewusst هنا ظرف (adverb) كيوصف الفعل. كيعني \"بثقة في النفس\". \"يتصرف بثقة في النفس في حركة المرور\".",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b27"
+            }
+          },
+          {
+            "id": "o",
+            "text": "verhalten",
+            "antwort": 7,
+            "begründung": "Verhalten هنا اسم كيعني \"السلوك\" أو \"التصرف\". \"قواعد السلوك في حركة المرور\".",
+            "_id": {
+              "$oid": "68a28e82289bdae54a853b28"
+            }
+          }
+        ]
+      },
+      "expectedTextSha256": "2efda96e4e0efcc9d9c56815df8a70d55e13726ed28ad5efca019744d6cc55c5",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "DESHALB"
+        },
+        {
+          "id": 32,
+          "answer": "NICHT"
+        },
+        {
+          "id": 33,
+          "answer": "KONZENTRIEREN"
+        },
+        {
+          "id": 34,
+          "answer": "SELBST"
+        },
+        {
+          "id": 35,
+          "answer": "HILFREICH"
+        },
+        {
+          "id": 36,
+          "answer": "FÜR"
+        },
+        {
+          "id": 37,
+          "answer": "VERHALTEN"
+        },
+        {
+          "id": 38,
+          "answer": "KRITISCHE"
+        },
+        {
+          "id": 39,
+          "answer": "SELBSTBEWUSST"
+        },
+        {
+          "id": 40,
+          "answer": "LÖSUNGEN"
+        }
+      ],
+      "beforeOptions": [
+        "DOCH",
+        "SELBSTBEWUSST",
+        "KONZENTRIEREN",
+        "BEMÜHEN",
+        "STATT",
+        "NICHT",
+        "SCHON",
+        "DESHALB",
+        "FÜR",
+        "PROBLEME",
+        "VERHALTEN",
+        "HILFREICH",
+        "KRITISCHE",
+        "SELBST"
+      ],
+      "beforeWordBank": [
+        {
+          "id": "",
+          "text": "DOCH"
+        },
+        {
+          "id": "",
+          "text": "SELBSTBEWUSST"
+        },
+        {
+          "id": "",
+          "text": "KONZENTRIEREN"
+        },
+        {
+          "id": "",
+          "text": "BEMÜHEN"
+        },
+        {
+          "id": "",
+          "text": "STATT"
+        },
+        {
+          "id": "",
+          "text": "NICHT"
+        },
+        {
+          "id": "",
+          "text": "SCHON"
+        },
+        {
+          "id": "",
+          "text": "DESHALB"
+        },
+        {
+          "id": "",
+          "text": "FÜR"
+        },
+        {
+          "id": "",
+          "text": "PROBLEME"
+        },
+        {
+          "id": "",
+          "text": "VERHALTEN"
+        },
+        {
+          "id": "",
+          "text": "HILFREICH"
+        },
+        {
+          "id": "",
+          "text": "KRITISCHE"
+        },
+        {
+          "id": "",
+          "text": "SELBST"
+        }
+      ],
+      "preservedSourceSpellings": {
+        "ststt": "STATT"
+      }
+    },
+    {
+      "target": {
+        "file": "lesen.json",
+        "level": "b2",
+        "kind": "part",
+        "themeKey": "batata",
+        "versionKey": "default",
+        "partKey": "sprachbausteine-2"
+      },
+      "source": {
+        "collection": "lesen.B2.spteil2",
+        "recordId": "692e1b1e3402d7f8e3989c2f",
+        "pointer": "/collections/11/records/15",
+        "title": "Schwarzarbeit kann teuer werden",
+        "text": "Schnäppchen machen, um Rabatte feilschen: Wer billig einkauft, gilt als clever. Vorsicht ist jedoch bei Aufträgen an Schwarzarbeiter geboten. Denn schnell zahlt der Kunde drauf, ......(1)...... - wie durch das illegale Arbeitsverhältnis erhofft - Geld zu sparen.\n\nRund ums Haus ist nicht ......(2)...... Gelegenheit so günstig, wie sie anfangs scheint: Schwarzarbeit etwa ist nicht nur verboten, sondern es gibt auch ein finanzielles Argument ......(3)...... illegale Arbeiter: Oftmals rechnet sich der Dienst gegen Barzahlung gar nicht. \"Abgesehen ......(4)......, dass es strafbar ist, Schwarzarbeiter zu beschäftigen, nimmt der Auftraggeber handfeste steuerliche Nachteile in Kauf\", warnt Dirk Witte, Steuerberater aus Wildeshausen in Niedersachsen. Wer eine Putzhilfe beschäftigt, kann die Steuerlast auch auf legalem Weg spürbar senken.\n\nAuch für die Modernisierung, Renovierung und Sanierung der Wohnung gibt es einen Steuernachlass, allerdings nur für legale Arbeiten. \"Das Finanzamt ......(5)...... eine ordentliche Rechnung und einen Überweisungsbeleg sehen\". Barzahler können daher nichts von der Steuer absetzen. Noch schwerer fällt ins Gewicht, dass ein Kunde seine Haftungsansprüche aufs Spiel setzt, wenn er vordergründig ein paar Euro sparen möchte. Denn mängelfreie Bauten ......(6)...... eher die Ausnahme.\n\nUnd ob ein Kunde die Beseitigung von Mängeln gerichtlich gegen einen Schwarzarbeiter durchsetzen kann, ist von Fall zu Fall zu prüfen. Im Prinzip muss man aber damit rechnen, die Ansprüche zu verlieren. Ebenso dürften Verbraucher leer ......(7)......, wenn beim Bauen etwas zu Bruch geht. Ein ordentlicher Handwerker hat für ......(8)...... Fälle eine Haftpflichtversicherung.\n\nRichtig teuer werden können auch Unfälle, bei denen sich der illegale Helfer verletzt. Dann zahlen weder Krankenversicherung noch Unfallkasse. Fällt etwa ein Arbeiter vom Gerüst und ist danach dauerhaft querschnittsgelähmt, dann wird der Kunde dafür sein Leben lang zahlen.\n\nDie Folgen von Schwarzarbeit lassen sich mit dem Dominoprinzip beschreiben: Fliegt die illegale Beschäftigung auf, dann ......(9)...... es gleich mehrere Behörden mit. Post gibt es dann vom Finanzamt, der Staatsanwaltschaft und den Sozialversicherungsträgern. Dann braucht der Auftraggeber ......(10)...... einen Anwalt. Und der kostet natürlich auch wieder Geld.",
+        "options": [
+          {
+            "id": "a",
+            "text": "ALLES",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "b",
+            "text": "ANSTATT",
+            "antwort": 1,
+            "begründung": "Anstatt ... zu كتعني \"عوض أن...\". \"الزبون كيخسر فلوسو، عوض أن يوفر المال\""
+          },
+          {
+            "id": "c",
+            "text": "AUSGEHEN",
+            "antwort": 7,
+            "begründung": "ausgehen هنا جزء من العبارة الثابتة leer ausgehen لي كتعني \"يخرج خاوي الوفاض\" أو \"ما ياخد والو\"."
+          },
+          {
+            "id": "d",
+            "text": "BEKOMMEN",
+            "antwort": 9,
+            "begründung": "Bekommen هنا هي الجزء الأول من الفعل mitbekommen لي كيعني \"كيوصلهم الخبر\" أو \"كيعيقو\"."
+          },
+          {
+            "id": "e",
+            "text": "BILDEN",
+            "antwort": 6,
+            "begründung": "Bilden كيعني \"تشكل\". \"البناءات الخالية من العيوب تشكل الاستثناء\"."
+          },
+          {
+            "id": "f",
+            "text": "DAGEGEN",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "g",
+            "text": "DAVON",
+            "antwort": 4,
+            "begründung": "Abgesehen davon هي عبارة ثابتة كتعني \"بغض النظر عن\" أو \"بصرف النظر عن حقيقة أن...\"."
+          },
+          {
+            "id": "h",
+            "text": "GEGEN",
+            "antwort": 3,
+            "begründung": "Gegen كتعني \"ضد\". \"حجة مالية ضد العمال غير الشرعيين\"."
+          },
+          {
+            "id": "i",
+            "text": "HÖCHSTENS",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "j",
+            "text": "JEDE",
+            "antwort": 2,
+            "begründung": "Jede كتعني \"كل\". nicht jede كتعني \"ماشي كل\". \"ماشي كل فرصة كتكون مزيانة كيف كتبان فالأول\"."
+          },
+          {
+            "id": "k",
+            "text": "MEISTENS",
+            "antwort": 10,
+            "begründung": "Meistens هو ظرف (adverb) كيعني \"غالبا\" أو \"في معظم الأوقات\". \"حينها يحتاج الزبون غالبا إلى محام\"."
+          },
+          {
+            "id": "l",
+            "text": "SOLCHE",
+            "antwort": 8,
+            "begründung": "Solche كتعني \"مثل هذه\". \"الحرفي المنظم عندو تأمين على المسؤولية لمثل هذه الحالات\"."
+          },
+          {
+            "id": "m",
+            "text": "UM",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          },
+          {
+            "id": "n",
+            "text": "WILL",
+            "antwort": 5,
+            "begründung": "Will هو التصريف ديال الفعل wollen (يريد). هنا كيعبر على طلب أو إرادة قوية. \"مصلحة الضرائب تريد أن ترى فاتورة...\"."
+          },
+          {
+            "id": "o",
+            "text": "WÜNSCHT",
+            "antwort": 0,
+            "begründung": "passt nicht"
+          }
+        ]
+      },
+      "expectedTextSha256": "b4c14443a6ee9384cb9d86be83b139a466f0e34c97b76f81fc4819e94e903b1d",
+      "expectedAnswers": [
+        {
+          "id": 31,
+          "answer": "ANSTATT"
+        },
+        {
+          "id": 32,
+          "answer": "JEDE"
+        },
+        {
+          "id": 33,
+          "answer": "GEGEN"
+        },
+        {
+          "id": 34,
+          "answer": "DAVON"
+        },
+        {
+          "id": 35,
+          "answer": "WILL"
+        },
+        {
+          "id": 36,
+          "answer": "BILDEN"
+        },
+        {
+          "id": 37,
+          "answer": "AUSGEHEN"
+        },
+        {
+          "id": 38,
+          "answer": "SOLCHE"
+        },
+        {
+          "id": 39,
+          "answer": "BEKOMMEN"
+        },
+        {
+          "id": 40,
+          "answer": "MEISTENS"
+        }
+      ],
+      "beforeOptions": [
+        "SOLCHE",
+        "ANSTATT",
+        "DAGEGEN",
+        "DAVON",
+        "UM",
+        "HÖCHSTENS",
+        "WILL",
+        "BILDEN",
+        "BEKOMMEN",
+        "MEISTENS",
+        "WÜNSCHT",
+        "JEDE",
+        "ALLES",
+        "AUSGEHEN",
+        "GEGEN"
+      ],
+      "beforeWordBank": [
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]",
+        "[object Object]"
+      ]
+    }
+  ],
+  "advert": {
+    "target": {
+      "file": "lesen.json",
+      "level": "b1",
+      "kind": "part",
+      "themeKey": "tamara-jakob",
+      "versionKey": "default",
+      "partKey": "teil-3"
+    },
+    "source": {
+      "collection": "lesen.B1.teil3",
+      "recordId": "69b87ae23b9deebdf53037d4",
+      "pointer": "/collections/3/records/18/anzeigen/6",
+      "ad": {
+        "id": "g",
+        "text": "Ferienwhg. u. Häuser an der Nordsee\nWinter- u. Frühjahrsangebote, noch Whg./Häuser frei mit direktem Zugang zum Strand.\nWangerland-Hooksiel\nHorumersiel-Schillig\nHolger Dormann\nTel.: 08532/676567\nFax: 08532/676568\nwww.h.dormann.de",
+        "fazit": "شقق ومنازل لقضاء العطلات على ساحل بحر الشمال عروض الشتاء والربيع، لا تزال هناك شقق/منازل متاحة مع مدخل مباشر إلى الشاطئ. وانغرلاند-هوكسييل هورومرسيل-شيليغ هولغر دورمان هاتف: 08532/676567 فاكس: 08532/676568 www.h.dormann.de",
+        "Keywords": [
+          "Ferienwhg",
+          "direktem Zugang zum Strand."
+        ],
+        "isUpdated": false
+      }
+    },
+    "before": {
+      "id": "G",
+      "text": "Urlaub auf dem Bauernhof\n\ngroße Apartments, EZ, DZ, 3–4 Bett-Zimmer,\nÜF (Frühstücksbuffet) 12 Euro p.P.\nHP 19 € (3-Gang-Abendmenü) 25 Euro, 50% Kinderermäßigung,\nstarker Spielplatzbereich!\n11 ha Garten- und Wiesenfläche, Reitmöglichkeiten\nKinderkühl! Tägliche Aktivitäten! Projektarbeiten!\n\nFamilie Schönle-Schmiderer\nBahnhofstr. 7, D-94339 Gotteszell\nTel. + Fax: 09929-2323",
+      "translated": "عطلة في مزرعة\n\nشقق كبيرة، غرفة مفردة، مزدوجة، غرف 3-4 أسرة،\nإفطار (بوفيه الإفطار) 12 يورو للشخص.\nنصف إقامة 19 € (عشاء من 3 أطباق) 25 يورو، خصم 50% للأطفال،\nمنطقة لعب كبيرة!\n11 هكتار من الحدائق والمروج، إمكانية ركوب الخيل\nبارد للأطفال! أنشطة يومية! مشاريع عمل!\n\nعائلة شونله-شمديرر\nشارع المحطة 7، D-94339 جوتززل\nهاتف وفاكس: 09929-2323"
+    },
+    "situationId": 16
+  }
+}
